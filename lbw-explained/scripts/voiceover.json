@@ -1,0 +1,244 @@
+{
+  "voice": "am_michael",
+  "lang": "en-us",
+  "speed": 1.0,
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.15,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "The ball smashes into the pad.",
+          "caption": "The ball smashes into the pad.",
+          "pause": 0.35
+        },
+        {
+          "text": "It's hitting the stumps.",
+          "caption": "It's hitting the stumps.",
+          "pause": 0.35
+        },
+        {
+          "text": "The bowler is sure it's out.",
+          "caption": "The bowler is sure it's out.",
+          "pause": 0.45
+        },
+        {
+          "text": "But the umpire says... not out.",
+          "caption": "But the umpire says... NOT OUT.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.35,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Because L B W isn't about the ball hitting the pad.",
+          "caption": "Because LBW isn't about the ball hitting the pad.",
+          "pause": 0.45,
+          "phonemes": "bɪkˈʌz ˈɛl bˈiː dˈʌbəljuː ˈɪzənt ɐbˌaʊt ðə bˈɔːl hˈɪɾɪŋ ðə pˈæd."
+        },
+        {
+          "text": "The umpire asks three questions.",
+          "caption": "The umpire asks three questions.",
+          "pause": 0.4
+        },
+        {
+          "text": "If any answer is no, the batter survives.",
+          "caption": "If any answer is no, the batter survives.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.4,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "Question one: where did the ball pitch?",
+          "caption": "Question one: where did the ball pitch?",
+          "pause": 0.5
+        },
+        {
+          "text": "If it bounces outside the line of leg stump, it's not out.",
+          "caption": "If it bounces outside the line of leg stump, it's not out.",
+          "pause": 0.3
+        },
+        {
+          "text": "Ever.",
+          "caption": "Ever.",
+          "pause": 0.5
+        },
+        {
+          "text": "In line, or outside off stump? That's fine.",
+          "caption": "In line, or outside off stump? That's fine.",
+          "pause": 0.45
+        },
+        {
+          "text": "And if it's a full toss, skip this question.",
+          "caption": "And if it's a full toss, skip this question.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.4,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "Question two: where did it hit the batter?",
+          "caption": "Question two: where did it hit the batter?",
+          "pause": 0.5
+        },
+        {
+          "text": "The impact has to be in line with the stumps.",
+          "caption": "The impact has to be in line with the stumps.",
+          "pause": 0.45
+        },
+        {
+          "text": "Outside leg stump? Not out.",
+          "caption": "Outside leg stump? Not out.",
+          "pause": 0.45
+        },
+        {
+          "text": "Outside off stump? Only out if the batter didn't try to play a shot.",
+          "caption": "Outside off stump? Only out if the batter didn't try to play a shot.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.4,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "Question three: would the ball have gone on to hit the stumps?",
+          "caption": "Question three: would the ball have gone on to hit the stumps?",
+          "pause": 0.5
+        },
+        {
+          "text": "If it would have bounced over the top, or turned past them, it's not out.",
+          "caption": "If it would have bounced over the top, or turned past them, it's not out.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.4,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "Two more rules.",
+          "caption": "Two more rules.",
+          "pause": 0.4
+        },
+        {
+          "text": "If the ball touches the bat first, it can't be L B W.",
+          "caption": "If the ball touches the bat first, it can't be LBW.",
+          "pause": 0.45,
+          "phonemes": "ɪf ðə bˈɔːl tˈʌtʃᵻz ðə bˈæt fˈɜːst, ɪt kˈænt biː ˈɛl bˈiː dˈʌbəljuː."
+        },
+        {
+          "text": "And you can never be out L B W off a no-ball.",
+          "caption": "And you can never be out LBW off a no-ball.",
+          "pause": 0.25,
+          "phonemes": "ænd juː kæn nˈɛvɚ biː ˈaʊt ˈɛl bˈiː dˈʌbəljuː ˈɔf ɐ nˈoʊbˌɔːl."
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "lead": 0.4,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "So that's it.",
+          "caption": "So that's it.",
+          "pause": 0.35
+        },
+        {
+          "text": "Pitch.",
+          "caption": "Pitch.",
+          "pause": 0.3
+        },
+        {
+          "text": "Impact.",
+          "caption": "Impact.",
+          "pause": 0.3
+        },
+        {
+          "text": "Wickets.",
+          "caption": "Wickets.",
+          "pause": 0.5
+        },
+        {
+          "text": "Three green lights, and the finger goes up.",
+          "caption": "Three green lights, and the finger goes up.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "lead": 0.4,
+      "hold": 0.9,
+      "segments": [
+        {
+          "text": "Now you're the umpire.",
+          "caption": "Now you're the umpire.",
+          "pause": 0.45
+        },
+        {
+          "text": "Remember that first ball?",
+          "caption": "Remember that first ball?",
+          "pause": 0.45
+        },
+        {
+          "text": "It hit him in line, and it was hitting the stumps.",
+          "caption": "It hit him in line, and it was hitting the stumps.",
+          "pause": 0.5
+        },
+        {
+          "text": "But where did it pitch?",
+          "caption": "But where did it pitch?",
+          "pause": 1.1
+        },
+        {
+          "text": "Outside leg stump.",
+          "caption": "Outside leg stump.",
+          "pause": 0.4
+        },
+        {
+          "text": "So it's not out.",
+          "caption": "So it's NOT OUT.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "lead": 0.4,
+      "hold": 1.6,
+      "segments": [
+        {
+          "text": "Now you know L B W better than most fans.",
+          "caption": "Now you know LBW better than most fans.",
+          "pause": 0.5,
+          "phonemes": "nˈaʊ juː nˈoʊ ˈɛl bˈiː dˈʌbəljuː bˈɛɾɚ ðɐn mˈoʊst fˈænz."
+        },
+        {
+          "text": "Beyond The Scoreboard.",
+          "caption": "Beyond The Scoreboard.",
+          "pause": 0.25
+        }
+      ]
+    }
+  ]
+}
