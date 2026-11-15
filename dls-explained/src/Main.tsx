@@ -98,14 +98,22 @@ const SoundTrack: React.FC = () => {
   const music = useDuck(0.7, 0.16);
   const crowd = useDuck(0.26, 0.09);
   const rainOn = useRainOn();
-  const duck = useDuck(1, 0.45);
+  const duck = useDuck(1, 0.3);
   const b1 = s1Beats(fps), b2 = s2Beats(fps), b3 = s3Beats(fps), b4 = s4Beats(fps), b5 = s5Beats(fps), b6 = s6Beats(fps), b7 = s7Beats(fps), b8 = s8Beats(fps);
   const noVo = Boolean(getInputProps().noVo);
   return (
     <>
       <Audio src={staticFile("audio/score.wav")} volume={music} />
       <Audio src={staticFile("audio/crowd-ambience.wav")} volume={crowd} />
-      <Audio src={staticFile("audio/rain.wav")} volume={(f) => 0.42 * rainOn(f) * duck(f)} />
+      <Audio
+        src={staticFile("audio/rain.wav")}
+        volume={(f) => {
+          // the rain sound clears out of the way before the key line in scene 6
+          const s6 = scene(fps, "s6").from;
+          const clear = interpolate(f, [s6 + s6Beats(fps).half - 12, s6 + s6Beats(fps).half], [1, 0], CLAMP) * (f >= s6 ? 1 : 0) + (f < s6 ? 1 : 0);
+          return 0.42 * rainOn(f) * duck(f) * clear;
+        }}
+      />
       {voCues(fps).map((c) => (
         <Sequence key={c.id} from={c.from} layout="none">
           <Audio src={staticFile(`vo/${c.id}.wav`)} volume={noVo ? 0 : 1} />

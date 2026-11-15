@@ -1,6 +1,6 @@
 # Beyond The Scoreboard — DLS (Duckworth–Lewis–Stern), Explained
 
-A 108.8-second Instagram Reel: 1080×1920, 30 fps, H.264 with AAC 48 kHz stereo, mastered to −14 LUFS. It is an original explainer of cricket's rain rule in the Beyond The Scoreboard scoreboard style, with animated rain, gauges and charts.
+A 108.7-second Instagram Reel: 1080×1920, 30 fps, H.264 with AAC 48 kHz stereo, mastered to −14 LUFS. It is an original explainer of cricket's rain rule in the Beyond The Scoreboard scoreboard style, with animated rain, gauges and charts.
 
 ## The idea
 

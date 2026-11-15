@@ -124,9 +124,10 @@
           "pause": 0.32
         },
         {
-          "text": "Twenty-five overs with all ten wickets isn't half an innings.",
-          "caption": "25 overs with all 10 wickets isn't half an innings.",
-          "pause": 0.32
+          "text": "Twenty-five overs with all ten wickets is NOT half an innings.",
+          "caption": "25 overs with all 10 wickets is NOT half an innings.",
+          "pause": 0.32,
+          "phonemes": "twˈɛntifˈaɪv ˈoʊvɚz wɪð ˈɔːl tˈɛn wˈɪkɪts ɪz nˈɑːt hˈæf ɐn ˈɪnɪŋz."
         },
         {
           "text": "It's about two-thirds, because those wickets let you bat aggressively.",
