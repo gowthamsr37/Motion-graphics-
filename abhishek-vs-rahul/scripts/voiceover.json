@@ -1,0 +1,253 @@
+{
+  "voice": "am_michael",
+  "lang": "en-us",
+  "speed": 1.0,
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.25,
+      "hold": 2.4,
+      "segments": [
+        {
+          "text": "Seventy-two T20 internationals each.",
+          "caption": "72 T20 internationals each.",
+          "pause": 0.55,
+          "phonemes": "sˈɛvəntitˈuː tˈiː twˈɛnti ˌɪntɚnˈæʃənəlz ˈiːtʃ."
+        },
+        {
+          "text": "Abhishek Sharma scored two thousand two hundred and sixty-eight runs.",
+          "caption": "Abhishek Sharma scored 2,268 runs.",
+          "pause": 0.45,
+          "phonemes": "ɐbˈɪʃeɪk ʃˈɑːɹmə skˈɔːɹd tˈuː θˈaʊzənd tˈuː hˈʌndɹɪd ænd sˈɪkstiˈeɪt ɹˈʌnz."
+        },
+        {
+          "text": "KL Rahul scored two thousand two hundred and sixty-five.",
+          "caption": "KL Rahul scored 2,265.",
+          "pause": 0.55,
+          "phonemes": "kˈeɪ ˈɛl ɹˈɑːhʊl skˈɔːɹd tˈuː θˈaʊzənd tˈuː hˈʌndɹɪd ænd sˈɪkstifˈaɪv."
+        },
+        {
+          "text": "Almost identical.",
+          "caption": "Almost identical.",
+          "pause": 0.6
+        },
+        {
+          "text": "But here's the difference.",
+          "caption": "But here's the difference.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.45,
+      "hold": 0.85,
+      "segments": [
+        {
+          "text": "Abhishek strikes at one hundred and ninety-six.",
+          "caption": "Abhishek strikes at 196.",
+          "pause": 0.45,
+          "phonemes": "ɐbˈɪʃeɪk stɹˈaɪks æt wˈʌn hˈʌndɹɪd ænd nˈaɪntisˈɪks."
+        },
+        {
+          "text": "Rahul at one hundred and thirty-nine.",
+          "caption": "Rahul at 139.",
+          "pause": 0.55,
+          "phonemes": "ɹˈɑːhʊl æt wˈʌn hˈʌndɹɪd ænd θˈɜːtinˈaɪn."
+        },
+        {
+          "text": "That's a massive difference in how quickly they score.",
+          "caption": "That's a massive difference in how quickly they score.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.45,
+      "hold": 0.85,
+      "segments": [
+        {
+          "text": "Abhishek hits a six roughly every seven balls.",
+          "caption": "Abhishek hits a six roughly every seven balls.",
+          "pause": 0.45,
+          "phonemes": "ɐbˈɪʃeɪk hˈɪts ɐ sˈɪks ɹˈʌfli ˈɛvɹi sˈɛvən bˈɔːlz."
+        },
+        {
+          "text": "Rahul needs more than sixteen.",
+          "caption": "Rahul needs more than sixteen.",
+          "pause": 0.6,
+          "phonemes": "ɹˈɑːhʊl nˈiːdz mˈɔːɹ ðɐn sˈɪkstiːn."
+        },
+        {
+          "text": "And eight out of every ten runs Abhishek scores come from boundaries.",
+          "caption": "And eight out of every ten runs Abhishek scores come from boundaries.",
+          "pause": 0.25,
+          "phonemes": "ænd ˈeɪt ˌaʊɾəv ˈɛvɹi tˈɛn ɹˈʌnz ɐbˈɪʃeɪk skˈɔːɹz kˈʌm fɹʌm bˈaʊndɚɹiz."
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        {
+          "text": "The real difference starts immediately.",
+          "caption": "The real difference starts immediately.",
+          "pause": 0.55
+        },
+        {
+          "text": "In the available ball-by-ball data, Abhishek strikes at around one hundred and eighty during his first ten balls.",
+          "caption": "In the available ball-by-ball data, Abhishek strikes at around 180 during his first ten balls.",
+          "pause": 0.45,
+          "phonemes": "ɪnðɪ ɐvˈeɪləbəl bˈɔːlbaɪbˈɔːl dˈeɪɾə, ɐbˈɪʃeɪk stɹˈaɪks æɾ ɚɹˈaʊnd wˈʌn hˈʌndɹɪd ænd ˈeɪɾi dˈʊɹɹɪŋ hɪz fˈɜːst tˈɛn bˈɔːlz."
+        },
+        {
+          "text": "Rahul, around one hundred and eighteen.",
+          "caption": "Rahul, around 118.",
+          "pause": 0.25,
+          "phonemes": "ɹˈɑːhʊl, ɚɹˈaʊnd wˈʌn hˈʌndɹɪd ænd ˈeɪtiːn."
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.45,
+      "hold": 0.85,
+      "segments": [
+        {
+          "text": "In the powerplay, Abhishek's scoring rate is around one hundred and ninety-one.",
+          "caption": "In the powerplay, Abhishek's scoring rate is around 191.",
+          "pause": 0.45,
+          "phonemes": "ɪnðə pˈaʊɚplˌeɪ, ɐbˈɪʃeɪks skˈɔːɹɪŋ ɹˈeɪt ɪz ɚɹˈaʊnd wˈʌn hˈʌndɹɪd ænd nˈaɪntiwˌʌn."
+        },
+        {
+          "text": "Rahul's is around one hundred and twenty-nine.",
+          "caption": "Rahul's is around 129.",
+          "pause": 0.55,
+          "phonemes": "ɹˈɑːhʊlz ɪz ɚɹˈaʊnd wˈʌn hˈʌndɹɪd ænd twˈɛntinˈaɪn."
+        },
+        {
+          "text": "That's a very different start for the team.",
+          "caption": "That's a very different start for the team.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.5,
+      "hold": 0.85,
+      "segments": [
+        {
+          "text": "But here's the surprise.",
+          "caption": "But here's the surprise.",
+          "pause": 0.55
+        },
+        {
+          "text": "Their estimated overall dot-ball percentages are quite similar.",
+          "caption": "Their estimated overall dot-ball percentages are quite similar.",
+          "pause": 0.55
+        },
+        {
+          "text": "The biggest difference isn't just avoiding dot balls.",
+          "caption": "The biggest difference isn't just avoiding dot balls.",
+          "pause": 0.4
+        },
+        {
+          "text": "It's how often Abhishek turns the other deliveries into boundaries.",
+          "caption": "It's how often Abhishek turns the other deliveries into boundaries.",
+          "pause": 0.25,
+          "phonemes": "ɪts hˌaʊ ˈɔfən ɐbˈɪʃeɪk tˈɜːnz ðɪ ˈʌðɚ dᵻlˈɪvɚɹiz ˌɪntʊ bˈaʊndɚɹiz."
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "lead": 0.6,
+      "hold": 0.9,
+      "segments": [
+        {
+          "text": "But aggression comes with a cost.",
+          "caption": "But aggression comes with a cost.",
+          "pause": 0.6
+        },
+        {
+          "text": "Abhishek is dismissed more frequently.",
+          "caption": "Abhishek is dismissed more frequently.",
+          "pause": 0.5,
+          "phonemes": "ɐbˈɪʃeɪk ɪz dɪsmˈɪst mˈɔːɹ fɹˈiːkwəntli."
+        },
+        {
+          "text": "Rahul averages more runs per wicket, and generally stays at the crease longer.",
+          "caption": "Rahul averages more runs per wicket, and generally stays at the crease longer.",
+          "pause": 0.25,
+          "phonemes": "ɹˈɑːhʊl ˈævɹɪdʒᵻz mˈɔːɹ ɹˈʌnz pɜː wˈɪkɪt, ænd dʒˈɛnɚɹəli stˈeɪz æt ðə kɹˈiːs lˈɔŋɡɚ."
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "lead": 0.45,
+      "hold": 1.2,
+      "segments": [
+        {
+          "text": "Here's a simple illustration.",
+          "caption": "Here's a simple illustration.",
+          "pause": 0.5
+        },
+        {
+          "text": "Give both batters eighteen powerplay deliveries.",
+          "caption": "Give both batters eighteen powerplay deliveries.",
+          "pause": 0.5
+        },
+        {
+          "text": "At their historical scoring rates, Abhishek produces roughly eleven more runs.",
+          "caption": "At their historical scoring rates, Abhishek produces roughly eleven more runs.",
+          "pause": 0.55,
+          "phonemes": "æt ðɛɹ hɪstˈɔːɹɪkəl skˈɔːɹɪŋ ɹˈeɪts, ɐbˈɪʃeɪk pɹədˈuːsᵻz ɹˈʌfli ᵻlˈɛvən mˈɔːɹ ɹˈʌnz."
+        },
+        {
+          "text": "But that's before accounting for the greater wicket risk.",
+          "caption": "But that's before accounting for the greater wicket risk.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "lead": 0.5,
+      "hold": 1.6,
+      "segments": [
+        {
+          "text": "Abhishek brings explosive starts.",
+          "caption": "Abhishek brings explosive starts.",
+          "pause": 0.5,
+          "phonemes": "ɐbˈɪʃeɪk bɹˈɪŋz ɛksplˈoʊsɪv stˈɑːɹts."
+        },
+        {
+          "text": "Rahul offers greater batting stability.",
+          "caption": "Rahul offers greater batting stability.",
+          "pause": 0.6,
+          "phonemes": "ɹˈɑːhʊl ˈɔfɚz ɡɹˈeɪɾɚ bˈæɾɪŋ stəbˈɪlᵻɾi."
+        },
+        {
+          "text": "The question isn't just how many runs an opener scores.",
+          "caption": "The question isn't just how many runs an opener scores.",
+          "pause": 0.45
+        },
+        {
+          "text": "It's how many balls he uses, and how much risk he takes.",
+          "caption": "It's how many balls he uses, and how much risk he takes.",
+          "pause": 0.9
+        },
+        {
+          "text": "Beyond The Scoreboard.",
+          "caption": "Beyond The Scoreboard.",
+          "pause": 0.25
+        }
+      ]
+    }
+  ]
+}
