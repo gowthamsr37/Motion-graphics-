@@ -41,16 +41,16 @@ The Instagram caption is in [`CAPTION.md`](CAPTION.md).
 - **The 18-ball model** is labelled HYPOTHETICAL SCORING-RATE MODEL, "not a prediction of any match". Its assumptions (same conditions, teammates and other runs; dismissals ignored) are listed on screen, alongside the wicket-risk caveat.
 - **Different eras:** Rahul played T20Is in 2016–2022 and Abhishek from 2024. Both player plates show their era.
 
-## Photographs, and what was not available
+## Photographs
 
-| File | Shows | Credit / licence |
-| --- | --- | --- |
-| `rahul-t20wc-2022.jpg` | KL Rahul in India's T20 kit, interviewed at the MCG during the 2022 T20 World Cup | Storm machine · CC BY-SA 4.0 · Wikimedia Commons |
+| File | Shows | Credit / licence | Used in |
+| --- | --- | --- | --- |
+| `abhishek-t20wc-2026.jpg` | Abhishek Sharma in India's T20 World Cup 2026 kit | **supplied by the creator**; the bottom bar and on-screen icon are cropped off | opening comparison, wicket-risk scene, verdict, cover |
+| `rahul-t20wc-2022.jpg` | KL Rahul in India's T20 kit, interviewed at the MCG during the 2022 T20 World Cup | Storm machine · CC BY-SA 4.0 · Wikimedia Commons | opening comparison, wicket-risk scene, verdict, cover |
 
-- **Abhishek Sharma:** Wikimedia Commons has no freely licensed photograph of the cricketer. The two files named "Abhishek Sharma" show other people, so they are not used. He is represented by an original scoreboard player plate (bat emblem, name, era); no likeness is implied.
-- **Action and celebration photos** of either player in India T20Is are not available under a free licence, so the charts carry those moments.
-- **Available if wanted:** genuine India T20I crowd and stadium photos from Sydney and Melbourne, February 2012 (neither player appears). They could be added as captioned atmosphere.
-- To add licensed photos later, drop them in `public/photos/`, register them in `src/photos.ts`, and swap a `PlayerPlate` for a `PhotoFrame`.
+- Wikimedia Commons has no freely licensed photo of Abhishek Sharma the cricketer, so his photo is the creator's supplied asset. Publishing rights for it rest with the creator.
+- The powerplay scene keeps the two matching scoreboard player plates (bat emblem, name, era).
+- Optional: genuine India T20I crowd and stadium photos from Sydney and Melbourne, February 2012 (neither player appears), could be added as captioned atmosphere.
 
 ## Audio, and its limits
 

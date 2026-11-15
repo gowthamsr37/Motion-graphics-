@@ -8,6 +8,6 @@ But Rahul averages 37.75 to Abhishek's 32.87 and faces about 27 balls per dismis
 
 T20Is only. Career figures from ICC player records (cut-off 15 Nov 2026). First-ten-ball, powerplay and dot-ball figures come from available ball-by-ball samples. The 18-ball scenario is a hypothetical model, not a prediction. Different eras: Rahul 2016–22, Abhishek 2024–.
 
-Photo: KL Rahul at the 2022 T20 World Cup, Storm machine, CC BY-SA 4.0, via Wikimedia Commons.
+Photos: KL Rahul at the 2022 T20 World Cup, Storm machine, CC BY-SA 4.0, via Wikimedia Commons. Abhishek Sharma photo supplied.
 
 #BeyondTheScoreboard #AbhishekSharma #KLRahul #T20I #TeamIndia #CricketStats #CricketAnalytics #StrikeRate #IndianCricket #CricketReels #T20Cricket #DataViz

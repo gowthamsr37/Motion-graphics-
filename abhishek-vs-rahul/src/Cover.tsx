@@ -3,7 +3,6 @@ import { AbsoluteFill } from "remotion";
 import { Backdrop, Grain, Vignette } from "./components/Board";
 import { Lettering, Panel } from "./components/Panel";
 import { PhotoFrame } from "./components/Photo";
-import { BatEmblem } from "./components/Viz";
 import { A_COL, R_COL } from "./data";
 import { theme } from "./theme";
 
@@ -13,16 +12,7 @@ const C = theme.colors;
 export const Cover: React.FC = () => (
   <AbsoluteFill style={{ background: C.board }}>
     <Backdrop lights={1.15} />
-    <Panel x={60} y={262} w={470} h={470} delay={-30} seed={901} glow={`${A_COL}66`} glowOn={0.7}>
-      <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 10, background: A_COL }} />
-      <div style={{ height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 16 }}>
-        <BatEmblem size={200} color={A_COL} glow={1} />
-        <Lettering size={56}>ABHISHEK SHARMA</Lettering>
-        <Lettering size={22} font="body" color={A_COL} spacing="0.24em">
-          2268 RUNS · 1155 BALLS
-        </Lettering>
-      </div>
-    </Panel>
+    <PhotoFrame id="abhishek-t20wc-2026" x={60} y={262} w={470} h={470} delay={-30} warmth={0.85} focus="50% 6%" zoom={[1.02, 1.02]} label="ABHISHEK" labelColor={A_COL} compact seed={901} glow={`${A_COL}66`} glowOn={0.6} />
     <PhotoFrame id="rahul-t20wc-2022" x={550} y={262} w={470} h={470} delay={-30} warmth={0.85} focus="50% 28%" zoom={[1.3, 1.3]} label="KL RAHUL" labelColor={R_COL} compact seed={902} />
     <Panel x={60} y={752} w={960} h={420} delay={-30} seed={903} glow={C.amberGlow} glowOn={0.8}>
       <div style={{ height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 18 }}>
