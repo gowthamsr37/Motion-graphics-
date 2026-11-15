@@ -1,7 +1,7 @@
 {
-  "voice": "hm_omega",
-  "lang": "en-gb",
-  "speed": 1.18,
+  "voice": "am_michael",
+  "lang": "en-us",
+  "speed": 1.08,
   "scenes": [
     {
       "id": "s1",
@@ -29,7 +29,7 @@
           "text": "Virat Kohli scored nine hundred and seventy-three runs in sixteen innings.",
           "caption": "Virat Kohli scored 973 runs in 16 innings.",
           "pause": 0.2,
-          "phonemes": "vɪɹˈɑːt kˈəʊli skˈɔːd nˈaɪn hˈʌndɹɪd and sˈɛvəntiθɹˈiː ɹˈʌnz ɪn sˈɪkstiːn ɪnnˈɪŋz."
+          "phonemes": "vɪɹˈɑːt kˈoʊli skˈɔːɹd nˈaɪn hˈʌndɹɪd ænd sˈɛvəntiθɹˈiː ɹˈʌnz ɪn sˈɪkstiːn ɪnnˈɪŋz."
         },
         {
           "text": "Average eighty-one.",
@@ -57,19 +57,19 @@
           "text": "One hundred against Gujarat.",
           "caption": "100 against Gujarat.",
           "pause": 0.18,
-          "phonemes": "wˈɒn hˈʌndɹɪd ɐɡˈɛnst ɡˈʊdʒəɹɑːt."
+          "phonemes": "wˈʌn hˈʌndɹɪd ɐɡˈɛnst ɡˈʊdʒəɹɑːt."
         },
         {
           "text": "One hundred and eight against Pune.",
           "caption": "108 against Pune.",
           "pause": 0.18,
-          "phonemes": "wˈɒn hˈʌndɹɪd and ˈeɪt ɐɡˈɛnst pˈuːneɪ."
+          "phonemes": "wˈʌn hˈʌndɹɪd ænd ˈeɪt ɐɡˈɛnst pˈuːneɪ."
         },
         {
           "text": "One hundred and nine against Gujarat again.",
           "caption": "109 against Gujarat again.",
           "pause": 0.2,
-          "phonemes": "wˈɒn hˈʌndɹɪd and nˈaɪn ɐɡˈɛnst ɡˈʊdʒəɹɑːt ɐɡˈɛn."
+          "phonemes": "wˈʌn hˈʌndɹɪd ænd nˈaɪn ɐɡˈɛnst ɡˈʊdʒəɹɑːt ɐɡˈɛn."
         },
         {
           "text": "Then, one hundred and thirteen against Punjab.",
@@ -101,8 +101,7 @@
         {
           "text": "Even the scorecard looked unreal.",
           "caption": "Even the scorecard looked unreal.",
-          "pause": 0.18,
-          "phonemes": "ˈiːvən ðə skˈɔːɹkɑːɹd lˈʊkt ʌnɹˈiːl."
+          "pause": 0.18
         }
       ]
     },
@@ -131,14 +130,13 @@
         {
           "text": "Bangalore still made the final.",
           "caption": "Bangalore still made the final.",
-          "pause": 0.17,
-          "phonemes": "bˈæŋɡəlɔːɹ stˈɪl mˌeɪd ðə fˈaɪnəl."
+          "pause": 0.17
         },
         {
           "text": "Kohli scored fifty-four.",
           "caption": "Kohli scored 54.",
           "pause": 0.2,
-          "phonemes": "kˈoːli skˈɔːɹd fˈɪfti fˈɔːɹ."
+          "phonemes": "kˈoʊli skˈɔːɹd fˈɪftifˈɔːɹ."
         },
         {
           "text": "But Hyderabad's two hundred and eight proved too many.",
@@ -148,8 +146,7 @@
         {
           "text": "Bangalore lost by eight runs.",
           "caption": "Bangalore lost by 8 runs.",
-          "pause": 0.18,
-          "phonemes": "bˈæŋɡəlɔːɹ lˈɒst baɪ ˈeɪt ɹˈʌnz."
+          "pause": 0.18
         }
       ]
     },
@@ -166,14 +163,13 @@
         {
           "text": "No trophy in twenty sixteen.",
           "caption": "No trophy in 2016.",
-          "pause": 0.3,
-          "phonemes": "nˈoʊ tɹˈoʊfi ɪn twˈɛnti sˈɪkstiːn."
+          "pause": 0.3
         },
         {
           "text": "Some seasons",
           "caption": "Some seasons win trophies.",
           "pause": 0.1,
-          "phonemes": "sˈʌm sˈiːzənz"
+          "phonemes": "sˌʌm sˈiːzənz"
         },
         {
           "text": "win trophies.",
@@ -189,8 +185,7 @@
         {
           "text": "Beyond The Scoreboard.",
           "caption": "Beyond The Scoreboard.",
-          "pause": 0.18,
-          "phonemes": "bɪjˈɒnd ðə skˈɔːɹbɔːɹd."
+          "pause": 0.18
         }
       ]
     }

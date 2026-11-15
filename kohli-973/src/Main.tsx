@@ -98,7 +98,7 @@ const SoundTrack: React.FC = () => {
       <Sfx at={s1.stop8} file="clunk.wav" volume={0.9} />
       <Sfx at={s1.stop8 + 2} file="slide.wav" volume={0.25} />
       {/* S2 */}
-      <Sfx at={at("s2", 0)} file="slide.wav" volume={0.3} />
+      <Sfx at={at("s2", -10)} file="slide.wav" volume={0.16} />
       <Sfx at={at("s2", countFrom)} file="rattle-count.wav" volume={0.42} />
       <Sfx at={at("s2", countTo + 7)} file="clunk.wav" volume={0.7} />
       {s2rows.map((r, i) => (
@@ -122,9 +122,9 @@ const SoundTrack: React.FC = () => {
       {/* S5: the duck — a low mechanical click in the silence */}
       <Sfx at={at("s5", 0)} file="slide.wav" volume={0.3} />
       <Sfx at={at("s5", s5.q1 - 6)} file="slide.wav" volume={0.3} />
-      <Sfx at={at("s5", s5.duck)} file="click-low.wav" volume={0.85} />
+      <Sfx at={at("s5", sentence(fps, "s5", 1).to + 2)} file="click-low.wav" volume={0.85} />
       {/* S6 */}
-      <Sfx at={at("s6", 2)} file="slide.wav" volume={0.3} />
+      <Sfx at={at("s6", -10)} file="slide.wav" volume={0.16} />
       {[0, 1, 2].map((i) => (
         <Sfx key={`s${i}`} at={at("s6", s6.srh + i * 2)} file="flip.wav" volume={0.35} />
       ))}
