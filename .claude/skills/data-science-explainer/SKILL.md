@@ -7,7 +7,22 @@ description: House style and production pipeline for the "Data Science Made Simp
 
 The user approved **types-of-data/** as the reference ("came out very well") and asked that **every setting, theme and voice stay the same in future videos**. Treat everything below as fixed defaults. Change something only when the user explicitly asks; if a request seems to conflict with these, ask before deviating.
 
-The reference implementation is `types-of-data/`. Reuse its code (scaffold with `bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>`), not a rewrite.
+The reference implementation is `types-of-data/`; the later videos `mean-median-mode/` and `measures-of-dispersion/` follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
+
+```bash
+REF=measures-of-dispersion bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
+```
+
+The improvements it inherits:
+- `TreeHeaderN` for three branches;
+- `cueS(i, token, nth)`;
+- the subtitle pager that keeps number lists on one line;
+- the SVG `Rupee`, `NotEqual`, `Radical` and `Arrow` glyphs;
+- `clink.wav`;
+- the `HANDLE` constant in `theme.ts`;
+- the CTA with the handle.
+
+**Instagram page: @curious_datascientist.** Use the handle (`HANDLE` in `theme.ts`) on the CTA end card (under the FOLLOW button), on the cover (bottom) and in the caption ("Follow @curious_datascientist for data science made simple 🚀"). The spoken final line stays "Follow for data science made simple!"
 
 Other series in this repo (the cricket "Beyond The Scoreboard" reels) have their own look. Do not restyle them, and do not apply this style to them.
 
@@ -84,7 +99,7 @@ Other series in this repo (the cricket "Beyond The Scoreboard" reels) have their
 3. **One scene per leaf concept:** header tree on top, with one concrete, physical demonstration synced to the words, the classic misconception stamped out (e.g. "3.5 students"), and a one-line concept tag.
 4. **Complete picture:** a file-tree hierarchy assembling on the spoken words, with one example per leaf, travelling pulses and a shine sweep.
 5. **Quiz:** a QUICK QUIZ badge, a prop, the question word by word, and four colour-coded options. A **5-second countdown ring** (green → yellow → orange → red, beeps, options scanning). The reveal gets a check, ta-da and confetti, then a one-sentence why with struck-out wrong reasoning.
-6. **CTA:** a tree logo, a **FOLLOW** button that gets tapped (turns green with a check), "for data science / MADE SIMPLE." and recap chips of the video's key terms. The final line is always **"Follow for data science made simple!"**
+6. **CTA:** a tree logo, a **FOLLOW** button that gets tapped (turns green with a check), the **@curious_datascientist** handle chip under the button, "for data science / MADE SIMPLE." and recap chips of the video's key terms. The final spoken line is always **"Follow for data science made simple!"**
 
 ## 6. Voice (fixed)
 
@@ -140,19 +155,20 @@ Other series in this repo (the cricket "Beyond The Scoreboard" reels) have their
 ## 9. Timing architecture (don't break it)
 
 - Visual beats key off spoken words via `src/timing.ts`:
-  - `sent(i)`, `cue(token)`, and **`cueS(i, token)` for any word spoken twice in a scene**. `cue` finds the first occurrence, and that bug is easy to miss.
+  - `sent(i)`, `cue(token)`, and **`cueS(i, token, nth)` for any word spoken twice in a scene**. `cue` finds the first occurrence, and that bug is easy to miss.
+  - Tokens are normalised to `[a-z0-9]`, so "-7," and "7." both match "7"; use `nth`.
   - Sentence indices shift when you split segments, so re-check every `sent(i)` after editing the script.
 - Re-voicing re-times the whole film. Mirror any music hits in `gen-audio.mjs` with the same cue helpers.
 - Animation durations are written in 30 fps frames, so keep the composition at 30 fps.
 
 ## 10. Cover and caption
 
-- **Cover** (`src/Cover.tsx`): the same background. Title "TOPIC" in Sora 800 white (150 px), the key word in a cyan → violet gradient (about 196 px), then "explained in **2 minutes**" in Sora 700 52 px with the number in yellow. Below it, the topic's tree in the colour code. Keep it all inside the centre 3:4 profile-grid crop.
+- **Cover** (`src/Cover.tsx`): the same background. Title "TOPIC" in Sora 800 white (150 px), the key word in a cyan → violet gradient (about 196 px), then "explained in **2 minutes**" in Sora 700 52 px with the number in yellow. Below it, a visual of the topic in the colour code (tree, dot plot or curves), and the **@curious_datascientist** handle at the bottom. Keep it all inside the centre 3:4 profile-grid crop. Scale the title down for long topic names so it fits within 1080 px.
 - **CAPTION.md:**
   - a hook line with 👀;
   - an emoji-headed bullet recap per branch (📊 / 🏷️ …) with concrete examples;
   - a quiz prompt ("Drop your answer before the reveal 👇");
-  - "Follow for data science made simple 🚀";
+  - "Follow @curious_datascientist for data science made simple 🚀";
   - about 10 hashtags (#datascience #statistics … #learnoninstagram …).
 
 ## 11. Pipeline and QA (mandatory)

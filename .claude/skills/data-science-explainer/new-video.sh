@@ -12,7 +12,7 @@ set -euo pipefail
 [ $# -eq 3 ] || { sed -n '5,7p' "$0"; exit 1; }
 DIR=$1; COMP=$2; STEM=$3
 ROOT=$(git rev-parse --show-toplevel)
-REF=$ROOT/types-of-data
+REF=$ROOT/${REF:-types-of-data}   # REF=<folder> scaffolds from a newer series project
 DST=$ROOT/$DIR
 [ -e "$DST" ] && { echo "$DST already exists"; exit 1; }
 
@@ -25,9 +25,13 @@ cp "$REF"/public/fonts/*.woff2 "$DST"/public/fonts/
 cp -r "$REF"/src/scenes "$DST"/reference/scenes      # the approved scenes, for patterns (not compiled)
 cp "$REF"/scripts/voiceover.json "$DST"/reference/voiceover.types-of-data.json
 
-# names
-sed -i "s/TypesOfData/$COMP/g" "$DST"/src/Root.tsx "$DST"/src/Main.tsx "$DST"/scripts/build.sh "$DST"/scripts/stills.mjs
-sed -i "s/Types_of_Data_Explained/$STEM/g; s/Types_of_Data_Cover/${STEM}_Cover/g" "$DST"/scripts/build.sh "$DST"/scripts/export-srt.py
+# names: read the reference's composition id and file stem from its build script, then replace them
+OLD_COMP=$(sed -n 's/.*remotion render out\/bundle \([A-Za-z0-9]*\) .*/\1/p' "$REF/scripts/build.sh" | head -1)
+OLD_STEM=$(sed -n 's/.*(out \/ "\([A-Za-z0-9_]*\)\.srt").*/\1/p' "$REF/scripts/export-srt.py" | head -1)
+OLD_COVER=$(sed -n 's/.*remotion still out\/bundle Cover out\/\([A-Za-z0-9_]*\)\.png.*/\1/p' "$REF/scripts/build.sh" | head -1)
+[ -n "$OLD_COMP" ] && [ -n "$OLD_STEM" ] && [ -n "$OLD_COVER" ] || { echo "could not read names from $REF/scripts/build.sh"; exit 1; }
+sed -i "s/$OLD_COMP/$COMP/g" "$DST"/src/Root.tsx "$DST"/src/Main.tsx "$DST"/scripts/build.sh "$DST"/scripts/stills.mjs
+sed -i "s/$OLD_COVER/${STEM}_Cover/g; s/$OLD_STEM/$STEM/g" "$DST"/scripts/build.sh "$DST"/scripts/export-srt.py
 python3 - "$DST" "$DIR" "$COMP" <<'PY'
 import json, sys, pathlib
 dst, name, comp = pathlib.Path(sys.argv[1]), sys.argv[2], sys.argv[3]

@@ -1,0 +1,267 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Hook",
+   "lead": 0.45,
+   "hold": 1.35,
+   "segments": [
+    {
+     "text": "Your class average.",
+     "caption": "Your class average,",
+     "pause": 0.6
+    },
+    {
+     "text": "A typical salary.",
+     "caption": "a typical salary,",
+     "pause": 0.6
+    },
+    {
+     "text": "The most popular shoe size.",
+     "caption": "the most popular shoe size…",
+     "pause": 0.85
+    },
+    {
+     "text": "All three try to find the center of your data.",
+     "caption": "All three try to find the centre of your data.",
+     "pause": 0.5
+    },
+    {
+     "text": "But they don't always agree!",
+     "caption": "But they don't always agree!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "The big picture",
+   "lead": 0.45,
+   "hold": 0.7,
+   "segments": [
+    {
+     "text": "These are the three measures of central tendency.",
+     "caption": "These are the three measures of central tendency.",
+     "pause": 0.45
+    },
+    {
+     "text": "The mean, the median, and the mode.",
+     "caption": "The mean, the median, and the mode.",
+     "pause": 0.45
+    },
+    {
+     "text": "Let's meet them with one simple example.",
+     "caption": "Let's meet them with one simple example.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Mean",
+   "lead": 0.5,
+   "hold": 0.9,
+   "segments": [
+    {
+     "text": "Five friends count their cups of chai this week.",
+     "caption": "Five friends count their cups of chai this week.",
+     "pause": 0.35
+    },
+    {
+     "text": "Five, two, eight, two, and three.",
+     "caption": "5, 2, 8, 2, and 3.",
+     "pause": 0.5
+    },
+    {
+     "text": "The mean is the fair share.",
+     "caption": "The mean is the fair share.",
+     "pause": 0.35
+    },
+    {
+     "text": "Pour every cup together: that's twenty.",
+     "caption": "Pour every cup together: that's 20.",
+     "pause": 0.9
+    },
+    {
+     "text": "Now share them equally, and each friend gets four.",
+     "caption": "Now share them equally, and each friend gets 4.",
+     "pause": 0.6
+    },
+    {
+     "text": "The mean is four.",
+     "caption": "The mean is 4.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Median",
+   "lead": 0.5,
+   "hold": 1.1,
+   "segments": [
+    {
+     "text": "The median is the middle value.",
+     "caption": "The median is the middle value.",
+     "pause": 0.35
+    },
+    {
+     "text": "Line everyone up, from fewest cups to most.",
+     "caption": "Line everyone up, from fewest cups to most.",
+     "pause": 0.75
+    },
+    {
+     "text": "Two, two, three, five, eight.",
+     "caption": "2, 2, 3, 5, 8.",
+     "pause": 0.4
+    },
+    {
+     "text": "Three sits right in the middle.",
+     "caption": "3 sits right in the middle.",
+     "pause": 0.7
+    },
+    {
+     "text": "With an even count, take the halfway point of the middle two.",
+     "caption": "With an even count, take the halfway point of the middle two.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Mode",
+   "lead": 0.5,
+   "hold": 1.0,
+   "segments": [
+    {
+     "text": "The mode is the most common value.",
+     "caption": "The mode is the most common value.",
+     "pause": 0.35
+    },
+    {
+     "text": "Two friends drink two cups, so the mode is two.",
+     "caption": "Two friends drink 2 cups, so the mode is 2.",
+     "pause": 0.7
+    },
+    {
+     "text": "And it even works for categories, like the favourite chai flavour.",
+     "caption": "And it even works for categories, like the favourite chai flavour.",
+     "pause": 0.3
+    },
+    {
+     "text": "Masala wins!",
+     "caption": "Masala wins!",
+     "pause": 0.3,
+     "fix": [
+      [
+       "mɐzˈɑːlə",
+       "məsˈɑːlɑː"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "The outlier twist",
+   "lead": 0.45,
+   "hold": 0.9,
+   "segments": [
+    {
+     "text": "Now, here's the twist.",
+     "caption": "Now, here's the twist.",
+     "pause": 0.35
+    },
+    {
+     "text": "One friend actually drinks thirty-eight cups.",
+     "caption": "One friend actually drinks 38 cups.",
+     "pause": 0.95
+    },
+    {
+     "text": "The mean jumps from four to ten!",
+     "caption": "The mean jumps from 4 to 10!",
+     "pause": 0.6
+    },
+    {
+     "text": "But the median stays at three.",
+     "caption": "But the median stays at 3.",
+     "pause": 0.6
+    },
+    {
+     "text": "That's why salaries are often reported as the median.",
+     "caption": "That's why salaries are often reported as the median.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "The complete picture",
+   "lead": 0.45,
+   "hold": 1.3,
+   "segments": [
+    {
+     "text": "Here's the complete picture.",
+     "caption": "Here's the complete picture.",
+     "pause": 0.35
+    },
+    {
+     "text": "Mean: the fair share, for balanced data.",
+     "caption": "Mean: the fair share, for balanced data.",
+     "pause": 0.3
+    },
+    {
+     "text": "Median: the middle, when there are outliers.",
+     "caption": "Median: the middle, when there are outliers.",
+     "pause": 0.3
+    },
+    {
+     "text": "Mode: the most common, even for categories.",
+     "caption": "Mode: the most common, even for categories.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Quiz and call to action",
+   "lead": 0.35,
+   "hold": 2.3,
+   "segments": [
+    {
+     "text": "Quick quiz!",
+     "caption": "Quick quiz!",
+     "pause": 0.3
+    },
+    {
+     "text": "What's the median of seven, two, nine, four, and three?",
+     "caption": "What's the median of 7, 2, 9, 4, and 3?",
+     "pause": 5.7
+    },
+    {
+     "text": "It's four!",
+     "caption": "It's 4!",
+     "pause": 0.4
+    },
+    {
+     "text": "Sort them first: two, three, four, seven, nine.",
+     "caption": "Sort them first: 2, 3, 4, 7, 9.",
+     "pause": 0.3
+    },
+    {
+     "text": "Four sits in the middle.",
+     "caption": "4 sits in the middle.",
+     "pause": 0.55
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.3
+    }
+   ]
+  }
+ ]
+}
