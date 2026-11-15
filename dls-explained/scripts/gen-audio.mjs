@@ -368,6 +368,7 @@ mono("fill.wav", 0.7, (t, s) => { // a rising "filling" sweep for the gauges
   return (Math.sin(s.p) * 0.4 + s.lp * 0.5) * Math.sin(Math.PI * Math.min(1, t / 0.7));
 }, 0.6);
 cheer("crowd-groan.wav", 2.4, 0.2, 0.5, 1.6); // a deflated crowd
+rattle("rattle-count.wav", 0.9, true); // the score counter climbing to 250
 {
   // steady rain on a stadium roof: two layers of filtered noise with drips
   const L = new Float32Array(N), R = new Float32Array(N);
