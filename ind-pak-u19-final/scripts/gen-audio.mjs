@@ -33,7 +33,7 @@ const four0 = word("s5", "four", 6.7) + f(15);
 const ev = {
   runs: word("s1", "runs", 0.24), ball: word("s1", "ball", 1.66), wicket: word("s1", "wick", 3.0),
   rewind: (fromF("s1") + durF("s1") - Math.round(FPS * 0.6)) / FPS,
-  total: sentEnd("s2", 0), target: sentEnd("s2", 1) + f(2), // impact after "…338", never on it
+  total: sentEnd("s2", 0), target: sentEnd("s2", 1) + f(7), // impact after "…338", never on it
   collapse: sent("s3", 2), at252: word("s3", "252", 5.04),
   stand: sent("s4", 1), fell: word("s4", "fell", 6.5),
   dot: word("s5", "dot", 3.8), wide: word("s5", "wide", 5.4),

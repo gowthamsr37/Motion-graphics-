@@ -82,7 +82,15 @@ const SoundTrack: React.FC = () => {
   const s1Ticks = Array.from({ length: Math.floor(s1.rewind / 15) }, (_, i) => i * 15);
   return (
     <>
-      <Audio src={staticFile("audio/score.wav")} volume={music} />
+      <Audio
+        src={staticFile("audio/score.wav")}
+        volume={(f) => {
+          // key facts get extra room: the score dips a further 6 dB under "…chase 338" and "Dot!"
+          const dips = [sentence(fps, "s2", 1), sentence(fps, "s5", 2)].map((x, k) => [at(k ? "s5" : "s2", x.from), at(k ? "s5" : "s2", x.to)]);
+          const dip = Math.min(...dips.map(([a, b]) => interpolate(f, [a - 8, a, b + 4, b + 12], [1, 0.5, 0.5, 1], CLAMP)));
+          return music(f) * dip;
+        }}
+      />
       <Audio src={staticFile("audio/crowd-ambience.wav")} volume={crowd} />
       {voCues(fps).map((c) => (
         <Sequence key={c.id} from={c.from} layout="none">
@@ -102,9 +110,9 @@ const SoundTrack: React.FC = () => {
       <Sfx at={at("s2", 10)} file="rattle-count.wav" volume={0.18} />
       <Sfx at={at("s2", s2.total)} file="clunk.wav" volume={0.5} />
       <Sfx at={at("s2", sentence(fps, "s2", 1).from - 10)} file="slide.wav" volume={0.14} />
-      <Sfx at={at("s2", sentence(fps, "s2", 1).to + 2)} file="boom.wav" volume={0.55} />
+      <Sfx at={at("s2", sentence(fps, "s2", 1).to + 7)} file="boom.wav" volume={0.55} />
       {[0, 1, 2].map((i) => (
-        <Sfx key={`t${i}`} at={at("s2", sentence(fps, "s2", 1).to + 2 + i * 3)} file="flip.wav" volume={0.4} />
+        <Sfx key={`t${i}`} at={at("s2", sentence(fps, "s2", 1).to + 7 + i * 3)} file="flip.wav" volume={0.4} />
       ))}
       {/* S3: eight wicket clicks, a deep impact at 252/8 */}
       {Array.from({ length: 8 }).map((_, i) => (
@@ -118,7 +126,7 @@ const SoundTrack: React.FC = () => {
       {/* S5–S6: every delivery clicks; the freeze; bat on ball; the roar */}
       {ov.rows.slice(1, 7).map((t, i) => (
         // the first two flips wait until the narrator has finished "dot!" / "a wide…"
-        <Sfx key={`d${i}`} at={at("s5", i < 2 ? sentence(fps, "s5", 2 + i).to + 2 : t + 6)} file="flip.wav" volume={i < 2 ? 0.42 + i * 0.04 : 0.3} />
+        <Sfx key={`d${i}`} at={at("s5", i < 2 ? sentence(fps, "s5", 2 + i).to + 7 : t + 6)} file="flip.wav" volume={i < 2 ? 0.42 + i * 0.04 : 0.3} />
       ))}
       <Sfx at={at("s5", ov.freeze)} file="clunk.wav" volume={0.7} />
       <Sfx at={at("s5", ov.rows[7] - 2)} file="bat.wav" volume={0.9} />
