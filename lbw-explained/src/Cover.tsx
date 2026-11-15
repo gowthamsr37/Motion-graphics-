@@ -13,7 +13,7 @@ export const Cover: React.FC = () => (
     <Backdrop lights={1.15} />
     <Panel x={60} y={262} w={960} h={600} delay={-30} seed={901}>
       <div style={{ position: "absolute", left: 0, top: -110, transform: "scale(1)", transformOrigin: "50% 0%" }}>
-        <PitchView lanes={1} batterX={0.02} />
+        <PitchView lanes={1} batterX={0.02} batterOn={0} />
       </div>
     </Panel>
     <Panel x={60} y={880} w={960} h={360} delay={-30} seed={902} glow={C.amberGlow} glowOn={0.8}>
