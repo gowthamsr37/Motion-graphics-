@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill } from "remotion";
 import { Backdrop, Grain, Vignette } from "./components/Board";
 import { Lettering, Panel } from "./components/Panel";
-import { PhotoFrame } from "./components/Photo";
+import { CutoutFrame } from "./components/Cutout";
 import { A_COL, R_COL } from "./data";
 import { theme } from "./theme";
 
@@ -12,8 +12,8 @@ const C = theme.colors;
 export const Cover: React.FC = () => (
   <AbsoluteFill style={{ background: C.board }}>
     <Backdrop lights={1.15} />
-    <PhotoFrame id="abhishek-t20wc-2026" x={60} y={262} w={470} h={470} delay={-30} warmth={0.85} focus="50% 6%" zoom={[1.02, 1.02]} label="ABHISHEK" labelColor={A_COL} compact seed={901} glow={`${A_COL}66`} glowOn={0.6} />
-    <PhotoFrame id="rahul-t20wc-2022" x={550} y={262} w={470} h={470} delay={-30} warmth={0.85} focus="50% 28%" zoom={[1.3, 1.3]} label="KL RAHUL" labelColor={R_COL} compact seed={902} />
+    <CutoutFrame id="abhishek-cutout" x={60} y={262} w={470} h={470} delay={-30} label="ABHISHEK" labelColor={A_COL} seed={901} glow={`${A_COL}66`} glowOn={0.6} />
+    <CutoutFrame id="rahul-cutout" x={550} y={262} w={470} h={470} delay={-30} label="KL RAHUL" labelColor={R_COL} seed={902} />
     <Panel x={60} y={752} w={960} h={420} delay={-30} seed={903} glow={C.amberGlow} glowOn={0.8}>
       <div style={{ height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 18 }}>
         <Lettering size={130}>SAME RUNS.</Lettering>

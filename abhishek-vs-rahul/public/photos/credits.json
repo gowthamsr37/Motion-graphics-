@@ -1,20 +1,12 @@
 {
- "rahul-t20wc-2022.jpg": {
-  "title": "File:KL Rahul 2022.jpg",
-  "place": "KL RAHUL · T20 WORLD CUP · MCG · NOV 2022",
-  "artist": "Storm machine",
-  "license": "CC BY-SA 4.0",
-  "date": "2022-11-06",
-  "page": "https://commons.wikimedia.org/wiki/File:KL_Rahul_2022.jpg",
-  "description": "KL Rahil being interviewed at the MCG during the 2022 T20 World Cup"
+ "abhishek-cutout.png": {
+  "source": "supplied by the creator (photo of Abhishek Sharma holding an award, India T20I kit)",
+  "processing": "background removed with BiRefNet-lite (MIT); placed on the shared scoreboard backdrop",
+  "rights": "creator's responsibility"
  },
- "abhishek-t20wc-2026.jpg": {
-  "title": "Supplied by the creator",
-  "place": "ABHISHEK SHARMA · T20 WORLD CUP 2026",
-  "artist": "supplied",
-  "license": "supplied asset (creator's responsibility)",
-  "date": "",
-  "page": "",
-  "description": "Abhishek Sharma in India's T20 World Cup 2026 kit, supplied by the creator; bottom bar and on-screen icon cropped off."
+ "rahul-cutout.png": {
+  "source": "supplied by the creator (studio portrait of KL Rahul, India T20 kit)",
+  "processing": "background removed with BiRefNet-lite (MIT); placed on the shared scoreboard backdrop",
+  "rights": "creator's responsibility"
  }
 }

@@ -43,14 +43,14 @@ The Instagram caption is in [`CAPTION.md`](CAPTION.md).
 
 ## Photographs
 
-| File | Shows | Credit / licence | Used in |
-| --- | --- | --- | --- |
-| `abhishek-t20wc-2026.jpg` | Abhishek Sharma in India's T20 World Cup 2026 kit | **supplied by the creator**; the bottom bar and on-screen icon are cropped off | opening comparison, wicket-risk scene, verdict, cover |
-| `rahul-t20wc-2022.jpg` | KL Rahul in India's T20 kit, interviewed at the MCG during the 2022 T20 World Cup | Storm machine · CC BY-SA 4.0 · Wikimedia Commons | opening comparison, wicket-risk scene, verdict, cover |
+Both player photos were **supplied by the creator**. Each was cut out of its original background (Abhishek's stadium, Rahul's grey studio) with BiRefNet-lite (MIT licence, run locally). Both cutouts are then placed on **one identical scoreboard-style backdrop**: night-stadium green, an amber floodlight glow and the same light bokeh. `src/components/Cutout.tsx` scales the two players to the same shoulder width and headroom, so every pair of frames matches.
 
-- Wikimedia Commons has no freely licensed photo of Abhishek Sharma the cricketer, so his photo is the creator's supplied asset. Publishing rights for it rest with the creator.
-- The powerplay scene keeps the two matching scoreboard player plates (bat emblem, name, era).
-- Optional: genuine India T20I crowd and stadium photos from Sydney and Melbourne, February 2012 (neither player appears), could be added as captioned atmosphere.
+| File | Shows | Used in |
+| --- | --- | --- |
+| `abhishek-cutout.png` | Abhishek Sharma in India's T20I kit, holding an award | opening comparison, wicket-risk scene, verdict, cover |
+| `rahul-cutout.png` | KL Rahul in India's T20 kit (studio portrait) | opening comparison, wicket-risk scene, verdict, cover |
+
+On screen, each photo is credited "SUPPLIED PHOTO · BACKGROUND REPLACED". Publishing rights for both photos rest with the creator. The powerplay scene keeps the two matching scoreboard player plates.
 
 ## Audio, and its limits
 

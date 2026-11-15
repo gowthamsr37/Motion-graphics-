@@ -4,7 +4,7 @@ import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { rng } from "../components/Board";
 import { CLAMP } from "../components/Motion";
 import { Lamp, Lettering, Panel } from "../components/Panel";
-import { PhotoFrame } from "../components/Photo";
+import { CutoutFrame } from "../components/Cutout";
 import { SceneShell } from "../components/Pieces";
 import { Plates } from "../components/Plates";
 import { BallRace, BatEmblem, Gauge, PairRow, PhaseChart, Ring, RunsBallsChart, SimBoard, SixStrip, Tag } from "../components/Viz";
@@ -62,8 +62,8 @@ export const S1: React.FC = () => {
   const balls = useFlip(b.diff + 4, 3);
   return (
     <SceneShell push={0.025} turnIn={false}>
-      <PhotoFrame id="abhishek-t20wc-2026" x={60} y={226} w={470} h={380} delay={-6} warmth={0.85} focus="50% 9%" zoom={[1.0, 1.08]} life={500} label="ABHISHEK" labelColor={A_COL} compact seed={101} />
-      <PhotoFrame id="rahul-t20wc-2022" x={550} y={226} w={470} h={380} delay={0} warmth={0.85} focus="52% 30%" zoom={[1.25, 1.36]} life={500} label="KL RAHUL" labelColor={R_COL} compact seed={102} />
+      <CutoutFrame id="abhishek-cutout" x={60} y={226} w={470} h={380} delay={-6} label="ABHISHEK" labelColor={A_COL} seed={101} life={500} />
+      <CutoutFrame id="rahul-cutout" x={550} y={226} w={470} h={380} delay={0} label="KL RAHUL" labelColor={R_COL} seed={102} life={500} />
       {[
         { x: 60, name: "ABHISHEK", runs: String(A.runs), balls: String(A.balls), stop: b.aStop, col: A_COL, seed: 4 },
         { x: 550, name: "RAHUL", runs: String(R.runs), balls: String(R.balls), stop: b.rStop, col: R_COL, seed: 9 },
@@ -444,8 +444,8 @@ export const S7: React.FC = () => {
   );
   return (
     <SceneShell push={0.03}>
-      <PhotoFrame id="abhishek-t20wc-2026" x={60} y={226} w={470} h={300} delay={0} warmth={0.8} focus="50% 9%" zoom={[1.02, 1.1]} life={340} label="ABHISHEK" labelColor={A_COL} compact seed={701} />
-      <PhotoFrame id="rahul-t20wc-2022" x={550} y={226} w={470} h={300} delay={4} warmth={0.8} focus="50% 26%" zoom={[1.3, 1.4]} life={340} label="KL RAHUL" labelColor={R_COL} compact seed={702} />
+      <CutoutFrame id="abhishek-cutout" x={60} y={226} w={470} h={300} delay={0} label="ABHISHEK" labelColor={A_COL} seed={701} life={340} />
+      <CutoutFrame id="rahul-cutout" x={550} y={226} w={470} h={300} delay={4} label="KL RAHUL" labelColor={R_COL} seed={702} life={340} />
       <Panel x={60} y={542} w={960} h={540} delay={b.dismissed - 10} seed={703}>
         <div style={{ position: "absolute", left: 36, right: 36, top: 20, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <Lettering size={26} font="body" color={C.cream} spacing="0.2em">
@@ -595,8 +595,8 @@ export const S9: React.FC = () => {
   );
   return (
     <SceneShell push={0} pull={0.05} turnOut={false}>
-      <PhotoFrame id="abhishek-t20wc-2026" x={60} y={226} w={470} h={500} delay={0} closeAt={close} warmth={0.85} focus="50% 5%" zoom={[1.0, 1.08]} life={400} label="ABHISHEK" labelColor={A_COL} compact seed={901} glow={`${A_COL}55`} glowOn={interpolate(frame, [b.a, b.a + 10], [0, 0.6], CLAMP)} />
-      <PhotoFrame id="rahul-t20wc-2022" x={550} y={226} w={470} h={500} delay={4} closeAt={close} warmth={0.85} focus="50% 26%" zoom={[1.18, 1.28]} life={400} label="KL RAHUL" labelColor={R_COL} compact seed={902} />
+      <CutoutFrame id="abhishek-cutout" x={60} y={226} w={470} h={500} delay={0} closeAt={close} label="ABHISHEK" labelColor={A_COL} seed={901} glow={`${A_COL}55`} glowOn={interpolate(frame, [b.a, b.a + 10], [0, 0.6], CLAMP)} life={400} />
+      <CutoutFrame id="rahul-cutout" x={550} y={226} w={470} h={500} delay={4} closeAt={close} label="KL RAHUL" labelColor={R_COL} seed={902} life={400} />
       <Panel x={60} y={742} w={470} h={270} delay={b.a - 6} closeAt={close} seed={903} glow={`${A_COL}55`} glowOn={0.5}>
         <div style={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>{side(["ABHISHEK", "EXPLOSIVE SCORING", "HIGHER WICKET RISK"], A_COL, b.a)}</div>
       </Panel>
