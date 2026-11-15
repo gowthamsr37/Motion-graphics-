@@ -1,0 +1,303 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Hook",
+   "lead": 0.45,
+   "hold": 1.35,
+   "segments": [
+    {
+     "text": "Your height.",
+     "caption": "Your height,",
+     "pause": 0.6
+    },
+    {
+     "text": "Your city.",
+     "caption": "your city,",
+     "pause": 0.6
+    },
+    {
+     "text": "Your exam rank.",
+     "caption": "your exam rank…",
+     "pause": 0.85
+    },
+    {
+     "text": "They're all data.",
+     "caption": "They're ALL data.",
+     "pause": 0.5
+    },
+    {
+     "text": "But they're not the same type!",
+     "caption": "But they're not the same type!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "The big picture",
+   "lead": 0.45,
+   "hold": 0.5,
+   "segments": [
+    {
+     "text": "All data splits into two big families.",
+     "caption": "All data splits into two big families.",
+     "pause": 0.45
+    },
+    {
+     "text": "Numerical, or quantitative, is about quantities: things you count or measure.",
+     "caption": "Numerical, or quantitative, is about quantities: things you count or measure.",
+     "pause": 0.45
+    },
+    {
+     "text": "Categorical, or qualitative, is about labels: names and groups.",
+     "caption": "Categorical, or qualitative, is about labels: names and groups.",
+     "pause": 0.4
+    },
+    {
+     "text": "Let's open each one.",
+     "caption": "Let's open each one.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Numerical: discrete",
+   "lead": 0.55,
+   "hold": 0.6,
+   "segments": [
+    {
+     "text": "Numerical data comes in two types.",
+     "caption": "Numerical data comes in two types.",
+     "pause": 0.3
+    },
+    {
+     "text": "First: discrete.",
+     "caption": "First: discrete.",
+     "pause": 0.45
+    },
+    {
+     "text": "Count the students walking into class.",
+     "caption": "Count the students walking into class.",
+     "pause": 0.35
+    },
+    {
+     "text": "One.",
+     "caption": "One.",
+     "pause": 0.32
+    },
+    {
+     "text": "Two.",
+     "caption": "Two.",
+     "pause": 0.32
+    },
+    {
+     "text": "Three.",
+     "caption": "Three.",
+     "pause": 0.32
+    },
+    {
+     "text": "Four.",
+     "caption": "Four.",
+     "pause": 0.32
+    },
+    {
+     "text": "Five.",
+     "caption": "Five.",
+     "pause": 0.5
+    },
+    {
+     "text": "Discrete data is counted, usually in whole numbers.",
+     "caption": "Discrete data is counted, usually in whole numbers.",
+     "pause": 0.4
+    },
+    {
+     "text": "You can't have three and a half students!",
+     "caption": "You can't have 3.5 students!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Numerical: continuous",
+   "lead": 0.5,
+   "hold": 0.7,
+   "segments": [
+    {
+     "text": "Second: continuous.",
+     "caption": "Second: continuous.",
+     "pause": 0.4
+    },
+    {
+     "text": "A height glides smoothly, from one sixty-five to one sixty-five point eight.",
+     "caption": "A height glides smoothly, from 165 to 165.8.",
+     "pause": 0.4
+    },
+    {
+     "text": "Temperature rises the same way, with no gaps.",
+     "caption": "Temperature rises the same way, with no gaps.",
+     "pause": 0.4
+    },
+    {
+     "text": "Continuous data is measured.",
+     "caption": "Continuous data is measured.",
+     "pause": 0.3
+    },
+    {
+     "text": "It can take any value in a range, even if we round it off.",
+     "caption": "It can take any value in a range, even if we round it off.",
+     "pause": 0.5
+    },
+    {
+     "text": "Discrete jumps in steps.",
+     "caption": "Discrete jumps in steps.",
+     "pause": 0.35
+    },
+    {
+     "text": "Continuous flows.",
+     "caption": "Continuous flows.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Categorical: nominal",
+   "lead": 0.5,
+   "hold": 0.45,
+   "segments": [
+    {
+     "text": "Now, categorical data.",
+     "caption": "Now, categorical data.",
+     "pause": 0.35
+    },
+    {
+     "text": "First: nominal.",
+     "caption": "First: nominal.",
+     "pause": 0.4
+    },
+    {
+     "text": "Blood groups: A, B, AB, O.",
+     "caption": "Blood groups: A, B, AB, O.",
+     "pause": 0.4,
+     "fix": [
+      [
+       "ˈæb",
+       "ˈeɪ bˈiː"
+      ]
+     ]
+    },
+    {
+     "text": "Or cities: Bengaluru, Mumbai, Delhi.",
+     "caption": "Or cities: Bengaluru, Mumbai, Delhi.",
+     "pause": 0.45,
+     "fix": [
+      [
+       "bˈɛŋɡɐlˌʊɹɹuː",
+       "bˈɛŋɡəlˌuːɹuː"
+      ]
+     ]
+    },
+    {
+     "text": "Just names, with no natural ranking.",
+     "caption": "Just names, with no natural ranking.",
+     "pause": 0.35
+    },
+    {
+     "text": "Shuffle them, and nothing changes.",
+     "caption": "Shuffle them, and nothing changes.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Categorical: ordinal",
+   "lead": 0.45,
+   "hold": 0.9,
+   "segments": [
+    {
+     "text": "Second: ordinal.",
+     "caption": "Second: ordinal.",
+     "pause": 0.4
+    },
+    {
+     "text": "Rate your satisfaction: low, medium, high.",
+     "caption": "Rate your satisfaction: low, medium, high.",
+     "pause": 0.45
+    },
+    {
+     "text": "Now, order matters. Each level sits above the last.",
+     "caption": "Now, order matters. Each level sits above the last.",
+     "pause": 0.4
+    },
+    {
+     "text": "But the gaps between levels aren't measured, and may not be equal.",
+     "caption": "But the gaps between levels aren't measured, and may not be equal.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "The complete picture",
+   "lead": 0.45,
+   "hold": 1.3,
+   "segments": [
+    {
+     "text": "Here's the complete picture.",
+     "caption": "Here's the complete picture.",
+     "pause": 0.35
+    },
+    {
+     "text": "Numerical splits into discrete and continuous.",
+     "caption": "Numerical splits into discrete and continuous.",
+     "pause": 0.35
+    },
+    {
+     "text": "Categorical splits into nominal and ordinal.",
+     "caption": "Categorical splits into nominal and ordinal.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Quiz and call to action",
+   "lead": 0.35,
+   "hold": 2.3,
+   "segments": [
+    {
+     "text": "Quick quiz!",
+     "caption": "Quick quiz!",
+     "pause": 0.3
+    },
+    {
+     "text": "What type of data is a jersey number?",
+     "caption": "What type of data is a jersey number?",
+     "pause": 5.7
+    },
+    {
+     "text": "It's categorical. Nominal!",
+     "caption": "It's categorical. Nominal!",
+     "pause": 0.4
+    },
+    {
+     "text": "A jersey number is an identifier, not a quantity.",
+     "caption": "A jersey number is an identifier, not a quantity.",
+     "pause": 0.55
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.3
+    }
+   ]
+  }
+ ]
+}
