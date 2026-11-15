@@ -23,9 +23,9 @@ export const overBeats = (fps: number) => {
       wordAt(fps, "s5", "dot", 3.8), // 49.1 dot
       wordAt(fps, "s5", "wide", 5.4), // wide
       four, four + 16, four + 31, four + 45, // four singles, accelerating
-      s6 + wordAt(fps, "s6", "4", 1.76) - 10, // 49.6: bat on ball, just before the call of "FOUR!"
+      s6 + sentence(fps, "s6", 1).from - 9, // 49.6: bat on ball, in the pause just before the call of "FOUR!"
     ],
-    freeze: sentence(fps, "s5", 5).from - 2,
+    freeze: sentence(fps, "s5", 5).from - 10, // the hush settles just before "Now three needed…"
     charge: s6 + voStart(fps, "s6"),
     win: s6 + sentence(fps, "s6", 2).from,
     s6,

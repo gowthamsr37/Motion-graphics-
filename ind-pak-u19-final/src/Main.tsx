@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Audio, getInputProps, interpolate, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Backdrop, Blackout, Grain, Vignette } from "./components/Board";
 import { CLAMP } from "./components/Motion";
 import { Lettering } from "./components/Panel";
@@ -86,21 +86,21 @@ const SoundTrack: React.FC = () => {
       <Audio src={staticFile("audio/crowd-ambience.wav")} volume={crowd} />
       {voCues(fps).map((c) => (
         <Sequence key={c.id} from={c.from} layout="none">
-          <Audio src={staticFile(`vo/${c.id}.wav`)} volume={1} />
+          <Audio src={staticFile(`vo/${c.id}.wav`)} volume={getInputProps().noVo ? 0 : 1} />
         </Sequence>
       ))}
       {/* S1: rattling counters, a deep click on each number, the clock ticking louder, silence, rewind */}
-      <Sfx at={0} file="rattle-hook.wav" volume={0.38} />
+      <Sfx at={0} file="rattle-hook.wav" volume={0.2} />
       {[s1.runs, s1.ball, s1.wicket].map((t, i) => (
-        <Sfx key={`s1c${i}`} at={t} file="clunk.wav" volume={0.85} />
+        <Sfx key={`s1c${i}`} at={t} file="clunk.wav" volume={0.38} />
       ))}
       {s1Ticks.map((t, i) => (
         <Sfx key={`s1t${i}`} at={t} file={i % 2 ? "tock.wav" : "tick.wav"} volume={0.12 + 0.3 * (t / s1.rewind)} />
       ))}
       <Sfx at={at("s1", s1.rewind)} file="rewind.wav" volume={0.55} />
       {/* S2 */}
-      <Sfx at={at("s2", 10)} file="rattle-count.wav" volume={0.32} />
-      <Sfx at={at("s2", s2.total)} file="clunk.wav" volume={0.6} />
+      <Sfx at={at("s2", 10)} file="rattle-count.wav" volume={0.18} />
+      <Sfx at={at("s2", s2.total)} file="clunk.wav" volume={0.5} />
       <Sfx at={at("s2", sentence(fps, "s2", 1).from - 10)} file="slide.wav" volume={0.14} />
       <Sfx at={at("s2", sentence(fps, "s2", 1).to + 2)} file="boom.wav" volume={0.55} />
       {[0, 1, 2].map((i) => (
@@ -108,17 +108,17 @@ const SoundTrack: React.FC = () => {
       ))}
       {/* S3: eight wicket clicks, a deep impact at 252/8 */}
       {Array.from({ length: 8 }).map((_, i) => (
-        <Sfx key={`w${i}`} at={at("s3", s3.collapse + 4 + i * 3)} file="click-low.wav" volume={0.42} />
+        <Sfx key={`w${i}`} at={at("s3", s3.collapse + 4 + i * 3)} file="click-low.wav" volume={0.26} />
       ))}
-      <Sfx at={at("s3", s3.at252 + 2)} file="boom.wav" volume={0.5} />
+      <Sfx at={at("s3", sentence(fps, "s3", 2).to + 2)} file="boom.wav" volume={0.5} />
       <Sfx at={at("s3", s3.need - 8)} file="slide.wav" volume={0.18} />
       {/* S4 */}
       <Sfx at={at("s4", s4.ulva - 10)} file="slide.wav" volume={0.18} />
-      <Sfx at={at("s4", s4.fell + 2)} file="click-low.wav" volume={0.55} />
+      <Sfx at={at("s4", s4.fell + 2)} file="click-low.wav" volume={0.4} />
       {/* S5–S6: every delivery clicks; the freeze; bat on ball; the roar */}
       {ov.rows.slice(1, 7).map((t, i) => (
         // the first two flips wait until the narrator has finished "dot!" / "a wide…"
-        <Sfx key={`d${i}`} at={at("s5", i < 2 ? sentence(fps, "s5", 2 + i).to + 2 : t + 6)} file="flip.wav" volume={0.42 + i * 0.04} />
+        <Sfx key={`d${i}`} at={at("s5", i < 2 ? sentence(fps, "s5", 2 + i).to + 2 : t + 6)} file="flip.wav" volume={i < 2 ? 0.42 + i * 0.04 : 0.3} />
       ))}
       <Sfx at={at("s5", ov.freeze)} file="clunk.wav" volume={0.7} />
       <Sfx at={at("s5", ov.rows[7] - 2)} file="bat.wav" volume={0.9} />

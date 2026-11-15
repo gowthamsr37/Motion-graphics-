@@ -91,7 +91,8 @@ export const S1: React.FC = () => {
   );
 };
 
-export const s2Beats = (fps: number) => ({ total: wordAt(fps, "s2", "337", 1.12), target: wordAt(fps, "s2", "338", 3.88) });
+// the count lands as the narrator finishes saying "337"
+export const s2Beats = (fps: number) => ({ total: sentence(fps, "s2", 0).to, target: wordAt(fps, "s2", "338", 3.88) });
 
 // ---------------- SCENE 2 — PAKISTAN SET THE CHALLENGE ----------------
 export const S2: React.FC = () => {

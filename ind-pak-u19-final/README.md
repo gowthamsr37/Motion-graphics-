@@ -53,7 +53,9 @@ The Instagram caption is in [`CAPTION.md`](CAPTION.md).
   - The voice is not modelled on any real commentator.
 - **Music, crowd and SFX:** all original, synthesized in `scripts/gen-audio.mjs` (strings, piano, timpani, brass, heartbeat, ticking, flips, bat on ball, crowd roar). No samples, no licensed tracks.
 - **Mix:** music and crowd duck under every line, and the effects are placed off the spoken words.
+  - The final-ball crack lands in the pause before "FOUR!", and the roar swells after "INDIA WIN".
   - Every narration line was checked by speech-to-text on the final mix.
+  - To audition the bed without the voice: `npx remotion render out/bundle LastBallMiracle out/bed.wav --codec wav --props '{"noVo":true}'`.
 - **No match photos or footage are used.** The Reel is pure scoreboard graphics; nothing from the broadcast is recreated.
 
 ## Project layout

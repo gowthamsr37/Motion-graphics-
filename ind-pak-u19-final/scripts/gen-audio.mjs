@@ -33,14 +33,14 @@ const four0 = word("s5", "four", 6.7) + f(15);
 const ev = {
   runs: word("s1", "runs", 0.24), ball: word("s1", "ball", 1.66), wicket: word("s1", "wick", 3.0),
   rewind: (fromF("s1") + durF("s1") - Math.round(FPS * 0.6)) / FPS,
-  total: word("s2", "337", 1.12), target: sentEnd("s2", 1) + f(2), // impact after "…338", never on it
+  total: sentEnd("s2", 0), target: sentEnd("s2", 1) + f(2), // impact after "…338", never on it
   collapse: sent("s3", 2), at252: word("s3", "252", 5.04),
   stand: sent("s4", 1), fell: word("s4", "fell", 6.5),
   dot: word("s5", "dot", 3.8), wide: word("s5", "wide", 5.4),
   singles: [four0, four0 + f(16), four0 + f(31), four0 + f(45)],
-  freeze: sent("s5", 5) - f(2),
+  freeze: sent("s5", 5) - f(10),
   // bat on ball lands in the silence just before the narrator's "FOUR!"
-  hit: (fromF("s6") + voF("s6") + Math.round((sc("s6").vo.words.find((x) => norm(x.w) === "4")?.s ?? 1.76) * FPS) - 10) / FPS,
+  hit: sent("s6", 1) - f(9),
   brand: sent("s7", 2) - f(4),
 };
 
@@ -219,7 +219,7 @@ brassHit(ML, MR, ev.hit, ch("D3", "F#3", "A3", "D4", "F#4"), 0.7, 1.8);
 timpani(ML, MR, ev.hit, n("D2"), 1.0);
 crash(ML, MR, ev.hit, 0.24);
 strings(ML, MR, ev.hit, E("s6") - ev.hit + 0.6, ch("D3", "F#3", "A3", "D4", "F#4"), 0.6, 0.15, 1.0, 0.11);
-for (let t = ev.hit + 0.35; t < E("s6") - 0.2; t += 0.25) piano(ML, MR, t, n(["D5", "A4", "F#4", "A4"][Math.round((t - ev.hit) / 0.25) % 4]), 0.12, 0.3, 1.0);
+for (let t = ev.hit + 0.35; t < E("s6") - 0.2; t += 0.25) piano(ML, MR, t, n(["D5", "A4", "F#4", "A4"][Math.round((t - ev.hit) / 0.25) % 4]), 0.09, 0.3, 1.0);
 // S7 — warm conclusion.
 const s7len = (ev.brand - S("s7")) / 3;
 [D, A.map((x) => x), Bm].forEach((c, i) => strings(ML, MR, S("s7") + i * s7len, s7len + 0.2, c, 0.5, i === 0 ? 0.5 : 0.4, 0.6, 0.075));
