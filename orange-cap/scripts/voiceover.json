@@ -1,0 +1,100 @@
+{
+  "voice": "am_michael",
+  "speed": 1.15,
+  "lines": [
+    {
+      "id": "hook",
+      "text": "Nineteen Orange Caps. Only fifteen players. Here they are."
+    },
+    {
+      "id": "2008",
+      "text": "Two thousand eight. Shaun Marsh. Six hundred and sixteen runs."
+    },
+    {
+      "id": "2009",
+      "text": "Matthew Hayden. Five seventy-two."
+    },
+    {
+      "id": "2010",
+      "text": "Sachin Tendulkar. Six eighteen."
+    },
+    {
+      "id": "2011",
+      "text": "Chris Gayle. Six oh eight."
+    },
+    {
+      "id": "2012",
+      "text": "Gayle again! Seven thirty-three."
+    },
+    {
+      "id": "2013",
+      "text": "Michael Hussey. Seven thirty-three, too."
+    },
+    {
+      "id": "2014",
+      "text": "Robin Uthappa. Six sixty.",
+      "phonemes": "ɹˈɑːbɪn ʊtˈʌpə. sˈɪks sˈɪksti."
+    },
+    {
+      "id": "2015",
+      "text": "David Warner. Five sixty-two."
+    },
+    {
+      "id": "2016",
+      "text": "Virat Kohli. Nine seventy-three. Still the record!",
+      "phonemes": "vɪɹˈɑːt kˈoʊli. nˈaɪn sˈɛvəntiθɹˈiː. stˈɪl ðə ɹˈɛkɚd!"
+    },
+    {
+      "id": "2017",
+      "text": "Warner again. Six forty-one."
+    },
+    {
+      "id": "2018",
+      "text": "Kane Williamson. Seven thirty-five."
+    },
+    {
+      "id": "2019",
+      "text": "Warner. A record third time!"
+    },
+    {
+      "id": "2020",
+      "text": "K L Rahul. Six seventy."
+    },
+    {
+      "id": "2021",
+      "text": "Ruturaj Gaikwad. Six thirty-five.",
+      "phonemes": "ɹˈuːtuːɹɑːdʒ ɡˈaɪkwɑːd. sˈɪks θˈɜːɾifˈaɪv."
+    },
+    {
+      "id": "2022",
+      "text": "Jos Buttler. Eight sixty-three."
+    },
+    {
+      "id": "2023",
+      "text": "Shubman Gill. Eight ninety."
+    },
+    {
+      "id": "2024",
+      "text": "Virat Kohli, again! Seven forty-one.",
+      "phonemes": "vɪɹˈɑːt kˈoʊli, ɐɡˈɛn! sˈɛvən fˈɔːɹɾiwˌʌn."
+    },
+    {
+      "id": "2025",
+      "text": "Sai Sudharsan. Seven fifty-nine.",
+      "phonemes": "sˈaɪ sˈʊdɑːɹsən. sˈɛvən fˈɪftinˈaɪn."
+    },
+    {
+      "id": "2026",
+      "text": "And Vaibhav Sooryavanshi. Fifteen years old. Seven seventy-six!",
+      "phonemes": "ænd vˈaɪbhɑːv sˌuːɹjəvˈɑːnʃi. fˈɪftiːn jˈɪɹz ˈoʊld. sˈɛvən sˈɛvəntisˈɪks!"
+    },
+    {
+      "id": "tally",
+      "text": "Sunrisers and R C B lead the way, with four each."
+    },
+    {
+      "id": "outro",
+      "text": "Who wears it in twenty twenty-seven? Comment below."
+    }
+  ]
+}
