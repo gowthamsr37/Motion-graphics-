@@ -123,7 +123,7 @@ export const S2: React.FC = () => {
   };
   return (
     <SceneShell push={0.035}>
-      <PhotoFrame id="kohli-june-2016" x={60} y={226} w={440} h={600} delay={0} closeAt={b.board - 6} warmth={1} focus="50% 0%" origin="52% 4%" zoom={[2.0, 2.12]} life={300} label="2016" compact seed={201} />
+      <PhotoFrame id="kohli-june-2016" x={60} y={226} w={440} h={600} delay={0} closeAt={b.board - 6} warmth={1} focus="50% 0%" origin="52% 3%" zoom={[2.65, 2.75]} life={300} label="2016" compact seed={201} />
       <Panel x={516} y={226} w={504} h={600} delay={4} closeAt={b.board - 6} seed={202} glow={C.amberGlow} glowOn={interpolate(frame, [b.runsTo - 4, b.runsTo + 6], [0, 0.7], CLAMP)}>
         <div style={{ position: "absolute", top: 34, width: "100%", textAlign: "center" }}>
           <Lettering size={24} font="body" color={RCB_RED} spacing="0.3em">
@@ -554,7 +554,7 @@ export const S8: React.FC = () => {
   };
   return (
     <SceneShell push={0} pull={0.05} turnOut={false}>
-      <PhotoFrame id="kohli-june-2016" x={60} y={226} w={440} h={640} delay={0} closeAt={b.linesAt - 6} warmth={1} focus="50% 0%" origin="52% 4%" zoom={[2.05, 2.16]} life={260} label="2016" compact seed={801} glow={C.amberGlow} glowOn={0.5} />
+      <PhotoFrame id="kohli-june-2016" x={60} y={226} w={440} h={640} delay={0} closeAt={b.linesAt - 6} warmth={1} focus="50% 0%" origin="52% 3%" zoom={[2.9, 3.0]} life={260} label="2016" compact seed={801} glow={C.amberGlow} glowOn={0.5} />
       <Panel x={516} y={226} w={504} h={640} delay={4} closeAt={b.linesAt - 6} seed={802} glow={C.amberGlow} glowOn={0.6}>
         <div style={{ position: "absolute", top: 36, width: "100%", textAlign: "center" }}>
           <Lettering size={24} font="body" color={RCB_RED} spacing="0.3em">
