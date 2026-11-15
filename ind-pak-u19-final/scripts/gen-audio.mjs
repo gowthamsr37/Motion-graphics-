@@ -41,7 +41,7 @@ const ev = {
   freeze: sent("s5", 5) - f(10),
   // bat on ball lands in the silence just before the narrator's "FOUR!"
   hit: sent("s6", 1) - f(9),
-  brand: sent("s7", 2) - f(4),
+  brand: sent("s7", 3) - f(4),
 };
 
 // ---------- dsp utils ----------

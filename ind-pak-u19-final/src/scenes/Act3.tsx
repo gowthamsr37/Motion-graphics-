@@ -248,8 +248,8 @@ export const FinalOver: React.FC = () => {
 export const s7Beats = (fps: number) => ({
   ulva: voStart(fps, "s7"),
   title: sentence(fps, "s7", 1).from,
-  heroes: sentence(fps, "s7", 1).from - 10,
-  brand: sentence(fps, "s7", 2).from - 4,
+  heroes: sentence(fps, "s7", 2).from - 6, // arrives with its own spoken line
+  brand: sentence(fps, "s7", 3).from - 4,
 });
 
 // ---------------- SCENE 7 — THE LEGACY ----------------

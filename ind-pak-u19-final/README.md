@@ -1,6 +1,6 @@
 # Beyond The Scoreboard — India vs Pakistan: The Last-Ball Miracle (U19 Asia Cup Final, 14 Nov 2026)
 
-A 58.3-second Instagram Reel: 1080×1920, 30 fps, H.264 with AAC 48 kHz stereo, mastered to −14 LUFS with a −1.5 dBTP ceiling.
+A 68.8-second Instagram Reel: 1080×1920, 30 fps, H.264 with AAC 48 kHz stereo, mastered to −14 LUFS with a −1.5 dBTP ceiling.
 It is built in Remotion on the same Adelaide-style scoreboard system as the earlier Beyond The Scoreboard reels.
 The hook "3 RUNS. 1 BALL. 1 WICKET." is on screen and spoken within the first 2 seconds.
 
@@ -18,12 +18,12 @@ The Instagram caption is in [`CAPTION.md`](CAPTION.md).
 
 | # | Time | Scene |
 | --- | --- | --- |
-| 1 | 0.0–7.1 s | Hook: three counters spin and stop on 3 RUNS / 1 BALL / 1 WICKET, then the board rewinds |
-| 2 | 7.1–13.5 s | Pakistan 337/9 (Usman Khan 107, Abdul Qadir 80, Farhan Yousaf 60); INDIA TARGET 338 |
-| 3 | 13.5–21.2 s | The chase: Sehwag 58, Lakshya 80, then eight wicket lamps and 252/8 |
-| 4 | 21.2–30.4 s | Graph A milestone rail; BATTING AT NO. 10 MOHIT ULVA; 57-run ninth-wicket stand with Manal Chauhan; 309/9; ONE WICKET REMAINING |
-| 5–6 | 30.4–51.0 s | Graph B, the final over, ball by ball: 8 off 6 → dot → wide → four singles → 3 off 1 → freeze → FOUR → INDIA WIN |
-| 7 | 51.0–58.3 s | Champions board: 9th U19 Asia Cup title, MOHIT ULVA 49* (26), "Heroes are not always at the top of the scorecard." |
+| 1 | 0.0–7.3 s | Hook: three counters spin and stop on 3 RUNS / 1 BALL / 1 WICKET, then the board rewinds |
+| 2 | 7.3–14.2 s | Pakistan 337/9 (Usman Khan 107, Abdul Qadir 80, Farhan Yousaf 60); INDIA TARGET 338 |
+| 3 | 14.2–22.8 s | The chase: Sehwag 58, Lakshya 80, then eight wicket lamps and 252/8 |
+| 4 | 22.8–33.3 s | Graph A milestone rail; BATTING AT NO. 10 MOHIT ULVA; 57-run ninth-wicket stand with Manal Chauhan; 309/9; ONE WICKET REMAINING |
+| 5–6 | 33.3–56.6 s | Graph B, the final over, ball by ball: 8 off 6 → dot → wide → four singles → 3 off 1 → freeze → FOUR → INDIA WIN |
+| 7 | 56.6–68.8 s | Champions board: 9th U19 Asia Cup title, MOHIT ULVA 49* (26), "Heroes are not always at the top of the scorecard." (spoken), brand lockup |
 
 ## Facts used, and where they come from
 
@@ -48,7 +48,7 @@ The Instagram caption is in [`CAPTION.md`](CAPTION.md).
 
 ## Audio, and its limits
 
-- **Narration:** Kokoro TTS with the `am_michael` voice (the same narrator as the Kohli reels, as requested). It is a US-English voice, not Indian English; ElevenLabs and Azure were not available in this environment.
+- **Narration:** Kokoro TTS with the `am_michael` voice at its natural 1.0× pace, with real pauses between lines (the same narrator as the Kohli reels, as requested). It is a US-English voice, not Indian English; ElevenLabs and Azure were not available in this environment.
   - Player names use hand-written phonemes (Sehwag, Lakshya, Mohit Ulva, Manal Chauhan).
   - The voice is not modelled on any real commentator.
 - **Music, crowd and SFX:** all original, synthesized in `scripts/gen-audio.mjs` (strings, piano, timpani, brass, heartbeat, ticking, flips, bat on ball, crowd roar). No samples, no licensed tracks.
