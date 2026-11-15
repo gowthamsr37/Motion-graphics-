@@ -1,0 +1,230 @@
+{
+  "voice": "am_michael",
+  "lang": "en-us",
+  "speed": 1.0,
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "In twenty eighteen, Virat Kohli scored one hundred and forty-nine in his very first Test innings in England.",
+          "caption": "In 2018, Virat Kohli scored 149 in his very first Test innings in England.",
+          "pause": 0.7,
+          "phonemes": "ɪn twˈɛnti ˈeɪtiːn, vɪɹˈɑːt kˈoʊli skˈɔːɹd wˈʌn hˈʌndɹɪd ænd fˈɔːɹtinˈaɪn ɪn hɪz vˈɛɹi fˈɜːst tˈɛst ˈɪnɪŋz ɪn ˈɪŋɡlənd."
+        },
+        {
+          "text": "Four years earlier, he'd made just one hundred and thirty-four in an entire five-Test series.",
+          "caption": "Four years earlier, he'd made just 134 in an entire five-Test series.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.45,
+      "hold": 0.75,
+      "segments": [
+        {
+          "text": "Five Tests.",
+          "caption": "Five Tests.",
+          "pause": 0.35
+        },
+        {
+          "text": "Ten innings.",
+          "caption": "Ten innings.",
+          "pause": 0.4
+        },
+        {
+          "text": "An average of thirteen point four.",
+          "caption": "An average of 13.4.",
+          "pause": 0.5
+        },
+        {
+          "text": "Two ducks.",
+          "caption": "Two ducks.",
+          "pause": 0.45
+        },
+        {
+          "text": "Not a single fifty.",
+          "caption": "Not a single fifty.",
+          "pause": 0.6
+        },
+        {
+          "text": "His highest score?",
+          "caption": "His highest score?",
+          "pause": 0.45
+        },
+        {
+          "text": "Just thirty-nine.",
+          "caption": "Just 39.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.45,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "At Trent Bridge, one and eight.",
+          "caption": "At Trent Bridge, 1 and 8.",
+          "pause": 0.55,
+          "phonemes": "æt tɹˈɛnt bɹˈɪdʒ, wˈʌn ˈænd ˈeɪt."
+        },
+        {
+          "text": "At Lord's, twenty-five and a duck.",
+          "caption": "At Lord's, 25 and a duck.",
+          "pause": 0.55,
+          "phonemes": "æt lˈɔːɹdz, twˈɛntifˈaɪv ˈænd ɐ dˈʌk."
+        },
+        {
+          "text": "Another duck at Old Trafford.",
+          "caption": "Another duck at Old Trafford.",
+          "pause": 0.65
+        },
+        {
+          "text": "Ten innings, and not a single fifty.",
+          "caption": "Ten innings, and not a single fifty.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.45,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "James Anderson dismissed him four times.",
+          "caption": "James Anderson dismissed him four times.",
+          "pause": 0.55
+        },
+        {
+          "text": "The moving ball outside off stump kept tempting the edge.",
+          "caption": "The moving ball outside off stump kept tempting the edge.",
+          "pause": 0.6,
+          "phonemes": "ðə mˈuːvɪŋ bˈɔːl aʊtsˈaɪd ˈɔːf stˈʌmp kˈɛpt tˈɛmptɪŋ ðɪ ˈɛdʒ."
+        },
+        {
+          "text": "England had found a weakness.",
+          "caption": "England had found a weakness.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.6,
+      "hold": 0.85,
+      "segments": [
+        {
+          "text": "Four years later, Kohli returned.",
+          "caption": "Four years later, Kohli returned.",
+          "pause": 0.65
+        },
+        {
+          "text": "He was more patient, leaving the ball better and waiting for the right deliveries.",
+          "caption": "He was more patient, leaving the ball better and waiting for the right deliveries.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.45,
+      "hold": 1.4,
+      "segments": [
+        {
+          "text": "Then came Edgbaston.",
+          "caption": "Then came Edgbaston.",
+          "pause": 0.6,
+          "phonemes": "ðˈɛn kˈeɪm ˈɛdʒbəstən."
+        },
+        {
+          "text": "First Test, first innings:",
+          "caption": "First Test, first innings:",
+          "pause": 0.45,
+          "phonemes": "fˈɜːst tˈɛst, fˈɜːst ˈɪnɪŋz:"
+        },
+        {
+          "text": "one hundred and forty-nine.",
+          "caption": "149.",
+          "pause": 1.1
+        },
+        {
+          "text": "Fifteen runs more than the whole of twenty fourteen.",
+          "caption": "Fifteen runs more than the whole of 2014.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "By the end of twenty eighteen, he'd scored five hundred and ninety-three runs.",
+          "caption": "By the end of 2018, he'd scored 593 runs.",
+          "pause": 0.55
+        },
+        {
+          "text": "Average fifty-nine point three.",
+          "caption": "Average 59.3.",
+          "pause": 0.5
+        },
+        {
+          "text": "Two centuries.",
+          "caption": "Two centuries.",
+          "pause": 0.6
+        },
+        {
+          "text": "And Anderson hadn't dismissed him once.",
+          "caption": "And Anderson hadn't dismissed him once.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "lead": 0.5,
+      "hold": 1.8,
+      "segments": [
+        {
+          "text": "India still lost the series, four-one.",
+          "caption": "India still lost the series, 4–1.",
+          "pause": 0.7,
+          "phonemes": "ˈɪndiə stˈɪl lˈɔst ðə sˈɪɹiz, fˈɔːɹ wˈʌn."
+        },
+        {
+          "text": "But Kohli had transformed his own story.",
+          "caption": "But Kohli had transformed his own story.",
+          "pause": 0.9
+        },
+        {
+          "text": "Same country.",
+          "caption": "Same country.",
+          "pause": 0.45
+        },
+        {
+          "text": "Same challenge.",
+          "caption": "Same challenge.",
+          "pause": 0.45
+        },
+        {
+          "text": "A different batter.",
+          "caption": "A different batter.",
+          "pause": 1.0
+        },
+        {
+          "text": "Beyond The Scoreboard.",
+          "caption": "Beyond The Scoreboard.",
+          "pause": 0.25
+        }
+      ]
+    }
+  ]
+}
