@@ -1,13 +1,14 @@
 import React from "react";
-import { AbsoluteFill, Audio, Sequence, staticFile, useVideoConfig } from "remotion";
+import { AbsoluteFill, Audio, interpolate, Sequence, staticFile, useVideoConfig } from "remotion";
 import { Backdrop, FadeOut, Grade, Grain, Vignette } from "./components/Layers";
-import { seasons } from "./data";
-import { Intro, INTRO_TITLE_DELAY } from "./scenes/Intro";
-import { Outro } from "./scenes/Outro";
+import { CLAMP } from "./components/Motion";
+import { champions } from "./data";
+import { Hook, hookBeats } from "./scenes/Hook";
+import { Outro, outroBeats } from "./scenes/Outro";
 import { SeasonsSection } from "./scenes/Seasons";
-import { CALLOUT_DELAY, Tally, tallyLandings } from "./scenes/Tally";
+import { calloutDelay, Tally, tallyLandings } from "./scenes/Tally";
 import { theme } from "./theme";
-import { framesPerBar, sections } from "./timing";
+import { seasonSlots, sections, voCues } from "./timing";
 
 const Sfx: React.FC<{ at: number; file: string; volume: number }> = ({ at, file, volume }) => (
   <Sequence from={Math.max(0, Math.round(at))} layout="none">
@@ -15,41 +16,77 @@ const Sfx: React.FC<{ at: number; file: string; volume: number }> = ({ at, file,
   </Sequence>
 );
 
-// SFX start 2–3 frames BEFORE the visual lands; that reads as in sync.
+const MUSIC = { open: 0.5, ducked: 0.2 };
+
+// Music dips under the voice (eased, never a hard step).
+const useMusicVolume = () => {
+  const { fps } = useVideoConfig();
+  const cues = voCues(fps);
+  const ramp = Math.round(fps / 6);
+  return (f: number) => {
+    let duck = 0;
+    for (const c of cues) {
+      const a = c.from - 2;
+      const b = c.from + c.duration + 4;
+      if (f < a - ramp || f > b + ramp) continue;
+      duck = Math.max(duck, interpolate(f, [a - ramp, a, b, b + ramp], [0, 1, 1, 0], { easing: theme.ease.inOut, ...CLAMP }));
+    }
+    return interpolate(duck, [0, 1], [MUSIC.open, MUSIC.ducked]);
+  };
+};
+
 const SoundTrack: React.FC = () => {
   const { fps } = useVideoConfig();
   const s = sections(fps);
-  const bar = framesPerBar(fps);
-  const lead = 3;
+  const slots = seasonSlots(fps);
+  const hook = hookBeats(fps);
+  const outro = outroBeats(fps);
+  const musicVolume = useMusicVolume();
   return (
     <>
-      <Audio src={staticFile("audio/track.wav")} volume={0.78} />
-      <Sfx at={s.intro.from} file="impact.wav" volume={0.75} />
-      <Sfx at={s.intro.from + INTRO_TITLE_DELAY - lead} file="whoosh.wav" volume={0.35} />
-      {seasons.map((_, i) => (
-        <Sfx key={i} at={s.seasons.from + i * bar - lead} file="whoosh.wav" volume={0.42} />
+      <Audio src={staticFile("audio/track.wav")} volume={musicVolume} />
+      {voCues(fps).map((c) => (
+        <Sequence key={c.id} from={c.from} layout="none">
+          <Audio src={staticFile(`vo/${c.id}.wav`)} volume={1} />
+        </Sequence>
       ))}
-      <Sfx at={s.tally.from} file="impact.wav" volume={0.6} />
+      {/* hook */}
+      <Sfx at={s.hook.from} file="impact.wav" volume={0.7} />
+      <Sfx at={s.hook.from + hook.eight - 1} file="clack.wav" volume={0.55} />
+      {champions.map((_, i) => (
+        <Sfx key={`l${i}`} at={s.hook.from + hook.logos + i * 3 + 2} file="tick.wav" volume={0.22} />
+      ))}
+      {/* seasons: the number plates clack over on every cut */}
+      {slots.map((slot, i) => (
+        <React.Fragment key={slot.year}>
+          <Sfx at={s.seasons.from + slot.from - 3} file="whoosh.wav" volume={0.22} />
+          {i > 0 && <Sfx at={s.seasons.from + slot.from + 1} file="clack.wav" volume={0.45} />}
+        </React.Fragment>
+      ))}
+      {/* tally */}
+      <Sfx at={s.tally.from} file="impact.wav" volume={0.55} />
       {tallyLandings().map((d, i) => (
-        <Sfx key={`t${i}`} at={s.tally.from + d - 2} file="tick.wav" volume={0.3} />
+        <Sfx key={`t${i}`} at={s.tally.from + d - 2} file="tick.wav" volume={0.26} />
       ))}
-      <Sfx at={s.tally.from + CALLOUT_DELAY - lead} file="shimmer.wav" volume={0.3} />
-      <Sfx at={s.outro.from} file="impact.wav" volume={0.75} />
-      <Sfx at={s.outro.from + 4} file="shimmer.wav" volume={0.45} />
+      <Sfx at={s.tally.from + calloutDelay(fps) - 2} file="shimmer.wav" volume={0.25} />
+      {/* outro */}
+      <Sfx at={s.outro.from} file="impact.wav" volume={0.65} />
+      <Sfx at={s.outro.from + outro.year + 1} file="clack.wav" volume={0.5} />
+      <Sfx at={s.outro.from + outro.year + 4} file="shimmer.wav" volume={0.4} />
     </>
   );
 };
 
-export const IPLChampions: React.FC = () => {
+export const IPLChampionsReel: React.FC = () => {
   const { fps } = useVideoConfig();
   const s = sections(fps);
   return (
-    <AbsoluteFill style={{ background: theme.colors.bg, fontFamily: theme.fonts.body }}>
-      {/* 1. background mesh */}
+    <AbsoluteFill style={{ background: theme.colors.board, fontFamily: theme.fonts.body }}>
+      {/* 1. board + glow */}
       <Backdrop />
-      {/* 2–3. assets + graphics/type, per section */}
-      <Sequence from={s.intro.from} durationInFrames={s.intro.duration} name="Intro">
-        <Intro />
+      {/* 2–3. assets + graphics/type */}
+      <Sequence from={s.hook.from} durationInFrames={s.hook.duration} name="Hook">
+        <Hook />
       </Sequence>
       <Sequence from={s.seasons.from} durationInFrames={s.seasons.duration} name="Seasons">
         <SeasonsSection />

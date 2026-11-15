@@ -1,0 +1,98 @@
+{
+  "voice": "am_michael",
+  "speed": 1.15,
+  "lines": [
+    {
+      "id": "hook",
+      "text": "Nineteen seasons. Only eight champions. Here's every one."
+    },
+    {
+      "id": "2008",
+      "text": "Two thousand eight. Rajasthan Royals. The first-ever champions."
+    },
+    {
+      "id": "2009",
+      "text": "Deccan Chargers, in South Africa."
+    },
+    {
+      "id": "2010",
+      "text": "Chennai Super Kings."
+    },
+    {
+      "id": "2011",
+      "text": "Chennai again. Back to back."
+    },
+    {
+      "id": "2012",
+      "text": "Kolkata Knight Riders.",
+      "lang": "en-gb"
+    },
+    {
+      "id": "2013",
+      "text": "Mumbai Indians. Their first."
+    },
+    {
+      "id": "2014",
+      "text": "Kolkata, again.",
+      "lang": "en-gb"
+    },
+    {
+      "id": "2015",
+      "text": "Mumbai."
+    },
+    {
+      "id": "2016",
+      "text": "Sunrisers, Hyderabad."
+    },
+    {
+      "id": "2017",
+      "text": "Mumbai, by one run."
+    },
+    {
+      "id": "2018",
+      "text": "Chennai, back from a ban."
+    },
+    {
+      "id": "2019",
+      "text": "Mumbai. By one run, again!"
+    },
+    {
+      "id": "2020",
+      "text": "Mumbai. Back to back."
+    },
+    {
+      "id": "2021",
+      "text": "Chennai."
+    },
+    {
+      "id": "2022",
+      "text": "Gujarat Titans, in their debut season!",
+      "phonemes": "ɡˈʊdʒəɹɑːt tˈaɪtənz, ɪn ðɛɹ deɪbjˈuː sˈiːzən!"
+    },
+    {
+      "id": "2023",
+      "text": "Chennai. Title number five."
+    },
+    {
+      "id": "2024",
+      "text": "Kolkata Knight Riders.",
+      "lang": "en-gb"
+    },
+    {
+      "id": "2025",
+      "text": "Eighteen seasons in... R C B. Finally!"
+    },
+    {
+      "id": "2026",
+      "text": "And R C B, again. Back to back!"
+    },
+    {
+      "id": "tally",
+      "text": "Mumbai and Chennai lead the way, with five titles each."
+    },
+    {
+      "id": "outro",
+      "text": "Who lifts it in twenty twenty-seven? Comment below."
+    }
+  ]
+}

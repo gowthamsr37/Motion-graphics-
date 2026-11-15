@@ -1,36 +1,55 @@
-# IPL Champions 2008–2026
+# IPL Champions 2008–2026 — Instagram Reel
 
-A 54-second motion-graphics explainer of every Indian Premier League winner, built with
-[Remotion](https://remotion.dev) using the `remotion-motion-graphics` skill.
+A 60-second vertical (1080×1920) Reel of every IPL winner, built with [Remotion](https://remotion.dev)
+using the `remotion-motion-graphics` skill.
 
-1920×1080 · 30 fps · cut to a synthesized 120 BPM track (one bar = one season).
+- **Look:** the heritage Adelaide Oval scoreboard — black boards, yellow number plates that flip over,
+  white names. Type is League Gothic + Oswald (free revivals of the condensed gothic the board is painted in).
+- **Logos:** official franchise logos (`public/logos/`, from Wikipedia).
+- **Voice:** a natural-sounding voiceover generated locally with [Kokoro](https://huggingface.co/hexgrad/Kokoro-82M) (voice `am_michael`).
+- **Sound:** synthesized 120 BPM track + SFX; every cut lands on a beat; music ducks under the voice;
+  mastered to −14 LUFS.
 
-| Section | Length | What happens |
-|---|---|---|
-| Intro | 4s | Trophy + sunburst, "IPL CHAMPIONS" title |
-| Seasons | 38s | One beat per season: year odometer, winner badge, runner-up, captain, a fact chip; the timeline at the bottom fills with each winner's color |
-| Tally | 8s | Titles by franchise, one block per title |
-| Outro | 4s | "19 seasons. 8 champions." |
+| Section | What happens |
+|---|---|
+| Hook (4s) | "19 SEASONS. ONLY 8 CHAMPIONS." — the 8 logos light up as the voice says "here's every one" |
+| Seasons (44s) | One cut per season, as long as its line: year plates flip, logo, runner-up, captain, a fact; the timeline fills with winners' colors |
+| Tally (6s) | Titles by franchise, MI and CSK boxed as "most titles" |
+| Outro (6s) | "WHO LIFTS IT IN 2027?" — "comment your pick" |
 
 ## Run it
 
 ```bash
 npm install
-npm run audio      # synthesizes public/audio/*.wav (music bed + SFX), no downloads
-npm run studio     # live preview
-npm run render     # -> out/ipl-champions.mp4
+npm run audio      # music + SFX -> public/audio (reads src/timeline.json)
+npm run render     # -> out/ipl-champions-reel.mp4
 ```
 
-If Remotion can't download its own browser, pass one explicitly, e.g.
-`npx remotion render ... --browser-executable=/path/to/chrome-headless-shell`.
+The voiceover (`public/vo/*.wav`) and `src/timeline.json` are committed, so rendering needs no model.
+Master the audio for Instagram afterwards:
+
+```bash
+ffmpeg -i out/ipl-champions-reel.mp4 -c:v copy -af loudnorm=I=-14:TP=-1.5:LRA=11 -c:a aac -b:a 192k out/reel-final.mp4
+```
+
+## Changing the voiceover
+
+Edit `scripts/voiceover.json` (per-line `lang: "en-gb"` or hand-written `phonemes` fix names espeak gets wrong),
+then regenerate the voice and the timeline — scene lengths follow the new line lengths automatically:
+
+```bash
+python -m venv .venv && .venv/bin/pip install kokoro-onnx soundfile faster-whisper
+# model: https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX  (onnx/model.onnx + voices/<voice>.bin)
+# pack voices once:  numpy: np.savez("voices.npz", am_michael=np.fromfile("am_michael.bin", np.float32).reshape(-1, 1, 256))
+.venv/bin/python scripts/gen-voice.py --model <dir with model.onnx + voices.npz> [--whisper <faster-whisper model dir>]
+npm run audio
+```
+
+`--whisper` adds word timings, which the hook and outro use to land text exactly on the spoken words.
 
 ## Where things live
 
-- `src/data.ts` — every final (winner, runner-up, captain, note). Add a season here and
-  the timeline, tally and outro update; also bump `SECTION_BARS.seasons` in
-  `src/timing.ts` and `BARS.seasons` in `scripts/gen-audio.mjs`.
-- `src/theme.ts` — palette, team identity colors, easings, springs.
-- `src/scenes/` — Intro, Seasons, Tally, Outro.
-- `src/components/` — background/grade/grain/vignette layers, motion helpers, trophy, team badge.
-
-Team badges use franchise names and colors only, no official logos.
+- `src/data.ts` — every final (winner, runner-up, captain, fact).
+- `src/theme.ts` — scoreboard palette, team colors and logo files, easings, springs.
+- `src/timing.ts` + `src/timeline.json` — beat-quantized timeline derived from the voiceover.
+- `src/scenes/` — Hook, Seasons, Tally, Outro. `src/components/` — layers, motion helpers, number plates, logos, trophy.

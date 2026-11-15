@@ -2,14 +2,10 @@ import { cancelRender, continueRender, delayRender, staticFile } from "remotion"
 import { theme } from "./theme";
 
 const faces: { family: string; file: string; weight: string }[] = [
-  ...["600", "700", "800", "900"].map((weight) => ({
-    family: theme.fonts.display,
-    file: `barlow-condensed-latin-${weight}-normal.woff2`,
-    weight,
-  })),
+  { family: theme.fonts.display, file: "league-gothic-latin-400-normal.woff2", weight: "400" },
   ...["400", "500", "600", "700"].map((weight) => ({
     family: theme.fonts.body,
-    file: `inter-latin-${weight}-normal.woff2`,
+    file: `oswald-latin-${weight}-normal.woff2`,
     weight,
   })),
 ];

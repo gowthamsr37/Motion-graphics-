@@ -1,18 +1,19 @@
 import React from "react";
 import { Composition } from "remotion";
 import "./fonts";
-import { IPLChampions } from "./Main";
+import { IPLChampionsReel } from "./Main";
 import { sections } from "./timing";
 
 const FPS = 30;
 
+// Instagram Reel: 1080×1920, 9:16.
 export const RemotionRoot: React.FC = () => (
   <Composition
-    id="IPLChampions"
-    component={IPLChampions}
+    id="IPLChampionsReel"
+    component={IPLChampionsReel}
     durationInFrames={sections(FPS).total}
     fps={FPS}
-    width={1920}
-    height={1080}
+    width={1080}
+    height={1920}
   />
 );

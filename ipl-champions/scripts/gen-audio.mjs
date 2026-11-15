@@ -1,6 +1,6 @@
 // Synthesizes the music bed and SFX kit as 16-bit mono WAVs.
 // No downloads, fully deterministic (seeded noise).
-import { mkdirSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -8,9 +8,11 @@ const SR = 44100;
 const OUT = join(dirname(fileURLToPath(import.meta.url)), "..", "public", "audio");
 mkdirSync(OUT, { recursive: true });
 
-// Keep in sync with src/timing.ts
-const BPM = 120;
-const BARS = { intro: 2, seasons: 19, tally: 4, outro: 2 };
+// Section lengths come from src/timeline.json (written by scripts/gen-voice.py).
+const TIMELINE = JSON.parse(readFileSync(join(dirname(fileURLToPath(import.meta.url)), "..", "src", "timeline.json"), "utf8"));
+const BPM = TIMELINE.bpm;
+const bars = (key) => TIMELINE.sections[key].beats / 4;
+const BARS = { intro: bars("hook"), seasons: bars("seasons"), tally: bars("tally"), outro: bars("outro") };
 const BEAT = 60 / BPM;
 const BAR = BEAT * 4;
 const SEASONS_AT = BARS.intro;
@@ -273,6 +275,20 @@ writeFileSync(join(OUT, "track.wav"), wav(normalize(mix, 0.89)));
     out[i] = Math.sin(ph) * Math.exp(-t * 2.4) + lp * Math.exp(-t * 14) * 0.9 + (t < 0.005 ? noise() * 0.6 : 0);
   }
   writeFileSync(join(OUT, "impact.wav"), wav(normalize(out, 0.95)));
+}
+{
+  // clack — a tin number plate dropped onto its hook: woody thock + bright rattle
+  const out = new Float32Array(S(0.18));
+  let ph = 0;
+  let lp = 0;
+  for (let i = 0; i < out.length; i++) {
+    const t = i / SR;
+    ph += (TAU * (210 - 90 * t)) / SR;
+    lp += 0.45 * (noise() - lp);
+    const rattle = t > 0.035 && t < 0.05 ? 0.5 : 0;
+    out[i] = Math.sin(ph) * Math.exp(-t * 38) * 0.9 + lp * (Math.exp(-t * 60) + rattle * Math.exp(-(t - 0.035) * 90)) * 0.7;
+  }
+  writeFileSync(join(OUT, "clack.wav"), wav(normalize(out, 0.9)));
 }
 {
   // tick — tiny bright blip
