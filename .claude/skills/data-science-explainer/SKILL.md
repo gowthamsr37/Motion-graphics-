@@ -1,0 +1,190 @@
+---
+name: data-science-explainer
+description: House style and production pipeline for the "Data Science Made Simple" educational Instagram Reels (first video "Types of Data Explained in 2 Minutes", in types-of-data/). Use EVERY time the user asks for a new explainer, educational, statistics, data-science, ML, maths or "X explained" video, or asks for "the same style as Types of Data". Locks the theme, colour code, fonts, voice, music, mix, layout, subtitle style, pacing, quiz and CTA, cover, caption format and QA loop so every video in the series matches. Read together with the remotion-motion-graphics skill.
+---
+
+# Data Science Made Simple: house style
+
+The user approved **types-of-data/** as the reference ("came out very well") and asked that **every setting, theme and voice stay the same in future videos**. Treat everything below as fixed defaults. Change something only when the user explicitly asks; if a request seems to conflict with these, ask before deviating.
+
+The reference implementation is `types-of-data/`. Reuse its code (scaffold with `bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>`), not a rewrite.
+
+Other series in this repo (the cricket "Beyond The Scoreboard" reels) have their own look. Do not restyle them, and do not apply this style to them.
+
+## 1. Format
+
+| Setting | Value |
+| --- | --- |
+| Canvas | 1080×1920 (9:16), **30 fps** |
+| Length | 100–120 s (reference: 112 s) |
+| Codec | H.264, CRF 16; AAC 256 kbps, 48 kHz stereo; `+faststart` |
+| Loudness | **−14 LUFS** integrated, true peak −2 dBTP (alimiter → two-pass loudnorm) |
+| Deliverables in `out/` | `<Stem>.mp4`, `<Stem>_Cover.png` (1080×1920), `<Stem>.srt`; caption in `CAPTION.md`; README with storyboard + timestamped VO script |
+
+## 2. Look (copy `types-of-data/src/theme.ts` verbatim)
+
+- **Background:** deep navy `#050A1F`, deep `#02051A`, navy `#0C1640`. Never flat. Five layers:
+  1. Radial navy gradient, plus two big drifting radial colour fields tinted by the current topic (crossfade 20 frames at scene changes).
+  2. A masked dot grid (54 px, slow drift).
+  3. 44 twinkling particles.
+  4. Grade: soft-light `#3B2F9E` at 0.2, plus top/bottom darkening.
+  5. Grain: SVG turbulence, overlay, 0.07. Then a vignette.
+- **Accents:** cyan `#22D3EE`, violet `#A78BFA`, green `#34D399`, orange `#FB923C`. Used sparingly:
+  - red `#FB5C7A` only for "wrong" marks;
+  - yellow `#FCD34D` only for the quiz badge, "?" bubbles and the 2-minutes highlight;
+  - blood `#F2557A` only for blood drops.
+- **Text:** `#F3F7FF`; dim `#A3B0D6`; ink (dark text on bright fills) `#071033`. Panels are `rgba(14,24,64,0.74)` gradients with a 2 px `rgba(150,180,255,0.16)` edge and radius 26–36.
+- **Category colour code:** keep each concept on one colour for the whole video. In Types of Data:
+  - DATA: white-blue orb
+  - numerical / discrete: cyan
+  - continuous: green
+  - categorical / nominal: violet
+  - ordinal: orange
+
+  For a new topic, assign up to 4 accents to its main branches the same way. Keep these meanings for the basic types if they reappear.
+- **Fonts** (in `public/fonts`, loaded by `src/fonts.ts`):
+  - **Sora** 600/700/800: all display text, pills and subtitles.
+  - **Inter** 500–800: small caps labels (letter-spacing 0.22–0.26em, dim).
+  - **JetBrains Mono** 500/700/800: numbers, readouts, counters, equations.
+- **Glow:** only on the focal element (`glowText` / `glowBox` from theme). Hero headlines are 70–120 px, weight 800, letter-spacing −0.02 to −0.03em.
+- **Illustration style:** flat Kurzgesagt-like SVG drawn in theme colours (`components/Icons.tsx`):
+  - `Person` (rounded head, hair cap, dot eyes, smile arc, walk swing, `armsUp`, blink), MapPin, BloodDrop, Face(mood), Jersey(number), Thermometer(level), Arrow;
+  - 24–40 px stroke glyphs for chips.
+  - No emoji, no bitmaps, no stock art.
+
+## 3. Layout (safe areas)
+
+- Top 0–220 and bottom ≥ 1530 are Instagram UI: background only.
+- **Header** 240–480 holds the topic tree (`TreeHeader`: parent pill at (540, 292), children at (290, 452) and (790, 452)). **Stage** 500–1340. **Subtitles** centred on y = 1452.
+- Keep content within x 90–990. Keep the right column (x > 960, y > 1100) clear of anything important.
+- Use px `gap` values, never em, around big type.
+
+## 4. Motion vocabulary (reuse `components/Motion.tsx`, `Nodes.tsx`, `Backdrop.tsx`)
+
+- `Pop` for every entrance: spring plus 2–3 properties, with `dim` for focus dimming, `out` for faster exits.
+- `Burst`, `Ripple`, `Confetti` for accents. `Rolling` for continuous number readouts (odometer with fade mask). `Mark` for strokes-on ✓/✗.
+- `Wires` + `bezier` for connectors that draw on and then carry light pulses. `Orb` (glowing DATA particle with orbit rings), `Pill`, `Chip`, `Tag`, `TreeHeader`.
+- **Transitions:**
+  - whip-pan with motion blur;
+  - zoom-through into the next node (the next scene's pill arrives scaled up);
+  - horizontal pan between sibling branches;
+  - collapse-into-badges and merge-into-orb;
+  - shrink toward where the next scene's element will appear.
+- **Rules:**
+  - No linear easing; every `interpolate` is clamped.
+  - Stagger entrances by 3–6 frames. Exits take about 10 frames and are faster than entrances.
+  - A new visual or a meaningful change every 2–4 s. Idle elements breathe.
+  - Concepts are *demonstrated*, not stated: counting, measuring, shuffling, staircases, struck-out comparisons. The video should work muted.
+- **Focus pattern:** when explaining one branch, dim its sibling to about 0.38 and glow the active pill.
+
+## 5. Narrative template (the reference structure)
+
+1. **Hook (0–10 s):** three quick real-life vignettes, whip-panned, under a kinetic headline stack ("YOUR HEIGHT, / YOUR CITY, / YOUR EXAM RANK…", keywords coloured by category). Then a slam reveal with impact and shake, then a twist line with an RGB-split glitch. Merge into the orb.
+2. **Big picture:** the orb splits into the main branches, each with example chips. Zoom into the first branch.
+3. **One scene per leaf concept:** header tree on top, with one concrete, physical demonstration synced to the words, the classic misconception stamped out (e.g. "3.5 students"), and a one-line concept tag.
+4. **Complete picture:** a file-tree hierarchy assembling on the spoken words, with one example per leaf, travelling pulses and a shine sweep.
+5. **Quiz:** a QUICK QUIZ badge, a prop, the question word by word, and four colour-coded options. A **5-second countdown ring** (green → yellow → orange → red, beeps, options scanning). The reveal gets a check, ta-da and confetti, then a one-sentence why with struck-out wrong reasoning.
+6. **CTA:** a tree logo, a **FOLLOW** button that gets tapped (turns green with a check), "for data science / MADE SIMPLE." and recap chips of the video's key terms. The final line is always **"Follow for data science made simple!"**
+
+## 6. Voice (fixed)
+
+- **Kokoro TTS v1.0** (`kokoro-v1.0.onnx`, `voices-v1.0.bin`), voice **`af_heart`**, `lang en-us`, **speed 1.05**. Conversational and energetic, about 160 wpm.
+- Synthesize **each sentence separately** (`scripts/gen-voice.py`):
+  - trim threshold 0.01, padding 0.04 s, peak-normalise to 0.9 per scene;
+  - pauses 0.3–0.6 s, scene lead 0.35–0.55 s, hold 0.45–1.35 s;
+  - the quiz question is followed by `"pause": 5.7` for the countdown.
+- `scripts/voiceover.json` has, per segment:
+  - `text`: spoken. Write numbers as words: "one sixty-five point eight".
+  - `caption`: on screen, with numerals: "165.8".
+  - `pause`.
+  - optional `fix`: phoneme replacements for mispronunciations, e.g. `["ˈæb","ˈeɪ bˈiː"]` for AB and `["bˈɛŋɡɐlˌʊɹɹuː","bˈɛŋɡəlˌuːɹuː"]` for Bengaluru.
+
+  Check every proper noun and acronym with `tts.tokenizer.phonemize(text, "en-us")` first.
+- For a count where each item needs its own visual beat, make every number its own segment and sync visuals to `sent(i).from` (exact TTS onsets).
+
+## 7. Subtitles (fixed)
+
+- Burned in, word-synced. One line per page, chosen by the DP pager in `gen-voice.py` (max 28 characters, sentence ends always break, prefers `: ;` then `,`, never ends a line on a weak word, penalises orphans).
+- Word timings: **faster-whisper `small.en`** int8, aligned to the script text with difflib.
+- **Style:**
+  - Sora 700, 46 px;
+  - box `rgba(4,8,30,0.72)`, radius 24, 1.5 px edge, max width 860;
+  - unspoken words at 0.42 opacity;
+  - the current word takes the scene accent (yellow in the quiz), scale 1.05, with glow;
+  - pop-in spring between pages.
+- Also export `.srt` (`scripts/export-srt.py`).
+
+## 8. Music and SFX (fixed sound, re-timed per video)
+
+- **Score** (`scripts/gen-audio.mjs`, all synthesized, no samples): **112 BPM, F major, I–V–vi–IV (F–C–Dm–Bb)**.
+  - Instruments: kick, clap, hats, off-beat saw bass, pluck arps, marimba, detuned pad, bells, a gliding sine lead, riser, impact, crash. Reverb 0.18, tanh 1.1, normalise 0.89, 0.6 s fade.
+  - **Section styles:**
+    - `intro`: filtered arps, kick from the 2nd vignette, riser into an impact plus crash on the reveal.
+    - `drop`: lifted chord.
+    - `grooveA` / `grooveB` / `play` (marimba, for categorical/playful topics) / `flow` (smooth pads plus gliding lead, for "continuous/smooth" ideas) / `build` (overview, 16th hats).
+    - `tension`: the quiz. Beat out, Gsus pad, ticks, a heartbeat pulse per countdown second.
+    - `finale`: crash on the reveal, full groove, ending on an F chord with bells.
+- **SFX kit** (same file names):
+  - movement: `whoosh`, `whip`, `pop`, `click`, `tick`, `hop`, `door`;
+  - countdown and counting: `beep`, `beep-hi`, `blip1–5` (ascending, for counting), `step1–3` (ascending, for staircases/order);
+  - cards: `flip`, `shuffle`;
+  - reactions: `stamp` (wrong), `ding` (right), `tada` (quiz answer), `confetti`, `glitch`, `button`;
+  - texture: `sparkle`, `glide`, `chime`, `riser`, `impact`.
+
+  Every SFX fires **2 frames before** its visual.
+- **Mix** (`src/SoundTrack.tsx`):
+  - narration at 1.0;
+  - music `useDuck(0.5, 0.16)`, ducked under every line with a ramp of fps/4;
+  - SFX volumes 0.18–0.55 (whips and stamps up to 0.45–0.55, clicks about 0.3, sparkles about 0.25).
+
+## 9. Timing architecture (don't break it)
+
+- Visual beats key off spoken words via `src/timing.ts`:
+  - `sent(i)`, `cue(token)`, and **`cueS(i, token)` for any word spoken twice in a scene**. `cue` finds the first occurrence, and that bug is easy to miss.
+  - Sentence indices shift when you split segments, so re-check every `sent(i)` after editing the script.
+- Re-voicing re-times the whole film. Mirror any music hits in `gen-audio.mjs` with the same cue helpers.
+- Animation durations are written in 30 fps frames, so keep the composition at 30 fps.
+
+## 10. Cover and caption
+
+- **Cover** (`src/Cover.tsx`): the same background. Title "TOPIC" in Sora 800 white (150 px), the key word in a cyan → violet gradient (about 196 px), then "explained in **2 minutes**" in Sora 700 52 px with the number in yellow. Below it, the topic's tree in the colour code. Keep it all inside the centre 3:4 profile-grid crop.
+- **CAPTION.md:**
+  - a hook line with 👀;
+  - an emoji-headed bullet recap per branch (📊 / 🏷️ …) with concrete examples;
+  - a quiz prompt ("Drop your answer before the reveal 👇");
+  - "Follow for data science made simple 🚀";
+  - about 10 hashtags (#datascience #statistics … #learnoninstagram …).
+
+## 11. Pipeline and QA (mandatory)
+
+1. Write `voiceover.json`, then run `gen-voice.py`. Check the durations (100–120 s total) and the subtitle pages it prints.
+2. Build the scenes. Render stills with `node scripts/stills.mjs out/bundle out/check <frames…>` and tile them with `python3 scripts/sheet.py`, then **look at them**. Fix overlaps, safe areas and timing.
+3. Run `BROWSER=<headless shell> bash scripts/build.sh`. It runs gen-audio, then bundle, render, cover, master and srt.
+4. Extract frames from the **encoded MP4** across every scene and inspect them.
+5. Transcribe the mastered audio with Whisper; it must match the script, which proves the voice sits clearly over the music. Confirm `ebur128` reads about −14 LUFS.
+6. Deliver the MP4, cover and SRT with SendUserFile, paste the caption, and commit the project folder (renders in `out/` are gitignored; `public/audio` and `public/vo` are committed).
+
+### Tool setup in a fresh cloud container
+
+```bash
+SP=<scratchpad>; uv venv $SP/venv --python 3.12 && . $SP/venv/bin/activate && uv pip install kokoro-onnx soundfile faster-whisper
+mkdir -p $SP/models/kokoro && cd $SP/models/kokoro
+curl -sSLo model.onnx  https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+curl -sSLo voices.npz  https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+HF_HUB_DISABLE_XET=1 python -c "from huggingface_hub import snapshot_download; snapshot_download('Systran/faster-whisper-small.en', local_dir='$SP/models/whisper-small-en')"
+BROWSER=$(ls /opt/pw-browsers/chromium_headless_shell-*/chrome-headless-shell-linux64/chrome-headless-shell | head -1)
+```
+
+Notes:
+- The Xet download path fails behind the proxy; `HF_HUB_DISABLE_XET=1` fixes it.
+- faster-whisper's file decoder is broken with the installed `av`, so pass numpy arrays (gen-voice already does).
+
+## 12. Lessons from the reference build
+
+- Unicode arrows (→ ➜) and some symbols aren't in Sora. Use the SVG `Arrow`. Check "≈ … °" in renders.
+- `Pop`'s `style.opacity` overrides its own fade; use the `dim` prop.
+- In a mono font "3.5" spreads out; tighten with letter-spacing −0.14em.
+- Shuffled or overlapping cards need a `zIndex` by lift direction. Comparison glyphs placed between tight cards need a backing disc to read.
+- Put "?" gap badges on the open side of brackets, not over the neighbouring card.
+- A misconception moment needs to be unmistakable: dim the rest, make the wrong thing big, then stamp it out.
+- Hook headline lines must fit in 1080 px; 70 px Sora fits "YOUR EXAM RANK…".
