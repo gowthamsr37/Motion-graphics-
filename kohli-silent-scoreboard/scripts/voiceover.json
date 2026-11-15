@@ -1,0 +1,186 @@
+{
+  "voice": "am_michael",
+  "speed": 1.1,
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.9,
+      "hold": 0.9,
+      "segments": [
+        {
+          "text": "One thousand and twenty-one days.",
+          "pause": 0.4,
+          "caption": "1,021 days."
+        },
+        {
+          "text": "That's how long Virat Kohli went without an international century.",
+          "phonemes": "ðæts hˌaʊ lˈɔŋ vɪɹˈɑːt kˈoʊli wɛnt wɪðˌaʊt ɐn ˌɪntɚnˈæʃənəl sˈɛntʃɚɹi.",
+          "caption": "That's how long Virat Kohli went without an international century."
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.45,
+      "hold": 0.55,
+      "segments": [
+        {
+          "text": "In November twenty nineteen, Kohli scored another Test hundred.",
+          "pause": 0.4,
+          "caption": "In November 2019, Kohli scored another Test hundred."
+        },
+        {
+          "text": "Nobody knew how long the next wait would be.",
+          "caption": "Nobody knew how long the next wait would be."
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "His Test average fell from sixty-eight in twenty nineteen,",
+          "pause": 0.24,
+          "caption": "His Test average fell from 68 in 2019,"
+        },
+        {
+          "text": "to nineteen point three three in twenty twenty.",
+          "pause": 0.36,
+          "caption": "to 19.33 in 2020."
+        },
+        {
+          "text": "Twenty-eight point two one in twenty twenty-one.",
+          "pause": 0.36,
+          "caption": "28.21 in 2021."
+        },
+        {
+          "text": "And twenty-six point five in twenty twenty-two.",
+          "caption": "And 26.5 in 2022."
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "For three straight calendar years, not a single Test century.",
+          "pause": 0.4,
+          "caption": "For three straight calendar years, not a single Test century."
+        },
+        {
+          "text": "For a batter of his standards, the silence was impossible to ignore.",
+          "caption": "For a batter of his standards, the silence was impossible to ignore."
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.4,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "But the scorecard held a surprising truth.",
+          "pause": 0.36,
+          "caption": "But the scorecard held a surprising truth."
+        },
+        {
+          "text": "Kohli wasn't struggling everywhere.",
+          "pause": 0.32,
+          "caption": "Kohli wasn't struggling everywhere."
+        },
+        {
+          "text": "In T twenty internationals, he was still producing remarkable numbers.",
+          "caption": "In T20 internationals, he was still producing remarkable numbers."
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.4,
+      "hold": 1.3,
+      "segments": [
+        {
+          "text": "Then came September eighth, twenty twenty-two.",
+          "pause": 0.36,
+          "caption": "Then came September 8th, 2022."
+        },
+        {
+          "text": "An unbeaten one hundred and twenty-two against Afghanistan.",
+          "pause": 0.4,
+          "caption": "An unbeaten 122 against Afghanistan."
+        },
+        {
+          "text": "The international century drought was finally over.",
+          "caption": "The international century drought was finally over."
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        {
+          "text": "But one wait remained.",
+          "pause": 0.28,
+          "caption": "But one wait remained."
+        },
+        {
+          "text": "A Test hundred.",
+          "pause": 0.4,
+          "caption": "A Test hundred."
+        },
+        {
+          "text": "Until March twenty twenty-three, when he made one hundred and eighty-six against Australia.",
+          "caption": "Until March 2023, when he made 186 against Australia."
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "lead": 0.45,
+      "hold": 1.3,
+      "segments": [
+        {
+          "text": "And in twenty twenty-three, his Test average climbed back to fifty-five point nine two.",
+          "pause": 0.4,
+          "caption": "And in 2023, his Test average climbed back to 55.92."
+        },
+        {
+          "text": "The numbers finally told a different story.",
+          "caption": "The numbers finally told a different story."
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "lead": 0.55,
+      "hold": 2.6,
+      "segments": [
+        {
+          "text": "Even the greatest batters struggle.",
+          "pause": 0.4,
+          "caption": "Even the greatest batters struggle."
+        },
+        {
+          "text": "The real story isn't just the drought.",
+          "pause": 0.36,
+          "caption": "The real story isn't just the drought."
+        },
+        {
+          "text": "It's the comeback.",
+          "pause": 0.4,
+          "caption": "It's the comeback."
+        },
+        {
+          "text": "Beyond The Scoreboard.",
+          "caption": "Beyond The Scoreboard."
+        }
+      ]
+    }
+  ]
+}
