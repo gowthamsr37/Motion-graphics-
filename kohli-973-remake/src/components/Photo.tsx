@@ -28,7 +28,8 @@ export const PhotoFrame: React.FC<{
   glow?: string;
   glowOn?: number;
   compact?: boolean; // small caption for narrow frames
-}> = ({ id, x, y, w, h, delay = 0, closeAt, focus = "50% 40%", zoom = [1.04, 1.14], pan = [0, 0], life = 300, warmth = 1, label, labelColor = C.amber, seed = 600, glow, glowOn = 0, compact = false }) => {
+  origin?: string; // transform origin for the Ken Burns zoom (anchor a crop, e.g. to keep a watermark out of frame)
+}> = ({ id, x, y, w, h, delay = 0, closeAt, focus = "50% 40%", zoom = [1.04, 1.14], pan = [0, 0], life = 300, warmth = 1, label, labelColor = C.amber, seed = 600, glow, glowOn = 0, compact = false, origin = "50% 50%" }) => {
   const frame = useCurrentFrame();
   const p = photos[id];
   const t = interpolate(frame, [delay, delay + life], [0, 1], { easing: theme.ease.soft, ...CLAMP });
@@ -41,7 +42,7 @@ export const PhotoFrame: React.FC<{
   return (
     <Panel x={x} y={y} w={w} h={h} delay={delay} closeAt={closeAt} seed={seed} glow={glow} glowOn={glowOn}>
       <div style={{ position: "absolute", left: inset, top: inset, width: w - inset * 2, height: h - inset * 2 - capH, overflow: "hidden", borderRadius: 4, background: C.board }}>
-        <Img src={staticFile(p.src)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: focus, transform: `translateX(${dx}px) scale(${scale})`, filter }} />
+        <Img src={staticFile(p.src)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: focus, transform: `translateX(${dx}px) scale(${scale})`, transformOrigin: origin, filter }} />
         {/* grade: steel-blue night for 2014, amber floodlight for 2018 */}
         <div style={{ position: "absolute", inset: 0, background: `linear-gradient(180deg, rgba(40,70,90,${0.32 * cold}) 0%, rgba(10,20,30,${0.38 * cold}) 100%)`, mixBlendMode: "multiply" }} />
         <div style={{ position: "absolute", inset: 0, background: `radial-gradient(ellipse at 30% 10%, rgba(242,169,59,${0.28 * warmth}) 0%, transparent 65%)`, mixBlendMode: "soft-light" }} />

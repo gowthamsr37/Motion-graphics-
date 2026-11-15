@@ -51,7 +51,7 @@ Every photo is genuine, from Wikimedia Commons under a free licence, and is cred
 | --- | --- | --- |
 | `final-2016-watson.jpg` | **IPL 2016 final, 29 May 2016**: SRH's Ashish Reddy running, with RCB's Shane Watson in the 2016 kit | Msnlalithprem · CC0 |
 | `final-2016-trophy.jpg` | **SRH with the 2016 trophy, 29 May 2016** | Msnlalithprem · CC0 |
-| `kohli-june-2016.jpg` | **Virat Kohli, June 2016** (Pro Kabaddi League opening) | Bollywood Hungama · CC BY 3.0 |
+| `kohli-june-2016.jpg` | **Virat Kohli, June 2016** (Pro Kabaddi League opening). Shown as a head-and-shoulders crop so the source's mid-chest watermark stays out of frame | Bollywood Hungama · CC BY 3.0 |
 | `chin-fireworks-2014.jpg`, `chin-night-2014.jpg`, `chin-stand-2014.jpg`, `rcb-flag-2014.jpg`, `chin-crowd-2014.jpg`, `chin-flags-2014.jpg`, `chin-floodlights-2014.jpg` | RCB at the Chinnaswamy: fireworks, floodlights, stands, flags and fans, **May 2014**, used as atmosphere and captioned with that date | Ramesh NG · CC BY-SA 2.0 |
 
 Source pages are in `public/photos/credits.json`.

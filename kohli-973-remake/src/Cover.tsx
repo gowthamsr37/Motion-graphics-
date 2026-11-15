@@ -14,7 +14,7 @@ export const Cover: React.FC = () => (
   <AbsoluteFill style={{ background: C.board }}>
     <Backdrop lights={1.15} />
     <FullBleed id="chin-fireworks-2014" y={0} h={900} inAt={-30} focus="50% 35%" zoom={[1.2, 1.2]} tint="red" dim={0.3} captionY={2000} />
-    <PhotoFrame id="kohli-june-2016" x={300} y={262} w={480} h={560} delay={-30} warmth={1} focus="50% 18%" zoom={[1.2, 1.2]} label="2016" compact seed={901} glow={C.amberGlow} glowOn={0.6} />
+    <PhotoFrame id="kohli-june-2016" x={300} y={262} w={480} h={560} delay={-30} warmth={1} focus="50% 0%" origin="52% 4%" zoom={[2.0, 2.0]} label="2016" compact seed={901} glow={C.amberGlow} glowOn={0.6} />
     <Panel x={60} y={846} w={960} h={330} delay={-30} seed={902} glow={C.amberGlow} glowOn={0.9}>
       <div style={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: 34 }}>
         <Plates text="973" w={170} h={240} gap={14} color={C.amber} glow={C.amberGlow} />
