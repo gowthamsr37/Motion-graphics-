@@ -1,0 +1,189 @@
+{
+  "voice": "am_michael",
+  "lang": "en-us",
+  "speed": 1.08,
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.3,
+      "hold": 0.75,
+      "segments": [
+        {
+          "text": "Three runs needed.",
+          "caption": "3 runs needed.",
+          "pause": 0.32
+        },
+        {
+          "text": "One ball left.",
+          "caption": "1 ball left.",
+          "pause": 0.3
+        },
+        {
+          "text": "One wicket in hand.",
+          "caption": "1 wicket in hand.",
+          "pause": 0.4
+        },
+        {
+          "text": "India versus Pakistan.",
+          "caption": "India versus Pakistan.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.35,
+      "hold": 0.5,
+      "segments": [
+        {
+          "text": "Pakistan piled up three hundred and thirty-seven.",
+          "caption": "Pakistan piled up 337.",
+          "pause": 0.35
+        },
+        {
+          "text": "India had to chase three hundred and thirty-eight.",
+          "caption": "India had to chase 338.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.3,
+      "hold": 0.5,
+      "segments": [
+        {
+          "text": "Sehwag scored fifty-eight.",
+          "caption": "Sehwag scored 58.",
+          "pause": 0.3,
+          "phonemes": "sˈɛhwɑːɡ skˈɔːɹd fˈɪftiˈeɪt."
+        },
+        {
+          "text": "Captain Lakshya made eighty.",
+          "caption": "Captain Lakshya made 80.",
+          "pause": 0.4,
+          "phonemes": "kˈæptɪn lˈʌkʃjə mˌeɪd ˈeɪɾi."
+        },
+        {
+          "text": "But suddenly, India were two hundred and fifty-two for eight.",
+          "caption": "But suddenly, India were 252 for 8.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.3,
+      "hold": 0.5,
+      "segments": [
+        {
+          "text": "Then came number ten, Mohit Ulva.",
+          "caption": "Then came number 10, Mohit Ulva.",
+          "pause": 0.35,
+          "phonemes": "ðˈɛn kˈeɪm nˈʌmbɚ tˈɛn, mˈoʊhɪt ˈʊlvə."
+        },
+        {
+          "text": "Alongside Manal Chauhan, he brought India back.",
+          "caption": "Alongside Manal Chauhan, he brought India back.",
+          "pause": 0.4,
+          "phonemes": "ɐlˈɔŋsaɪd mˈʌnəl tʃˈaʊhɑːn, hiː bɹˈɔːt ˈɪndiə bˈæk."
+        },
+        {
+          "text": "But Manal fell.",
+          "caption": "But Manal fell.",
+          "pause": 0.3,
+          "phonemes": "bˌʌt mˈʌnəl fˈɛl."
+        },
+        {
+          "text": "One wicket remained.",
+          "caption": "1 wicket remained.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.5,
+      "hold": 1.7,
+      "segments": [
+        {
+          "text": "Eight needed from the last over.",
+          "caption": "8 needed from the last over.",
+          "pause": 0.9
+        },
+        {
+          "text": "First ball...",
+          "caption": "First ball...",
+          "pause": 0.3
+        },
+        {
+          "text": "dot!",
+          "caption": "Dot!",
+          "pause": 0.9
+        },
+        {
+          "text": "A wide...",
+          "caption": "A wide...",
+          "pause": 0.45
+        },
+        {
+          "text": "then four singles.",
+          "caption": "Then four singles.",
+          "pause": 1.9
+        },
+        {
+          "text": "Now three needed from the final ball.",
+          "caption": "Now 3 needed from the final ball.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.25,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Mohit Ulva charges...",
+          "caption": "Mohit Ulva charges...",
+          "pause": 0.6,
+          "phonemes": "mˈoʊhɪt ˈʊlvə, tʃˈɑːɹdʒᵻz..."
+        },
+        {
+          "text": "FOUR!",
+          "caption": "FOUR!",
+          "pause": 0.32,
+          "phonemes": "fˈɔːɹ!"
+        },
+        {
+          "text": "India win. A last-ball miracle!",
+          "caption": "INDIA WIN! A last-ball miracle!",
+          "pause": 0.2,
+          "phonemes": "ˈɪndiə wˈɪn. ɐ lˈæstbˈɔːl mˈɪɹəkəl!"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "lead": 0.4,
+      "hold": 1.3,
+      "segments": [
+        {
+          "text": "An unbeaten forty-nine from number ten.",
+          "caption": "An unbeaten 49 from number 10.",
+          "pause": 0.35
+        },
+        {
+          "text": "India's ninth title.",
+          "caption": "India's ninth title.",
+          "pause": 0.5
+        },
+        {
+          "text": "Beyond The Scoreboard.",
+          "caption": "Beyond The Scoreboard.",
+          "pause": 0.25
+        }
+      ]
+    }
+  ]
+}
