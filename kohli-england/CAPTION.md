@@ -8,6 +8,6 @@ India still lost the series 4–1, but Kohli had rewritten his own story.
 
 Same country. Same challenge. A different batter.
 
-Photos: Wikimedia Commons (CC BY 2.0 / CC BY-SA 2.0): Anthony O'Neil, DncnH, Dan Heap, "It's No Game", Dun.can, Aidan Sammons.
+Photos: Wikimedia Commons (CC BY 2.0 / CC BY-SA 2.0): Anthony O'Neil, DncnH, Dan Heap, "It's No Game", Dun.can.
 
 #BeyondTheScoreboard #ViratKohli #ENGvIND #TestCricket #Kohli #JamesAnderson #Edgbaston #IndianCricket #CricketReels #CricketStats #Comeback #TeamIndia

@@ -40,10 +40,10 @@ const ev = {
   weakness: sent("s4", 2),
   flip: word("s5", "later", 0.42),
   countFrom: sent("s6", 1) + f(4),
-  land: sentEnd("s6", 2) - f(2),
-  diff: sent("s6", 3),
-  lines: [sent("s8", 2), sent("s8", 3), sent("s8", 4)],
-  brand: sent("s8", 5) - f(8),
+  land: sentEnd("s6", 5) - f(2),
+  diff: sent("s6", 6),
+  lines: [sent("s8", 5), sent("s8", 6), sent("s8", 7)],
+  brand: sent("s8", 8) - f(8),
 };
 
 // ---------- dsp utils ----------

@@ -101,16 +101,19 @@ const SoundTrack: React.FC = () => {
       <Sfx at={b1.stop134 + 2} file="clunk.wav" volume={0.5} />
       <Sfx at={b1.stop134 + 18} file="slide.wav" volume={0.14} />
       {/* S2 — each stat flips in after its word */}
+      <Sfx at={at("s2", b2.rewind - 6)} file="rewind.wav" volume={0.32} />
       {[b2.tests, b2.innings, b2.innings + 14, b2.avg, b2.ducks, b2.fifties, b2.highest].map((t, i) => (
         <Sfx key={`s2${i}`} at={at("s2", t + 8)} file="flip.wav" volume={0.32} />
       ))}
       <Sfx at={end("s2", 6) + 4} file="boom.wav" volume={0.4} />
       {/* S3 — bars rise ground by ground; a red relay for each duck */}
-      {[b3.tb, b3.lords, b3.soton, b3.otr, b3.oval].map((t, i) => (
-        <Sfx key={`s3${i}`} at={at("s3", t + 4)} file="click-low.wav" volume={0.3} />
+      {[0, 1, 2, 3, 4].map((i) => (
+        <Sfx key={`s3${i}`} at={at("s3", b3.bars + i * 7 + 4)} file="click-low.wav" volume={0.26} />
       ))}
-      <Sfx at={at("s3", b3.lords + 14)} file="relay.wav" volume={0.3} />
-      <Sfx at={at("s3", b3.otr + 6)} file="relay.wav" volume={0.3} />
+      <Sfx at={at("s3", b3.fifty + 6)} file="relay.wav" volume={0.22} />
+      {[b3.tb, b3.lords, b3.otr].map((t, i) => (
+        <Sfx key={`s3f${i}`} at={at("s3", t - 2)} file="click-low.wav" volume={0.22} />
+      ))}
       {/* S4 — four wicket lamps, the nick */}
       {[0, 1, 2, 3].map((i) => (
         <Sfx key={`s4${i}`} at={at("s4", b4.four + 14 + i * 6)} file="click-low.wav" volume={0.36} />
@@ -128,9 +131,10 @@ const SoundTrack: React.FC = () => {
       <Sfx at={at("s6", pass)} file="relay.wav" volume={0.3} />
       <Sfx at={at("s6", b6.land + 3)} file="clunk.wav" volume={0.6} />
       <Sfx at={at("s6", b6.land + 3)} file="cheer-big.wav" volume={(f) => 0.5 * under(at("s6", b6.land + 3) + f)} />
+      <Sfx at={at("s6", b6.land - 10)} file="slide.wav" volume={0.14} />
       <Sfx at={at("s6", b6.diff + 14)} file="flip.wav" volume={0.32} />
       {/* S7 */}
-      {[b7.runs, b7.avg, b7.tons, b7.tons + 10, b7.anderson].map((t, i) => (
+      {[b7.runs, b7.avg, b7.tons, b7.fifties, b7.anderson].map((t, i) => (
         <Sfx key={`s7${i}`} at={at("s7", t + 8)} file="flip.wav" volume={0.28} />
       ))}
       <Sfx at={end("s7", 3) + 6} file="cheer-soft.wav" volume={0.18} />

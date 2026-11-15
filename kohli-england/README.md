@@ -1,8 +1,8 @@
 # Beyond The Scoreboard — Virat Kohli: The England Nightmare (2014 → 2018)
 
-A 96-second Instagram Reel: 1080×1920, 30 fps, H.264 with AAC 48 kHz stereo, mastered to −14 LUFS.
+A 118-second Instagram Reel: 1080×1920, 30 fps, H.264 with AAC 48 kHz stereo, mastered to −14 LUFS.
 It is built in Remotion on the Adelaide-style scoreboard system used by the earlier Beyond The Scoreboard reels.
-The narration is the brief's script, word for word, at a natural pace; scene lengths follow the voice.
+The narration is built on the brief's script, extended as a story: a hook question ("So what changed?"), a "let's go back to 2014" turn, and a spoken walk-through of every graph as it builds. It runs at a natural pace and scene lengths follow the voice.
 
 ## Deliverables (in `out/`, produced by `scripts/build.sh`)
 
@@ -16,16 +16,16 @@ The Instagram caption is in [`CAPTION.md`](CAPTION.md).
 
 ## Scenes
 
-| # | Scene | What's on the board |
+| # | Scene | What's on the board, and what the narrator says |
 | --- | --- | --- |
-| 1 | The hook | Two mechanical counters spin and land on 149 (2018 first innings) and 134 (2014 series) as each is spoken; 2014 and 2018 photos side by side |
-| 2 | The nightmare | 5 Tests · 10 innings · 134 runs · average 13.40 · ducks 2 · fifties 0 · highest 39, each flipping in on its word |
-| 3 | Ten innings | **Graph 1:** the ten 2014 innings as bars on a true 0–50 scale, paired by ground; ducks in red, 39 in amber, the fifty line "never reached" |
-| 4 | Anderson's trap | 4 red wicket lamps; an off-stump corridor *illustration*, labelled as not ball-tracking data |
-| 5 | Four years later | The year plate flips 2014 → 2018 and the lighting warms from steel-blue to amber; patience · leaving well · the right ball |
-| 6 | The 149 | The counter climbs past a 134 marker on a 0–150 rail and lands on 149 (225); 2014 total 134, difference +15 |
-| 7 | Transformation | **Graphs 2 & 3:** runs 134 vs 593 (scale 0–600) and average 13.40 vs 59.30 (scale 0–60); centuries 0 → 2, fifties 0 → 3; **Graph 4:** Anderson dismissals 4 vs 0 |
-| 8 | The legacy | **Graph 5:** cumulative runs, innings 1–10, both tours on one 0–600 scale; series results; "Same country. Same challenge. A different batter."; Beyond The Scoreboard; one final click |
+| 1 | The hook | Two counters spin and land on 149 (2018 first innings) and 134 (2014 series) as each is spoken. The 2014 Old Trafford scoreboard sits beside Kohli batting in 2018. "So what changed?" |
+| 2 | The nightmare | "Let's go back to England, 2014": the year plate rewinds 2018 → 2014. Then 5 Tests, 10 innings, average 13.40, 2 ducks, no fifty and a highest of 39, each flipping in on its word |
+| 3 | Ten innings | **Graph 1.** "Every bar is one innings" (all ten rise); "the dotted line is fifty"; "he never reached it". Trent Bridge, Lord's and Old Trafford are spotlighted as they are named |
+| 4 | Anderson's trap | 4 red wicket lamps; the off-stump corridor *illustration* (labelled as not ball-tracking data) shows the ball moving away to the edge |
+| 5 | Four years later | The year flips 2014 → 2018 and the light warms; patience, leaving well, the right ball |
+| 6 | The 149 | "The red line is his whole 2014 series." A target panel shows all ten 2014 innings = 134. The counter crosses the line on "he went past it", lands on 149 (225), and the board swings to Kohli's 2018 hundred celebration. 2014 total 134, difference +15 |
+| 7 | Transformation | **Graphs 2–4.** "Grey is 2014, gold is 2018" (the key lights as it is said); runs 134 vs 593 (scale 0–600); average 13.40 vs 59.30 (0–60); centuries 0 → 2; fifties 0 → 3; Anderson dismissals 4 vs 0 |
+| 8 | The legacy | **Graph 5.** "Add up every run, innings by innings": the grey 2014 line draws on "barely moves", the gold 2018 line on "takes off". Series 3–1 and 4–1; "Same country. Same challenge. A different batter."; Beyond The Scoreboard; one click |
 
 ## Statistics
 
@@ -43,33 +43,29 @@ The innings lists sum to 134 and 593, and 134/10 = 13.40 and 593/10 = 59.30, so 
 
 ## Photographs
 
-All photos are genuine, from Wikimedia Commons, under free licences. Each is credited on screen and captioned with its real place and date.
+All photos are genuine, from Wikimedia Commons, under free licences, and each is credited on screen with its real place and date. As agreed, Kohli photos in Test whites are used where they suit the story even when they come from another match of the 2018 tour; the caption always shows where each was actually taken.
 
-| File | Shows | Credit / licence |
-| --- | --- | --- |
-| `otr-scoreboard-2014.jpg` | Old Trafford scoreboard, 4th Test, 8 Aug 2014 (shows IND 152) | Anthony O'Neil · CC BY-SA 2.0 |
-| `otr-rain-2014.jpg` | Rain and umbrellas, Old Trafford, Aug 2014 | Anthony O'Neil · CC BY-SA 2.0 |
-| `otr-ground-2014.jpg` | Old Trafford, 4th Test, Aug 2014 | Anthony O'Neil · CC BY-SA 2.0 |
-| `otr-covers-2014.jpg` | Old Trafford under covers, Aug 2014 | Anthony O'Neil · CC BY-SA 2.0 |
-| `tb-2014-a.jpg` | Trent Bridge, 1st Test, 10 Jul 2014 | DncnH · CC BY 2.0 |
-| `anderson-perth-2013.jpg` | James Anderson bowling, Perth, Dec 2013 | Dan Heap · CC BY 2.0 |
-| `kohli-batting-tb-2018.jpg` | Kohli batting, 3rd Test, Trent Bridge, Aug 2018 | It's No Game · CC BY 2.0 |
-| `kohli-century-tb-2018.jpg` | Kohli after his hundred, Trent Bridge, 20 Aug 2018 | Dun.can · CC BY 2.0 |
-| `kohli-leaves-tb-2018.jpg` | Kohli leaving the field after his hundred, Trent Bridge, Aug 2018 | It's No Game · CC BY 2.0 |
-| `edgbaston-2018.jpg` | Mohammed Shami at Edgbaston, 1st Test, 3 Aug 2018 | Aidan Sammons · CC BY 2.0 |
+| File | Shows | Used in | Credit / licence |
+| --- | --- | --- | --- |
+| `otr-scoreboard-2014.jpg` | Old Trafford scoreboard, 4th Test, 8 Aug 2014 (shows IND 152) | hook, cover | Anthony O'Neil · CC BY-SA 2.0 |
+| `kohli-batting-tb-2018.jpg` | Kohli batting, Trent Bridge, Aug 2018 | hook, four years later | It's No Game · CC BY 2.0 |
+| `kohli-leaves-tb-2018.jpg` | Kohli walking off, Trent Bridge, Aug 2018 (cold-graded) | the nightmare | It's No Game · CC BY 2.0 |
+| `tb-2014-a.jpg` | Trent Bridge, 1st Test, 10 Jul 2014 | ten innings | DncnH · CC BY 2.0 |
+| `otr-covers-2014.jpg` | Old Trafford under covers, Aug 2014 | ten innings | Anthony O'Neil · CC BY-SA 2.0 |
+| `anderson-perth-2013.jpg` | James Anderson bowling, Perth, Dec 2013 | Anderson's trap | Dan Heap · CC BY 2.0 |
+| `kohli-century-tb-2018.jpg` | Kohli raising his bat after his hundred, Trent Bridge, 20 Aug 2018 | the 149 payoff, legacy, cover | Dun.can · CC BY 2.0 |
+| `otr-ground-2014.jpg` | Old Trafford, 4th Test, Aug 2014 | transformation | Anthony O'Neil · CC BY-SA 2.0 |
+| `kohli-fielding-tb-2018.jpg` | Kohli in the field, Trent Bridge, Aug 2018 | transformation | Dun.can · CC BY 2.0 |
+| `otr-rain-2014.jpg` | Rain and umbrellas, Old Trafford, Aug 2014 | legacy | Anthony O'Neil · CC BY-SA 2.0 |
 
-Source pages and full metadata are in `public/photos/credits.json`. Three unused extras are also there: `tb-2014-b`, `broad-anderson-2014` and `tb-2018-wide`.
-
-**What could not be found under a free licence, and so is not in the Reel:**
-- a photo of Kohli himself on the 2014 tour
-- a photo of an Anderson dismissal of Kohli
-- a photo of the Edgbaston 2018 celebration
-
-Instead, 2014 is shown through photos of the actual Tests at Trent Bridge and Old Trafford. Anderson is shown bowling in Perth in 2013, captioned as such. Edgbaston is shown with a genuine photo from that Test, and his 2018 hundred celebration is the Trent Bridge one, captioned as such. Nothing is AI-generated and no match footage is used.
+Source pages and full metadata are in `public/photos/credits.json`.
+- Commons has no freely licensed photo of Kohli batting in England in 2014, and none of the Edgbaston 2018 celebration.
+- Its only Kohli-in-Test-whites photos are from the 2018 Trent Bridge Test, so those carry the story.
+- Nothing is AI-generated and no match footage is used.
 
 ## Audio, and its limits
 
-- **Narration:** Kokoro TTS, `am_michael` voice at a natural 1.0× pace with breathing pauses. This is the same narrator as the earlier reels. It is a US-English voice, not Indian English; no premium Indian-English neural voice (ElevenLabs, Azure) is available in this environment.
+- **Narration:** Kokoro TTS, `am_michael` voice at a natural 1.0× pace with breathing pauses; the script is in `scripts/voiceover.json`. This is the same narrator as the earlier reels. It is a US-English voice, not Indian English; no premium Indian-English neural voice (ElevenLabs, Azure) is available in this environment.
   - Names use hand-tuned phonemes: Virat, Edgbaston, innings, "off stump", "one and eight", "four-one".
 - **Music, crowd and effects:** all original, synthesized in `scripts/gen-audio.mjs`. No samples and no licensed tracks.
   - D minor drone, low strings and a slow pulse through 2014.

@@ -13,9 +13,11 @@ export const InningsBars: React.FC<{
   grounds: string[];
   revealAt: number[]; // frame each ground's pair grows
   fiftyAt: number; // frame the "fifty" line lights up
+  neverAt?: number; // frame the "never reached" note appears
+  focus?: { at: number; ground: number }[]; // spotlight a ground as the narrator names it (-1 = none)
   w: number;
   h: number;
-}> = ({ scores, grounds, revealAt, fiftyAt, w, h }) => {
+}> = ({ scores, grounds, revealAt, fiftyAt, neverAt = fiftyAt, focus = [], w, h }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const MAX = 50;
@@ -30,6 +32,20 @@ export const InningsBars: React.FC<{
   const yOf = (v: number) => top + plotH * (1 - v / MAX);
   const fifty = interpolate(frame, [fiftyAt, fiftyAt + 12], [0, 1], CLAMP);
   const highest = Math.max(...scores);
+  const never = interpolate(frame, [neverAt, neverAt + 10], [0, 1], CLAMP);
+  // spotlight: the named ground stays bright, the others dim; changes ease over 8 frames
+  const dimOf = (gi: number) => {
+    let v = 1;
+    let prev = 1;
+    let since = -1e9;
+    for (const f of focus) {
+      if (frame < f.at) break;
+      prev = v;
+      v = f.ground < 0 || f.ground === gi ? 1 : 0.3;
+      since = f.at;
+    }
+    return interpolate(frame - since, [0, 8], [prev, v], CLAMP);
+  };
   return (
     <div style={{ position: "relative", width: w, height: h }}>
       {/* gridlines + axis numbers */}
@@ -61,7 +77,7 @@ export const InningsBars: React.FC<{
           50
         </Lettering>
       </div>
-      <div style={{ position: "absolute", right: right + 6, top: yOf(50) + 8, opacity: fifty }}>
+      <div style={{ position: "absolute", right: right + 6, top: yOf(50) + 8, opacity: never, transform: `scale(${interpolate(never, [0, 1], [1.2, 1])})`, transformOrigin: "100% 0%" }}>
         <Lettering size={22} font="body" color={C.amber} spacing="0.2em">
           FIFTY · NEVER REACHED
         </Lettering>
@@ -69,8 +85,9 @@ export const InningsBars: React.FC<{
       {grounds.map((g, gi) => {
         const cx = left + slot * gi + slot / 2;
         const p = (i: number) => spring({ frame: frame - revealAt[gi] - i * 6, fps, config: theme.spring.smooth });
+        const dim = dimOf(gi);
         return (
-          <React.Fragment key={g}>
+          <div key={g} style={{ position: "absolute", inset: 0, opacity: dim }}>
             {[0, 1].map((k) => {
               const v = scores[gi * 2 + k];
               const prog = p(k);
@@ -123,7 +140,7 @@ export const InningsBars: React.FC<{
                 ))}
               </Lettering>
             </div>
-          </React.Fragment>
+          </div>
         );
       })}
     </div>
@@ -188,7 +205,7 @@ export const CompareRow: React.FC<{
 };
 
 // Graph 5 — cumulative runs, innings by innings, both tours on one true 0–600 scale.
-export const CumulativeChart: React.FC<{ a: number[]; b: number[]; at: number; w: number; h: number; drawLen?: number }> = ({ a, b, at, w, h, drawLen = 75 }) => {
+export const CumulativeChart: React.FC<{ a: number[]; b: number[]; atA: number; atB: number; w: number; h: number; drawLen?: number }> = ({ a, b, atA, atB, w, h, drawLen = 45 }) => {
   const frame = useCurrentFrame();
   const MAX = 600;
   const L = 74;
@@ -199,10 +216,10 @@ export const CumulativeChart: React.FC<{ a: number[]; b: number[]; at: number; w
   const ph = h - T - B;
   const X = (i: number) => L + (pw * i) / (a.length - 1);
   const Y = (v: number) => T + ph * (1 - v / MAX);
-  const prog = interpolate(frame, [at, at + drawLen], [0, 1], { easing: theme.ease.inOut, ...CLAMP });
+  const progOf = (at: number) => interpolate(frame, [at, at + drawLen], [0, 1], { easing: theme.ease.inOut, ...CLAMP });
   const path = (xs: number[]) => xs.map((v, i) => `${i ? "L" : "M"}${X(i).toFixed(1)},${Y(v).toFixed(1)}`).join(" ");
   const len = (xs: number[]) => xs.slice(1).reduce((s, v, i) => s + Math.hypot(X(i + 1) - X(i), Y(v) - Y(xs[i])), 0);
-  const endA = interpolate(prog, [0.85, 1], [0, 1], CLAMP);
+
   return (
     <svg width={w} height={h} style={{ overflow: "visible" }}>
       {[0, 200, 400, 600].map((v) => (
@@ -222,10 +239,12 @@ export const CumulativeChart: React.FC<{ a: number[]; b: number[]; at: number; w
         INNINGS
       </text>
       {[
-        { xs: a, col: "#9C8F86", glow: "transparent", w: 6, label: `2014 · ${a[a.length - 1]}` },
-        { xs: b, col: C.amber, glow: C.amberGlow, w: 8, label: `2018 · ${b[b.length - 1]}` },
+        { xs: a, col: "#9C8F86", glow: "transparent", w: 6, label: `2014 · ${a[a.length - 1]}`, at: atA },
+        { xs: b, col: C.amber, glow: C.amberGlow, w: 8, label: `2018 · ${b[b.length - 1]}`, at: atB },
       ].map((s, k) => {
         const l = len(s.xs);
+        const prog = progOf(s.at);
+        const endA = interpolate(prog, [0.85, 1], [0, 1], CLAMP);
         return (
           <g key={k}>
             <path d={path(s.xs)} fill="none" stroke={s.col} strokeWidth={s.w} strokeLinejoin="round" strokeLinecap="round" strokeDasharray={l} strokeDashoffset={l * (1 - prog)} style={{ filter: k ? `drop-shadow(0 0 8px ${s.glow})` : undefined }} />

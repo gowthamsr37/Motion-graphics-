@@ -66,7 +66,7 @@ export const S1: React.FC = () => {
         </div>
       </Panel>
       <PhotoFrame id="otr-scoreboard-2014" x={60} y={360} w={470} h={500} delay={2} warmth={0.1} focus="58% 45%" zoom={[1.1, 1.22]} life={440} label="2014" labelColor={GREY} compact seed={102} />
-      <PhotoFrame id="kohli-century-tb-2018" x={550} y={360} w={470} h={500} delay={6} warmth={1} focus="50% 40%" zoom={[1.08, 1.2]} life={440} label="2018" compact seed={103} glow={C.amberGlow} glowOn={0.4} />
+      <PhotoFrame id="kohli-batting-tb-2018" x={550} y={360} w={470} h={500} delay={6} warmth={1} focus="30% 52%" zoom={[1.3, 1.45]} life={480} label="2018" compact seed={103} glow={C.amberGlow} glowOn={0.4} />
       {[
         { x: 60, label: "2014 SERIES", target: "134", stop: b.stop134, col: C.red, glow: C.redGlow, seed: 5 },
         { x: 550, label: "2018 FIRST INNINGS", target: "149", stop: b.stop149, col: C.amber, glow: C.amberGlow, seed: 9 },
@@ -101,25 +101,31 @@ export const S1: React.FC = () => {
 
 /* ---------------- S2 — THE NIGHTMARE ---------------- */
 export const s2Beats = (fps: number) => ({
-  tests: sentence(fps, "s2", 0).from,
-  innings: sentence(fps, "s2", 1).from,
-  avg: wordAt(fps, "s2", "13", 3.4),
-  ducks: sentence(fps, "s2", 3).from,
-  fifties: sentence(fps, "s2", 4).from,
-  highest: sentence(fps, "s2", 6).from,
+  rewind: wordAt(fps, "s2", "2014", 1.6),
+  tests: sentence(fps, "s2", 1).from,
+  innings: sentence(fps, "s2", 2).from,
+  avg: wordAt(fps, "s2", "13", 6.4),
+  ducks: sentence(fps, "s2", 4).from,
+  fifties: sentence(fps, "s2", 5).from,
+  highest: sentence(fps, "s2", 7).from,
 });
 
 export const S2: React.FC = () => {
   const { fps } = useVideoConfig();
   const b = s2Beats(fps);
   const t = tour2014;
+  const rewind = useFlip(b.rewind, 3);
   return (
     <SceneShell push={0.04}>
-      <PhotoFrame id="otr-rain-2014" x={60} y={226} w={960} h={560} delay={0} warmth={0} focus="50% 55%" zoom={[1.05, 1.18]} pan={[10, -20]} life={380} label="ENGLAND 2014" labelColor={C.cream} seed={201} />
+      <PhotoFrame id="kohli-leaves-tb-2018" x={60} y={226} w={960} h={560} delay={0} warmth={0} focus="57% 44%" zoom={[1.75, 1.95]} pan={[0, -24]} life={440} seed={201} />
       <Panel x={60} y={802} w={960} h={548} delay={6} seed={202}>
-        <div style={{ position: "absolute", top: 22, width: "100%", textAlign: "center" }}>
+        <div style={{ position: "absolute", top: 14, width: "100%", display: "flex", justifyContent: "center", alignItems: "center", gap: 16 }}>
           <Lettering size={24} font="body" color={C.amber} spacing="0.32em">
-            ENGLAND 2014 · TEST SERIES
+            ENGLAND
+          </Lettering>
+          <Plates text="2014" prev="2018" progress={(i) => (i < 3 ? 1 : rewind(0))} w={30} h={44} gap={4} color={C.amber} />
+          <Lettering size={24} font="body" color={C.amber} spacing="0.32em">
+            · TEST SERIES
           </Lettering>
         </div>
         <div style={{ position: "absolute", top: 72, left: 30, right: 30, display: "flex", justifyContent: "space-around" }}>
@@ -141,8 +147,8 @@ export const S2: React.FC = () => {
 
 /* ---------------- S3 — TEN INNINGS ---------------- */
 export const s3Beats = (fps: number) => {
-  const s = [0, 1, 2, 3].map((i) => sentence(fps, "s3", i));
-  return { tb: s[0].from, lords: s[1].from, soton: s[2].from - 10, otr: s[2].from + 10, oval: s[3].from, fifty: s[3].from + 26 };
+  const s = [0, 1, 2, 3, 4, 5].map((i) => sentence(fps, "s3", i));
+  return { bars: s[0].from, fifty: s[1].from, never: s[2].from, tb: s[3].from, lords: s[4].from, otr: s[5].from, clear: s[5].to + 18 };
 };
 
 export const S3: React.FC = () => {
@@ -160,11 +166,25 @@ export const S3: React.FC = () => {
       </Panel>
       <Panel x={60} y={352} w={960} h={640} delay={4} seed={302}>
         <div style={{ position: "absolute", left: 20, top: 26 }}>
-          <InningsBars scores={tour2014.scores} grounds={tour2014.grounds} revealAt={[b.tb, b.lords, b.soton, b.otr, b.oval]} fiftyAt={b.fifty} w={920} h={596} />
+          <InningsBars
+            scores={tour2014.scores}
+            grounds={tour2014.grounds}
+            revealAt={[0, 1, 2, 3, 4].map((i) => b.bars + i * 7)}
+            fiftyAt={b.fifty}
+            neverAt={b.never}
+            focus={[
+              { at: b.tb, ground: 0 },
+              { at: b.lords, ground: 1 },
+              { at: b.otr, ground: 3 },
+              { at: b.clear, ground: -1 },
+            ]}
+            w={920}
+            h={596}
+          />
         </div>
       </Panel>
-      <PhotoFrame id="tb-2014-a" x={60} y={1008} w={470} h={344} delay={b.tb} warmth={0.15} focus="50% 50%" zoom={[1.05, 1.16]} life={300} compact seed={303} />
-      <PhotoFrame id="otr-covers-2014" x={550} y={1008} w={470} h={344} delay={b.otr} warmth={0.05} focus="50% 50%" zoom={[1.05, 1.15]} life={200} compact seed={304} />
+      <PhotoFrame id="tb-2014-a" x={60} y={1008} w={470} h={344} delay={b.tb - 6} warmth={0.15} focus="50% 50%" zoom={[1.05, 1.16]} life={300} compact seed={303} />
+      <PhotoFrame id="otr-covers-2014" x={550} y={1008} w={470} h={344} delay={b.otr - 6} warmth={0.05} focus="50% 50%" zoom={[1.05, 1.15]} life={200} compact seed={304} />
     </SceneShell>
   );
 };
@@ -294,35 +314,40 @@ export const S5: React.FC = () => {
 };
 
 /* ---------------- S6 — THE INCREDIBLE 149 ---------------- */
-export const s6Beats = (fps: number) => ({
-  header: sentence(fps, "s6", 1).from,
-  countFrom: sentence(fps, "s6", 1).from + 4,
-  land: sentence(fps, "s6", 2).to - 2,
-  diff: sentence(fps, "s6", 3).from,
-});
-
-export const s6Pass134 = (fps: number) => {
-  const b = s6Beats(fps);
-  // invert the count curve to find the frame the counter passes 134
-  for (let f = b.countFrom; f <= b.land; f++) if (countAt(f, b.countFrom, b.land) >= 134) return f;
-  return b.land;
+export const s6Beats = (fps: number) => {
+  const s = [0, 1, 2, 3, 4, 5, 6].map((i) => sentence(fps, "s6", i));
+  return {
+    header: s[1].from,
+    countFrom: s[1].from + 4,
+    red: s[2].from,
+    redEnd: s[2].to,
+    pass: wordAt(fps, "s6", "past", 7.6) + 4, // the counter crosses 134 on "…went past it"
+    keep: s[4].to,
+    land: s[5].to - 2,
+    diff: s[6].from,
+  };
 };
 
-const countAt = (f: number, a: number, z: number) => Math.round(149 * theme.ease.out(interpolate(f, [a, z], [0, 1], CLAMP)));
+// The climb: steady through the 2014 explanation, over the red line on "past it", easing onto 149.
+const countAt = (f: number, b: ReturnType<typeof s6Beats>) =>
+  Math.round(interpolate(f, [b.countFrom, b.redEnd, b.pass, b.keep, b.land], [0, 118, 134, 142, 149], { easing: theme.ease.soft, ...CLAMP }));
+
+export const s6Pass134 = (fps: number) => s6Beats(fps).pass;
 
 export const S6: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const b = s6Beats(fps);
-  const pass = s6Pass134(fps);
-  const runs = countAt(frame, b.countFrom, b.land);
+  const runs = countAt(frame, b);
   const landed = frame >= b.land;
   const land = useAt(b.land, theme.spring.bouncy);
   const passed = runs >= 134;
-  const passFlash = interpolate(frame, [pass, pass + 4, pass + 24], [0, 1, 0], CLAMP);
+  const passFlash = interpolate(frame, [b.pass, b.pass + 4, b.pass + 26], [0, 1, 0], CLAMP);
+  const redCall = interpolate(frame, [b.red, b.red + 6, b.redEnd + 10, b.redEnd + 24], [0, 1, 1, 0], CLAMP);
   const diff = useFlip(b.diff + 10, 3);
   const RAIL = 150; // rail scale 0–150 runs, linear
   const railW = 820;
+  const markX = (railW * 134) / RAIL;
   return (
     <SceneShell push={0.05}>
       <Panel x={60} y={226} w={960} h={120} delay={0} seed={601} glow={C.amberGlow} glowOn={0.4}>
@@ -335,15 +360,14 @@ export const S6: React.FC = () => {
           </Reveal>
         </div>
       </Panel>
-      <PhotoFrame id="edgbaston-2018" x={60} y={362} w={960} h={380} delay={4} warmth={1} focus="50% 30%" zoom={[1.0, 1.08]} life={300} seed={602} />
-      <Panel x={60} y={758} w={960} h={330} delay={b.countFrom - 12} seed={603} glow={C.amberGlow} glowOn={landed ? 0.6 + 0.4 * Math.min(1, land) : 0.25}>
+      <Panel x={60} y={362} w={960} h={340} delay={b.countFrom - 14} seed={603} glow={C.amberGlow} glowOn={landed ? 0.6 + 0.4 * Math.min(1, land) : 0.25}>
         <div style={{ position: "absolute", top: 24, width: "100%", textAlign: "center" }}>
           <Lettering size={30} font="body" color={C.cream} spacing="0.3em">
             VIRAT KOHLI
           </Lettering>
         </div>
-        <div style={{ position: "absolute", top: 72, width: "100%", display: "flex", justifyContent: "center", alignItems: "flex-end", gap: 24, transform: `scale(${landed ? interpolate(land, [0, 1], [1.12, 1]) : 1})` }}>
-          <Plates text={String(runs).padStart(3, " ")} w={160} h={220} gap={14} color={landed ? C.amber : passed ? C.amber : C.cream} glow={C.amberGlow} glowOn={landed ? 1 : passed ? 0.6 : 0} blur={!landed && frame > b.countFrom ? 1.2 : 0} />
+        <div style={{ position: "absolute", top: 76, width: "100%", display: "flex", justifyContent: "center", alignItems: "flex-end", gap: 24, transform: `scale(${landed ? interpolate(land, [0, 1], [1.12, 1]) : 1})` }}>
+          <Plates text={String(runs).padStart(3, " ")} w={160} h={220} gap={14} color={passed ? C.amber : C.cream} glow={C.amberGlow} glowOn={landed ? 1 : passed ? 0.6 : 0} blur={!landed && frame > b.countFrom ? 1 : 0} />
           <div style={{ paddingBottom: 18, opacity: interpolate(land, [0, 0.5], [0, 1], CLAMP) }}>
             <Lettering size={64} color={C.creamDim}>
               ({tour2018.edgbaston.balls})
@@ -351,38 +375,70 @@ export const S6: React.FC = () => {
           </div>
         </div>
       </Panel>
-      <Panel x={60} y={1104} w={960} h={128} delay={b.countFrom - 6} seed={604}>
-        <div style={{ position: "absolute", left: 70, top: 64, width: railW, height: 18, borderRadius: 9, background: C.plate, boxShadow: `inset 0 0 0 1px ${C.panelEdge}` }}>
+      <Panel x={60} y={718} w={960} h={130} delay={b.countFrom - 8} seed={604} glow={C.redGlow} glowOn={redCall * 0.7}>
+        <div style={{ position: "absolute", left: 70, top: 66, width: railW, height: 18, borderRadius: 9, background: C.plate, boxShadow: `inset 0 0 0 1px ${C.panelEdge}` }}>
           <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: (railW * runs) / RAIL, borderRadius: 9, background: passed ? C.amber : C.cream, boxShadow: passed ? `0 0 16px ${C.amberGlow}` : undefined }} />
           {/* marker: the whole 2014 series */}
-          <div style={{ position: "absolute", left: (railW * 134) / RAIL - 2, top: -16, width: 4, height: 50, background: C.red, boxShadow: `0 0 ${10 + 30 * passFlash}px ${C.redGlow}` }} />
+          <div style={{ position: "absolute", left: markX - 3, top: -18, width: 6, height: 54, background: C.red, boxShadow: `0 0 ${10 + 30 * Math.max(passFlash, redCall)}px ${C.redGlow}` }} />
         </div>
-        <div style={{ position: "absolute", left: 70 + (railW * 134) / RAIL - 330, top: 16, width: 320, textAlign: "right" }}>
-          <Lettering size={20} font="body" color={C.red} spacing="0.14em">
-            2014 SERIES TOTAL · 134
+        <div style={{ position: "absolute", left: 70 + markX - 420, top: 14, width: 410, textAlign: "right", transform: `scale(${1 + 0.12 * redCall})`, transformOrigin: "100% 50%" }}>
+          <Lettering size={22} font="body" color={C.red} spacing="0.14em">
+            WHOLE 2014 SERIES · 134
           </Lettering>
         </div>
-        <div style={{ position: "absolute", left: 70, top: 92 }}>
+        <div style={{ position: "absolute", left: 70, top: 96 }}>
           <Lettering size={20} color={C.creamDim}>
             0
           </Lettering>
         </div>
+        <div style={{ position: "absolute", left: 70 + railW - 30, top: 96 }}>
+          <Lettering size={20} color={C.creamDim}>
+            150
+          </Lettering>
+        </div>
       </Panel>
-      <Panel x={60} y={1248} w={960} h={104} delay={b.diff - 6} seed={605} glow={C.amberGlow} glowOn={0.5}>
+      {/* what he is chasing: all ten 2014 innings — the board swings away to the celebration as 149 lands */}
+      <Panel x={60} y={864} w={960} h={388} delay={b.red - 6} closeAt={b.land - 10} seed={606}>
+        <div style={{ position: "absolute", top: 22, width: "100%", textAlign: "center" }}>
+          <Lettering size={24} font="body" color={C.red} spacing="0.26em">
+            THE TARGET: HIS WHOLE 2014 SERIES
+          </Lettering>
+        </div>
+        <div style={{ position: "absolute", left: 60, right: 60, top: 70, height: 220, display: "flex", alignItems: "flex-end", justifyContent: "space-between" }}>
+          {tour2014.scores.map((v, i) => {
+            const g = interpolate(frame, [b.red + i * 3, b.red + i * 3 + 12], [0, 1], { easing: theme.ease.out, ...CLAMP });
+            return (
+              <div key={i} style={{ width: 62, display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
+                <Lettering size={30} color={v === 0 ? C.red : C.creamDim} style={{ opacity: g }}>
+                  {v}
+                </Lettering>
+                <div style={{ width: 46, height: Math.max(3, (180 * v) / 50) * g, background: v === 0 ? C.red : "#8E8A7C", borderRadius: "3px 3px 0 0" }} />
+              </div>
+            );
+          })}
+        </div>
+        <div style={{ position: "absolute", bottom: 24, width: "100%", textAlign: "center" }}>
+          <Lettering size={40} color={C.cream}>
+            10 INNINGS = <span style={{ color: C.red }}>134 RUNS</span>
+          </Lettering>
+        </div>
+      </Panel>
+      <PhotoFrame id="kohli-century-tb-2018" x={60} y={864} w={960} h={388} delay={b.land - 2} warmth={1} focus="50% 38%" zoom={[1.0, 1.1]} life={200} label="2018" seed={602} glow={C.amberGlow} glowOn={0.6} />
+      <Panel x={60} y={1268} w={960} h={88} delay={b.diff - 6} seed={605} glow={C.amberGlow} glowOn={0.5}>
         <div style={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "space-around" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-            <Lettering size={24} font="body" color={C.creamDim} spacing="0.2em">
+            <Lettering size={22} font="body" color={C.creamDim} spacing="0.2em">
               2014 TOTAL
             </Lettering>
-            <Lettering size={56} color={GREY}>
+            <Lettering size={50} color={GREY}>
               134
             </Lettering>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-            <Lettering size={24} font="body" color={C.cream} spacing="0.2em">
+            <Lettering size={22} font="body" color={C.cream} spacing="0.2em">
               DIFFERENCE
             </Lettering>
-            <Plates text="+15" prev="   " progress={diff} w={52} h={74} gap={6} color={C.amber} glow={C.amberGlow} />
+            <Plates text="+15" prev="   " progress={diff} w={44} h={64} gap={6} color={C.amber} glow={C.amberGlow} />
           </div>
         </div>
       </Panel>
@@ -392,10 +448,12 @@ export const S6: React.FC = () => {
 
 /* ---------------- S7 — COMPLETE TRANSFORMATION ---------------- */
 export const s7Beats = (fps: number) => ({
-  runs: wordAt(fps, "s7", "593", 2.22),
-  avg: sentence(fps, "s7", 1).from,
-  tons: sentence(fps, "s7", 2).from,
-  anderson: sentence(fps, "s7", 3).from,
+  legend: sentence(fps, "s7", 0).from,
+  runs: sentence(fps, "s7", 1).from,
+  avg: sentence(fps, "s7", 2).from,
+  tons: sentence(fps, "s7", 3).from,
+  fifties: wordAt(fps, "s7", "three", 10.9),
+  anderson: sentence(fps, "s7", 4).from,
 });
 
 export const S7: React.FC = () => {
@@ -403,7 +461,9 @@ export const S7: React.FC = () => {
   const { fps } = useVideoConfig();
   const b = s7Beats(fps);
   const tons = useFlip(b.tons, 3);
-  const fifties = useFlip(b.tons + 10, 3);
+  const fifties = useFlip(b.fifties, 3);
+  const grey = interpolate(frame, [wordAt(fps, "s7", "grey", 1.6), wordAt(fps, "s7", "grey", 1.6) + 8], [0, 1], CLAMP);
+  const gold = interpolate(frame, [wordAt(fps, "s7", "gold", 3.0), wordAt(fps, "s7", "gold", 3.0) + 8], [0, 1], CLAMP);
   const zero = useFlip(wordAt(fps, "s7", "once", 11.0), 2);
   const fourLit = useFlip(b.anderson + 18, 2);
   return (
@@ -413,13 +473,23 @@ export const S7: React.FC = () => {
           <Lettering size={62}>
             <span style={{ color: GREY }}>2014</span> vs <span style={{ color: C.amber }}>2018</span>
           </Lettering>
-          <Lettering size={22} font="body" color={C.creamDim} spacing="0.2em">
-            ENGLAND · 5 TESTS EACH
-          </Lettering>
+          <div style={{ display: "flex", alignItems: "center", gap: 26 }}>
+            {[
+              { k: "2014", col: GREY, on: grey },
+              { k: "2018", col: C.amber, on: gold },
+            ].map((l) => (
+              <div key={l.k} style={{ display: "flex", alignItems: "center", gap: 10, opacity: 0.3 + 0.7 * l.on, transform: `scale(${1 + 0.15 * l.on * (1 - l.on) * 4})` }}>
+                <div style={{ width: 34, height: 18, borderRadius: 3, background: l.col, boxShadow: l.k === "2018" ? `0 0 ${12 * l.on}px ${C.amberGlow}` : undefined }} />
+                <Lettering size={26} font="body" color={l.col} spacing="0.14em">
+                  {l.k}
+                </Lettering>
+              </div>
+            ))}
+          </div>
         </div>
       </Panel>
       <PhotoFrame id="otr-ground-2014" x={60} y={338} w={470} h={282} delay={4} warmth={0.1} focus="50% 50%" zoom={[1.05, 1.14]} life={380} label="2014" labelColor={GREY} compact seed={702} />
-      <PhotoFrame id="kohli-leaves-tb-2018" x={550} y={338} w={470} h={282} delay={8} warmth={1} focus="60% 50%" zoom={[1.2, 1.32]} life={380} label="2018" compact seed={703} />
+      <PhotoFrame id="kohli-fielding-tb-2018" x={550} y={338} w={470} h={282} delay={8} warmth={1} focus="50% 4%" zoom={[1.0, 1.06]} life={420} label="2018" compact seed={703} />
       <Panel x={60} y={636} w={960} h={556} delay={b.runs - 14} seed={704}>
         <div style={{ position: "absolute", left: 36, right: 36, top: 26 }}>
           <CompareRow label="RUNS" a={tour2014.runs} b={tour2018.runs} max={600} at={b.runs} w={888} />
@@ -430,7 +500,7 @@ export const S7: React.FC = () => {
         <div style={{ position: "absolute", left: 36, right: 36, top: 352, display: "flex", justifyContent: "space-around" }}>
           {[
             { label: "CENTURIES", a: tour2014.hundreds, b: tour2018.hundreds, p: tons, at: b.tons },
-            { label: "FIFTIES", a: tour2014.fifties, b: tour2018.fifties, p: fifties, at: b.tons + 10 },
+            { label: "FIFTIES", a: tour2014.fifties, b: tour2018.fifties, p: fifties, at: b.fifties },
           ].map((r) => (
             <div key={r.label} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 14, opacity: interpolate(frame, [r.at - 6, r.at + 4], [0.25, 1], CLAMP) }}>
               <Lettering size={24} font="body" color={C.cream} spacing="0.22em">
@@ -486,10 +556,12 @@ export const S7: React.FC = () => {
 
 /* ---------------- S8 — THE LEGACY ---------------- */
 export const s8Beats = (fps: number) => ({
-  series: sentence(fps, "s8", 0).from,
-  chart: 10,
-  lines: [sentence(fps, "s8", 2).from, sentence(fps, "s8", 3).from, sentence(fps, "s8", 4).from],
-  brand: sentence(fps, "s8", 5).from - 8,
+  chart: sentence(fps, "s8", 0).from,
+  grey: sentence(fps, "s8", 1).from,
+  gold: sentence(fps, "s8", 2).from,
+  series: sentence(fps, "s8", 3).from,
+  lines: [sentence(fps, "s8", 5).from, sentence(fps, "s8", 6).from, sentence(fps, "s8", 7).from],
+  brand: sentence(fps, "s8", 8).from - 8,
 });
 
 export const S8: React.FC = () => {
@@ -509,7 +581,7 @@ export const S8: React.FC = () => {
           </Lettering>
         </div>
         <div style={{ position: "absolute", left: 20, top: 56 }}>
-          <CumulativeChart a={cumulative(tour2014.scores)} b={cumulative(tour2018.scores)} at={b.chart + 6} w={920} h={300} drawLen={80} />
+          <CumulativeChart a={cumulative(tour2014.scores)} b={cumulative(tour2018.scores)} atA={b.grey} atB={b.gold} w={920} h={300} drawLen={42} />
         </div>
       </Panel>
       <Panel x={60} y={990} w={960} h={96} delay={b.series} closeAt={close} seed={804}>
