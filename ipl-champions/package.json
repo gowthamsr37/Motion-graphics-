@@ -1,0 +1,21 @@
+{
+  "name": "ipl-champions",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Motion graphics: every IPL champion, 2008-2026",
+  "scripts": {
+    "audio": "node scripts/gen-audio.mjs",
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts IPLChampions out/ipl-champions.mp4 --codec h264 --crf 16"
+  },
+  "dependencies": {
+    "@fontsource/barlow-condensed": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@remotion/cli": "^4.0.543",
+    "@types/react": "^19.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.543",
+    "typescript": "^7.0.2"
+  }
+}
