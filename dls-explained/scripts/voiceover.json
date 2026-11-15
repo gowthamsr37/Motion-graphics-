@@ -1,0 +1,207 @@
+{
+  "voice": "am_michael",
+  "lang": "en-us",
+  "speed": 1.0,
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.15,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "Rain stops play. Team one scored two hundred and fifty.",
+          "caption": "Rain stops play. Team one scored 250.",
+          "pause": 0.32
+        },
+        {
+          "text": "The chase is cut from fifty overs to twenty-five.",
+          "caption": "The chase is cut from 50 overs to 25.",
+          "pause": 0.32
+        },
+        {
+          "text": "Half the overs, so half the runs, right?",
+          "caption": "Half the overs, so half the runs, right?",
+          "pause": 0.47
+        },
+        {
+          "text": "Wrong. The target is around one hundred and seventy.",
+          "caption": "Wrong. The target is around 170.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "It all started in nineteen ninety-two.",
+          "caption": "It all started in 1992.",
+          "pause": 0.37
+        },
+        {
+          "text": "In a World Cup semi-final, an old rain rule left South Africa needing twenty-one runs from one ball.",
+          "caption": "In a World Cup semi-final, an old rain rule left South Africa needing 21 runs from 1 ball.",
+          "pause": 0.42
+        },
+        {
+          "text": "Two statisticians, Frank Duckworth and Tony Lewis, knew there had to be a fairer way.",
+          "caption": "Two statisticians, Frank Duckworth and Tony Lewis, knew there had to be a fairer way.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Their big idea: a batting team has two resources.",
+          "caption": "Their big idea: a batting team has two resources.",
+          "pause": 0.37
+        },
+        {
+          "text": "Overs left, and wickets in hand.",
+          "caption": "Overs left, and wickets in hand.",
+          "pause": 0.37
+        },
+        {
+          "text": "Together, they decide how many runs you can still score.",
+          "caption": "Together, they decide how many runs you can still score.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Ten overs with all your wickets is worth far more than ten overs with eight down.",
+          "caption": "Ten overs with all your wickets is worth far more than ten overs with eight down.",
+          "pause": 0.37
+        },
+        {
+          "text": "With wickets in hand, you can attack without fear.",
+          "caption": "With wickets in hand, you can attack without fear.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "So every mix of overs and wickets gets a resource percentage.",
+          "caption": "So every mix of overs and wickets gets a resource percentage.",
+          "pause": 0.37
+        },
+        {
+          "text": "Fifty overs with ten wickets is one hundred percent.",
+          "caption": "50 overs with 10 wickets is 100%.",
+          "pause": 0.37
+        },
+        {
+          "text": "Lose overs or wickets, and it drops.",
+          "caption": "Lose overs or wickets, and it drops.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Back to the rain.",
+          "caption": "Back to the rain.",
+          "pause": 0.32
+        },
+        {
+          "text": "Twenty-five overs with all ten wickets isn't half an innings.",
+          "caption": "25 overs with all 10 wickets isn't half an innings.",
+          "pause": 0.32
+        },
+        {
+          "text": "It's about two-thirds, because those wickets let you bat aggressively.",
+          "caption": "It's about two-thirds, because those wickets let you bat aggressively.",
+          "pause": 0.42
+        },
+        {
+          "text": "Two-thirds of two hundred and fifty: a target of around one hundred and seventy, not one hundred and twenty-six.",
+          "caption": "Two-thirds of 250: a target of around 170, not 126.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "And if rain ends the chase early, D L S compares the score with a par score.",
+          "caption": "And if rain ends the chase early, DLS compares the score with a par score.",
+          "pause": 0.37,
+          "phonemes": "ænd ɪf ɹˈeɪn ˈɛndz ðə tʃˈeɪs ˈɜːli, dˈiː ˈɛl ˈɛs kəmpˈɛɹz ðə skˈɔːɹ wɪð ɐ pˈɑːɹ skˈɔːɹ."
+        },
+        {
+          "text": "At the same point, one hundred for two might be ahead, while one hundred for six is behind.",
+          "caption": "At the same point, 100 for 2 might be ahead, while 100 for 6 is behind.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "In twenty fourteen, Professor Steven Stern updated it for modern scoring.",
+          "caption": "In 2014, Professor Steven Stern updated it for modern scoring.",
+          "pause": 0.37
+        },
+        {
+          "text": "Now it's called Duckworth, Lewis, Stern.",
+          "caption": "Now it's called Duckworth–Lewis–Stern.",
+          "pause": 0.3
+        },
+        {
+          "text": "D L S.",
+          "caption": "DLS.",
+          "pause": 0.25,
+          "phonemes": "dˈiː ˈɛl ˈɛs."
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "lead": 0.3,
+      "hold": 1.6,
+      "segments": [
+        {
+          "text": "So it isn't overs alone.",
+          "caption": "So it isn't overs alone.",
+          "pause": 0.32
+        },
+        {
+          "text": "Overs plus wickets equals resources.",
+          "caption": "Overs + wickets = resources.",
+          "pause": 0.47
+        },
+        {
+          "text": "Beyond The Scoreboard.",
+          "caption": "Beyond The Scoreboard.",
+          "pause": 0.25
+        }
+      ]
+    }
+  ]
+}
