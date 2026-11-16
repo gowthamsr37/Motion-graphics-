@@ -66,8 +66,9 @@ const useHits = (): Hit[] => {
     const h = at("s3");
     ["Symmetric,", "Right-skewed,", "Left-skewed,"].forEach((w, i) => {
       const f = s.cueS(i + 1, w);
-      h(f - 4, "whoosh.wav", 0.22);
-      h(f - 2, `step${i + 1}.wav`, 0.3);
+      // land before the word: an effect on the first consonant masks it ("Right" heard as "Bright")
+      h(f - 12, "whoosh.wav", 0.2);
+      h(f - 8, `step${i + 1}.wav`, 0.26);
       h(f + 16, "pop.wav", 0.18);
     });
   }
@@ -94,7 +95,7 @@ const useHits = (): Hit[] => {
     const h = at("s5");
     const COMP = s.cueS(0, "compare"), ABOVE = s.cueS(1, "above"), RIGHTW = s.cueS(1, "Right"), BELOW = s.cueS(1, "Below"), LEFTW = s.cueS(1, "Left"), BOX = s.cueS(2, "box"), WHISK = s.cueS(2, "whisker");
     h(COMP - 4, "pop.wav", 0.32);
-    h(ABOVE - 4, "whoosh.wav", 0.22);
+    h(s.sent(1).from - 10, "whoosh.wav", 0.2);
     h(RIGHTW - 3, "pop.wav", 0.32);
     h(RIGHTW + 10, "ding.wav", 0.22);
     h(BELOW - 4, "whoosh.wav", 0.22);
@@ -123,7 +124,7 @@ const useHits = (): Hit[] => {
     h(s.sent(0).from - 2, "sparkle.wav", 0.25);
     [{ i: 1, w: "Symmetric:" }, { i: 2, w: "Right" }, { i: 3, w: "Left" }].forEach((c, k) => {
       const f = s.cueS(c.i, c.w);
-      h(f - 4, `blip${k * 2 + 1}.wav`, 0.3);
+      h(f - 10, `blip${k * 2 + 1}.wav`, 0.26);
       h(f + 10, "click.wav", 0.18);
     });
     h(s.duration - 10, "whoosh.wav", 0.28);

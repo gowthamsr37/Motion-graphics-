@@ -211,6 +211,8 @@ Notes:
 - For a step-by-step method, a numbered step tracker in the header band (done = green check, active = glowing) keeps viewers oriented (`iqr/` S4).
 - When one extreme value would squash a dot plot, use a broken axis (two segments with a `//` mark) rather than shrinking the dots until they overlap.
 - Topics with many items (e.g. 7 treatments) can use more than 8 scenes. Scene ids now come from `timeline.json` (`src/timing.ts`), so just add the scene to `voiceover.json`, `SCENES`/`LOOK` in `Main.tsx` and the score sections (`treating-outliers/` uses 9). A numbered "n/7" pill keeps viewers oriented across scenes.
+- Don't land an SFX on the first consonant of a spoken word: it masks it (Whisper heard "Right-skewed" as "Bright skewed"). Fire onset effects 8–12 frames before the word. If only the full-length transcript mishears a word, transcribe that clip alone before changing the mix; long-form Whisper sometimes mishears with context.
+- The master chain ends with `alimiter=limit=0.79` after loudnorm (`skewness/scripts/build.sh`) so true peak stays near −2 dBTP.
 - Histogram demos: keep the bin counts as the data and compute mode / median / mean from them (`skewness/src/components/Hist.tsx`), so markers are exact. Colour helpers like `alpha()` expect hex: pass `#RRGGBB`, not an rgba() string (an rgba fed to `alpha()` rendered black bars).
 - Length: 100–120 s by default; the user allows a few extra seconds when it buys a clear explanation (`treating-outliers/` is 124 s).
 - `Pop` is centred on its x, so its content can only be as wide as the distance to the right edge (540 px at x = 540) and multi-line text wraps early ("HOW DO / YOU"). Give every text block inside a `Pop` `whiteSpace: "nowrap"` and explicit `<br />`s.
