@@ -30,8 +30,10 @@ OLD_COMP=$(sed -n 's/.*remotion render out\/bundle \([A-Za-z0-9]*\) .*/\1/p' "$R
 OLD_STEM=$(sed -n 's/.*(out \/ "\([A-Za-z0-9_]*\)\.srt").*/\1/p' "$REF/scripts/export-srt.py" | head -1)
 OLD_COVER=$(sed -n 's/.*remotion still out\/bundle Cover out\/\([A-Za-z0-9_]*\)\.png.*/\1/p' "$REF/scripts/build.sh" | head -1)
 [ -n "$OLD_COMP" ] && [ -n "$OLD_STEM" ] && [ -n "$OLD_COVER" ] || { echo "could not read names from $REF/scripts/build.sh"; exit 1; }
-sed -i "s/$OLD_COMP/$COMP/g" "$DST"/src/Root.tsx "$DST"/src/Main.tsx "$DST"/scripts/build.sh "$DST"/scripts/stills.mjs
+# file names first: the old composition id can be a prefix of the old stem (Outliers → Outliers_Explained)
 sed -i "s/$OLD_COVER/${STEM}_Cover/g; s/$OLD_STEM/$STEM/g" "$DST"/scripts/build.sh "$DST"/scripts/export-srt.py
+sed -i "s/out\/bundle $OLD_COMP /out\/bundle $COMP /g" "$DST"/scripts/build.sh
+sed -i "s/\b$OLD_COMP\b/$COMP/g" "$DST"/src/Root.tsx "$DST"/src/Main.tsx "$DST"/scripts/stills.mjs
 python3 - "$DST" "$DIR" "$COMP" <<'PY'
 import json, sys, pathlib
 dst, name, comp = pathlib.Path(sys.argv[1]), sys.argv[2], sys.argv[3]
