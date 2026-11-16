@@ -2,8 +2,7 @@
 // NASA Blue Marble (day) + Black Marble (city lights) + ocean mask + procedural clouds.
 // The sun sits where it really is at 12:00 UTC on 16 November (subsolar point ≈ 18.8°S, 3.8°W),
 // so the day/night line and the lit cities are physically correct for "the moment of the jump".
-import { ThreeCanvas } from "@remotion/three";
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { continueRender, delayRender, staticFile, useVideoConfig } from "remotion";
 import * as THREE from "three";
 
@@ -173,11 +172,12 @@ void main() {
 
 type Tex = { day: THREE.Texture; night: THREE.Texture; water: THREE.Texture; clouds: THREE.Texture };
 
-const loadTextures = (onDone: (t: Tex) => void, onErr: (e: unknown) => void) => {
+const FILES = { day: "tex/earth-blue-marble.jpg", night: "tex/earth-night.jpg", water: "tex/earth-water.png", clouds: "tex/clouds.png" };
+
+const loadTextures = (renderer: THREE.WebGLRenderer) => {
   const loader = new THREE.TextureLoader();
-  const files = { day: "tex/earth-blue-marble.jpg", night: "tex/earth-night.jpg", water: "tex/earth-water.png", clouds: "tex/clouds.png" };
-  const entries = Object.entries(files);
-  Promise.all(
+  const entries = Object.entries(FILES);
+  return Promise.all(
     entries.map(
       ([, f]) =>
         new Promise<THREE.Texture>((res, rej) =>
@@ -188,7 +188,7 @@ const loadTextures = (onDone: (t: Tex) => void, onErr: (e: unknown) => void) => 
               t.wrapT = THREE.ClampToEdgeWrapping;
               t.minFilter = THREE.LinearMipmapLinearFilter;
               t.magFilter = THREE.LinearFilter;
-              t.anisotropy = 8;
+              t.anisotropy = Math.min(8, renderer.capabilities.getMaxAnisotropy());
               t.generateMipmaps = true;
               t.colorSpace = THREE.NoColorSpace;
               res(t);
@@ -198,76 +198,100 @@ const loadTextures = (onDone: (t: Tex) => void, onErr: (e: unknown) => void) => 
           ),
         ),
     ),
-  )
-    .then((ts) => onDone(Object.fromEntries(entries.map(([k], i) => [k, ts[i]])) as Tex))
-    .catch(onErr);
+  ).then((ts) => Object.fromEntries(entries.map(([k], i) => [k, ts[i]])) as Tex);
 };
 
-const Globe: React.FC<{ tex: Tex; v: EarthView; w: number; h: number }> = ({ tex, v, w, h }) => {
-  const uniforms = useMemo(
-    () => ({
-      uDay: { value: tex.day },
-      uNight: { value: tex.night },
-      uWater: { value: tex.water },
-      uClouds: { value: tex.clouds },
-      uRes: { value: new THREE.Vector2(w, h) },
-      uCenter: { value: new THREE.Vector2() },
-      uR: { value: 100 },
-      uM: { value: new THREE.Matrix3() },
-      uSun: { value: new THREE.Vector3() },
-      uCloudShift: { value: 0 },
-      uExposure: { value: 1.6 },
-      uNightK: { value: 1 },
-      uGhost: { value: 0 },
-      uAtmo: { value: 1 },
-    }),
-    [tex, w, h],
-  );
-  const M = viewMatrix(v.lat, v.lon, v.roll ?? 0);
-  uniforms.uM.value.set(M[0], M[1], M[2], M[3], M[4], M[5], M[6], M[7], M[8]);
-  uniforms.uCenter.value.set(v.cx, v.cy);
-  uniforms.uR.value = v.r;
-  const s = latLonVec(DECL, subsolarLon(v.utc ?? 12));
-  uniforms.uSun.value.set(s[0], s[1], s[2]);
-  uniforms.uCloudShift.value = v.clouds ?? 0;
-  uniforms.uExposure.value = v.exposure ?? 1.6;
-  uniforms.uNightK.value = v.night ?? 1;
-  uniforms.uGhost.value = v.ghost ?? 0;
-  uniforms.uAtmo.value = v.atmo ?? 1;
-  return (
-    <mesh frustumCulled={false}>
-      <planeGeometry args={[1, 1]} />
-      <shaderMaterial vertexShader={vert} fragmentShader={frag} uniforms={uniforms} transparent depthTest={false} depthWrite={false} />
-    </mesh>
-  );
+type GL = { renderer: THREE.WebGLRenderer; scene: THREE.Scene; camera: THREE.Camera; mat: THREE.ShaderMaterial };
+
+const draw = (g: GL, view: EarthView) => {
+  const u = g.mat.uniforms;
+  const M = viewMatrix(view.lat, view.lon, view.roll ?? 0);
+  (u.uM.value as THREE.Matrix3).set(M[0], M[1], M[2], M[3], M[4], M[5], M[6], M[7], M[8]);
+  (u.uCenter.value as THREE.Vector2).set(view.cx, view.cy);
+  u.uR.value = view.r;
+  const sv = latLonVec(DECL, subsolarLon(view.utc ?? 12));
+  (u.uSun.value as THREE.Vector3).set(sv[0], sv[1], sv[2]);
+  u.uCloudShift.value = view.clouds ?? 0;
+  u.uExposure.value = view.exposure ?? 1.6;
+  u.uNightK.value = view.night ?? 1;
+  u.uGhost.value = view.ghost ?? 0;
+  u.uAtmo.value = view.atmo ?? 1;
+  g.renderer.render(g.scene, g.camera);
 };
 
+// Plain Three.js (no react-three-fiber): the frame is drawn synchronously in a layout effect on every
+// Remotion frame, so the captured image always matches the current frame during sequential rendering.
 export const Earth: React.FC<{ view: EarthView; style?: React.CSSProperties }> = ({ view, style }) => {
   const { width, height } = useVideoConfig();
-  const [tex, setTex] = useState<Tex | null>(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const glRef = useRef<GL | null>(null);
+  const viewRef = useRef(view);
   const [handle] = useState(() => delayRender("Loading Earth textures"));
+
   useEffect(() => {
-    loadTextures(
-      (t) => {
-        setTex(t);
+    const canvas = canvasRef.current!;
+    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: false, premultipliedAlpha: true, preserveDrawingBuffer: true });
+    renderer.setPixelRatio(1);
+    renderer.setSize(width, height, false);
+    renderer.setClearColor(0x000000, 0);
+    renderer.toneMapping = THREE.NoToneMapping;
+    renderer.outputColorSpace = THREE.LinearSRGBColorSpace;
+    let cancelled = false;
+    loadTextures(renderer)
+      .then((tex) => {
+        if (cancelled) return;
+        const mat = new THREE.ShaderMaterial({
+          vertexShader: vert,
+          fragmentShader: frag,
+          transparent: true,
+          depthTest: false,
+          depthWrite: false,
+          uniforms: {
+            uDay: { value: tex.day },
+            uNight: { value: tex.night },
+            uWater: { value: tex.water },
+            uClouds: { value: tex.clouds },
+            uRes: { value: new THREE.Vector2(width, height) },
+            uCenter: { value: new THREE.Vector2() },
+            uR: { value: 100 },
+            uM: { value: new THREE.Matrix3() },
+            uSun: { value: new THREE.Vector3() },
+            uCloudShift: { value: 0 },
+            uExposure: { value: 1.6 },
+            uNightK: { value: 1 },
+            uGhost: { value: 0 },
+            uAtmo: { value: 1 },
+          },
+        });
+        const mesh = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), mat);
+        mesh.frustumCulled = false;
+        const scene = new THREE.Scene();
+        scene.add(mesh);
+        glRef.current = { renderer, scene, camera: new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1), mat };
+        draw(glRef.current, viewRef.current); // first frame drawn before the render is released
         continueRender(handle);
-      },
-      (e) => {
+      })
+      .catch((e) => {
         console.error(e);
         continueRender(handle);
-      },
-    );
-  }, [handle]);
-  return (
-    <ThreeCanvas
-      width={width}
-      height={height}
-      linear
-      flat
-      gl={{ alpha: true, antialias: false, premultipliedAlpha: true, preserveDrawingBuffer: true }}
-      style={{ position: "absolute", left: 0, top: 0, ...style }}
-    >
-      {tex ? <Globe tex={tex} v={view} w={width} h={height} /> : null}
-    </ThreeCanvas>
-  );
+      });
+    return () => {
+      cancelled = true;
+      const g = glRef.current;
+      if (g) {
+        g.mat.dispose();
+        Object.values(g.mat.uniforms).forEach((u) => (u.value instanceof THREE.Texture ? u.value.dispose() : null));
+      }
+      renderer.dispose();
+      renderer.forceContextLoss();
+      glRef.current = null;
+    };
+  }, [handle, width, height]);
+
+  useLayoutEffect(() => {
+    viewRef.current = view;
+    if (glRef.current) draw(glRef.current, view);
+  });
+
+  return <canvas ref={canvasRef} width={width} height={height} style={{ position: "absolute", left: 0, top: 0, width, height, ...style }} />;
 };
