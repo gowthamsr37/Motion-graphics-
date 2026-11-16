@@ -1,0 +1,55 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "bpm": 100,
+  "fix": [["dˈuːbaɪ", "duːbˈaɪ"]],
+  "scenes": [
+    { "id": "hook", "lead": 0.1, "hold": 0.3, "lines": [
+      { "say": "Win the toss.", "show": "Win the toss.", "pause": 0.2 },
+      { "say": "Win the match?", "show": "Win the match?", "pause": 0.45 },
+      { "say": "Captains believe it. The data doesn't.", "show": "Captains believe it. The data doesn't." }
+    ]},
+    { "id": "proof", "lead": 0.15, "hold": 0.5, "lines": [
+      { "say": "We checked eight thousand, four hundred and eight men's matches to find out.", "show": "We checked 8,408 men's matches to find out." }
+    ]},
+    { "id": "answer", "lead": 0.15, "hold": 0.4, "lines": [
+      { "say": "Toss winners won...", "show": "Toss winners won...", "pause": 0.45 },
+      { "say": "fifty point nine percent.", "show": "50.9%.", "pause": 0.45 },
+      { "say": "That's basically a coin flip.", "show": "That's basically a coin flip." }
+    ]},
+    { "id": "formats", "lead": 0.15, "hold": 0.4, "lines": [
+      { "say": "One-day internationals? Exactly fifty.", "show": "One-day internationals? Exactly 50%.", "pause": 0.35 },
+      { "say": "T20 internationals, fifty point five.", "show": "T20 internationals: 50.5%.", "pause": 0.3 },
+      { "say": "The I P L, fifty-one point six.", "show": "The IPL: 51.6%.", "pause": 0.4 },
+      { "say": "But one format breaks the rule.", "show": "But one format breaks the rule." }
+    ]},
+    { "id": "dubai", "lead": 0.15, "hold": 0.4, "lines": [
+      { "say": "So where does the myth come from?", "show": "So where does the myth come from?", "pause": 0.35 },
+      { "say": "The twenty twenty-one T20 World Cup.", "show": "The 2021 T20 World Cup.", "pause": 0.3 },
+      { "say": "In Dubai, chasing teams won twelve of thirteen games.", "show": "In Dubai, chasing teams won 12 of 13 games.", "pause": 0.35 },
+      { "say": "Across the tournament, toss winners won thirty of forty-five.", "show": "Across the tournament, toss winners won 30 of 45.", "pause": 0.3 },
+      { "say": "Including the final.", "show": "Including the final." }
+    ]},
+    { "id": "after", "lead": 0.15, "hold": 0.4, "lines": [
+      { "say": "The next three World Cups?", "show": "The next three World Cups?", "pause": 0.3 },
+      { "say": "Thirty-nine. Fifty-six. Forty-three percent.", "show": "39%. 56%. 43%.", "pause": 0.3 },
+      { "say": "Back to a coin flip.", "show": "Back to a coin flip." }
+    ]},
+    { "id": "tests", "lead": 0.15, "hold": 0.4, "lines": [
+      { "say": "But there is one real edge.", "show": "But there is one real edge.", "pause": 0.3 },
+      { "say": "In Tests, win the toss and bat first, and you win fifty-seven percent of decided games.", "show": "In Tests, win the toss and bat first, and you win 57% of decided games.", "pause": 0.3 },
+      { "say": "Because nobody wants to bat last on a day-five pitch.", "show": "Because nobody wants to bat last on a day-5 pitch." }
+    ]},
+    { "id": "ipl", "lead": 0.15, "hold": 0.4, "lines": [
+      { "say": "And in the I P L, toss winners who bowl first win fifty-five percent.", "show": "And in the IPL, toss winners who bowl first win 55%.", "pause": 0.3 },
+      { "say": "Batting first? Just forty-five.", "show": "Batting first? Just 45%." }
+    ]},
+    { "id": "verdict", "lead": 0.15, "hold": 1.6, "lines": [
+      { "say": "So, does winning the toss win matches?", "show": "So, does winning the toss win matches?", "pause": 0.35 },
+      { "say": "No.", "show": "No.", "pause": 0.4 },
+      { "say": "But the call you make after it can.", "show": "But the call you make after it can.", "pause": 0.4 },
+      { "say": "What's the worst toss call you've ever seen? Tell me in the comments.", "show": "What's the worst toss call you've ever seen? Tell me in the comments." }
+    ]}
+  ]
+}

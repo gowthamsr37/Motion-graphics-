@@ -1,0 +1,23 @@
+{
+  "name": "toss-truth",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Win the toss, win the match? A 70-second data Reel on 8,408 men's matches.",
+  "scripts": {
+    "voice": "python scripts/gen-voice.py",
+    "audio": "node scripts/gen-audio.mjs",
+    "studio": "remotion studio src/index.ts",
+    "build": "bash scripts/build.sh"
+  },
+  "dependencies": {
+    "@fontsource/anton": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@remotion/cli": "^4.0.544",
+    "@remotion/fonts": "^4.0.544",
+    "@types/react": "^19.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.544",
+    "typescript": "^7.0.2"
+  }
+}
