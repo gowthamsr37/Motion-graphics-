@@ -1,0 +1,135 @@
+{
+  "voice": "af_heart",
+  "speed": 1.09,
+  "lang": "en-us",
+  "_note": "Spoken text per segment. {display|spoken words} shows `display` in captions while the narrator says `spoken words`. lead = silence before the narration, hold = time after it, pause = gap after a segment.",
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.35,
+      "hold": 0.45,
+      "segments": [
+        {
+          "text": "What if every single person on Earth jumped at exactly the same moment?",
+          "pause": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.25,
+      "hold": 0.25,
+      "segments": [
+        {
+          "text": "{8.3|Eight point three} billion people, all over the world, counting down together.",
+          "pause": 0.5
+        },
+        {
+          "text": "Three.",
+          "pause": 0.62
+        },
+        {
+          "text": "Two.",
+          "pause": 0.66
+        },
+        {
+          "text": "One.",
+          "pause": 0.6
+        },
+        {
+          "text": "Jump!",
+          "pause": 0.2,
+          "speed": 1.0
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.55,
+      "hold": 0.45,
+      "segments": [
+        {
+          "text": "Would we shake the planet?",
+          "pause": 0.35
+        },
+        {
+          "text": "Trigger a huge earthquake?",
+          "pause": 0.35
+        },
+        {
+          "text": "Or even knock Earth out of its orbit?",
+          "pause": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.35,
+      "hold": 0.4,
+      "segments": [
+        {
+          "text": "Surprisingly, almost nothing happens.",
+          "pause": 0.4
+        },
+        {
+          "text": "We push down on Earth, and Earth pushes us back up.",
+          "pause": 0.36
+        },
+        {
+          "text": "So the planet does move, but it's over ten trillion times heavier than all of us.",
+          "pause": 0.36
+        },
+        {
+          "text": "Even if we all jumped from one spot, it would shift less than the width of an atom.",
+          "pause": 0.36
+        },
+        {
+          "text": "And spread around the globe, our pushes partly cancel out.",
+          "pause": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.4,
+      "hold": 0.4,
+      "segments": [
+        {
+          "text": "When everyone lands, there's plenty of noise, and tiny vibrations nearby.",
+          "pause": 0.36
+        },
+        {
+          "text": "But billions of small, scattered taps are nothing like one earthquake.",
+          "pause": 0.36
+        },
+        {
+          "text": "No planet-wide quake, no tsunami, and no change to Earth's orbit.",
+          "pause": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.4,
+      "hold": 1.25,
+      "segments": [
+        {
+          "text": "{8.3|Eight point three} billion people. One perfect jump.",
+          "pause": 0.36
+        },
+        {
+          "text": "And Earth barely notices.",
+          "pause": 0.35
+        },
+        {
+          "text": "That's how massive our planet really is.",
+          "pause": 0.6
+        },
+        {
+          "text": "So, what should we test next?",
+          "pause": 0.2
+        }
+      ]
+    }
+  ]
+}
