@@ -15,8 +15,8 @@ export const Cover: React.FC = () => (
       <Coin size={380} flip={0.35} glow={0.8} />
     </div>
     <div style={{ position: "absolute", left: 40, right: 40, top: 760, display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
-      <Display size={170}>WIN THE TOSS</Display>
-      <Display size={170}>
+      <Display size={150} style={{ whiteSpace: "nowrap" }}>WIN THE TOSS</Display>
+      <Display size={150} style={{ whiteSpace: "nowrap" }}>
         WIN THE MATCH<span style={{ color: C.red }}>?</span>
       </Display>
       <div style={{ height: 30 }} />
