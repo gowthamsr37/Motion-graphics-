@@ -1,0 +1,112 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        { "text": "Roll one dice, and every number is equally likely. The shape is flat.", "caption": "Roll one dice, and every number is equally likely. The shape is flat.", "pause": 0.4 },
+        { "text": "Now roll ten dice and take their average. Again, and again.", "caption": "Now roll ten dice and take their average. Again, and again.", "pause": 0.4 },
+        { "text": "The averages make a bell!", "caption": "The averages make a bell!", "pause": 0.4 },
+        { "text": "That's the Central Limit Theorem.", "caption": "That's the Central Limit Theorem.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "What it says",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        { "text": "Take many samples, and find the mean of each one.", "caption": "Take many samples, and find the mean of each one.", "pause": 0.35 },
+        { "text": "Plot those means, and they form a normal distribution.", "caption": "Plot those means, and they form a normal distribution.", "pause": 0.35 },
+        { "text": "Even when the original data isn't normal at all.", "caption": "Even when the original data isn't normal at all.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Watch it build",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        { "text": "One dice is flat.", "caption": "One dice is flat.", "pause": 0.3 },
+        { "text": "The average of two dice? A triangle, peaking at three point five.", "caption": "The average of two dice? A triangle, peaking at 3.5.", "pause": 0.35 },
+        { "text": "Five dice? Rounder.", "caption": "Five dice? Rounder.", "pause": 0.35 },
+        { "text": "Thirty dice? A clean bell, centred on three point five.", "caption": "Thirty dice? A clean bell, centred on 3.5.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Any shape",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        { "text": "It works for skewed data too.", "caption": "It works for skewed data too.", "pause": 0.3 },
+        { "text": "Waiting times at a bus stop have a long tail to the right.", "caption": "Waiting times at a bus stop have a long tail to the right.", "pause": 0.35 },
+        { "text": "But the averages of thirty waiting times? A bell again.", "caption": "But the averages of thirty waiting times? A bell again.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Two rules",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        { "text": "The bell is centred on the true mean.", "caption": "The bell is centred on the true mean.", "pause": 0.35 },
+        { "text": "And bigger samples make it narrower.", "caption": "And bigger samples make it narrower.", "pause": 0.35 },
+        { "text": "Its spread is the standard deviation, divided by the square root of n.", "caption": "Its spread is the standard deviation, divided by the square root of n.", "pause": 0.35 },
+        { "text": "That's called the standard error.", "caption": "That's called the standard error.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Why it matters",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        { "text": "That's why the normal distribution shows up everywhere.", "caption": "That's why the normal distribution shows up everywhere.", "pause": 0.35 },
+        { "text": "It's how polls get their margin of error, and how scientists test if a result is real.", "caption": "It's how polls get their margin of error, and how scientists test if a result is real.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "How big is big enough",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        { "text": "How big is big enough? A common rule of thumb is thirty.", "caption": "How big is big enough? A common rule of thumb is 30.", "pause": 0.35 },
+        { "text": "Very skewed data may need more.", "caption": "Very skewed data may need more.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "The complete picture",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        { "text": "Here's the complete picture.", "caption": "Here's the complete picture.", "pause": 0.3 },
+        { "text": "Take many samples, and plot their means.", "caption": "Take many samples, and plot their means.", "pause": 0.35 },
+        { "text": "They form a bell around the true mean, whatever the original shape.", "caption": "They form a bell around the true mean, whatever the original shape.", "pause": 0.35 },
+        { "text": "And bigger samples make that bell narrower.", "caption": "And bigger samples make that bell narrower.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Quiz, teaser and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        { "text": "Quick quiz!", "caption": "Quick quiz!", "pause": 0.3 },
+        { "text": "Heights have a standard deviation of seven centimetres. You average samples of forty-nine people.", "caption": "Heights have a standard deviation of 7 centimetres. You average samples of 49 people.", "pause": 0.35 },
+        { "text": "What's the spread of those averages?", "caption": "What's the spread of those averages?", "pause": 5.7 },
+        { "text": "One centimetre!", "caption": "1 centimetre!", "pause": 0.35 },
+        { "text": "Seven, divided by the square root of forty-nine, which is seven, gives one.", "caption": "7, divided by the square root of 49, which is 7, gives 1.", "pause": 0.4 },
+        { "text": "In future videos, we'll explore other kinds of distributions.", "caption": "In future videos, we'll explore other kinds of distributions.", "pause": 0.4 },
+        { "text": "Follow for data science made simple!", "caption": "Follow for data science made simple!", "pause": 0.3 }
+      ]
+    }
+  ]
+}

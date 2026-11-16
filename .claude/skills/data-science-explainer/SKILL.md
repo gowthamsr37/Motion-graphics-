@@ -7,10 +7,10 @@ description: House style and production pipeline for the "Data Science Made Simp
 
 The user approved **types-of-data/** as the reference ("came out very well") and asked that **every setting, theme and voice stay the same in future videos**. Treat everything below as fixed defaults. Change something only when the user explicitly asks; if a request seems to conflict with these, ask before deviating.
 
-The reference implementation is `types-of-data/`; the later videos `mean-median-mode/`, `measures-of-dispersion/`, `centre-vs-spread/`, `outliers/`, `iqr/`, `treating-outliers/`, `skewness/`, `normal-distribution/`, `z-score/`, `probability-distribution/` and `population-vs-sample/` follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
+The reference implementation is `types-of-data/`; the later videos `mean-median-mode/`, `measures-of-dispersion/`, `centre-vs-spread/`, `outliers/`, `iqr/`, `treating-outliers/`, `skewness/`, `normal-distribution/`, `z-score/`, `probability-distribution/`, `population-vs-sample/` and `central-limit-theorem/` follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
 
 ```bash
-REF=population-vs-sample bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
+REF=central-limit-theorem bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
 ```
 
 The improvements it inherits:
@@ -219,6 +219,10 @@ Notes:
 - A teaser for a future topic goes between the quiz explanation and the CTA (about 3–4 s, `S9Quiz.tsx`). Keep its visuals generic (unlabelled mystery shapes) so the page isn't committed to specific next topics, and repeat it as a small NEXT: chip on the end card.
 - Shared kits (from `z-score/`, inherited by every scaffold): `components/Quiz.tsx` (`QuizBadge`, `Question`, `Countdown`, `Options`, `Reveal`, `quizClock`), `components/Cta.tsx` (`Cta` with `next` and `chips` props) and `components/Rule.tsx` (`ruleBands`, `Bracket`, `Span`). A new quiz scene is just its prop plus these; don't copy the old inline quiz code.
 - Cue only on words that appear in the `caption` text: tokens come from the caption, not the spoken text. A caption that writes "n - 1" has no "minus" token (cue "1," instead), and `cueS` throws `no spoken token` at render time.
+- Seeded simulations (`rng(seed)`): print the min / max / mean / SD of the simulated data with node before rendering and pick a seed that looks typical. One seed put a 10-dice average at 1.6 (a ~1-in-5,000 event) as a stray dot.
+- The countdown digit must be clamped to 5 (`Math.min(5, …)` in `Quiz.tsx`): before the countdown starts it read 6 for a few frames while the ring scaled in.
+- A formula that completes on a later word: reveal the tail with an animated `maxWidth` (overflow hidden), not just opacity, or its box shows an empty gap.
+- Shared teaching props live in components: `Prob.tsx` (Die, Coin, weather, battery, MiniBars), `Sampling.tsx` (seeded normals, discPoints, pick, pot / spoon / bulb), `Clt.tsx` (exact dice-average and Gamma densities, AreaChart, BarChart, Radical).
 - Length: 100–120 s by default; the user allows a few extra seconds when it buys a clear explanation (`treating-outliers/` is 124 s).
 - `Pop` is centred on its x, so its content can only be as wide as the distance to the right edge (540 px at x = 540) and multi-line text wraps early ("HOW DO / YOU"). Give every text block inside a `Pop` `whiteSpace: "nowrap"` and explicit `<br />`s.
 - Money constants: write the unit next to every constant ("in ₹ thousand") and print the derived numbers once with node before rendering. A 10× slip (₹100 crore instead of ₹10 crore) looked plausible on screen.
