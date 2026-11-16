@@ -7,10 +7,10 @@ description: House style and production pipeline for the "Data Science Made Simp
 
 The user approved **types-of-data/** as the reference ("came out very well") and asked that **every setting, theme and voice stay the same in future videos**. Treat everything below as fixed defaults. Change something only when the user explicitly asks; if a request seems to conflict with these, ask before deviating.
 
-The reference implementation is `types-of-data/`; the later videos `mean-median-mode/` and `measures-of-dispersion/` follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
+The reference implementation is `types-of-data/`; the later videos `mean-median-mode/`, `measures-of-dispersion/` and `centre-vs-spread/` follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
 
 ```bash
-REF=measures-of-dispersion bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
+REF=centre-vs-spread bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
 ```
 
 The improvements it inherits:
@@ -20,7 +20,8 @@ The improvements it inherits:
 - the SVG `Rupee`, `NotEqual`, `Radical` and `Arrow` glyphs;
 - `clink.wav`;
 - the `HANDLE` constant in `theme.ts`;
-- the CTA with the handle.
+- the CTA with the handle;
+- captions that highlight only one word at a time (two scaled neighbours ate the gap: "That'sdispersion").
 
 **Instagram page: @curious_datascientist.** Use the handle (`HANDLE` in `theme.ts`) on the CTA end card (under the FOLLOW button), on the cover (bottom) and in the caption ("Follow @curious_datascientist for data science made simple 🚀"). The spoken final line stays "Follow for data science made simple!"
 
@@ -125,7 +126,7 @@ Other series in this repo (the cricket "Beyond The Scoreboard" reels) have their
   - Sora 700, 46 px;
   - box `rgba(4,8,30,0.72)`, radius 24, 1.5 px edge, max width 860;
   - unspoken words at 0.42 opacity;
-  - the current word takes the scene accent (yellow in the quiz), scale 1.05, with glow;
+  - the current word takes the scene accent (yellow in the quiz), scale 1.05, with glow; only one word is highlighted at a time (the previous one releases when the next starts);
   - pop-in spring between pages.
 - Also export `.srt` (`scripts/export-srt.py`).
 
@@ -204,3 +205,5 @@ Notes:
 - Put "?" gap badges on the open side of brackets, not over the neighbouring card.
 - A misconception moment needs to be unmistakable: dim the rest, make the wrong thing big, then stamp it out.
 - Hook headline lines must fit in 1080 px; 70 px Sora fits "YOUR EXAM RANK…".
+- Dot plots: pick values and a scale so neighbouring dots sit at least one dot-width apart (a 0–100 axis over ~850 px needs gaps of 4+ units for 30 px dots), and keep labels clear of stacked dots.
+- Never leave the stage empty while the first line of a scene plays: put the scene's question on screen from frame ~4.

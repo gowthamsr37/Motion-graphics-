@@ -1,0 +1,257 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Hook",
+   "lead": 0.45,
+   "hold": 1.35,
+   "segments": [
+    {
+     "text": "Two batters, both averaging forty.",
+     "caption": "Two batters, both averaging 40.",
+     "pause": 0.6
+    },
+    {
+     "text": "Two cities, both twenty-five degrees on average.",
+     "caption": "Two cities, both 25 degrees on average.",
+     "pause": 0.6
+    },
+    {
+     "text": "Two buses, both on time, on average.",
+     "caption": "Two buses, both on time, on average.",
+     "pause": 0.85
+    },
+    {
+     "text": "Same average.",
+     "caption": "Same average.",
+     "pause": 0.5
+    },
+    {
+     "text": "But a completely different spread!",
+     "caption": "But a completely different spread!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "The big picture",
+   "lead": 0.45,
+   "hold": 0.7,
+   "segments": [
+    {
+     "text": "That's dispersion: how spread out your data is.",
+     "caption": "That's dispersion: how spread out your data is.",
+     "pause": 0.45
+    },
+    {
+     "text": "We measure it with the range, the variance, and the standard deviation.",
+     "caption": "We measure it with the range, the variance, and the standard deviation.",
+     "pause": 0.45
+    },
+    {
+     "text": "Let's put our two batters to the test.",
+     "caption": "Let's put our two batters to the test.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Range",
+   "lead": 0.5,
+   "hold": 0.9,
+   "segments": [
+    {
+     "text": "Here are their last four scores.",
+     "caption": "Here are their last four scores.",
+     "pause": 0.9
+    },
+    {
+     "text": "Both average forty.",
+     "caption": "Both average 40.",
+     "pause": 0.45
+    },
+    {
+     "text": "The range is the highest minus the lowest.",
+     "caption": "The range is the highest minus the lowest.",
+     "pause": 0.4
+    },
+    {
+     "text": "Fourteen for batter A. Seventy for batter B!",
+     "caption": "14 for batter A. 70 for batter B!",
+     "pause": 0.6
+    },
+    {
+     "text": "Quick, but it only uses two scores, so one freak innings can fool it.",
+     "caption": "Quick, but it only uses two scores, so one freak innings can fool it.",
+     "pause": 0.3,
+     "fix": [
+      [
+       "ɪnnˈɪŋz",
+       "ˈɪnɪŋz"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Variance",
+   "lead": 0.5,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Variance uses every score.",
+     "caption": "Variance uses every score.",
+     "pause": 0.35
+    },
+    {
+     "text": "Measure each score's distance from the average.",
+     "caption": "Measure each score's distance from the average.",
+     "pause": 0.3
+    },
+    {
+     "text": "Minus seven, minus one, one, seven.",
+     "caption": "-7, -1, 1, 7.",
+     "pause": 0.45
+    },
+    {
+     "text": "Square them, so the negatives don't cancel out.",
+     "caption": "Square them, so the negatives don't cancel out.",
+     "pause": 0.3
+    },
+    {
+     "text": "Forty-nine, one, one, forty-nine.",
+     "caption": "49, 1, 1, 49.",
+     "pause": 0.6
+    },
+    {
+     "text": "Average them: one hundred divided by four is twenty-five.",
+     "caption": "Average them: 100 divided by 4 is 25.",
+     "pause": 0.5
+    },
+    {
+     "text": "That's the variance, but it's in squared runs.",
+     "caption": "That's the variance, but it's in squared runs.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Standard deviation",
+   "lead": 0.5,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "So take the square root: five.",
+     "caption": "So take the square root: 5.",
+     "pause": 0.5
+    },
+    {
+     "text": "That's the standard deviation, the typical distance from the average.",
+     "caption": "That's the standard deviation, the typical distance from the average.",
+     "pause": 0.5
+    },
+    {
+     "text": "Batter A, five runs. Batter B, twenty-five.",
+     "caption": "Batter A, 5 runs. Batter B, 25.",
+     "pause": 0.4
+    },
+    {
+     "text": "Five times the spread!",
+     "caption": "Five times the spread!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Why it matters",
+   "lead": 0.45,
+   "hold": 1.8,
+   "segments": [
+    {
+     "text": "For bell-shaped data, about two thirds of values land within one standard deviation of the average.",
+     "caption": "For bell-shaped data, about two-thirds of values land within one standard deviation of the average.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "The complete picture",
+   "lead": 0.45,
+   "hold": 1.3,
+   "segments": [
+    {
+     "text": "Here's the complete picture.",
+     "caption": "Here's the complete picture.",
+     "pause": 0.35
+    },
+    {
+     "text": "Range: highest minus lowest, quick but fragile.",
+     "caption": "Range: highest minus lowest, quick but fragile.",
+     "pause": 0.3
+    },
+    {
+     "text": "Variance: the average squared distance.",
+     "caption": "Variance: the average squared distance.",
+     "pause": 0.3
+    },
+    {
+     "text": "Standard deviation: its square root, the typical distance.",
+     "caption": "Standard deviation: its square root, the typical distance.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Quiz and call to action",
+   "lead": 0.35,
+   "hold": 2.3,
+   "segments": [
+    {
+     "text": "Quick quiz!",
+     "caption": "Quick quiz!",
+     "pause": 0.3
+    },
+    {
+     "text": "Two classes both average seventy marks.",
+     "caption": "Two classes both average 70 marks.",
+     "pause": 0.3
+    },
+    {
+     "text": "Class A's standard deviation is five. Class B's is fifteen.",
+     "caption": "Class A's standard deviation is 5. Class B's is 15.",
+     "pause": 0.3
+    },
+    {
+     "text": "Which class is more consistent?",
+     "caption": "Which class is more consistent?",
+     "pause": 5.7
+    },
+    {
+     "text": "Class A!",
+     "caption": "Class A!",
+     "pause": 0.4
+    },
+    {
+     "text": "A smaller standard deviation means scores stay closer to the average.",
+     "caption": "A smaller standard deviation means scores stay closer to the average.",
+     "pause": 0.55
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.3
+    }
+   ]
+  }
+ ]
+}
