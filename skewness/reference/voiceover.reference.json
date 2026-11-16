@@ -1,0 +1,260 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Hook",
+   "lead": 0.45,
+   "hold": 1.0,
+   "segments": [
+    {
+     "text": "You found an outlier.",
+     "caption": "You found an outlier.",
+     "pause": 0.35
+    },
+    {
+     "text": "Just delete it, right?",
+     "caption": "Just delete it, right?",
+     "pause": 0.4
+    },
+    {
+     "text": "Not so fast!",
+     "caption": "Not so fast!",
+     "pause": 0.45
+    },
+    {
+     "text": "Delete the wrong one, and you lose the most important point in your data.",
+     "caption": "Delete the wrong one, and you lose the most important point in your data.",
+     "pause": 0.45
+    },
+    {
+     "text": "Here are seven ways to treat outliers.",
+     "caption": "Here are seven ways to treat outliers.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Ask why first",
+   "lead": 0.45,
+   "hold": 0.9,
+   "segments": [
+    {
+     "text": "Step zero: ask why it's there.",
+     "caption": "Step zero: ask why it's there.",
+     "pause": 0.4
+    },
+    {
+     "text": "Is it a mistake, or real but rare?",
+     "caption": "Is it a mistake, or real but rare?",
+     "pause": 0.4
+    },
+    {
+     "text": "The answer picks the treatment.",
+     "caption": "The answer picks the treatment.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Mistakes: fix, fill, remove",
+   "lead": 0.45,
+   "hold": 0.9,
+   "segments": [
+    {
+     "text": "If it's a mistake, fix it.",
+     "caption": "If it's a mistake, fix it.",
+     "pause": 0.35
+    },
+    {
+     "text": "An age of two hundred and fifty? The form says twenty-five. Correct it!",
+     "caption": "An age of 250? The form says 25. Correct it!",
+     "pause": 0.5
+    },
+    {
+     "text": "Can't recover the real value? Fill it in, usually with the median, so you keep the rest of the row.",
+     "caption": "Can't recover the real value? Fill it in, usually with the median, so you keep the rest of the row.",
+     "pause": 0.5
+    },
+    {
+     "text": "If a row doesn't belong, like a test account, remove it, and note why.",
+     "caption": "If a row doesn't belong, like a test account, remove it, and note why.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Cap it",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "If it's real, you have four options.",
+     "caption": "If it's real, you have four options.",
+     "pause": 0.4
+    },
+    {
+     "text": "First, cap it. Anything past the fence gets pulled back to the fence.",
+     "caption": "First, cap it. Anything past the fence gets pulled back to the fence.",
+     "pause": 0.4
+    },
+    {
+     "text": "The sixty-minute jam becomes forty-two.",
+     "caption": "The 60-minute jam becomes 42.",
+     "pause": 0.35
+    },
+    {
+     "text": "It still counts, but it can't dominate. This is called winsorizing.",
+     "caption": "It still counts, but it can't dominate. This is called winsorizing.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Transform it",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Next, transform it, usually with a log.",
+     "caption": "Next, transform it, usually with a log.",
+     "pause": 0.4
+    },
+    {
+     "text": "On a log scale, each step is ten times bigger. That squeezes a long tail in.",
+     "caption": "On a log scale, each step is ten times bigger. That squeezes a long tail in.",
+     "pause": 0.4
+    },
+    {
+     "text": "Skewed salaries become balanced, and the mean works again.",
+     "caption": "Skewed salaries become balanced, and the mean works again.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Robust tools",
+   "lead": 0.45,
+   "hold": 0.9,
+   "segments": [
+    {
+     "text": "Or leave the data alone, and use robust tools: ones that barely react to extreme values.",
+     "caption": "Or leave the data alone, and use robust tools: ones that barely react to extreme values.",
+     "pause": 0.4
+    },
+    {
+     "text": "Use the median and IQR instead of the mean and standard deviation.",
+     "caption": "Use the median and IQR instead of the mean and standard deviation.",
+     "pause": 0.35
+    },
+    {
+     "text": "The outlier stays. It just can't drag your results.",
+     "caption": "The outlier stays. It just can't drag your results.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "Keep it and study it",
+   "lead": 0.45,
+   "hold": 0.9,
+   "segments": [
+    {
+     "text": "Or keep it and study it.",
+     "caption": "Or keep it and study it.",
+     "pause": 0.35
+    },
+    {
+     "text": "A two lakh payment at three AM could be fraud.",
+     "caption": "A 2 lakh payment at 3 AM could be fraud.",
+     "pause": 0.4,
+     "fix": [
+      [
+       "lˈæk",
+       "lˈɑːk"
+      ]
+     ]
+    },
+    {
+     "text": "Here, the outlier is the whole story! Flag it, dig in, and report it separately.",
+     "caption": "Here, the outlier is the whole story! Flag it, dig in, and report it separately.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "The complete picture",
+   "lead": 0.45,
+   "hold": 1.1,
+   "segments": [
+    {
+     "text": "Here's the complete picture.",
+     "caption": "Here's the complete picture.",
+     "pause": 0.35
+    },
+    {
+     "text": "Mistakes: fix, fill, or remove.",
+     "caption": "Mistakes: fix, fill, or remove.",
+     "pause": 0.35
+    },
+    {
+     "text": "Real values: cap, transform, go robust, or keep and study.",
+     "caption": "Real values: cap, transform, go robust, or keep and study.",
+     "pause": 0.45
+    },
+    {
+     "text": "And the golden rule: if you're unsure, run it with and without the outlier, and report both.",
+     "caption": "And the golden rule: if you're unsure, run it with and without the outlier, and report both.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "Quiz and call to action",
+   "lead": 0.35,
+   "hold": 2.3,
+   "segments": [
+    {
+     "text": "Quick quiz!",
+     "caption": "Quick quiz!",
+     "pause": 0.3
+    },
+    {
+     "text": "A survey says someone sleeps thirty hours a day.",
+     "caption": "A survey says someone sleeps 30 hours a day.",
+     "pause": 0.3
+    },
+    {
+     "text": "How should you treat it?",
+     "caption": "How should you treat it?",
+     "pause": 5.7
+    },
+    {
+     "text": "Fix it or remove it!",
+     "caption": "Fix it or remove it!",
+     "pause": 0.4
+    },
+    {
+     "text": "A day only has twenty-four hours. It's a mistake, not a rare event.",
+     "caption": "A day only has 24 hours. It's a mistake, not a rare event.",
+     "pause": 0.5
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.3
+    }
+   ]
+  }
+ ]
+}

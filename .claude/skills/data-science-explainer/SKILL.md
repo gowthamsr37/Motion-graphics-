@@ -7,10 +7,10 @@ description: House style and production pipeline for the "Data Science Made Simp
 
 The user approved **types-of-data/** as the reference ("came out very well") and asked that **every setting, theme and voice stay the same in future videos**. Treat everything below as fixed defaults. Change something only when the user explicitly asks; if a request seems to conflict with these, ask before deviating.
 
-The reference implementation is `types-of-data/`; the later videos `mean-median-mode/`, `measures-of-dispersion/`, `centre-vs-spread/`, `outliers/`, `iqr/` and `treating-outliers/` follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
+The reference implementation is `types-of-data/`; the later videos `mean-median-mode/`, `measures-of-dispersion/`, `centre-vs-spread/`, `outliers/`, `iqr/`, `treating-outliers/` and `skewness/` follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
 
 ```bash
-REF=treating-outliers bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
+REF=skewness bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
 ```
 
 The improvements it inherits:
@@ -211,6 +211,7 @@ Notes:
 - For a step-by-step method, a numbered step tracker in the header band (done = green check, active = glowing) keeps viewers oriented (`iqr/` S4).
 - When one extreme value would squash a dot plot, use a broken axis (two segments with a `//` mark) rather than shrinking the dots until they overlap.
 - Topics with many items (e.g. 7 treatments) can use more than 8 scenes. Scene ids now come from `timeline.json` (`src/timing.ts`), so just add the scene to `voiceover.json`, `SCENES`/`LOOK` in `Main.tsx` and the score sections (`treating-outliers/` uses 9). A numbered "n/7" pill keeps viewers oriented across scenes.
+- Histogram demos: keep the bin counts as the data and compute mode / median / mean from them (`skewness/src/components/Hist.tsx`), so markers are exact. Colour helpers like `alpha()` expect hex: pass `#RRGGBB`, not an rgba() string (an rgba fed to `alpha()` rendered black bars).
 - Length: 100–120 s by default; the user allows a few extra seconds when it buys a clear explanation (`treating-outliers/` is 124 s).
 - `Pop` is centred on its x, so its content can only be as wide as the distance to the right edge (540 px at x = 540) and multi-line text wraps early ("HOW DO / YOU"). Give every text block inside a `Pop` `whiteSpace: "nowrap"` and explicit `<br />`s.
 - Money constants: write the unit next to every constant ("in ₹ thousand") and print the derived numbers once with node before rendering. A 10× slip (₹100 crore instead of ₹10 crore) looked plausible on screen.

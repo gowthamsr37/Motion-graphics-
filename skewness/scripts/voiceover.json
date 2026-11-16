@@ -1,0 +1,226 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Hook",
+   "lead": 0.45,
+   "hold": 1.0,
+   "segments": [
+    {
+     "text": "In this city, the average salary is fifty thousand.",
+     "caption": "In this city, the average salary is 50,000.",
+     "pause": 0.4
+    },
+    {
+     "text": "Yet seven out of nine people earn less than that!",
+     "caption": "Yet 7 out of 9 people earn less than that!",
+     "pause": 0.45
+    },
+    {
+     "text": "How can most people be below average?",
+     "caption": "How can most people be below average?",
+     "pause": 0.45
+    },
+    {
+     "text": "The answer is skew.",
+     "caption": "The answer is skew.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "What skew is",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Skew means your data is lopsided.",
+     "caption": "Skew means your data is lopsided.",
+     "pause": 0.35
+    },
+    {
+     "text": "Most values pile up on one side. A long tail stretches out the other way.",
+     "caption": "Most values pile up on one side. A long tail stretches out the other way.",
+     "pause": 0.4
+    },
+    {
+     "text": "The tail's direction gives the skew its name.",
+     "caption": "The tail's direction gives the skew its name.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Three shapes",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "There are three shapes.",
+     "caption": "There are three shapes.",
+     "pause": 0.35
+    },
+    {
+     "text": "Symmetric, like heights: both sides match.",
+     "caption": "Symmetric, like heights: both sides match.",
+     "pause": 0.4
+    },
+    {
+     "text": "Right-skewed, like salaries: a few huge values make a long tail to the right.",
+     "caption": "Right-skewed, like salaries: a few huge values make a long tail to the right.",
+     "pause": 0.4
+    },
+    {
+     "text": "Left-skewed, like scores on an easy test: most score high, and a few trail off to the left.",
+     "caption": "Left-skewed, like scores on an easy test: most score high, and a few trail off to the left.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "The tail rule",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Here's the key rule. The tail pulls the mean toward it.",
+     "caption": "Here's the key rule. The tail pulls the mean toward it.",
+     "pause": 0.4
+    },
+    {
+     "text": "In right skew, the mean is dragged above the median, and the peak, the mode, sits lowest.",
+     "caption": "In right skew, the mean is dragged above the median, and the peak, the mode, sits lowest.",
+     "pause": 0.4
+    },
+    {
+     "text": "In left skew, it flips. The mean falls below the median.",
+     "caption": "In left skew, it flips. The mean falls below the median.",
+     "pause": 0.35
+    },
+    {
+     "text": "And when it's symmetric, they all meet in the middle.",
+     "caption": "And when it's symmetric, they all meet in the middle.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "How to spot it",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "To spot skew, compare the mean and the median.",
+     "caption": "To spot skew, compare the mean and the median.",
+     "pause": 0.35
+    },
+    {
+     "text": "Mean above the median? Right skew. Below it? Left skew.",
+     "caption": "Mean above the median? Right skew. Below it? Left skew.",
+     "pause": 0.4
+    },
+    {
+     "text": "Or look at a box plot: the longer whisker points to the tail.",
+     "caption": "Or look at a box plot: the longer whisker points to the tail.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "What to do",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Why does it matter? In skewed data, the mean misleads.",
+     "caption": "Why does it matter? In skewed data, the mean misleads.",
+     "pause": 0.4
+    },
+    {
+     "text": "That city's typical salary is the median: thirty thousand, not fifty.",
+     "caption": "That city's typical salary is the median: 30,000, not 50.",
+     "pause": 0.4
+    },
+    {
+     "text": "So report the median and IQR, or log-transform the data to balance it.",
+     "caption": "So report the median and IQR, or log-transform the data to balance it.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "The complete picture",
+   "lead": 0.45,
+   "hold": 1.1,
+   "segments": [
+    {
+     "text": "Here's the complete picture.",
+     "caption": "Here's the complete picture.",
+     "pause": 0.35
+    },
+    {
+     "text": "Symmetric: the mean equals the median.",
+     "caption": "Symmetric: the mean equals the median.",
+     "pause": 0.3
+    },
+    {
+     "text": "Right skew: the mean is above the median, tail to the right.",
+     "caption": "Right skew: the mean is above the median, tail to the right.",
+     "pause": 0.3
+    },
+    {
+     "text": "Left skew: the mean is below the median, tail to the left.",
+     "caption": "Left skew: the mean is below the median, tail to the left.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Quiz and call to action",
+   "lead": 0.35,
+   "hold": 2.3,
+   "segments": [
+    {
+     "text": "Quick quiz!",
+     "caption": "Quick quiz!",
+     "pause": 0.3
+    },
+    {
+     "text": "Most people recharge their phone for two hundred rupees, but a few pay two thousand.",
+     "caption": "Most people recharge their phone for 200 rupees, but a few pay 2,000.",
+     "pause": 0.3
+    },
+    {
+     "text": "Which way is it skewed?",
+     "caption": "Which way is it skewed?",
+     "pause": 5.7
+    },
+    {
+     "text": "Right-skewed!",
+     "caption": "Right-skewed!",
+     "pause": 0.4
+    },
+    {
+     "text": "The few big recharges make a long tail to the right, and pull the mean above the median.",
+     "caption": "The few big recharges make a long tail to the right, and pull the mean above the median.",
+     "pause": 0.5
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.3
+    }
+   ]
+  }
+ ]
+}
