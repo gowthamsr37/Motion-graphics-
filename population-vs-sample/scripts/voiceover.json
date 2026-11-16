@@ -1,0 +1,110 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        { "text": "How can a poll predict crores of voters, by asking just a few thousand people?", "caption": "How can a poll predict crores of voters, by asking just a few thousand people?", "pause": 0.45 },
+        { "text": "It doesn't ask everyone.", "caption": "It doesn't ask everyone.", "pause": 0.3 },
+        { "text": "It asks a sample.", "caption": "It asks a sample.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Population vs sample",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        { "text": "The population is everyone you want to know about.", "caption": "The population is everyone you want to know about.", "pause": 0.35 },
+        { "text": "The sample is the smaller group you actually measure.", "caption": "The sample is the smaller group you actually measure.", "pause": 0.4 },
+        { "text": "Like tasting one spoonful to judge a whole pot of soup.", "caption": "Like tasting one spoonful to judge a whole pot of soup.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Why sample",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        { "text": "Why not measure everyone?", "caption": "Why not measure everyone?", "pause": 0.3 },
+        { "text": "It's often too slow, too costly, or impossible.", "caption": "It's often too slow, too costly, or impossible.", "pause": 0.35 },
+        { "text": "To test how long every bulb lasts, you'd burn out every bulb!", "caption": "To test how long every bulb lasts, you'd burn out every bulb!", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Parameter vs statistic",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        { "text": "The population has a true mean, called a parameter.", "caption": "The population has a true mean, called a parameter.", "pause": 0.35 },
+        { "text": "The sample mean, a statistic, is our best guess of it.", "caption": "The sample mean, a statistic, is our best guess of it.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Samples wobble",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        { "text": "But take another sample, and you get a slightly different mean.", "caption": "But take another sample, and you get a slightly different mean.", "pause": 0.35 },
+        { "text": "Every sample wobbles around the truth.", "caption": "Every sample wobbles around the truth.", "pause": 0.4 },
+        { "text": "Bigger samples wobble less, so they give better guesses.", "caption": "Bigger samples wobble less, so they give better guesses.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Bias",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        { "text": "And a sample must be random.", "caption": "And a sample must be random.", "pause": 0.3 },
+        { "text": "Survey only people at a gym about exercise, and your answer is way off.", "caption": "Survey only people at a gym about exercise, and your answer is way off.", "pause": 0.35 },
+        { "text": "That's called bias.", "caption": "That's called bias.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "n minus 1",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        { "text": "One more detail.", "caption": "One more detail.", "pause": 0.3 },
+        { "text": "For a sample's standard deviation, divide by n minus one, not n.", "caption": "For a sample's standard deviation, divide by n - 1, not n.", "pause": 0.35 },
+        { "text": "It stops the sample from underestimating the spread.", "caption": "It stops the sample from underestimating the spread.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "The complete picture",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        { "text": "Here's the complete picture.", "caption": "Here's the complete picture.", "pause": 0.3 },
+        { "text": "The population is everyone. The sample is who you measure.", "caption": "The population is everyone. The sample is who you measure.", "pause": 0.35 },
+        { "text": "The sample mean estimates the truth, and gets steadier as the sample grows.", "caption": "The sample mean estimates the truth, and gets steadier as the sample grows.", "pause": 0.35 },
+        { "text": "Keep it random, and use n minus one for the spread.", "caption": "Keep it random, and use n - 1 for the spread.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Quiz, teaser and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        { "text": "Quick quiz!", "caption": "Quick quiz!", "pause": 0.3 },
+        { "text": "To find the average height of students in a college, you measure only the basketball team.", "caption": "To find the average height of students in a college, you measure only the basketball team.", "pause": 0.35 },
+        { "text": "What's the problem?", "caption": "What's the problem?", "pause": 5.7 },
+        { "text": "It's biased!", "caption": "It's biased!", "pause": 0.35 },
+        { "text": "Basketball players are taller than most students, so the average comes out too high.", "caption": "Basketball players are taller than most students, so the average comes out too high.", "pause": 0.4 },
+        { "text": "Next, we'll see the surprising shape that sample means make.", "caption": "Next, we'll see the surprising shape that sample means make.", "pause": 0.4 },
+        { "text": "Follow for data science made simple!", "caption": "Follow for data science made simple!", "pause": 0.3 }
+      ]
+    }
+  ]
+}

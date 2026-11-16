@@ -1,0 +1,113 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        { "text": "Roll a dice. What will you get?", "caption": "Roll a dice. What will you get?", "pause": 0.4 },
+        { "text": "You can't know for sure.", "caption": "You can't know for sure.", "pause": 0.35 },
+        { "text": "But you can know the chance of every outcome.", "caption": "But you can know the chance of every outcome.", "pause": 0.4 },
+        { "text": "That's a probability distribution.", "caption": "That's a probability distribution.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "What it is",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        { "text": "A probability distribution lists every possible outcome, and how likely each one is.", "caption": "A probability distribution lists every possible outcome, and how likely each one is.", "pause": 0.4 },
+        { "text": "And all the chances add up to one, or a hundred percent.", "caption": "And all the chances add up to 1, or 100%.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Two kinds",
+      "lead": 0.45,
+      "hold": 0.8,
+      "segments": [
+        { "text": "There are two kinds.", "caption": "There are two kinds.", "pause": 0.3 },
+        { "text": "Discrete, for things you count. And continuous, for things you measure.", "caption": "Discrete, for things you count. And continuous, for things you measure.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Discrete: one dice",
+      "lead": 0.45,
+      "hold": 0.8,
+      "segments": [
+        { "text": "Roll a fair dice: six outcomes, each with a chance of one in six.", "caption": "Roll a fair dice: 6 outcomes, each with a chance of 1 in 6.", "pause": 0.4 },
+        { "text": "Drawn as bars, the heights are the probabilities.", "caption": "Drawn as bars, the heights are the probabilities.", "pause": 0.35 },
+        { "text": "Stack all six, and they add up to one.", "caption": "Stack all six, and they add up to 1.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Discrete: two dice",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        { "text": "Now roll two dice, and add them.", "caption": "Now roll two dice, and add them.", "pause": 0.35 },
+        { "text": "There are thirty-six combinations, and six of them make seven.", "caption": "There are 36 combinations, and 6 of them make 7.", "pause": 0.4 },
+        { "text": "So seven is the most likely total.", "caption": "So 7 is the most likely total.", "pause": 0.35 },
+        { "text": "Two and twelve are the rarest, with just one way each.", "caption": "2 and 12 are the rarest, with just one way each.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Continuous",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        { "text": "Height is continuous. It can take any value, so the chance of one exact value is zero.", "caption": "Height is continuous. It can take any value, so the chance of one exact value is zero.", "pause": 0.4 },
+        { "text": "Instead, the chance is the area under the curve.", "caption": "Instead, the chance is the area under the curve.", "pause": 0.35 },
+        { "text": "The area between one fifty-eight and one seventy-two centimetres is about sixty-eight percent.", "caption": "The area between 158 and 172 centimetres is about 68%.", "pause": 0.35 },
+        { "text": "And the total area is one.", "caption": "And the total area is 1.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Why it matters",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        { "text": "Distributions turn uncertainty into numbers you can plan with.", "caption": "Distributions turn uncertainty into numbers you can plan with.", "pause": 0.35 },
+        { "text": "How many customers will walk in?", "caption": "How many customers will walk in?", "pause": 0.3 },
+        { "text": "How long will a battery last?", "caption": "How long will a battery last?", "pause": 0.3 },
+        { "text": "What's the chance of rain tomorrow?", "caption": "What's the chance of rain tomorrow?", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "The complete picture",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        { "text": "Here's the complete picture.", "caption": "Here's the complete picture.", "pause": 0.3 },
+        { "text": "A probability distribution shows every outcome and its chance.", "caption": "A probability distribution shows every outcome and its chance.", "pause": 0.35 },
+        { "text": "Discrete: the bar heights are probabilities.", "caption": "Discrete: the bar heights are probabilities.", "pause": 0.35 },
+        { "text": "Continuous: the areas under the curve are probabilities.", "caption": "Continuous: the areas under the curve are probabilities.", "pause": 0.35 },
+        { "text": "Either way, the total is one.", "caption": "Either way, the total is 1.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Quiz and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        { "text": "Quick quiz!", "caption": "Quick quiz!", "pause": 0.3 },
+        { "text": "You flip a coin twice.", "caption": "You flip a coin twice.", "pause": 0.3 },
+        { "text": "What's the chance of getting exactly one head?", "caption": "What's the chance of getting exactly one head?", "pause": 5.7 },
+        { "text": "One half!", "caption": "One half!", "pause": 0.35 },
+        { "text": "Of the four outcomes, two have exactly one head: heads tails, and tails heads.", "caption": "Of the four outcomes, two have exactly one head: heads-tails, and tails-heads.", "pause": 0.45 },
+        { "text": "Follow for data science made simple!", "caption": "Follow for data science made simple!", "pause": 0.3 }
+      ]
+    }
+  ]
+}
