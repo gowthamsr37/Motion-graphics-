@@ -1,0 +1,249 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Hook",
+   "lead": 0.45,
+   "hold": 1.0,
+   "segments": [
+    {
+     "text": "Heights in a class.",
+     "caption": "Heights in a class.",
+     "pause": 0.35
+    },
+    {
+     "text": "Marks in an exam.",
+     "caption": "Marks in an exam.",
+     "pause": 0.35
+    },
+    {
+     "text": "Even coffee poured by a machine.",
+     "caption": "Even coffee poured by a machine.",
+     "pause": 0.45
+    },
+    {
+     "text": "Measure enough of them, and the same shape appears.",
+     "caption": "Measure enough of them, and the same shape appears.",
+     "pause": 0.4
+    },
+    {
+     "text": "A bell!",
+     "caption": "A bell!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Its name",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "It's called the normal distribution, or the bell curve.",
+     "caption": "It's called the normal distribution, or the bell curve.",
+     "pause": 0.4
+    },
+    {
+     "text": "It's the most famous shape in statistics.",
+     "caption": "It's the most famous shape in statistics.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "The shape",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "It's symmetric, with one peak in the middle.",
+     "caption": "It's symmetric, with one peak in the middle.",
+     "pause": 0.35
+    },
+    {
+     "text": "The mean, median and mode all sit right at the centre.",
+     "caption": "The mean, median and mode all sit right at the centre.",
+     "pause": 0.35
+    },
+    {
+     "text": "And on both sides, the tails thin out.",
+     "caption": "And on both sides, the tails thin out.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Two numbers",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Just two numbers draw the whole curve.",
+     "caption": "Just two numbers draw the whole curve.",
+     "pause": 0.35
+    },
+    {
+     "text": "The mean sets where it sits.",
+     "caption": "The mean sets where it sits.",
+     "pause": 0.35
+    },
+    {
+     "text": "The standard deviation sets how wide it spreads.",
+     "caption": "The standard deviation sets how wide it spreads.",
+     "pause": 0.4
+    },
+    {
+     "text": "Small, and it's tall and narrow. Big, and it's short and wide.",
+     "caption": "Small, and it's tall and narrow. Big, and it's short and wide.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "The 68-95-99.7 rule",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Now the famous rule.",
+     "caption": "Now the famous rule.",
+     "pause": 0.35
+    },
+    {
+     "text": "About sixty-eight percent of values fall within one standard deviation.",
+     "caption": "About 68% of values fall within 1 standard deviation.",
+     "pause": 0.4
+    },
+    {
+     "text": "Ninety-five percent within two.",
+     "caption": "95% within two.",
+     "pause": 0.35
+    },
+    {
+     "text": "And ninety-nine point seven percent within three.",
+     "caption": "And 99.7% within three.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Heights example",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Say heights average one sixty-five centimetres. The standard deviation is seven.",
+     "caption": "Say heights average 165 centimetres. The standard deviation is 7.",
+     "pause": 0.4
+    },
+    {
+     "text": "Then about sixty-eight percent of people are between one fifty-eight and one seventy-two.",
+     "caption": "Then about 68% of people are between 158 and 172.",
+     "pause": 0.35
+    },
+    {
+     "text": "And ninety-five percent between one fifty-one and one seventy-nine.",
+     "caption": "And 95% between 151 and 179.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "Why it matters",
+   "lead": 0.45,
+   "hold": 0.9,
+   "segments": [
+    {
+     "text": "Anything beyond three standard deviations is rare. About three in a thousand.",
+     "caption": "Anything beyond three standard deviations is rare. About 3 in 1,000.",
+     "pause": 0.4
+    },
+    {
+     "text": "That's why it's used to flag outliers and to check quality in factories.",
+     "caption": "That's why it's used to flag outliers and to check quality in factories.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "The complete picture",
+   "lead": 0.45,
+   "hold": 1.0,
+   "segments": [
+    {
+     "text": "Here's the complete picture.",
+     "caption": "Here's the complete picture.",
+     "pause": 0.35
+    },
+    {
+     "text": "Normal data is symmetric, with the mean in the centre.",
+     "caption": "Normal data is symmetric, with the mean in the centre.",
+     "pause": 0.3
+    },
+    {
+     "text": "The standard deviation sets its width.",
+     "caption": "The standard deviation sets its width.",
+     "pause": 0.3
+    },
+    {
+     "text": "And sixty-eight, ninety-five, ninety-nine point seven tells you where the values fall.",
+     "caption": "And 68, 95, 99.7 tells you where the values fall.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "Quiz, teaser and call to action",
+   "lead": 0.35,
+   "hold": 2.3,
+   "segments": [
+    {
+     "text": "Quick quiz!",
+     "caption": "Quick quiz!",
+     "pause": 0.3
+    },
+    {
+     "text": "Exam scores: mean seventy, standard deviation ten.",
+     "caption": "Exam scores: mean 70, standard deviation 10.",
+     "pause": 0.3
+    },
+    {
+     "text": "What share of students score between fifty and ninety?",
+     "caption": "What share of students score between 50 and 90?",
+     "pause": 5.7
+    },
+    {
+     "text": "About ninety-five percent!",
+     "caption": "About 95%!",
+     "pause": 0.4
+    },
+    {
+     "text": "Fifty and ninety are each twenty away from seventy: two standard deviations.",
+     "caption": "50 and 90 are each 20 away from 70: two standard deviations.",
+     "pause": 0.5
+    },
+    {
+     "text": "In future videos, we'll explore other kinds of distributions.",
+     "caption": "In future videos, we'll explore other kinds of distributions.",
+     "pause": 0.35
+    },
+    {
+     "text": "Follow us for data science made simple!",
+     "caption": "Follow us for data science made simple!",
+     "pause": 0.3
+    }
+   ]
+  }
+ ]
+}

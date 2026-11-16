@@ -7,10 +7,10 @@ description: House style and production pipeline for the "Data Science Made Simp
 
 The user approved **types-of-data/** as the reference ("came out very well") and asked that **every setting, theme and voice stay the same in future videos**. Treat everything below as fixed defaults. Change something only when the user explicitly asks; if a request seems to conflict with these, ask before deviating.
 
-The reference implementation is `types-of-data/`; the later videos `mean-median-mode/`, `measures-of-dispersion/`, `centre-vs-spread/`, `outliers/`, `iqr/`, `treating-outliers/`, `skewness/` and `normal-distribution/` follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
+The reference implementation is `types-of-data/`; the later videos `mean-median-mode/`, `measures-of-dispersion/`, `centre-vs-spread/`, `outliers/`, `iqr/`, `treating-outliers/`, `skewness/`, `normal-distribution/` and `z-score/` follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
 
 ```bash
-REF=normal-distribution bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
+REF=z-score bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
 ```
 
 The improvements it inherits:
@@ -217,6 +217,7 @@ Notes:
 - Distribution curves: draw them from the formula (`normal-distribution/src/components/Bell.tsx`: `Bell`, `Axis`, `curveY`, `vx`), scaling the peak by 1/SD so the area stays constant when the SD changes. Show nested ranges (68 / 95 / 99.7) as non-overlapping coloured rings plus stacked brackets under the axis (`S5Rule.tsx`: `ruleBands`, `Bracket`), never as overlapping translucent fills that mix colours.
 - Tiny probabilities (e.g. 3 in 1,000) read better as a dot grid (`S7Rare.tsx`) than as a sliver of curve area that is too thin to see.
 - A teaser for a future topic goes between the quiz explanation and the CTA (about 3–4 s, `S9Quiz.tsx`). Keep its visuals generic (unlabelled mystery shapes) so the page isn't committed to specific next topics, and repeat it as a small NEXT: chip on the end card.
+- Shared kits (from `z-score/`, inherited by every scaffold): `components/Quiz.tsx` (`QuizBadge`, `Question`, `Countdown`, `Options`, `Reveal`, `quizClock`), `components/Cta.tsx` (`Cta` with `next` and `chips` props) and `components/Rule.tsx` (`ruleBands`, `Bracket`, `Span`). A new quiz scene is just its prop plus these; don't copy the old inline quiz code.
 - Length: 100–120 s by default; the user allows a few extra seconds when it buys a clear explanation (`treating-outliers/` is 124 s).
 - `Pop` is centred on its x, so its content can only be as wide as the distance to the right edge (540 px at x = 540) and multi-line text wraps early ("HOW DO / YOU"). Give every text block inside a `Pop` `whiteSpace: "nowrap"` and explicit `<br />`s.
 - Money constants: write the unit next to every constant ("in ₹ thousand") and print the derived numbers once with node before rendering. A 10× slip (₹100 crore instead of ₹10 crore) looked plausible on screen.
