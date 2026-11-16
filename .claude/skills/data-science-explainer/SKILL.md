@@ -7,10 +7,10 @@ description: House style and production pipeline for the "Data Science Made Simp
 
 The user approved **types-of-data/** as the reference ("came out very well") and asked that **every setting, theme and voice stay the same in future videos**. Treat everything below as fixed defaults. Change something only when the user explicitly asks; if a request seems to conflict with these, ask before deviating.
 
-The reference implementation is `types-of-data/`; the later videos `mean-median-mode/`, `measures-of-dispersion/`, `centre-vs-spread/` and `outliers/` follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
+The reference implementation is `types-of-data/`; the later videos `mean-median-mode/`, `measures-of-dispersion/`, `centre-vs-spread/`, `outliers/` and `iqr/` follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
 
 ```bash
-REF=outliers bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
+REF=iqr bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
 ```
 
 The improvements it inherits:
@@ -207,7 +207,9 @@ Notes:
 - A misconception moment needs to be unmistakable: dim the rest, make the wrong thing big, then stamp it out.
 - Hook headline lines must fit in 1080 px; 70 px Sora fits "YOUR EXAM RANK…".
 - Dot plots: pick values and a scale so neighbouring dots sit at least one dot-width apart (a 0–100 axis over ~850 px needs gaps of 4+ units for 30 px dots), and keep labels clear of stacked dots.
-- Never leave the stage empty while the first line of a scene plays: put the scene's question on screen from frame ~4.
+- Never leave the stage empty while the first line of a scene plays: put the scene's question on screen from frame ~4. For a list that fills in on cue, show dashed empty slots from frame ~4.
+- For a step-by-step method, a numbered step tracker in the header band (done = green check, active = glowing) keeps viewers oriented (`iqr/` S4).
+- When one extreme value would squash a dot plot, use a broken axis (two segments with a `//` mark) rather than shrinking the dots until they overlap.
 - `Pop` is centred on its x, so its content can only be as wide as the distance to the right edge (540 px at x = 540) and multi-line text wraps early ("HOW DO / YOU"). Give every text block inside a `Pop` `whiteSpace: "nowrap"` and explicit `<br />`s.
 - Money constants: write the unit next to every constant ("in ₹ thousand") and print the derived numbers once with node before rendering. A 10× slip (₹100 crore instead of ₹10 crore) looked plausible on screen.
 - When a spoken line is cut to save time, re-check every visual that was timed off it. A stamp gated on the removed line's window silently never appeared.

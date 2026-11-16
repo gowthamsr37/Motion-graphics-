@@ -1,0 +1,251 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Hook",
+   "lead": 0.45,
+   "hold": 1.0,
+   "segments": [
+    {
+     "text": "Ten days of your commute.",
+     "caption": "Ten days of your commute.",
+     "pause": 0.35
+    },
+    {
+     "text": "Most take twenty to thirty minutes.",
+     "caption": "Most take 20 to 30 minutes.",
+     "pause": 0.45
+    },
+    {
+     "text": "But one day, a traffic jam: sixty!",
+     "caption": "But one day, a traffic jam: 60!",
+     "pause": 0.55
+    },
+    {
+     "text": "So how much does your commute really vary?",
+     "caption": "So how much does your commute really vary?",
+     "pause": 0.4
+    },
+    {
+     "text": "The range says forty-two minutes.",
+     "caption": "The range says 42 minutes.",
+     "pause": 0.3
+    },
+    {
+     "text": "The IQR says just eight.",
+     "caption": "The IQR says just 8.",
+     "pause": 0.45
+    },
+    {
+     "text": "Let's finally decode the IQR!",
+     "caption": "Let's finally decode the IQR!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "What it is",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "IQR stands for interquartile range.",
+     "caption": "IQR stands for interquartile range.",
+     "pause": 0.4
+    },
+    {
+     "text": "It's the range of the middle half.",
+     "caption": "It's the range of the middle half.",
+     "pause": 0.4
+    },
+    {
+     "text": "Drop the lowest quarter and the highest quarter, and measure what's left.",
+     "caption": "Drop the lowest quarter and the highest quarter, and measure what's left.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Quartiles",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Quartiles cut sorted data into four equal parts.",
+     "caption": "Quartiles cut sorted data into four equal parts.",
+     "pause": 0.4
+    },
+    {
+     "text": "Q one marks the first quarter.",
+     "caption": "Q1 marks the first quarter.",
+     "pause": 0.25
+    },
+    {
+     "text": "Q two is the median.",
+     "caption": "Q2 is the median.",
+     "pause": 0.25
+    },
+    {
+     "text": "Q three marks three quarters.",
+     "caption": "Q3 marks three quarters.",
+     "pause": 0.4
+    },
+    {
+     "text": "So the IQR is Q three minus Q one.",
+     "caption": "So the IQR is Q3 minus Q1.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "How to calculate",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Let's calculate it. Step one: sort the data.",
+     "caption": "Let's calculate it. Step one: sort the data.",
+     "pause": 0.4
+    },
+    {
+     "text": "Step two: find the median, halfway between twenty-five and twenty-seven: twenty-six.",
+     "caption": "Step two: find the median, halfway between 25 and 27: 26.",
+     "pause": 0.4
+    },
+    {
+     "text": "Step three: split the data at the median.",
+     "caption": "Step three: split the data at the median.",
+     "pause": 0.35
+    },
+    {
+     "text": "The middle of the lower half is Q one: twenty-two.",
+     "caption": "The middle of the lower half is Q1: 22.",
+     "pause": 0.35
+    },
+    {
+     "text": "The middle of the upper half is Q three: thirty.",
+     "caption": "The middle of the upper half is Q3: 30.",
+     "pause": 0.4
+    },
+    {
+     "text": "Step four: subtract. Thirty minus twenty-two is eight minutes!",
+     "caption": "Step four: subtract. 30 minus 22 is 8 minutes!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "What it means",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "On a typical day, your commute takes twenty-two to thirty minutes. An eight-minute window.",
+     "caption": "On a typical day, your commute takes 22 to 30 minutes. An 8-minute window.",
+     "pause": 0.45
+    },
+    {
+     "text": "Even a worse jam can't move it.",
+     "caption": "Even a worse jam can't move it.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Where it's useful",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "So when should you use the IQR?",
+     "caption": "So when should you use the IQR?",
+     "pause": 0.35
+    },
+    {
+     "text": "With skewed data, like salaries or house prices, where a few huge values inflate the standard deviation.",
+     "caption": "With skewed data, like salaries or house prices, where a few huge values inflate the standard deviation.",
+     "pause": 0.4
+    },
+    {
+     "text": "In box plots, where the box is the IQR.",
+     "caption": "In box plots, where the box is the IQR.",
+     "pause": 0.4
+    },
+    {
+     "text": "And to catch outliers: anything more than one and a half IQRs beyond the box.",
+     "caption": "And to catch outliers: anything more than 1.5 IQRs beyond the box.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "The recipe",
+   "lead": 0.45,
+   "hold": 1.0,
+   "segments": [
+    {
+     "text": "Here's the recipe.",
+     "caption": "Here's the recipe.",
+     "pause": 0.3
+    },
+    {
+     "text": "Sort. Find Q one and Q three. Subtract.",
+     "caption": "Sort. Find Q1 and Q3. Subtract.",
+     "pause": 0.35
+    },
+    {
+     "text": "And pair it with the median.",
+     "caption": "And pair it with the median.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Quiz and call to action",
+   "lead": 0.35,
+   "hold": 2.3,
+   "segments": [
+    {
+     "text": "Quick quiz!",
+     "caption": "Quick quiz!",
+     "pause": 0.3
+    },
+    {
+     "text": "Two, four, six, eight, ten, twelve.",
+     "caption": "2, 4, 6, 8, 10, 12.",
+     "pause": 0.3
+    },
+    {
+     "text": "What's the IQR?",
+     "caption": "What's the IQR?",
+     "pause": 5.7
+    },
+    {
+     "text": "Six!",
+     "caption": "6!",
+     "pause": 0.4
+    },
+    {
+     "text": "Q one is four and Q three is ten. Ten minus four is six.",
+     "caption": "Q1 is 4 and Q3 is 10. 10 minus 4 is 6.",
+     "pause": 0.5
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.3
+    }
+   ]
+  }
+ ]
+}
