@@ -7,10 +7,10 @@ description: House style and production pipeline for the "Data Science Made Simp
 
 The user approved **types-of-data/** as the reference ("came out very well") and asked that **every setting, theme and voice stay the same in future videos**. Treat everything below as fixed defaults. Change something only when the user explicitly asks; if a request seems to conflict with these, ask before deviating.
 
-The reference implementation is `types-of-data/`; the later videos `mean-median-mode/`, `measures-of-dispersion/`, `centre-vs-spread/`, `outliers/`, `iqr/`, `treating-outliers/` and `skewness/` follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
+The reference implementation is `types-of-data/`; the later videos `mean-median-mode/`, `measures-of-dispersion/`, `centre-vs-spread/`, `outliers/`, `iqr/`, `treating-outliers/`, `skewness/` and `normal-distribution/` follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
 
 ```bash
-REF=skewness bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
+REF=normal-distribution bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
 ```
 
 The improvements it inherits:
@@ -214,6 +214,9 @@ Notes:
 - Don't land an SFX on the first consonant of a spoken word: it masks it (Whisper heard "Right-skewed" as "Bright skewed"). Fire onset effects 8–12 frames before the word. If only the full-length transcript mishears a word, transcribe that clip alone before changing the mix; long-form Whisper sometimes mishears with context.
 - The master chain ends with `alimiter=limit=0.79` after loudnorm (`skewness/scripts/build.sh`) so true peak stays near −2 dBTP.
 - Histogram demos: keep the bin counts as the data and compute mode / median / mean from them (`skewness/src/components/Hist.tsx`), so markers are exact. Colour helpers like `alpha()` expect hex: pass `#RRGGBB`, not an rgba() string (an rgba fed to `alpha()` rendered black bars).
+- Distribution curves: draw them from the formula (`normal-distribution/src/components/Bell.tsx`: `Bell`, `Axis`, `curveY`, `vx`), scaling the peak by 1/SD so the area stays constant when the SD changes. Show nested ranges (68 / 95 / 99.7) as non-overlapping coloured rings plus stacked brackets under the axis (`S5Rule.tsx`: `ruleBands`, `Bracket`), never as overlapping translucent fills that mix colours.
+- Tiny probabilities (e.g. 3 in 1,000) read better as a dot grid (`S7Rare.tsx`) than as a sliver of curve area that is too thin to see.
+- A teaser for a future topic goes between the quiz explanation and the CTA (about 3–4 s, `S9Quiz.tsx`). Keep its visuals generic (unlabelled mystery shapes) so the page isn't committed to specific next topics, and repeat it as a small NEXT: chip on the end card.
 - Length: 100–120 s by default; the user allows a few extra seconds when it buys a clear explanation (`treating-outliers/` is 124 s).
 - `Pop` is centred on its x, so its content can only be as wide as the distance to the right edge (540 px at x = 540) and multi-line text wraps early ("HOW DO / YOU"). Give every text block inside a `Pop` `whiteSpace: "nowrap"` and explicit `<br />`s.
 - Money constants: write the unit next to every constant ("in ₹ thousand") and print the derived numbers once with node before rendering. A 10× slip (₹100 crore instead of ₹10 crore) looked plausible on screen.
