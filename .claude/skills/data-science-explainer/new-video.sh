@@ -23,7 +23,7 @@ cp "$REF"/src/components/*.tsx "$DST"/src/components/
 cp "$REF"/scripts/{gen-voice.py,gen-audio.mjs,build.sh,export-srt.py,stills.mjs,sheet.py} "$DST"/scripts/
 cp "$REF"/public/fonts/*.woff2 "$DST"/public/fonts/
 cp -r "$REF"/src/scenes "$DST"/reference/scenes      # the approved scenes, for patterns (not compiled)
-cp "$REF"/scripts/voiceover.json "$DST"/reference/voiceover.types-of-data.json
+cp "$REF"/scripts/voiceover.json "$DST"/reference/voiceover.reference.json
 
 # names: read the reference's composition id and file stem from its build script, then replace them
 OLD_COMP=$(sed -n 's/.*remotion render out\/bundle \([A-Za-z0-9]*\) .*/\1/p' "$REF/scripts/build.sh" | head -1)
@@ -64,7 +64,7 @@ vo = {
 PY
 # Main.tsx / SoundTrack.tsx still reference the reference scenes: flag them for adaptation
 for f in Main.tsx SoundTrack.tsx Cover.tsx; do
-  sed -i "1i // ADAPT FOR THIS VIDEO: copied from types-of-data (house style). Keep the layer stack, look and mix; replace scene list, cues and cover text." "$DST/src/$f"
+  grep -q "^// ADAPT FOR THIS VIDEO" "$DST/src/$f" || sed -i "1i // ADAPT FOR THIS VIDEO: copied from the reference project (house style). Keep the layer stack, look and mix; replace scene list, cues and cover text." "$DST/src/$f"
 done
-sed -i "1i // ADAPT: keep instruments, section styles, SFX kit and mastering; rewrite the ev/sections timing for this video's scenes." "$DST/scripts/gen-audio.mjs"
+grep -q "^// ADAPT:" "$DST/scripts/gen-audio.mjs" || sed -i "1i // ADAPT: keep instruments, section styles, SFX kit and mastering; rewrite the ev/sections timing for this video's scenes." "$DST/scripts/gen-audio.mjs"
 echo "Scaffolded $DST (composition $COMP, files $STEM.*). Next: npm install, then follow .claude/skills/data-science-explainer/SKILL.md §11."

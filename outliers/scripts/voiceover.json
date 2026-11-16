@@ -1,0 +1,261 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Hook",
+   "lead": 0.45,
+   "hold": 1.0,
+   "segments": [
+    {
+     "text": "Nine friends in a café.",
+     "caption": "Nine friends in a café.",
+     "pause": 0.35
+    },
+    {
+     "text": "Their average salary? Forty thousand a month.",
+     "caption": "Their average salary? 40,000 a month.",
+     "pause": 0.55
+    },
+    {
+     "text": "Then a billionaire walks in.",
+     "caption": "Then a billionaire walks in.",
+     "pause": 0.45
+    },
+    {
+     "text": "Now the average is one crore!",
+     "caption": "Now the average is 1 crore!",
+     "pause": 0.4
+    },
+    {
+     "text": "One extreme value changed everything.",
+     "caption": "One extreme value changed everything.",
+     "pause": 0.3
+    },
+    {
+     "text": "That's an outlier!",
+     "caption": "That's an outlier!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "What is an outlier?",
+   "lead": 0.45,
+   "hold": 0.7,
+   "segments": [
+    {
+     "text": "An outlier is a value that sits far away from the rest of the data.",
+     "caption": "An outlier is a value that sits far away from the rest of the data.",
+     "pause": 0.45
+    },
+    {
+     "text": "They come in two kinds.",
+     "caption": "They come in two kinds.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Two kinds",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Some are mistakes, like a typo that turns an age of twenty-five into two hundred and fifty.",
+     "caption": "Some are mistakes, like a typo that turns an age of 25 into 250.",
+     "pause": 0.5
+    },
+    {
+     "text": "Others are real, just rare: a billionaire, a festival sales spike, a fraudulent payment.",
+     "caption": "Others are real, just rare: a billionaire, a festival sales spike, a fraudulent payment.",
+     "pause": 0.5
+    },
+    {
+     "text": "Either way, they can wreck your analysis.",
+     "caption": "Either way, they can wreck your analysis.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Spotting them",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "How do you spot one? Use the IQR fence rule.",
+     "caption": "How do you spot one? Use the IQR fence rule.",
+     "pause": 0.4
+    },
+    {
+     "text": "Here are eleven test scores.",
+     "caption": "Here are 11 test scores.",
+     "pause": 0.4
+    },
+    {
+     "text": "The middle half: fifty to sixty-two. So the IQR is twelve.",
+     "caption": "The middle half: 50 to 62. So the IQR is 12.",
+     "pause": 0.45
+    },
+    {
+     "text": "Step one and a half IQRs, that's eighteen, beyond each end.",
+     "caption": "Step 1.5 IQRs, that's 18, beyond each end.",
+     "pause": 0.4
+    },
+    {
+     "text": "The fences land at thirty-two and eighty.",
+     "caption": "The fences land at 32 and 80.",
+     "pause": 0.4
+    },
+    {
+     "text": "Ninety-five jumps the fence. Outlier!",
+     "caption": "95 jumps the fence. Outlier!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Summary numbers",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "First, outliers distort your summary numbers.",
+     "caption": "First, outliers distort your summary numbers.",
+     "pause": 0.4
+    },
+    {
+     "text": "The mean jumped: forty thousand to one crore!",
+     "caption": "The mean jumped: 40,000 to 1 crore!",
+     "pause": 0.45
+    },
+    {
+     "text": "The median? Just forty-one thousand.",
+     "caption": "The median? Just 41,000.",
+     "pause": 0.45
+    },
+    {
+     "text": "And the range? Almost ten crore!",
+     "caption": "And the range? Almost 10 crore!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Bent trends",
+   "lead": 0.45,
+   "hold": 0.9,
+   "segments": [
+    {
+     "text": "Second, they can bend a trend.",
+     "caption": "Second, they can bend a trend.",
+     "pause": 0.4
+    },
+    {
+     "text": "More hours studied, higher scores. A clear rising line.",
+     "caption": "More hours studied, higher scores. A clear rising line.",
+     "pause": 0.45
+    },
+    {
+     "text": "Now add one student who studied eight hours but missed the exam.",
+     "caption": "Now add one student who studied 8 hours but missed the exam.",
+     "pause": 0.45
+    },
+    {
+     "text": "The line goes almost flat, as if studying barely helps!",
+     "caption": "The line goes almost flat, as if studying barely helps!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "The complete picture",
+   "lead": 0.45,
+   "hold": 1.0,
+   "segments": [
+    {
+     "text": "Here's the complete picture.",
+     "caption": "Here's the complete picture.",
+     "pause": 0.35
+    },
+    {
+     "text": "Outliers drag the average.",
+     "caption": "Outliers drag the average.",
+     "pause": 0.3
+    },
+    {
+     "text": "They inflate the spread.",
+     "caption": "They inflate the spread.",
+     "pause": 0.3
+    },
+    {
+     "text": "They tilt trend lines.",
+     "caption": "They tilt trend lines.",
+     "pause": 0.3
+    },
+    {
+     "text": "And they squash your charts.",
+     "caption": "And they squash your charts.",
+     "pause": 0.45
+    },
+    {
+     "text": "So should you just delete them? Not so fast!",
+     "caption": "So should you just delete them? Not so fast!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Quiz and call to action",
+   "lead": 0.35,
+   "hold": 2.3,
+   "segments": [
+    {
+     "text": "Quick quiz!",
+     "caption": "Quick quiz!",
+     "pause": 0.3
+    },
+    {
+     "text": "Q one is twenty, and Q three is thirty.",
+     "caption": "Q1 is 20 and Q3 is 30.",
+     "pause": 0.3
+    },
+    {
+     "text": "Which value is an outlier?",
+     "caption": "Which value is an outlier?",
+     "pause": 5.7
+    },
+    {
+     "text": "Forty-eight!",
+     "caption": "48!",
+     "pause": 0.4
+    },
+    {
+     "text": "The fences are five and forty-five. Only forty-eight is outside.",
+     "caption": "The fences are 5 and 45. Only 48 is outside.",
+     "pause": 0.5
+    },
+    {
+     "text": "Next time: how to treat outliers.",
+     "caption": "Next time: how to treat outliers.",
+     "pause": 0.35
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.3
+    }
+   ]
+  }
+ ]
+}

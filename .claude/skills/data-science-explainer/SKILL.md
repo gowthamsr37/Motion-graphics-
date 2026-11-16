@@ -7,10 +7,10 @@ description: House style and production pipeline for the "Data Science Made Simp
 
 The user approved **types-of-data/** as the reference ("came out very well") and asked that **every setting, theme and voice stay the same in future videos**. Treat everything below as fixed defaults. Change something only when the user explicitly asks; if a request seems to conflict with these, ask before deviating.
 
-The reference implementation is `types-of-data/`; the later videos `mean-median-mode/`, `measures-of-dispersion/` and `centre-vs-spread/` follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
+The reference implementation is `types-of-data/`; the later videos `mean-median-mode/`, `measures-of-dispersion/`, `centre-vs-spread/` and `outliers/` follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
 
 ```bash
-REF=centre-vs-spread bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
+REF=outliers bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
 ```
 
 The improvements it inherits:
@@ -21,7 +21,8 @@ The improvements it inherits:
 - `clink.wav`;
 - the `HANDLE` constant in `theme.ts`;
 - the CTA with the handle;
-- captions that highlight only one word at a time (two scaled neighbours ate the gap: "That'sdispersion").
+- captions that highlight only one word at a time (two scaled neighbours ate the gap: "That'sdispersion");
+- `components/Kit.tsx`: `inr()` Indian digit grouping (1,00,36,000) and `Money` (drawn ₹ + mono amount), `SceneTitle` (small-caps label + pill in the header band), `Lamp`, `Fence` (picket fence marker), `Stamp` (rubber stamp slam) and extra glyphs.
 
 **Instagram page: @curious_datascientist.** Use the handle (`HANDLE` in `theme.ts`) on the CTA end card (under the FOLLOW button), on the cover (bottom) and in the caption ("Follow @curious_datascientist for data science made simple 🚀"). The spoken final line stays "Follow for data science made simple!"
 
@@ -207,3 +208,6 @@ Notes:
 - Hook headline lines must fit in 1080 px; 70 px Sora fits "YOUR EXAM RANK…".
 - Dot plots: pick values and a scale so neighbouring dots sit at least one dot-width apart (a 0–100 axis over ~850 px needs gaps of 4+ units for 30 px dots), and keep labels clear of stacked dots.
 - Never leave the stage empty while the first line of a scene plays: put the scene's question on screen from frame ~4.
+- `Pop` is centred on its x, so its content can only be as wide as the distance to the right edge (540 px at x = 540) and multi-line text wraps early ("HOW DO / YOU"). Give every text block inside a `Pop` `whiteSpace: "nowrap"` and explicit `<br />`s.
+- Money constants: write the unit next to every constant ("in ₹ thousand") and print the derived numbers once with node before rendering. A 10× slip (₹100 crore instead of ₹10 crore) looked plausible on screen.
+- When a spoken line is cut to save time, re-check every visual that was timed off it. A stamp gated on the removed line's window silently never appeared.

@@ -1,0 +1,106 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Hook",
+   "lead": 0.45,
+   "hold": 1.35,
+   "segments": [
+    { "text": "A river, three feet deep on average.", "caption": "A river, 3 feet deep on average.", "pause": 0.6 },
+    { "text": "A delivery app, thirty minutes on average.", "caption": "A delivery app, 30 minutes on average.", "pause": 0.6 },
+    { "text": "A city, earning fifty thousand on average.", "caption": "A city, earning 50,000 on average.", "pause": 0.85 },
+    { "text": "Averages alone can mislead you.", "caption": "Averages alone can mislead you.", "pause": 0.5 },
+    { "text": "You need the center and the spread!", "caption": "You need the centre and the spread!", "pause": 0.3 }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Two questions",
+   "lead": 0.45,
+   "hold": 0.7,
+   "segments": [
+    { "text": "Every dataset answers two questions.", "caption": "Every dataset answers two questions.", "pause": 0.45 },
+    { "text": "Where's the center? That's central tendency: mean, median and mode.", "caption": "Where's the centre? That's central tendency: mean, median and mode.", "pause": 0.45 },
+    { "text": "How spread out is it? That's dispersion: range, variance and standard deviation.", "caption": "How spread out is it? That's dispersion: range, variance and standard deviation.", "pause": 0.3 }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Choosing the centre",
+   "lead": 0.5,
+   "hold": 0.9,
+   "segments": [
+    { "text": "First, which center should you use?", "caption": "First, which centre should you use?", "pause": 0.4 },
+    { "text": "For categories, like favourite phone brands, use the mode.", "caption": "For categories, like favourite phone brands, use the mode.", "pause": 0.5 },
+    { "text": "For balanced numbers, like heights in a class, use the mean.", "caption": "For balanced numbers, like heights in a class, use the mean.", "pause": 0.5 },
+    { "text": "For numbers with outliers, like salaries, use the median.", "caption": "For numbers with outliers, like salaries, use the median.", "pause": 0.5 },
+    { "text": "That city's typical salary? Thirty thousand, not fifty.", "caption": "That city's typical salary? 30,000, not 50.", "pause": 0.3 }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "When spread matters",
+   "lead": 0.5,
+   "hold": 0.8,
+   "segments": [
+    { "text": "Now, when do you need the spread?", "caption": "Now, when do you need the spread?", "pause": 0.35 },
+    { "text": "Whenever consistency or risk matters.", "caption": "Whenever consistency or risk matters.", "pause": 0.45 },
+    { "text": "That river's depth ranges from one foot to eight. The range warns you!", "caption": "That river's depth ranges from 1 foot to 8. The range warns you!", "pause": 0.55 },
+    { "text": "Two delivery apps both average thirty minutes.", "caption": "Two delivery apps both average 30 minutes.", "pause": 0.35 },
+    { "text": "One has a standard deviation of three minutes. The other, fifteen.", "caption": "One has a standard deviation of 3 minutes. The other, 15.", "pause": 0.45 },
+    { "text": "Pick the consistent one!", "caption": "Pick the consistent one!", "pause": 0.3 }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Meet the IQR",
+   "lead": 0.45,
+   "hold": 0.9,
+   "segments": [
+    { "text": "There's one more spread measure: the interquartile range.", "caption": "There's one more spread measure: the interquartile range.", "pause": 0.45 },
+    { "text": "Sort the data and keep the middle half. Its width is the IQR.", "caption": "Sort the data and keep the middle half. Its width is the IQR.", "pause": 0.5 },
+    { "text": "Extreme values can't stretch it.", "caption": "Extreme values can't stretch it.", "pause": 0.3 }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Pair them up",
+   "lead": 0.45,
+   "hold": 0.9,
+   "segments": [
+    { "text": "Here's the pro tip: pair them up.", "caption": "Here's the pro tip: pair them up.", "pause": 0.45 },
+    { "text": "Mean goes with standard deviation. Both react to outliers.", "caption": "Mean goes with standard deviation. Both react to outliers.", "pause": 0.5 },
+    { "text": "Median goes with the IQR. Both resist outliers.", "caption": "Median goes with the IQR. Both resist outliers.", "pause": 0.3 }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "The complete picture",
+   "lead": 0.45,
+   "hold": 1.3,
+   "segments": [
+    { "text": "Here's the complete picture.", "caption": "Here's the complete picture.", "pause": 0.35 },
+    { "text": "Balanced numbers: mean and standard deviation.", "caption": "Balanced numbers: mean and standard deviation.", "pause": 0.3 },
+    { "text": "Skewed data or outliers: median and IQR.", "caption": "Skewed data or outliers: median and IQR.", "pause": 0.3 },
+    { "text": "Categories: the mode, with counts for each group.", "caption": "Categories: the mode, with counts for each group.", "pause": 0.3 }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Quiz and call to action",
+   "lead": 0.35,
+   "hold": 2.3,
+   "segments": [
+    { "text": "Quick quiz!", "caption": "Quick quiz!", "pause": 0.3 },
+    { "text": "House prices in a town with a few mansions.", "caption": "House prices in a town with a few mansions.", "pause": 0.3 },
+    { "text": "Which pair describes them best?", "caption": "Which pair describes them best?", "pause": 5.7 },
+    { "text": "Median and IQR!", "caption": "Median and IQR!", "pause": 0.4 },
+    { "text": "The mansions can't drag them up.", "caption": "The mansions can't drag them up.", "pause": 0.55 },
+    { "text": "Follow for data science made simple!", "caption": "Follow for data science made simple!", "pause": 0.3 }
+   ]
+  }
+ ]
+}
