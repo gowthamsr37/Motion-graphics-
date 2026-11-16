@@ -1,0 +1,286 @@
+{
+  "voice": "am_michael",
+  "lang": "en-us",
+  "speed": 1.0,
+  "fix": [
+    [
+      "ˈoʊdi",
+      "ˌoʊdˌiːˈaɪz"
+    ],
+    [
+      "ˈɪpəl",
+      "ˌaɪpˌiːˈɛl"
+    ],
+    [
+      "dˈuːbaɪ",
+      "duːbˈaɪ"
+    ]
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.2,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "Every match starts with a coin.",
+          "caption": "Every match starts with a coin.",
+          "pause": 0.45
+        },
+        {
+          "text": "Captains celebrate when they win it.",
+          "caption": "Captains celebrate when they win it.",
+          "pause": 0.4
+        },
+        {
+          "text": "But does winning the toss actually win you the match?",
+          "caption": "But does winning the toss actually win you the match?",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "We checked eight thousand, four hundred and eight men's matches, in every format, to find out.",
+          "caption": "We checked 8,408 men's matches, in every format, to find out.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "First, what does pure luck look like?",
+          "caption": "First, what does pure luck look like?",
+          "pause": 0.4
+        },
+        {
+          "text": "Flip a coin two and a half thousand times, and heads almost always lands between forty-eight and fifty-two percent.",
+          "caption": "Flip a coin 2,500 times, and heads almost always lands between 48% and 52%.",
+          "pause": 0.4
+        },
+        {
+          "text": "That's the coin-flip zone. Inside it, the toss means nothing.",
+          "caption": "That's the coin-flip zone. Inside it, the toss means nothing.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "ODIs first. Two thousand, four hundred and eighty-seven decided matches.",
+          "caption": "ODIs first. 2,487 decided matches.",
+          "pause": 0.3
+        },
+        {
+          "text": "Toss winners won one thousand, two hundred and forty-four.",
+          "caption": "Toss winners won 1,244.",
+          "pause": 0.4
+        },
+        {
+          "text": "Fifty point zero percent. Not roughly half. Exactly half.",
+          "caption": "50.0%. Not roughly half. Exactly half.",
+          "pause": 0.5
+        },
+        {
+          "text": "T20 internationals: fifty point five. The IPL: fifty-one point six.",
+          "caption": "T20 internationals: 50.5%. The IPL: 51.6%.",
+          "pause": 0.35
+        },
+        {
+          "text": "All inside the zone. Except one format. Hold that thought.",
+          "caption": "All inside the zone. Except one format. Hold that thought.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "So why does everyone believe in the toss?",
+          "caption": "So why does everyone believe in the toss?",
+          "pause": 0.4
+        },
+        {
+          "text": "The twenty twenty-one T20 World Cup.",
+          "caption": "The 2021 T20 World Cup.",
+          "pause": 0.3
+        },
+        {
+          "text": "In Dubai, the team batting second won twelve of thirteen games.",
+          "caption": "In Dubai, the team batting second won 12 of 13 games.",
+          "pause": 0.35
+        },
+        {
+          "text": "Evening dew made the ball slippery, so toss winners chose to bowl.",
+          "caption": "Evening dew made the ball slippery, so toss winners chose to bowl.",
+          "pause": 0.35
+        },
+        {
+          "text": "They won thirty of the forty-five matches. Including the final.",
+          "caption": "They won 30 of the 45 matches. Including the final.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "Here's what nobody remembers.",
+          "caption": "Here's what nobody remembers.",
+          "pause": 0.4
+        },
+        {
+          "text": "The next three World Cups: thirty-nine, fifty-six and forty-three percent.",
+          "caption": "The next three World Cups: 39%, 56% and 43%.",
+          "pause": 0.4
+        },
+        {
+          "text": "Every other T20 international in Dubai: fifty point eight.",
+          "caption": "Every other T20 international in Dubai: 50.8%.",
+          "pause": 0.4
+        },
+        {
+          "text": "It was one place, one season, one set of conditions.",
+          "caption": "It was one place, one season, one set of conditions.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "Same trap with so-called toss grounds.",
+          "caption": "Same trap with so-called toss grounds.",
+          "pause": 0.35
+        },
+        {
+          "text": "Split each big ground's matches into two halves.",
+          "caption": "Split each big ground's matches into two halves.",
+          "pause": 0.35
+        },
+        {
+          "text": "Where the toss looked strongest in the first half, toss winners won sixty-four percent.",
+          "caption": "Where the toss looked strongest in the first half, toss winners won 64%.",
+          "pause": 0.35
+        },
+        {
+          "text": "In the second half? Forty-two.",
+          "caption": "In the second half? 42%.",
+          "pause": 0.4
+        },
+        {
+          "text": "Eden Park fell from sixty-one to twenty-nine.",
+          "caption": "Eden Park fell from 61% to 29%.",
+          "pause": 0.4
+        },
+        {
+          "text": "Small samples tell big lies.",
+          "caption": "Small samples tell big lies.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "Now, that exception. Test cricket.",
+          "caption": "Now, that exception. Test cricket.",
+          "pause": 0.4
+        },
+        {
+          "text": "Toss winners win fifty-four percent. Outside the zone.",
+          "caption": "Toss winners win 54%. Outside the zone.",
+          "pause": 0.4
+        },
+        {
+          "text": "But only if they bat first: fifty-seven. Bowl first: forty-eight.",
+          "caption": "But only if they bat first: 57%. Bowl first: 48%.",
+          "pause": 0.4
+        },
+        {
+          "text": "Over five days the pitch breaks up. Nobody wants to bat last.",
+          "caption": "Over five days the pitch breaks up. Nobody wants to bat last.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "The IPL flips it.",
+          "caption": "The IPL flips it.",
+          "pause": 0.35
+        },
+        {
+          "text": "Toss winners who bowl first win fifty-five percent. Those who bat first: forty-five.",
+          "caption": "Toss winners who bowl first win 55%. Those who bat first: 45%.",
+          "pause": 0.45
+        },
+        {
+          "text": "The coin doesn't win the match. The decision can tilt it.",
+          "caption": "The coin doesn't win the match. The decision can tilt it.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "lead": 0.3,
+      "hold": 1.5,
+      "segments": [
+        {
+          "text": "So, does the toss win matches?",
+          "caption": "So, does the toss win matches?",
+          "pause": 0.4
+        },
+        {
+          "text": "Across every format: fifty point nine percent. Less than one extra win in every hundred.",
+          "caption": "Across every format: 50.9%. Less than one extra win in every hundred.",
+          "pause": 0.45
+        },
+        {
+          "text": "Myth busted. Mostly.",
+          "caption": "Myth busted. Mostly.",
+          "pause": 0.5
+        },
+        {
+          "text": "The coin decides who goes first. Players, conditions and decisions decide who wins.",
+          "caption": "The coin decides who goes first. Players, conditions and decisions decide who wins.",
+          "pause": 0.45
+        },
+        {
+          "text": "Got a myth for us to test? Drop it in the comments.",
+          "caption": "Got a myth for us to test? Drop it in the comments.",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}
