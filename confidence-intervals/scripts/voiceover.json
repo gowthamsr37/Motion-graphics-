@@ -1,0 +1,216 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "A food app says its average delivery time is thirty-two minutes.",
+          "caption": "A food app says its average delivery time is 32 minutes.",
+          "pause": 0.4
+        },
+        {
+          "text": "But it only checked a hundred orders. How sure can it be?",
+          "caption": "But it only checked 100 orders. How sure can it be?",
+          "pause": 0.45
+        },
+        {
+          "text": "A confidence interval answers that.",
+          "caption": "A confidence interval answers that.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The definition",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Here's the definition, in simple words.",
+          "caption": "Here's the definition, in simple words.",
+          "pause": 0.35
+        },
+        {
+          "text": "A confidence interval is a range of values that likely contains the true average.",
+          "caption": "A confidence interval is a range of values that likely contains the true average.",
+          "pause": 0.4
+        },
+        {
+          "text": "Instead of one number, you give a range: thirty to thirty-four minutes.",
+          "caption": "Instead of one number, you give a range: 30 to 34 minutes.",
+          "pause": 0.4
+        },
+        {
+          "text": "And a confidence level, like ninety-five percent, tells you how reliable that range is.",
+          "caption": "And a confidence level, like 95%, tells you how reliable that range is.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Why a range",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Why a range? Because every sample gives a slightly different average.",
+          "caption": "Why a range? Because every sample gives a slightly different average.",
+          "pause": 0.4
+        },
+        {
+          "text": "Check another hundred orders, and you might get thirty-one, or thirty-three and a half.",
+          "caption": "Check another 100 orders, and you might get 31, or 33.5.",
+          "pause": 0.4
+        },
+        {
+          "text": "One number alone hides that wobble.",
+          "caption": "One number alone hides that wobble.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Building the range",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "The range is the sample average, plus or minus a margin of error.",
+          "caption": "The range is the sample average, plus or minus a margin of error.",
+          "pause": 0.4
+        },
+        {
+          "text": "First, the standard error: the spread of the data, divided by the square root of the sample size.",
+          "caption": "First, the standard error: the spread of the data, divided by the square root of the sample size.",
+          "pause": 0.4
+        },
+        {
+          "text": "Here, the spread is ten minutes, and the square root of a hundred is ten. So the standard error is one minute.",
+          "caption": "Here, the spread is 10 minutes, and the square root of 100 is 10. So the standard error is 1 minute.",
+          "pause": 0.4
+        },
+        {
+          "text": "For ninety-five percent, go about two standard errors each way: thirty-two, plus or minus two.",
+          "caption": "For 95%, go about two standard errors each way: 32, plus or minus 2.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "What 95% means",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Now the tricky part: what does ninety-five percent really mean?",
+          "caption": "Now the tricky part: what does 95% really mean?",
+          "pause": 0.4
+        },
+        {
+          "text": "It does not mean a ninety-five percent chance that the true average is in this one range.",
+          "caption": "It does not mean a 95% chance that the true average is in this one range.",
+          "pause": 0.4
+        },
+        {
+          "text": "It means: repeat the survey many times, and about ninety-five out of a hundred ranges will catch the true average.",
+          "caption": "It means: repeat the survey many times, and about 95 out of 100 ranges will catch the true average.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Sample size",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Want a narrower range? Collect more data.",
+          "caption": "Want a narrower range? Collect more data.",
+          "pause": 0.4
+        },
+        {
+          "text": "Four times the orders, four hundred, cuts the margin in half: thirty-two, plus or minus one.",
+          "caption": "Four times the orders, 400, cuts the margin in half: 32, plus or minus 1.",
+          "pause": 0.4
+        },
+        {
+          "text": "And with only twenty-five orders, we use the t-distribution, so the range gets wider: about twenty-eight to thirty-six.",
+          "caption": "And with only 25 orders, we use the t-distribution, so the range gets wider: about 28 to 36.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Remember",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "So remember: a confidence interval is a range that likely contains the true value.",
+          "caption": "So remember: a confidence interval is a range that likely contains the true value.",
+          "pause": 0.4
+        },
+        {
+          "text": "Average, plus or minus a margin. More data, narrower range.",
+          "caption": "Average, plus or minus a margin. More data, narrower range.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Quiz, teaser and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        {
+          "text": "Quick quiz!",
+          "caption": "Quick quiz!",
+          "pause": 0.3
+        },
+        {
+          "text": "A survey of a hundred people has a margin of error of four points.",
+          "caption": "A survey of 100 people has a margin of error of 4 points.",
+          "pause": 0.35
+        },
+        {
+          "text": "If you survey four hundred people instead, what's the new margin?",
+          "caption": "If you survey 400 people instead, what's the new margin?",
+          "pause": 5.7
+        },
+        {
+          "text": "Two points!",
+          "caption": "2 points!",
+          "pause": 0.35
+        },
+        {
+          "text": "Four times the data halves the margin, because the square root of four is two.",
+          "caption": "Four times the data halves the margin, because the square root of four is two.",
+          "pause": 0.4
+        },
+        {
+          "text": "Next: how do we decide if something is real? Hypothesis testing.",
+          "caption": "Next: how do we decide if something is real? Hypothesis testing.",
+          "pause": 0.4
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}
