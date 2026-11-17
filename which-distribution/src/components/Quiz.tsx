@@ -136,7 +136,8 @@ export const Options: React.FC<{ opts: QuizOpt[]; answer: number; QEND: number; 
                 padding: "0 22px",
                 fontFamily: theme.fonts.display,
                 fontWeight: 800,
-                fontSize,
+                // long option names shrink so the strike reason on the right never overlaps them
+                fontSize: o.v.length > 10 ? Math.min(fontSize, 26) : o.v.length > 8 ? Math.min(fontSize, 30) : fontSize,
                 color: C.text,
                 position: "relative",
                 whiteSpace: "nowrap",
@@ -153,7 +154,7 @@ export const Options: React.FC<{ opts: QuizOpt[]; answer: number; QEND: number; 
                 </div>
               ) : null}
               {strike > 0.01 ? (
-                <span style={{ position: "absolute", right: 18, top: "50%", transform: "translateY(-50%)", fontFamily: theme.fonts.body, fontWeight: 700, fontSize: 22, color: C.text, opacity: strike }}>{o.why}</span>
+                <span style={{ position: "absolute", right: 12, top: "50%", transform: "translateY(-50%)", padding: "2px 8px", borderRadius: 8, background: C.panel, fontFamily: theme.fonts.body, fontWeight: 700, fontSize: o.v.length > 8 ? 19 : 22, color: C.text, opacity: strike }}>{o.why}</span>
               ) : null}
             </div>
           </div>

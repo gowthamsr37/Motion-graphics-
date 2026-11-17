@@ -74,72 +74,69 @@ const useHits = (): Hit[] => {
   {
     const s = sceneTiming(fps, "s1");
     const h = at("s1");
-    ["Uniform,", "binomial,", "Poisson,", "exponential,", "normal."].forEach((w, i) => h(s.cueS(0, w) - 8, `blip${i + 1}.wav`, 0.2));
-    h(s.sent(1).from - 6, "glitch.wav", 0.1);
+    ["Uniform,", "binomial,", "Poisson,", "normal,", "Pareto,", "chi-square..."].forEach((w, i) => h(s.cueS(0, w) - 8, `blip${(i % 5) + 1}.wav`, 0.18));
+    for (let i = 0; i < 6; i++) h(s.cueS(0, "many") - 4 + i * 2, "tick.wav", 0.08);
     const W = s.cueS(1, "Which");
     h(W - 12, "whoosh.wav", 0.3);
     h(W - 6, "impact.wav", 0.42);
     h(W + 12, "chime.wav", 0.22);
-    h(s.cueS(2, "cheat") - 8, "pop.wav", 0.24);
+    h(s.cueS(1, "cheat") - 8, "pop.wav", 0.24);
   }
-  // S2 — definition
+  // S2 — reminder
   {
     const s = sceneTiming(fps, "s2");
     const h = at("s2");
     h(s.sent(0).from - 2, "sparkle.wav", 0.22);
-    [s.cueS(1, "how"), s.cueS(1, "possible"), s.cueS(2, "Different"), s.cueS(3, "what")].forEach((f, i) => h(f - 10, `blip${i + 1}.wav`, 0.24));
+    [s.cueS(1, "how"), s.cueS(1, "possible"), s.cueS(2, "what")].forEach((f, i) => h(f - 10, `blip${i + 1}.wav`, 0.24));
     h(s.duration - 28, "ding.wav", 0.26);
   }
-  // S3–S8 — one question each: a pop on the question, a click on the example, a glide as the shape draws and a stamp on the name
+  // S3 — three families
+  {
+    const s = sceneTiming(fps, "s3");
+    const h = at("s3");
+    ["counts,", "measurements,", "testing."].forEach((w, i) => h(s.cueS(0, w) - 10, `step${i + 1}.wav`, 0.22));
+  }
+  // S4–S6 — the families: a pop on each question, a stamp + chime on each name
   (
     [
-      ["s3", [0, "like"], [1, "uniform"], [1, "flat."]],
-      ["s4", [0, "like"], [1, "binomial."], null],
-      ["s5", [0, "like"], [1, "Poisson."], null],
-      ["s6", [0, "waiting"], [1, "exponential."], [1, "Short"]],
-      ["s7", [0, "like"], [1, "normal,"], [1, "bell"]],
-      ["s8", [1, "like"], [1, "bimodal."], [1, "groups"]],
-    ] as [SceneId, [number, string], [number, string], [number, string] | null][]
-  ).forEach(([id, ex, nm, tag]) => {
+      ["s4", ["Bernoulli.", "Binomial.", "Geometric.", "Poisson.", "Uniform."]],
+      ["s5", ["Normal.", "Exponential.", "Log-normal.", "Pareto."]],
+      ["s6", ["t-distribution.", "Chi-square."]],
+    ] as [SceneId, string[]][]
+  ).forEach(([id, names]) => {
     const s = sceneTiming(fps, id);
     const h = at(id);
-    h(2, "whoosh.wav", 0.14);
-    h(s.sent(0).from - 8, "pop.wav", 0.18);
-    h(s.cueS(ex[0], ex[1]) - 10, "click.wav", 0.2);
-    const N = s.cueS(nm[0], nm[1]);
-    h(N - 18, "glide.wav", 0.18);
-    h(N - 6, "stamp.wav", 0.26);
-    h(N + 4, "chime.wav", 0.16);
-    if (tag) h(s.cueS(tag[0], tag[1]) - 8, "pop.wav", 0.16);
+    h(s.sent(0).from - 2, "sparkle.wav", 0.18);
+    names.forEach((n, i) => {
+      h(s.sent(i + 1).from - 8, "pop.wav", 0.14);
+      const N = s.cueS(i + 1, n);
+      h(N - 6, "stamp.wav", 0.2);
+      h(N + 4, "chime.wav", 0.12);
+    });
   });
+  // S7 — bonus
+  {
+    const s = sceneTiming(fps, "s7");
+    const h = at("s7");
+    h(s.cueS(0, "humps?") - 12, "glide.wav", 0.18);
+    h(s.cueS(0, "bimodal,") - 6, "stamp.wav", 0.24);
+    h(s.cueS(0, "groups") - 8, "pop.wav", 0.16);
+  }
+  // S8 — the full cheat sheet
   {
     const s = sceneTiming(fps, "s8");
     const h = at("s8");
-    h(s.cueS(1, "lunch") - 8, "blip2.wav", 0.18);
-    h(s.cueS(1, "dinner") - 8, "blip4.wav", 0.18);
+    h(s.sent(0).from - 2, "sparkle.wav", 0.24);
+    for (let i = 0; i < 12; i++) h(s.sent(0).from + 8 + i * 4, "tick.wav", 0.07);
+    h(s.sent(1).from - 6, "ding.wav", 0.24);
   }
-  // S9 — the cheat sheet
+  // S9 — quiz, teaser, CTA
   {
     const s = sceneTiming(fps, "s9");
     const h = at("s9");
-    h(s.sent(0).from - 2, "sparkle.wav", 0.24);
-    (
-      [
-        [0, "equally"],
-        [0, "Successes"],
-        [1, "Events"],
-        [1, "Waiting"],
-        [1, "Measurements"],
-      ] as [number, string][]
-    ).forEach(([i, w], k) => h(s.cueS(i, w) - 10, `blip${k + 1}.wav`, 0.2));
+    for (let i = 0; i < 8; i++) h(s.sent(1).from + i * 6, "tick.wav", 0.07);
   }
-  // S10 — quiz, teaser, CTA
-  {
-    const s = sceneTiming(fps, "s10");
-    const h = at("s10");
-    for (let i = 0; i < 5; i++) h(s.cueS(1, "emails") - 4 + i * 5, "hop.wav", 0.12);
-  }
-  quiz("s10", [2, "Which"], [4, "counting"], 5, 6);
+  quiz("s9", [2, "fits"], [4, "waiting"], 5, 6);
   return hits;
 };
 

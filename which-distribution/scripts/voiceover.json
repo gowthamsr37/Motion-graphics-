@@ -10,24 +10,23 @@
       "hold": 1.0,
       "segments": [
         {
-          "text": "Uniform, binomial, Poisson, exponential, normal.",
-          "caption": "Uniform, binomial, Poisson, exponential, normal.",
-          "pause": 0.4,
+          "text": "Uniform, binomial, Poisson, normal, Pareto, chi-square... so many distributions!",
+          "caption": "Uniform, binomial, Poisson, normal, Pareto, chi-square... so many distributions!",
+          "pause": 0.45,
           "fix": [
             [
               "pˈɔɪsən",
               "pwɑːsˈoʊn"
+            ],
+            [
+              "pæɹˈiːɾoʊ",
+              "pəɹˈeɪɾoʊ"
             ]
           ]
         },
         {
-          "text": "So many distributions! Which one should you use?",
-          "caption": "So many distributions! Which one should you use?",
-          "pause": 0.4
-        },
-        {
-          "text": "Here's a simple cheat sheet.",
-          "caption": "Here's a simple cheat sheet.",
+          "text": "Which one do you need? Here's the complete cheat sheet.",
+          "caption": "Which one do you need? Here's the complete cheat sheet.",
           "pause": 0.3
         }
       ]
@@ -49,72 +48,109 @@
           "pause": 0.4
         },
         {
-          "text": "Different questions need different distributions.",
-          "caption": "Different questions need different distributions.",
-          "pause": 0.35
-        },
-        {
-          "text": "So just ask: what am I measuring?",
-          "caption": "So just ask: what am I measuring?",
+          "text": "To pick the right one, just ask: what am I measuring?",
+          "caption": "To pick the right one, just ask: what am I measuring?",
           "pause": 0.3
         }
       ]
     },
     {
       "id": "s3",
-      "title": "Uniform",
-      "lead": 0.4,
+      "title": "Three families",
+      "lead": 0.45,
       "hold": 0.9,
       "segments": [
         {
-          "text": "Are all outcomes equally likely, like a fair dice?",
-          "caption": "Are all outcomes equally likely, like a fair dice?",
-          "pause": 0.35
-        },
-        {
-          "text": "Use the uniform distribution. Its shape is flat.",
-          "caption": "Use the uniform distribution. Its shape is flat.",
+          "text": "They come in three families: counts, measurements, and tools for testing.",
+          "caption": "They come in three families: counts, measurements, and tools for testing.",
           "pause": 0.3
         }
       ]
     },
     {
       "id": "s4",
-      "title": "Binomial",
-      "lead": 0.4,
-      "hold": 0.9,
+      "title": "Counts",
+      "lead": 0.45,
+      "hold": 1.0,
       "segments": [
         {
-          "text": "Counting successes in a fixed number of tries, like heads in ten coin flips?",
-          "caption": "Counting successes in a fixed number of tries, like heads in 10 coin flips?",
+          "text": "Counts first.",
+          "caption": "Counts first.",
           "pause": 0.35
         },
         {
-          "text": "That's binomial.",
-          "caption": "That's binomial.",
+          "text": "One yes-or-no try? Bernoulli.",
+          "caption": "One yes-or-no try? Bernoulli.",
+          "pause": 0.4,
+          "fix": [
+            [
+              "bˈɜːnaʊli",
+              "bɚnˈuːli"
+            ]
+          ]
+        },
+        {
+          "text": "Successes in a fixed number of tries? Binomial.",
+          "caption": "Successes in a fixed number of tries? Binomial.",
+          "pause": 0.4
+        },
+        {
+          "text": "Tries until the first success? Geometric.",
+          "caption": "Tries until the first success? Geometric.",
+          "pause": 0.4
+        },
+        {
+          "text": "Events in a stretch of time? Poisson.",
+          "caption": "Events in a stretch of time? Poisson.",
+          "pause": 0.4,
+          "fix": [
+            [
+              "pˈɔɪsən",
+              "pwɑːsˈoʊn"
+            ]
+          ]
+        },
+        {
+          "text": "Every outcome equally likely? Uniform.",
+          "caption": "Every outcome equally likely? Uniform.",
           "pause": 0.3
         }
       ]
     },
     {
       "id": "s5",
-      "title": "Poisson",
-      "lead": 0.4,
-      "hold": 0.9,
+      "title": "Measurements",
+      "lead": 0.45,
+      "hold": 1.0,
       "segments": [
         {
-          "text": "Counting events in a stretch of time, like customers per hour?",
-          "caption": "Counting events in a stretch of time, like customers per hour?",
+          "text": "Now, measurements.",
+          "caption": "Now, measurements.",
           "pause": 0.35
         },
         {
-          "text": "That's Poisson.",
-          "caption": "That's Poisson.",
+          "text": "Values clustered around an average? Normal.",
+          "caption": "Values clustered around an average? Normal.",
+          "pause": 0.4
+        },
+        {
+          "text": "Waiting time until the next event? Exponential.",
+          "caption": "Waiting time until the next event? Exponential.",
+          "pause": 0.4
+        },
+        {
+          "text": "Positive values, skewed by growth? Log-normal.",
+          "caption": "Positive values, skewed by growth? Log-normal.",
+          "pause": 0.4
+        },
+        {
+          "text": "A few giants holding most of it? Pareto.",
+          "caption": "A few giants holding most of it? Pareto.",
           "pause": 0.3,
           "fix": [
             [
-              "pˈɔɪsən",
-              "pwɑːsˈoʊn"
+              "pæɹˈiːɾoʊ",
+              "pəɹˈeɪɾoʊ"
             ]
           ]
         }
@@ -122,54 +158,36 @@
     },
     {
       "id": "s6",
-      "title": "Exponential",
-      "lead": 0.4,
-      "hold": 0.9,
+      "title": "Testing tools",
+      "lead": 0.45,
+      "hold": 1.0,
       "segments": [
         {
-          "text": "Measuring the waiting time until the next event?",
-          "caption": "Measuring the waiting time until the next event?",
+          "text": "And two tools for testing.",
+          "caption": "And two tools for testing.",
           "pause": 0.35
         },
         {
-          "text": "That's exponential. Short waits are the most common.",
-          "caption": "That's exponential. Short waits are the most common.",
+          "text": "The average of a small sample? The t-distribution.",
+          "caption": "The average of a small sample? The t-distribution.",
+          "pause": 0.4
+        },
+        {
+          "text": "Do counts match what you expect? Chi-square.",
+          "caption": "Do counts match what you expect? Chi-square.",
           "pause": 0.3
         }
       ]
     },
     {
       "id": "s7",
-      "title": "Normal",
-      "lead": 0.4,
-      "hold": 0.9,
-      "segments": [
-        {
-          "text": "A measurement that clusters around an average, like people's heights?",
-          "caption": "A measurement that clusters around an average, like people's heights?",
-          "pause": 0.35
-        },
-        {
-          "text": "That's normal, the famous bell curve.",
-          "caption": "That's normal, the famous bell curve.",
-          "pause": 0.3
-        }
-      ]
-    },
-    {
-      "id": "s8",
-      "title": "Bimodal",
-      "lead": 0.4,
+      "title": "Bonus",
+      "lead": 0.45,
       "hold": 1.0,
       "segments": [
         {
-          "text": "And if you see two humps?",
-          "caption": "And if you see two humps?",
-          "pause": 0.35
-        },
-        {
-          "text": "That's bimodal. Usually two groups are mixed together, like a café's lunch rush and dinner rush.",
-          "caption": "That's bimodal. Usually two groups are mixed together, like a café's lunch rush and dinner rush.",
+          "text": "Bonus: see two humps? That's bimodal, usually two groups mixed together.",
+          "caption": "Bonus: see two humps? That's bimodal, usually two groups mixed together.",
           "pause": 0.3,
           "fix": [
             [
@@ -181,31 +199,25 @@
       ]
     },
     {
-      "id": "s9",
+      "id": "s8",
       "title": "Remember",
       "lead": 0.45,
-      "hold": 1.0,
+      "hold": 1.2,
       "segments": [
         {
-          "text": "So remember: equally likely, uniform. Successes in tries, binomial.",
-          "caption": "So remember: equally likely, uniform. Successes in tries, binomial.",
-          "pause": 0.3
+          "text": "So remember: ask what you're measuring, then match the shape.",
+          "caption": "So remember: ask what you're measuring, then match the shape.",
+          "pause": 0.4
         },
         {
-          "text": "Events in time, Poisson. Waiting time, exponential. Measurements around an average, normal.",
-          "caption": "Events in time, Poisson. Waiting time, exponential. Measurements around an average, normal.",
-          "pause": 0.3,
-          "fix": [
-            [
-              "pˈɔɪsən",
-              "pwɑːsˈoʊn"
-            ]
-          ]
+          "text": "Save this cheat sheet, and you'll always know which one to use.",
+          "caption": "Save this cheat sheet, and you'll always know which one to use.",
+          "pause": 0.3
         }
       ]
     },
     {
-      "id": "s10",
+      "id": "s9",
       "title": "Quiz, teaser and CTA",
       "lead": 0.35,
       "hold": 1.35,
@@ -216,30 +228,30 @@
           "pause": 0.3
         },
         {
-          "text": "You count how many emails arrive each hour.",
-          "caption": "You count how many emails arrive each hour.",
+          "text": "You measure how long each customer waits on hold.",
+          "caption": "You measure how long each customer waits on hold.",
           "pause": 0.35
         },
         {
-          "text": "Which distribution fits?",
-          "caption": "Which distribution fits?",
+          "text": "Which distribution fits best?",
+          "caption": "Which distribution fits best?",
           "pause": 5.7
         },
         {
-          "text": "Poisson!",
-          "caption": "Poisson!",
-          "pause": 0.35,
+          "text": "Exponential!",
+          "caption": "Exponential!",
+          "pause": 0.35
+        },
+        {
+          "text": "It's a waiting time until the next event. Counting the calls would be Poisson.",
+          "caption": "It's a waiting time until the next event. Counting the calls would be Poisson.",
+          "pause": 0.4,
           "fix": [
             [
               "pˈɔɪsən",
               "pwɑːsˈoʊn"
             ]
           ]
-        },
-        {
-          "text": "You're counting events in a fixed stretch of time.",
-          "caption": "You're counting events in a fixed stretch of time.",
-          "pause": 0.4
         },
         {
           "text": "Next: how sure can we be about an average? Confidence intervals.",

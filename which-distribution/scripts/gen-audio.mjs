@@ -28,16 +28,16 @@ const cueS = (id, i, tok) => {
 };
 
 const ev = {
-  allData: cueS("s1", 1, "Which"), // "Which one should you use?" (the title reveal)
-  sameType: cueS("s1", 2, "cheat"),
-  quiz: sent("s10", 0),
-  qEnd: sentEnd("s10", 2),
-  answer: sent("s10", 3),
-  tease: sent("s10", 5),
-  follow: sent("s10", 6),
-  acc1: cueS("s3", 1, "uniform"), // the first answer lands
-  acc2: cueS("s7", 1, "bell"), // the bell curve
-  acc3: cueS("s8", 1, "bimodal."), // the bonus
+  allData: cueS("s1", 1, "Which"), // "Which one do you need?" (the title)
+  sameType: cueS("s1", 1, "cheat"),
+  quiz: sent("s9", 0),
+  qEnd: sentEnd("s9", 2),
+  answer: sent("s9", 3),
+  tease: sent("s9", 5),
+  follow: sent("s9", 6),
+  acc1: cueS("s4", 1, "Bernoulli."), // the first answer lands
+  acc2: cueS("s6", 2, "Chi-square."), // the last family member
+  acc3: cueS("s7", 0, "bimodal,"), // the bonus
 };
 ev.cd0 = ev.qEnd + 0.2;
 ev.reveal = ev.cd0 + 5;
@@ -209,9 +209,9 @@ const sections = [
   [0, ev.allData, "intro"],
   [ev.allData, S("s2"), "drop"],
   [S("s2"), S("s3"), "flow"], // the definition: calm
-  [S("s3"), S("s6"), "play"], // questions 1–3
-  [S("s6"), S("s9"), "grooveA"], // questions 4–5 and the bonus
-  [S("s9"), ev.quiz, "build"], // the cheat sheet
+  [S("s3"), S("s5"), "play"], // the families, counts
+  [S("s5"), S("s8"), "grooveA"], // measurements, testing, the bonus
+  [S("s8"), ev.quiz, "build"], // the full cheat sheet
   [ev.quiz, ev.reveal, "tension"],
   [ev.reveal, DUR - 0.6, "finale"],
 ];
@@ -284,7 +284,7 @@ lead(ML, MR, ev.acc1 - 0.2, note("C5"), note("F5"), 1.2, 0.45);
 [0, 0.09, 0.18].forEach((d, i) => bell(ML, MR, ev.acc2 + 0.05 + d, [note("C5"), note("F5"), note("A5")][i], 0.6, (i - 1) * 0.4, 1.2));
 lead(ML, MR, ev.acc3 - 0.1, note("A4"), note("C5"), 1.0, 0.4);
 // recap: crash on entry
-crash(ML, MR, S("s9"), 0.7);
+crash(ML, MR, S("s8"), 0.7);
 // teaser: a lifted chord
 pad(ML, MR, ev.tease, ev.follow - ev.tease, CH.Bb.pad, 0.8, 0.3, 0.4, 0.05);
 // quiz: stinger, suspended pad, heartbeat pulse per countdown second
