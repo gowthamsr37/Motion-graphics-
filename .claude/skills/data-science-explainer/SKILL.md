@@ -7,10 +7,10 @@ description: House style and production pipeline for the "Data Science Made Simp
 
 The user approved **types-of-data/** as the reference ("came out very well") and asked that **every setting, theme and voice stay the same in future videos**. Treat everything below as fixed defaults. Change something only when the user explicitly asks; if a request seems to conflict with these, ask before deviating.
 
-The reference implementation is `types-of-data/`; the later videos `mean-median-mode/`, `measures-of-dispersion/`, `centre-vs-spread/`, `outliers/`, `iqr/`, `treating-outliers/`, `skewness/`, `normal-distribution/`, `z-score/`, `probability-distribution/`, `population-vs-sample/` and `central-limit-theorem/` follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
+The reference implementation is `types-of-data/`; the later videos `mean-median-mode/`, `measures-of-dispersion/`, `centre-vs-spread/`, `outliers/`, `iqr/`, `treating-outliers/`, `skewness/`, `normal-distribution/`, `z-score/`, `probability-distribution/`, `population-vs-sample/`, `central-limit-theorem/`, `uniform-distribution/`, `binomial-distribution/`, `poisson-distribution/`, `exponential-distribution/` and `which-distribution/` follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
 
 ```bash
-REF=central-limit-theorem bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
+REF=which-distribution bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
 ```
 
 The improvements it inherits:
@@ -228,4 +228,9 @@ Notes:
 - Length: 100–120 s by default; the user allows a few extra seconds when it buys a clear explanation (`treating-outliers/` is 124 s).
 - `Pop` is centred on its x, so its content can only be as wide as the distance to the right edge (540 px at x = 540) and multi-line text wraps early ("HOW DO / YOU"). Give every text block inside a `Pop` `whiteSpace: "nowrap"` and explicit `<br />`s.
 - Money constants: write the unit next to every constant ("in ₹ thousand") and print the derived numbers once with node before rendering. A 10× slip (₹100 crore instead of ₹10 crore) looked plausible on screen.
+- Never let an SFX land on a word: a whoosh plus dot ticks fired at the start of "Count many hours" and the mix read "How many hours" (Poisson). Put sentence-start whooshes 14–16 frames early and start tick runs after the second word (`cueS(i, "many") + 8`).
+- A word repeated in one sentence ("one way … One head", "three ways … Three heads") needs `cueS(i, token, nth)`; the first match fires early.
+- Whisper on the full mix can mishear a word or invent a closing line over the music tail ("See you next time"). Before changing anything, re-transcribe a 4-second window of the mix and the clean `public/vo/sN.wav`; only fix what the clean window also gets wrong.
+- Distribution kits now in the scaffold: `Explain.tsx` (DefCard, RecapFlow, Flat/Bars/CurveIcon, Teaser), `Pois.tsx` (pois, poisDist, poisSamples, CountBars), `Exp.tsx` (expPdf/Cdf, expSamples, ExpCurve with bands and a `t0` shift, MinAxis, Stopwatch, Gap/DotsIcon) and `Pick.tsx` (`Shape` for uniform / binomial / Poisson / exponential / normal / bimodal, and the `QuestionScene` template).
+- Writing README files from the shell: use the Write tool or a quoted heredoc (`<<'EOF'`). An unquoted heredoc runs every backtick span in the text as a command (it started `npx remotion studio` and a build).
 - When a spoken line is cut to save time, re-check every visual that was timed off it. A stamp gated on the removed line's window silently never appeared.
