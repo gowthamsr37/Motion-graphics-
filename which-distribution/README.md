@@ -1,13 +1,20 @@
-# Which Distribution? Explained in 2 Minutes
+# Which Distribution? The Complete Cheat Sheet
 
-The eighteenth **Data Science Made Simple** Reel for **@curious_datascientist**, and the cheat sheet that closes the distributions arc (uniform → binomial → Poisson → exponential, plus normal from earlier and bimodal as a bonus): 100 seconds, 1080×1920 (9:16), 30 fps, H.264 with AAC 48 kHz stereo, mastered to −14 LUFS.
+The **Data Science Made Simple** cheat sheet for **@curious_datascientist**: every distribution of the series in one Reel. 1:44, 1080×1920 (9:16), 30 fps, H.264 with AAC 48 kHz stereo, mastered to −14 LUFS.
 
-The structure follows the simple style:
-- a hook (five distributions: which one should you use?);
-- a plain-words definition card (a reminder of what a probability distribution is, and the one question to ask);
-- one question per distribution, each with an everyday example, its shape and its name;
-- a bonus shape (bimodal);
-- a recap cheat sheet;
+**Version 2.** The first cheat sheet (5 distributions plus bimodal, never posted) was rebuilt in this folder after the Pareto, log-normal, Bernoulli & geometric, t and chi-square Reels. It now covers twelve shapes in three families:
+- **Counts:** Bernoulli, binomial, geometric, Poisson, uniform
+- **Measurements:** normal, exponential, log-normal, Pareto
+- **Tools for testing:** t, chi-square
+- **Bonus:** bimodal
+
+Structure:
+- a hook;
+- a reminder of what a distribution is;
+- the three families;
+- one row per distribution (question → name + shape);
+- the bonus;
+- the full saveable grid;
 - a quiz.
 
 It uses the locked series house style (`.claude/skills/data-science-explainer/SKILL.md`), with @curious_datascientist on the end card and the cover and a NEXT: CONFIDENCE INTERVALS chip on the end card.
@@ -17,114 +24,117 @@ It uses the locked series house style (`.claude/skills/data-science-explainer/SK
 | File | What it is |
 | --- | --- |
 | `Which_Distribution.mp4` | the finished Reel |
-| `Which_Distribution_Cover.png` | 1080×1920 cover: WHICH DISTRIBUTION? · explained in 2 minutes, THE CHEAT SHEET grid of the six shapes (uniform, binomial, Poisson, exponential, normal, bimodal), @curious_datascientist |
+| `Which_Distribution_Cover.png` | 1080×1920 cover: WHICH DISTRIBUTION? · explained in 2 minutes, THE COMPLETE CHEAT SHEET: the twelve shapes in a 3 × 4 grid coloured by family, @curious_datascientist |
 | `Which_Distribution.srt` | the on-screen subtitle pages |
 
 The Instagram caption is in [`CAPTION.md`](CAPTION.md).
 
 ## Colour code for this video
 
-Each distribution keeps one colour through the whole video (cards, shapes, names, recap rows and the quiz options).
-
-| Distribution | Colour |
+| Family | Colour |
 | --- | --- |
-| Uniform | cyan |
-| Binomial | violet |
-| Poisson | green |
-| Exponential | orange |
-| Normal | violet → cyan gradient |
-| Bimodal | green → orange gradient (two groups) |
+| Counts | cyan |
+| Measurements | violet |
+| Tools for testing | orange |
+| Bonus (bimodal), the full sheet | green |
 
 ## Storyboard
 
 | # | Time | Scene | What moves |
 | --- | --- | --- | --- |
-| 1 | 0:00–0:09 | **Hook** | Five shape cards pop in on their spoken names: UNIFORM (six equal bars), BINOMIAL, POISSON, EXPONENTIAL, NORMAL. **SO MANY!** (the cards wobble) → **WHICH DISTRIBUTION?** with a burst → **THE CHEAT SHEET** pill. |
-| 2 | 0:09–0:23 | **The definition** | FIRST, A REMINDER · IN SIMPLE WORDS: a 4-line card that fills on the spoken words. 1 Shows **HOW LIKELY**; 2 each **POSSIBLE VALUE** is; 3 each question: **ITS OWN SHAPE**; 4 so ask: **WHAT AM I MEASURING?** All four tick green: ONE QUESTION, ONE SHAPE. |
-| 3 | 0:23–0:30 | **Question 1** | ARE ALL OUTCOMES **EQUALLY LIKELY?** · example card: a dice, A FAIR DICE. A dashed "?" box; on "uniform" six equal bars rise and **UNIFORM** lands · SHAPE: FLAT. |
-| 4 | 0:30–0:37 | **Question 2** | SUCCESSES IN A **FIXED NUMBER OF TRIES?** · coins H T H, HEADS IN 10 FLIPS. The exact 10-flip binomial bars rise: **BINOMIAL** · COUNTS SUCCESSES. |
-| 5 | 0:37–0:43 | **Question 3** | COUNTING EVENTS IN A **STRETCH OF TIME?** · three customers and a clock, CUSTOMERS PER HOUR. Poisson bars (average 4): **POISSON** · COUNTS EVENTS. |
-| 6 | 0:43–0:50 | **Question 4** | THE WAITING TIME UNTIL **THE NEXT EVENT?** · a stopwatch, TIME TO THE NEXT CUSTOMER. A falling curve sweeps in: **EXPONENTIAL** · SHORT WAITS: MOST COMMON. |
-| 7 | 0:50–0:57 | **Question 5** | A MEASUREMENT AROUND **AN AVERAGE?** · a ruler, PEOPLE'S HEIGHTS. A bell sweeps in: **NORMAL** · THE BELL CURVE. |
-| 8 | 0:57–1:06 | **Bonus** | AND IF YOU SEE **TWO HUMPS?** A two-humped curve sweeps in: **BIMODAL** · TWO GROUPS MIXED TOGETHER. The example card A CAFÉ'S BUSY HOURS appears, and the humps are labelled **LUNCH** and **DINNER** on their words. |
-| 9 | 1:06–1:18 | **Remember** | THE CHEAT SHEET pill and five rows that land on their phrases and light their names, each with a mini shape: EQUALLY LIKELY → **UNIFORM** · SUCCESSES IN TRIES → **BINOMIAL** · EVENTS IN TIME → **POISSON** · WAITING TIME → **EXPONENTIAL** · AROUND AN AVERAGE → **NORMAL**. |
-| 10 | 1:18–1:40 | **Quiz, teaser and CTA** | QUICK QUIZ. A 0–60 min hour bar: five emails drop in and get counted (**EMAILS THIS HOUR: 5**). "Which distribution **FITS?**" Options UNIFORM / POISSON / NORMAL / EXPONENTIAL with the 5-second countdown. **POISSON**: confetti and strikes ("not equally likely", "not a measurement", "that's waiting time"); **COUNTING EVENTS IN A FIXED TIME**. Teaser: NEXT: CONFIDENCE INTERVALS · HOW SURE? (a bell with an interval bar). End card: NEXT: CONFIDENCE INTERVALS, FOLLOW tap, @curious_datascientist, MADE SIMPLE., and the chips Uniform · Binomial · Poisson · Exponential. |
+| 1 | 0:00–0:10 | **Hook** | Twelve mini cards (shape + name) pop into a 3 × 4 grid: the six named ones on their words, the rest on "so many". They wobble, then **WHICH DISTRIBUTION?** with a burst → **THE COMPLETE CHEAT SHEET**. |
+| 2 | 0:10–0:21 | **A reminder** | IN SIMPLE WORDS: 1 Shows **HOW LIKELY**; 2 each **POSSIBLE VALUE** is; 3 ask: **WHAT AM I MEASURING?** All tick green: ONE QUESTION, ONE SHAPE. |
+| 3 | 0:21–0:27 | **Three families** | Three cards land on their words: **COUNTS** (Uniform · Bernoulli · Binomial · Geometric · Poisson), **MEASUREMENTS** (Normal · Exponential · Log-normal · Pareto), **TOOLS FOR TESTING** (t · Chi-square). |
+| 4 | 0:27–0:43 | **Family 1: counts** | Five rows; each question lands on its sentence and each name (with its mini shape) on its word: One yes-or-no try? **BERNOULLI** · Successes in a fixed number of tries? **BINOMIAL** · Tries until the first success? **GEOMETRIC** · Events in a stretch of time? **POISSON** · Every outcome equally likely? **UNIFORM**. |
+| 5 | 0:43–0:57 | **Family 2: measurements** | Values clustered around an average? **NORMAL** · Waiting time until the next event? **EXPONENTIAL** · Positive values, skewed by growth? **LOG-NORMAL** · A few giants holding most of it? **PARETO**. |
+| 6 | 0:57–1:06 | **Family 3: tools for testing** | The average of a small sample? **t-DISTRIBUTION** · Do counts match what you expect? **CHI-SQUARE**. |
+| 7 | 1:06–1:12 | **Bonus** | SEE **TWO HUMPS?** A two-humped curve draws, its humps labelled GROUP A and GROUP B: **BIMODAL** · TWO GROUPS MIXED TOGETHER. |
+| 8 | 1:12–1:20 | **Remember** | ASK, THEN MATCH THE SHAPE: the full sheet in three columns: COUNTS (5 cards) · MEASUREMENTS (4) · TESTING (t, chi-square, bimodal). **SAVE THIS CHEAT SHEET**. |
+| 9 | 1:20–1:44 | **Quiz, teaser and CTA** | QUICK QUIZ. An ON HOLD stopwatch counts up: **HOW LONG EACH CUSTOMER WAITS**. "Which distribution **FITS BEST?**" Options POISSON / EXPONENTIAL / BINOMIAL / NORMAL with the 5-second countdown. **EXPONENTIAL**: confetti and strikes ("counts calls", "no tries", "skewed"); **WAITING TIME → EXPONENTIAL**. Teaser: NEXT: CONFIDENCE INTERVALS · HOW SURE? (a bell with an interval bar). End card: NEXT: CONFIDENCE INTERVALS, FOLLOW tap, @curious_datascientist, MADE SIMPLE., and the chips Counts · Measurements · Testing tools · Match the shape. |
 
 ## Voiceover script (timestamps are on the finished video)
 
-Kokoro TTS `af_heart` at 1.05×. Short sentences; numbers are written out in the TTS text and shown as digits in the captions. "Poisson" is phoneme-patched to *pwah-SOHN*, and "bimodal" to *bye-MOH-dal*.
+Kokoro TTS `af_heart` at 1.05×. "Poisson" is phoneme-patched to *pwah-SOHN*, "Pareto" to *pa-RAY-toh*, "Bernoulli" to *ber-NOO-lee* and "bimodal" to *bye-MOH-dal*.
 
-**S1 · Hook** (0:00.00–0:09.28)
-- `0:00.45` Uniform, binomial, Poisson, exponential, normal.
-- `0:04.01` So many distributions! Which one should you use?
-- `0:06.90` Here's a simple cheat sheet.
+**S1 · Hook** (0:00.00–0:09.93)
+- `0:00.45` Uniform, binomial, Poisson, normal, Pareto, chi-square... so many distributions!
+- `0:06.34` Which one do you need? Here's the complete cheat sheet.
 
-**S2 · The definition** (0:09.28–0:22.94)
-- `0:09.73` First, a quick reminder, in simple words.
-- `0:12.45` A probability distribution shows how likely each possible value is.
-- `0:17.02` Different questions need different distributions.
-- `0:19.98` So just ask: what am I measuring?
+**S2 · The definition** (0:09.93–0:21.45)
+- `0:10.38` First, a quick reminder, in simple words.
+- `0:13.09` A probability distribution shows how likely each possible value is.
+- `0:17.66` To pick the right one, just ask: what am I measuring?
 
-**S3 · Uniform** (0:22.94–0:30.43)
-- `0:23.34` Are all outcomes equally likely, like a fair dice?
-- `0:26.59` Use the uniform distribution. Its shape is flat.
+**S3 · Three families** (0:21.45–0:26.64)
+- `0:21.90` They come in three families: counts, measurements, and tools for testing.
 
-**S4 · Binomial** (0:30.43–0:37.37)
-- `0:30.83` Counting successes in a fixed number of tries, like heads in 10 coin flips?
-- `0:35.54` That's binomial.
+**S4 · Counts** (0:26.64–0:42.66)
+- `0:27.09` Counts first.
+- `0:28.30` One yes-or-no try? Bernoulli.
+- `0:30.52` Successes in a fixed number of tries? Binomial.
+- `0:33.62` Tries until the first success? Geometric.
+- `0:36.66` Events in a stretch of time? Poisson.
+- `0:39.16` Every outcome equally likely? Uniform.
 
-**S5 · Poisson** (0:37.37–0:43.33)
-- `0:37.77` Counting events in a stretch of time, like customers per hour?
-- `0:41.48` That's Poisson.
+**S5 · Measurements** (0:42.66–0:57.20)
+- `0:43.11` Now, measurements.
+- `0:44.39` Values clustered around an average? Normal.
+- `0:47.28` Waiting time until the next event? Exponential.
+- `0:50.52` Positive values, skewed by growth? Log-normal.
+- `0:53.78` A few giants holding most of it? Pareto.
 
-**S6 · Exponential** (0:43.34–0:50.28)
-- `0:43.73` Measuring the waiting time until the next event?
-- `0:46.63` That's exponential. Short waits are the most common.
+**S6 · Testing tools** (0:57.20–1:06.02)
+- `0:57.65` And two tools for testing.
+- `0:59.36` The average of a small sample? The t-distribution.
+- `1:02.60` Do counts match what you expect? Chi-square.
 
-**S7 · Normal** (0:50.28–0:57.28)
-- `0:50.68` A measurement that clusters around an average, like people's heights?
-- `0:54.42` That's normal, the famous bell curve.
+**S7 · Bonus** (1:06.02–1:11.57)
+- `1:06.47` Bonus: see two humps? That's bimodal, usually two groups mixed together.
 
-**S8 · Bimodal** (0:57.28–1:05.64)
-- `0:57.68` And if you see two humps?
-- `0:59.30` That's bimodal. Usually two groups are mixed together, like a café's lunch rush and dinner rush.
+**S8 · Remember** (1:11.57–1:19.69)
+- `1:12.02` So remember: ask what you're measuring, then match the shape.
+- `1:15.29` Save this cheat sheet, and you'll always know which one to use.
 
-**S9 · Remember** (1:05.64–1:17.75)
-- `1:06.09` So remember: equally likely, uniform. Successes in tries, binomial.
-- `1:10.99` Events in time, Poisson. Waiting time, exponential. Measurements around an average, normal.
+**S9 · Quiz, teaser and CTA** (1:19.69–1:44.28)
+- `1:20.04` Quick quiz!
+- `1:21.07` You measure how long each customer waits on hold.
+- `1:23.83` Which distribution fits best?
+- `1:31.19` Exponential!
+- `1:32.39` It's a waiting time until the next event. Counting the calls would be Poisson.
+- `1:37.10` Next: how sure can we be about an average? Confidence intervals.
+- `1:41.02` Follow for data science made simple!
 
-**S10 · Quiz, teaser and CTA** (1:17.75–1:39.55)
-- `1:18.10` Quick quiz!
-- `1:19.13` You count how many emails arrive each hour.
-- `1:21.62` Which distribution fits?
-- `1:28.70` Poisson!
-- `1:29.74` You're counting events in a fixed stretch of time.
-- `1:32.37` Next: how sure can we be about an average? Confidence intervals.
-- `1:36.28` Follow for data science made simple!
-
-*(Between "Which distribution fits?" and "Poisson!": the 5-second countdown, music only.)*
+*(Between "Which distribution fits best?" and "Exponential!": the 5-second countdown, music only.)*
 
 ## Accuracy notes
 
-- **Definition:** a probability distribution gives the probability (or density) of each possible value of a random variable.
-- **The guide is a rule of thumb for the five distributions covered in the series.** Real data can fit none of them exactly, so check the shape (and the assumptions) before you rely on one.
-  - **Uniform:** all outcomes in the range equally likely (a fair dice: 1/6 each). The shape is flat.
-  - **Binomial:** the number of successes in a fixed number n of independent tries with the same chance p (heads in 10 flips: B(10, ½); the bars shown are exact).
-  - **Poisson:** the number of events in a fixed interval when events happen independently at a steady average rate (customers per hour; the bars shown are Poisson(4)).
-  - **Exponential:** the waiting time until the next event in that same kind of process. The density is highest at 0 and falls steadily.
-  - **Normal:** many measurements that cluster symmetrically around an average (heights within one group are approximately normal), the bell curve.
-- **Bimodal:** a distribution with two peaks. It often means two groups are mixed, such as a café's customers by hour (a lunch rush and a dinner rush) or heights of adults when two groups with different averages are pooled. The curve shown is an illustrative mix of two bells.
-- **Quiz:** the number of emails arriving in an hour is a count of events in a fixed time interval, so **Poisson** is the standard model.
-  - The distractors: uniform (counts aren't equally likely), normal (it's a count, not a continuous measurement around an average; a Poisson with a large mean does look bell-shaped), exponential (that would be the time between emails).
+- **The guide is a rule of thumb for the distributions covered in the series.** Real data may fit none exactly; check the shape and the assumptions first. Each distribution has its own Reel with the details.
+- **Counts** (the mini shapes are exact):
+  - Bernoulli(1/6): one try, bars 5/6 and 1/6.
+  - Binomial(10, ½).
+  - Geometric(1/6): tries until the first success.
+  - Poisson(4).
+  - Uniform: 6 equal bars.
+- **Measurements:**
+  - normal: values clustered symmetrically around a mean;
+  - exponential: waiting time until the next event of a steady random process;
+  - log-normal: positive, right-skewed, multiplicative growth;
+  - Pareto: heavy tail, a few giants, the 80/20 pattern.
+- **Tools for testing:**
+  - t: the distribution of a standardised sample mean when the SD is estimated from a small sample;
+  - chi-square: the distribution of the goodness-of-fit / independence statistic for counts.
+- **Bimodal** isn't a single named family; it describes any two-peaked shape, often a mixture of two groups.
+- **Quiz:** hold time (the time until a call is answered) is a waiting time, classically modelled as exponential. The number of calls per period is Poisson. Binomial needs a fixed number of tries, and hold times are right-skewed, not normal.
 
 ## Audio
 
-Same score engine and kit as the series, re-timed for 10 scenes:
-- Hook: intro, a blip per name, a glitch on "So many", and the riser, impact and crash on "Which".
-- Definition: calm "flow", with a blip per line.
-- Questions 1–3: marimba "play". Questions 4–5 and the bonus: groove. Every question has the same cue set: a pop on the question, a click on the example, a glide as the shape draws, then a stamp and chime on the name.
-- Cheat sheet: build, with a blip per row.
-- Quiz: hops as the emails drop, the suspense countdown and finale, and a lifted pad under the teaser.
+Same score engine and kit as the series, re-timed for 9 scenes:
+- Hook: intro, a blip per named card, ticks as the rest pop, the riser, impact and crash on "Which", and a pop on "cheat sheet".
+- Reminder: calm "flow", with a blip per line.
+- Families and counts: marimba "play", with step tones per family and, on every row, a pop on the question plus a stamp and chime on the name.
+- Measurements, testing and the bonus: groove, with the same row cues and a glide and stamp on "bimodal".
+- Full sheet: build, with ticks as the grid fills and a ding on "save".
+- Quiz: suspense countdown and finale, with a lifted pad under the teaser.
 
 SFX land 6–18 frames before their words and stay off the spoken names. The mix and master are unchanged: music `useDuck(0.5, 0.16)`, limiter → two-pass loudnorm to −14 LUFS → final limiter.
 
@@ -137,7 +147,6 @@ BROWSER=/path/to/chrome-headless-shell bash scripts/build.sh
 npx remotion studio src/index.ts
 ```
 
-Scaffolded from `exponential-distribution/` (`REF=exponential-distribution bash .claude/skills/data-science-explainer/new-video.sh which-distribution WhichDistribution Which_Distribution`). It adds `src/components/Pick.tsx`:
-- `Shape`, one component for all six shapes (bars grow, curves sweep);
-- `QuestionScene`, the template behind scenes 3–8: question, example card, a dashed "?" box, then the shape, the name and a tag;
-- `Envelope`.
+Originally scaffolded from `exponential-distribution/`; v2 brings in `Curve.tsx` (from `pareto-distribution/`) and the fixed `Quiz.tsx` (from `t-distribution/`), and rewrites `src/components/Pick.tsx`:
+- `Shape` for all twelve kinds;
+- `CheatRow`, the question → name + mini-shape row.

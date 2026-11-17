@@ -1,21 +1,32 @@
 # Instagram caption
 
-Uniform, binomial, Poisson, exponential, normal… so many distributions! 🤯 Which one should you use? Save this CHEAT SHEET 📌
+Uniform, binomial, Poisson, normal, Pareto, chi-square… so many distributions! 🤯 Which one do you need? Here's the COMPLETE CHEAT SHEET. Save it 📌
 
-📖 First, the definition in simple words: a probability distribution shows how likely each possible value is. Different questions need different distributions, so just ask: what am I measuring?
+📖 First, a reminder: a probability distribution shows how likely each possible value is. To pick the right one, just ask: what am I measuring?
 
-1️⃣ All outcomes equally likely (a fair dice 🎲)? → UNIFORM (flat)
-2️⃣ Counting successes in a fixed number of tries (heads in 10 coin flips 🪙)? → BINOMIAL
-3️⃣ Counting events in a stretch of time (customers per hour ☕)? → POISSON
-4️⃣ Waiting time until the next event ⏱️? → EXPONENTIAL (short waits are most common)
-5️⃣ A measurement that clusters around an average (people's heights 📏)? → NORMAL (the bell curve 🔔)
+🔵 COUNTS
+• One yes-or-no try? → Bernoulli
+• Successes in a fixed number of tries? → Binomial
+• Tries until the first success? → Geometric
+• Events in a stretch of time? → Poisson
+• Every outcome equally likely? → Uniform
 
-⭐ Bonus: two humps? → BIMODAL. Usually two groups are mixed together, like a café's lunch rush and dinner rush 🍽️
+🟣 MEASUREMENTS
+• Values clustered around an average? → Normal
+• Waiting time until the next event? → Exponential
+• Positive values, skewed by growth? → Log-normal
+• A few giants holding most of it? → Pareto
 
-Quiz: you count how many emails arrive each hour 📧 Which distribution fits? Drop your answer before the reveal 👇
+🟠 TOOLS FOR TESTING
+• The average of a small sample? → t-distribution
+• Do counts match what you expect? → Chi-square
+
+🟢 BONUS: two humps? → Bimodal (usually two groups mixed together)
+
+Quiz: you measure how long each customer waits on hold ☎️ Which distribution fits best? Drop your answer before the reveal 👇
 
 🔜 Next up: how sure can we be about an average? Confidence intervals.
 
 Follow @curious_datascientist for data science made simple 🚀
 
-#datascience #statistics #probabilitydistribution #probability #cheatsheet #normaldistribution #poissondistribution #binomialdistribution #learnoninstagram #datascienceforbeginners
+#datascience #statistics #probabilitydistribution #cheatsheet #probability #normaldistribution #poissondistribution #learnoninstagram #education #datascienceforbeginners

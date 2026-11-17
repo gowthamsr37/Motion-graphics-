@@ -105,7 +105,7 @@ Kokoro TTS `af_heart` at 1.05×. Short sentences; numbers are written out in the
   - The t density is symmetric and bell-shaped, with heavier tails than the normal.
   - It tends to the standard normal as df → ∞.
 - **Densities** are computed exactly (`components/TDist.tsx`, log-gamma) and checked by numerical integration.
-- **Scene 3:** the three 5-value samples are illustrative, with sample SDs of 0.29, 1.43 and 0.75. The hook and scene 3 use df = 2 and 3 to make the fat tails visible.
+- **Scene 3:** the three 5-value samples are illustrative, with sample SDs of 0.29, 1.40 and 0.75. The hook and scene 3 use df = 2 and 3 to make the fat tails visible.
 - **Scene 5:** the peak heights are 0.375 (df 4), 0.389 (df 10) and 0.395 (df 30) vs 0.399 (normal). P(|T| > 2) is 11.6% (df 4), 7.7% (df 9) and 5.5% (df 29) vs 4.6% for the normal.
 - **Scene 6:** the two-sided 95% critical values, each checked to cover 95.00% numerically:
   - normal **1.96**;
