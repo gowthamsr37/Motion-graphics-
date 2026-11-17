@@ -32,7 +32,7 @@ export const S6Average: React.FC = () => {
         </div>
       </Pop>
       {panels.map((pn, i) => {
-        const p = spr(6 + i * 6 + (pn.at > 1e9 ? 1 : 0), theme.spring.bouncy);
+        const p = spr(6 + i * 6, theme.spring.bouncy);
         if (p <= 0.001) return null;
         const x0 = pn.x - 170;
         const x1 = pn.x + 170;

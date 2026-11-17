@@ -46,7 +46,8 @@ const useHits = (): Hit[] => {
     const QEND = s.sent(2).to, CD0 = QEND + Math.round(0.2 * fps), ANS = s.sent(3).from;
     h(s.sent(0).from - 4, "pop.wav", 0.4);
     h(s.sent(1).from - 2, "glide.wav", 0.2);
-    h(s.cueS(key[0], key[1]) - 8, "pop.wav", 0.3);
+    // land well before the keyword: a pop near a spoken number masked it ("fifteen" heard as "fifty")
+    h(s.cueS(key[0], key[1]) - 18, "pop.wav", 0.18);
     [0, 1, 2, 3].forEach((i) => h(QEND - 6 + i * 4, "pop.wav", 0.22));
     [0, 1, 2, 3, 4].forEach((k) => h(CD0 + k * fps + 2, "beep.wav", 0.42));
     h(CD0 + 5 * fps + 2, "beep-hi.wav", 0.45);
