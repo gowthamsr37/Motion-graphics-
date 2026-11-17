@@ -97,8 +97,9 @@ const useHits = (): Hit[] => {
     const h = at("s3");
     h(s.sent(1).from, "pop.wav", 0.16);
     ["three.", "five.", "four,", "two."].forEach((w) => h(s.cueS(2, w) - 10, "click.wav", 0.22));
-    h(s.sent(3).from - 4, "whoosh.wav", 0.2);
-    for (let i = 0; i < 16; i++) h(s.sent(3).from + 4 + i * 4.5, "tick.wav", 0.08);
+    // keep the whoosh and ticks off "Count" (it was heard as "How many hours")
+    h(s.sent(3).from - 16, "whoosh.wav", 0.16);
+    for (let i = 0; i < 14; i++) h(s.cueS(3, "many") + 8 + i * 4.5, "tick.wav", 0.08);
   }
   // S4 — the shape
   {
