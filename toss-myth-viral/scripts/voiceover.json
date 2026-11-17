@@ -1,0 +1,228 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.0,
+  "fix": [
+    [
+      "ˈoʊdiz",
+      "ˌoʊdˌiːˈaɪz"
+    ],
+    [
+      "ˈoʊdi",
+      "ˌoʊdˌiːˈaɪz"
+    ],
+    [
+      "ˈɪpəl",
+      "ˌaɪpˌiːˈɛl"
+    ],
+    [
+      "dˈuːbaɪ",
+      "duːbˈaɪ"
+    ]
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.25,
+      "hold": 0.35,
+      "segments": [
+        {
+          "text": "Winning the toss is worth almost nothing.",
+          "caption": "Winning the toss is worth almost nothing.",
+          "pause": 0.35
+        },
+        {
+          "text": "And we can prove it.",
+          "caption": "And we can prove it.",
+          "pause": 0.3
+        },
+        {
+          "text": "Eight thousand, four hundred and eight matches.",
+          "caption": "8,408 matches.",
+          "pause": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.2,
+      "hold": 0.4,
+      "segments": [
+        {
+          "text": "If the toss didn't matter, toss winners would win half their games.",
+          "caption": "If the toss didn't matter, toss winners would win half their games.",
+          "pause": 0.32
+        },
+        {
+          "text": "With this many matches, anything between forty-eight and fifty-two percent is just luck.",
+          "caption": "With this many matches, anything between 48% and 52% is just luck.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.2,
+      "hold": 0.45,
+      "segments": [
+        {
+          "text": "So, ODIs.",
+          "caption": "So, ODIs.",
+          "pause": 0.3
+        },
+        {
+          "text": "Toss winners won one thousand, two hundred and forty-four of two thousand, four hundred and eighty-seven.",
+          "caption": "Toss winners won 1,244 of 2,487.",
+          "pause": 0.55
+        },
+        {
+          "text": "Fifty point zero percent.",
+          "caption": "50.0%.",
+          "pause": 0.4
+        },
+        {
+          "text": "Not almost half. Exactly half.",
+          "caption": "Not almost half. Exactly half.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.15,
+      "hold": 0.4,
+      "segments": [
+        {
+          "text": "T20 internationals: fifty point five. The IPL: fifty-one point six.",
+          "caption": "T20 internationals: 50.5%. The IPL: 51.6%.",
+          "pause": 0.3
+        },
+        {
+          "text": "Every one of them: just luck.",
+          "caption": "Every one of them: just luck.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.2,
+      "hold": 0.4,
+      "segments": [
+        {
+          "text": "So why do fans swear by the toss?",
+          "caption": "So why do fans swear by the toss?",
+          "pause": 0.3
+        },
+        {
+          "text": "Because of one tournament.",
+          "caption": "Because of one tournament.",
+          "pause": 0.35
+        },
+        {
+          "text": "The twenty twenty-one T20 World Cup. In Dubai, the chasing team won twelve of thirteen games.",
+          "caption": "The 2021 T20 World Cup. In Dubai, the chasing team won 12 of 13 games.",
+          "pause": 0.32
+        },
+        {
+          "text": "Evening dew made the ball slippery, so toss winners bowled first.",
+          "caption": "Evening dew made the ball slippery, so toss winners bowled first.",
+          "pause": 0.32
+        },
+        {
+          "text": "Across the tournament, they won thirty of forty-five.",
+          "caption": "Across the tournament, they won 30 of 45.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.15,
+      "hold": 0.4,
+      "segments": [
+        {
+          "text": "Then it vanished.",
+          "caption": "Then it vanished.",
+          "pause": 0.45
+        },
+        {
+          "text": "The next three World Cups: thirty-nine, fifty-six, forty-three percent.",
+          "caption": "The next three World Cups: 39%, 56%, 43%.",
+          "pause": 0.32
+        },
+        {
+          "text": "Not a law of cricket. Just one place, one season.",
+          "caption": "Not a law of cricket. Just one place, one season.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "lead": 0.2,
+      "hold": 0.4,
+      "segments": [
+        {
+          "text": "But there is one format where the toss is real.",
+          "caption": "But there is one format where the toss is real.",
+          "pause": 0.32
+        },
+        {
+          "text": "Test cricket. Win it, bat first, and you win fifty-seven percent. Bowl first? Forty-eight.",
+          "caption": "Test cricket. Win it, bat first, and you win 57%. Bowl first? 48%.",
+          "pause": 0.32
+        },
+        {
+          "text": "Because by day five, nobody wants to bat on that pitch.",
+          "caption": "Because by day five, nobody wants to bat on that pitch.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "lead": 0.15,
+      "hold": 0.4,
+      "segments": [
+        {
+          "text": "In the IPL, it's not the coin. It's the choice.",
+          "caption": "In the IPL, it's not the coin. It's the choice.",
+          "pause": 0.3
+        },
+        {
+          "text": "Bowling first: fifty-five percent. Batting first: forty-five.",
+          "caption": "Bowling first: 55%. Batting first: 45%.",
+          "pause": 0.25
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "lead": 0.2,
+      "hold": 1.6,
+      "segments": [
+        {
+          "text": "So, does winning the toss win matches?",
+          "caption": "So, does winning the toss win matches?",
+          "pause": 0.35
+        },
+        {
+          "text": "Fifty point nine percent. Less than one extra win in every hundred games.",
+          "caption": "50.9%. Less than one extra win in every hundred games.",
+          "pause": 0.45
+        },
+        {
+          "text": "Myth busted.",
+          "caption": "Myth busted.",
+          "pause": 0.6
+        },
+        {
+          "text": "Which cricket myth should we test next? Tell us in the comments.",
+          "caption": "Which cricket myth should we test next? Tell us in the comments.",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}

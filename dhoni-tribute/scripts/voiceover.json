@@ -1,0 +1,277 @@
+{
+  "voice": "am_michael",
+  "lang": "en-us",
+  "speed": 1.0,
+  "fix": [
+    [
+      "θˈɑːlə",
+      "tˈɑːlə"
+    ],
+    [
+      "tʃˈɛpɔːk",
+      "tʃɪpˈɔːk"
+    ],
+    [
+      "ˈɪpəl",
+      "ˌaɪpˌiːˈɛl"
+    ],
+    [
+      "wˈɪkɪtkˌiːpɪŋ",
+      "wˈɪkɪt kˈiːpɪŋ"
+    ],
+    [
+      "kɹˈɪkɪɾɚ",
+      "kɹˈɪkɪtɚ"
+    ]
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 1.2,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "November seventeenth, twenty twenty-six.",
+          "caption": "17 November 2026.",
+          "pause": 0.55
+        },
+        {
+          "text": "MS Dhoni has officially retired from the IPL.",
+          "caption": "MS Dhoni has officially retired from the IPL.",
+          "pause": 0.55
+        },
+        {
+          "text": "And with that, one of cricket's greatest stories has reached its final chapter.",
+          "caption": "And with that, one of cricket's greatest stories has reached its final chapter.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.4,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "Go back to two thousand and eight. The IPL's very first auction.",
+          "caption": "Go back to 2008. The IPL's very first auction.",
+          "pause": 0.45
+        },
+        {
+          "text": "Dhoni became its most expensive signing, at one point five million dollars, roughly six crore rupees.",
+          "caption": "Dhoni became its most expensive signing, at $1.5 million, roughly ₹6 crore.",
+          "pause": 0.5
+        },
+        {
+          "text": "Chennai Super Kings didn't just buy a player.",
+          "caption": "Chennai Super Kings didn't just buy a player.",
+          "pause": 0.35
+        },
+        {
+          "text": "They found their captain.",
+          "caption": "They found their captain.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.4,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "Two hundred and thirty-five IPL matches as captain.",
+          "caption": "235 IPL matches as captain.",
+          "pause": 0.4
+        },
+        {
+          "text": "One hundred and thirty-six victories.",
+          "caption": "136 victories.",
+          "pause": 0.4
+        },
+        {
+          "text": "Ten finals with Chennai.",
+          "caption": "10 finals with Chennai.",
+          "pause": 0.4
+        },
+        {
+          "text": "Five IPL trophies.",
+          "caption": "5 IPL trophies.",
+          "pause": 0.5
+        },
+        {
+          "text": "Not just a successful captain. A leader who built an era.",
+          "caption": "Not just a successful captain. A leader who built an era.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.4,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "Chennai won back-to-back titles in twenty ten and twenty eleven.",
+          "caption": "Chennai won back-to-back titles in 2010 and 2011.",
+          "pause": 0.4
+        },
+        {
+          "text": "Returned to become champions in twenty eighteen.",
+          "caption": "Returned to become champions in 2018.",
+          "pause": 0.4
+        },
+        {
+          "text": "Won again in twenty twenty-one.",
+          "caption": "Won again in 2021.",
+          "pause": 0.4
+        },
+        {
+          "text": "And in twenty twenty-three, Dhoni lifted his fifth IPL trophy as captain.",
+          "caption": "And in 2023, Dhoni lifted his fifth IPL trophy as captain.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.4,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "And then there was the batter.",
+          "caption": "And then there was the batter.",
+          "pause": 0.45
+        },
+        {
+          "text": "Five thousand, four hundred and thirty-nine IPL runs.",
+          "caption": "5,439 IPL runs.",
+          "pause": 0.4
+        },
+        {
+          "text": "A batting average of thirty-eight point three.",
+          "caption": "A batting average of 38.3.",
+          "pause": 0.35
+        },
+        {
+          "text": "A strike rate above one hundred and thirty-seven.",
+          "caption": "A strike rate above 137.",
+          "pause": 0.35
+        },
+        {
+          "text": "Twenty-four half-centuries.",
+          "caption": "24 half-centuries.",
+          "pause": 0.45
+        },
+        {
+          "text": "And two hundred and sixty-four sixes.",
+          "caption": "And 264 sixes.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.4,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "Behind the wickets, he was just as extraordinary.",
+          "caption": "Behind the wickets, he was just as extraordinary.",
+          "pause": 0.4
+        },
+        {
+          "text": "Two hundred and five wicketkeeping dismissals.",
+          "caption": "205 wicketkeeping dismissals.",
+          "pause": 0.35
+        },
+        {
+          "text": "One hundred and fifty-eight catches. Forty-seven stumpings.",
+          "caption": "158 catches. 47 stumpings.",
+          "pause": 0.4
+        },
+        {
+          "text": "The highest wicketkeeping dismissal tally in IPL history.",
+          "caption": "The highest wicketkeeping dismissal tally in IPL history.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "lead": 0.4,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Even in twenty twenty-four, at forty-two, Dhoni struck at more than two hundred and twenty.",
+          "caption": "Even in 2024, at 42, Dhoni struck at more than 220.",
+          "pause": 0.5
+        },
+        {
+          "text": "The finishes became shorter. The moments became rarer.",
+          "caption": "The finishes became shorter. The moments became rarer.",
+          "pause": 0.45
+        },
+        {
+          "text": "But the crowd still waited for one man to walk out.",
+          "caption": "But the crowd still waited for one man to walk out.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "lead": 0.4,
+      "hold": 1.2,
+      "segments": [
+        {
+          "text": "His final IPL appearance came in May twenty twenty-five.",
+          "caption": "His final IPL appearance came in May 2025.",
+          "pause": 0.45
+        },
+        {
+          "text": "An injury kept him out of the entire twenty twenty-six season.",
+          "caption": "An injury kept him out of the entire 2026 season.",
+          "pause": 0.45
+        },
+        {
+          "text": "And now, as he prepares to become Chennai's mentor, an extraordinary playing journey comes to an end.",
+          "caption": "And now, as he prepares to become Chennai's mentor, an extraordinary playing journey comes to an end.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "lead": 0.6,
+      "hold": 3.2,
+      "segments": [
+        {
+          "text": "Five trophies. Thousands of runs. Hundreds of victories.",
+          "caption": "Five trophies. Thousands of runs. Hundreds of victories.",
+          "pause": 0.55
+        },
+        {
+          "text": "But some legacies cannot be measured in numbers.",
+          "caption": "But some legacies cannot be measured in numbers.",
+          "pause": 0.55
+        },
+        {
+          "text": "For millions, Dhoni wasn't just a cricketer. He was an emotion.",
+          "caption": "For millions, Dhoni wasn't just a cricketer. He was an emotion.",
+          "pause": 0.8
+        },
+        {
+          "text": "Thank you, Thala.",
+          "caption": "Thank you, Thala.",
+          "pause": 0.6
+        },
+        {
+          "text": "Beyond The Scoreboard.",
+          "caption": "Beyond The Scoreboard.",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}
