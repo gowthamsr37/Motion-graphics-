@@ -1,0 +1,234 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "House prices in a city: most are moderate, but a few are very expensive.",
+          "caption": "House prices in a city: most are moderate, but a few are very expensive.",
+          "pause": 0.4
+        },
+        {
+          "text": "Plot them, and the shape leans to the left, with a long tail to the right.",
+          "caption": "Plot them, and the shape leans to the left, with a long tail to the right.",
+          "pause": 0.4
+        },
+        {
+          "text": "But change the scale, and they form a perfect bell.",
+          "caption": "But change the scale, and they form a perfect bell.",
+          "pause": 0.45
+        },
+        {
+          "text": "That's the log-normal distribution.",
+          "caption": "That's the log-normal distribution.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The definition",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Here's the definition, in simple words.",
+          "caption": "Here's the definition, in simple words.",
+          "pause": 0.35
+        },
+        {
+          "text": "A log-normal distribution has only positive values, and it's skewed to the right.",
+          "caption": "A log-normal distribution has only positive values, and it's skewed to the right.",
+          "pause": 0.4
+        },
+        {
+          "text": "But take the log of every value, and you get a normal bell curve.",
+          "caption": "But take the log of every value, and you get a normal bell curve.",
+          "pause": 0.4
+        },
+        {
+          "text": "That's the name: its logs are normal.",
+          "caption": "That's the name: its logs are normal.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "What's a log?",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "So what's a log? Here's the easy way to think about it.",
+          "caption": "So what's a log? Here's the easy way to think about it.",
+          "pause": 0.4
+        },
+        {
+          "text": "A log counts the zeros. The log of ten is one. The log of a hundred is two. The log of a thousand is three.",
+          "caption": "A log counts the zeros. The log of 10 is 1. The log of 100 is 2. The log of 1,000 is 3.",
+          "pause": 0.45
+        },
+        {
+          "text": "So on a log scale, each step means times ten.",
+          "caption": "So on a log scale, each step means times ten.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Two scales",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Here are a hundred house prices, in lakhs of rupees.",
+          "caption": "Here are 100 house prices, in lakhs of rupees.",
+          "pause": 0.4,
+          "fix": [
+            [
+              "lˈækz",
+              "lˈɑːks"
+            ]
+          ]
+        },
+        {
+          "text": "On a normal scale, most are bunched on the left, and a few stretch far to the right.",
+          "caption": "On a normal scale, most are bunched on the left, and a few stretch far to the right.",
+          "pause": 0.45
+        },
+        {
+          "text": "Now switch to a log scale.",
+          "caption": "Now switch to a log scale.",
+          "pause": 0.6
+        },
+        {
+          "text": "The same prices form a symmetric bell. That's log-normal.",
+          "caption": "The same prices form a symmetric bell. That's log-normal.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Why it happens",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Why does this happen? Because prices grow by percentages.",
+          "caption": "Why does this happen? Because prices grow by percentages.",
+          "pause": 0.4
+        },
+        {
+          "text": "A ten percent rise adds two lakh to a twenty lakh flat, but twenty lakh to a two crore villa.",
+          "caption": "A 10% rise adds 2 lakh to a 20 lakh flat, but 20 lakh to a 2 crore villa.",
+          "pause": 0.45,
+          "fix": [
+            [
+              "lˈæk",
+              "lˈɑːk"
+            ]
+          ]
+        },
+        {
+          "text": "Growth that multiplies, instead of adding, stretches the big values out. That makes the long tail.",
+          "caption": "Growth that multiplies, instead of adding, stretches the big values out. That makes the long tail.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Where and a tip",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "You'll see log-normal data everywhere: incomes, house prices, the time to finish a task, and stock prices.",
+          "caption": "You'll see log-normal data everywhere: incomes, house prices, the time to finish a task, and stock prices.",
+          "pause": 0.45
+        },
+        {
+          "text": "Data science tip: when your data looks like this, take the log. Many models work better on a bell shape.",
+          "caption": "Data science tip: when your data looks like this, take the log. Many models work better on a bell shape.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Remember",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "So remember: log-normal values are positive, and skewed to the right.",
+          "caption": "So remember: log-normal values are positive, and skewed to the right.",
+          "pause": 0.4
+        },
+        {
+          "text": "Take their logs, and you get a normal bell.",
+          "caption": "Take their logs, and you get a normal bell.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Quiz, teaser and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        {
+          "text": "Quick quiz!",
+          "caption": "Quick quiz!",
+          "pause": 0.3
+        },
+        {
+          "text": "A dataset makes a perfect bell on a log scale.",
+          "caption": "A dataset makes a perfect bell on a log scale.",
+          "pause": 0.35
+        },
+        {
+          "text": "What shape does it have on a normal scale?",
+          "caption": "What shape does it have on a normal scale?",
+          "pause": 5.7
+        },
+        {
+          "text": "Skewed to the right!",
+          "caption": "Skewed to the right!",
+          "pause": 0.35
+        },
+        {
+          "text": "A bell on a log scale means log-normal: bunched on the left, with a long tail to the right.",
+          "caption": "A bell on a log scale means log-normal: bunched on the left, with a long tail to the right.",
+          "pause": 0.4
+        },
+        {
+          "text": "Next: the simplest distributions of all, Bernoulli and geometric.",
+          "caption": "Next: the simplest distributions of all, Bernoulli and geometric.",
+          "pause": 0.4,
+          "fix": [
+            [
+              "bˈɜːnaʊli",
+              "bɚnˈuːli"
+            ]
+          ]
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}
