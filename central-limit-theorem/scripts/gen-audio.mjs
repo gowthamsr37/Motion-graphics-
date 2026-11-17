@@ -29,16 +29,16 @@ const cueS = (id, i, tok) => {
 };
 
 const ev = {
-  allData: sent("s1", 2), // "The averages make a bell!" (the reveal)
-  sameType: cueS("s1", 3, "Central"),
-  quiz: sent("s9", 0),
-  qEnd: sentEnd("s9", 2),
-  answer: sent("s9", 3),
-  tease: sent("s9", 5),
-  follow: sent("s9", 6),
-  bell30: cueS("s3", 3, "bell,"),
-  bellAgain: cueS("s4", 2, "bell"),
-  se: sent("s5", 3),
+  allData: cueS("s1", 2, "Central"), // "The answer is the Central Limit Theorem." (the reveal)
+  sameType: cueS("s1", 2, "Central"),
+  quiz: sent("s8", 0),
+  qEnd: sentEnd("s8", 2),
+  answer: sent("s8", 3),
+  tease: sent("s8", 5),
+  follow: sent("s8", 6),
+  defBell: cueS("s2", 2, "bell"),
+  look: sent("s4", 3), // "Look! The averages form a bell curve."
+  middle: cueS("s5", 2, "middle."),
 };
 ev.cd0 = ev.qEnd + 0.2;
 ev.reveal = ev.cd0 + 5;
@@ -209,11 +209,10 @@ const sections = [
   // [from, to, style]
   [0, ev.allData, "intro"],
   [ev.allData, S("s2"), "drop"],
-  [S("s2"), S("s3"), "flow"], // what it says
-  [S("s3"), S("s5"), "play"], // dice build, any shape
-  [S("s5"), S("s6"), "flow"], // two rules
-  [S("s6"), S("s8"), "grooveB"], // why it matters, how big
-  [S("s8"), ev.quiz, "build"],
+  [S("s2"), S("s3"), "flow"], // the definition: calm
+  [S("s3"), S("s5"), "play"], // the example, step by step
+  [S("s5"), S("s7"), "grooveA"], // why, bonus facts
+  [S("s7"), ev.quiz, "build"],
   [ev.quiz, ev.reveal, "tension"],
   [ev.reveal, DUR - 0.6, "finale"],
 ];
@@ -282,11 +281,11 @@ crash(ML, MR, ev.allData, 0.9);
 pad(ML, MR, ev.allData, S("s2") - ev.allData, CH.Bb.pad, 0.9, 0.05, 0.4, 0.06);
 [0, 0.18, 0.36].forEach((d, i) => pluck(ML, MR, ev.sameType + 0.35 + d, [note("A4"), note("C5"), note("F5")][i], 0.9, (i - 1) * 0.4, 1.2));
 // accents
-[0, 0.09, 0.18].forEach((d, i) => bell(ML, MR, ev.bell30 + 0.05 + d, [note("C5"), note("F5"), note("A5")][i], 0.6, (i - 1) * 0.4, 1.2)); // 30 dice: a clean bell
-lead(ML, MR, ev.bellAgain - 0.2, note("C5"), note("F5"), 1.2, 0.5); // a bell again
-lead(ML, MR, ev.se - 0.1, note("A4"), note("C5"), 1.1, 0.45); // the standard error
-// overview: crash on entry
-crash(ML, MR, S("s8"), 0.7);
+lead(ML, MR, ev.defBell - 0.2, note("C5"), note("F5"), 1.2, 0.45); // "those averages will form a bell curve"
+[0, 0.09, 0.18].forEach((d, i) => bell(ML, MR, ev.look + 0.05 + d, [note("C5"), note("F5"), note("A5")][i], 0.7, (i - 1) * 0.4, 1.3)); // the bell appears
+lead(ML, MR, ev.middle - 0.1, note("A4"), note("C5"), 1.1, 0.45); // averages land near the middle
+// recap: crash on entry
+crash(ML, MR, S("s7"), 0.7);
 // teaser: a lifted chord under "other kinds of distributions"
 pad(ML, MR, ev.tease, ev.follow - ev.tease, CH.Bb.pad, 0.8, 0.3, 0.4, 0.05);
 // quiz: stinger, suspended pad, heartbeat pulse per countdown second

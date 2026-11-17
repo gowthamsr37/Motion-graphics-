@@ -1,29 +1,32 @@
 # Instagram caption
 
-Roll one dice: every number is equally likely, so the shape is flat 🎲 Now roll 10 dice, take their average, and repeat again and again… the averages make a BELL 🔔👀 That's the CENTRAL LIMIT THEOREM.
+Why does the bell curve show up EVERYWHERE, even when the data isn't shaped like a bell? 👀 The answer is the CENTRAL LIMIT THEOREM, explained simply 👇
 
-📐 What it says: take many samples, find the mean of each one, and plot those means. They form a normal distribution, even when the original data isn't normal at all.
+📖 The definition, in simple words:
+1️⃣ Take many random samples
+2️⃣ Find the average of each one
+3️⃣ Those averages form a bell curve (a normal distribution)
+4️⃣ …even if the original data ISN'T a bell
+5️⃣ You just need big enough samples, usually 30 or more
 
-🎲 Watch it build:
-• 1 dice → flat
-• 2 dice → a triangle peaking at 3.5
-• 5 dice → rounder
-• 30 dice → a clean bell centred on 3.5
+💰 Example: salaries in a city are skewed (most people earn a little, a few earn a lot).
+• Step 1: pick 30 people at random → find their average salary
+• Step 2: pick another 30 → another average
+• Step 3: repeat again and again and plot every average
+🔔 The averages form a bell curve!
 
-🚌 It works for skewed data too: bus waiting times have a long right tail, but the averages of 30 waiting times make a bell again.
+🤔 Why? In a random group of 30, the few huge salaries get mixed with many ordinary ones, so the extremes cancel out and most averages land near the middle.
 
-📏 Two rules:
-🎯 The bell is centred on the TRUE mean
-🔍 Bigger samples make it narrower. Its spread = SD ÷ √n, called the STANDARD ERROR
+✨ Bonus facts:
+🎯 The bell is centred on the TRUE average of the whole population
+🔍 Bigger samples make it narrower, so your estimate gets more precise
 
-🌍 Why it matters: it's why the normal distribution shows up everywhere, how polls get their margin of error, and how scientists test if a result is real.
+🌍 That's why a survey of a few thousand people can describe a whole country.
 
-✅ How big is big enough? A common rule of thumb is 30. Very skewed data may need more.
-
-Quiz: heights have an SD of 7 cm. You average samples of 49 people. What's the spread of those averages? Drop your answer before the reveal 👇
+Quiz: some data is very skewed. You take many samples of 50 and plot their averages. What shape will you see? Drop your answer before the reveal 👇
 
 🔜 In future videos, we'll explore other kinds of distributions.
 
 Follow @curious_datascientist for data science made simple 🚀
 
-#datascience #statistics #centrallimittheorem #normaldistribution #standarderror #sampling #probability #mathsmadeeasy #learnoninstagram #datascienceforbeginners
+#datascience #statistics #centrallimittheorem #normaldistribution #bellcurve #sampling #probability #mathsmadeeasy #learnoninstagram #datascienceforbeginners

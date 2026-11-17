@@ -1,142 +1,109 @@
-// SCENE 1 — HOOK. One dice: every face equally likely → six equal bars (flat). Ten dice, average them, again and again:
-// each average drops a dot into a histogram → the dots pile into a bell → A BELL! → CENTRAL LIMIT THEOREM.
+// SCENE 1 — HOOK. A bell curve, and the places it turns up (heights, exam scores, measurement errors, poll results).
+// Even when the data isn't a bell (skewed, flat, two humps)? → THE CENTRAL LIMIT THEOREM.
 import React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import { Bell, type BellGeo } from "../components/Bell";
-import { DICE_SD } from "../components/Clt";
-import { Burst, ease, exitP, Pop, rng, useSpr } from "../components/Motion";
-import { Die } from "../components/Prob";
+import { Burst, ease, exitP, Pop, useSpr } from "../components/Motion";
 import { alpha, glowText, theme } from "../theme";
 import { useScene } from "../timing";
 
 const C = theme.colors;
-export const RAW = C.cyan; // the original data (dice)
-export const MEANS = C.green; // sample means / the CLT bell
-export const SE = C.violet; // spread / standard error
-export const SKEW = C.orange; // skewed source data
-const NS = 90;
-// 90 samples of 10 dice, deterministic
-const SAMPLES = (() => {
-  const r = rng(233);
-  return Array.from({ length: NS }, () => Array.from({ length: 10 }, () => 1 + Math.floor(r() * 6)));
-})();
-const AVGS = SAMPLES.map((s) => s.reduce((a, b) => a + b, 0) / 10);
-const BIN = 0.25;
-const binOf = (a: number) => Math.floor((a - 1) / BIN);
-const HX0 = 140;
-const HX1 = 940;
-const NB = 20;
-const BW = (HX1 - HX0) / NB;
-const BASE = 1240;
-const DOT = 17;
-// stack position of each sample's dot in its bin
-const SLOT = (() => {
-  const c: Record<number, number> = {};
-  return AVGS.map((a) => {
-    const b = binOf(a);
-    c[b] = (c[b] ?? 0) + 1;
-    return c[b] - 1;
-  });
-})();
+export const RAW = C.orange; // the original (skewed) data
+export const SAMP = C.cyan; // samples
+export const AVG = C.green; // averages / the CLT bell
+export const PREC = C.violet; // precision / narrower
+
+export const MiniShape: React.FC<{ kind: number; x: number; y: number; w?: number; h?: number; color: string; p?: number }> = ({ kind, x, y, w = 150, h = 90, color, p = 1 }) => {
+  const pts: string[] = [];
+  for (let i = 0; i <= 40; i++) {
+    const u = i / 40;
+    const v = kind === 0 ? Math.min(1, u * 9) * Math.exp(-u * 4.5) * 1.6 : kind === 1 ? (u > 0.06 && u < 0.94 ? 0.7 : 0) : kind === 2 ? 0.9 * (Math.exp(-((u - 0.27) ** 2) / 0.01) + Math.exp(-((u - 0.73) ** 2) / 0.01)) : Math.exp(-((u - 0.5) ** 2) / 0.02);
+    pts.push(`${i ? "L" : "M"}${(u * w).toFixed(1)} ${(h - Math.min(1, v) * h * p).toFixed(1)}`);
+  }
+  const d = pts.join(" ");
+  return (
+    <svg width={w} height={h} viewBox={`0 0 ${w} ${h}`} style={{ position: "absolute", left: x - w / 2, top: y - h / 2, overflow: "visible" }}>
+      <path d={`${d} L${w} ${h} L0 ${h} Z`} fill={alpha(color, 0.3)} />
+      <path d={d} fill="none" stroke={color} strokeWidth={4} strokeLinejoin="round" />
+      <line x1={-4} y1={h + 1} x2={w + 4} y2={h + 1} stroke={alpha("#F3F7FF", 0.4)} strokeWidth={3} />
+    </svg>
+  );
+};
+
+const PLACES = [
+  { t: "HEIGHTS", x: 290, y: 1060 },
+  { t: "EXAM SCORES", x: 790, y: 1060 },
+  { t: "MEASUREMENT ERRORS", x: 290, y: 1230 },
+  { t: "POLL RESULTS", x: 790, y: 1230 },
+];
+const G: BellGeo = { x0: 200, x1: 880, vmin: -3.4, vmax: 3.4, base: 900, peakH: 300, sigmaRef: 1 };
 
 export const S1Hook: React.FC = () => {
   const frame = useCurrentFrame();
   const spr = useSpr();
   const s = useScene("s1");
-  const FLAT = s.cueS(0, "flat.");
-  const TEN = s.sent(1).from;
-  const AVGW = s.cueS(1, "average.");
-  const BELLW = s.sent(2).from;
-  const CLT = s.cueS(3, "Central");
-  const flatIn = ease(frame, [FLAT - 6, FLAT + 10], [0, 1], theme.ease.inOut);
-  const flatOut = exitP(frame, TEN - 6, 10);
-  const oneDie = exitP(frame, TEN - 8, 10);
-  const t0 = AVGW - 4;
-  const t1 = BELLW - 6;
-  const shown = Math.max(0, Math.min(NS, Math.floor(((frame - t0) / (t1 - t0)) * NS)));
-  const cur = Math.max(0, Math.min(NS - 1, shown - 1));
-  const rowOut = exitP(frame, BELLW - 4, 10);
-  const g: BellGeo = { x0: HX0, x1: HX1, vmin: 1, vmax: 6, base: BASE, peakH: NS * BIN * (0.3989 / (DICE_SD / Math.sqrt(10))) * DOT, sigmaRef: 1 };
-  const bell = ease(frame, [BELLW - 2, BELLW + 20], [0, 1], theme.ease.inOut);
-  const slam = spr(BELLW, theme.spring.pop);
+  const EVEN = s.sent(1).from;
+  const ANS = s.sent(2).from;
+  const CLT = s.cueS(2, "Central");
+  const placesOut = exitP(frame, EVEN - 6, 10);
+  const oddOut = exitP(frame, ANS + 20, 10);
   const title = spr(CLT - 3, theme.spring.pop);
 
   return (
     <AbsoluteFill>
-      {/* one dice, flat */}
-      {oneDie < 1 ? (
-        <div style={{ position: "absolute", left: 540, top: 560, transform: `translate(-50%, -50%) rotate(${frame < FLAT - 20 ? frame * 12 : 0}deg) scale(${spr(2, theme.spring.bouncy) * (1 - oneDie * 0.5)})`, opacity: 1 - oneDie }}>
-          <Die value={frame < FLAT - 20 ? 1 + (Math.floor(frame / 3) * 5) % 6 : 5} size={200} color={RAW} glow={0.6} />
+      <Pop at={4} out={EVEN - 6} x={540} y={430} from="up" dist={18} cfg={theme.spring.bouncy}>
+        <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 60, color: C.text, whiteSpace: "nowrap", textAlign: "center", lineHeight: 1.1 }}>
+          WHY IS THE <span style={{ color: AVG, textShadow: glowText(AVG, 0.5) }}>BELL CURVE</span>
+          <br />
+          EVERYWHERE<span style={{ color: C.yellow }}>?</span>
         </div>
-      ) : null}
-      {flatOut < 1 ? (
-        <AbsoluteFill style={{ opacity: 1 - flatOut }}>
-          {[0, 1, 2, 3, 4, 5].map((i) => (
-            <React.Fragment key={i}>
-              <div style={{ position: "absolute", left: 540 + (i - 2.5) * 140 - 56, top: 1150 - 220 * flatIn, width: 112, height: 220 * flatIn, borderRadius: "14px 14px 4px 4px", background: alpha(RAW, 0.45), border: `3px solid ${RAW}`, boxSizing: "border-box" }} />
-              <div style={{ position: "absolute", left: 540 + (i - 2.5) * 140, top: 1200, transform: `translate(-50%, -50%) scale(${spr(20 + i * 4, theme.spring.pop)})` }}>
-                <Die value={i + 1} size={70} color={RAW} />
+      </Pop>
+      <Pop at={EVEN - 2} out={CLT - 6} x={540} y={430} from="up" dist={18} cfg={theme.spring.bouncy}>
+        <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 56, color: C.text, whiteSpace: "nowrap", textAlign: "center", lineHeight: 1.1 }}>
+          EVEN WHEN THE DATA
+          <br />
+          <span style={{ color: RAW, textShadow: glowText(RAW, 0.5) }}>ISN&apos;T A BELL</span>
+          <span style={{ color: C.yellow }}>?</span>
+        </div>
+      </Pop>
+      <Bell g={G} mu={0} sigma={1} p={ease(frame, [6, 30], [0, 1], theme.ease.inOut)} color={AVG} fill={0.2} width={6} />
+      <div style={{ position: "absolute", left: G.x0 - 10, top: G.base - 2, width: G.x1 - G.x0 + 20, height: 4, borderRadius: 2, background: alpha(C.text, 0.4), opacity: ease(frame, [6, 16], [0, 1]) }} />
+      {placesOut < 1
+        ? PLACES.map((pl, i) => {
+            const p = spr(18 + i * 10, theme.spring.bouncy);
+            if (p <= 0.001) return null;
+            return (
+              <div key={pl.t} style={{ position: "absolute", left: pl.x, top: pl.y, transform: `translate(-50%, -50%) scale(${interpolate(p, [0, 1], [0.5, 1]) * (1 - placesOut * 0.2)})`, opacity: Math.min(1, p * 2) * (1 - placesOut), width: 440, height: 140, boxSizing: "border-box", borderRadius: 24, background: `linear-gradient(90deg, ${alpha(AVG, 0.16)}, rgba(14,24,64,0.9))`, border: `2px solid ${alpha(AVG, 0.6)}`, display: "flex", alignItems: "center", gap: 18, padding: "0 22px" }}>
+                <svg width={90} height={60} viewBox="0 0 90 60" style={{ flexShrink: 0 }}>
+                  <path d={`M0 58 ${Array.from({ length: 31 }, (_, k) => `L${k * 3} ${58 - 52 * Math.exp(-(((k - 15) / 5) ** 2) / 2)}`).join(" ")}`} fill="none" stroke={AVG} strokeWidth={4} />
+                </svg>
+                <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: pl.t.length > 14 ? 24 : 30, color: C.text, whiteSpace: "nowrap" }}>{pl.t}</div>
               </div>
-            </React.Fragment>
-          ))}
-          <div style={{ position: "absolute", left: 110, top: 1150, width: 860, height: 4, background: alpha(C.text, 0.4) }} />
-          <Pop at={FLAT - 2} x={540} y={830} from="up" dist={14} cfg={theme.spring.bouncy}>
-            <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 52, color: C.text, whiteSpace: "nowrap" }}>
-              ONE DICE: <span style={{ color: RAW, textShadow: glowText(RAW, 0.5) }}>FLAT</span>
-            </div>
-          </Pop>
-        </AbsoluteFill>
-      ) : null}
-
-      {/* ten dice, averaged, again and again */}
-      {frame >= TEN - 6 && rowOut < 1 ? (
-        <AbsoluteFill style={{ opacity: 1 - rowOut }}>
-          {Array.from({ length: 10 }, (_, i) => (
-            <div key={i} style={{ position: "absolute", left: 540 + (i - 4.5) * 88, top: 520, transform: `translate(-50%, -50%) scale(${spr(TEN - 4 + i * 2, theme.spring.bouncy)}) rotate(${shown > 0 ? 0 : frame * 10}deg)` }}>
-              <Die value={shown > 0 ? SAMPLES[cur][i] : 1 + ((Math.floor(frame / 3) + i) * 5) % 6} size={74} color={RAW} />
-            </div>
-          ))}
-          <Pop at={AVGW - 4} x={540} y={640} from="up" dist={12}>
-            <div style={{ fontFamily: theme.fonts.mono, fontWeight: 800, fontSize: 52, color: C.text, whiteSpace: "nowrap" }}>
-              average = <span style={{ color: MEANS, textShadow: glowText(MEANS, 0.5) }}>{AVGS[cur].toFixed(1)}</span>
-            </div>
-          </Pop>
-          <Pop at={AVGW + 20} x={540} y={720} from="up" dist={10}>
-            <div style={{ fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 24, letterSpacing: "0.2em", color: C.dim, whiteSpace: "nowrap" }}>
-              SAMPLE <span style={{ fontFamily: theme.fonts.mono, color: C.text }}>{Math.max(1, shown)}</span> OF {NS}
-            </div>
-          </Pop>
-        </AbsoluteFill>
-      ) : null}
-      {frame >= TEN - 6 ? (
-        <>
-          <div style={{ position: "absolute", left: HX0 - 10, top: BASE + 2, width: (HX1 - HX0 + 20) * ease(frame, [TEN, TEN + 14], [0, 1]), height: 4, background: alpha(C.text, 0.4) }} />
-          {[1, 2, 3, 4, 5, 6].map((v) => (
-            <div key={v} style={{ position: "absolute", left: HX0 + ((v - 1) / 5) * (HX1 - HX0), top: BASE + 32, transform: "translate(-50%, -50%)", fontFamily: theme.fonts.mono, fontWeight: 800, fontSize: 24, color: C.dim, opacity: ease(frame, [TEN + 4, TEN + 14], [0, 1]) }}>{v}</div>
-          ))}
-          {AVGS.slice(0, shown).map((a, i) => {
-            const b = binOf(a);
-            const x = HX0 + (b + 0.5) * BW;
-            const y = BASE - (SLOT[i] + 0.5) * DOT;
-            const tDrop = t0 + (i / NS) * (t1 - t0);
-            const d = ease(frame, [tDrop, tDrop + 6], [0, 1], theme.ease.in);
-            return <div key={i} style={{ position: "absolute", left: x - DOT / 2 + 1, top: interpolate(d, [0, 1], [770, y - DOT / 2]), width: DOT - 2, height: DOT - 2, borderRadius: DOT / 2, background: MEANS, boxShadow: `0 0 6px ${alpha(MEANS, 0.7)}` }} />;
-          })}
-          {bell > 0.01 ? <Bell g={g} mu={3.5} sigma={DICE_SD / Math.sqrt(10)} p={bell} color={C.text} fill={0} width={5} /> : null}
-        </>
-      ) : null}
-      {slam > 0.001 && title < 0.5 ? (
-        <div style={{ position: "absolute", left: 0, right: 0, top: 560, textAlign: "center", transform: `translateY(-50%) scale(${interpolate(slam, [0, 1], [1.7, 1])})`, opacity: Math.min(1, slam * 2) * (1 - title * 2), fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 150, letterSpacing: "-0.02em", lineHeight: 1 }}>
-          <span style={{ background: `linear-gradient(180deg, #FFFFFF, ${MEANS})`, WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent", filter: `drop-shadow(0 0 26px ${alpha(MEANS, 0.55)})` }}>A BELL!</span>
-        </div>
-      ) : null}
-      <Burst at={BELLW} x={540} y={1000} color={MEANS} count={22} radius={340} seed={7} />
+            );
+          })
+        : null}
+      {/* data that isn't a bell */}
+      {frame >= EVEN - 4 && oddOut < 1
+        ? [0, 1, 2].map((k) => {
+            const p = spr(EVEN + 4 + k * 8, theme.spring.bouncy);
+            return (
+              <div key={k} style={{ opacity: Math.min(1, p * 2) * (1 - oddOut), transform: `translateY(${(1 - p) * 30}px)` }}>
+                <MiniShape kind={k} x={220 + k * 320} y={1140} w={220} h={130} color={RAW} p={p} />
+                <div style={{ position: "absolute", left: 220 + k * 320 + 90, top: 1040, width: 44, height: 44, borderRadius: 22, background: C.yellow, color: C.ink, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 30, transform: `scale(${p})` }}>?</div>
+              </div>
+            );
+          })
+        : null}
       {title > 0.001 ? (
-        <div style={{ position: "absolute", left: 0, right: 0, top: 540, textAlign: "center", transform: `translateY(-50%) scale(${interpolate(title, [0, 1], [1.5, 1])})`, opacity: Math.min(1, title * 2), fontFamily: theme.fonts.display, fontWeight: 800, lineHeight: 1.02, letterSpacing: "-0.02em" }}>
+        <div style={{ position: "absolute", left: 0, right: 0, top: 440, textAlign: "center", transform: `translateY(-50%) scale(${interpolate(title, [0, 1], [1.5, 1])})`, opacity: Math.min(1, title * 2), fontFamily: theme.fonts.display, fontWeight: 800, lineHeight: 1.02, letterSpacing: "-0.02em" }}>
           <div style={{ fontSize: 80, color: C.text }}>THE CENTRAL</div>
-          <div style={{ fontSize: 96, background: `linear-gradient(90deg, ${MEANS}, ${RAW})`, WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent", filter: `drop-shadow(0 0 24px ${alpha(MEANS, 0.5)})`, whiteSpace: "nowrap" }}>LIMIT THEOREM</div>
+          <div style={{ fontSize: 96, background: `linear-gradient(90deg, ${AVG}, ${SAMP})`, WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent", filter: `drop-shadow(0 0 24px ${alpha(AVG, 0.5)})`, whiteSpace: "nowrap" }}>LIMIT THEOREM</div>
         </div>
       ) : null}
+      <Burst at={CLT} x={540} y={440} color={AVG} count={22} radius={340} seed={7} />
+      <Pop at={CLT + 14} x={540} y={1120} from="up" dist={16} cfg={theme.spring.bouncy}>
+        <div style={{ fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 28, letterSpacing: "0.2em", color: C.dim, whiteSpace: "nowrap" }}>EXPLAINED SIMPLY</div>
+      </Pop>
     </AbsoluteFill>
   );
 };

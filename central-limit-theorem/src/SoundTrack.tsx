@@ -33,104 +33,94 @@ const useHits = (): Hit[] => {
     return (rel: number, file: string, vol: number) => hits.push({ at: base + rel - 2, file, vol });
   };
 
-  // S1 — hook: one dice flat; ten dice averaged again and again → a bell
+  // S1 — hook
   {
     const s = sceneTiming(fps, "s1");
     const h = at("s1");
-    const FLAT = s.cueS(0, "flat."), TEN = s.sent(1).from, AVGW = s.cueS(1, "average."), BELLW = s.sent(2).from, CLT = s.cueS(3, "Central");
-    h(2, "whoosh.wav", 0.18);
-    for (let i = 0; i < 8; i++) h(6 + i * 5, "tick.wav", 0.12);
-    h(FLAT - 22, "clink.wav", 0.24);
-    h(FLAT - 8, "glide.wav", 0.22);
-    for (let i = 0; i < 5; i++) h(TEN - 4 + i * 4, "tick.wav", 0.12);
-    const t0 = AVGW - 4, t1 = BELLW - 6;
-    for (let i = 0; i < 18; i++) h(t0 + (i / 18) * (t1 - t0), "tick.wav", 0.09);
-    h(BELLW - 10, "whoosh.wav", 0.3);
-    h(BELLW - 4, "impact.wav", 0.42);
-    h(CLT - 10, "sparkle.wav", 0.28);
-    h(CLT + 6, "chime.wav", 0.22);
+    h(4, "whoosh.wav", 0.18);
+    [0, 1, 2, 3].forEach((i) => h(16 + i * 10, "pop.wav", 0.18));
+    h(s.sent(1).from - 8, "glitch.wav", 0.18);
+    [0, 1, 2].forEach((i) => h(s.sent(1).from + 2 + i * 8, "pop.wav", 0.18));
+    const CLT = s.cueS(2, "Central");
+    h(CLT - 12, "whoosh.wav", 0.3);
+    h(CLT - 6, "impact.wav", 0.42);
+    h(CLT + 12, "chime.wav", 0.22);
   }
-  // S2 — what it says
+  // S2 — the definition, line by line
   {
     const s = sceneTiming(fps, "s2");
     const h = at("s2");
-    [s.cueS(0, "samples,"), s.cueS(0, "mean"), s.sent(1).from].forEach((f, i) => h(f - 10, `step${i + 1}.wav`, 0.24));
-    h(s.cueS(1, "normal") - 8, "ding.wav", 0.24);
-    [0, 5, 10].forEach((d) => h(s.sent(2).from - 6 + d, "pop.wav", 0.18));
-    h(s.sent(2).from + 12, "glide.wav", 0.22);
+    h(s.sent(0).from - 2, "sparkle.wav", 0.22);
+    [s.cueS(1, "many"), s.cueS(1, "average"), s.cueS(2, "bell"), s.cueS(2, "even"), s.cueS(3, "30")].forEach((f, i) => h(f - 10, `blip${i + 1}.wav`, 0.24));
+    h(s.duration - 30, "ding.wav", 0.26);
   }
-  // S3 — watch it build
+  // S3 — the example
   {
     const s = sceneTiming(fps, "s3");
     const h = at("s3");
-    [0, 1, 2, 3].forEach((i) => {
-      h(s.sent(i).from - 8, "pop.wav", 0.26);
-      h(s.sent(i).from + 4, `blip${i + 2}.wav`, 0.18);
-    });
-    h(s.cueS(3, "bell,") - 8, "ding.wav", 0.26);
+    h(s.sent(1).from - 6, "whoosh.wav", 0.2);
+    for (let i = 0; i < 8; i++) h(s.sent(1).from + i * 4, "tick.wav", 0.1);
+    h(s.cueS(2, "little,") - 8, "pop.wav", 0.24);
+    h(s.cueS(2, "lot.") - 8, "pop.wav", 0.24);
+    h(s.cueS(3, "skewed,") - 8, "stamp.wav", 0.36);
   }
-  // S4 — any shape
+  // S4 — step by step
   {
     const s = sceneTiming(fps, "s4");
     const h = at("s4");
-    h(s.sent(0).from - 6, "pop.wav", 0.26);
-    h(s.sent(1).from - 8, "whoosh.wav", 0.22);
-    h(s.cueS(1, "tail") - 6, "glide.wav", 0.22);
-    h(s.sent(2).from - 6, "whoosh.wav", 0.22);
-    h(s.cueS(2, "bell") - 8, "ding.wav", 0.28);
+    const S2 = s.sent(1).from, S3 = s.sent(2).from, PLOT = s.cueS(2, "plot"), LOOK = s.sent(3).from;
+    h(s.sent(0).from - 8, "step1.wav", 0.24);
+    for (let i = 0; i < 6; i++) h(s.cueS(0, "pick") + i * 4, "tick.wav", 0.1);
+    h(s.cueS(0, "average") - 6, "glide.wav", 0.22);
+    h(S2 - 22, "hop.wav", 0.24);
+    h(S2 - 8, "step2.wav", 0.24);
+    h(s.cueS(1, "average.") - 6, "glide.wav", 0.22);
+    h(S3 - 22, "hop.wav", 0.24);
+    h(S3 - 8, "step3.wav", 0.24);
+    const span = Math.max(30, PLOT + 40 - S3 - 16);
+    for (let i = 0; i < 16; i++) h(S3 + 16 + (i / 16) * span, "tick.wav", 0.09);
+    h(LOOK - 8, "tada.wav", 0.32);
+    h(LOOK + 6, "sparkle.wav", 0.2);
   }
-  // S5 — two rules
+  // S5 — why it happens
   {
     const s = sceneTiming(fps, "s5");
     const h = at("s5");
-    h(s.cueS(0, "true") - 8, "pop.wav", 0.26);
-    h(s.sent(1).from + 2, "glide.wav", 0.22);
-    h(s.cueS(1, "narrower.") - 6, "glide.wav", 0.22);
-    h(s.sent(2).from - 6, "pop.wav", 0.26);
-    h(s.cueS(2, "square") - 8, "click.wav", 0.22);
-    h(s.sent(3).from - 6, "ding.wav", 0.26);
+    h(s.sent(0).from - 6, "pop.wav", 0.26);
+    [0, 1, 2].forEach((r) => h(s.sent(1).from + 2 + r * 10, "shuffle.wav", 0.14));
+    h(s.cueS(1, "huge") - 6, "glitch.wav", 0.16);
+    [0, 1, 2].forEach((r) => h(s.sent(2).from + 4 + r * 8, "pop.wav", 0.22));
+    h(s.cueS(2, "middle.") - 8, "ding.wav", 0.24);
   }
-  // S6 — why it matters
+  // S6 — two bonus facts
   {
     const s = sceneTiming(fps, "s6");
     const h = at("s6");
-    h(s.sent(0).from - 6, "whoosh.wav", 0.2);
-    h(s.cueS(1, "polls") - 8, "pop.wav", 0.28);
-    h(s.cueS(1, "margin") - 6, "click.wav", 0.2);
-    h(s.cueS(1, "scientists") - 8, "pop.wav", 0.28);
-    h(s.cueS(1, "real.") - 6, "ding.wav", 0.24);
+    h(8, "whoosh.wav", 0.18);
+    h(s.cueS(1, "true") - 8, "glide.wav", 0.22);
+    h(s.cueS(2, "narrower,") - 8, "glide.wav", 0.22);
+    h(s.cueS(2, "precise.") - 8, "ding.wav", 0.24);
   }
-  // S7 — big enough
+  // S7 — remember
   {
     const s = sceneTiming(fps, "s7");
     const h = at("s7");
-    const T30 = s.cueS(0, "30.");
-    for (let i = 0; i < 10; i++) h(s.sent(0).from + i * ((T30 - s.sent(0).from) / 10), "tick.wav", 0.1);
-    h(T30 - 6, "ding.wav", 0.28);
-    h(s.sent(1).from - 6, "pop.wav", 0.24);
+    h(s.sent(0).from - 2, "sparkle.wav", 0.24);
+    [s.cueS(1, "Many"), s.cueS(1, "one"), s.cueS(1, "bell")].forEach((f, k) => h(f - 10, `step${k + 1}.wav`, 0.24));
+    h(s.cueS(1, "whatever") - 6, "pop.wav", 0.2);
+    h(s.sent(2).from - 4, "whoosh.wav", 0.2);
+    h(s.cueS(2, "country.") - 8, "ding.wav", 0.24);
   }
-  // S8 — complete picture
+  // S8 — quiz, teaser, CTA
   {
     const s = sceneTiming(fps, "s8");
     const h = at("s8");
-    h(s.sent(0).from - 2, "sparkle.wav", 0.25);
-    [s.sent(1).from, s.sent(2).from, s.sent(3).from].forEach((f, k) => {
-      h(f - 10, `blip${k * 2 + 1}.wav`, 0.26);
-      h(f + 12, "click.wav", 0.18);
-    });
-    h(s.duration - 10, "whoosh.wav", 0.28);
-  }
-  // S9 — quiz, teaser, CTA
-  {
-    const s = sceneTiming(fps, "s9");
-    const h = at("s9");
-    const QQ = s.sent(0).from, H = s.sent(1).from, W7 = s.cueS(1, "7"), W49 = s.cueS(1, "49"), AVGW = s.cueS(2, "averages?"), QEND = s.sent(2).to, CD0 = QEND + Math.round(0.2 * fps), ANS = s.sent(3).from;
-    const WHY = s.sent(4).from, ROOT = s.cueS(4, "square"), GIVES = s.cueS(4, "gives"), TZ = s.sent(5).from, FUTURE = s.cueS(5, "future"), FOL = s.sent(6).from, FOLW = s.cueS(6, "Follow"), SIMPLE = s.cueS(6, "simple!");
+    const QQ = s.sent(0).from, SKEW = s.cueS(1, "skewed."), W50 = s.cueS(1, "50,"), SHAPE = s.cueS(2, "shape"), QEND = s.sent(2).to, CD0 = QEND + Math.round(0.2 * fps), ANS = s.sent(3).from;
+    const WHY = s.sent(4).from, WHATEVER = s.cueS(4, "whatever"), TZ = s.sent(5).from, FUTURE = s.cueS(5, "future"), FOL = s.sent(6).from, FOLW = s.cueS(6, "Follow"), SIMPLE = s.cueS(6, "simple!");
     h(QQ - 4, "pop.wav", 0.4);
-    h(H - 2, "glide.wav", 0.2);
-    h(W7 - 8, "pop.wav", 0.26);
-    h(W49 - 8, "pop.wav", 0.26);
-    h(AVGW - 8, "pop.wav", 0.3);
+    h(SKEW - 8, "glide.wav", 0.2);
+    h(W50 - 8, "pop.wav", 0.26);
+    h(SHAPE - 8, "pop.wav", 0.3);
     [0, 1, 2, 3].forEach((i) => h(QEND - 6 + i * 4, "pop.wav", 0.22));
     [0, 1, 2, 3, 4].forEach((k) => h(CD0 + k * fps + 2, "beep.wav", 0.42));
     h(CD0 + 5 * fps + 2, "beep-hi.wav", 0.45);
@@ -139,8 +129,7 @@ const useHits = (): Hit[] => {
     h(ANS + 2, "ding.wav", 0.3);
     [0, 2, 3].forEach((i) => h(ANS + 8 + i * 4, "stamp.wav", 0.18));
     h(WHY - 4, "glide.wav", 0.24);
-    h(ROOT - 8, "pop.wav", 0.26);
-    h(GIVES - 6, "ding.wav", 0.24);
+    h(WHATEVER - 8, "pop.wav", 0.26);
     h(TZ - 10, "whoosh.wav", 0.3);
     h(FUTURE - 8, "sparkle.wav", 0.28);
     [0, 1, 2, 3].forEach((i) => h(FUTURE + 8 + i * 6, "pop.wav", 0.2));

@@ -5,31 +5,29 @@ import { Backdrop, Grade, Grain, Vignette } from "./components/Backdrop";
 import { Captions } from "./components/Captions";
 import { ease } from "./components/Motion";
 import { S1Hook } from "./scenes/S1Hook";
-import { S2What } from "./scenes/S2What";
-import { S3Build } from "./scenes/S3Build";
-import { S4AnyShape } from "./scenes/S4AnyShape";
-import { S5Rules } from "./scenes/S5Rules";
-import { S6Why } from "./scenes/S6Why";
-import { S7Enough } from "./scenes/S7Enough";
-import { S8Recap } from "./scenes/S8Recap";
-import { S9Quiz } from "./scenes/S9Quiz";
+import { S2Definition } from "./scenes/S2Definition";
+import { S3Example } from "./scenes/S3Example";
+import { S4Steps } from "./scenes/S4Steps";
+import { S5Why } from "./scenes/S5Why";
+import { S6Facts } from "./scenes/S6Facts";
+import { S7Remember } from "./scenes/S7Remember";
+import { S8Quiz } from "./scenes/S8Quiz";
 import { SoundTrack } from "./SoundTrack";
 import { theme } from "./theme";
 import { SCENE_IDS, sceneRange, SceneId, totalFrames } from "./timing";
 
 const C = theme.colors;
-const SCENES: Record<string, React.FC> = { s1: S1Hook, s2: S2What, s3: S3Build, s4: S4AnyShape, s5: S5Rules, s6: S6Why, s7: S7Enough, s8: S8Recap, s9: S9Quiz };
-// backdrop tints + caption accent: cyan = raw dice data, green = sample means / the bell, violet = spread, orange = skewed data
+const SCENES: Record<string, React.FC> = { s1: S1Hook, s2: S2Definition, s3: S3Example, s4: S4Steps, s5: S5Why, s6: S6Facts, s7: S7Remember, s8: S8Quiz };
+// backdrop tints + caption accent: green = averages / the bell, cyan = samples, orange = skewed salaries, violet = precision
 const LOOK: Record<string, { a: string; b: string; accent: string }> = {
-  s1: { a: C.cyan, b: C.green, accent: C.green },
+  s1: { a: C.green, b: C.orange, accent: C.green },
   s2: { a: C.green, b: C.cyan, accent: C.green },
-  s3: { a: C.cyan, b: C.green, accent: C.cyan },
-  s4: { a: C.orange, b: C.green, accent: C.orange },
-  s5: { a: C.green, b: C.violet, accent: C.violet },
-  s6: { a: C.green, b: C.cyan, accent: C.green },
-  s7: { a: C.orange, b: C.green, accent: C.green },
-  s8: { a: C.green, b: C.violet, accent: C.green },
-  s9: { a: C.green, b: C.violet, accent: C.yellow },
+  s3: { a: C.orange, b: C.cyan, accent: C.orange },
+  s4: { a: C.cyan, b: C.green, accent: C.cyan },
+  s5: { a: C.orange, b: C.green, accent: C.green },
+  s6: { a: C.green, b: C.violet, accent: C.violet },
+  s7: { a: C.green, b: C.cyan, accent: C.green },
+  s8: { a: C.green, b: C.violet, accent: C.yellow },
 };
 
 const useLook = () => {

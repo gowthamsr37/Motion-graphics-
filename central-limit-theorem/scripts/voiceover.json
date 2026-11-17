@@ -9,101 +9,91 @@
       "lead": 0.45,
       "hold": 1.0,
       "segments": [
-        { "text": "Roll one dice, and every number is equally likely. The shape is flat.", "caption": "Roll one dice, and every number is equally likely. The shape is flat.", "pause": 0.4 },
-        { "text": "Now roll ten dice and take their average. Again, and again.", "caption": "Now roll ten dice and take their average. Again, and again.", "pause": 0.4 },
-        { "text": "The averages make a bell!", "caption": "The averages make a bell!", "pause": 0.4 },
-        { "text": "That's the Central Limit Theorem.", "caption": "That's the Central Limit Theorem.", "pause": 0.3 }
+        { "text": "Why does the bell curve show up everywhere?", "caption": "Why does the bell curve show up everywhere?", "pause": 0.35 },
+        { "text": "Even when the data isn't shaped like a bell?", "caption": "Even when the data isn't shaped like a bell?", "pause": 0.45 },
+        { "text": "The answer is the Central Limit Theorem.", "caption": "The answer is the Central Limit Theorem.", "pause": 0.3 }
       ]
     },
     {
       "id": "s2",
-      "title": "What it says",
+      "title": "The definition",
       "lead": 0.45,
-      "hold": 0.9,
+      "hold": 1.2,
       "segments": [
-        { "text": "Take many samples, and find the mean of each one.", "caption": "Take many samples, and find the mean of each one.", "pause": 0.35 },
-        { "text": "Plot those means, and they form a normal distribution.", "caption": "Plot those means, and they form a normal distribution.", "pause": 0.35 },
-        { "text": "Even when the original data isn't normal at all.", "caption": "Even when the original data isn't normal at all.", "pause": 0.3 }
+        { "text": "Here's what it says, in simple words.", "caption": "Here's what it says, in simple words.", "pause": 0.35 },
+        { "text": "Take many random samples, and find the average of each one.", "caption": "Take many random samples, and find the average of each one.", "pause": 0.4 },
+        { "text": "Those averages will form a bell curve, even if the original data isn't a bell.", "caption": "Those averages will form a bell curve, even if the original data isn't a bell.", "pause": 0.4 },
+        { "text": "You just need big enough samples, usually thirty or more.", "caption": "You just need big enough samples, usually 30 or more.", "pause": 0.3 }
       ]
     },
     {
       "id": "s3",
-      "title": "Watch it build",
+      "title": "The example",
       "lead": 0.45,
-      "hold": 1.0,
+      "hold": 0.9,
       "segments": [
-        { "text": "One dice is flat.", "caption": "One dice is flat.", "pause": 0.3 },
-        { "text": "The average of two dice? A triangle, peaking at three point five.", "caption": "The average of two dice? A triangle, peaking at 3.5.", "pause": 0.35 },
-        { "text": "Five dice? Rounder.", "caption": "Five dice? Rounder.", "pause": 0.35 },
-        { "text": "Thirty dice? A clean bell, centred on three point five.", "caption": "Thirty dice? A clean bell, centred on 3.5.", "pause": 0.3 }
+        { "text": "Let's see it with an example.", "caption": "Let's see it with an example.", "pause": 0.3 },
+        { "text": "Here are the salaries in a city.", "caption": "Here are the salaries in a city.", "pause": 0.35 },
+        { "text": "Most people earn a little, and a few earn a lot.", "caption": "Most people earn a little, and a few earn a lot.", "pause": 0.35 },
+        { "text": "So the data is skewed, not a bell.", "caption": "So the data is skewed, not a bell.", "pause": 0.3 }
       ]
     },
     {
       "id": "s4",
-      "title": "Any shape",
+      "title": "Step by step",
       "lead": 0.45,
       "hold": 1.0,
       "segments": [
-        { "text": "It works for skewed data too.", "caption": "It works for skewed data too.", "pause": 0.3 },
-        { "text": "Waiting times at a bus stop have a long tail to the right.", "caption": "Waiting times at a bus stop have a long tail to the right.", "pause": 0.35 },
-        { "text": "But the averages of thirty waiting times? A bell again.", "caption": "But the averages of thirty waiting times? A bell again.", "pause": 0.3 }
+        { "text": "Step one: pick thirty people at random, and find their average salary.", "caption": "Step 1: pick 30 people at random, and find their average salary.", "pause": 0.45 },
+        { "text": "Step two: pick another thirty, and find their average.", "caption": "Step 2: pick another 30, and find their average.", "pause": 0.45 },
+        { "text": "Step three: repeat this again and again, and plot every average.", "caption": "Step 3: repeat this again and again, and plot every average.", "pause": 0.5 },
+        { "text": "Look! The averages form a bell curve.", "caption": "Look! The averages form a bell curve.", "pause": 0.3 }
       ]
     },
     {
       "id": "s5",
-      "title": "Two rules",
+      "title": "Why it happens",
       "lead": 0.45,
-      "hold": 1.0,
+      "hold": 0.9,
       "segments": [
-        { "text": "The bell is centred on the true mean.", "caption": "The bell is centred on the true mean.", "pause": 0.35 },
-        { "text": "And bigger samples make it narrower.", "caption": "And bigger samples make it narrower.", "pause": 0.35 },
-        { "text": "Its spread is the standard deviation, divided by the square root of n.", "caption": "Its spread is the standard deviation, divided by the square root of n.", "pause": 0.35 },
-        { "text": "That's called the standard error.", "caption": "That's called the standard error.", "pause": 0.3 }
+        { "text": "Why does this happen?", "caption": "Why does this happen?", "pause": 0.3 },
+        { "text": "In a random group of thirty, the few huge salaries get mixed with many ordinary ones.", "caption": "In a random group of 30, the few huge salaries get mixed with many ordinary ones.", "pause": 0.35 },
+        { "text": "So the extremes cancel out, and most averages land near the middle.", "caption": "So the extremes cancel out, and most averages land near the middle.", "pause": 0.3 }
       ]
     },
     {
       "id": "s6",
-      "title": "Why it matters",
+      "title": "Two bonus facts",
       "lead": 0.45,
       "hold": 0.9,
       "segments": [
-        { "text": "That's why the normal distribution shows up everywhere.", "caption": "That's why the normal distribution shows up everywhere.", "pause": 0.35 },
-        { "text": "It's how polls get their margin of error, and how scientists test if a result is real.", "caption": "It's how polls get their margin of error, and how scientists test if a result is real.", "pause": 0.3 }
+        { "text": "Two bonus facts.", "caption": "Two bonus facts.", "pause": 0.3 },
+        { "text": "The bell is centred on the true average of the whole city.", "caption": "The bell is centred on the true average of the whole city.", "pause": 0.35 },
+        { "text": "And bigger samples make it narrower, so your estimate gets more precise.", "caption": "And bigger samples make it narrower, so your estimate gets more precise.", "pause": 0.3 }
       ]
     },
     {
       "id": "s7",
-      "title": "How big is big enough",
+      "title": "Remember",
       "lead": 0.45,
-      "hold": 0.9,
+      "hold": 1.0,
       "segments": [
-        { "text": "How big is big enough? A common rule of thumb is thirty.", "caption": "How big is big enough? A common rule of thumb is 30.", "pause": 0.35 },
-        { "text": "Very skewed data may need more.", "caption": "Very skewed data may need more.", "pause": 0.3 }
+        { "text": "So remember the Central Limit Theorem.", "caption": "So remember the Central Limit Theorem.", "pause": 0.3 },
+        { "text": "Many samples, one average each, and those averages make a bell curve, whatever the original shape.", "caption": "Many samples, one average each, and those averages make a bell curve, whatever the original shape.", "pause": 0.4 },
+        { "text": "That's why a survey of a few thousand people can describe a whole country.", "caption": "That's why a survey of a few thousand people can describe a whole country.", "pause": 0.3 }
       ]
     },
     {
       "id": "s8",
-      "title": "The complete picture",
-      "lead": 0.45,
-      "hold": 1.0,
-      "segments": [
-        { "text": "Here's the complete picture.", "caption": "Here's the complete picture.", "pause": 0.3 },
-        { "text": "Take many samples, and plot their means.", "caption": "Take many samples, and plot their means.", "pause": 0.35 },
-        { "text": "They form a bell around the true mean, whatever the original shape.", "caption": "They form a bell around the true mean, whatever the original shape.", "pause": 0.35 },
-        { "text": "And bigger samples make that bell narrower.", "caption": "And bigger samples make that bell narrower.", "pause": 0.3 }
-      ]
-    },
-    {
-      "id": "s9",
       "title": "Quiz, teaser and CTA",
       "lead": 0.35,
       "hold": 1.35,
       "segments": [
         { "text": "Quick quiz!", "caption": "Quick quiz!", "pause": 0.3 },
-        { "text": "Heights have a standard deviation of seven centimetres. You average samples of forty-nine people.", "caption": "Heights have a standard deviation of 7 centimetres. You average samples of 49 people.", "pause": 0.35 },
-        { "text": "What's the spread of those averages?", "caption": "What's the spread of those averages?", "pause": 5.7 },
-        { "text": "One centimetre!", "caption": "1 centimetre!", "pause": 0.35 },
-        { "text": "Seven, divided by the square root of forty-nine, which is seven, gives one.", "caption": "7, divided by the square root of 49, which is 7, gives 1.", "pause": 0.4 },
+        { "text": "Some data is very skewed. You take many samples of fifty, and plot their averages.", "caption": "Some data is very skewed. You take many samples of 50, and plot their averages.", "pause": 0.35 },
+        { "text": "What shape will you see?", "caption": "What shape will you see?", "pause": 5.7 },
+        { "text": "A bell curve!", "caption": "A bell curve!", "pause": 0.35 },
+        { "text": "With big enough samples, the averages form a bell, whatever the original shape.", "caption": "With big enough samples, the averages form a bell, whatever the original shape.", "pause": 0.4 },
         { "text": "In future videos, we'll explore other kinds of distributions.", "caption": "In future videos, we'll explore other kinds of distributions.", "pause": 0.4 },
         { "text": "Follow for data science made simple!", "caption": "Follow for data science made simple!", "pause": 0.3 }
       ]
