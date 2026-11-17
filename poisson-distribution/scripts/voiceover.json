@@ -1,0 +1,240 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "A chai stall gets four customers an hour, on average.",
+          "caption": "A chai stall gets 4 customers an hour, on average.",
+          "pause": 0.4
+        },
+        {
+          "text": "What's the chance of ten customers in one hour?",
+          "caption": "What's the chance of 10 customers in one hour?",
+          "pause": 0.4
+        },
+        {
+          "text": "The Poisson distribution answers that.",
+          "caption": "The Poisson distribution answers that.",
+          "pause": 0.3,
+          "fix": [
+            [
+              "pˈɔɪsən",
+              "pwɑːsˈoʊn"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The definition",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Here's the definition, in simple words.",
+          "caption": "Here's the definition, in simple words.",
+          "pause": 0.35
+        },
+        {
+          "text": "The Poisson distribution counts how many times something happens in a fixed stretch of time or space.",
+          "caption": "The Poisson distribution counts how many times something happens in a fixed stretch of time or space.",
+          "pause": 0.4,
+          "fix": [
+            [
+              "pˈɔɪsən",
+              "pwɑːsˈoʊn"
+            ]
+          ]
+        },
+        {
+          "text": "The events happen at random, at a steady average rate.",
+          "caption": "The events happen at random, at a steady average rate.",
+          "pause": 0.35
+        },
+        {
+          "text": "And that one number, the average, is all it needs.",
+          "caption": "And that one number, the average, is all it needs.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Hour by hour",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Watch the stall, hour by hour.",
+          "caption": "Watch the stall, hour by hour.",
+          "pause": 0.3
+        },
+        {
+          "text": "Customers arrive at random moments.",
+          "caption": "Customers arrive at random moments.",
+          "pause": 0.35
+        },
+        {
+          "text": "This hour, three. Next hour, five. Then four, then two.",
+          "caption": "This hour, three. Next hour, five. Then four, then two.",
+          "pause": 0.4
+        },
+        {
+          "text": "Count many hours, and a shape appears.",
+          "caption": "Count many hours, and a shape appears.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "The shape",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Here's the shape for an average of four.",
+          "caption": "Here's the shape for an average of 4.",
+          "pause": 0.35
+        },
+        {
+          "text": "Three and four are the most likely, about twenty percent each.",
+          "caption": "3 and 4 are the most likely, about 20% each.",
+          "pause": 0.35
+        },
+        {
+          "text": "Zero customers? About two percent.",
+          "caption": "Zero customers? About 2%.",
+          "pause": 0.35
+        },
+        {
+          "text": "Ten in an hour? Only about one in two hundred.",
+          "caption": "10 in an hour? Only about one in two hundred.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Change the rate",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Change the average, and the shape changes.",
+          "caption": "Change the average, and the shape changes.",
+          "pause": 0.35
+        },
+        {
+          "text": "One an hour: mostly zero or one.",
+          "caption": "1 an hour: mostly zero or one.",
+          "pause": 0.35
+        },
+        {
+          "text": "Fifteen an hour: wider, and almost a bell.",
+          "caption": "15 an hour: wider, and almost a bell.",
+          "pause": 0.3,
+          "fix": [
+            [
+              "fˈɪftiːn",
+              "fɪftˈiːn"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Where it's used",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        {
+          "text": "It's used everywhere.",
+          "caption": "It's used everywhere.",
+          "pause": 0.3
+        },
+        {
+          "text": "Calls to a help desk, website visits per minute, typos on a page, or goals in a match.",
+          "caption": "Calls to a help desk, website visits per minute, typos on a page, or goals in a match.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Remember",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "So remember: Poisson counts events in a fixed stretch of time or space, happening at random at a steady rate.",
+          "caption": "So remember: Poisson counts events in a fixed stretch of time or space, happening at random at a steady rate.",
+          "pause": 0.35,
+          "fix": [
+            [
+              "pˈɔɪsən",
+              "pwɑːsˈoʊn"
+            ]
+          ]
+        },
+        {
+          "text": "Give it the average, and it tells you the chance of any count.",
+          "caption": "Give it the average, and it tells you the chance of any count.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Quiz, teaser and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        {
+          "text": "Quick quiz!",
+          "caption": "Quick quiz!",
+          "pause": 0.3
+        },
+        {
+          "text": "A help desk gets three calls an hour, on average.",
+          "caption": "A help desk gets 3 calls an hour, on average.",
+          "pause": 0.35
+        },
+        {
+          "text": "How many calls do you expect in four hours?",
+          "caption": "How many calls do you expect in 4 hours?",
+          "pause": 5.7
+        },
+        {
+          "text": "Twelve!",
+          "caption": "12!",
+          "pause": 0.35
+        },
+        {
+          "text": "The average grows with time: three an hour, times four hours, is twelve.",
+          "caption": "The average grows with time: 3 an hour, times 4 hours, is 12.",
+          "pause": 0.4
+        },
+        {
+          "text": "Next: how long until the next event? That's the exponential distribution.",
+          "caption": "Next: how long until the next event? That's the exponential distribution.",
+          "pause": 0.4
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "You guess every answer on a ten-question true or false test.",
+          "caption": "You guess every answer on a 10-question true or false test.",
+          "pause": 0.4
+        },
+        {
+          "text": "What's the chance you get seven right?",
+          "caption": "What's the chance you get 7 right?",
+          "pause": 0.4
+        },
+        {
+          "text": "The binomial distribution tells you.",
+          "caption": "The binomial distribution tells you.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The definition",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Here's the definition, in simple words.",
+          "caption": "Here's the definition, in simple words.",
+          "pause": 0.35
+        },
+        {
+          "text": "The binomial distribution counts the successes in a fixed number of tries.",
+          "caption": "The binomial distribution counts the successes in a fixed number of tries.",
+          "pause": 0.4
+        },
+        {
+          "text": "Each try has two outcomes, like right or wrong.",
+          "caption": "Each try has two outcomes, like right or wrong.",
+          "pause": 0.35
+        },
+        {
+          "text": "And the chance of success is the same every time.",
+          "caption": "And the chance of success is the same every time.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Three coin flips",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Let's start small. Flip a coin three times, and count the heads.",
+          "caption": "Let's start small. Flip a coin three times, and count the heads.",
+          "pause": 0.35
+        },
+        {
+          "text": "There are eight possible results.",
+          "caption": "There are eight possible results.",
+          "pause": 0.35
+        },
+        {
+          "text": "Zero heads happens one way. One head, three ways. Two heads, three ways. Three heads, one way.",
+          "caption": "Zero heads happens one way. One head, three ways. Two heads, three ways. Three heads, one way.",
+          "pause": 0.4
+        },
+        {
+          "text": "That's a binomial shape.",
+          "caption": "That's a binomial shape.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "The test",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Back to the test: ten tries, each a fifty-fifty guess.",
+          "caption": "Back to the test: 10 tries, each a 50-50 guess.",
+          "pause": 0.4
+        },
+        {
+          "text": "Five right is the most likely, about one time in four.",
+          "caption": "5 right is the most likely, about one time in four.",
+          "pause": 0.35
+        },
+        {
+          "text": "Seven right? About twelve percent.",
+          "caption": "7 right? About 12%.",
+          "pause": 0.35
+        },
+        {
+          "text": "All ten right? Less than one in a thousand.",
+          "caption": "All 10 right? Less than one in a thousand.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Change the chance",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Now change the chance.",
+          "caption": "Now change the chance.",
+          "pause": 0.3
+        },
+        {
+          "text": "If each question has five options, a guess is right only one time in five.",
+          "caption": "If each question has five options, a guess is right only one time in five.",
+          "pause": 0.4
+        },
+        {
+          "text": "The bars shift left. Two right is now the most likely.",
+          "caption": "The bars shift left. 2 right is now the most likely.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "The average",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        {
+          "text": "The average is simple: tries times chance.",
+          "caption": "The average is simple: tries times chance.",
+          "pause": 0.35
+        },
+        {
+          "text": "Ten times one half is five. Ten times one fifth is two.",
+          "caption": "10 times 1/2 is 5. 10 times 1/5 is 2.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Remember",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "So remember: binomial counts successes in a fixed number of tries, each with the same chance.",
+          "caption": "So remember: binomial counts successes in a fixed number of tries, each with the same chance.",
+          "pause": 0.35
+        },
+        {
+          "text": "Its average is tries times chance.",
+          "caption": "Its average is tries times chance.",
+          "pause": 0.35
+        },
+        {
+          "text": "It's used for defective products, ad clicks, and penalty shots.",
+          "caption": "It's used for defective products, ad clicks, and penalty shots.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Quiz, teaser and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        {
+          "text": "Quick quiz!",
+          "caption": "Quick quiz!",
+          "pause": 0.3
+        },
+        {
+          "text": "A player scores eighty percent of her penalties. She takes ten.",
+          "caption": "A player scores 80% of her penalties. She takes 10.",
+          "pause": 0.35
+        },
+        {
+          "text": "On average, how many will she score?",
+          "caption": "On average, how many will she score?",
+          "pause": 5.7
+        },
+        {
+          "text": "Eight!",
+          "caption": "8!",
+          "pause": 0.35
+        },
+        {
+          "text": "Ten tries times zero point eight is eight.",
+          "caption": "10 tries times 0.8 is 8.",
+          "pause": 0.4
+        },
+        {
+          "text": "Next, we'll count events in time, with the Poisson distribution.",
+          "caption": "Next, we'll count events in time, with the Poisson distribution.",
+          "pause": 0.4,
+          "fix": [
+            [
+              "pˈɔɪsən",
+              "pwɑːsˈoʊn"
+            ]
+          ]
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}
