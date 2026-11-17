@@ -121,3 +121,7 @@ npx remotion studio src/index.ts
 ```
 
 The 3D scenes are WebGL. Without a GPU, render with `--gl=swangle`, as `build.sh` does.
+
+`build.sh` renders the picture in four muted chunks, so an interrupted render can resume. It then mixes the sound once with `scripts/mix-audio.py`, which matches the mix in `src/Main.tsx`: narration, score ducked under the voice, and effects. Finally it muxes the two.
+
+On a 4-core CPU with software WebGL, the full render takes about 70 minutes.
