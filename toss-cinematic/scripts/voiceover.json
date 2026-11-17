@@ -1,0 +1,309 @@
+{
+ "voice": "hm_omega",
+ "lang": "en-gb",
+ "speed": 1.14,
+ "fix": [
+  [
+   "ˌəʊdˌiːˈaɪz",
+   "ˌoʊdˌiːˈaɪz"
+  ],
+  [
+   "wˈɒn",
+   "wˈʌn"
+  ],
+  [
+   "əʊ",
+   "oʊ"
+  ],
+  [
+   "ɒ",
+   "ɔ"
+  ],
+  [
+   "re:ˈa(?![ɪʊ])",
+   "ˈæ"
+  ],
+  [
+   "bˈeəli",
+   "bˈɛəɹli"
+  ],
+  [
+   "ˌʌndə lˈaɪts",
+   "ˈʌndəɹ lˈaɪts"
+  ],
+  [
+   "fˈɜːst",
+   "fˈɜːɹst"
+  ],
+  [
+   "stˈɑːts",
+   "stˈɑːɹts"
+  ],
+  [
+   "ɔː bˈoʊl",
+   "ɔːɹ bˈoʊl"
+  ],
+  [
+   "tə bˈæt wˈʌn",
+   "tʊ bˈæt, wˈʌn"
+  ],
+  [
+   "djˈuː mˌaɪt",
+   "dʒjˈuː mˌaɪt"
+  ],
+  [
+   "fˈɔːmat",
+   "fˈɔːmæt"
+  ]
+ ],
+ "scenes": [
+  {
+   "id": "s1",
+   "lead": 0.45,
+   "hold": 0.5,
+   "segments": [
+    {
+     "text": "What if I told you, winning the toss barely improves your chances of winning an IPL match?",
+     "caption": "What if I told you|winning the toss|barely improves|your chances of winning|an IPL match?",
+     "pause": 0.42
+    },
+    {
+     "text": "Seriously.",
+     "caption": "Seriously.",
+     "pause": 0.38
+    },
+    {
+     "text": "Let's look at the numbers.",
+     "caption": "Let's look at|the numbers.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "lead": 0.5,
+   "hold": 0.55,
+   "segments": [
+    {
+     "text": "Across thousands of matches, toss winners won fifty-four point three percent of decided Tests.",
+     "caption": "Across thousands|of matches,|toss winners won|54.3%|of decided Tests.",
+     "pause": 0.4
+    },
+    {
+     "text": "But in ODIs, just forty-nine point six percent.",
+     "caption": "But in ODIs,|just 49.6%.",
+     "pause": 0.4
+    },
+    {
+     "text": "T twenty internationals? Fifty point three.",
+     "caption": "T20 internationals?|50.3%.",
+     "pause": 0.4
+    },
+    {
+     "text": "And the IPL? Fifty-one point six.",
+     "caption": "And the IPL?|51.6%.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "lead": 0.55,
+   "hold": 2.6,
+   "segments": [
+    {
+     "text": "Now imagine you're the captain.",
+     "caption": "Now imagine|you're the captain.",
+     "pause": 0.38
+    },
+    {
+     "text": "It's an IPL match under lights.",
+     "caption": "It's an IPL match|under lights.",
+     "pause": 0.36
+    },
+    {
+     "text": "Dew might arrive later.",
+     "caption": "Dew might|arrive later.",
+     "pause": 0.4,
+     "speed": 1.05
+    },
+    {
+     "text": "You've just won the toss.",
+     "caption": "You've just|won the toss.",
+     "pause": 0.45
+    },
+    {
+     "text": "What would you choose?",
+     "caption": "What would|you choose?",
+     "pause": 0.4
+    },
+    {
+     "text": "Bat first, or bowl first?",
+     "caption": "Bat first,|or bowl first?",
+     "pause": 0.3,
+     "speed": 1.05
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "lead": 0.35,
+   "hold": 0.6,
+   "segments": [
+    {
+     "text": "In the IPL data, toss winners choosing to bowl first won nearly fifty-five percent.",
+     "caption": "In the IPL data,|toss winners|choosing to bowl first|won nearly 55%.",
+     "pause": 0.4
+    },
+    {
+     "text": "Those choosing to bat won only forty-five percent.",
+     "caption": "Those choosing to bat|won only 45%.",
+     "pause": 0.5
+    },
+    {
+     "text": "But does that mean bowling first always works?",
+     "caption": "But does that mean|bowling first|always works?",
+     "pause": 0.5
+    },
+    {
+     "text": "Not necessarily.",
+     "caption": "Not necessarily.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "lead": 0.45,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "And here's something even stranger.",
+     "caption": "And here's something|even stranger.",
+     "pause": 0.42
+    },
+    {
+     "text": "In twenty twenty-four, IPL toss winners won only about forty-four percent of matches.",
+     "caption": "In 2024,|IPL toss winners|won only about 44%|of matches.",
+     "pause": 0.42
+    },
+    {
+     "text": "In twenty twenty-five, that jumped to sixty-one percent.",
+     "caption": "In 2025,|that jumped|to 61%.",
+     "pause": 0.5
+    },
+    {
+     "text": "Same coin.",
+     "caption": "Same coin.",
+     "pause": 0.4
+    },
+    {
+     "text": "Completely different results.",
+     "caption": "Completely|different results.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "lead": 0.6,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Now comes the real twist.",
+     "caption": "Now comes|the real twist.",
+     "pause": 0.5
+    },
+    {
+     "text": "Research found almost no average toss advantage, in daytime international limited-overs cricket.",
+     "caption": "Research found|almost no average|toss advantage|in daytime international|limited-overs cricket.",
+     "pause": 0.55
+    },
+    {
+     "text": "But in day-night matches, that estimated advantage increased to three point three percentage points.",
+     "caption": "But in day-night matches,|that estimated advantage|increased to|3.3 percentage points.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "lead": 0.5,
+   "hold": 0.7,
+   "segments": [
+    {
+     "text": "In Tests, the estimated toss advantage was even larger, at four point nine percentage points.",
+     "caption": "In Tests,|the estimated|toss advantage|was even larger,|at 4.9 percentage points.",
+     "pause": 0.5
+    },
+    {
+     "text": "Over five days, the pitch can wear down, cracks can develop, and batting conditions can change dramatically.",
+     "caption": "Over five days,|the pitch can wear down,|cracks can develop,|and batting conditions|can change dramatically.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "lead": 0.4,
+   "hold": 0.7,
+   "segments": [
+    {
+     "text": "So, winning the toss isn't a magic formula.",
+     "caption": "So winning the toss|isn't a magic formula.",
+     "pause": 0.42
+    },
+    {
+     "text": "Its value changes with the conditions.",
+     "caption": "Its value changes|with the conditions.",
+     "pause": 0.45
+    },
+    {
+     "text": "The pitch, the weather, the match format, and the captain's decision, all play a part.",
+     "caption": "The pitch,|the weather,|the match format,|and the captain's decision|all play a part.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "lead": 0.5,
+   "hold": 3.3,
+   "segments": [
+    {
+     "text": "So, does winning the toss win matches?",
+     "caption": "So, does winning|the toss|win matches?",
+     "pause": 0.5
+    },
+    {
+     "text": "Usually, not by much.",
+     "caption": "Usually,|not by much.",
+     "pause": 0.5
+    },
+    {
+     "text": "But under the right conditions, that small coin can offer a meaningful advantage.",
+     "caption": "But under|the right conditions,|that small coin|can offer|a meaningful advantage.",
+     "pause": 0.6
+    },
+    {
+     "text": "The toss starts the match.",
+     "caption": "The toss|starts the match.",
+     "pause": 0.45,
+     "speed": 1.05
+    },
+    {
+     "text": "It doesn't decide the winner.",
+     "caption": "It doesn't decide|the winner.",
+     "pause": 0.75,
+     "speed": 1.05
+    },
+    {
+     "text": "Beyond The Scoreboard.",
+     "caption": "Beyond The Scoreboard.",
+     "pause": 0.3,
+     "speed": 1.05
+    }
+   ]
+  }
+ ]
+}
