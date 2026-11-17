@@ -1,0 +1,229 @@
+{
+  "voice": "hm_omega",
+  "speed": 1.08,
+  "lang": "en-gb",
+  "_note": "Exact script from the brief. {display|spoken} shows `display` in captions while the narrator says `spoken`. `fix` patches phonemes the G2P gets wrong. lead = silence before narration, hold = time after it, pause = gap after a segment.",
+  "fix": [
+    [
+      "ˈəʊdi",
+      "ˌəʊdˌiːˈaɪz"
+    ],
+    [
+      "bˈəʊl",
+      "bˈoːl"
+    ],
+    [
+      "mˈatʃ",
+      "mˈætʃ"
+    ],
+    [
+      "wˈɪnəz wˈʌn fˈɪftifˈɔː",
+      "wˈɪnəz wˈʌn, fˈɪftifˈɔː"
+    ],
+    [
+      "tə bˈat",
+      "tuː bˈæt"
+    ]
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.5,
+      "hold": 0.4,
+      "segments": [
+        {
+          "text": "What if I told you winning the toss barely improves your chances of winning an IPL match?",
+          "pause": 0.38
+        },
+        {
+          "text": "Sounds unbelievable?",
+          "pause": 0.34
+        },
+        {
+          "text": "Let's look at the numbers.",
+          "pause": 0.17
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.3,
+      "hold": 0.9,
+      "segments": [
+        {
+          "text": "Across thousands of matches, toss winners won fifty-four percent of decided Tests,",
+          "pause": 0.26
+        },
+        {
+          "text": "forty-nine point six percent of ODIs,",
+          "pause": 0.24
+        },
+        {
+          "text": "fifty point three percent of T20 internationals,",
+          "pause": 0.24
+        },
+        {
+          "text": "and fifty-one point six percent in the IPL.",
+          "pause": 0.17
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.35,
+      "hold": 3.3,
+      "segments": [
+        {
+          "text": "Now imagine you're the captain.",
+          "pause": 0.34
+        },
+        {
+          "text": "It's an IPL match under lights.",
+          "pause": 0.3
+        },
+        {
+          "text": "There's a chance of dew later.",
+          "pause": 0.34
+        },
+        {
+          "text": "You win the toss.",
+          "pause": 0.38
+        },
+        {
+          "text": "Would you bat first, or bowl first?",
+          "pause": 0.17
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.4,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "In this IPL dataset, captains who chose to bowl first won nearly fifty-five percent.",
+          "pause": 0.3
+        },
+        {
+          "text": "Those who chose to bat won just forty-five percent.",
+          "pause": 0.38
+        },
+        {
+          "text": "But that doesn't mean bowling first is always better.",
+          "pause": 0.17
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.25,
+      "hold": 2.7,
+      "segments": [
+        {
+          "text": "But wait.",
+          "pause": 0.42
+        },
+        {
+          "text": "In {2024,|twenty twenty-four,} IPL toss winners won only forty-four percent of matches.",
+          "pause": 0.3
+        },
+        {
+          "text": "In {2025,|twenty twenty-five,} that jumped to sixty-one percent.",
+          "pause": 0.42
+        },
+        {
+          "text": "The coin didn't change.",
+          "pause": 0.34
+        },
+        {
+          "text": "So what did?",
+          "pause": 0.17
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.5,
+      "hold": 1.2,
+      "segments": [
+        {
+          "text": "Here's where the science gets interesting.",
+          "pause": 0.34
+        },
+        {
+          "text": "Researchers found almost no average toss advantage in daytime international limited-overs cricket.",
+          "pause": 0.34
+        },
+        {
+          "text": "But in day-night matches, the estimated advantage rose by three point three percentage points.",
+          "pause": 0.17
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "lead": 0.4,
+      "hold": 1.4,
+      "segments": [
+        {
+          "text": "In Test cricket, the estimated toss advantage was even larger, around four point nine percentage points.",
+          "pause": 0.38
+        },
+        {
+          "text": "And over five days, the pitch itself can become a completely different surface.",
+          "pause": 0.17
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "lead": 0.35,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "So the real advantage isn't simply winning a coin flip.",
+          "pause": 0.3
+        },
+        {
+          "text": "It's having the choice.",
+          "pause": 0.38
+        },
+        {
+          "text": "And the value of that choice changes with the pitch, weather, match format and conditions.",
+          "pause": 0.17
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "lead": 0.45,
+      "hold": 2.3,
+      "segments": [
+        {
+          "text": "So, does winning the toss win matches?",
+          "pause": 0.42
+        },
+        {
+          "text": "Usually, not by much.",
+          "pause": 0.38
+        },
+        {
+          "text": "But in the right conditions, that small coin can make a meaningful difference.",
+          "pause": 0.47
+        },
+        {
+          "text": "The toss starts the match.",
+          "pause": 0.3
+        },
+        {
+          "text": "It doesn't decide the winner.",
+          "pause": 0.51
+        },
+        {
+          "text": "Beyond The Scoreboard.",
+          "pause": 0.17
+        }
+      ]
+    }
+  ]
+}
