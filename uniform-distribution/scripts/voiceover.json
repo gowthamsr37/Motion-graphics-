@@ -1,0 +1,99 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        { "text": "A fair dice. A lucky draw. A random number on your phone.", "caption": "A fair dice. A lucky draw. A random number on your phone.", "pause": 0.4 },
+        { "text": "What do they have in common?", "caption": "What do they have in common?", "pause": 0.4 },
+        { "text": "Every outcome is equally likely. That's the uniform distribution.", "caption": "Every outcome is equally likely. That's the uniform distribution.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The definition",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        { "text": "Here's the definition, in simple words.", "caption": "Here's the definition, in simple words.", "pause": 0.35 },
+        { "text": "A uniform distribution gives every possible outcome the same chance.", "caption": "A uniform distribution gives every possible outcome the same chance.", "pause": 0.4 },
+        { "text": "So its shape is flat, like a rectangle.", "caption": "So its shape is flat, like a rectangle.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Discrete: a dice",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        { "text": "Let's start with a fair dice.", "caption": "Let's start with a fair dice.", "pause": 0.3 },
+        { "text": "Six outcomes, and each one has a chance of one in six.", "caption": "Six outcomes, and each one has a chance of 1 in 6.", "pause": 0.35 },
+        { "text": "Six equal bars. That's a discrete uniform distribution.", "caption": "Six equal bars. That's a discrete uniform distribution.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Continuous: waiting for a bus",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        { "text": "Now a continuous one.", "caption": "Now a continuous one.", "pause": 0.3 },
+        { "text": "A bus comes every ten minutes, and you reach the stop at a random time.", "caption": "A bus comes every 10 minutes, and you reach the stop at a random time.", "pause": 0.4 },
+        { "text": "Your wait can be anywhere from zero to ten minutes, all equally likely.", "caption": "Your wait can be anywhere from 0 to 10 minutes, all equally likely.", "pause": 0.35 },
+        { "text": "So its shape is a flat rectangle.", "caption": "So its shape is a flat rectangle.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Area is chance",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        { "text": "To find a chance, measure the area.", "caption": "To find a chance, measure the area.", "pause": 0.35 },
+        { "text": "The rectangle is ten wide and one tenth tall, so the total area is one.", "caption": "The rectangle is 10 wide and 1/10 tall, so the total area is 1.", "pause": 0.4 },
+        { "text": "The chance of waiting less than three minutes? Three tenths, or thirty percent.", "caption": "The chance of waiting less than 3 minutes? 3/10, or 30%.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "The average",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        { "text": "And the average? It's right in the middle.", "caption": "And the average? It's right in the middle.", "pause": 0.35 },
+        { "text": "For the dice, three point five. For the bus, five minutes.", "caption": "For the dice, 3.5. For the bus, 5 minutes.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Remember",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        { "text": "So remember: uniform means every outcome is equally likely.", "caption": "So remember: uniform means every outcome is equally likely.", "pause": 0.35 },
+        { "text": "A flat shape, with the average right in the middle.", "caption": "A flat shape, with the average right in the middle.", "pause": 0.35 },
+        { "text": "It's even how computers make random numbers.", "caption": "It's even how computers make random numbers.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Quiz, teaser and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        { "text": "Quick quiz!", "caption": "Quick quiz!", "pause": 0.3 },
+        { "text": "A train comes every twenty minutes, and you arrive at a random time.", "caption": "A train comes every 20 minutes, and you arrive at a random time.", "pause": 0.35 },
+        { "text": "What's the chance you wait more than fifteen minutes?", "caption": "What's the chance you wait more than 15 minutes?", "pause": 5.7 },
+        { "text": "Twenty-five percent!", "caption": "25%!", "pause": 0.35 },
+        { "text": "Fifteen to twenty is five minutes out of twenty. That's one quarter.", "caption": "15 to 20 is 5 minutes out of 20. That's one quarter.", "pause": 0.4 },
+        { "text": "Next, we'll count successes with the binomial distribution.", "caption": "Next, we'll count successes with the binomial distribution.", "pause": 0.4 },
+        { "text": "Follow for data science made simple!", "caption": "Follow for data science made simple!", "pause": 0.3 }
+      ]
+    }
+  ]
+}
