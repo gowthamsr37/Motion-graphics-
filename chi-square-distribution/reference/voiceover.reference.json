@@ -1,0 +1,211 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "In nineteen oh eight, a brewer at Guinness had a problem: he could only test a few batches at a time.",
+          "caption": "In 1908, a brewer at Guinness had a problem: he could only test a few batches at a time.",
+          "pause": 0.45
+        },
+        {
+          "text": "With so little data, the normal curve made him too confident.",
+          "caption": "With so little data, the normal curve made him too confident.",
+          "pause": 0.45
+        },
+        {
+          "text": "His fix is the t-distribution.",
+          "caption": "His fix is the t-distribution.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The definition",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Here's the definition, in simple words.",
+          "caption": "Here's the definition, in simple words.",
+          "pause": 0.35
+        },
+        {
+          "text": "The t-distribution looks like the normal bell curve, but with fatter tails.",
+          "caption": "The t-distribution looks like the normal bell curve, but with fatter tails.",
+          "pause": 0.4
+        },
+        {
+          "text": "We use it when the sample is small, and we have to guess the spread from the data itself.",
+          "caption": "We use it when the sample is small, and we have to guess the spread from the data itself.",
+          "pause": 0.4
+        },
+        {
+          "text": "The smaller the sample, the fatter the tails.",
+          "caption": "The smaller the sample, the fatter the tails.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Why fatter tails",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Why fatter tails? Because with only a few values, our guess of the spread is shaky.",
+          "caption": "Why fatter tails? Because with only a few values, our guess of the spread is shaky.",
+          "pause": 0.4
+        },
+        {
+          "text": "Take five values, and the spread can look small one time, and big the next.",
+          "caption": "Take five values, and the spread can look small one time, and big the next.",
+          "pause": 0.4
+        },
+        {
+          "text": "Fatter tails leave room for that extra uncertainty.",
+          "caption": "Fatter tails leave room for that extra uncertainty.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Degrees of freedom",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Its exact shape depends on one number: the degrees of freedom.",
+          "caption": "Its exact shape depends on one number: the degrees of freedom.",
+          "pause": 0.4
+        },
+        {
+          "text": "Usually, that's the sample size, minus one. So five values give four degrees of freedom.",
+          "caption": "Usually, that's the sample size, minus one. So five values give four degrees of freedom.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Shapes",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "With four degrees of freedom, the tails are fat.",
+          "caption": "With four degrees of freedom, the tails are fat.",
+          "pause": 0.4
+        },
+        {
+          "text": "With ten, they slim down.",
+          "caption": "With ten, they slim down.",
+          "pause": 0.4
+        },
+        {
+          "text": "And by about thirty, the t-curve is almost exactly the normal curve.",
+          "caption": "And by about thirty, the t-curve is almost exactly the normal curve.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "What it changes",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Why does this matter? Think about the middle ninety-five percent.",
+          "caption": "Why does this matter? Think about the middle 95%.",
+          "pause": 0.4
+        },
+        {
+          "text": "On the normal curve, it stretches about two steps from the centre.",
+          "caption": "On the normal curve, it stretches about two steps from the centre.",
+          "pause": 0.4
+        },
+        {
+          "text": "But with only five values, the t-curve needs about two point eight steps.",
+          "caption": "But with only five values, the t-curve needs about 2.8 steps.",
+          "pause": 0.4
+        },
+        {
+          "text": "So small samples give wider, more honest ranges.",
+          "caption": "So small samples give wider, more honest ranges.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Remember",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "So remember: the t-distribution is a bell with fatter tails, for small samples.",
+          "caption": "So remember: the t-distribution is a bell with fatter tails, for small samples.",
+          "pause": 0.4
+        },
+        {
+          "text": "The bigger the sample, the closer it gets to normal.",
+          "caption": "The bigger the sample, the closer it gets to normal.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Quiz, teaser and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        {
+          "text": "Quick quiz!",
+          "caption": "Quick quiz!",
+          "pause": 0.3
+        },
+        {
+          "text": "Imagine collecting more and more data.",
+          "caption": "Imagine collecting more and more data.",
+          "pause": 0.35
+        },
+        {
+          "text": "As the sample grows, what does the t-distribution turn into?",
+          "caption": "As the sample grows, what does the t-distribution turn into?",
+          "pause": 5.7
+        },
+        {
+          "text": "The normal distribution!",
+          "caption": "The normal distribution!",
+          "pause": 0.35
+        },
+        {
+          "text": "With more data, the extra uncertainty fades, and the tails slim down to the normal curve.",
+          "caption": "With more data, the extra uncertainty fades, and the tails slim down to the normal curve.",
+          "pause": 0.4
+        },
+        {
+          "text": "Next: is this dice fair? The chi-square distribution.",
+          "caption": "Next: is this dice fair? The chi-square distribution.",
+          "pause": 0.4
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}

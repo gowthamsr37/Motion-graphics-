@@ -1,0 +1,232 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Roll a dice sixty times, and each face should come up about ten times.",
+          "caption": "Roll a dice 60 times, and each face should come up about 10 times.",
+          "pause": 0.4
+        },
+        {
+          "text": "But six comes up sixteen times. Is the dice unfair, or is it just luck?",
+          "caption": "But six comes up 16 times. Is the dice unfair, or is it just luck?",
+          "pause": 0.45,
+          "fix": [
+            [
+              "sˈɪkstiːn",
+              "sɪkstˈiːn"
+            ]
+          ]
+        },
+        {
+          "text": "The chi-square distribution answers that.",
+          "caption": "The chi-square distribution answers that.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The definition",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Here's the definition, in simple words.",
+          "caption": "Here's the definition, in simple words.",
+          "pause": 0.35
+        },
+        {
+          "text": "Chi-square measures how far the counts we see are from the counts we expect.",
+          "caption": "Chi-square measures how far the counts we see are from the counts we expect.",
+          "pause": 0.4
+        },
+        {
+          "text": "And the chi-square distribution shows how big that gap can get, just by luck.",
+          "caption": "And the chi-square distribution shows how big that gap can get, just by luck.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Expected vs observed",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "A fair dice, rolled sixty times, should give ten of each face.",
+          "caption": "A fair dice, rolled 60 times, should give 10 of each face.",
+          "pause": 0.4
+        },
+        {
+          "text": "Here's what we got: eight, nine, twelve, eleven, four, and sixteen.",
+          "caption": "Here's what we got: 8, 9, 12, 11, 4, and 16.",
+          "pause": 0.3,
+          "fix": [
+            [
+              "sˈɪkstiːn",
+              "sɪkstˈiːn"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "The score",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "For each face, take the gap from ten, square it, and divide by ten.",
+          "caption": "For each face, take the gap from 10, square it, and divide by 10.",
+          "pause": 0.4
+        },
+        {
+          "text": "Squaring makes every gap positive, and makes big gaps count more.",
+          "caption": "Squaring makes every gap positive, and makes big gaps count more.",
+          "pause": 0.4
+        },
+        {
+          "text": "Add them all up, and the chi-square score is eight point two.",
+          "caption": "Add them all up, and the chi-square score is 8.2.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "The distribution",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "But even a fair dice never matches perfectly. So how big is too big?",
+          "caption": "But even a fair dice never matches perfectly. So how big is too big?",
+          "pause": 0.4
+        },
+        {
+          "text": "Repeat the sixty rolls again and again with a fair dice, and the scores form the chi-square distribution.",
+          "caption": "Repeat the 60 rolls again and again with a fair dice, and the scores form the chi-square distribution.",
+          "pause": 0.4
+        },
+        {
+          "text": "It starts at zero, with a long tail to the right. Its shape depends on the degrees of freedom: six faces minus one, so five.",
+          "caption": "It starts at zero, with a long tail to the right. Its shape depends on the degrees of freedom: six faces minus one, so five.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "The verdict",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "For a fair dice, ninety-five percent of scores land below eleven point one.",
+          "caption": "For a fair dice, 95% of scores land below 11.1.",
+          "pause": 0.4
+        },
+        {
+          "text": "Our score, eight point two, is inside that zone. A fair dice scores this high about fifteen percent of the time.",
+          "caption": "Our score, 8.2, is inside that zone. A fair dice scores this high about 15% of the time.",
+          "pause": 0.4,
+          "fix": [
+            [
+              "fˈɪftiːn",
+              "fɪftˈiːn"
+            ]
+          ]
+        },
+        {
+          "text": "So it could easily be luck. No proof the dice is unfair.",
+          "caption": "So it could easily be luck. No proof the dice is unfair.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Where it's used",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        {
+          "text": "Data scientists use it to test counts everywhere: sales across the week, or what different groups of customers choose.",
+          "caption": "Data scientists use it to test counts everywhere: sales across the week, or what different groups of customers choose.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Remember",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "So remember: chi-square compares the counts we see with the counts we expect.",
+          "caption": "So remember: chi-square compares the counts we see with the counts we expect.",
+          "pause": 0.4
+        },
+        {
+          "text": "A small score could be luck. A score deep in the tail means something real is going on.",
+          "caption": "A small score could be luck. A score deep in the tail means something real is going on.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Quiz, teaser and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        {
+          "text": "Quick quiz!",
+          "caption": "Quick quiz!",
+          "pause": 0.3
+        },
+        {
+          "text": "Another dice scores twenty, with the same five degrees of freedom.",
+          "caption": "Another dice scores 20, with the same five degrees of freedom.",
+          "pause": 0.35
+        },
+        {
+          "text": "Is it fair, or suspicious?",
+          "caption": "Is it fair, or suspicious?",
+          "pause": 5.7
+        },
+        {
+          "text": "Suspicious!",
+          "caption": "Suspicious!",
+          "pause": 0.35
+        },
+        {
+          "text": "Twenty is far past eleven point one, deep in the tail. That almost never happens by luck.",
+          "caption": "20 is far past 11.1, deep in the tail. That almost never happens by luck.",
+          "pause": 0.4
+        },
+        {
+          "text": "Next: the complete cheat sheet of every distribution.",
+          "caption": "Next: the complete cheat sheet of every distribution.",
+          "pause": 0.4
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}
