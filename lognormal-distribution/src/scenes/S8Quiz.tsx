@@ -18,7 +18,7 @@ const OPTS: QuizOpt[] = [
   { v: "BELL", color: C.cyan, why: "that's the log scale" },
   { v: "SKEWED RIGHT", color: C.green, why: "" },
   { v: "FLAT", color: C.violet, why: "that's uniform" },
-  { v: "SKEWED LEFT", color: C.orange, why: "wrong side" },
+  { v: "SKEWED LEFT", color: C.orange, why: "wrong way" },
 ];
 const BX0 = 200;
 const BX1 = 880;

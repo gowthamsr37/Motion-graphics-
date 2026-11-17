@@ -21,8 +21,9 @@ export const S5Why: React.FC = () => {
   const spr = useSpr();
   const s = useScene("s5");
   const PCT = s.cueS(0, "percentages.");
-  const FLAT = s.cueS(1, "flat,");
-  const VILLA = s.cueS(1, "villa.");
+  // both buildings are on screen before their growth labels ("+2 L", "+20 L") are spoken
+  const FLAT = s.sent(1).from + 4;
+  const VILLA = s.cueS(1, "but") - 2;
   const PLUS2 = s.cueS(1, "2");
   const PLUS20 = s.cueS(1, "20", 1);
   const MULT = s.cueS(2, "multiplies,");

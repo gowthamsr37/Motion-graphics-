@@ -1,0 +1,280 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Roll a dice. Is it a six? Just yes or no.",
+          "caption": "Roll a dice. Is it a six? Just yes or no.",
+          "pause": 0.45
+        },
+        {
+          "text": "That simple question has its own distribution: Bernoulli.",
+          "caption": "That simple question has its own distribution: Bernoulli.",
+          "pause": 0.45,
+          "fix": [
+            [
+              "bˈɜːnaʊli",
+              "bɚnˈuːli"
+            ]
+          ]
+        },
+        {
+          "text": "And rolling until you finally get a six? That's the geometric distribution.",
+          "caption": "And rolling until you finally get a six? That's the geometric distribution.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Bernoulli: the definition",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "First, Bernoulli, in simple words.",
+          "caption": "First, Bernoulli, in simple words.",
+          "pause": 0.35,
+          "fix": [
+            [
+              "bˈɜːnaʊli",
+              "bɚnˈuːli"
+            ]
+          ]
+        },
+        {
+          "text": "A Bernoulli distribution is one try, with two outcomes: success or failure.",
+          "caption": "A Bernoulli distribution is one try, with two outcomes: success or failure.",
+          "pause": 0.4,
+          "fix": [
+            [
+              "bˈɜːnaʊli",
+              "bɚnˈuːli"
+            ]
+          ]
+        },
+        {
+          "text": "We write success as one, and failure as zero.",
+          "caption": "We write success as one, and failure as zero.",
+          "pause": 0.4
+        },
+        {
+          "text": "And it needs just one number: the chance of success.",
+          "caption": "And it needs just one number: the chance of success.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "One roll",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Roll once. A six is a success, with a chance of one in six.",
+          "caption": "Roll once. A six is a success, with a chance of one in six.",
+          "pause": 0.4
+        },
+        {
+          "text": "Anything else is a failure: five in six.",
+          "caption": "Anything else is a failure: five in six.",
+          "pause": 0.4
+        },
+        {
+          "text": "So the shape is just two bars: a tall one for zero, and a short one for one.",
+          "caption": "So the shape is just two bars: a tall one for zero, and a short one for one.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Yes or no, everywhere",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Yes-or-no outcomes are everywhere in data science.",
+          "caption": "Yes-or-no outcomes are everywhere in data science.",
+          "pause": 0.35
+        },
+        {
+          "text": "Did the customer click? Is this email spam? Will they buy?",
+          "caption": "Did the customer click? Is this email spam? Will they buy?",
+          "pause": 0.4
+        },
+        {
+          "text": "Many machine learning models predict exactly this: the chance of a yes.",
+          "caption": "Many machine learning models predict exactly this: the chance of a yes.",
+          "pause": 0.4
+        },
+        {
+          "text": "And repeat the try many times, counting the yeses? That's the binomial you've already seen.",
+          "caption": "And repeat the try many times, counting the yeses? That's the binomial you've already seen.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Geometric: the definition",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Now, the geometric distribution.",
+          "caption": "Now, the geometric distribution.",
+          "pause": 0.35
+        },
+        {
+          "text": "It counts how many tries it takes to get the first success.",
+          "caption": "It counts how many tries it takes to get the first success.",
+          "pause": 0.4
+        },
+        {
+          "text": "Like the exponential, it's about waiting. But instead of measuring time, it counts tries.",
+          "caption": "Like the exponential, it's about waiting. But instead of measuring time, it counts tries.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Rolling until a six",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Keep rolling until you get a six.",
+          "caption": "Keep rolling until you get a six.",
+          "pause": 0.4
+        },
+        {
+          "text": "A six on the very first roll? One in six, about seventeen percent.",
+          "caption": "A six on the very first roll? One in six, about 17%.",
+          "pause": 0.4,
+          "fix": [
+            [
+              "sˈɛvəntˌiːn",
+              "sɛvəntˈiːn"
+            ]
+          ]
+        },
+        {
+          "text": "On the second roll? About fourteen percent. On the third? About twelve.",
+          "caption": "On the second roll? About 14%. On the third? About 12.",
+          "pause": 0.4,
+          "fix": [
+            [
+              "fˈɔːɹtiːn",
+              "fɔːɹtˈiːn"
+            ]
+          ]
+        },
+        {
+          "text": "Each extra roll is a bit less likely, so the bars step down.",
+          "caption": "Each extra roll is a bit less likely, so the bars step down.",
+          "pause": 0.4
+        },
+        {
+          "text": "Surprise: the single most likely roll is the very first one!",
+          "caption": "Surprise: the single most likely roll is the very first one!",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "The average wait",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "But on average, how long do you wait?",
+          "caption": "But on average, how long do you wait?",
+          "pause": 0.4
+        },
+        {
+          "text": "One over the chance. With a one-in-six chance, that's six rolls.",
+          "caption": "One over the chance. With a one-in-six chance, that's six rolls.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Remember",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "So remember: Bernoulli is one try, yes or no.",
+          "caption": "So remember: Bernoulli is one try, yes or no.",
+          "pause": 0.4,
+          "fix": [
+            [
+              "bˈɜːnaʊli",
+              "bɚnˈuːli"
+            ]
+          ]
+        },
+        {
+          "text": "Geometric counts the tries until the first yes. And the average wait is one over the chance.",
+          "caption": "Geometric counts the tries until the first yes. And the average wait is one over the chance.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Quiz, teaser and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        {
+          "text": "Quick quiz!",
+          "caption": "Quick quiz!",
+          "pause": 0.3
+        },
+        {
+          "text": "A salesperson closes one call in every four.",
+          "caption": "A salesperson closes one call in every four.",
+          "pause": 0.35
+        },
+        {
+          "text": "On average, how many calls until the first sale?",
+          "caption": "On average, how many calls until the first sale?",
+          "pause": 5.7
+        },
+        {
+          "text": "Four!",
+          "caption": "4!",
+          "pause": 0.35
+        },
+        {
+          "text": "The average wait is one over the chance. A one-in-four chance means four calls.",
+          "caption": "The average wait is one over the chance. A one-in-four chance means four calls.",
+          "pause": 0.4
+        },
+        {
+          "text": "Next: what to do with small samples. The t-distribution.",
+          "caption": "Next: what to do with small samples. The t-distribution.",
+          "pause": 0.4
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}

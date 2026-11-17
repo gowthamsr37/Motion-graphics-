@@ -1,0 +1,257 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "In many shops, a small group of customers brings in most of the money.",
+          "caption": "In many shops, a small group of customers brings in most of the money.",
+          "pause": 0.4
+        },
+        {
+          "text": "Often, just twenty percent of the customers bring in eighty percent of the sales.",
+          "caption": "Often, just 20% of the customers bring in 80% of the sales.",
+          "pause": 0.45
+        },
+        {
+          "text": "That's the Pareto distribution.",
+          "caption": "That's the Pareto distribution.",
+          "pause": 0.3,
+          "fix": [
+            [
+              "pæɹˈiːɾoʊ",
+              "pəɹˈeɪɾoʊ"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The definition",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Here's the definition, in simple words.",
+          "caption": "Here's the definition, in simple words.",
+          "pause": 0.35
+        },
+        {
+          "text": "In a Pareto distribution, most values are small.",
+          "caption": "In a Pareto distribution, most values are small.",
+          "pause": 0.4,
+          "fix": [
+            [
+              "pæɹˈiːɾoʊ",
+              "pəɹˈeɪɾoʊ"
+            ]
+          ]
+        },
+        {
+          "text": "But a few values are huge.",
+          "caption": "But a few values are huge.",
+          "pause": 0.4
+        },
+        {
+          "text": "So the shape starts high, and stretches into a long tail on the right.",
+          "caption": "So the shape starts high, and stretches into a long tail on the right.",
+          "pause": 0.4
+        },
+        {
+          "text": "It's the idea behind the famous eighty-twenty rule.",
+          "caption": "It's the idea behind the famous 80/20 rule.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Line them up",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        {
+          "text": "Take a shop's customers, and line them up from the biggest spender to the smallest.",
+          "caption": "Take a shop's customers, and line them up from the biggest spender to the smallest.",
+          "pause": 0.4
+        },
+        {
+          "text": "Now split them into ten equal groups. Each group is ten percent of the customers.",
+          "caption": "Now split them into 10 equal groups. Each group is 10% of the customers.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "The 80/20 split",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "The top group alone brings in seventy-three percent of all the sales.",
+          "caption": "The top group alone brings in 73% of all the sales.",
+          "pause": 0.4
+        },
+        {
+          "text": "Add the second group, and the top twenty percent bring in eighty percent.",
+          "caption": "Add the second group, and the top 20% bring in 80%.",
+          "pause": 0.4
+        },
+        {
+          "text": "And the whole bottom half? Only about nine percent.",
+          "caption": "And the whole bottom half? Only about 9%.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "The long tail",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Compare that with height.",
+          "caption": "Compare that with height.",
+          "pause": 0.35
+        },
+        {
+          "text": "Heights cluster around an average. Nobody is ten times taller than you.",
+          "caption": "Heights cluster around an average. Nobody is ten times taller than you.",
+          "pause": 0.4
+        },
+        {
+          "text": "But one customer can spend a hundred times more than another.",
+          "caption": "But one customer can spend a hundred times more than another.",
+          "pause": 0.4
+        },
+        {
+          "text": "That's the long tail: rare, but enormous values.",
+          "caption": "That's the long tail: rare, but enormous values.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "The average trap",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "This makes the average misleading.",
+          "caption": "This makes the average misleading.",
+          "pause": 0.35
+        },
+        {
+          "text": "The average customer spends about fourteen hundred rupees.",
+          "caption": "The average customer spends about 1,400 rupees.",
+          "pause": 0.4,
+          "fix": [
+            [
+              "fˈɔːɹtiːn",
+              "fɔːɹtˈiːn"
+            ]
+          ]
+        },
+        {
+          "text": "But the typical customer, the one in the middle, spends only about three hundred and sixty.",
+          "caption": "But the typical customer, the one in the middle, spends only about 360.",
+          "pause": 0.4
+        },
+        {
+          "text": "In fact, nine out of ten customers spend less than the average.",
+          "caption": "In fact, 9 out of 10 customers spend less than the average.",
+          "pause": 0.4
+        },
+        {
+          "text": "So for long-tailed data, the median tells you more.",
+          "caption": "So for long-tailed data, the median tells you more.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Where it shows up",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        {
+          "text": "A few people hold most of the wealth. A few cities are giant. A few videos get most of the views. And a few bugs cause most of the crashes.",
+          "caption": "A few people hold most of the wealth. A few cities are giant. A few videos get most of the views. And a few bugs cause most of the crashes.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Remember",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "So remember: most values are small, a few are huge, and the tail is long.",
+          "caption": "So remember: most values are small, a few are huge, and the tail is long.",
+          "pause": 0.4
+        },
+        {
+          "text": "The top twenty percent often hold about eighty percent. But that's a rule of thumb, not a law.",
+          "caption": "The top 20% often hold about 80%. But that's a rule of thumb, not a law.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Quiz, teaser and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        {
+          "text": "Quick quiz!",
+          "caption": "Quick quiz!",
+          "pause": 0.3
+        },
+        {
+          "text": "An app's crashes come from many bugs, and they follow the eighty-twenty rule.",
+          "caption": "An app's crashes come from many bugs, and they follow the 80/20 rule.",
+          "pause": 0.35
+        },
+        {
+          "text": "If the team fixes the top twenty percent of bugs, about how many crashes disappear?",
+          "caption": "If the team fixes the top 20% of bugs, about how many crashes disappear?",
+          "pause": 5.7
+        },
+        {
+          "text": "About eighty percent!",
+          "caption": "About 80%!",
+          "pause": 0.35
+        },
+        {
+          "text": "The top twenty percent of causes bring about eighty percent of the effect. So fix the big ones first.",
+          "caption": "The top 20% of causes bring about 80% of the effect. So fix the big ones first.",
+          "pause": 0.4
+        },
+        {
+          "text": "Next: another long tail, the log-normal distribution.",
+          "caption": "Next: another long tail, the log-normal distribution.",
+          "pause": 0.4
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}

@@ -16,7 +16,7 @@ export const Cover: React.FC = () => (
     <Backdrop a={C.orange} b={C.violet} />
     <div style={{ position: "absolute", left: 0, right: 0, top: 300, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 800, lineHeight: 1, letterSpacing: "-0.03em" }}>
       <div style={{ fontSize: 96, color: C.text }}>THE</div>
-      <div style={{ marginTop: 14, fontSize: 128, background: `linear-gradient(90deg, ${RAW}, ${LOG})`, WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent", filter: `drop-shadow(0 0 30px ${alpha(LOG, 0.45)})`, whiteSpace: "nowrap" }}>LOG-NORMAL</div>
+      <div style={{ marginTop: 14, fontSize: 116, background: `linear-gradient(90deg, ${RAW}, ${LOG})`, WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent", filter: `drop-shadow(0 0 30px ${alpha(LOG, 0.45)})`, whiteSpace: "nowrap" }}>LOG-NORMAL</div>
       <div style={{ marginTop: 10, fontSize: 92, color: C.text }}>DISTRIBUTION</div>
       <div style={{ marginTop: 30, fontSize: 50, fontWeight: 700, color: C.text, letterSpacing: "0.01em" }}>
         explained in <span style={{ color: C.yellow, textShadow: glowText(C.yellow, 0.5) }}>2 minutes</span>
