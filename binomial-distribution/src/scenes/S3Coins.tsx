@@ -30,7 +30,8 @@ export const S3Coins: React.FC = () => {
   const s = useScene("s3");
   const FLIP = s.cueS(0, "Flip");
   const EIGHT = s.sent(1).from;
-  const groupAt = [s.cueS(2, "Zero"), s.cueS(2, "One"), s.cueS(2, "Two"), s.cueS(2, "Three")];
+  // "one" and "three" are each spoken more than once in this sentence ("one way", "three ways"): pick the right ones
+  const groupAt = [s.cueS(2, "Zero"), s.cueS(2, "One", 1), s.cueS(2, "Two"), s.cueS(2, "Three", 2)];
   const SHAPE = s.sent(3).from;
   const coinsOut = ease(frame, [EIGHT - 6, EIGHT + 4], [0, 1]);
 

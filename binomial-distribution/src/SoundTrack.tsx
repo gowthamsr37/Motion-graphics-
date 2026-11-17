@@ -98,7 +98,7 @@ const useHits = (): Hit[] => {
     h(s.cueS(0, "Flip") - 8, "whip.wav", 0.22);
     h(s.cueS(0, "Flip") + 4, "clink.wav", 0.18);
     for (let i = 0; i < 8; i++) h(s.sent(1).from - 2 + i * 3, "pop.wav", 0.12);
-    ["Zero", "One", "Two", "Three"].forEach((w, i) => h(s.cueS(2, w) - 10, `step${Math.min(3, i + 1)}.wav`, 0.2));
+    [s.cueS(2, "Zero"), s.cueS(2, "One", 1), s.cueS(2, "Two"), s.cueS(2, "Three", 2)].forEach((f, i) => h(f - 10, `step${Math.min(3, i + 1)}.wav`, 0.2));
     h(s.sent(3).from - 6, "ding.wav", 0.24);
   }
   // S4 — the test
