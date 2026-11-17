@@ -24,7 +24,8 @@ python3 - <<'PY'
 import json, subprocess
 m = json.load(open("out/loudnorm.json"))
 af = ("alimiter=limit=0.8:level=false:attack=3:release=60,loudnorm=I=-14:TP=-1.5:LRA=11:"
-      f"measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true")
+      f"measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true,"
+      "alimiter=limit=0.74:level=false:attack=1.5:release=50")  # final safety limiter: true peak ≈ -2 dBTP after AAC
 subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", "out/picture.mp4", "-i", "out/mix.wav", "-map", "0:v", "-map", "1:a", "-c:v", "copy",
                 "-af", af, "-ar", "48000", "-ac", "2", "-c:a", "aac", "-b:a", "256k", "-shortest", "-movflags", "+faststart",
                 "out/Beyond_The_Scoreboard_Toss_Experiment.mp4"], check=True)

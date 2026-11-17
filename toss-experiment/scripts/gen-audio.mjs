@@ -398,7 +398,7 @@ const finish = (L, R, peak, name, wet = 0.3) => {
   droplets(L, R, ev.cuts8[5], E("s8") - ev.cuts8[5], 0.05);
   // S9 — the coin falls and lands; the loop flicks it back up
   spinShimmer(L, R, S("s9"), ev.landCut - S("s9"), 0.5, 2.4);
-  whoosh(L, R, ev.landCut - 0.05, 0.5, 0.3);
+  whoosh(L, R, ev.landCut - 0.05, 0.5, 0.08); // kept low: it sits under the word "winner"
   coinLand(L, R, ev.land, 0.75);
   cheer(L, R, ev.land + 0.05, 3.0, 0.035);
   coinFlick(L, R, ev.loop, 0.45, 1.0);
