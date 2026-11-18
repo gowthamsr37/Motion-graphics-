@@ -2,7 +2,7 @@
 
 A cinematic 3D data documentary for Instagram Reels.
 
-- **Format:** 1080×1920 (9:16), 30 fps, 137.5 s.
+- **Format:** 1080×1920 (9:16), 30 fps, 140.0 s.
 - **Video:** H.264.
 - **Audio:** AAC 48 kHz stereo, mastered to −14 LUFS with true peak at −1.5 dBTP (measured in the delivered MP4: −14.1 LUFS, −1.1 dBTP after AAC encoding).
 
@@ -11,7 +11,7 @@ Everything on screen is built in code:
 - a real-time 3D cricket ground, coin, pitch, players and grass, rendered with three.js;
 - 2D typography and graphs on an honest scale, from React/Remotion;
 - an original synthesised score and sound design;
-- Indian-English male narration from an offline TTS model.
+- male narration from an offline TTS model: the same `am_michael` narrator as the channel's earlier cricket Reels.
 
 ## The film
 
@@ -63,7 +63,7 @@ Every number shown lives in [`src/data.ts`](src/data.ts).
 | 3D | **three.js**, rendered inside Remotion with software WebGL. See `src/three/*`.<br>• `stadium.ts`: elliptical ground, mown outfield and square, two crowd tiers, roof with lights, four floodlight towers with haze beams, LED boards, sightscreens, big screens and city lights.<br>• `env.ts`: one time-of-day value drives the sun, sky shader (clouds and stars), fog and exposure.<br>• `macro.ts`: struck-relief proof coin, with height maps drawn in code and reflections captured from the live stadium.<br>• `pitch.ts`: shader pitch whose single *wear* value drives colour, footmarks and a crack network.<br>• `grass.ts`: 42,000 instanced blades and water-drop shader beads.<br>• `players.ts`: jointed, posed figures.<br>• `director.ts`: every camera move, light and action as a pure function of film time.<br>• `engine.ts`: HDR + MSAA, lens blur for close-ups, bloom, ACES tone-mapping, grade and grain. |
 | 2D | Remotion/React: `src/overlay/*` holds the graphs, labels, diagram and brand. `Subtitles.tsx` burns in karaoke subtitles driven by word timings. Everything stays inside the Reels safe area (y 236–1500, clear of the right-hand button rail). |
 | Timing | `scripts/gen-voice.py` writes `src/timeline.json`. A speech recogniser listens to every narrated sentence, which both checks the words and gives per-word timings. `src/beats.ts` turns those into story beats that the 3D director, the overlays and the sound script all share. |
-| Narration | **Kokoro-82M** TTS (Apache-2.0), voice `hm_omega` (Indian-English male), with phoneme fixes for ODIs, IPL, toss, bowl and dew. It is checked with **NVIDIA Parakeet-TDT 0.6B** (CC-BY-4.0) through sherpa-onnx. 95.8% of script words are recognised in the final mix, versus 95.4% for the dry voice. The remaining misses are ASR spelling such as "tos" or "5". |
+| Narration | **Kokoro-82M** TTS (Apache-2.0), voice `am_michael` (en-us, speed 1.05), the narrator used across the channel's earlier cricket Reels (toss-myth, DLS, LBW, Kohli, U19). Phoneme fixes: ODIs and IPL said as letters (as in toss-myth), a short breath in "to bat, won only", and a one-syllable "dyoo" for *dew* (the US "doo" sounds like "Do might…" at the start of a sentence). It is checked with **NVIDIA Parakeet-TDT 0.6B** (CC-BY-4.0) through sherpa-onnx. 96.5% of script words are recognised in the final mix. The remaining misses are ASR spellings such as "516" written out or "du" for *dew*. An earlier cut used the Indian-English `hm_omega` voice; switch back by changing `voice`/`lang`/`fix` in `scripts/voiceover.json` (see git history). |
 | Music & SFX | `scripts/gen-audio.ts`, all original and synthesised. The score is D minor and resolves to D major for the brand: tension, then an energetic groove, suspense and a heartbeat, pizzicato surprise, a cinematic swell with bells for the time-lapse, a mallet pulse for the Test pitch, montage hits, and timpani into the resolve. The effects are a slow-motion coin spin whose glints follow the rendered rotation, a struck-metal freeze, floodlight contactors and ballast hum, bat on ball, pitch thocks, cracking soil, dew drips, countdown ticks, whooshes, a coin landing with wobble and click, and a day/night crowd bed. |
 | Mix | `scripts/mix.sh`: music −9.5 dB, ducked about 12 dB under the voice; SFX −4 dB; limiter; two-pass loudnorm. |
 | Fonts | Barlow Condensed, Inter and Instrument Serif (SIL OFL), bundled in `public/fonts`. |
@@ -74,11 +74,12 @@ Every number shown lives in [`src/data.ts`](src/data.ts).
 npm install
 # narration and timeline: only needed if voiceover.json changes
 python scripts/gen-voice.py --kokoro <dir with kokoro-v1.0.onnx + voices-v1.0.bin> --asr <sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8 dir>
+python3 scripts/gen-srt.py        # subtitles.srt from the timeline
 bash scripts/build.sh          # score, mix, chunked 3D render, mux, cover → out/deliver/
 npx remotion studio src/index.ts   # live preview (pass input props {"audio": true} to hear the stems)
 ```
 
-- **Render time:** the 3D renders with software WebGL (SwiftShader) at about 1 s per frame on 4 CPU cores, so the full film takes about 70 minutes. `render-chunks.sh` resumes if it is interrupted.
+- **Render time:** the 3D renders with software WebGL (SwiftShader) at about 1 s per frame on 4 CPU cores, so the full film takes about 75 minutes. `render-chunks.sh` resumes if it is interrupted.
 - **Deliverables:** `out/deliver/` holds the MP4, the cover PNG, `narration.wav`, `subtitles.srt` and `CAPTION.md`.
 - **QC of the delivered file:** 4,124 frames at 30 fps (137.47 s), H.264 High 4.2 yuv420p, about 12 Mbps, AAC 256 kb/s. It decodes without errors. Speech recognition on the delivered audio finds 95.0% of script words in the right time windows; the misses are spellings such as "tos" or "5". Frames sampled across all nine scenes keep text inside the safe area.
 - **Stems:** `public/audio/music.wav`, `public/audio/sfx.wav` and `public/vo/narration.wav` (plus one file per scene).

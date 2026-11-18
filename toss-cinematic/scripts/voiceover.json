@@ -1,59 +1,19 @@
 {
- "voice": "hm_omega",
- "lang": "en-gb",
- "speed": 1.14,
+ "voice": "am_michael",
+ "lang": "en-us",
+ "speed": 1.05,
  "fix": [
   [
-   "ˌəʊdˌiːˈaɪz",
+   "ˈoʊdi",
    "ˌoʊdˌiːˈaɪz"
   ],
   [
-   "wˈɒn",
-   "wˈʌn"
-  ],
-  [
-   "əʊ",
-   "oʊ"
-  ],
-  [
-   "ɒ",
-   "ɔ"
-  ],
-  [
-   "re:ˈa(?![ɪʊ])",
-   "ˈæ"
-  ],
-  [
-   "bˈeəli",
-   "bˈɛəɹli"
-  ],
-  [
-   "ˌʌndə lˈaɪts",
-   "ˈʌndəɹ lˈaɪts"
-  ],
-  [
-   "fˈɜːst",
-   "fˈɜːɹst"
-  ],
-  [
-   "stˈɑːts",
-   "stˈɑːɹts"
-  ],
-  [
-   "ɔː bˈoʊl",
-   "ɔːɹ bˈoʊl"
+   "ˈɪpəl",
+   "ˌaɪpˌiːˈɛl"
   ],
   [
    "tə bˈæt wˈʌn",
-   "tʊ bˈæt, wˈʌn"
-  ],
-  [
-   "djˈuː mˌaɪt",
-   "dʒjˈuː mˌaɪt"
-  ],
-  [
-   "fˈɔːmat",
-   "fˈɔːmæt"
+   "tə bˈæt, wˈʌn"
   ]
  ],
  "scenes": [
@@ -125,9 +85,8 @@
      "text": "Dew might arrive later.",
      "caption": "Dew might|arrive later.",
      "pause": 0.4,
-     "speed": 0.95,
-     "phonemes": "dˈjuːw mˌaɪt ɐɹˈaɪv lˈeɪtəɹ.",
-     "slot": 2.12
+     "speed": 0.92,
+     "phonemes": "dˈʲuː mˌaɪt ɚɹˈaɪv lˈeɪɾɚ."
     },
     {
      "text": "You've just won the toss.",
@@ -143,7 +102,7 @@
      "text": "Bat first, or bowl first?",
      "caption": "Bat first,|or bowl first?",
      "pause": 0.3,
-     "speed": 1.05
+     "speed": 0.97
     }
    ]
   },
@@ -291,19 +250,19 @@
      "text": "The toss starts the match.",
      "caption": "The toss|starts the match.",
      "pause": 0.45,
-     "speed": 1.05
+     "speed": 0.97
     },
     {
      "text": "It doesn't decide the winner.",
      "caption": "It doesn't decide|the winner.",
      "pause": 0.75,
-     "speed": 1.05
+     "speed": 0.97
     },
     {
      "text": "Beyond The Scoreboard.",
      "caption": "Beyond The Scoreboard.",
      "pause": 0.3,
-     "speed": 1.05
+     "speed": 0.97
     }
    ]
   }
