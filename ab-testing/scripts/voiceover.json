@@ -1,0 +1,225 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "A green Buy button, or an orange one? Which makes more people buy?",
+          "caption": "A green Buy button, or an orange one? Which makes more people buy?",
+          "pause": 0.4
+        },
+        {
+          "text": "Don't guess. Test it. That's A-B testing.",
+          "caption": "Don't guess. Test it. That's A/B testing.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The definition",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Here's the definition, in simple words.",
+          "caption": "Here's the definition, in simple words.",
+          "pause": 0.35
+        },
+        {
+          "text": "A-B testing shows two versions to two random groups of users,",
+          "caption": "A/B testing shows two versions to two random groups of users,",
+          "pause": 0.25
+        },
+        {
+          "text": "then uses a hypothesis test to decide if the difference is real.",
+          "caption": "then uses a hypothesis test to decide if the difference is real.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "The setup",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Say we split ten thousand visitors at random.",
+          "caption": "Say we split 10,000 visitors at random.",
+          "pause": 0.35
+        },
+        {
+          "text": "Five thousand see the green button, and five thousand see the orange one.",
+          "caption": "5,000 see the green button, and 5,000 see the orange one.",
+          "pause": 0.4
+        },
+        {
+          "text": "Random matters: the groups are alike in every other way, so only the button differs.",
+          "caption": "Random matters: the groups are alike in every other way, so only the button differs.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "The results",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "After a week, green gets four hundred purchases: eight percent.",
+          "caption": "After a week, green gets 400 purchases: 8%.",
+          "pause": 0.4
+        },
+        {
+          "text": "Orange gets four hundred and sixty: nine point two percent.",
+          "caption": "Orange gets 460: 9.2%.",
+          "pause": 0.4
+        },
+        {
+          "text": "Orange looks better. But is it real, or just luck?",
+          "caption": "Orange looks better. But is it real, or just luck?",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "The test",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "The null hypothesis: both buttons convert the same.",
+          "caption": "The null hypothesis: both buttons convert the same.",
+          "pause": 0.4
+        },
+        {
+          "text": "If that were true, a gap this big would happen only about three percent of the time.",
+          "caption": "If that were true, a gap this big would happen only about 3% of the time.",
+          "pause": 0.35
+        },
+        {
+          "text": "So the p-value is zero point zero three.",
+          "caption": "So the p-value is 0.03.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "The decision",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Zero point zero three is below zero point zero five, so we reject the null.",
+          "caption": "0.03 is below 0.05, so we reject the null.",
+          "pause": 0.4
+        },
+        {
+          "text": "Orange wins: a fifteen percent lift in purchases. Ship it!",
+          "caption": "Orange wins: a 15% lift in purchases. Ship it!",
+          "pause": 0.3,
+          "fix": [
+            [
+              "fˈɪftiːn",
+              "fɪftˈiːn"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Three mistakes",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Watch out for three classic mistakes.",
+          "caption": "Watch out for three classic mistakes.",
+          "pause": 0.35
+        },
+        {
+          "text": "Stopping the test early, the moment it looks good. Peeking like that raises false alarms.",
+          "caption": "Stopping the test early, the moment it looks good. Peeking like that raises false alarms.",
+          "pause": 0.4
+        },
+        {
+          "text": "Skipping the plan for how many users you need. And changing many things at once.",
+          "caption": "Skipping the plan for how many users you need. And changing many things at once.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Remember",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "So remember: split users at random, show two versions, and let a hypothesis test decide.",
+          "caption": "So remember: split users at random, show two versions, and let a hypothesis test decide.",
+          "pause": 0.4
+        },
+        {
+          "text": "Plan the sample size first, and don't peek.",
+          "caption": "Plan the sample size first, and don't peek.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Quiz, teaser and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        {
+          "text": "Quick quiz!",
+          "caption": "Quick quiz!",
+          "pause": 0.3
+        },
+        {
+          "text": "Version B beats A by just zero point one points, with a p-value of zero point four.",
+          "caption": "Version B beats A by just 0.1 points, with a p-value of 0.4.",
+          "pause": 0.35
+        },
+        {
+          "text": "What should you do?",
+          "caption": "What should you do?",
+          "pause": 5.7
+        },
+        {
+          "text": "Not yet!",
+          "caption": "Not yet!",
+          "pause": 0.35
+        },
+        {
+          "text": "Zero point four is far above zero point zero five. A gap like that is easily luck, so there's no winner yet.",
+          "caption": "0.4 is far above 0.05. A gap like that is easily luck, so there's no winner yet.",
+          "pause": 0.4
+        },
+        {
+          "text": "Next: comparing two averages. The t-test.",
+          "caption": "Next: comparing two averages. The t-test.",
+          "pause": 0.4
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}

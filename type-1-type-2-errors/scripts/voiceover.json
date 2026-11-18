@@ -1,0 +1,229 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "A smoke alarm can be wrong in two ways.",
+          "caption": "A smoke alarm can be wrong in two ways.",
+          "pause": 0.4
+        },
+        {
+          "text": "It rings when there's no fire, or it stays silent during a real one.",
+          "caption": "It rings when there's no fire, or it stays silent during a real one.",
+          "pause": 0.4
+        },
+        {
+          "text": "Statistical tests make the same two mistakes.",
+          "caption": "Statistical tests make the same two mistakes.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The definition",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Here's the definition, in simple words.",
+          "caption": "Here's the definition, in simple words.",
+          "pause": 0.35
+        },
+        {
+          "text": "A Type one error is a false alarm: rejecting the null when it was actually true.",
+          "caption": "A Type 1 error is a false alarm: rejecting the null when it was actually true.",
+          "pause": 0.45
+        },
+        {
+          "text": "A Type two error is a miss: keeping the null when it was actually false.",
+          "caption": "A Type 2 error is a miss: keeping the null when it was actually false.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Four outcomes",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Picture all four outcomes.",
+          "caption": "Picture all four outcomes.",
+          "pause": 0.35
+        },
+        {
+          "text": "The null is either true or false, and you either reject it or keep it.",
+          "caption": "The null is either true or false, and you either reject it or keep it.",
+          "pause": 0.4
+        },
+        {
+          "text": "Two boxes are correct. The other two are the errors.",
+          "caption": "Two boxes are correct. The other two are the errors.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "A medical test",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Think of a medical test.",
+          "caption": "Think of a medical test.",
+          "pause": 0.35
+        },
+        {
+          "text": "Telling a healthy person they're sick? Type one: a false alarm.",
+          "caption": "Telling a healthy person they're sick? Type 1: a false alarm.",
+          "pause": 0.45
+        },
+        {
+          "text": "Telling a sick person they're healthy? Type two: a miss.",
+          "caption": "Telling a sick person they're healthy? Type 2: a miss.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Alpha and beta",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "The chance of a Type one error is called alpha, usually five percent.",
+          "caption": "The chance of a Type 1 error is called alpha, usually 5%.",
+          "pause": 0.4
+        },
+        {
+          "text": "So when nothing's going on, about one test in twenty still raises a false alarm.",
+          "caption": "So when nothing's going on, about 1 test in 20 still raises a false alarm.",
+          "pause": 0.45
+        },
+        {
+          "text": "The chance of a Type two error is beta, and one minus beta is called power.",
+          "caption": "The chance of a Type 2 error is beta, and 1 minus beta is called power.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "The trade-off",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Here's the catch: the two errors trade off.",
+          "caption": "Here's the catch: the two errors trade off.",
+          "pause": 0.4
+        },
+        {
+          "text": "Make the test stricter, and you get fewer false alarms, but more misses.",
+          "caption": "Make the test stricter, and you get fewer false alarms, but more misses.",
+          "pause": 0.45
+        },
+        {
+          "text": "The way to reduce both? Collect more data.",
+          "caption": "The way to reduce both? Collect more data.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Which is worse?",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "So which mistake is worse? It depends.",
+          "caption": "So which mistake is worse? It depends.",
+          "pause": 0.4
+        },
+        {
+          "text": "Missing a disease can be deadly, so screening tests avoid Type two errors.",
+          "caption": "Missing a disease can be deadly, so screening tests avoid Type 2 errors.",
+          "pause": 0.4
+        },
+        {
+          "text": "Jailing an innocent person is a Type one error, so courts demand strong evidence.",
+          "caption": "Jailing an innocent person is a Type 1 error, so courts demand strong evidence.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Remember",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "So remember: Type one is a false alarm. Type two is a miss.",
+          "caption": "So remember: Type 1 is a false alarm. Type 2 is a miss.",
+          "pause": 0.4
+        },
+        {
+          "text": "Stricter tests trade one for the other, and more data helps with both.",
+          "caption": "Stricter tests trade one for the other, and more data helps with both.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Quiz, teaser and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        {
+          "text": "Quick quiz!",
+          "caption": "Quick quiz!",
+          "pause": 0.3
+        },
+        {
+          "text": "A spam filter sends a real email from your boss to the spam folder.",
+          "caption": "A spam filter sends a real email from your boss to the spam folder.",
+          "pause": 0.35
+        },
+        {
+          "text": "Which type of error is that?",
+          "caption": "Which type of error is that?",
+          "pause": 5.7
+        },
+        {
+          "text": "Type one!",
+          "caption": "Type 1!",
+          "pause": 0.35
+        },
+        {
+          "text": "The null says the email is normal, and the filter wrongly rejected it. A false alarm.",
+          "caption": "The null says the email is normal, and the filter wrongly rejected it. A false alarm.",
+          "pause": 0.4
+        },
+        {
+          "text": "Next: putting it all together. A-B testing.",
+          "caption": "Next: putting it all together. A/B testing.",
+          "pause": 0.4
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}

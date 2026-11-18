@@ -1,0 +1,214 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Research papers love to say it: p is less than zero point zero five.",
+          "caption": "Research papers love to say it: p is less than 0.05.",
+          "pause": 0.45
+        },
+        {
+          "text": "But what does a p-value actually mean? Let's make it simple.",
+          "caption": "But what does a p-value actually mean? Let's make it simple.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The definition",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Here's the definition, in simple words.",
+          "caption": "Here's the definition, in simple words.",
+          "pause": 0.35
+        },
+        {
+          "text": "The p-value is the chance of getting results at least as extreme as yours, if nothing special were going on.",
+          "caption": "The p-value is the chance of getting results at least as extreme as yours, if nothing special were going on.",
+          "pause": 0.4
+        },
+        {
+          "text": "A small p-value means: this would be really surprising, by luck alone.",
+          "caption": "A small p-value means: this would be really surprising, by luck alone.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "The coin",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Back to the coin that landed heads nine times out of ten.",
+          "caption": "Back to the coin that landed heads 9 times out of 10.",
+          "pause": 0.4
+        },
+        {
+          "text": "If the coin were fair, nine or ten heads would happen just one percent of the time.",
+          "caption": "If the coin were fair, 9 or 10 heads would happen just 1% of the time.",
+          "pause": 0.4
+        },
+        {
+          "text": "So the p-value is zero point zero one.",
+          "caption": "So the p-value is 0.01.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Small vs big",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Now compare: six heads out of ten.",
+          "caption": "Now compare: 6 heads out of 10.",
+          "pause": 0.4
+        },
+        {
+          "text": "Six or more heads happens thirty-eight percent of the time, so the p-value is zero point three eight.",
+          "caption": "6 or more heads happens 38% of the time, so the p-value is 0.38.",
+          "pause": 0.4
+        },
+        {
+          "text": "Small p-value: hard to explain by luck. Big p-value: easily luck.",
+          "caption": "Small p-value: hard to explain by luck. Big p-value: easily luck.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "The 0.05 line",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "By convention, a p-value below zero point zero five is called statistically significant.",
+          "caption": "By convention, a p-value below 0.05 is called statistically significant.",
+          "pause": 0.4
+        },
+        {
+          "text": "But that line is a habit, not a law of nature. Zero point zero four nine and zero point zero five one are almost the same evidence.",
+          "caption": "But that line is a habit, not a law of nature. 0.049 and 0.051 are almost the same evidence.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "The big mistake",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Here's the most common mistake.",
+          "caption": "Here's the most common mistake.",
+          "pause": 0.35
+        },
+        {
+          "text": "A p-value of zero point zero one does not mean a one percent chance that the null is true.",
+          "caption": "A p-value of 0.01 does not mean a 1% chance that the null is true.",
+          "pause": 0.4
+        },
+        {
+          "text": "It's the chance of the data if the null were true. Not the chance of the null, given the data.",
+          "caption": "It's the chance of the data if the null were true. Not the chance of the null, given the data.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Size matters too",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "And a tiny p-value doesn't mean a big effect.",
+          "caption": "And a tiny p-value doesn't mean a big effect.",
+          "pause": 0.4
+        },
+        {
+          "text": "With millions of users, even a tiny difference gets a tiny p-value. So always check how big the effect really is.",
+          "caption": "With millions of users, even a tiny difference gets a tiny p-value. So always check how big the effect really is.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Remember",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "So remember: the p-value tells you how surprising your data would be, if nothing were going on.",
+          "caption": "So remember: the p-value tells you how surprising your data would be, if nothing were going on.",
+          "pause": 0.4
+        },
+        {
+          "text": "Small means surprising. But it is not the chance that the null is true.",
+          "caption": "Small means surprising. But it is not the chance that the null is true.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Quiz, teaser and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        {
+          "text": "Quick quiz!",
+          "caption": "Quick quiz!",
+          "pause": 0.3
+        },
+        {
+          "text": "A test gives a p-value of zero point zero three.",
+          "caption": "A test gives a p-value of 0.03.",
+          "pause": 0.35
+        },
+        {
+          "text": "Is the result statistically significant, at the five percent level?",
+          "caption": "Is the result statistically significant, at the 5% level?",
+          "pause": 5.7
+        },
+        {
+          "text": "Yes!",
+          "caption": "Yes!",
+          "pause": 0.35
+        },
+        {
+          "text": "Zero point zero three is below zero point zero five. But it's still not a three percent chance that the null is true.",
+          "caption": "0.03 is below 0.05. But it's still not a 3% chance that the null is true.",
+          "pause": 0.4
+        },
+        {
+          "text": "Next: what happens when a test gets it wrong? Type one and type two errors.",
+          "caption": "Next: what happens when a test gets it wrong? Type 1 and Type 2 errors.",
+          "pause": 0.4
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}

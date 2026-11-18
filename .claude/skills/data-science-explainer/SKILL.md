@@ -7,10 +7,10 @@ description: House style and production pipeline for the "Data Science Made Simp
 
 The user approved **types-of-data/** as the reference ("came out very well") and asked that **every setting, theme and voice stay the same in future videos**. Treat everything below as fixed defaults. Change something only when the user explicitly asks; if a request seems to conflict with these, ask before deviating.
 
-The reference implementation is `types-of-data/`; the later videos `mean-median-mode/`, `measures-of-dispersion/`, `centre-vs-spread/`, `outliers/`, `iqr/`, `treating-outliers/`, `skewness/`, `normal-distribution/`, `z-score/`, `probability-distribution/`, `population-vs-sample/`, `central-limit-theorem/`, `uniform-distribution/`, `binomial-distribution/`, `poisson-distribution/`, `exponential-distribution/`, `pareto-distribution/`, `lognormal-distribution/`, `bernoulli-geometric/`, `t-distribution/`, `chi-square-distribution/` and `which-distribution/` (cheat sheet v2) follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
+The reference implementation is `types-of-data/`; the later videos `mean-median-mode/`, `measures-of-dispersion/`, `centre-vs-spread/`, `outliers/`, `iqr/`, `treating-outliers/`, `skewness/`, `normal-distribution/`, `z-score/`, `probability-distribution/`, `population-vs-sample/`, `central-limit-theorem/`, `uniform-distribution/`, `binomial-distribution/`, `poisson-distribution/`, `exponential-distribution/`, `pareto-distribution/`, `lognormal-distribution/`, `bernoulli-geometric/`, `t-distribution/`, `chi-square-distribution/`, `which-distribution/` (cheat sheet v2), `confidence-intervals/`, `hypothesis-testing/`, `p-value/`, `type-1-type-2-errors/` and `ab-testing/` follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
 
 ```bash
-REF=which-distribution bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
+REF=ab-testing bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
 ```
 
 The improvements it inherits:
@@ -239,3 +239,8 @@ Notes:
 - When the spoken numbers come from a model (Pareto mean, t cut-offs, chi-square p-values), compute them exactly and keep any illustrative sample consistent with them, or label it as shape-only. 100 Pareto quantiles average ₹869, not the population ₹1,442.
 - New kits: `Curve.tsx` (FnCurve for any density, with bands, a sweep and a dashed variant; ValueAxis, Marker, Badge, Bracket), `TDist.tsx` (exact t density via log-gamma), `Chi.tsx` (chi-square density plus a seeded dice simulation), `PriceDots.tsx` (a dot plot that morphs between a linear and a log scale) and `Pick.tsx` v2 (Shape for all twelve distributions, CheatRow).
 - When a spoken line is cut to save time, re-check every visual that was timed off it. A stamp gated on the removed line's window silently never appeared.
+- The fonts are Latin subsets: α, β, ≈, ≠, ₹, √ and → don't render. Spell out ALPHA / BETA, use the `NotEqual`, `Rupee`, `Radical` and `Arrow` SVGs, and replace "≈ 0.0002" with a true bound ("p < 0.001"). ± ÷ × − are fine.
+- Even after the `Quiz.tsx` shrink, an 8-character option ("NO ERROR") plus a 3-word reason ("it was real") overlapped. Keep names at 7 characters or fewer when the reason is longer than 2 words, or pick shorter words ("NONE", "it erred").
+- `SceneTitle` sits at y ≈ 280: start icons and headlines at y ≥ 400 (a warning icon at y 330 sat on the title).
+- `cueS(i, …)` throws "Cannot read properties of undefined (reading 's')" in `SoundTrack` when sentence `i` doesn't exist. Count each scene's sentences in `voiceover.json` before writing cues; a two-sentence scene has indices 0 and 1 only.
+- Inference batch kits: `Coins.tsx` (exact Binomial(10, ½), `HeadsBars`), `CI.tsx` (number line, `Interval`, 20 seeded surveys), `Errors.tsx` (`Phi`, `alphaAt` / `betaAt`, `ErrCurves` with α / β / power areas, the 2×2 outcome `Grid`, smoke-alarm and flame icons) and `AB.tsx` (`Phone`, `BuyButton`, `PLess`, the seeded 50/50 visitor `SPLIT`).
