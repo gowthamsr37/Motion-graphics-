@@ -38,7 +38,7 @@ const ev = {
   follow: sent("s10", 6),
   acc1: sent("s2", 1), // the definition
   acc2: cueS("s4", 2, "p-value"), // p = 0.01
-  acc3: cueS("s7", 2, "significant."), // the drug is significant
+  acc3: cueS("s7", 3, "significant."), // the taste test is significant
 };
 ev.cd0 = ev.qEnd + 0.2;
 ev.reveal = ev.cd0 + 5;

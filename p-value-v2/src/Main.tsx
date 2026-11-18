@@ -11,7 +11,7 @@ import { S3Null } from "./scenes/S3Null";
 import { S4Nine } from "./scenes/S4Nine";
 import { S5Six } from "./scenes/S5Six";
 import { S6Rule } from "./scenes/S6Rule";
-import { S7Drug } from "./scenes/S7Drug";
+import { S7Taste } from "./scenes/S7Taste";
 import { S8Traps } from "./scenes/S8Traps";
 import { S9Remember } from "./scenes/S9Remember";
 import { SoundTrack } from "./SoundTrack";
@@ -19,7 +19,7 @@ import { theme } from "./theme";
 import { SCENE_IDS, sceneRange, SceneId, totalFrames } from "./timing";
 
 const C = theme.colors;
-const SCENES: Record<string, React.FC> = { s1: S1Hook, s2: S2Definition, s3: S3Null, s4: S4Nine, s5: S5Six, s6: S6Rule, s7: S7Drug, s8: S8Traps, s9: S9Remember, s10: S10Quiz };
+const SCENES: Record<string, React.FC> = { s1: S1Hook, s2: S2Definition, s3: S3Null, s4: S4Nine, s5: S5Six, s6: S6Rule, s7: S7Taste, s8: S8Traps, s9: S9Remember, s10: S10Quiz };
 // backdrop tints + caption accent: violet = the p-value, cyan = the null, orange = extreme / surprising, green = 0.05
 const LOOK: Record<string, { a: string; b: string; accent: string }> = {
   s1: { a: C.cyan, b: C.orange, accent: C.orange },

@@ -1,4 +1,4 @@
-// SCENE 8 — TWO INTERVIEW TRAPS. 1: "p = 0.02 = 2% CHANCE THE NULL IS TRUE" struck out → it's the chance of the DATA,
+// SCENE 8 — TWO INTERVIEW TRAPS. 1: "p = 0.01 = 1% CHANCE THE NULL IS TRUE" struck out → it's the chance of the DATA,
 // IF THE NULL WERE TRUE. 2: SMALL p ≠ BIG EFFECT → it only says the effect is probably not zero.
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
@@ -48,9 +48,9 @@ export const S8Traps: React.FC = () => {
       </Pop>
       <Trap y={470} h={400} at={T1} n={1}>
         <div style={{ position: "absolute", left: 30, top: 90, display: "flex", alignItems: "center", gap: 16 }}>
-          <PLess v="0.02" size={44} />
+          <PLess v="0.01" size={44} />
           <span style={{ position: "relative", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 38, color: C.text, whiteSpace: "nowrap" }}>
-            = 2% CHANCE NULL IS TRUE
+            = 1% CHANCE NULL IS TRUE
             <span style={{ position: "absolute", left: -6, top: "52%", width: `${strike * 104}%`, height: 6, borderRadius: 3, background: C.red, boxShadow: `0 0 10px ${C.red}` }} />
           </span>
           <Mark kind="cross" at={NOT1 + 10} size={44} color={C.red} width={9} />

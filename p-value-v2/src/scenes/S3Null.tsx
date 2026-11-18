@@ -1,5 +1,5 @@
 // SCENE 3 — THE NULL HYPOTHESIS = THE BORING EXPLANATION: nothing special is going on. Three cards: THE COIN IS FAIR ·
-// THE DRUG DOES NOTHING · THE BUTTON CHANGES NOTHING.
+// THE FRIEND IS JUST GUESSING · THE BUTTON CHANGES NOTHING.
 import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { SceneTitle } from "../components/Kit";
@@ -16,6 +16,20 @@ export const PillIcon: React.FC<{ w: number }> = ({ w }) => (
     <rect x={3} y={3} width={94} height={36} rx={18} fill={alpha(NULLC, 0.25)} stroke={NULLC} strokeWidth={4} />
     <path d="M50 3 V39" stroke={NULLC} strokeWidth={4} />
     <rect x={50} y={3} width={47} height={36} rx={18} fill={alpha(C.orange, 0.45)} />
+  </svg>
+);
+
+// two cola cups for the taste test
+export const Cups: React.FC<{ w: number; q?: boolean }> = ({ w, q = true }) => (
+  <svg width={w} height={w * 0.62} viewBox="0 0 170 106" style={{ display: "block", overflow: "visible" }}>
+    {[0, 1].map((i) => (
+      <g key={i} transform={`translate(${i * 88} 0)`}>
+        <path d="M12 26 H70 L62 100 H20 Z" fill={alpha(i ? C.orange : C.violet, 0.4)} stroke={i ? C.orange : C.violet} strokeWidth={4} strokeLinejoin="round" />
+        <path d="M8 26 H74" stroke={C.text} strokeWidth={5} strokeLinecap="round" />
+        <path d="M46 26 L56 2" stroke={C.text} strokeWidth={4} strokeLinecap="round" />
+        {q ? <text x={41} y={76} textAnchor="middle" fontFamily={theme.fonts.display} fontWeight={800} fontSize={30} fill={C.text}>?</text> : null}
+      </g>
+    ))}
   </svg>
 );
 
@@ -52,7 +66,7 @@ export const S3Null: React.FC = () => {
         </div>
       </Pop>
       <Card y={650} at={s.cueS(1, "coin")} icon={<Coin side="H" size={120} />} t="The coin is fair" sub="HEADS AND TAILS 50/50" />
-      <Card y={860} at={s.cueS(1, "drug")} icon={<PillIcon w={160} />} t="The drug does nothing" sub="SAME AS A PLACEBO" />
+      <Card y={860} at={s.cueS(1, "friend")} icon={<Cups w={170} />} t="The friend is just guessing" sub="50/50 ON EVERY CUP" />
       <Card y={1070} at={s.cueS(1, "button")} icon={<ButtonIcon w={170} />} t="The button changes nothing" sub="SAME NUMBER OF CLICKS" />
     </AbsoluteFill>
   );

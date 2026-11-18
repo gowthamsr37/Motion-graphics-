@@ -95,7 +95,7 @@ const useHits = (): Hit[] => {
     const s = sceneTiming(fps, "s3");
     const h = at("s3");
     h(s.cueS(0, "boring") - 10, "pop.wav", 0.18);
-    [s.cueS(1, "coin"), s.cueS(1, "drug"), s.cueS(1, "button")].forEach((f, k) => h(f - 10, `step${k + 1}.wav`, 0.2));
+    [s.cueS(1, "coin"), s.cueS(1, "friend"), s.cueS(1, "button")].forEach((f, k) => h(f - 10, `step${k + 1}.wav`, 0.2));
   }
   // S4 — example 1
   {
@@ -125,15 +125,16 @@ const useHits = (): Hit[] => {
     h(s.cueS(2, "0.05.") - 10, "glide.wav", 0.18);
     h(s.cueS(2, "significant.") - 10, "ding.wav", 0.2);
   }
-  // S7 — example 3
+  // S7 — example 3: the taste test
   {
     const s = sceneTiming(fps, "s7");
     const h = at("s7");
     h(s.sent(0).from - 4, "pop.wav", 0.2);
-    h(s.sent(1).from + 6, "glide.wav", 0.16);
-    h(s.cueS(1, "placebo,") - 8, "glide.wav", 0.16);
-    h(s.cueS(1, "0.02.") - 10, "ding.wav", 0.22);
-    h(s.cueS(2, "significant.") - 6, "stamp.wav", 0.2);
+    for (let i = 0; i < 10; i++) h(s.cueS(1, "10") + i * 3, "tick.wav", 0.08);
+    h(s.sent(2).from - 6, "pop.wav", 0.16);
+    h(s.cueS(2, "1,000.") - 12, "glitch.wav", 0.08);
+    h(s.cueS(3, "0.001.") - 10, "ding.wav", 0.22);
+    h(s.cueS(3, "significant.") - 6, "stamp.wav", 0.2);
   }
   // S8 — two traps
   {

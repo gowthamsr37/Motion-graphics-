@@ -28,18 +28,18 @@
       "hold": 1.4,
       "segments": [
         {
-          "text": "Here's the definition you can use in an interview.",
-          "caption": "Here's the definition you can use in an interview.",
+          "text": "Here's the textbook definition, the one to use in interviews.",
+          "caption": "Here's the textbook definition, the one to use in interviews.",
           "pause": 0.4
         },
         {
-          "text": "The p-value is the probability of getting results at least as extreme as yours, assuming the null hypothesis is true.",
-          "caption": "The p-value is the probability of getting results at least as extreme as yours, assuming the null hypothesis is true.",
+          "text": "The p-value is the probability of obtaining results at least as extreme as the observed results, assuming that the null hypothesis is true.",
+          "caption": "The p-value is the probability of obtaining results at least as extreme as the observed results, assuming that the null hypothesis is true.",
           "pause": 0.45
         },
         {
-          "text": "In plain words: if nothing special were going on, how surprising would my data be?",
-          "caption": "In plain words: if nothing special were going on, how surprising would my data be?",
+          "text": "In plain words: if nothing special were going on, how surprising would this data be?",
+          "caption": "In plain words: if nothing special were going on, how surprising would this data be?",
           "pause": 0.3
         }
       ]
@@ -56,8 +56,8 @@
           "pause": 0.4
         },
         {
-          "text": "The coin is fair. The new drug does nothing. The new button changes nothing.",
-          "caption": "The coin is fair. The new drug does nothing. The new button changes nothing.",
+          "text": "The coin is fair. The friend is just guessing. The new button changes nothing.",
+          "caption": "The coin is fair. The friend is just guessing. The new button changes nothing.",
           "pause": 0.3
         }
       ]
@@ -133,23 +133,28 @@
     },
     {
       "id": "s7",
-      "title": "Example 3: a new drug",
+      "title": "Example 3: a taste test",
       "lead": 0.45,
       "hold": 1.0,
       "segments": [
         {
-          "text": "Example three: a new drug.",
-          "caption": "Example three: a new drug.",
+          "text": "Example three: a taste test.",
+          "caption": "Example three: a taste test.",
           "pause": 0.35
         },
         {
-          "text": "Patients on the drug see their blood pressure drop more than patients on a placebo, with a p-value of zero point zero two.",
-          "caption": "Patients on the drug see their blood pressure drop more than patients on a placebo, with a p-value of 0.02.",
+          "text": "A friend claims they can tell two cola brands apart. Blindfolded, they get ten out of ten right.",
+          "caption": "A friend claims they can tell two cola brands apart. Blindfolded, they get 10 out of 10 right.",
           "pause": 0.4
         },
         {
-          "text": "So if the drug did nothing, a gap this big would appear only two percent of the time. That's significant.",
-          "caption": "So if the drug did nothing, a gap this big would appear only 2% of the time. That's significant.",
+          "text": "The null hypothesis: they're just guessing. A guesser gets ten out of ten only about one time in a thousand.",
+          "caption": "The null hypothesis: they're just guessing. A guesser gets 10 out of 10 only about 1 time in 1,000.",
+          "pause": 0.4
+        },
+        {
+          "text": "So p is about zero point zero zero one. Far below zero point zero five, so it's significant.",
+          "caption": "So p is about 0.001. Far below 0.05, so it's significant.",
           "pause": 0.3
         }
       ]
@@ -166,8 +171,8 @@
           "pause": 0.35
         },
         {
-          "text": "One: a p-value of zero point zero two is not a two percent chance that the null is true. It's the chance of the data, if the null were true.",
-          "caption": "One: a p-value of 0.02 is not a 2% chance that the null is true. It's the chance of the data, if the null were true.",
+          "text": "One: a p-value of zero point zero one is not a one percent chance that the null is true. It's the chance of the data, if the null were true.",
+          "caption": "One: a p-value of 0.01 is not a 1% chance that the null is true. It's the chance of the data, if the null were true.",
           "pause": 0.4
         },
         {
@@ -184,8 +189,8 @@
       "hold": 1.0,
       "segments": [
         {
-          "text": "So remember: the p-value tells you how surprising your data is, if nothing special were going on.",
-          "caption": "So remember: the p-value tells you how surprising your data is, if nothing special were going on.",
+          "text": "So remember: the p-value tells how surprising the observed data would be, if nothing special were going on.",
+          "caption": "So remember: the p-value tells how surprising the observed data would be, if nothing special were going on.",
           "pause": 0.4
         },
         {
