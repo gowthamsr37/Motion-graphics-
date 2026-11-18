@@ -30,13 +30,16 @@ export const S6Average: React.FC = () => {
     <AbsoluteFill>
       <ExampleTag n={2} at={s.sent(0).from} color={EST} label="AVERAGES" y={290} />
       {card > 0.001 ? (
-        <div style={{ position: "absolute", left: 540, top: 540, width: 760, height: 250, transform: `translate(-50%, -50%) scale(${0.6 + 0.4 * Math.min(1, card)})`, opacity: Math.min(1, card * 2), boxSizing: "border-box", borderRadius: 30, background: "linear-gradient(180deg, rgba(30,44,104,0.95), rgba(14,24,64,0.95))", border: `2px solid ${alpha(EST, 0.7)}`, display: "flex", alignItems: "center", justifyContent: "center", gap: 34 }}>
+        <div style={{ position: "absolute", left: 540, top: 540, width: 760, height: 290, transform: `translate(-50%, -50%) scale(${0.6 + 0.4 * Math.min(1, card)})`, opacity: Math.min(1, card * 2), boxSizing: "border-box", borderRadius: 30, background: "linear-gradient(180deg, rgba(30,44,104,0.95), rgba(14,24,64,0.95))", border: `2px solid ${alpha(EST, 0.7)}`, display: "flex", alignItems: "center", justifyContent: "center", gap: 34 }}>
           <ClockGlyph size={110} color={EST} />
           <div>
             <div style={{ fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 22, letterSpacing: "0.16em", color: C.dim }}>FOOD APP · 100 ORDERS</div>
             <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 30, color: C.text, marginTop: 6 }}>AVERAGE DELIVERY</div>
             <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 84, lineHeight: 1, color: C.text, textShadow: glowText(EST, 0.5), opacity: Math.min(1, dot * 2) }}>
               32 <span style={{ fontSize: 40, color: EST }}>MIN</span>
+            </div>
+            <div style={{ fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 22, letterSpacing: "0.12em", color: C.dim, marginTop: 8 }}>
+              SPREAD (SD): <span style={{ color: C.green }}>10 MIN</span>
             </div>
           </div>
         </div>

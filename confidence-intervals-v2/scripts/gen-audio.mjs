@@ -37,7 +37,7 @@ const ev = {
   tease: sent("s11", 5),
   follow: sent("s11", 6),
   acc1: sent("s4", 1), // the definition
-  acc2: cueS("s7", 3, "margin"), // margin = 2
+  acc2: sentEnd("s7", 5), // margin = 2
   acc3: cueS("s8", 2, "catch"), // 95 in 100
 };
 ev.cd0 = ev.qEnd + 0.2;

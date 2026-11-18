@@ -163,8 +163,18 @@
           "pause": 0.4
         },
         {
-          "text": "Here: ten divided by ten is one. So the margin is two.",
-          "caption": "Here: 10 divided by 10 is 1. So the margin is 2.",
+          "text": "In our example, the spread is ten minutes, and the sample size is one hundred.",
+          "caption": "In our example, the spread is 10 minutes, and the sample size is 100.",
+          "pause": 0.35
+        },
+        {
+          "text": "The square root of one hundred is ten, so the standard error is one minute.",
+          "caption": "The square root of 100 is 10, so the standard error is 1 minute.",
+          "pause": 0.35
+        },
+        {
+          "text": "And the margin is two times that: two minutes.",
+          "caption": "And the margin is 2 times that: 2 minutes.",
           "pause": 0.3
         }
       ]

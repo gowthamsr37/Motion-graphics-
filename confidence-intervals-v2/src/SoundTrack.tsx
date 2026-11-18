@@ -129,8 +129,12 @@ const useHits = (): Hit[] => {
   {
     const s = sceneTiming(fps, "s7");
     const h = at("s7");
-    [s.cueS(0, "estimate,"), s.sent(1).from, s.sent(2).from, s.sent(3).from].forEach((f, k) => h(f - 10, `step${(k % 3) + 1}.wav`, 0.2));
-    h(s.cueS(3, "margin") - 6, "ding.wav", 0.2);
+    [s.cueS(0, "estimate,"), s.sent(1).from, s.sent(2).from].forEach((f, k) => h(f - 10, `step${k + 1}.wav`, 0.2));
+    h(s.sent(3).from - 8, "sparkle.wav", 0.16);
+    [s.cueS(3, "spread"), s.cueS(3, "100.")].forEach((f) => h(f - 10, "pop.wav", 0.16));
+    h(s.sent(4).from - 8, "blip1.wav", 0.18);
+    h(s.sent(5).from - 8, "blip2.wav", 0.18);
+    h(s.sent(5).to - 6, "ding.wav", 0.2);
   }
   // S8 — what 95% means
   {
