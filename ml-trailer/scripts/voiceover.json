@@ -1,0 +1,169 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "You've mastered the statistics.",
+          "caption": "You've mastered the statistics.",
+          "pause": 0.45
+        },
+        {
+          "text": "Now, let's teach machines to learn.",
+          "caption": "Now, let's teach machines to learn.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Title",
+      "lead": 0.3,
+      "hold": 0.9,
+      "segments": [
+        {
+          "text": "Introducing: one hundred days of machine learning.",
+          "caption": "Introducing: 100 Days of Machine Learning.",
+          "pause": 0.45
+        },
+        {
+          "text": "One topic a day. Explained simply. From zero to real projects.",
+          "caption": "One topic a day. Explained simply. From zero to real projects.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Roadmap: days 1 to 44",
+      "lead": 0.4,
+      "hold": 0.9,
+      "segments": [
+        {
+          "text": "Here's everything you'll learn.",
+          "caption": "Here's everything you'll learn.",
+          "pause": 0.35
+        },
+        {
+          "text": "The foundations: how machines learn, overfitting, and gradient descent.",
+          "caption": "The foundations: how machines learn, overfitting, and gradient descent.",
+          "pause": 0.3
+        },
+        {
+          "text": "How to prepare your data.",
+          "caption": "How to prepare your data.",
+          "pause": 0.3
+        },
+        {
+          "text": "Regression and classification, from linear regression to decision trees.",
+          "caption": "Regression and classification, from linear regression to decision trees.",
+          "pause": 0.3
+        },
+        {
+          "text": "And how to pick the best model.",
+          "caption": "And how to pick the best model.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Roadmap: days 45 to 100",
+      "lead": 0.4,
+      "hold": 0.9,
+      "segments": [
+        {
+          "text": "Then the power tools: random forests and XGBoost.",
+          "caption": "Then the power tools: random forests and XGBoost.",
+          "pause": 0.3
+        },
+        {
+          "text": "Clustering and PCA, to find hidden patterns.",
+          "caption": "Clustering and PCA, to find hidden patterns.",
+          "pause": 0.3
+        },
+        {
+          "text": "Real-world skills, like forecasting and recommendations.",
+          "caption": "Real-world skills, like forecasting and recommendations.",
+          "pause": 0.3
+        },
+        {
+          "text": "And deep learning: neural networks, CNNs, transformers, and large language models.",
+          "caption": "And deep learning: neural networks, CNNs, transformers, and large language models.",
+          "pause": 0.3,
+          "fix": [
+            [
+              "sˌiːˌɛnˈɛn,",
+              "sˌiːˌɛnˈɛnz,"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Projects",
+      "lead": 0.4,
+      "hold": 0.9,
+      "segments": [
+        {
+          "text": "Then we'll build real projects together:",
+          "caption": "Then we'll build real projects together:",
+          "pause": 0.3
+        },
+        {
+          "text": "house prices, customer churn, a spam filter, and an image classifier.",
+          "caption": "house prices, customer churn, a spam filter, and an image classifier.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Who it's for",
+      "lead": 0.4,
+      "hold": 0.9,
+      "segments": [
+        {
+          "text": "No PhD needed. Just a few minutes a day.",
+          "caption": "No PhD needed. Just a few minutes a day.",
+          "pause": 0.35
+        },
+        {
+          "text": "Perfect for beginners, students, and interview prep.",
+          "caption": "Perfect for beginners, students, and interview prep.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Coming soon and CTA",
+      "lead": 0.4,
+      "hold": 1.4,
+      "segments": [
+        {
+          "text": "Day one is coming soon.",
+          "caption": "Day one is coming soon.",
+          "pause": 0.4
+        },
+        {
+          "text": "Turn on notifications, so you don't miss a single day.",
+          "caption": "Turn on notifications, so you don't miss a single day.",
+          "pause": 0.4
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}
