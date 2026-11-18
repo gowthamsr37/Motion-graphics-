@@ -1,0 +1,260 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "A chips brand says every packet has fifty grams. You weigh twenty-five packets, and the average is only forty-eight grams.",
+          "caption": "A chips brand says every packet has 50 grams. You weigh 25 packets, and the average is only 48 grams.",
+          "pause": 0.45
+        },
+        {
+          "text": "Are they cheating, or is it just normal variation? Hypothesis testing decides.",
+          "caption": "Are they cheating, or is it just normal variation? Hypothesis testing decides.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Textbook definition",
+      "lead": 0.45,
+      "hold": 1.4,
+      "segments": [
+        {
+          "text": "Here's the textbook definition, the one to use in interviews.",
+          "caption": "Here's the textbook definition, the one to use in interviews.",
+          "pause": 0.4
+        },
+        {
+          "text": "Hypothesis testing is a statistical method that uses sample data to decide between two competing claims about a population: the null hypothesis and the alternative hypothesis.",
+          "caption": "Hypothesis testing is a statistical method that uses sample data to decide between two competing claims about a population: the null hypothesis and the alternative hypothesis.",
+          "pause": 0.45
+        },
+        {
+          "text": "In plain words: is the pattern in the data real, or just chance?",
+          "caption": "In plain words: is the pattern in the data real, or just chance?",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "The two hypotheses",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "The null hypothesis, H zero, says nothing special is going on: the packets really average fifty grams.",
+          "caption": "The null hypothesis, H0, says nothing special is going on: the packets really average 50 grams.",
+          "pause": 0.4
+        },
+        {
+          "text": "The alternative, H one, says something is going on: they average less.",
+          "caption": "The alternative, H1, says something is going on: they average less.",
+          "pause": 0.4
+        },
+        {
+          "text": "We always start by assuming the null is true.",
+          "caption": "We always start by assuming the null is true.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "More examples",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Every test has this pair.",
+          "caption": "Every test has this pair.",
+          "pause": 0.35
+        },
+        {
+          "text": "A coin: fair, or biased. A website button: no change, or more clicks.",
+          "caption": "A coin: fair, or biased. A website button: no change, or more clicks.",
+          "pause": 0.4
+        },
+        {
+          "text": "A new teaching method: no difference, or higher scores.",
+          "caption": "A new teaching method: no difference, or higher scores.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Like a courtroom",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "It's like a courtroom: innocent until proven guilty.",
+          "caption": "It's like a courtroom: innocent until proven guilty.",
+          "pause": 0.4
+        },
+        {
+          "text": "We reject the null only with strong evidence. Not enough evidence means not guilty, which is not the same as innocent.",
+          "caption": "We reject the null only with strong evidence. Not enough evidence means not guilty, which is not the same as innocent.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Steps 1 and 2",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "A test has four steps.",
+          "caption": "A test has four steps.",
+          "pause": 0.35
+        },
+        {
+          "text": "One: state the two hypotheses. Two: pick a significance level, usually five percent.",
+          "caption": "One: state the two hypotheses. Two: pick a significance level, usually 5%.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Steps 3 and 4",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Three: calculate the p-value.",
+          "caption": "Three: calculate the p-value.",
+          "pause": 0.35
+        },
+        {
+          "text": "If the packets really averaged fifty grams, an average this low would happen only about one percent of the time.",
+          "caption": "If the packets really averaged 50 grams, an average this low would happen only about 1% of the time.",
+          "pause": 0.4
+        },
+        {
+          "text": "Four: decide. One percent is below five percent, so we reject the null. The packets really are underfilled.",
+          "caption": "Four: decide. 1% is below 5%, so we reject the null. The packets really are underfilled.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "The other outcome",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Now suppose the average had been forty-nine and a half grams.",
+          "caption": "Now suppose the average had been 49.5 grams.",
+          "pause": 0.4
+        },
+        {
+          "text": "That happens about twenty-seven percent of the time by chance, so we fail to reject the null.",
+          "caption": "That happens about 27% of the time by chance, so we fail to reject the null.",
+          "pause": 0.4
+        },
+        {
+          "text": "That doesn't prove the packets are full. There's just not enough evidence.",
+          "caption": "That doesn't prove the packets are full. There's just not enough evidence.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Example 2: a coin",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "One more example: a coin lands heads nine times out of ten.",
+          "caption": "One more example: a coin lands heads 9 times out of 10.",
+          "pause": 0.4
+        },
+        {
+          "text": "If the coin were fair, nine or more heads would happen only about one percent of the time.",
+          "caption": "If the coin were fair, 9 or more heads would happen only about 1% of the time.",
+          "pause": 0.4
+        },
+        {
+          "text": "Below five percent, so we reject the null. The coin is probably biased.",
+          "caption": "Below 5%, so we reject the null. The coin is probably biased.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "Remember",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "So remember: assume nothing special is going on, collect data,",
+          "caption": "So remember: assume nothing special is going on, collect data,",
+          "pause": 0.25
+        },
+        {
+          "text": "and reject that assumption only when the data would be really surprising.",
+          "caption": "and reject that assumption only when the data would be really surprising.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "Quiz, teaser and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        {
+          "text": "Quick quiz!",
+          "caption": "Quick quiz!",
+          "pause": 0.3
+        },
+        {
+          "text": "A school claims its new teaching method raises test scores.",
+          "caption": "A school claims its new teaching method raises test scores.",
+          "pause": 0.35
+        },
+        {
+          "text": "What is the null hypothesis?",
+          "caption": "What is the null hypothesis?",
+          "pause": 5.7
+        },
+        {
+          "text": "No change!",
+          "caption": "No change!",
+          "pause": 0.35
+        },
+        {
+          "text": "The null always says: no effect, no difference. The school must bring enough evidence to reject it.",
+          "caption": "The null always says: no effect, no difference. The school must bring enough evidence to reject it.",
+          "pause": 0.4
+        },
+        {
+          "text": "Next: how surprising is the data? The p-value.",
+          "caption": "Next: how surprising is the data? The p-value.",
+          "pause": 0.4
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}
