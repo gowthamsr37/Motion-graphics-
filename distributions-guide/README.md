@@ -28,7 +28,7 @@ It uses the locked series house style (`.claude/skills/data-science-explainer/SK
 | File | What it is |
 | --- | --- |
 | `Distributions_Complete_Guide.mp4` | the finished Reel |
-| `Distributions_Complete_Guide_Cover.png` | 1080×1920 cover: EVERY DISTRIBUTION YOU NEED · the complete cheat sheet, the twelve mini cards in a 3 × 4 grid, a SAVE THIS bookmark pill, @curious_datascientist |
+| `Distributions_Complete_Guide_Cover.png` | 1080×1920 cover: **12 DISTRIBUTIONS EVERY DATA SCIENTIST MUST KNOW** · THE COMPLETE CHEAT SHEET, the twelve mini cards in a 3 × 4 grid, a SAVE THIS FOR LATER bookmark pill, @curious_datascientist |
 | `Distributions_Complete_Guide.srt` | the on-screen subtitle pages |
 
 The Instagram caption is in [`CAPTION.md`](CAPTION.md).
