@@ -1,0 +1,110 @@
+{
+  "voice": "af_bella",
+  "lang": "en-us",
+  "speed": 1.0,
+  "fix": [
+    ["ˈoʊdiz", "ˌoʊdˌiːˈaɪz"],
+    ["ˈoʊdi", "ˌoʊdˌiː"],
+    ["ˈɪpəl", "ˌaɪpˌiːˈɛl"]
+  ],
+  "scenes": [
+    {
+      "id": "s1", "lead": 0.5, "hold": 0.5,
+      "segments": [
+        { "text": "Captains celebrate winning the toss.", "caption": "Captains celebrate winning the toss.", "pause": 0.4 },
+        { "text": "But is it a real edge, or just noise?", "caption": "But is it a real edge, or just noise?", "pause": 0.5 },
+        { "text": "Let's find out the way a data scientist would.", "caption": "Let's find out the way a data scientist would.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s2", "lead": 0.3, "hold": 0.6,
+      "segments": [
+        { "text": "Step one: the data.", "caption": "Step one: the data.", "pause": 0.35 },
+        { "text": "Ball-by-ball records from Cricsheet.", "caption": "Ball-by-ball records from Cricsheet.", "pause": 0.3 },
+        { "text": "Eight thousand, four hundred and eight men's matches.", "caption": "8,408 men's matches.", "pause": 0.45 },
+        { "text": "Drop the ties, draws and no-results,", "caption": "Drop the ties, draws and no-results,", "pause": 0.2 },
+        { "text": "and we're left with seven thousand, nine hundred and sixty-five decided games.", "caption": "and we're left with 7,965 decided games.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s3", "lead": 0.3, "hold": 0.6,
+      "segments": [
+        { "text": "Step two: the hypothesis.", "caption": "Step two: the hypothesis.", "pause": 0.35 },
+        { "text": "The null hypothesis says the toss is a coin flip.", "caption": "The null hypothesis says the toss is a coin flip.", "pause": 0.3 },
+        { "text": "Toss winners win fifty percent of the time.", "caption": "Toss winners win 50% of the time.", "pause": 0.4 },
+        { "text": "Our job: can the data reject that?", "caption": "Our job: can the data reject that?", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s4", "lead": 0.3, "hold": 0.6,
+      "segments": [
+        { "text": "Step three: what does noise look like?", "caption": "Step three: what does noise look like?", "pause": 0.35 },
+        { "text": "Simulate a fair coin over twenty-five hundred ODIs,", "caption": "Simulate a fair coin over 2,500 ODIs,", "pause": 0.2 },
+        { "text": "and ninety-five percent of the time, the win rate lands between forty-eight and fifty-two percent.", "caption": "and 95% of the time, the win rate lands between 48 and 52%.", "pause": 0.35 },
+        { "text": "That band is pure luck.", "caption": "That band is pure luck.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s5", "lead": 0.3, "hold": 0.7,
+      "segments": [
+        { "text": "Now, the real data.", "caption": "Now, the real data.", "pause": 0.3 },
+        { "text": "ODI toss winners won twelve hundred and forty-four of twenty-four eighty-seven.", "caption": "ODI toss winners won 1,244 of 2,487.", "pause": 0.35 },
+        { "text": "That's fifty point zero percent.", "caption": "That's 50.0%.", "pause": 0.35 },
+        { "text": "P-value: zero point nine eight.", "caption": "p-value: 0.98.", "pause": 0.35 },
+        { "text": "No signal at all.", "caption": "No signal at all.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s6", "lead": 0.3, "hold": 0.7,
+      "segments": [
+        { "text": "Run the same test on every format.", "caption": "Run the same test on every format.", "pause": 0.3 },
+        { "text": "T twenty internationals: fifty point five.", "caption": "T20Is: 50.5%.", "pause": 0.3 },
+        { "text": "IPL: fifty-one point six.", "caption": "IPL: 51.6%.", "pause": 0.3 },
+        { "text": "Both inside the noise band.", "caption": "Both inside the noise band.", "pause": 0.4 },
+        { "text": "Only Tests break out: fifty-four point two percent, with a p-value of zero point zero two.", "caption": "Only Tests break out: 54.2%, with a p-value of 0.02.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s7", "lead": 0.3, "hold": 0.7,
+      "segments": [
+        { "text": "So why does the myth feel true?", "caption": "So why does the myth feel true?", "pause": 0.35 },
+        { "text": "Pitfall one: cherry-picking.", "caption": "Pitfall one: cherry-picking.", "pause": 0.35 },
+        { "text": "At the twenty twenty-one T twenty World Cup, toss winners won thirty of forty-five.", "caption": "At the 2021 T20 World Cup, toss winners won 30 of 45.", "pause": 0.35 },
+        { "text": "The next three World Cups: thirty-nine, fifty-six, and forty-three percent.", "caption": "The next three World Cups: 39%, 56% and 43%.", "pause": 0.4 },
+        { "text": "One memorable sample is not a trend.", "caption": "One memorable sample is not a trend.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s8", "lead": 0.3, "hold": 0.7,
+      "segments": [
+        { "text": "Pitfall two: regression to the mean.", "caption": "Pitfall two: regression to the mean.", "pause": 0.35 },
+        { "text": "Split each ground's matches into two halves.", "caption": "Split each ground's matches into two halves.", "pause": 0.3 },
+        { "text": "The eight strongest toss grounds fell from sixty-four percent to forty-two.", "caption": "The 8 strongest \"toss grounds\" fell from 64% to 42%.", "pause": 0.3 },
+        { "text": "The weakest eight rose from thirty-nine to forty-seven.", "caption": "The weakest 8 rose from 39% to 47%.", "pause": 0.35 },
+        { "text": "Across fifty-two grounds, the correlation is minus zero point zero nine.", "caption": "Across 52 grounds, the correlation is −0.09.", "pause": 0.3 },
+        { "text": "Past toss luck predicts nothing.", "caption": "Past toss luck predicts nothing.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s9", "lead": 0.3, "hold": 0.8,
+      "segments": [
+        { "text": "Step four: segment the data.", "caption": "Step four: segment the data.", "pause": 0.35 },
+        { "text": "In Tests, toss winners who bat first win fifty-seven percent.", "caption": "In Tests, toss winners who bat first win 57%.", "pause": 0.35 },
+        { "text": "In the IPL, it flips.", "caption": "In the IPL, it flips.", "pause": 0.2 },
+        { "text": "Bowl first, and win fifty-five.", "caption": "Bowl first, and win 55%.", "pause": 0.4 },
+        { "text": "The coin doesn't matter. The decision does.", "caption": "The coin doesn't matter. The decision does.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s10", "lead": 0.3, "hold": 2.4,
+      "segments": [
+        { "text": "Conclusion.", "caption": "Conclusion.", "pause": 0.3 },
+        { "text": "Across all formats, toss winners win fifty point nine percent.", "caption": "Across all formats, toss winners win 50.9%.", "pause": 0.3 },
+        { "text": "The ninety-five percent confidence interval, forty-nine point eight to fifty-two, includes fifty.", "caption": "The 95% confidence interval, 49.8 to 52.0, includes 50.", "pause": 0.35 },
+        { "text": "We fail to reject the null.", "caption": "We fail to reject the null.", "pause": 0.4 },
+        { "text": "Verdict: it's mostly noise.", "caption": "Verdict: it's mostly noise.", "pause": 0.5 },
+        { "text": "Which cricket belief should we test next?", "caption": "Which cricket belief should we test next?", "pause": 0.3 }
+      ]
+    }
+  ]
+}

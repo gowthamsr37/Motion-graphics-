@@ -1,0 +1,752 @@
+{
+ "TEST": {
+  "matches": 899,
+  "decisive": 730,
+  "toss_wins": 396,
+  "pct": 54.2,
+  "ci": [
+   50.6,
+   57.8
+  ],
+  "p": 0.0217,
+  "coin_band": [
+   46.4,
+   53.6
+  ]
+ },
+ "ODI": {
+  "matches": 2617,
+  "decisive": 2487,
+  "toss_wins": 1244,
+  "pct": 50.0,
+  "ci": [
+   48.1,
+   52.0
+  ],
+  "p": 0.984,
+  "coin_band": [
+   48.0,
+   52.0
+  ]
+ },
+ "T20I": {
+  "matches": 3649,
+  "decisive": 3530,
+  "toss_wins": 1783,
+  "pct": 50.5,
+  "ci": [
+   48.9,
+   52.2
+  ],
+  "p": 0.5446,
+  "coin_band": [
+   48.4,
+   51.6
+  ]
+ },
+ "IPL": {
+  "matches": 1243,
+  "decisive": 1218,
+  "toss_wins": 628,
+  "pct": 51.6,
+  "ci": [
+   48.8,
+   54.4
+  ],
+  "p": 0.2762,
+  "coin_band": [
+   47.2,
+   52.8
+  ]
+ },
+ "T20I full members": {
+  "matches": 1143,
+  "decisive": 1090,
+  "toss_wins": 551,
+  "pct": 50.6,
+  "ci": [
+   47.6,
+   53.5
+  ],
+  "p": 0.7163
+ },
+ "ALL (limited overs+tests)": {
+  "matches": 8408,
+  "decisive": 7965,
+  "toss_wins": 4051,
+  "pct": 50.9,
+  "ci": [
+   49.8,
+   52.0
+  ],
+  "p": 0.1248
+ },
+ "tests_wld": {
+  "won": 396,
+  "lost": 334,
+  "drawn": 169,
+  "n": 899
+ },
+ "TEST chose bat": {
+  "matches": 613,
+  "decisive": 496,
+  "toss_wins": 283,
+  "pct": 57.1,
+  "ci": [
+   52.7,
+   61.3
+  ],
+  "p": 0.0017
+ },
+ "TEST chose field": {
+  "matches": 286,
+  "decisive": 234,
+  "toss_wins": 113,
+  "pct": 48.3,
+  "ci": [
+   42.0,
+   54.7
+  ],
+  "p": 0.601
+ },
+ "ODI chose bat": {
+  "matches": 1269,
+  "decisive": 1212,
+  "toss_wins": 580,
+  "pct": 47.9,
+  "ci": [
+   45.1,
+   50.7
+  ],
+  "p": 0.1353
+ },
+ "ODI chose field": {
+  "matches": 1348,
+  "decisive": 1275,
+  "toss_wins": 664,
+  "pct": 52.1,
+  "ci": [
+   49.3,
+   54.8
+  ],
+  "p": 0.1377
+ },
+ "T20I chose bat": {
+  "matches": 1676,
+  "decisive": 1636,
+  "toss_wins": 813,
+  "pct": 49.7,
+  "ci": [
+   47.3,
+   52.1
+  ],
+  "p": 0.8047
+ },
+ "T20I chose field": {
+  "matches": 1973,
+  "decisive": 1894,
+  "toss_wins": 970,
+  "pct": 51.2,
+  "ci": [
+   49.0,
+   53.5
+  ],
+  "p": 0.2905
+ },
+ "IPL chose bat": {
+  "matches": 418,
+  "decisive": 408,
+  "toss_wins": 185,
+  "pct": 45.3,
+  "ci": [
+   40.6,
+   50.2
+  ],
+  "p": 0.0599
+ },
+ "IPL chose field": {
+  "matches": 825,
+  "decisive": 810,
+  "toss_wins": 443,
+  "pct": 54.7,
+  "ci": [
+   51.2,
+   58.1
+  ],
+  "p": 0.0076
+ },
+ "ODI_chasing": {
+  "chasing_wins": 1177,
+  "n": 2269,
+  "pct": 51.9,
+  "ci": [
+   49.8,
+   53.9
+  ]
+ },
+ "T20I_chasing": {
+  "chasing_wins": 1731,
+  "n": 3403,
+  "pct": 50.9,
+  "ci": [
+   49.2,
+   52.5
+  ]
+ },
+ "IPL_chasing": {
+  "chasing_wins": 650,
+  "n": 1195,
+  "pct": 54.4,
+  "ci": [
+   51.6,
+   57.2
+  ]
+ },
+ "trends": {
+  "IPL": [
+   {
+    "era": "2008-12",
+    "n": 322,
+    "field_pct": 49.7,
+    "toss_win_pct": 51.1,
+    "chase_win_pct": 53.7,
+    "chase_ci": [
+     48.1,
+     59.2
+    ]
+   },
+   {
+    "era": "2013-17",
+    "n": 314,
+    "field_pct": 64.6,
+    "toss_win_pct": 51.8,
+    "chase_win_pct": 55.2,
+    "chase_ci": [
+     49.5,
+     60.7
+    ]
+   },
+   {
+    "era": "2018-22",
+    "n": 314,
+    "field_pct": 75.2,
+    "toss_win_pct": 52.6,
+    "chase_win_pct": 55.8,
+    "chase_ci": [
+     50.1,
+     61.3
+    ]
+   },
+   {
+    "era": "2023-26",
+    "n": 293,
+    "field_pct": 77.1,
+    "toss_win_pct": 50.7,
+    "chase_win_pct": 52.8,
+    "chase_ci": [
+     47.0,
+     58.6
+    ]
+   }
+  ],
+  "T20I": [
+   {
+    "era": "2005-12",
+    "n": 232,
+    "field_pct": 45.7,
+    "toss_win_pct": 52.7,
+    "chase_win_pct": 46.9,
+    "chase_ci": [
+     40.2,
+     53.7
+    ]
+   },
+   {
+    "era": "2013-17",
+    "n": 203,
+    "field_pct": 57.1,
+    "toss_win_pct": 51.0,
+    "chase_win_pct": 47.4,
+    "chase_ci": [
+     40.5,
+     54.4
+    ]
+   },
+   {
+    "era": "2018-22",
+    "n": 368,
+    "field_pct": 64.9,
+    "toss_win_pct": 46.4,
+    "chase_win_pct": 50.9,
+    "chase_ci": [
+     45.6,
+     56.2
+    ]
+   },
+   {
+    "era": "2023-26",
+    "n": 340,
+    "field_pct": 75.0,
+    "toss_win_pct": 53.3,
+    "chase_win_pct": 50.0,
+    "chase_ci": [
+     44.5,
+     55.5
+    ]
+   }
+  ],
+  "ODI": [
+   {
+    "era": "2002-07",
+    "n": 538,
+    "field_pct": 44.4,
+    "toss_win_pct": 51.3,
+    "chase_win_pct": 53.1,
+    "chase_ci": [
+     48.6,
+     57.5
+    ]
+   },
+   {
+    "era": "2008-13",
+    "n": 665,
+    "field_pct": 46.3,
+    "toss_win_pct": 49.8,
+    "chase_win_pct": 51.7,
+    "chase_ci": [
+     47.6,
+     55.8
+    ]
+   },
+   {
+    "era": "2014-19",
+    "n": 655,
+    "field_pct": 50.8,
+    "toss_win_pct": 47.4,
+    "chase_win_pct": 50.4,
+    "chase_ci": [
+     46.3,
+     54.6
+    ]
+   },
+   {
+    "era": "2020-26",
+    "n": 759,
+    "field_pct": 61.7,
+    "toss_win_pct": 51.6,
+    "chase_win_pct": 52.4,
+    "chase_ci": [
+     48.6,
+     56.1
+    ]
+   }
+  ]
+ },
+ "ipl_seasons": [
+  {
+   "year": 2008,
+   "n": 58,
+   "field_pct": 55.2,
+   "toss_win_pct": 48.3
+  },
+  {
+   "year": 2009,
+   "n": 57,
+   "field_pct": 38.6,
+   "toss_win_pct": 58.9
+  },
+  {
+   "year": 2010,
+   "n": 60,
+   "field_pct": 35.0,
+   "toss_win_pct": 52.5
+  },
+  {
+   "year": 2011,
+   "n": 73,
+   "field_pct": 65.8,
+   "toss_win_pct": 52.8
+  },
+  {
+   "year": 2012,
+   "n": 74,
+   "field_pct": 50.0,
+   "toss_win_pct": 44.6
+  },
+  {
+   "year": 2013,
+   "n": 76,
+   "field_pct": 40.8,
+   "toss_win_pct": 47.3
+  },
+  {
+   "year": 2014,
+   "n": 60,
+   "field_pct": 68.3,
+   "toss_win_pct": 49.2
+  },
+  {
+   "year": 2015,
+   "n": 59,
+   "field_pct": 57.6,
+   "toss_win_pct": 48.2
+  },
+  {
+   "year": 2016,
+   "n": 60,
+   "field_pct": 81.7,
+   "toss_win_pct": 56.7
+  },
+  {
+   "year": 2017,
+   "n": 59,
+   "field_pct": 81.4,
+   "toss_win_pct": 58.6
+  },
+  {
+   "year": 2018,
+   "n": 60,
+   "field_pct": 83.3,
+   "toss_win_pct": 53.3
+  },
+  {
+   "year": 2019,
+   "n": 60,
+   "field_pct": 83.3,
+   "toss_win_pct": 59.6
+  },
+  {
+   "year": 2020,
+   "n": 60,
+   "field_pct": 55.0,
+   "toss_win_pct": 44.6
+  },
+  {
+   "year": 2021,
+   "n": 60,
+   "field_pct": 73.3,
+   "toss_win_pct": 57.6
+  },
+  {
+   "year": 2022,
+   "n": 74,
+   "field_pct": 79.7,
+   "toss_win_pct": 48.6
+  },
+  {
+   "year": 2023,
+   "n": 74,
+   "field_pct": 71.6,
+   "toss_win_pct": 46.6
+  },
+  {
+   "year": 2024,
+   "n": 71,
+   "field_pct": 73.2,
+   "toss_win_pct": 43.7
+  },
+  {
+   "year": 2025,
+   "n": 74,
+   "field_pct": 81.1,
+   "toss_win_pct": 61.4
+  },
+  {
+   "year": 2026,
+   "n": 74,
+   "field_pct": 82.4,
+   "toss_win_pct": 51.4
+  }
+ ],
+ "wc": {
+  "ICC Men's T20 World Cup 2021/22": {
+   "decisive": 40,
+   "toss_wins": 28,
+   "pct": 70.0,
+   "chase": 27,
+   "chase_n": 40
+  },
+  "ICC Men's T20 World Cup 2022/23": {
+   "decisive": 38,
+   "toss_wins": 15,
+   "pct": 39.5,
+   "chase": 16,
+   "chase_n": 35
+  },
+  "ICC Men's T20 World Cup 2024": {
+   "decisive": 41,
+   "toss_wins": 23,
+   "pct": 56.1,
+   "chase": 21,
+   "chase_n": 38
+  },
+  "ICC Men's T20 World Cup 2025/26": {
+   "decisive": 49,
+   "toss_wins": 21,
+   "pct": 42.9,
+   "chase": 21,
+   "chase_n": 49
+  }
+ },
+ "wc2021_dubai": {
+  "n": 12,
+  "toss_wins": 11,
+  "chase_wins": 11
+ },
+ "venues": {
+  "n_venues": 52,
+  "corr": -0.18,
+  "top8": [
+   [
+    "Kensington Oval",
+    62,
+    71.0,
+    58.1
+   ],
+   [
+    "Kingsmead",
+    56,
+    67.9,
+    39.3
+   ],
+   [
+    "Trent Bridge",
+    40,
+    65.0,
+    40.0
+   ],
+   [
+    "Rangiri Dambulla International Stadium",
+    50,
+    64.0,
+    36.0
+   ],
+   [
+    "Newlands",
+    52,
+    61.5,
+    50.0
+   ],
+   [
+    "Eden Park",
+    56,
+    60.7,
+    28.6
+   ],
+   [
+    "Maharashtra Cricket Association Stadium",
+    57,
+    60.7,
+    41.4
+   ],
+   [
+    "Arun Jaitley Stadium",
+    41,
+    60.0,
+    47.6
+   ]
+  ],
+  "top8_first": 63.9,
+  "top8_second": 42.6
+ },
+ "wc2021": {
+  "matches": 40,
+  "decisive": 40,
+  "toss_wins": 28,
+  "pct": 70.0,
+  "chase_wins": 27,
+  "chase_n": 40,
+  "dubai_decisive": 12,
+  "dubai_toss_wins": 11,
+  "dubai_chase_wins": 11,
+  "final": [
+   [
+    "Australia",
+    "field",
+    "Australia"
+   ]
+  ],
+  "dubai_other_n": 124,
+  "dubai_other_toss_wins": 63,
+  "dubai_other_pct": 50.8
+ },
+ "wc_next": {
+  "2022 T20 WC": {
+   "decisive": 38,
+   "toss_wins": 15,
+   "pct": 39.5
+  },
+  "2024 T20 WC": {
+   "decisive": 41,
+   "toss_wins": 23,
+   "pct": 56.1
+  },
+  "2026 T20 WC": {
+   "decisive": 49,
+   "toss_wins": 21,
+   "pct": 42.9
+  }
+ },
+ "venues_v2": {
+  "n_venues": 52,
+  "corr": -0.09,
+  "top8": [
+   [
+    "kensington oval",
+    62,
+    71.0,
+    58.1,
+    "2003",
+    "2017",
+    "2026"
+   ],
+   [
+    "kingsmead",
+    56,
+    67.9,
+    39.3,
+    "2003",
+    "2009",
+    "2026"
+   ],
+   [
+    "trent bridge",
+    40,
+    65.0,
+    40.0,
+    "2002",
+    "2011",
+    "2026"
+   ],
+   [
+    "rangiri dambulla international stadium",
+    50,
+    64.0,
+    36.0,
+    "2003",
+    "2010",
+    "2026"
+   ],
+   [
+    "maharashtra cricket association stadium",
+    67,
+    63.6,
+    41.2,
+    "2012",
+    "2017",
+    "2025"
+   ],
+   [
+    "newlands",
+    52,
+    61.5,
+    50.0,
+    "2003",
+    "2009",
+    "2024"
+   ],
+   [
+    "eden park",
+    56,
+    60.7,
+    28.6,
+    "2004",
+    "2016",
+    "2026"
+   ],
+   [
+    "kerava national cricket ground",
+    44,
+    59.1,
+    45.5,
+    "2021",
+    "2022",
+    "2026"
+   ]
+  ],
+  "top8_first": 64.1,
+  "top8_second": 42.3,
+  "pooled": [
+   137,
+   213,
+   91,
+   214
+  ],
+  "bottom8": [
+   [
+    "wanderers stadium",
+    79,
+    41.0,
+    32.5,
+    "2003",
+    "2009",
+    "2026"
+   ],
+   [
+    "punjab cricket association stadium",
+    85,
+    40.5,
+    53.5,
+    "2005",
+    "2013",
+    "2023"
+   ],
+   [
+    "harare sports club",
+    181,
+    40.0,
+    53.8,
+    "2003",
+    "2018",
+    "2026"
+   ],
+   [
+    "melbourne cricket ground",
+    56,
+    39.3,
+    60.7,
+    "2003",
+    "2014",
+    "2025"
+   ],
+   [
+    "rajiv gandhi international stadium",
+    102,
+    39.2,
+    41.2,
+    "2005",
+    "2017",
+    "2026"
+   ],
+   [
+    "sir vivian richards stadium",
+    42,
+    38.1,
+    57.1,
+    "2007",
+    "2021",
+    "2024"
+   ],
+   [
+    "national stadium karachi",
+    42,
+    38.1,
+    33.3,
+    "2003",
+    "2018",
+    "2025"
+   ],
+   [
+    "seddon park",
+    43,
+    33.3,
+    40.9,
+    "2003",
+    "2016",
+    "2026"
+   ]
+  ],
+  "bottom8_first": 38.7,
+  "bottom8_second": 46.6
+ }
+}
