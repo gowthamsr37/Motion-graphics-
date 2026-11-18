@@ -199,7 +199,11 @@ export const s2Cam = (t: number): Pose => keyed(t, s2Keys);
 export const s2Anchors = (t: number) => {
   const cam = s2Cam(t);
   const g = s2Grow(t);
-  return FORMATS.map((f, i) => ({ ...project(cam, v3(PILLAR_X[i], Math.max(f.pct * g[i], 0.5) * K, PILLAR_Z - PILLAR_W / 2)), grow: g[i], value: f.pct * g[i] }));
+  return FORMATS.map((f, i) => {
+    const v = f.pct * g[i];
+    const lift = smooth(seg(v, 44, 49.6)) * Math.max(0, 50 * K + 0.75 - (v * K + 0.35)); // keep the label clear of the 50% line
+    return { ...project(cam, v3(PILLAR_X[i], Math.max(v, 0.5) * K + 0.35 + lift, PILLAR_Z - PILLAR_W / 2)), grow: g[i], value: v };
+  });
 };
 export const s2RefAnchor = (t: number) => {
   const cam = s2Cam(t);
@@ -210,7 +214,7 @@ const S2 = (e: Engine, t: number) => {
   e.pillars.group.visible = true;
   e.pillars.set(s2Grow(t), smooth(seg(t, B.s2.ref[0], B.s2.ref[1])), 0.25);
   e.pitch.set(0.12);
-  e.drawWorld(world(t, 0.37, OFF, { focus: v3(0, 0, 22), shadowR: 62, cloudAmt: 0.42 }), s2Cam(t));
+  e.drawWorld(world(t, 0.37, OFF, { focus: v3(0, 0, 22), shadowR: 62, cloudAmt: 0.3 }), s2Cam(t));
 };
 
 // =====================================================================================================

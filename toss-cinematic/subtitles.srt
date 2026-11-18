@@ -1,0 +1,143 @@
+1
+00:00:00,450 --> 00:00:06,173
+What if I told you winning the toss barely improves your chances of winning an IPL match?
+
+2
+00:00:06,343 --> 00:00:07,446
+Seriously.
+
+3
+00:00:07,576 --> 00:00:09,147
+Let's look at the numbers.
+
+4
+00:00:09,897 --> 00:00:15,834
+Across thousands of matches, toss winners won 54.3% of decided Tests.
+
+5
+00:00:15,984 --> 00:00:19,476
+But in ODIs, just 49.6%.
+
+6
+00:00:19,626 --> 00:00:22,556
+T20 internationals? 50.3%.
+
+7
+00:00:22,706 --> 00:00:25,419
+And the IPL? 51.6%.
+
+8
+00:00:26,569 --> 00:00:28,662
+Now imagine you're the captain.
+
+9
+00:00:28,792 --> 00:00:31,218
+It's an IPL match under lights.
+
+10
+00:00:31,328 --> 00:00:33,499
+Dew might arrive later.
+
+11
+00:00:33,448 --> 00:00:35,211
+You've just won the toss.
+
+12
+00:00:35,411 --> 00:00:36,871
+What would you choose?
+
+13
+00:00:37,021 --> 00:00:39,186
+Bat first, or bowl first?
+
+14
+00:00:41,886 --> 00:00:47,383
+In the IPL data, toss winners choosing to bowl first won nearly 55%.
+
+15
+00:00:47,533 --> 00:00:51,000
+Those choosing to bat won only 45%.
+
+16
+00:00:51,250 --> 00:00:54,103
+But does that mean bowling first always works?
+
+17
+00:00:54,353 --> 00:00:55,867
+Not necessarily.
+
+18
+00:00:58,367 --> 00:01:00,733
+And here's something even stranger.
+
+19
+00:01:00,903 --> 00:01:06,763
+In 2024, IPL toss winners won only about 44% of matches.
+
+20
+00:01:06,933 --> 00:01:10,400
+In 2025, that jumped to 61%.
+
+21
+00:01:10,650 --> 00:01:11,839
+Same coin.
+
+22
+00:01:11,989 --> 00:01:14,065
+Completely different results.
+
+23
+00:01:15,865 --> 00:01:17,765
+Now comes the real twist.
+
+24
+00:01:18,015 --> 00:01:24,143
+Research found almost no average toss advantage in daytime international limited-overs cricket.
+
+25
+00:01:24,443 --> 00:01:30,484
+But in day-night matches, that estimated advantage increased to 3.3 percentage points.
+
+26
+00:01:31,984 --> 00:01:38,327
+In Tests, the estimated toss advantage was even larger, at 4.9 percentage points.
+
+27
+00:01:38,577 --> 00:01:44,998
+Over five days, the pitch can wear down, cracks can develop, and batting conditions can change dramatically.
+
+28
+00:01:46,048 --> 00:01:48,912
+So winning the toss isn't a magic formula.
+
+29
+00:01:49,082 --> 00:01:51,639
+Its value changes with the conditions.
+
+30
+00:01:51,839 --> 00:01:56,537
+The pitch, the weather, the match format, and the captain's decision all play a part.
+
+31
+00:01:58,237 --> 00:02:00,670
+So, does winning the toss win matches?
+
+32
+00:02:00,920 --> 00:02:02,758
+Usually, not by much.
+
+33
+00:02:03,008 --> 00:02:07,887
+But under the right conditions, that small coin can offer a meaningful advantage.
+
+34
+00:02:08,237 --> 00:02:10,045
+The toss starts the match.
+
+35
+00:02:10,245 --> 00:02:12,213
+It doesn't decide the winner.
+
+36
+00:02:12,713 --> 00:02:14,428
+Beyond The Scoreboard.

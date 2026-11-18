@@ -54,6 +54,9 @@ void main(){
   }
   gl_FragColor = vec4(acc / wsum, 1.0);
 }`;
+const BLEND_FRAG = /* glsl */ `varying vec2 vUv; uniform sampler2D tA, tB; uniform float uAngle, uSoft, uMid;
+void main(){ vec2 d = vec2(cos(uAngle), sin(uAngle)); float k = smoothstep(uMid - uSoft, uMid + uSoft, dot(vUv - 0.5, d) + 0.5);
+  gl_FragColor = vec4(mix(texture2D(tA, vUv).rgb, texture2D(tB, vUv).rgb, k), 1.0); }`;
 const COPY_FRAG = /* glsl */ `varying vec2 vUv; uniform sampler2D tDiffuse; uniform float uGain; void main(){ gl_FragColor = vec4(texture2D(tDiffuse, vUv).rgb * uGain, 1.0); }`;
 const COMP_FRAG = /* glsl */ `
 varying vec2 vUv;
@@ -122,6 +125,7 @@ export type MacroView = {
   shadowR?: number;
   bgGain?: number;
   set?: "coin" | "grass"; // which close-up set is on stage (default coin)
+  noBg?: boolean; // keep whatever is already in the frame behind the close-up
   scale?: number; // metres per macro unit (coin: 0.0135; grass is built in metres: 1)
   bgYaw?: number; // turn the stadium behind the close-up (radians about the vertical)
   grassGrow?: number; // 0…1: blades rise out of the turf as the lens comes down
@@ -157,7 +161,8 @@ export class Engine {
   private quadScene = new THREE.Scene();
   private quadCam = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
   private quad: THREE.Mesh;
-  private mats: Record<"bright" | "blur" | "bokeh" | "copy" | "comp", THREE.ShaderMaterial>;
+  private mats: Record<"bright" | "blur" | "bokeh" | "copy" | "comp" | "blend", THREE.ShaderMaterial>;
+  private splitA?: THREE.WebGLRenderTarget;
   private pmrem: THREE.PMREMGenerator;
   private cubeRT = new THREE.WebGLCubeRenderTarget(256, { type: THREE.HalfFloatType, generateMipmaps: true, minFilter: THREE.LinearMipmapLinearFilter });
   private cubeCam: THREE.CubeCamera;
@@ -181,13 +186,14 @@ export class Engine {
     this.tossCoin.castShadow = true;
     this.trail.visible = false;
     this.trail.frustumCulled = false;
-    this.rig = new LightRig(this.scene, 4096, 1024);
+    this.rig = new LightRig(this.scene, 2048, 1024);
     const mk = (frag: string, uniforms: Record<string, THREE.IUniform>) => new THREE.ShaderMaterial({ vertexShader: QUAD_VERT, fragmentShader: frag, uniforms, depthTest: false, depthWrite: false, toneMapped: false, fog: false });
     this.mats = {
       bright: mk(BRIGHT_FRAG, { tDiffuse: { value: null }, uTexel: { value: new THREE.Vector2() }, uThreshold: { value: 1.0 } }),
       blur: mk(BLUR_FRAG, { tDiffuse: { value: null }, uDir: { value: new THREE.Vector2() } }),
       bokeh: mk(BOKEH_FRAG, { tDiffuse: { value: null }, uRadius: { value: new THREE.Vector2() } }),
       copy: mk(COPY_FRAG, { tDiffuse: { value: null }, uGain: { value: 1 } }),
+      blend: mk(BLEND_FRAG, { tA: { value: null }, tB: { value: null }, uAngle: { value: 0 }, uSoft: { value: 0.12 }, uMid: { value: 0.5 } }),
       comp: mk(COMP_FRAG, {
         tScene: { value: null },
         tB0: { value: null },
@@ -258,6 +264,33 @@ export class Engine {
     this.renderer.render(this.scene, c);
   }
 
+  // One continuous view, lit two ways: world A on one side of a soft diagonal, world B on the other, lens-blurred.
+  drawSplit(wa: WorldState, wb: WorldState, cam: Pose, o: { angle?: number; soft?: number; mid?: number; blur?: number } = {}) {
+    if (!this.splitA) this.splitA = rt(RW, RH);
+    this.begin();
+    this.drawWorld(wa, cam);
+    this.mats.copy.uniforms.tDiffuse.value = this.hdr.texture;
+    this.mats.copy.uniforms.uGain.value = 1;
+    this.pass(this.mats.copy, this.splitA);
+    this.begin();
+    this.drawWorld(wb, cam);
+    const bl = this.mats.blend.uniforms;
+    bl.tA.value = this.splitA.texture;
+    bl.tB.value = this.hdr.texture;
+    bl.uAngle.value = o.angle ?? 0;
+    bl.uSoft.value = o.soft ?? 0.12;
+    bl.uMid.value = o.mid ?? 0.5;
+    this.hdr.scissorTest = false;
+    this.pass(this.mats.blend, this.bg);
+    const aspect = RW / RH;
+    const blur = o.blur ?? 0;
+    this.mats.bokeh.uniforms.tDiffuse.value = this.bg.texture;
+    this.mats.bokeh.uniforms.uRadius.value.set(blur, blur * aspect);
+    this.pass(this.mats.bokeh, this.bgA);
+    this.mats.copy.uniforms.tDiffuse.value = this.bgA.texture;
+    this.pass(this.mats.copy, this.hdr, true);
+  }
+
   // Reflections for the close-up scene: capture the stadium around `anchor` once per key.
   private envFor(key: string, anchor: THREE.Vector3) {
     let t = this.envs.get(key);
@@ -290,6 +323,12 @@ export class Engine {
     applyPose(c, { p: bp, l: bp.clone().add(dir), fov: m.cam.fov, roll: m.cam.roll });
     this.setWorld(w, c);
     const envTex = this.envFor(m.envKey, m.anchor);
+    if (!m.noBg) this.drawMacroBg(m);
+    this.drawMacroFg(w, m, envTex, yaw);
+  }
+
+  private drawMacroBg(m: MacroView) {
+    const c = this.camera;
     this.renderer.setRenderTarget(this.bg);
     this.renderer.clear(true, true, true);
     this.renderer.render(this.scene, c);
@@ -312,6 +351,9 @@ export class Engine {
     this.hdr.scissorTest = false;
     this.hdr.viewport.set(0, 0, RW, RH);
     this.pass(this.mats.copy, this.hdr, false);
+  }
+
+  private drawMacroFg(w: WorldState, m: MacroView, envTex: THREE.Texture, yaw: number) {
     // foreground
     const mc = this.macro.camera;
     const grass = m.set === "grass";

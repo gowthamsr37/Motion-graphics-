@@ -231,7 +231,7 @@ const pitchPatch = () => {
   const r = rng(8);
   // hairline cracks
   hctx.strokeStyle = "rgba(0,0,0,0.75)";
-  for (let k = 0; k < 12; k++) {
+  for (let k = 0; k < 0; k++) {
     let x = r() * S;
     let y = r() * S;
     let a = r() * Math.PI * 2;
@@ -270,7 +270,7 @@ const pitchPatch = () => {
   ctx.fillRect(0, 0, S, S);
   ctx.globalCompositeOperation = "source-over";
   // grass clippings
-  for (let k = 0; k < 150; k++) {
+  for (let k = 0; k < 0; k++) {
     ctx.strokeStyle = `rgba(${70 + r() * 40},${110 + r() * 50},${50 + r() * 20},${0.5 + r() * 0.4})`;
     ctx.lineWidth = 1.2 + r();
     const x = r() * S;

@@ -131,6 +131,14 @@ def main():
                 ph = re.sub(a_[3:], b_, ph) if a_.startswith("re:") else ph.replace(a_, b_)
             a, sr = tts.create(ph, voice=script["voice"], speed=seg.get("speed", sc.get("speed", script["speed"])), is_phonemes=True)
             clip = trim(np.asarray(a, dtype=np.float32), sr)
+            if seg.get("fit"):  # time-stretch (pitch kept) to an exact length, so a re-take never moves the timeline
+                import subprocess, tempfile
+                with tempfile.TemporaryDirectory() as td:
+                    sf.write(f"{td}/in.wav", clip, sr)
+                    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", f"{td}/in.wav", "-af", f"atempo={len(clip) / sr / seg['fit']:.6f}", f"{td}/out.wav"], check=True)
+                    clip, _ = sf.read(f"{td}/out.wav", dtype="float32")
+                want = int(round(seg["fit"] * sr))
+                clip = np.pad(clip, (0, max(0, want - len(clip))))[:want]
             d = len(clip) / sr
             heard, words = hear(clip, sr)
             chunks = [c.strip() for c in seg["caption"].split("|")]
@@ -148,6 +156,8 @@ def main():
             print(f"   [{sc['id']}] {d:5.2f}s match {hit:4.0%}{flag} | heard: {heard}")
             parts.append(clip)
             gap = int(seg.get("pause", 0.35) * sr)
+            if seg.get("slot"):  # a re-take keeps the timeline: sentence + pause fill the same slot as before
+                gap = max(int(0.12 * sr), int(round(seg["slot"] * sr)) - len(clip))
             parts.append(np.zeros(gap, dtype=np.float32))
             t += d + gap / sr
         audio = np.concatenate(parts[:-1])

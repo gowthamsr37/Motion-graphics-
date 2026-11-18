@@ -125,7 +125,9 @@
      "text": "Dew might arrive later.",
      "caption": "Dew might|arrive later.",
      "pause": 0.4,
-     "speed": 1.05
+     "speed": 0.95,
+     "phonemes": "dˈjuːw mˌaɪt ɐɹˈaɪv lˈeɪtəɹ.",
+     "slot": 2.12
     },
     {
      "text": "You've just won the toss.",

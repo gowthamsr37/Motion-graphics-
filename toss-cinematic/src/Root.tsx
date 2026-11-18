@@ -1,5 +1,6 @@
 import React from "react";
-import { AbsoluteFill, Composition, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Composition, Still, useCurrentFrame } from "remotion";
+import { Cover } from "./Cover";
 import "./fonts";
 import { Film } from "./Main";
 import { Stage3D } from "./Stage3D";
@@ -19,6 +20,7 @@ export const RemotionRoot: React.FC = () => (
   <>
     {/* Instagram Reel, 1080×1920 (9:16), 30 fps */}
     <Composition id="Film" component={Film} durationInFrames={totalFrames} fps={FPS} width={1080} height={1920} />
+    <Still id="Cover" component={Cover} width={1080} height={1920} />
     <Composition id="Look" component={Look} durationInFrames={20} fps={30} width={1080} height={1920} />
   </>
 );

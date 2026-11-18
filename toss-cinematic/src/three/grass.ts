@@ -108,8 +108,8 @@ export class GrassPatch {
         void main(){ vec3 n = normalize(vN); vec3 v = normalize(cameraPosition - vW); float nv = max(dot(n, v), 0.0);
           float fr = pow(1.0 - nv, 3.0);
           vec3 col = uGrass * (0.25 + 1.6 * smoothstep(0.15, -0.75, n.y));
-          col += uSky * fr * 1.4;
-          for (int i = 0; i < 4; i++) { vec3 h = normalize(uL[i] + v); col += vec3(1.0, 0.98, 0.94) * (pow(max(dot(n, h), 0.0), 600.0) * 60.0 + pow(max(dot(n, h), 0.0), 40.0) * 0.25) * uLI[i]; }
+          col += uSky * fr * 0.9;
+          for (int i = 0; i < 4; i++) { vec3 h = normalize(uL[i] + v); col += vec3(1.0, 0.98, 0.94) * (pow(max(dot(n, h), 0.0), 900.0) * 22.0 + pow(max(dot(n, h), 0.0), 60.0) * 0.05) * uLI[i]; }
           gl_FragColor = vec4(col, 1.0); }`,
     });
     const beads: { p: THREE.Vector3; r: number }[] = [];

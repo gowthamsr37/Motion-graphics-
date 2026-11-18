@@ -17,7 +17,7 @@ const FOOT_Y = 1262;
 const Foot: React.FC<{ a: number; b: number; children: React.ReactNode }> = ({ a, b, children }) => (
   <div style={centered(FOOT_Y)}>
     <Rise a={a} b={b} dy={10}>
-      <Note style={{ maxWidth: 860, textAlign: "center" }}>{children}</Note>
+      <Note style={{ maxWidth: 880, textAlign: "center", color: C.dim, background: "rgba(4,7,13,0.62)", padding: "8px 18px", borderRadius: 12 }}>{children}</Note>
     </Rise>
   </div>
 );
@@ -39,7 +39,7 @@ export const O1: React.FC = () => {
             51.6%
           </Display>
           <div style={{ width: 520 * rule, height: 3, background: `linear-gradient(90deg, transparent, ${C.gold}, transparent)`, marginTop: 4 }} />
-          <Note size={23} style={{ marginTop: 12, color: C.dim }}>
+          <Note size={28} style={{ marginTop: 12, color: C.white }}>
             of 1,218 decided matches
           </Note>
         </div>
@@ -96,7 +96,7 @@ export const O2: React.FC = () => {
         const hero = f.pct > 50 && i === 0;
         return (
           <div key={f.key} style={{ position: "absolute", left: a.x, top: a.y - 14, transform: `translate(-50%, -100%) translateY(${(1 - p) * 20}px)`, opacity: edgeFade * Math.min(1, p * 2), textAlign: "center", whiteSpace: "nowrap" }}>
-            <Kicker color={C.white} size={Math.max(22, size * 0.3)} style={{ letterSpacing: "0.16em" }}>
+            <Kicker color={C.white} size={Math.max(22, size * 0.3)} style={{ letterSpacing: "0.16em", textTransform: "none" }}>
               {f.name}
             </Kicker>
             <Display size={size} color={hero && done ? C.gold : C.white} glow={hero && done} style={{ marginTop: 2 }}>
@@ -109,7 +109,7 @@ export const O2: React.FC = () => {
         );
       })}
       {ref.ref > 0.01 && (
-        <div style={{ position: "absolute", left: tagX, top: tagY, transform: "translate(-100%, -130%)", opacity: ref.ref, textAlign: "right" }}>
+        <div style={{ position: "absolute", left: tagX, top: tagY, transform: "translate(-100%, 22px)", opacity: ref.ref, textAlign: "right", whiteSpace: "nowrap" }}>
           <div style={{ fontFamily: theme.fonts.display, fontWeight: 700, fontSize: 40, color: C.ice, textShadow: `0 0 18px ${C.iceGlow}, ${shadow}` }}>50%</div>
           <Kicker size={17} color={C.ice} style={{ letterSpacing: "0.16em" }}>
             coin-flip line
@@ -127,8 +127,8 @@ export const O2: React.FC = () => {
 const Chip: React.FC<{ a: number; b: number; icon: "moon" | "drop" | "coin"; children: React.ReactNode }> = ({ a, b, icon, children }) => (
   <Rise a={a} b={b} dx={-30} dy={0} style={{ marginBottom: 14 }}>
     <div style={{ display: "inline-flex", alignItems: "center", gap: 14, padding: "12px 22px 12px 16px", borderRadius: 40, background: "rgba(6,10,18,0.62)", border: `1.5px solid ${C.glassEdge}` }}>
-      <Icon kind={icon} size={30} color={icon === "coin" ? C.gold : C.white} />
-      <span style={{ fontFamily: theme.fonts.body, fontWeight: 600, fontSize: 25, letterSpacing: "0.1em", color: C.white, textTransform: "uppercase" }}>{children}</span>
+      <Icon kind={icon} size={34} color={icon === "coin" ? C.gold : C.white} />
+      <span style={{ fontFamily: theme.fonts.body, fontWeight: 600, fontSize: 28, letterSpacing: "0.1em", color: C.white, textTransform: "uppercase" }}>{children}</span>
     </div>
   </Rise>
 );
@@ -137,10 +137,10 @@ const Choice: React.FC<{ a: number; b: number; label: string; icon: "bat" | "bal
   const { inP, outP, vis } = useWin(a, b, theme.spring.bouncy, 0.25);
   if (!vis || inP < 0.001) return null;
   return (
-    <div style={{ position: "absolute", left: x, top: 720, width: 420, opacity: Math.min(1, inP * 2) * (1 - outP), transform: `translateY(${(1 - inP) * 60}px) scale(${(0.9 + 0.1 * inP) * (1 + pulse * 0.03)})` }}>
+    <div style={{ position: "absolute", left: x, top: 720, width: 440, opacity: Math.min(1, inP * 2) * (1 - outP), transform: `translateY(${(1 - inP) * 60}px) scale(${(0.9 + 0.1 * inP) * (1 + pulse * 0.03)})` }}>
       <Panel style={{ padding: "34px 20px 30px", display: "flex", flexDirection: "column", alignItems: "center", gap: 14, borderColor: `rgba(246,242,232,${0.16 + pulse * 0.3})` }}>
         <Icon kind={icon} size={64} color={C.white} />
-        <Display size={92} style={{ whiteSpace: "nowrap" }}>
+        <Display size={80} style={{ whiteSpace: "nowrap" }}>
           {label}
         </Display>
       </Panel>
@@ -190,8 +190,8 @@ export const O3: React.FC = () => {
           </Kicker>
         </Rise>
       </div>
-      <Choice a={b.bat} b={b.end + 0.02} label="BAT FIRST" icon="bat" x={84} pulse={pa} />
-      <Choice a={b.bowl} b={b.end + 0.02} label="BOWL FIRST" icon="ball" x={576} pulse={pb} />
+      <Choice a={b.bat} b={b.end + 0.02} label="BAT FIRST" icon="bat" x={70} pulse={pa} />
+      <Choice a={b.bowl} b={b.end + 0.02} label="BOWL FIRST" icon="ball" x={570} pulse={pb} />
       {cd.vis && cd.inP > 0.01 && (
         <div style={{ position: "absolute", left: 540 - 72, top: 1056, width: 144, height: 144, opacity: Math.min(1, cd.inP * 2) * (1 - cd.outP) }}>
           <svg width={144} height={144} viewBox="0 0 144 144">
@@ -257,8 +257,8 @@ export const O4: React.FC = () => {
       <Half top={292} a={b.bowlBar} b={b.stamp} label={IPL_DECISION.bowl.label} pct={IPL_DECISION.bowl.pct} n={IPL_DECISION.bowl.n} color={C.gold} dim={dim} />
       <Half top={996} a={b.batBar} b={b.stamp} label={IPL_DECISION.bat.label} pct={IPL_DECISION.bat.pct} n={IPL_DECISION.bat.n} color={C.coral} dim={dim} />
       {stamp.vis && stamp.inP > 0.01 && (
-        <div style={centered(300, { opacity: Math.min(1, stamp.inP * 2) * (1 - stamp.outP), transform: `scale(${1.2 - 0.2 * stamp.inP}) rotate(${(1 - stamp.inP) * -3}deg)` })}>
-          <Panel style={{ padding: "26px 40px 22px", display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <div style={centered(262, { opacity: Math.min(1, stamp.inP * 2) * (1 - stamp.outP), transform: `scale(${1.2 - 0.2 * stamp.inP}) rotate(${(1 - stamp.inP) * -3}deg)` })}>
+          <Panel style={{ padding: "20px 40px 16px", display: "flex", flexDirection: "column", alignItems: "center" }}>
             <Display size={96} style={{ whiteSpace: "nowrap" }}>
               CORRELATION
             </Display>
@@ -271,42 +271,42 @@ export const O4: React.FC = () => {
           </Panel>
         </div>
       )}
-      <div style={centered(700)}>
-        <Rise a={why} b={e}>
-          <svg width={760} height={150} viewBox="0 0 760 150" style={{ overflow: "visible" }}>
-            <defs>
-              <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-                <path d="M0 0L10 5L0 10z" fill={C.white} />
-              </marker>
-            </defs>
-            <path d="M380 46 C 300 70, 230 92, 170 112" stroke={C.white} strokeWidth={3} fill="none" markerEnd="url(#ah)" strokeDasharray={240} strokeDashoffset={240 * (1 - ease(t, why + 0.15, why + 0.7))} />
-            <path d="M380 46 C 460 70, 530 92, 590 112" stroke={C.white} strokeWidth={3} fill="none" markerEnd="url(#ah)" strokeDasharray={240} strokeDashoffset={240 * (1 - ease(t, why + 0.3, why + 0.85))} />
-          </svg>
-          <div style={{ position: "relative", width: 760, height: 0 }}>
-            <div style={{ position: "absolute", left: 380, top: -170, transform: "translateX(-50%)" }}>
-              <Panel style={{ padding: "12px 26px", whiteSpace: "nowrap" }}>
-                <Kicker color={C.gold} size={26} style={{ letterSpacing: "0.18em" }}>
-                  Match conditions
-                </Kicker>
-              </Panel>
-            </div>
-            <div style={{ position: "absolute", left: 160, top: -28, transform: "translateX(-50%)", whiteSpace: "nowrap" }}>
-              <Kicker color={C.white} size={24}>
-                The captain's choice
-              </Kicker>
-            </div>
-            <div style={{ position: "absolute", left: 600, top: -28, transform: "translateX(-50%)", whiteSpace: "nowrap" }}>
-              <Kicker color={C.white} size={24}>
-                The result
-              </Kicker>
-            </div>
-          </div>
-        </Rise>
-      </div>
-      <div style={centered(796)}>
-        <Rise a={why + 0.6} b={e}>
-          <Note size={23} style={{ color: C.dim, maxWidth: 820 }}>
-            Captains choose to bowl when conditions seem to suit it — and those same conditions also shape the result.
+      <Rise a={why} b={e} style={{ position: "absolute", inset: 0 }}>
+        <div style={{ position: "absolute", left: 540, top: 632, transform: "translateX(-50%)" }}>
+          <Panel style={{ padding: "12px 28px", whiteSpace: "nowrap" }}>
+            <Kicker color={C.gold} size={28} style={{ letterSpacing: "0.18em" }}>
+              Match conditions
+            </Kicker>
+          </Panel>
+        </div>
+        <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1080} height={1920}>
+          <defs>
+            <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+              <path d="M0 0L10 5L0 10z" fill={C.white} />
+            </marker>
+          </defs>
+          <path d="M470 700 C 410 730, 350 750, 290 776" stroke={C.white} strokeWidth={3} fill="none" markerEnd="url(#ah)" strokeDasharray={220} strokeDashoffset={220 * (1 - ease(t, why + 0.15, why + 0.6))} />
+          <path d="M610 700 C 670 730, 730 750, 790 776" stroke={C.white} strokeWidth={3} fill="none" markerEnd="url(#ah)" strokeDasharray={220} strokeDashoffset={220 * (1 - ease(t, why + 0.3, why + 0.75))} />
+        </svg>
+        <div style={{ position: "absolute", left: 270, top: 790, transform: "translateX(-50%)", whiteSpace: "nowrap", opacity: ease(t, why + 0.45, why + 0.8) }}>
+          <Panel style={{ padding: "10px 22px" }}>
+            <Kicker color={C.white} size={25}>
+              The captain's choice
+            </Kicker>
+          </Panel>
+        </div>
+        <div style={{ position: "absolute", left: 810, top: 790, transform: "translateX(-50%)", whiteSpace: "nowrap", opacity: ease(t, why + 0.6, why + 0.95) }}>
+          <Panel style={{ padding: "10px 22px" }}>
+            <Kicker color={C.white} size={25}>
+              The result
+            </Kicker>
+          </Panel>
+        </div>
+      </Rise>
+      <div style={centered(868)}>
+        <Rise a={why + 0.7} b={e}>
+          <Note size={25} style={{ color: C.white, maxWidth: 860, background: "rgba(4,7,13,0.6)", padding: "10px 20px", borderRadius: 14 }}>
+            Captains choose based on the conditions — and those same conditions also shape the result.
           </Note>
         </Rise>
       </div>
@@ -435,6 +435,7 @@ const EffectRow: React.FC<{ a: number; label: string; value: number; text: strin
           <div style={{ position: "absolute", left: (Math.max(value, 0) / SCALE) * W_ * fill + 22, top: -14, whiteSpace: "nowrap" }}>
             <Display size={hero ? 62 : 50} color={hero ? C.gold : C.white} glow={hero}>
               {value > 0 ? `+${fmt(value * fill)}` : text}
+              {hero && <span style={{ fontSize: 30, marginLeft: 8, color: C.white }}>POINTS</span>}
             </Display>
           </div>
         </div>
@@ -464,7 +465,7 @@ export const O6: React.FC = () => {
     <>
       {head.vis && head.inP > 0.01 && (
         <div style={abs(64, 250, { opacity: Math.min(1, head.inP * 2) * (1 - head.outP), transform: `translateY(${(1 - head.inP) * 26}px)` })}>
-          <Kicker size={22} color={C.dim}>
+          <Kicker size={24} color={C.white} style={{ background: "rgba(4,7,13,0.55)", padding: "6px 14px", borderRadius: 10, display: "inline-block" }}>
             International limited-overs
           </Kicker>
           <div style={{ position: "relative", height: 112, marginTop: 4 }}>
@@ -511,13 +512,6 @@ export const O6: React.FC = () => {
             <EffectRow a={b.reveal} label={TOSS_EFFECT.dayNight.label} value={TOSS_EFFECT.dayNight.value} text={TOSS_EFFECT.dayNight.text} color={C.gold} hero />
             <EffectAxis />
           </Panel>
-        </Rise>
-      </div>
-      <div style={abs(54, 262 + 330)}>
-        <Rise a={b.reveal + 0.5} b={e}>
-          <Display size={58} style={{ marginLeft: 20 }}>
-            +3.3 <span style={{ fontSize: 36, color: C.dim }}>POINTS</span>
-          </Display>
         </Rise>
       </div>
       <Foot a={card + 0.3} b={e}>
@@ -569,7 +563,7 @@ export const O7: React.FC = () => {
         </Wipe>
       </div>
       {tracker.vis && tracker.inP > 0.01 && (
-        <div style={abs(64, 262, { width: 952, opacity: Math.min(1, tracker.inP * 2) * (1 - tracker.outP), transform: `translateY(${(1 - tracker.inP) * 24}px)` })}>
+        <div style={abs(54, 252, { width: 900, padding: "22px 26px 18px", borderRadius: 26, background: "linear-gradient(180deg, rgba(10,17,28,0.8), rgba(6,10,18,0.66))", border: `1.5px solid ${C.glassEdge}`, opacity: Math.min(1, tracker.inP * 2) * (1 - tracker.outP), transform: `translateY(${(1 - tracker.inP) * 24}px)` })}>
           <Kicker size={22} color={C.dim}>
             Five days of one Test pitch
           </Kicker>
@@ -585,7 +579,7 @@ export const O7: React.FC = () => {
               );
             })}
           </div>
-          <div style={{ position: "relative", height: 140, marginTop: 20 }}>
+          <div style={{ position: "relative", height: 138, marginTop: 16 }}>
             {DAYS.map((d, i) => {
               const on = i === cur ? 1 : 0;
               const at = i === 0 ? b.over + 0.25 : i === 1 ? b.day3 : b.day5;
@@ -729,7 +723,7 @@ export const O9: React.FC = () => {
             {FORMATS.map((f, i) => (
               <Rise key={f.key} a={b.values} delay={i * 0.07} dy={14}>
                 <div style={{ textAlign: "center" }}>
-                  <Kicker size={20} color={C.dim} style={{ letterSpacing: "0.14em" }}>
+                  <Kicker size={22} color={C.dim} style={{ letterSpacing: "0.14em", textTransform: "none" }}>
                     {f.name}
                   </Kicker>
                   <Display size={64}>{fmt(f.pct)}%</Display>
