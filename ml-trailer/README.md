@@ -13,7 +13,7 @@ It uses the locked house style for the video (navy theme, fonts, voice, score, m
 | File | What it is |
 | --- | --- |
 | `ML_Trailer_100_Days.mp4` | the finished trailer |
-| `ML_Trailer_100_Days_Cover.png` | 1080×1920 **plum** cover: NEW SERIES tag, a big yellow 100, DAYS OF, MACHINE LEARNING (cyan → pink → orange gradient), a neural network, a COMING SOON pill, @curious_datascientist |
+| `ML_Trailer_100_Days_Cover.png` | 1080×1920 **plum** cover: NEW SERIES tag, a big yellow 100, DAYS OF, MACHINE LEARNING (cyan → pink → orange gradient), six topic tiles that show the series is broader than deep learning (REGRESSION · CLASSIFICATION · DECISION TREES · CLUSTERING · RANDOM FOREST · DEEP LEARNING), ...AND 90+ MORE TOPICS, a COMING SOON pill, @curious_datascientist |
 | `ML_Trailer_100_Days.srt` | the on-screen subtitle pages |
 
 The Instagram caption, with the full roadmap in text, is in [`CAPTION.md`](CAPTION.md).
