@@ -75,9 +75,11 @@ const useHits = (): Hit[] => {
   {
     const s = sceneTiming(fps, "s1");
     const h = at("s1");
-    for (let i = 0; i < 10; i++) h(8 + i * 7, i === 3 ? "click.wav" : "flip.wav", 0.14);
+    const PAPERS = s.cueS(0, "papers"), P = s.cueS(0, "p");
+    [0, 1, 2].forEach((i) => h(PAPERS - 12 + i * 5, "whoosh.wav", 0.1));
+    [0, 1, 2].forEach((i) => h(P - 4 + i * 5, "stamp.wav", 0.16));
     h(s.sent(1).from - 6, "glitch.wav", 0.1);
-    const T = s.cueS(2, "Hypothesis");
+    const T = s.cueS(1, "p-value");
     h(T - 12, "whoosh.wav", 0.3);
     h(T - 6, "impact.wav", 0.42);
     h(T + 12, "chime.wav", 0.22);
@@ -87,56 +89,75 @@ const useHits = (): Hit[] => {
     const s = sceneTiming(fps, "s2");
     const h = at("s2");
     h(s.sent(0).from - 2, "sparkle.wav", 0.22);
-    [s.cueS(1, "decide"), s.cueS(2, "assume"), s.cueS(3, "surprising")].forEach((f, i) => h(f - 10, `blip${i + 1}.wav`, 0.24));
+    [s.cueS(1, "chance"), s.cueS(1, "nothing"), s.cueS(2, "small")].forEach((f, i) => h(f - 10, `blip${i + 1}.wav`, 0.24));
     h(s.duration - 28, "ding.wav", 0.26);
   }
-  // S3 — two hypotheses
+  // S3 — the coin: 9 of 10 → p = 0.01
   {
     const s = sceneTiming(fps, "s3");
     const h = at("s3");
-    h(s.sent(1).from - 8, "pop.wav", 0.2);
-    h(s.sent(2).from - 8, "pop.wav", 0.2);
+    for (let i = 0; i < 10; i++) h(6 + i * 2, i === 3 ? "click.wav" : "flip.wav", 0.1);
+    for (let i = 0; i < 11; i++) h(s.sent(1).from + 4 + i * 2, "tick.wav", 0.07);
+    h(s.cueS(1, "1%") - 14, "pop.wav", 0.2);
+    h(s.cueS(2, "p-value") - 10, "ding.wav", 0.24);
   }
-  // S4 — courtroom
+  // S4 — 6 of 10 → p = 0.38; small vs big
   {
     const s = sceneTiming(fps, "s4");
     const h = at("s4");
-    h(6, "stamp.wav", 0.24);
-    h(s.sent(1).from - 6, "pop.wav", 0.18);
-    h(s.cueS(2, "strong") - 10, "blip1.wav", 0.18);
-    h(s.cueS(2, "Weak") - 10, "blip2.wav", 0.18);
+    for (let i = 0; i < 10; i++) h(4 + i * 2, i % 3 === 1 ? "click.wav" : "flip.wav", 0.1);
+    h(s.cueS(1, "38%") - 14, "pop.wav", 0.2);
+    h(s.cueS(1, "p-value") - 10, "ding.wav", 0.22);
+    h(s.sent(2).from - 10, "whoosh.wav", 0.18);
+    h(s.cueS(2, "Small") - 10, "blip1.wav", 0.2);
+    h(s.cueS(2, "Big") - 10, "blip2.wav", 0.2);
   }
-  // S5 — how surprising
+  // S5 — the 0.05 line
   {
     const s = sceneTiming(fps, "s5");
     const h = at("s5");
-    h(6, "pop.wav", 0.16);
-    for (let i = 0; i < 11; i++) h(s.sent(1).from + i * 2, "tick.wav", 0.07);
-    h(s.cueS(2, "1%") - 14, "ding.wav", 0.22);
+    h(6, "glide.wav", 0.14);
+    h(s.cueS(0, "0.05") - 10, "glide.wav", 0.18);
+    h(s.cueS(1, "habit,") - 12, "glitch.wav", 0.1);
+    h(s.cueS(1, "0.049") - 10, "pop.wav", 0.18);
+    h(s.cueS(1, "0.051") - 10, "pop.wav", 0.18);
+    h(s.cueS(1, "almost") - 10, "ding.wav", 0.2);
   }
-  // S6 — the decision
+  // S6 — the big mistake
   {
     const s = sceneTiming(fps, "s6");
     const h = at("s6");
-    h(s.cueS(0, "5%.") - 10, "glide.wav", 0.18);
-    h(s.sent(1).from - 2, "pop.wav", 0.18);
-    h(s.cueS(1, "reject") - 10, "stamp.wav", 0.2);
-    h(s.cueS(2, "38%") - 14, "pop.wav", 0.18);
+    h(4, "glitch.wav", 0.12);
+    h(s.sent(1).from - 6, "pop.wav", 0.18);
+    h(s.cueS(1, "true.") + 2, "stamp.wav", 0.22);
+    h(s.sent(2).from - 6, "pop.wav", 0.18);
+    h(s.sent(2).from + 6, "ding.wav", 0.2);
+    h(s.cueS(2, "Not") - 12, "glide.wav", 0.18);
   }
-  // S7 — remember
+  // S7 — size matters
   {
     const s = sceneTiming(fps, "s7");
     const h = at("s7");
-    h(s.sent(0).from - 2, "sparkle.wav", 0.24);
-    [s.cueS(0, "assume"), s.cueS(0, "surprising"), s.cueS(1, "reject")].forEach((f, k) => h(f - 10, `step${k + 1}.wav`, 0.24));
+    h(s.cueS(0, "tiny") - 10, "pop.wav", 0.18);
+    h(s.cueS(1, "millions") - 10, "glide.wav", 0.18);
+    h(s.cueS(1, "difference") - 12, "pop.wav", 0.16);
+    h(s.cueS(1, "p-value.") - 12, "pop.wav", 0.18);
+    h(s.cueS(1, "check") - 12, "ding.wav", 0.22);
   }
-  // S8 — quiz, teaser, CTA
+  // S8 — remember
   {
     const s = sceneTiming(fps, "s8");
     const h = at("s8");
+    h(s.sent(0).from - 2, "sparkle.wav", 0.24);
+    [s.cueS(0, "surprising"), s.cueS(1, "Small"), s.cueS(1, "not")].forEach((f, k) => h(f - 10, `step${k + 1}.wav`, 0.24));
+  }
+  // S9 — quiz, teaser, CTA
+  {
+    const s = sceneTiming(fps, "s9");
+    const h = at("s9");
     h(s.sent(1).from - 4, "pop.wav", 0.18);
   }
-  quiz("s8", [2, "null"], [4, "effect."], 5, 6);
+  quiz("s9", [2, "significant,"], [4, "null"], 5, 6);
   return hits;
 };
 

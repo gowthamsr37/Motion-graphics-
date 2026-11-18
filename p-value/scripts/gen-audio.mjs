@@ -29,16 +29,16 @@ const cueS = (id, i, tok) => {
 };
 
 const ev = {
-  allData: cueS("s1", 2, "Hypothesis"), // the title
-  sameType: cueS("s1", 1, "rigged,"),
-  quiz: sent("s8", 0),
-  qEnd: sentEnd("s8", 2),
-  answer: sent("s8", 3),
-  tease: sent("s8", 5),
-  follow: sent("s8", 6),
-  acc1: sent("s3", 2), // the alternative
-  acc2: cueS("s5", 2, "1%"), // about 1%
-  acc3: cueS("s6", 1, "reject"), // reject the null
+  allData: cueS("s1", 1, "p-value"), // the title
+  sameType: cueS("s1", 0, "p"), // the p < 0.05 stamps
+  quiz: sent("s9", 0),
+  qEnd: sentEnd("s9", 2),
+  answer: sent("s9", 3),
+  tease: sent("s9", 5),
+  follow: sent("s9", 6),
+  acc1: cueS("s3", 2, "p-value"), // p = 0.01
+  acc2: cueS("s5", 1, "almost"), // almost the same evidence
+  acc3: sent("s6", 2), // what it really is
 };
 ev.cd0 = ev.qEnd + 0.2;
 ev.reveal = ev.cd0 + 5;
@@ -210,9 +210,9 @@ const sections = [
   [0, ev.allData, "intro"],
   [ev.allData, S("s2"), "drop"],
   [S("s2"), S("s3"), "flow"], // the definition: calm
-  [S("s3"), S("s5"), "play"], // two hypotheses, courtroom
-  [S("s5"), S("s7"), "grooveA"], // how surprising, the decision
-  [S("s7"), ev.quiz, "build"], // remember
+  [S("s3"), S("s5"), "play"], // the coin, small vs big
+  [S("s5"), S("s8"), "grooveA"], // the 0.05 line, the big mistake, size matters
+  [S("s8"), ev.quiz, "build"], // remember
   [ev.quiz, ev.reveal, "tension"],
   [ev.reveal, DUR - 0.6, "finale"],
 ];
@@ -285,7 +285,7 @@ lead(ML, MR, ev.acc1 - 0.2, note("C5"), note("F5"), 1.2, 0.45);
 [0, 0.09, 0.18].forEach((d, i) => bell(ML, MR, ev.acc2 + 0.05 + d, [note("C5"), note("F5"), note("A5")][i], 0.6, (i - 1) * 0.4, 1.2));
 lead(ML, MR, ev.acc3 - 0.1, note("A4"), note("C5"), 1.0, 0.4);
 // recap: crash on entry
-crash(ML, MR, S("s7"), 0.7);
+crash(ML, MR, S("s8"), 0.7);
 // teaser: a lifted chord
 pad(ML, MR, ev.tease, ev.follow - ev.tease, CH.Bb.pad, 0.8, 0.3, 0.4, 0.05);
 // quiz: stinger, suspended pad, heartbeat pulse per countdown second
