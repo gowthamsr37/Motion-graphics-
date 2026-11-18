@@ -1,0 +1,280 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "A news poll says: fifty-two percent of voters support a new metro line, plus or minus three percent.",
+          "caption": "A news poll says: 52% of voters support a new metro line, plus or minus 3%.",
+          "pause": 0.45
+        },
+        {
+          "text": "What does that plus or minus three actually mean? It's a confidence interval. Let's make it simple.",
+          "caption": "What does that plus or minus 3 actually mean? It's a confidence interval. Let's make it simple.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Why a range",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Pollsters can't ask everyone, so they ask a sample of one thousand people.",
+          "caption": "Pollsters can't ask everyone, so they ask a sample of 1,000 people.",
+          "pause": 0.4
+        },
+        {
+          "text": "Another thousand might give fifty-one, or fifty-four.",
+          "caption": "Another 1,000 might give 51, or 54.",
+          "pause": 0.4
+        },
+        {
+          "text": "So one number alone can mislead.",
+          "caption": "So one number alone can mislead.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "The net",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Think of fishing.",
+          "caption": "Think of fishing.",
+          "pause": 0.35
+        },
+        {
+          "text": "A single number is like a spear: you'll probably miss.",
+          "caption": "A single number is like a spear: you'll probably miss.",
+          "pause": 0.35
+        },
+        {
+          "text": "A range is like a net: far more likely to catch the fish.",
+          "caption": "A range is like a net: far more likely to catch the fish.",
+          "pause": 0.35
+        },
+        {
+          "text": "A confidence interval is that net.",
+          "caption": "A confidence interval is that net.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Interview definition",
+      "lead": 0.45,
+      "hold": 1.4,
+      "segments": [
+        {
+          "text": "Here's the definition you can use in an interview.",
+          "caption": "Here's the definition you can use in an interview.",
+          "pause": 0.4
+        },
+        {
+          "text": "A confidence interval is a range of values, calculated from a sample, that is likely to contain the true population value.",
+          "caption": "A confidence interval is a range of values, calculated from a sample, that is likely to contain the true population value.",
+          "pause": 0.45
+        },
+        {
+          "text": "And the confidence level, like ninety-five percent, tells how reliable that method is.",
+          "caption": "And the confidence level, like 95%, tells how reliable that method is.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Example 1: the poll",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Example one: the poll.",
+          "caption": "Example one: the poll.",
+          "pause": 0.35
+        },
+        {
+          "text": "Fifty-two, plus or minus three, means a range from forty-nine to fifty-five percent.",
+          "caption": "52, plus or minus 3, means a range from 49 to 55%.",
+          "pause": 0.4
+        },
+        {
+          "text": "The true support among all voters is likely somewhere in there.",
+          "caption": "The true support among all voters is likely somewhere in there.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Example 2: averages",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Example two: averages.",
+          "caption": "Example two: averages.",
+          "pause": 0.35
+        },
+        {
+          "text": "A food app checks one hundred orders. The average delivery time is thirty-two minutes.",
+          "caption": "A food app checks 100 orders. The average delivery time is 32 minutes.",
+          "pause": 0.4
+        },
+        {
+          "text": "Its ninety-five percent confidence interval is thirty to thirty-four minutes.",
+          "caption": "Its 95% confidence interval is 30 to 34 minutes.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "The recipe",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "The recipe is always the same: estimate, plus or minus a margin of error.",
+          "caption": "The recipe is always the same: estimate, plus or minus a margin of error.",
+          "pause": 0.4
+        },
+        {
+          "text": "For ninety-five percent, the margin is about two standard errors.",
+          "caption": "For 95%, the margin is about two standard errors.",
+          "pause": 0.4
+        },
+        {
+          "text": "And the standard error is the spread, divided by the square root of the sample size.",
+          "caption": "And the standard error is the spread, divided by the square root of the sample size.",
+          "pause": 0.4
+        },
+        {
+          "text": "Here: ten divided by ten is one. So the margin is two.",
+          "caption": "Here: 10 divided by 10 is 1. So the margin is 2.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "What 95% means",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Now, the part most people get wrong.",
+          "caption": "Now, the part most people get wrong.",
+          "pause": 0.35
+        },
+        {
+          "text": "Ninety-five percent does not mean a ninety-five percent chance that this one range is right.",
+          "caption": "95% does not mean a 95% chance that this one range is right.",
+          "pause": 0.4
+        },
+        {
+          "text": "It means: repeat the survey one hundred times, and about ninety-five of the ranges will catch the true value.",
+          "caption": "It means: repeat the survey 100 times, and about 95 of the ranges will catch the true value.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "What changes the width",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Two things change the width.",
+          "caption": "Two things change the width.",
+          "pause": 0.35
+        },
+        {
+          "text": "More data makes it narrower: four times the sample halves the margin.",
+          "caption": "More data makes it narrower: four times the sample halves the margin.",
+          "pause": 0.4
+        },
+        {
+          "text": "More confidence makes it wider: to be ninety-nine percent sure, you need a bigger net.",
+          "caption": "More confidence makes it wider: to be 99% sure, you need a bigger net.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "Remember",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "So remember: a confidence interval is an estimate, plus or minus a margin of error.",
+          "caption": "So remember: a confidence interval is an estimate, plus or minus a margin of error.",
+          "pause": 0.4
+        },
+        {
+          "text": "A range that likely contains the true value.",
+          "caption": "A range that likely contains the true value.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "Quiz, teaser and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        {
+          "text": "Quick quiz!",
+          "caption": "Quick quiz!",
+          "pause": 0.3
+        },
+        {
+          "text": "Average sleep is seven hours, with a ninety-five percent confidence interval of six and a half to seven and a half hours.",
+          "caption": "Average sleep is 7 hours, with a 95% confidence interval of 6.5 to 7.5 hours.",
+          "pause": 0.35
+        },
+        {
+          "text": "Does that mean ninety-five percent of people sleep that long?",
+          "caption": "Does that mean 95% of people sleep that long?",
+          "pause": 5.7
+        },
+        {
+          "text": "No!",
+          "caption": "No!",
+          "pause": 0.35
+        },
+        {
+          "text": "It's a range for the average, not for individual people. Lots of people sleep less, or more.",
+          "caption": "It's a range for the average, not for individual people. Lots of people sleep less, or more.",
+          "pause": 0.4
+        },
+        {
+          "text": "Next: how do we decide if something is real? Hypothesis testing.",
+          "caption": "Next: how do we decide if something is real? Hypothesis testing.",
+          "pause": 0.4
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}
