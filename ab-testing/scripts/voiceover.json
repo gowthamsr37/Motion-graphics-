@@ -192,7 +192,13 @@
         {
           "text": "Version B beats A by just zero point one points, with a p-value of zero point four.",
           "caption": "Version B beats A by just 0.1 points, with a p-value of 0.4.",
-          "pause": 0.35
+          "pause": 0.35,
+          "fix": [
+            [
+              "bˈiːts ɐ",
+              "bˈiːts ˈeɪ"
+            ]
+          ]
         },
         {
           "text": "What should you do?",

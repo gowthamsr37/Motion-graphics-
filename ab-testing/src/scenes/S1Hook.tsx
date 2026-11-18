@@ -34,12 +34,12 @@ export const S1Hook: React.FC = () => {
     <AbsoluteFill>
       {phone(300, GREEN, AC, "A", -4)}
       {phone(780, ORANGE, BC, "B", 4)}
-      <Pop at={WHICH - 4} out={GUESS - 4} x={540} y={420} from="scale" scaleFrom={0.5} cfg={theme.spring.pop}>
+      <Pop at={WHICH - 4} out={GUESS - 12} x={540} y={420} from="scale" scaleFrom={0.5} cfg={theme.spring.pop}>
         <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 62, color: C.text, whiteSpace: "nowrap" }}>
           WHICH ONE <span style={{ color: C.yellow, textShadow: glowText(C.yellow, 0.5) }}>SELLS MORE?</span>
         </div>
       </Pop>
-      <Pop at={GUESS - 2} out={AB - 6} x={540} y={420} from="scale" scaleFrom={0.5} cfg={theme.spring.pop}>
+      <Pop at={GUESS + 2} out={AB - 14} x={540} y={420} from="scale" scaleFrom={0.5} cfg={theme.spring.pop}>
         <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 60, color: C.text, whiteSpace: "nowrap" }}>
           DON&apos;T GUESS. <span style={{ color: C.cyan, textShadow: glowText(C.cyan, 0.5) }}>TEST IT.</span>
         </div>

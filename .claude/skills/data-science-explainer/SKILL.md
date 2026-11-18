@@ -244,3 +244,4 @@ Notes:
 - `SceneTitle` sits at y ≈ 280: start icons and headlines at y ≥ 400 (a warning icon at y 330 sat on the title).
 - `cueS(i, …)` throws "Cannot read properties of undefined (reading 's')" in `SoundTrack` when sentence `i` doesn't exist. Count each scene's sentences in `voiceover.json` before writing cues; a two-sentence scene has indices 0 and 1 only.
 - Inference batch kits: `Coins.tsx` (exact Binomial(10, ½), `HeadsBars`), `CI.tsx` (number line, `Interval`, 20 seeded surveys), `Errors.tsx` (`Phi`, `alphaAt` / `betaAt`, `ErrCurves` with α / β / power areas, the 2×2 outcome `Grid`, smoke-alarm and flame icons) and `AB.tsx` (`Phone`, `BuyButton`, `PLess`, the seeded 50/50 visitor `SPLIT`).
+- Kokoro reads a standalone capital "A" as the article *uh* ("B beats A" became "B beats uh"). Patch it with `fix: [["bˈiːts ɐ", "bˈiːts ˈeɪ"]]` (match the word before it), and phonemize any sentence with a lone letter first.

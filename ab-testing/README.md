@@ -48,7 +48,7 @@ The Instagram caption is in [`CAPTION.md`](CAPTION.md).
 
 ## Voiceover script (timestamps are on the finished video)
 
-Kokoro TTS `af_heart` at 1.05×. Short sentences; numbers are written out in the TTS text and shown as digits in the captions. "A/B testing" is spoken from "A-B testing"; "fifteen" has its usual stress fix.
+Kokoro TTS `af_heart` at 1.05×. Short sentences; numbers are written out in the TTS text and shown as digits in the captions. "A/B testing" is spoken from "A-B testing"; "fifteen" has its usual stress fix, and the standalone "A" in "B beats A" is patched from the article (*uh*) to the letter (*ay*).
 
 **S1 · Hook** (0:00.00–0:07.68)
 - `0:00.45` A green Buy button, or an orange one? Which makes more people buy?
@@ -87,14 +87,14 @@ Kokoro TTS `af_heart` at 1.05×. Short sentences; numbers are written out in the
 - `1:21.64` So remember: split users at random, show two versions, and let a hypothesis test decide.
 - `1:27.66` Plan the sample size first, and don't peek.
 
-**S9 · Quiz, teaser and CTA** (1:30.89–1:59.22)
+**S9 · Quiz, teaser and CTA** (1:30.89–1:59.31)
 - `1:31.24` Quick quiz!
 - `1:32.27` Version B beats A by just 0.1 points, with a p-value of 0.4.
-- `1:37.84` What should you do?
-- `1:44.38` Not yet!
-- `1:45.42` 0.4 is far above 0.05. A gap like that is easily luck, so there's no winner yet.
-- `1:52.87` Next: comparing two averages. The t-test.
-- `1:55.95` Follow for data science made simple!
+- `1:37.93` What should you do?
+- `1:44.47` Not yet!
+- `1:45.51` 0.4 is far above 0.05. A gap like that is easily luck, so there's no winner yet.
+- `1:52.96` Next: comparing two averages. The t-test.
+- `1:56.04` Follow for data science made simple!
 
 ## Accuracy notes (every number checked)
 
