@@ -682,7 +682,7 @@ export class Stadium {
     const ledK = 0.55 + env.night * 1.5;
     this.ledMat.color.setScalar(ledK);
     this.screenMat.color.setScalar(0.6 + env.night * 1.6);
-    this.roofLightMat.color.setRGB(1, 0.96, 0.9).multiplyScalar(avg * 9);
+    this.roofLightMat.color.setRGB(1, 0.96, 0.9).multiplyScalar(avg * 3.5);
     this.roofMat.emissiveIntensity = avg * 0.16 + env.night * 0.012;
     this.twinkleMat.uniforms.uTime.value = o.time;
     this.twinkleMat.uniforms.uAmt.value = env.night;

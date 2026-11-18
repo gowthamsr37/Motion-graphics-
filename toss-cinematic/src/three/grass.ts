@@ -32,7 +32,7 @@ const bladeGeo = () => {
 export class GrassPatch {
   group = new THREE.Group();
   drops: THREE.InstancedMesh;
-  dropMat: THREE.MeshStandardMaterial;
+  dropMat: THREE.ShaderMaterial;
   bladeMat: THREE.MeshStandardMaterial;
   groundMat: THREE.MeshStandardMaterial;
   private dropBase: { p: THREE.Vector3; r: number }[] = [];
@@ -99,7 +99,19 @@ export class GrassPatch {
     this.group.add(ground);
     // dew: beads along and at the tips of blades
     // water: almost clear, so what you see is the sharp reflection of the lights and a bright rim
-    this.dropMat = new THREE.MeshStandardMaterial({ color: new THREE.Color(0.75, 0.9, 0.85), metalness: 0.0, roughness: 0.03, envMapIntensity: 3.0, transparent: true, opacity: 0.42, depthWrite: false });
+    this.dropMat = new THREE.ShaderMaterial({
+      uniforms: { uL: { value: [0, 1, 2, 3].map(() => new THREE.Vector3(0, 1, 0)) }, uLI: { value: [0, 0, 0, 0] }, uSky: { value: new THREE.Color(0.2, 0.25, 0.4) }, uGrass: { value: new THREE.Color(0.05, 0.13, 0.04) } },
+      vertexShader: `varying vec3 vN; varying vec3 vW;
+        void main(){ vec4 wp = modelMatrix * instanceMatrix * vec4(position, 1.0); vW = wp.xyz;
+          vN = normalize(mat3(modelMatrix) * mat3(instanceMatrix) * normal); gl_Position = projectionMatrix * viewMatrix * wp; }`,
+      fragmentShader: `precision highp float; uniform vec3 uL[4]; uniform float uLI[4]; uniform vec3 uSky, uGrass; varying vec3 vN; varying vec3 vW;
+        void main(){ vec3 n = normalize(vN); vec3 v = normalize(cameraPosition - vW); float nv = max(dot(n, v), 0.0);
+          float fr = pow(1.0 - nv, 3.0);
+          vec3 col = uGrass * (0.25 + 1.6 * smoothstep(0.15, -0.75, n.y));
+          col += uSky * fr * 1.4;
+          for (int i = 0; i < 4; i++) { vec3 h = normalize(uL[i] + v); col += vec3(1.0, 0.98, 0.94) * (pow(max(dot(n, h), 0.0), 600.0) * 60.0 + pow(max(dot(n, h), 0.0), 40.0) * 0.25) * uLI[i]; }
+          gl_FragColor = vec4(col, 1.0); }`,
+    });
     const beads: { p: THREE.Vector3; r: number }[] = [];
     for (const t of tips) {
       const n = 1 + Math.floor(r() * 2.4);
@@ -112,8 +124,7 @@ export class GrassPatch {
     }
     this.dropBase = beads;
     this.drops = new THREE.InstancedMesh(new THREE.SphereGeometry(1, 12, 9), this.dropMat, beads.length);
-    this.drops.renderOrder = 3;
-    this.drops.frustumCulled = false;
+        this.drops.frustumCulled = false;
     this.group.add(this.drops);
     this.setDew(1);
     this.group.visible = false;

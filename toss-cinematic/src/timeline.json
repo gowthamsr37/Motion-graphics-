@@ -1,5 +1,5 @@
 {
- "total": 133.428,
+ "total": 137.478,
  "scenes": [
   {
    "id": "s1",
@@ -185,7 +185,7 @@
   {
    "id": "s2",
    "start": 9.397,
-   "duration": 16.322,
+   "duration": 16.622,
    "vo": {
     "at": 9.897,
     "duration": 15.272,
@@ -376,10 +376,10 @@
   },
   {
    "id": "s3",
-   "start": 25.719,
+   "start": 26.019,
    "duration": 15.516,
    "vo": {
-    "at": 26.269,
+    "at": 26.569,
     "duration": 12.366,
     "segments": [
      {
@@ -621,10 +621,10 @@
   },
   {
    "id": "s4",
-   "start": 41.235,
-   "duration": 14.681,
+   "start": 41.535,
+   "duration": 16.381,
    "vo": {
-    "at": 41.585,
+    "at": 41.885,
     "duration": 13.731,
     "segments": [
      {
@@ -854,10 +854,10 @@
   },
   {
    "id": "s5",
-   "start": 55.917,
-   "duration": 16.698,
+   "start": 57.917,
+   "duration": 17.348,
    "vo": {
-    "at": 56.367,
+    "at": 58.367,
     "duration": 15.448,
     "segments": [
      {
@@ -1079,10 +1079,10 @@
   },
   {
    "id": "s6",
-   "start": 72.615,
-   "duration": 15.769,
+   "start": 75.265,
+   "duration": 16.219,
    "vo": {
-    "at": 73.215,
+    "at": 75.865,
     "duration": 14.369,
     "segments": [
      {
@@ -1299,10 +1299,10 @@
   },
   {
    "id": "s7",
-   "start": 88.383,
-   "duration": 13.964,
+   "start": 91.483,
+   "duration": 14.164,
    "vo": {
-    "at": 88.883,
+    "at": 91.983,
     "duration": 12.764,
     "segments": [
      {
@@ -1516,10 +1516,10 @@
   },
   {
    "id": "s8",
-   "start": 102.348,
-   "duration": 11.339,
+   "start": 105.648,
+   "duration": 12.089,
    "vo": {
-    "at": 102.748,
+    "at": 106.048,
     "duration": 10.239,
     "segments": [
      {
@@ -1734,10 +1734,10 @@
   },
   {
    "id": "s9",
-   "start": 113.687,
+   "start": 117.737,
    "duration": 19.741,
    "vo": {
-    "at": 114.187,
+    "at": 118.237,
     "duration": 15.941,
     "segments": [
      {

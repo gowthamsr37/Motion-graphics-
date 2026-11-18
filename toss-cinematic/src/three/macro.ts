@@ -231,11 +231,11 @@ const pitchPatch = () => {
   const r = rng(8);
   // hairline cracks
   hctx.strokeStyle = "rgba(0,0,0,0.75)";
-  for (let k = 0; k < 26; k++) {
+  for (let k = 0; k < 12; k++) {
     let x = r() * S;
     let y = r() * S;
     let a = r() * Math.PI * 2;
-    hctx.lineWidth = 0.8 + r() * 1.8;
+    hctx.lineWidth = 0.5 + r() * 0.7;
     hctx.beginPath();
     hctx.moveTo(x, y);
     const n = 20 + r() * 60;

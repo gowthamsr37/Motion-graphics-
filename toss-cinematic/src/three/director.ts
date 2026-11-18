@@ -56,7 +56,9 @@ export const project = (q: Pose, v: THREE.Vector3) => {
   _pc.updateProjectionMatrix();
   applyPose(_pc, q);
   const p = v.clone().project(_pc);
-  return { x: (p.x * 0.5 + 0.5) * 1080, y: (1 - (p.y * 0.5 + 0.5)) * 1920, front: p.z < 1, dist: v.distanceTo(q.p) };
+  const depth = v.clone().sub(q.p).dot(q.l.clone().sub(q.p).normalize());
+  const ppm = 1920 / (2 * Math.max(0.01, depth) * Math.tan((q.fov * Math.PI) / 360)); // screen px per metre at that depth
+  return { x: (p.x * 0.5 + 0.5) * 1080, y: (1 - (p.y * 0.5 + 0.5)) * 1920, front: p.z < 1 && depth > 0, dist: v.distanceTo(q.p), ppm };
 };
 
 // =====================================================================================================
@@ -174,21 +176,23 @@ const topOf = (i: number) => v3(PILLAR_X[i], FORMATS[i].pct * K, PILLAR_Z);
 export const s2Grow = (t: number) => B.s2.rise.map(([a, b]) => easeOut(seg(t, a, b)));
 const s2Keys: [number, Pose][] = (() => {
   const r = B.s2.rise;
-  const at = (i: number, dx: number, dy: number, dz: number, fov = 40) => {
-    const top = topOf(i);
-    return pose(top.x + dx, top.y + dy, top.z - dz, top.x - dx * 0.08, top.y - 1.7, top.z - PILLAR_W / 2, fov);
+  // medium shot on pillar i: its top in the upper third, the neighbours and the 50% line in frame
+  const at = (i: number, drift = 0) => {
+    const x = PILLAR_X[i] - Math.sign(PILLAR_X[i] || 1) * 1.2 + drift;
+    return pose(x + 1.6, 21.5, -4.5, x, 24.2, 24, 42);
   };
   return [
-    [S("s2"), pose(-7, 1.5, -50, 6, 7, 24, 46)],
-    [r[0][0] + 0.2, pose(13, 3.0, -8, 9.9, 9, 24, 44)],
-    [r[0][1] + 0.1, at(0, 4.6, -0.2, 18.5)],
-    [r[1][0] - 0.25, at(0, 3.6, 0.6, 17)],
-    [r[1][1] + 0.1, at(1, 2.6, 1.6, 16.5)],
-    [r[2][0] - 0.2, at(1, 2.0, 1.7, 16)],
-    [r[2][1] + 0.1, at(2, 1.4, 1.5, 16.5)],
-    [r[3][0] - 0.1, at(2, 1.0, 1.5, 16.5)],
-    [B.s2.wide + 0.7, pose(-1.5, 20, -30, -1, 19.5, 24, 42)],
-    [E("s2"), pose(0, 15.5, -47, 0, 14.6, 24, 42)],
+    [S("s2"), pose(3.5, 1.3, -10, 5, 7.5, 24, 52)],
+    [r[0][0] + 0.15, pose(5.5, 6, -9, 7.5, 12, 24, 48)],
+    [r[0][1] + 0.15, at(0)],
+    [r[1][0] - 0.1, at(0, -0.6)],
+    [r[1][1] + 0.15, at(1)],
+    [r[2][0] - 0.1, at(1, -0.6)],
+    [r[2][1] + 0.15, at(2)],
+    [r[3][0] - 0.05, at(2, -0.6)],
+    [r[3][1] + 0.15, at(3)],
+    [B.s2.wide + 1.1, pose(0, 16, -36, 0, 15.2, 24, 46)],
+    [E("s2"), pose(0, 15.5, -40, 0, 14.9, 24, 46)],
   ];
 })();
 export const s2Cam = (t: number): Pose => keyed(t, s2Keys);
@@ -219,7 +223,7 @@ const S3 = (e: Engine, t: number) => {
   const c = e.cast;
   // the other captain and the match referee, out in the middle
   c.show(c.home[0], -0.75, -0.35, 0.18, P.handsOnHips(t, 1));
-  c.show(c.referee, 0.95, -0.7, -0.45, P.stand(t, 2));
+  c.show(c.referee, 1.75, -1.35, -0.75, P.stand(t, 2));
   // both sides warming up
   const jog = (i: number, x0: number, z: number, dir: number, off: number) => {
     const x = x0 + dir * (((t - s) * 3.1 + off) % 46);
@@ -234,8 +238,8 @@ const S3 = (e: Engine, t: number) => {
   c.show(c.awayBat, 9.5, -6, -0.4, P.drive(((t - s) * 0.42) % 1));
   c.show(c.umpire, 5.2, -9.5, 0.5, P.walk((t - s) * 0.7));
   e.tossCoin.visible = true;
-  e.tossCoin.position.set(0.12, 0.012, 0.85);
-  e.tossCoin.rotation.set(0, 0, 0);
+  e.tossCoin.position.set(0.12, 0.004, 0.85);
+  e.tossCoin.rotation.set(0, 0.4, 0);
   const eye = (z: number) => [0.55, 1.72 + Math.sin((t - s) * 1.9) * 0.012, z] as const;
   const cam = keyed(t, [
     [s, pose(...eye(4.6), 0.1, 1.45, -20, 50)],
@@ -244,12 +248,12 @@ const S3 = (e: Engine, t: number) => {
     [b.dew - 0.15, pose(...eye(3.2), -30, 26, -46, 52)],
     [b.dew + 0.75, pose(...eye(3.1), -1.9, 0.0, 0.2, 50)], // down at the grass
     [b.won - 0.1, pose(...eye(3.1), -1.7, 0.0, 0.0, 50)],
-    [b.won + 0.7, pose(...eye(3.05), 0.12, 0.0, 0.9, 46)], // the coin on the pitch
-    [b.choose - 0.1, pose(...eye(3.05), 0.1, 0.05, 0.8, 46)],
+    [b.won + 0.7, pose(...eye(3.05), 0.12, 0.0, 0.85, 15)], // the coin on the pitch
+    [b.choose - 0.1, pose(...eye(3.05), 0.12, 0.0, 0.85, 13)],
     [b.choose + 0.9, pose(...eye(3.0), 0.05, 1.35, -22, 52)], // back up: the pitch ahead
     [b.end, pose(...eye(2.5), 0.0, 1.3, -22, 49)],
   ]);
-  const tod = lerp(0.6, 0.78, smooth(seg(t, s, b.end)));
+  const tod = lerp(0.5, 0.8, smooth(seg(t, s, b.end)));
   e.pitch.set(0.1);
   e.drawWorld(world(t, tod, s3Lamps(t), { focus: v3(0, 0, -3), shadowR: 15, towerShadows: true, dew: 0.3 }), handheld(cam, t, 0.05), { near: 0.1 });
 };
@@ -426,7 +430,7 @@ const S7 = (e: Engine, t: number) => {
     [E("s7"), pose(1.15, 0.44, 9.2, 0.0, 0.5, 2.0, 34)],
   ]);
   // each "day" the sun sits a little lower: a quick shadow swing marks the days passing
-  const tod = 0.05 + 0.11 * smooth(seg(t, b.day3 - 0.2, b.day3 + 1.0)) + 0.13 * smooth(seg(t, b.day5 - 0.2, b.day5 + 1.0));
+  const tod = 0.04 + 0.06 * smooth(seg(t, b.day3 - 0.2, b.day3 + 1.0)) + 0.07 * smooth(seg(t, b.day5 - 0.2, b.day5 + 1.0));
   e.drawWorld(world(t, tod, OFF, { focus: v3(0, 0, 5), shadowR: 13, cloudAmt: 0.36, dry: 0.25 * wear }), handheld(cam, t, 0.012), { near: 0.05 });
 };
 

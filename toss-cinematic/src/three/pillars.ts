@@ -69,7 +69,7 @@ export class Pillars {
       body.receiveShadow = true;
       this.bodies.push(body);
       // the part above 50%: gold
-      const cap = new THREE.Mesh(box, new THREE.MeshStandardMaterial({ color: 0xf6bc45, emissive: 0xf6a01f, emissiveIntensity: 1.5, roughness: 0.3, metalness: 0.6 }));
+      const cap = new THREE.Mesh(box, new THREE.MeshStandardMaterial({ color: 0xf6bc45, emissive: 0xc98b1f, emissiveIntensity: 0.32, roughness: 0.32, metalness: 0.75 }));
       cap.position.set(PILLAR_X[i], 50 * K, PILLAR_Z);
       cap.scale.set(1.012, 0.001, 1.012);
       cap.castShadow = true;

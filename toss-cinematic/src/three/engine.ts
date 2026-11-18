@@ -334,6 +334,14 @@ export class Engine {
     this.macro.ground.visible = Boolean(m.ground);
     this.mfog.color.copy(this.env.fogColor);
     this.macro.rig.apply(this.env, w.lamps, new THREE.Vector3(0, 0, grass ? -1.2 : 0), m.shadowR ?? (grass ? 3 : 6), { towerShadows: true, scale: grass ? 0.06 : 0.2, yaw });
+    if (grass) {
+      const u = this.macro.grass.dropMat.uniforms;
+      this.macro.rig.towers.forEach((l, i) => {
+        (u.uL.value as THREE.Vector3[])[i].copy(l.position).sub(l.target.position).normalize();
+        (u.uLI.value as number[])[i] = l.visible ? l.intensity : 0;
+      });
+      (u.uSky.value as THREE.Color).copy(this.env.zenith).lerp(this.env.horizon, 0.5).multiplyScalar(1.5).add(new THREE.Color(0.06, 0.07, 0.09));
+    }
     this.renderer.setRenderTarget(this.hdr);
     this.renderer.clearDepth();
     this.renderer.render(this.macro.scene, mc);

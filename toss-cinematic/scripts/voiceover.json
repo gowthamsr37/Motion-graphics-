@@ -82,7 +82,7 @@
   {
    "id": "s2",
    "lead": 0.5,
-   "hold": 0.55,
+   "hold": 0.85,
    "segments": [
     {
      "text": "Across thousands of matches, toss winners won fifty-four point three percent of decided Tests.",
@@ -148,7 +148,7 @@
   {
    "id": "s4",
    "lead": 0.35,
-   "hold": 0.6,
+   "hold": 2.3,
    "segments": [
     {
      "text": "In the IPL data, toss winners choosing to bowl first won nearly fifty-five percent.",
@@ -175,7 +175,7 @@
   {
    "id": "s5",
    "lead": 0.45,
-   "hold": 0.8,
+   "hold": 1.45,
    "segments": [
     {
      "text": "And here's something even stranger.",
@@ -207,7 +207,7 @@
   {
    "id": "s6",
    "lead": 0.6,
-   "hold": 0.8,
+   "hold": 1.25,
    "segments": [
     {
      "text": "Now comes the real twist.",
@@ -229,7 +229,7 @@
   {
    "id": "s7",
    "lead": 0.5,
-   "hold": 0.7,
+   "hold": 0.9,
    "segments": [
     {
      "text": "In Tests, the estimated toss advantage was even larger, at four point nine percentage points.",
@@ -246,7 +246,7 @@
   {
    "id": "s8",
    "lead": 0.4,
-   "hold": 0.7,
+   "hold": 1.45,
    "segments": [
     {
      "text": "So, winning the toss isn't a magic formula.",
