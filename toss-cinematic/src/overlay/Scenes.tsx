@@ -342,7 +342,8 @@ const Season: React.FC<{ x: number; i: 0 | 1; a: number; v: number; color: strin
           <Display size={64} color={C.dim}>
             {s.year}
           </Display>
-          <Display size={104} color={color} glow={color === C.gold}>
+          {/* the figure only appears as it starts counting, so no misleading "0%" sits on screen */}
+          <Display size={104} color={color} glow={color === C.gold} style={{ opacity: ease(t, v - 0.05, v + 0.25) }}>
             {Math.round(s.pct * fill)}%
           </Display>
         </div>
@@ -428,7 +429,7 @@ const EffectRow: React.FC<{ a: number; label: string; value: number; text: strin
         <div style={{ position: "relative", width: W_, height: 34 }}>
           <div style={{ position: "absolute", left: 0, top: -8, bottom: -8, width: 3, background: C.ice }} />
           {value > 0 ? (
-            <div style={{ position: "absolute", left: 3, top: 4, bottom: 4, width: (value / SCALE) * W_ * fill, borderRadius: 6, background: `linear-gradient(90deg, ${color}aa, ${color})`, boxShadow: hero ? `0 0 26px ${color}66` : "none" }} />
+            <div style={{ position: "absolute", left: 3, top: 4, bottom: 4, width: (value / SCALE) * W_ * fill, borderRadius: 6, background: hero ? `linear-gradient(90deg, ${color}aa, ${color})` : "rgba(246,242,232,0.5)", boxShadow: hero ? `0 0 26px ${color}66` : "none" }} />
           ) : (
             <div style={{ position: "absolute", left: -6, top: 11, width: 15, height: 15, borderRadius: 8, background: color, opacity: fill }} />
           )}
@@ -539,7 +540,7 @@ export const O7: React.FC = () => {
     <>
       <div style={abs(54, 262)}>
         <Rise a={s + 0.25} b={cardOut}>
-          <Panel style={{ padding: "26px 34px 26px 20px", width: 930, boxSizing: "border-box" }}>
+          <Panel style={{ padding: "26px 34px 26px 20px", width: 930, boxSizing: "border-box", background: "linear-gradient(180deg, rgba(8,13,22,0.93), rgba(6,10,18,0.88))" }}>
             <div style={{ marginLeft: 14 }}>
               <Kicker color={C.white} size={26} style={{ letterSpacing: "0.2em" }}>
                 Estimated toss effect
