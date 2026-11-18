@@ -3,10 +3,13 @@
 import React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import { SceneTitle } from "../components/Kit";
+import { Coin } from "../components/Prob";
 import { ease, Pop, useSpr } from "../components/Motion";
 import { alpha, glowText, theme } from "../theme";
 import { useScene } from "../timing";
-import { ALT, LINE, NULLC } from "./S1Hook";
+import { ALT, FLIPS, LINE, NULLC } from "./S1Hook";
+
+const SIXROW: ("H" | "T")[] = ["H", "T", "H", "H", "T", "H", "T", "H", "H", "T"];
 
 const C = theme.colors;
 const X0 = 150;
@@ -51,10 +54,26 @@ export const S6Decision: React.FC = () => {
       {/* the 5% line */}
       {line > 0.01 ? (
         <>
-          <div style={{ position: "absolute", left: px(5) - 3, top: Y - 110 * Math.min(1, line), width: 6, height: 220 * Math.min(1, line), borderRadius: 3, background: LINE, boxShadow: `0 0 14px ${LINE}` }} />
+          <div style={{ position: "absolute", left: px(5) - 3, top: Y - 110 * Math.min(1, line), width: 6, height: 140 * Math.min(1, line), borderRadius: 3, background: LINE, boxShadow: `0 0 14px ${LINE}` }} />
           <div style={{ position: "absolute", left: px(5) + 14, top: Y - 100, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 30, color: LINE, opacity: Math.min(1, line * 2), whiteSpace: "nowrap" }}>THE 5% LINE</div>
         </>
       ) : null}
+      {/* the evidence: the coin row behind each dot */}
+      {[
+        { flips: FLIPS, from: ONE + 2, to: SIX - 4, color: ALT, label: "9 HEADS IN 10" },
+        { flips: SIXROW, from: SIX + 2, to: 99999, color: NULLC, label: "6 HEADS IN 10" },
+      ].map((r) => {
+        const p = Math.min(spr(r.from, theme.spring.pop), 1 - spr(r.to, theme.spring.pop));
+        if (p <= 0.01) return null;
+        return (
+          <div key={r.label} style={{ position: "absolute", left: 90, top: 1130, width: 900, height: 200, boxSizing: "border-box", borderRadius: 28, background: alpha(r.color, 0.1), border: `2px solid ${alpha(r.color, 0.6)}`, opacity: p, transform: `translateY(${(1 - p) * 20}px)` }}>
+            <div style={{ position: "absolute", left: 0, right: 0, top: 22, textAlign: "center", fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 22, letterSpacing: "0.16em", color: r.color }}>{r.label}</div>
+            <div style={{ position: "absolute", left: 0, right: 0, top: 70, display: "flex", justifyContent: "center", gap: 12 }}>
+              {r.flips.map((f, i) => <Coin key={i} side={f} size={74} />)}
+            </div>
+          </div>
+        );
+      })}
       {dot(1.07, ONE + 2, ALT, "9 HEADS: 1%", false)}
       {dot(37.7, P38 - 4, NULLC, "6 HEADS: 38%", true)}
       <Pop at={REJ - 4} out={SIX - 4} x={540} y={470} from="up" dist={12} cfg={theme.spring.bouncy}>

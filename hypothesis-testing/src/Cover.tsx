@@ -24,14 +24,14 @@ export const Cover: React.FC = () => (
       9 HEADS IN 10: <span style={{ color: ALT, textShadow: glowText(ALT, 0.5) }}>RIGGED</span> OR <span style={{ color: NULLC, textShadow: glowText(NULLC, 0.5) }}>LUCK</span>
       <span style={{ color: C.yellow }}>?</span>
     </div>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 1010, display: "flex", justifyContent: "center", gap: 14, flexWrap: "wrap", padding: "0 150px" }}>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 1010, display: "flex", justifyContent: "center", gap: 14, flexWrap: "wrap", padding: "0 200px" }}>
       {FLIPS.map((f, i) => <Coin key={i} side={f} size={110} />)}
     </div>
     {[
       { t: "H0  NOTHING'S GOING ON", c: NULLC, x: 310 },
       { t: "H1  SOMETHING IS", c: ALT, x: 770 },
     ].map((k) => (
-      <div key={k.t} style={{ position: "absolute", left: k.x, top: 1390, transform: "translate(-50%, -50%)", padding: "10px 22px", borderRadius: 999, background: alpha(k.c, 0.18), border: `3px solid ${k.c}`, fontFamily: theme.fonts.mono, fontWeight: 800, fontSize: 24, color: C.text, whiteSpace: "pre" }}>{k.t}</div>
+      <div key={k.t} style={{ position: "absolute", left: k.x, top: 1370, transform: "translate(-50%, -50%)", padding: "10px 22px", borderRadius: 999, background: alpha(k.c, 0.18), border: `3px solid ${k.c}`, fontFamily: theme.fonts.mono, fontWeight: 800, fontSize: 24, color: C.text, whiteSpace: "pre" }}>{k.t}</div>
     ))}
     <div style={{ position: "absolute", left: 0, right: 0, top: 1516, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 700, fontSize: 36, color: C.text }}>
       <span style={{ color: C.cyan }}>@</span>
