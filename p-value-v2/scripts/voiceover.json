@@ -1,0 +1,242 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "You flip a coin ten times, and get nine heads.",
+          "caption": "You flip a coin 10 times, and get 9 heads.",
+          "pause": 0.45
+        },
+        {
+          "text": "Is the coin rigged, or did you just get lucky? The p-value answers exactly that.",
+          "caption": "Is the coin rigged, or did you just get lucky? The p-value answers exactly that.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Interview definition",
+      "lead": 0.45,
+      "hold": 1.4,
+      "segments": [
+        {
+          "text": "Here's the definition you can use in an interview.",
+          "caption": "Here's the definition you can use in an interview.",
+          "pause": 0.4
+        },
+        {
+          "text": "The p-value is the probability of getting results at least as extreme as yours, assuming the null hypothesis is true.",
+          "caption": "The p-value is the probability of getting results at least as extreme as yours, assuming the null hypothesis is true.",
+          "pause": 0.45
+        },
+        {
+          "text": "In plain words: if nothing special were going on, how surprising would my data be?",
+          "caption": "In plain words: if nothing special were going on, how surprising would my data be?",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "The null hypothesis",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "The null hypothesis is the boring explanation: nothing special is going on.",
+          "caption": "The null hypothesis is the boring explanation: nothing special is going on.",
+          "pause": 0.4
+        },
+        {
+          "text": "The coin is fair. The new drug does nothing. The new button changes nothing.",
+          "caption": "The coin is fair. The new drug does nothing. The new button changes nothing.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Example 1: 9 heads",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Example one. Assume the coin is fair, and flip it ten times, again and again.",
+          "caption": "Example one. Assume the coin is fair, and flip it 10 times, again and again.",
+          "pause": 0.4
+        },
+        {
+          "text": "Nine or more heads happens only about one percent of the time.",
+          "caption": "9 or more heads happens only about 1% of the time.",
+          "pause": 0.4
+        },
+        {
+          "text": "So the p-value is zero point zero one. Very surprising for a fair coin, so we start to doubt it.",
+          "caption": "So the p-value is 0.01. Very surprising for a fair coin, so we start to doubt it.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Example 2: 6 heads",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Example two: you got six heads instead.",
+          "caption": "Example two: you got 6 heads instead.",
+          "pause": 0.4
+        },
+        {
+          "text": "A fair coin gets six or more heads thirty-eight percent of the time. So p is zero point three eight.",
+          "caption": "A fair coin gets 6 or more heads 38% of the time. So p is 0.38.",
+          "pause": 0.4
+        },
+        {
+          "text": "Not surprising at all. No reason to doubt the coin.",
+          "caption": "Not surprising at all. No reason to doubt the coin.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "The rule",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "So here's the rule.",
+          "caption": "So here's the rule.",
+          "pause": 0.35
+        },
+        {
+          "text": "Small p-value: surprising, so evidence against the null. Big p-value: not surprising, no evidence.",
+          "caption": "Small p-value: surprising, so evidence against the null. Big p-value: not surprising, no evidence.",
+          "pause": 0.4
+        },
+        {
+          "text": "Most people draw the line at zero point zero five. Below it, the result is called statistically significant.",
+          "caption": "Most people draw the line at 0.05. Below it, the result is called statistically significant.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Example 3: a new drug",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Example three: a new drug.",
+          "caption": "Example three: a new drug.",
+          "pause": 0.35
+        },
+        {
+          "text": "Patients on the drug see their blood pressure drop more than patients on a placebo, with a p-value of zero point zero two.",
+          "caption": "Patients on the drug see their blood pressure drop more than patients on a placebo, with a p-value of 0.02.",
+          "pause": 0.4
+        },
+        {
+          "text": "So if the drug did nothing, a gap this big would appear only two percent of the time. That's significant.",
+          "caption": "So if the drug did nothing, a gap this big would appear only 2% of the time. That's significant.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Two interview traps",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Two mistakes interviewers love to test.",
+          "caption": "Two mistakes interviewers love to test.",
+          "pause": 0.35
+        },
+        {
+          "text": "One: a p-value of zero point zero two is not a two percent chance that the null is true. It's the chance of the data, if the null were true.",
+          "caption": "One: a p-value of 0.02 is not a 2% chance that the null is true. It's the chance of the data, if the null were true.",
+          "pause": 0.4
+        },
+        {
+          "text": "Two: a small p-value doesn't mean a big effect. It only says the effect is probably not zero.",
+          "caption": "Two: a small p-value doesn't mean a big effect. It only says the effect is probably not zero.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Remember",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "So remember: the p-value tells you how surprising your data is, if nothing special were going on.",
+          "caption": "So remember: the p-value tells you how surprising your data is, if nothing special were going on.",
+          "pause": 0.4
+        },
+        {
+          "text": "Small means surprising. Below zero point zero five means significant.",
+          "caption": "Small means surprising. Below 0.05 means significant.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "Quiz, teaser and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        {
+          "text": "Quick quiz!",
+          "caption": "Quick quiz!",
+          "pause": 0.3
+        },
+        {
+          "text": "A test gives a p-value of zero point three zero.",
+          "caption": "A test gives a p-value of 0.30.",
+          "pause": 0.35
+        },
+        {
+          "text": "Is the result statistically significant?",
+          "caption": "Is the result statistically significant?",
+          "pause": 5.7
+        },
+        {
+          "text": "No!",
+          "caption": "No!",
+          "pause": 0.35
+        },
+        {
+          "text": "Zero point three zero is above zero point zero five. Data like this could easily happen by luck.",
+          "caption": "0.30 is above 0.05. Data like this could easily happen by luck.",
+          "pause": 0.4
+        },
+        {
+          "text": "Next: what happens when a test gets it wrong? Type one and Type two errors.",
+          "caption": "Next: what happens when a test gets it wrong? Type 1 and Type 2 errors.",
+          "pause": 0.4
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}

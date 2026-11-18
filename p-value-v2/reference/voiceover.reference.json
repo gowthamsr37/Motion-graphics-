@@ -1,0 +1,443 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 0.9,
+      "segments": [
+        {
+          "text": "Every probability distribution a data scientist needs, in one video.",
+          "caption": "Every probability distribution a data scientist needs, in one video.",
+          "pause": 0.4
+        },
+        {
+          "text": "What each one looks like, when to use it, and the Python code. Save this one!",
+          "caption": "What each one looks like, when to use it, and the Python code. Save this one!",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "One question",
+      "lead": 0.4,
+      "hold": 0.9,
+      "segments": [
+        {
+          "text": "To choose, ask one question: what am I measuring?",
+          "caption": "To choose, ask one question: what am I measuring?",
+          "pause": 0.35
+        },
+        {
+          "text": "Counting things: how many? Measuring things: how long, or how much?",
+          "caption": "Counting things: how many? Measuring things: how long, or how much?",
+          "pause": 0.3
+        },
+        {
+          "text": "Or testing a result?",
+          "caption": "Or testing a result?",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Bernoulli",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Bernoulli.",
+          "caption": "Bernoulli.",
+          "pause": 0.25,
+          "fix": [
+            [
+              "bˈɜːnaʊli",
+              "bɚnˈuːli"
+            ]
+          ]
+        },
+        {
+          "text": "One single try, with two outcomes: yes or no.",
+          "caption": "One single try, with two outcomes: yes or no.",
+          "pause": 0.3
+        },
+        {
+          "text": "A coin flip. Will this customer buy? Is this email spam?",
+          "caption": "A coin flip. Will this customer buy? Is this email spam?",
+          "pause": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Binomial",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Binomial.",
+          "caption": "Binomial.",
+          "pause": 0.25
+        },
+        {
+          "text": "The number of yeses in a fixed number of tries.",
+          "caption": "The number of yeses in a fixed number of tries.",
+          "pause": 0.3
+        },
+        {
+          "text": "Heads in ten flips. Buyers out of a hundred visitors.",
+          "caption": "Heads in ten flips. Buyers out of a hundred visitors.",
+          "pause": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Geometric",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Geometric.",
+          "caption": "Geometric.",
+          "pause": 0.25
+        },
+        {
+          "text": "The number of tries until the first success.",
+          "caption": "The number of tries until the first success.",
+          "pause": 0.3
+        },
+        {
+          "text": "Calls until the first sale. Rolls until the first six.",
+          "caption": "Calls until the first sale. Rolls until the first six.",
+          "pause": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Poisson",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Poisson.",
+          "caption": "Poisson.",
+          "pause": 0.25,
+          "fix": [
+            [
+              "pˈɔɪsən",
+              "pwɑːsˈoʊn"
+            ]
+          ]
+        },
+        {
+          "text": "How many events happen in a stretch of time.",
+          "caption": "How many events happen in a stretch of time.",
+          "pause": 0.3
+        },
+        {
+          "text": "Calls per hour. Website visits per minute. Typos per page.",
+          "caption": "Calls per hour. Website visits per minute. Typos per page.",
+          "pause": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Uniform",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Uniform.",
+          "caption": "Uniform.",
+          "pause": 0.25
+        },
+        {
+          "text": "Every outcome is equally likely.",
+          "caption": "Every outcome is equally likely.",
+          "pause": 0.3
+        },
+        {
+          "text": "A fair dice roll. A random number generator.",
+          "caption": "A fair dice roll. A random number generator.",
+          "pause": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Normal",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Normal.",
+          "caption": "Normal.",
+          "pause": 0.25
+        },
+        {
+          "text": "The bell curve: values cluster around an average.",
+          "caption": "The bell curve: values cluster around an average.",
+          "pause": 0.3
+        },
+        {
+          "text": "Heights. Exam scores. Measurement errors.",
+          "caption": "Heights. Exam scores. Measurement errors.",
+          "pause": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Exponential",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Exponential.",
+          "caption": "Exponential.",
+          "pause": 0.25
+        },
+        {
+          "text": "The waiting time until the next event.",
+          "caption": "The waiting time until the next event.",
+          "pause": 0.3
+        },
+        {
+          "text": "Time between customers. Time until a machine fails.",
+          "caption": "Time between customers. Time until a machine fails.",
+          "pause": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "Log-normal",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Log-normal.",
+          "caption": "Log-normal.",
+          "pause": 0.25
+        },
+        {
+          "text": "Positive values with a long right tail, from growth that multiplies.",
+          "caption": "Positive values with a long right tail, from growth that multiplies.",
+          "pause": 0.3
+        },
+        {
+          "text": "Incomes. House prices. Stock prices.",
+          "caption": "Incomes. House prices. Stock prices.",
+          "pause": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "Pareto",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Pareto.",
+          "caption": "Pareto.",
+          "pause": 0.25,
+          "fix": [
+            [
+              "pæɹˈiːɾoʊ",
+              "pəɹˈeɪɾoʊ"
+            ]
+          ]
+        },
+        {
+          "text": "A few giants hold most of the total: the eighty twenty rule.",
+          "caption": "A few giants hold most of the total: the eighty twenty rule.",
+          "pause": 0.3
+        },
+        {
+          "text": "Wealth. City sizes. Sales per product.",
+          "caption": "Wealth. City sizes. Sales per product.",
+          "pause": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "The t-distribution",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "The t-distribution.",
+          "caption": "The t-distribution.",
+          "pause": 0.25
+        },
+        {
+          "text": "Like the bell curve, but with fatter tails, for small samples.",
+          "caption": "Like the bell curve, but with fatter tails, for small samples.",
+          "pause": 0.3
+        },
+        {
+          "text": "Averages from just a few values, and t-tests.",
+          "caption": "Averages from just a few values, and t-tests.",
+          "pause": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "Chi-square",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Chi-square.",
+          "caption": "Chi-square.",
+          "pause": 0.25
+        },
+        {
+          "text": "Checks whether counts match what you expected.",
+          "caption": "Checks whether counts match what you expected.",
+          "pause": 0.3
+        },
+        {
+          "text": "Is this dice fair? Are two categories related?",
+          "caption": "Is this dice fair? Are two categories related?",
+          "pause": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "title": "And a bonus: bimodal",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "And a bonus: bimodal.",
+          "caption": "And a bonus: bimodal.",
+          "pause": 0.25,
+          "fix": [
+            [
+              "baɪmˈɑːdəl",
+              "baɪmˈoʊdəl"
+            ]
+          ]
+        },
+        {
+          "text": "Two humps usually mean two groups mixed together.",
+          "caption": "Two humps usually mean two groups mixed together.",
+          "pause": 0.3
+        },
+        {
+          "text": "Like restaurant orders, with a lunch rush and a dinner rush. Split the groups first!",
+          "caption": "Like restaurant orders, with a lunch rush and a dinner rush. Split the groups first!",
+          "pause": 0.2
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "title": "In practice",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Using them in practice takes three steps.",
+          "caption": "Using them in practice takes three steps.",
+          "pause": 0.35
+        },
+        {
+          "text": "Plot a histogram of your data, and match its shape to these cards.",
+          "caption": "Plot a histogram of your data, and match its shape to these cards.",
+          "pause": 0.35
+        },
+        {
+          "text": "Then fit it in Python, and check the fit with a Q-Q plot.",
+          "caption": "Then fit it in Python, and check the fit with a Q-Q plot.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "title": "The cheat sheet",
+      "lead": 0.45,
+      "hold": 2.2,
+      "segments": [
+        {
+          "text": "So here's the full cheat sheet.",
+          "caption": "So here's the full cheat sheet.",
+          "pause": 0.4
+        },
+        {
+          "text": "Save this reel, and send it to a friend who's learning data science.",
+          "caption": "Save this reel, and send it to a friend who's learning data science.",
+          "pause": 0.4
+        },
+        {
+          "text": "Every distribution here has its own full video on my page.",
+          "caption": "Every distribution here has its own full video on my page.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "title": "Quiz, teaser and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        {
+          "text": "Quick quiz!",
+          "caption": "Quick quiz!",
+          "pause": 0.3
+        },
+        {
+          "text": "The number of emails you get every hour.",
+          "caption": "The number of emails you get every hour.",
+          "pause": 0.35
+        },
+        {
+          "text": "Which distribution fits best?",
+          "caption": "Which distribution fits best?",
+          "pause": 5.7
+        },
+        {
+          "text": "Poisson!",
+          "caption": "Poisson!",
+          "pause": 0.35,
+          "fix": [
+            [
+              "pˈɔɪsən",
+              "pwɑːsˈoʊn"
+            ]
+          ]
+        },
+        {
+          "text": "It counts events in a stretch of time.",
+          "caption": "It counts events in a stretch of time.",
+          "pause": 0.4
+        },
+        {
+          "text": "Next: how sure can we be about an average? Confidence intervals.",
+          "caption": "Next: how sure can we be about an average? Confidence intervals.",
+          "pause": 0.4
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}
