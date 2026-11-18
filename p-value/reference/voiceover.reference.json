@@ -1,0 +1,211 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Your friend's coin lands heads nine times out of ten.",
+          "caption": "Your friend's coin lands heads 9 times out of 10.",
+          "pause": 0.45
+        },
+        {
+          "text": "Is the coin rigged, or was it just luck?",
+          "caption": "Is the coin rigged, or was it just luck?",
+          "pause": 0.45
+        },
+        {
+          "text": "Hypothesis testing helps you decide.",
+          "caption": "Hypothesis testing helps you decide.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The definition",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Here's the definition, in simple words.",
+          "caption": "Here's the definition, in simple words.",
+          "pause": 0.35
+        },
+        {
+          "text": "Hypothesis testing uses data to decide whether an effect is real, or just chance.",
+          "caption": "Hypothesis testing uses data to decide whether an effect is real, or just chance.",
+          "pause": 0.4
+        },
+        {
+          "text": "First, assume nothing special is going on.",
+          "caption": "First, assume nothing special is going on.",
+          "pause": 0.4
+        },
+        {
+          "text": "Then check: is the data too surprising for that to be true?",
+          "caption": "Then check: is the data too surprising for that to be true?",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Two hypotheses",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "That gives us two hypotheses.",
+          "caption": "That gives us two hypotheses.",
+          "pause": 0.35
+        },
+        {
+          "text": "The null hypothesis: nothing's going on. The coin is fair.",
+          "caption": "The null hypothesis: nothing's going on. The coin is fair.",
+          "pause": 0.4
+        },
+        {
+          "text": "The alternative: something is going on. The coin favours heads.",
+          "caption": "The alternative: something is going on. The coin favours heads.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Like a courtroom",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "It works like a courtroom.",
+          "caption": "It works like a courtroom.",
+          "pause": 0.35
+        },
+        {
+          "text": "The null is like 'innocent until proven guilty'.",
+          "caption": "The null is like 'innocent until proven guilty'.",
+          "pause": 0.4
+        },
+        {
+          "text": "Only strong evidence lets us reject it. Weak evidence means 'not guilty', which is not the same as 'innocent'.",
+          "caption": "Only strong evidence lets us reject it. Weak evidence means 'not guilty', which is not the same as 'innocent'.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "How surprising?",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "So, if the coin were fair, how often would we see nine or more heads in ten flips?",
+          "caption": "So, if the coin were fair, how often would we see 9 or more heads in 10 flips?",
+          "pause": 0.4
+        },
+        {
+          "text": "Picture a fair coin flipped ten times, over and over.",
+          "caption": "Picture a fair coin flipped 10 times, over and over.",
+          "pause": 0.4
+        },
+        {
+          "text": "Nine or more heads happens only about one percent of the time.",
+          "caption": "9 or more heads happens only about 1% of the time.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "The decision",
+      "lead": 0.45,
+      "hold": 1.1,
+      "segments": [
+        {
+          "text": "Before testing, we choose a line, usually five percent.",
+          "caption": "Before testing, we choose a line, usually 5%.",
+          "pause": 0.4
+        },
+        {
+          "text": "One percent is below it, so we reject the null. The coin is probably rigged.",
+          "caption": "1% is below it, so we reject the null. The coin is probably rigged.",
+          "pause": 0.4
+        },
+        {
+          "text": "But six heads happens about thirty-eight percent of the time. Then we'd fail to reject the null, which doesn't prove the coin is fair.",
+          "caption": "But 6 heads happens about 38% of the time. Then we'd fail to reject the null, which doesn't prove the coin is fair.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Remember",
+      "lead": 0.45,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "So remember: assume nothing's going on, check how surprising the data is,",
+          "caption": "So remember: assume nothing's going on, check how surprising the data is,",
+          "pause": 0.3
+        },
+        {
+          "text": "and reject that assumption only when the data is really surprising.",
+          "caption": "and reject that assumption only when the data is really surprising.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Quiz, teaser and CTA",
+      "lead": 0.35,
+      "hold": 1.35,
+      "segments": [
+        {
+          "text": "Quick quiz!",
+          "caption": "Quick quiz!",
+          "pause": 0.3
+        },
+        {
+          "text": "A company claims its new pill lowers blood pressure.",
+          "caption": "A company claims its new pill lowers blood pressure.",
+          "pause": 0.35
+        },
+        {
+          "text": "In a test, what is the null hypothesis?",
+          "caption": "In a test, what is the null hypothesis?",
+          "pause": 5.7
+        },
+        {
+          "text": "The pill does nothing!",
+          "caption": "The pill does nothing!",
+          "pause": 0.35
+        },
+        {
+          "text": "The null always says there's no effect. The company has to bring enough evidence to reject it.",
+          "caption": "The null always says there's no effect. The company has to bring enough evidence to reject it.",
+          "pause": 0.4
+        },
+        {
+          "text": "Next: that one percent has a name. The p-value.",
+          "caption": "Next: that 1% has a name. The p-value.",
+          "pause": 0.4
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}
