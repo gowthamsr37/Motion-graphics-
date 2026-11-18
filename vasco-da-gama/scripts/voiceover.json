@@ -1,0 +1,62 @@
+{
+  "voice": "bm_george",
+  "lang": "en-gb",
+  "speed": 0.95,
+  "fix": [],
+  "scenes": [
+    {
+      "id": "s1", "lead": 1.4, "hold": 0.6,
+      "segments": [
+        { "text": "On the twentieth of May, fourteen ninety-eight, three battered ships dropped anchor off the coast of Kerala, near Calicut.", "caption": "On 20 May 1498, three battered ships dropped anchor off the coast of Kerala, near Calicut.", "pause": 0.55 },
+        { "text": "They had sailed from Portugal, all the way around Africa.", "caption": "They had sailed from Portugal, all the way around Africa.", "pause": 0.45 },
+        { "text": "No European had ever reached India by sea.", "caption": "No European had ever reached India by sea.", "pause": 0.6 },
+        { "text": "So why did a small kingdom risk everything to get here?", "caption": "So why did a small kingdom risk everything to get here?", "pause": 0.5 },
+        { "text": "The answer starts with a tiny black seed.", "caption": "The answer starts with a tiny black seed.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s2", "lead": 0.6, "hold": 0.5,
+      "segments": [
+        { "text": "Pepper.", "caption": "Pepper.", "pause": 0.6 },
+        { "text": "It grew on vines along India's Malabar coast.", "caption": "It grew on vines along India's Malabar coast.", "pause": 0.35 },
+        { "text": "With it came cinnamon from Sri Lanka, and cloves from the far-off Spice Islands.", "caption": "With it came cinnamon from Sri Lanka, and cloves from the far-off Spice Islands.", "pause": 0.45 },
+        { "text": "In Europe, spices flavoured the food of the rich, filled medicine chests, and announced wealth.", "caption": "In Europe, spices flavoured the food of the rich, filled medicine chests, and announced wealth.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s3", "lead": 0.5, "hold": 0.6,
+      "segments": [
+        { "text": "But Europeans never bought them at the source.", "caption": "But Europeans never bought them at the source.", "pause": 0.45 },
+        { "text": "Spices crossed the Arabian Sea in the ships of Arab and Gujarati merchants,", "caption": "Spices crossed the Arabian Sea in the ships of Arab and Gujarati merchants,", "pause": 0.25 },
+        { "text": "sailed up the Red Sea to Egypt, through Cairo to Alexandria,", "caption": "sailed up the Red Sea to Egypt, through Cairo to Alexandria,", "pause": 0.25 },
+        { "text": "and there, Venetian traders carried them on into Europe.", "caption": "and there, Venetian traders carried them on into Europe.", "pause": 0.5 },
+        { "text": "Every hand along the way took its cut.", "caption": "Every hand along the way took its cut.", "pause": 0.3 },
+        { "text": "By the time pepper reached a European table, its price had multiplied many times over.", "caption": "By the time pepper reached a European table, its price had multiplied many times over.", "pause": 0.5 },
+        { "text": "Egypt and Venice held the keys to that trade.", "caption": "Egypt and Venice held the keys to that trade.", "pause": 0.3 },
+        { "text": "And after fourteen fifty-three, the rising Ottoman Empire loomed over the eastern routes too.", "caption": "And after 1453, the rising Ottoman Empire loomed over the eastern routes too.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s4", "lead": 0.5, "hold": 0.6,
+      "segments": [
+        { "text": "Portugal sat at the far western edge of Europe, locked out of all of it.", "caption": "Portugal sat at the far western edge of Europe, locked out of all of it.", "pause": 0.4 },
+        { "text": "But it faced the open Atlantic.", "caption": "But it faced the open Atlantic.", "pause": 0.5 },
+        { "text": "Encouraged by Prince Henry, Portuguese sailors crept down the coast of Africa, year after year.", "caption": "Encouraged by Prince Henry, Portuguese sailors crept down the coast of Africa, year after year.", "pause": 0.4 },
+        { "text": "Cape Bojador in fourteen thirty-four.", "caption": "Cape Bojador in 1434.", "pause": 0.3 },
+        { "text": "The Congo River in fourteen eighty-two.", "caption": "The Congo River in 1482.", "pause": 0.45 },
+        { "text": "Then, in fourteen eighty-eight, Bartolomeu Dias rounded the southern tip of Africa.", "caption": "Then, in 1488, Bartolomeu Dias rounded the southern tip of Africa.", "pause": 0.5 },
+        { "text": "The door to the Indian Ocean was open.", "caption": "The door to the Indian Ocean was open.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s5", "lead": 0.6, "hold": 4.2,
+      "segments": [
+        { "text": "Nine years later, Vasco da Gama sailed through it.", "caption": "Nine years later, Vasco da Gama sailed through it.", "pause": 0.45 },
+        { "text": "But his route looked strange.", "caption": "But his route looked strange.", "pause": 0.4 },
+        { "text": "Instead of hugging the coast, he swung far out into the Atlantic, and saw no land for about three months.", "caption": "Instead of hugging the coast, he swung far out into the Atlantic, and saw no land for about three months.", "pause": 0.55 },
+        { "text": "Why sail away from Africa, to get around it?", "caption": "Why sail away from Africa, to get around it?", "pause": 0.6 },
+        { "text": "That is where our story begins.", "caption": "That is where our story begins.", "pause": 0.3 }
+      ]
+    }
+  ]
+}
