@@ -1,4 +1,4 @@
-// SCENE 9 — REMEMBER. HOW SURPRISING IS MY DATA? (if nothing special were going on) → SMALL p = SURPRISING →
+// SCENE 9 — REMEMBER. HOW SURPRISING IS THE DATA? (if nothing special were going on) → SMALL p = SURPRISING →
 // BELOW 0.05 = SIGNIFICANT.
 import React from "react";
 import { AbsoluteFill } from "remotion";
@@ -17,7 +17,7 @@ export const S9Remember: React.FC = () => {
         gap={180}
         size={34}
         items={[
-          { t: "HOW SURPRISING IS MY DATA?", c: NULLC, at: s.cueS(0, "surprising") },
+          { t: "HOW SURPRISING IS THE DATA?", c: NULLC, at: s.cueS(0, "surprising") },
           { t: "SMALL p = SURPRISING", c: EXT, at: s.cueS(1, "Small") },
           { t: "BELOW 0.05 = SIGNIFICANT", c: LINE, at: s.cueS(1, "Below") },
         ]}
