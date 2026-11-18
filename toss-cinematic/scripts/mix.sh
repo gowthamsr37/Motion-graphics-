@@ -13,4 +13,7 @@ ln = f"loudnorm=I=-14:TP=-1.5:LRA=11:measured_I={m['input_i']}:measured_TP={m['i
 subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", "public/vo/narration.wav", "-i", "public/audio/music.wav", "-i", "public/audio/sfx.wav",
                 "-filter_complex", sys.argv[1] + "," + ln + ",aresample=48000", "-ac", "2", "-c:a", "pcm_s16le", "out/mix.wav"], check=True)
 PY
+# true-peak safety: limit at 4x oversampling so inter-sample peaks (coin ring, floodlight clunks) stay under -2 dBTP
+ffmpeg -v error -y -i out/mix.wav -af "aresample=192000:resampler=soxr:precision=28,alimiter=limit=0.7943:attack=1:release=50:level=false:latency=true,aresample=48000:resampler=soxr:precision=28" -c:a pcm_s16le out/mix-tp.wav
+mv out/mix-tp.wav out/mix.wav
 ffmpeg -hide_banner -nostats -i out/mix.wav -af ebur128=peak=true -f null - 2>&1 | grep -E "^\s+(I|Peak|LRA):" | tr -s ' '

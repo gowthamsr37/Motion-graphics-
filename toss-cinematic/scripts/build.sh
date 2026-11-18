@@ -10,7 +10,7 @@ bash scripts/mix.sh
 BROWSER=$B bash scripts/render-chunks.sh 520
 mkdir -p out/deliver
 ffmpeg -v error -y -i out/video-silent.mp4 -i out/mix.wav -map 0:v -map 1:a -c:v libx264 -preset slow -crf 19 -maxrate 14M -bufsize 28M \
-  -pix_fmt yuv420p -profile:v high -level 4.2 -r 30 -c:a aac -b:a 256k -ar 48000 -shortest -movflags +faststart \
+  -pix_fmt yuv420p -profile:v high -level 4.2 -r 30 -af lowpass=f=17000:p=2 -c:a aac -b:a 256k -ar 48000 -shortest -movflags +faststart \
   out/deliver/Beyond_The_Scoreboard_Does_The_Toss_Matter.mp4
 npx remotion still out/bundle-render Cover out/deliver/Beyond_The_Scoreboard_Does_The_Toss_Matter_Cover.png --gl=swangle --browser-executable="$B" --overwrite
 ffmpeg -v error -y -i public/vo/narration.wav -ar 48000 -c:a pcm_s16le out/deliver/narration.wav
