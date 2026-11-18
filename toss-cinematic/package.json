@@ -2,7 +2,7 @@
   "name": "toss-cinematic",
   "version": "1.0.0",
   "private": true,
-  "description": "Beyond The Scoreboard \u2014 Does winning the toss actually win matches? Cinematic 3D cricket documentary Reel.",
+  "description": "Beyond The Scoreboard — Does winning the toss actually win matches? Cinematic 3D cricket documentary Reel.",
   "scripts": {
     "audio": "tsx scripts/gen-audio.ts",
     "mix": "bash scripts/mix.sh",
@@ -20,6 +20,6 @@
     "typescript": "^7.0.2"
   },
   "devDependencies": {
-    "tsx": "^4.20.0"
+    "tsx": "^4.23.15"
   }
 }

@@ -4,7 +4,7 @@ A cinematic 3D data documentary for Instagram Reels.
 
 - **Format:** 1080×1920 (9:16), 30 fps, 137.5 s.
 - **Video:** H.264.
-- **Audio:** AAC 48 kHz stereo, mastered to −14 LUFS with true peak at −1.5 dBTP.
+- **Audio:** AAC 48 kHz stereo, mastered to −14 LUFS with true peak at −1.5 dBTP (measured in the delivered MP4: −14.1 LUFS, −1.1 dBTP after AAC encoding).
 
 Everything on screen is built in code:
 
@@ -80,4 +80,5 @@ npx remotion studio src/index.ts   # live preview (pass input props {"audio": tr
 
 - **Render time:** the 3D renders with software WebGL (SwiftShader) at about 1 s per frame on 4 CPU cores, so the full film takes about 70 minutes. `render-chunks.sh` resumes if it is interrupted.
 - **Deliverables:** `out/deliver/` holds the MP4, the cover PNG, `narration.wav`, `subtitles.srt` and `CAPTION.md`.
+- **QC of the delivered file:** 4,124 frames at 30 fps (137.47 s), H.264 High 4.2 yuv420p, about 12 Mbps, AAC 256 kb/s. It decodes without errors. Speech recognition on the delivered audio finds 95.0% of script words in the right time windows; the misses are spellings such as "tos" or "5". Frames sampled across all nine scenes keep text inside the safe area.
 - **Stems:** `public/audio/music.wav`, `public/audio/sfx.wav` and `public/vo/narration.wav` (plus one file per scene).
