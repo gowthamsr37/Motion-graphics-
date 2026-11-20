@@ -6,17 +6,19 @@ Each folder is one Remotion video project (1080×1920 Instagram Reels). Always r
 
 | Series | Projects | Style source |
 | --- | --- | --- |
-| **Data Science Made Simple** (educational explainers) for Instagram **@curious_datascientist** | `types-of-data/` (approved reference), `mean-median-mode/`, `measures-of-dispersion/`, `centre-vs-spread/`, `outliers/`, `iqr/`, `treating-outliers/`, `skewness/`, `normal-distribution/`, `z-score/`, `probability-distribution/`, `population-vs-sample/`, `central-limit-theorem/`, `uniform-distribution/`, `binomial-distribution/`, `poisson-distribution/`, `exponential-distribution/`, `pareto-distribution/`, `lognormal-distribution/`, `bernoulli-geometric/`, `t-distribution/`, `chi-square-distribution/`, `which-distribution/` (the cheat sheet, v2), `confidence-intervals/`, `hypothesis-testing/`, `p-value/`, `type-1-type-2-errors/`, `ab-testing/`, `distributions-guide/` (the complete cheat sheet, v3), `confidence-intervals-v2/`, `p-value-v2/` and `hypothesis-testing-v2/` (simpler remakes with interview definitions) | `.claude/skills/data-science-explainer/SKILL.md` |
+| **Data Science Made Simple** (educational explainers) for Instagram **@curious_datascientist** | `types-of-data/` (approved reference), `mean-median-mode/`, `measures-of-dispersion/`, `centre-vs-spread/`, `outliers/`, `iqr/`, `treating-outliers/`, `skewness/`, `normal-distribution/`, `z-score/`, `probability-distribution/`, `population-vs-sample/`, `central-limit-theorem/`, `uniform-distribution/`, `binomial-distribution/`, `poisson-distribution/`, `exponential-distribution/`, `pareto-distribution/`, `lognormal-distribution/`, `bernoulli-geometric/`, `t-distribution/`, `chi-square-distribution/`, `which-distribution/` (the cheat sheet, v2), `confidence-intervals/`, `hypothesis-testing/`, `p-value/`, `type-1-type-2-errors/`, `ab-testing/`, `distributions-guide/` (the complete cheat sheet, v3), `confidence-intervals-v2/`, `p-value-v2/` and `hypothesis-testing-v2/` (simpler remakes with interview definitions), `which-test/` (the which-test cheat sheet, first video with the growth rules) | `.claude/skills/data-science-explainer/SKILL.md` |
 | **100 Days of Machine Learning** (the next @curious_datascientist series, one topic a day) | `ml-trailer/` (the trailer) | the same `data-science-explainer` skill and house style for the videos, but **covers use the deep plum ML background** (`ML` palette and `MLBackdrop` in `ml-trailer/src/components/ML.tsx` / `src/Cover.tsx`) so ML covers never look like the navy statistics covers. Scaffold ML episodes with `REF=ml-trailer`. |
 | Beyond The Scoreboard (cricket analytics/documentary) | `abhishek-vs-rahul/`, `kohli-*`, `ind-pak-u19-final/`, … | the latest project's `src/theme.ts` + README |
 
 **Standing instruction from the user (Nov 2026):** keep every setting, theme and voice of *Types of Data Explained in 2 Minutes* consistent in future videos. For any new educational, explainer, statistics, data-science, ML or maths video, follow the `data-science-explainer` skill exactly. That means the same navy theme and 4-accent colour code, Sora / Inter / JetBrains Mono, Kokoro `af_heart` at 1.05×, word-synced subtitle style, 112 BPM F-major synthesized score and SFX kit, mix, −14 LUFS master, 30 fps, quiz + "Follow for data science made simple!" ending, cover and caption format. Scaffold new projects with:
 
 ```bash
-REF=distributions-guide bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
+REF=which-test bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
 ```
 
 Put the page handle @curious_datascientist on the end card, the cover and the caption.
+
+**Growth rules (Nov 2026):** problem/puzzle hooks and covers, A/B/C/D quiz options with a "VOTE IN THE CAPTION POLL" hint, a save moment, small purposeful animations, and a CAPTION.md with caption + poll + pinned comment and 5–8 hashtags. Details at the end of the `data-science-explainer` skill.
 
 Deviate only when the user explicitly asks for something different.
 

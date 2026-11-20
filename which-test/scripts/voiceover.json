@@ -1,0 +1,293 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Hook",
+   "lead": 0.45,
+   "hold": 0.9,
+   "segments": [
+    {
+     "text": "Z-test, t-test, chi-square, ANOVA. Which one should you use?",
+     "caption": "z-test, t-test, chi-square, ANOVA. Which one should you use?",
+     "pause": 0.4
+    },
+    {
+     "text": "Pick the wrong test, and your answer is wrong. This one video tells you exactly which test to use. Save it!",
+     "caption": "Pick the wrong test, and your answer is wrong. This one video tells you exactly which test to use. Save it!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Two questions",
+   "lead": 0.4,
+   "hold": 0.9,
+   "segments": [
+    {
+     "text": "Choosing a test comes down to two questions.",
+     "caption": "Choosing a test comes down to two questions.",
+     "pause": 0.35
+    },
+    {
+     "text": "One: what kind of data? Numbers you can average, like weight or time? Or categories you count, like tea or coffee?",
+     "caption": "One: what kind of data? Numbers you can average, like weight or time? Or categories you count, like tea or coffee?",
+     "pause": 0.35
+    },
+    {
+     "text": "Two: how many groups are you comparing?",
+     "caption": "Two: how many groups are you comparing?",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Z-test",
+   "lead": 0.3,
+   "hold": 1.5,
+   "segments": [
+    {
+     "text": "Z-test.",
+     "caption": "z-test.",
+     "pause": 0.25
+    },
+    {
+     "text": "Compare one average with a claim, when sigma, the population's spread, is known, or the sample is large.",
+     "caption": "Compare one average with a claim, when sigma, the population's spread, is known, or the sample is large.",
+     "pause": 0.3
+    },
+    {
+     "text": "Do these juice bottles really hold two hundred milliliters? We checked a hundred of them.",
+     "caption": "Do these juice bottles really hold 200 ml? We checked 100 of them.",
+     "pause": 0.2
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "One-sample t-test",
+   "lead": 0.3,
+   "hold": 1.5,
+   "segments": [
+    {
+     "text": "One-sample t-test.",
+     "caption": "One-sample t-test.",
+     "pause": 0.25
+    },
+    {
+     "text": "Same question, but the sample is small and sigma is unknown. That's most of real life.",
+     "caption": "Same question, but the sample is small and sigma is unknown. That's most of real life.",
+     "pause": 0.3
+    },
+    {
+     "text": "Do these ten phones really last twenty hours, like the ad says?",
+     "caption": "Do these 10 phones really last 20 hours, like the ad says?",
+     "pause": 0.2
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Two-sample t-test",
+   "lead": 0.3,
+   "hold": 1.5,
+   "segments": [
+    {
+     "text": "Two-sample t-test.",
+     "caption": "Two-sample t-test.",
+     "pause": 0.25
+    },
+    {
+     "text": "Two separate groups. Are their averages different?",
+     "caption": "Two separate groups. Are their averages different?",
+     "pause": 0.3
+    },
+    {
+     "text": "Battery life of brand A, versus brand B.",
+     "caption": "Battery life of brand A, versus brand B.",
+     "pause": 0.2
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Paired t-test",
+   "lead": 0.3,
+   "hold": 1.5,
+   "segments": [
+    {
+     "text": "Paired t-test.",
+     "caption": "Paired t-test.",
+     "pause": 0.25
+    },
+    {
+     "text": "The same people, measured twice: before and after.",
+     "caption": "The same people, measured twice: before and after.",
+     "pause": 0.3
+    },
+    {
+     "text": "Typing speed before a course, and after it.",
+     "caption": "Typing speed before a course, and after it.",
+     "pause": 0.2
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "ANOVA",
+   "lead": 0.3,
+   "hold": 1.5,
+   "segments": [
+    {
+     "text": "ANOVA.",
+     "caption": "ANOVA.",
+     "pause": 0.25
+    },
+    {
+     "text": "Three or more groups. Is any of their averages different?",
+     "caption": "Three or more groups. Is any of their averages different?",
+     "pause": 0.3
+    },
+    {
+     "text": "Waiting times at three coffee shops.",
+     "caption": "Waiting times at three coffee shops.",
+     "pause": 0.2
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Chi-square test of independence",
+   "lead": 0.3,
+   "hold": 1.5,
+   "segments": [
+    {
+     "text": "Chi-square test of independence.",
+     "caption": "Chi-square test of independence.",
+     "pause": 0.25
+    },
+    {
+     "text": "Now the data are categories. Are two of them linked?",
+     "caption": "Now the data are categories. Are two of them linked?",
+     "pause": 0.3
+    },
+    {
+     "text": "Does preferring tea or coffee depend on age?",
+     "caption": "Does preferring tea or coffee depend on age?",
+     "pause": 0.2
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "Chi-square goodness of fit",
+   "lead": 0.3,
+   "hold": 1.5,
+   "segments": [
+    {
+     "text": "Chi-square goodness of fit.",
+     "caption": "Chi-square goodness of fit.",
+     "pause": 0.25
+    },
+    {
+     "text": "One category. Do the counts match what you expected?",
+     "caption": "One category. Do the counts match what you expected?",
+     "pause": 0.3
+    },
+    {
+     "text": "Is this dice fair? Roll it sixty times, and count each face.",
+     "caption": "Is this dice fair? Roll it 60 times, and count each face.",
+     "pause": 0.2
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "title": "Bonus: not normal?",
+   "lead": 0.4,
+   "hold": 0.9,
+   "segments": [
+    {
+     "text": "Bonus interview tip: t-tests and ANOVA assume the data are roughly normal.",
+     "caption": "Bonus interview tip: t-tests and ANOVA assume the data are roughly normal.",
+     "pause": 0.35
+    },
+    {
+     "text": "Small sample, heavily skewed? Swap them: Mann-Whitney for the two-sample t-test, Wilcoxon for paired, and Kruskal-Wallis for ANOVA.",
+     "caption": "Small sample, heavily skewed? Swap them: Mann-Whitney for the two-sample t-test, Wilcoxon for paired, and Kruskal-Wallis for ANOVA.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "title": "The cheat sheet",
+   "lead": 0.45,
+   "hold": 2.4,
+   "segments": [
+    {
+     "text": "Here's the full cheat sheet.",
+     "caption": "Here's the full cheat sheet.",
+     "pause": 0.35
+    },
+    {
+     "text": "Averages? One group: z or t. Two groups: two-sample or paired t. Three or more: ANOVA. Counts? Chi-square.",
+     "caption": "Averages? One group: z or t. Two groups: two-sample or paired t. Three or more: ANOVA. Counts? Chi-square.",
+     "pause": 0.4
+    },
+    {
+     "text": "Save this reel, and send it to a friend preparing for interviews.",
+     "caption": "Save this reel, and send it to a friend preparing for interviews.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s12",
+   "title": "Quiz, teaser and CTA",
+   "lead": 0.35,
+   "hold": 1.35,
+   "segments": [
+    {
+     "text": "Quick quiz!",
+     "caption": "Quick quiz!",
+     "pause": 0.3
+    },
+    {
+     "text": "The same students take a test before and after coaching.",
+     "caption": "The same students take a test before and after coaching.",
+     "pause": 0.35
+    },
+    {
+     "text": "Which test checks if their scores improved?",
+     "caption": "Which test checks if their scores improved?",
+     "pause": 5.7
+    },
+    {
+     "text": "Paired t-test!",
+     "caption": "Paired t-test!",
+     "pause": 0.35
+    },
+    {
+     "text": "The same students are measured twice, so each one is compared with themselves.",
+     "caption": "The same students are measured twice, so each one is compared with themselves.",
+     "pause": 0.4
+    },
+    {
+     "text": "Next: the z-test, with a full calculation.",
+     "caption": "Next: the z-test, with a full calculation.",
+     "pause": 0.4
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.3
+    }
+   ]
+  }
+ ]
+}

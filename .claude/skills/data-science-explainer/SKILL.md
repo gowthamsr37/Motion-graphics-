@@ -10,7 +10,7 @@ The user approved **types-of-data/** as the reference ("came out very well") and
 The reference implementation is `types-of-data/`; the later videos `mean-median-mode/`, `measures-of-dispersion/`, `centre-vs-spread/`, `outliers/`, `iqr/`, `treating-outliers/`, `skewness/`, `normal-distribution/`, `z-score/`, `probability-distribution/`, `population-vs-sample/`, `central-limit-theorem/`, `uniform-distribution/`, `binomial-distribution/`, `poisson-distribution/`, `exponential-distribution/`, `pareto-distribution/`, `lognormal-distribution/`, `bernoulli-geometric/`, `t-distribution/`, `chi-square-distribution/`, `which-distribution/` (cheat sheet v2), `confidence-intervals/`, `hypothesis-testing/`, `p-value/`, `type-1-type-2-errors/`, `ab-testing/`, `distributions-guide/` (complete cheat sheet v3), `confidence-intervals-v2/`, `p-value-v2/` and `hypothesis-testing-v2/` (simpler remakes) follow it exactly. Reuse their code, not a rewrite. Scaffold from the newest one so you inherit its improvements:
 
 ```bash
-REF=distributions-guide bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
+REF=which-test bash .claude/skills/data-science-explainer/new-video.sh <folder> <CompId> <File_Stem>
 ```
 
 The improvements it inherits:
@@ -254,3 +254,12 @@ Notes:
   - include 2–3 labelled EXAMPLE n scenes;
   - name the common misreadings explicitly ("interview traps");
   - make the quiz test the classic confusion.
+- **Growth rules (user, Nov 2026, from the Instagram dashboard: follows came mostly from practical "how to" and "why" puzzle reels; basic definitions got views but few follows).** Apply to every new video (first used in `which-test/`):
+  - **Hook and cover = a problem or a puzzle** the viewer has ("Found outliers in your dataset?", "Is this dice fair?", "Which test should I use?"), never "What is X?". The cover asks the same question as the hook.
+  - Prefer practical step-by-step videos, "how to treat X" topics, full worked calculations and cheat sheets; for theory, open on a "why does this happen?" puzzle.
+  - **Quiz options carry A/B/C/D letters** (`components/Quiz.tsx` from `which-test/` on) and the quiz scene shows `PollHint` ("VOTE IN THE CAPTION POLL" with a bouncing down arrow) from the question until the reveal. Keep the options identical to the caption poll.
+  - A "SAVE" moment on the recap or cheat sheet (bookmark that drops and wiggles, plus a spoken save/send line).
+  - Small purposeful animations tied to spoken words: numbers flying into formulas, step-by-step transforms, table cells counting up, props that act out the example (a bottle filling, a battery draining). No clutter.
+  - Stay under 3:00.
+  - **CAPTION.md has three parts:** the caption (a unique problem/puzzle first line, never reused across reels; the recap; the quiz as text with "Vote in the poll before the answer 👇"; a save/send line; a series line "Next: … The whole Data Science Made Simple series is on my page."; the handle; **5–8 specific hashtags**), a **Poll** block (short question, 2–4 short options matching the video's quiz; the user adds it while writing the caption), and a **Pinned comment** with the answer and the one-line reason.
+  - The user now posts 2 reels a day.
