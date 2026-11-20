@@ -25,20 +25,20 @@ export type Test = {
   fam: string;
   c: string;
   use: [string, string];
-  ex: string;
+  ex: [string, string];
   h0: string;
   lib: string;
   py: string;
 };
 
 export const TESTS: Test[] = [
-  { kind: "z", name: "Z-TEST", sheet: "Z-TEST", q: "Average vs a claim, SIGMA known or n 30+", fam: "AVERAGES · 1 GROUP", c: G1, use: ["One average vs a claim", "SIGMA known, or a big sample (30+)"], ex: "Do juice bottles really hold 200 ml?", h0: "average = 200 ml", lib: "STATSMODELS", py: "ztest(x, value=200)" },
-  { kind: "t1", name: "ONE-SAMPLE", sub: "t-TEST", sheet: "1-SAMPLE t", q: "Average vs a claim, small sample", fam: "AVERAGES · 1 GROUP", c: G1, use: ["One average vs a claim", "SMALL sample, SIGMA unknown"], ex: "Do 10 phones really last 20 hours?", h0: "average = 20 hours", lib: "SCIPY", py: "stats.ttest_1samp(x, 20)" },
-  { kind: "t2", name: "TWO-SAMPLE", sub: "t-TEST", sheet: "2-SAMPLE t", q: "Two SEPARATE groups", fam: "AVERAGES · 2 GROUPS", c: G2, use: ["Two SEPARATE groups", "Are their averages different?"], ex: "Battery life: brand A vs brand B", h0: "average A = average B", lib: "SCIPY", py: "stats.ttest_ind(a, b)" },
-  { kind: "paired", name: "PAIRED", sub: "t-TEST", sheet: "PAIRED t", q: "SAME people, before vs after", fam: "AVERAGES · 2 GROUPS", c: G2, use: ["The SAME people, measured twice", "Before vs after"], ex: "Typing speed before vs after a course", h0: "average change = 0", lib: "SCIPY", py: "stats.ttest_rel(before, after)" },
-  { kind: "anova", name: "ANOVA", sub: "ANALYSIS OF VARIANCE", sheet: "ANOVA", q: "THREE or more groups", fam: "AVERAGES · 3+ GROUPS", c: G3, use: ["THREE or more groups", "Is any average different?"], ex: "Waiting times at 3 coffee shops", h0: "all averages are equal", lib: "SCIPY", py: "stats.f_oneway(a, b, c)" },
-  { kind: "chiInd", name: "CHI-SQUARE", sub: "TEST OF INDEPENDENCE", sheet: "CHI-SQ INDEPENDENCE", q: "Are two CATEGORIES linked?", fam: "COUNTS · 2 CATEGORIES", c: CAT, use: ["Two CATEGORIES", "Are they linked?"], ex: "Does tea vs coffee depend on age?", h0: "no link (independent)", lib: "SCIPY", py: "stats.chi2_contingency(table)" },
-  { kind: "chiFit", name: "CHI-SQUARE", sub: "GOODNESS OF FIT", sheet: "CHI-SQ GOODNESS OF FIT", q: "Do counts match what you EXPECTED?", fam: "COUNTS · 1 CATEGORY", c: CAT, use: ["One CATEGORY", "Do counts match what you expected?"], ex: "Is this dice fair? (60 rolls)", h0: "counts match expected", lib: "SCIPY", py: "stats.chisquare(observed)" },
+  { kind: "z", name: "Z-TEST", sheet: "Z-TEST", q: "Average vs a claim, SIGMA known or n 30+", fam: "AVERAGES · 1 GROUP", c: G1, use: ["One average vs a claim", "SIGMA known, or a big sample (30+)"], ex: ["Do juice bottles really hold 200 ml?", "500 students vs the national average"], h0: "average = 200 ml", lib: "STATSMODELS", py: "ztest(x, value=200)" },
+  { kind: "t1", name: "ONE-SAMPLE", sub: "t-TEST", sheet: "1-SAMPLE t", q: "Average vs a claim, small sample", fam: "AVERAGES · 1 GROUP", c: G1, use: ["One average vs a claim", "SMALL sample, SIGMA unknown"], ex: ["Do 10 phones really last 20 hours?", "Is a café's average wait really 5 min?"], h0: "average = 20 hours", lib: "SCIPY", py: "stats.ttest_1samp(x, 20)" },
+  { kind: "t2", name: "TWO-SAMPLE", sub: "t-TEST", sheet: "2-SAMPLE t", q: "Two SEPARATE groups", fam: "AVERAGES · 2 GROUPS", c: G2, use: ["Two SEPARATE groups", "Are their averages different?"], ex: ["Battery life: brand A vs brand B", "Exam scores: online vs classroom"], h0: "average A = average B", lib: "SCIPY", py: "stats.ttest_ind(a, b)" },
+  { kind: "paired", name: "PAIRED", sub: "t-TEST", sheet: "PAIRED t", q: "SAME people, before vs after", fam: "AVERAGES · 2 GROUPS", c: G2, use: ["The SAME people, measured twice", "Before vs after"], ex: ["Typing speed before vs after a course", "Runners' times: old shoes vs new shoes"], h0: "average change = 0", lib: "SCIPY", py: "stats.ttest_rel(before, after)" },
+  { kind: "anova", name: "ANOVA", sub: "ANALYSIS OF VARIANCE", sheet: "ANOVA", q: "THREE or more groups", fam: "AVERAGES · 3+ GROUPS", c: G3, use: ["THREE or more groups", "Is any average different?"], ex: ["Waiting times at 3 coffee shops", "Sales under 4 ad designs"], h0: "all averages are equal", lib: "SCIPY", py: "stats.f_oneway(a, b, c)" },
+  { kind: "chiInd", name: "CHI-SQUARE", sub: "TEST OF INDEPENDENCE", sheet: "CHI-SQ INDEPENDENCE", q: "Are two CATEGORIES linked?", fam: "COUNTS · 2 CATEGORIES", c: CAT, use: ["Two CATEGORIES", "Are they linked?"], ex: ["Does tea vs coffee depend on age?", "Is phone brand linked to city?"], h0: "no link (independent)", lib: "SCIPY", py: "stats.chi2_contingency(table)" },
+  { kind: "chiFit", name: "CHI-SQUARE", sub: "GOODNESS OF FIT", sheet: "CHI-SQ GOODNESS OF FIT", q: "Do counts match what you EXPECTED?", fam: "COUNTS · 1 CATEGORY", c: CAT, use: ["One CATEGORY", "Do counts match what you expected?"], ex: ["Is this dice fair? (60 rolls)", "Visits spread evenly over 7 days?"], h0: "counts match expected", lib: "SCIPY", py: "stats.chisquare(observed)" },
 ];
 
 // seeded normal samples
@@ -242,9 +242,11 @@ export const TestCard: React.FC<{ id: SceneId; idx: number }> = ({ id, idx }) =>
   const viz = ease(frame, [N, N + 40], [0, 1], theme.ease.inOut);
   const use1 = spr(U - 4, theme.spring.bouncy);
   const use2 = spr(U + 18, theme.spring.bouncy);
+  const E2 = s.sent(3).from;
   const ex = spr(E - 4, theme.spring.bouncy);
-  const h0 = spr(E + 14, theme.spring.pop);
-  const py = spr(E + 26, theme.spring.pop);
+  const ex2 = spr(E2 - 4, theme.spring.bouncy);
+  const h0 = spr(E2 + 18, theme.spring.pop);
+  const py = spr(E2 + 32, theme.spring.pop);
   const fs = d.name.length > 9 ? 88 : 100;
   return (
     <>
@@ -273,14 +275,19 @@ export const TestCard: React.FC<{ id: SceneId; idx: number }> = ({ id, idx }) =>
       {use2 > 0.001 ? (
         <div style={{ position: "absolute", left: 0, right: 0, top: 916, textAlign: "center", opacity: Math.min(1, use2 * 2), transform: `translateY(${(1 - Math.min(1, use2)) * 14}px)`, fontFamily: theme.fonts.display, fontWeight: 700, fontSize: d.use[1].length > 30 ? 30 : 34, color: d.c, whiteSpace: "nowrap" }}>{d.use[1]}</div>
       ) : null}
-      <Label y={1010} p={ex}>
-        EXAMPLE
+      <Label y={986} p={ex}>
+        EXAMPLES
       </Label>
-      {ex > 0.001 ? (
-        <div style={{ position: "absolute", left: 540, top: 1074, transform: `translate(-50%, -50%) scale(${interpolate(Math.min(1, ex), [0, 1], [0.7, 1])})`, opacity: Math.min(1, ex * 2), padding: "14px 28px", borderRadius: 999, background: alpha(d.c, 0.16), border: `2px solid ${alpha(d.c, 0.8)}`, fontFamily: theme.fonts.display, fontWeight: 700, fontSize: d.ex.length > 32 ? 30 : 34, color: C.text, whiteSpace: "nowrap" }}>&ldquo;{d.ex}&rdquo;</div>
-      ) : null}
+      {[ex, ex2].map((k, i) =>
+        k > 0.001 ? (
+          <div key={i} style={{ position: "absolute", left: 540, top: 1046 + i * 74, transform: `translate(-50%, -50%) scale(${interpolate(Math.min(1, k), [0, 1], [0.7, 1])})`, opacity: Math.min(1, k * 2), display: "flex", alignItems: "center", gap: 14, padding: "10px 26px 10px 12px", borderRadius: 999, background: alpha(d.c, 0.16), border: `2px solid ${alpha(d.c, 0.8)}`, fontFamily: theme.fonts.display, fontWeight: 700, fontSize: d.ex[i].length > 34 ? 27 : 30, color: C.text, whiteSpace: "nowrap" }}>
+            <span style={{ width: 36, height: 36, borderRadius: 18, background: d.c, color: C.ink, display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: 22, fontWeight: 800 }}>{i + 1}</span>
+            {d.ex[i]}
+          </div>
+        ) : null,
+      )}
       {h0 > 0.001 ? (
-        <div style={{ position: "absolute", left: 0, right: 0, top: 1186, textAlign: "center", opacity: Math.min(1, h0 * 2), transform: `translateY(${(1 - Math.min(1, h0)) * 10}px)`, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 32, color: C.text, whiteSpace: "nowrap" }}>
+        <div style={{ position: "absolute", left: 0, right: 0, top: 1196, textAlign: "center", opacity: Math.min(1, h0 * 2), transform: `translateY(${(1 - Math.min(1, h0)) * 10}px)`, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 32, color: C.text, whiteSpace: "nowrap" }}>
           <span style={{ color: d.c }}>H0: </span>
           {d.h0}
         </div>

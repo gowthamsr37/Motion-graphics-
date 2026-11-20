@@ -9,15 +9,15 @@ z-test, t-test, chi-square or ANOVA? Picking the wrong test = a wrong answer �
 2️⃣ How many groups are you comparing?
 
 📊 AVERAGES (numbers)
-• One average vs a claim, sigma known or n ≥ 30 → Z-TEST ("Do juice bottles really hold 200 ml?")
-• One average vs a claim, small sample → ONE-SAMPLE t-TEST ("Do 10 phones really last 20 hours?")
-• Two SEPARATE groups → TWO-SAMPLE t-TEST ("Battery life: brand A vs brand B")
-• The SAME people, before vs after → PAIRED t-TEST ("Typing speed before vs after a course")
-• Three or more groups → ANOVA ("Waiting times at 3 coffee shops")
+• One average vs a claim, sigma known or n ≥ 30 → Z-TEST ("Do juice bottles really hold 200 ml?" · "Are a city's 500 students above the national average?")
+• One average vs a claim, small sample → ONE-SAMPLE t-TEST ("Do 10 phones really last 20 hours?" · "Is a café's average wait really 5 minutes?")
+• Two SEPARATE groups → TWO-SAMPLE t-TEST ("Battery life: brand A vs brand B" · "Online vs classroom exam scores")
+• The SAME people, before vs after → PAIRED t-TEST ("Typing speed before vs after a course" · "Runners' times in old vs new shoes")
+• Three or more groups → ANOVA ("Waiting times at 3 coffee shops" · "Sales under 4 ad designs")
 
 🔢 COUNTS (categories)
-• Are two categories linked? → CHI-SQUARE TEST OF INDEPENDENCE ("Does tea vs coffee depend on age?")
-• Do counts match what you expected? → CHI-SQUARE GOODNESS OF FIT ("Is this dice fair?")
+• Are two categories linked? → CHI-SQUARE TEST OF INDEPENDENCE ("Does tea vs coffee depend on age?" · "Is phone brand linked to city?")
+• Do counts match what you expected? → CHI-SQUARE GOODNESS OF FIT ("Is this dice fair?" · "Do customers visit evenly across the week?")
 
 💡 Interview tip: small, heavily skewed data? Swap to Mann-Whitney U (for the two-sample t), Wilcoxon (for paired) or Kruskal-Wallis (for ANOVA).
 

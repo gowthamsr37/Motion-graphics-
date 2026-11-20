@@ -48,7 +48,7 @@
    "id": "s3",
    "title": "Z-test",
    "lead": 0.3,
-   "hold": 1.5,
+   "hold": 1.15,
    "segments": [
     {
      "text": "Z-test.",
@@ -58,12 +58,17 @@
     {
      "text": "Compare one average with a claim, when sigma, the population's spread, is known, or the sample is large.",
      "caption": "Compare one average with a claim, when sigma, the population's spread, is known, or the sample is large.",
-     "pause": 0.3
+     "pause": 0.35
     },
     {
      "text": "Do these juice bottles really hold two hundred milliliters? We checked a hundred of them.",
      "caption": "Do these juice bottles really hold 200 ml? We checked 100 of them.",
-     "pause": 0.2
+     "pause": 0.35
+    },
+    {
+     "text": "Or: are a city's five hundred students scoring above the national average?",
+     "caption": "Or: are a city's 500 students scoring above the national average?",
+     "pause": 0.25
     }
    ]
   },
@@ -71,7 +76,7 @@
    "id": "s4",
    "title": "One-sample t-test",
    "lead": 0.3,
-   "hold": 1.5,
+   "hold": 1.15,
    "segments": [
     {
      "text": "One-sample t-test.",
@@ -81,12 +86,17 @@
     {
      "text": "Same question, but the sample is small and sigma is unknown. That's most of real life.",
      "caption": "Same question, but the sample is small and sigma is unknown. That's most of real life.",
-     "pause": 0.3
+     "pause": 0.35
     },
     {
      "text": "Do these ten phones really last twenty hours, like the ad says?",
      "caption": "Do these 10 phones really last 20 hours, like the ad says?",
-     "pause": 0.2
+     "pause": 0.35
+    },
+    {
+     "text": "Or: is a café's average wait really five minutes? We timed twelve orders.",
+     "caption": "Or: is a café's average wait really 5 minutes? We timed 12 orders.",
+     "pause": 0.25
     }
    ]
   },
@@ -94,7 +104,7 @@
    "id": "s5",
    "title": "Two-sample t-test",
    "lead": 0.3,
-   "hold": 1.5,
+   "hold": 1.15,
    "segments": [
     {
      "text": "Two-sample t-test.",
@@ -104,12 +114,17 @@
     {
      "text": "Two separate groups. Are their averages different?",
      "caption": "Two separate groups. Are their averages different?",
-     "pause": 0.3
+     "pause": 0.35
     },
     {
      "text": "Battery life of brand A, versus brand B.",
      "caption": "Battery life of brand A, versus brand B.",
-     "pause": 0.2
+     "pause": 0.35
+    },
+    {
+     "text": "Or: do online students score differently from classroom students?",
+     "caption": "Or: do online students score differently from classroom students?",
+     "pause": 0.25
     }
    ]
   },
@@ -117,7 +132,7 @@
    "id": "s6",
    "title": "Paired t-test",
    "lead": 0.3,
-   "hold": 1.5,
+   "hold": 1.15,
    "segments": [
     {
      "text": "Paired t-test.",
@@ -127,12 +142,17 @@
     {
      "text": "The same people, measured twice: before and after.",
      "caption": "The same people, measured twice: before and after.",
-     "pause": 0.3
+     "pause": 0.35
     },
     {
      "text": "Typing speed before a course, and after it.",
      "caption": "Typing speed before a course, and after it.",
-     "pause": 0.2
+     "pause": 0.35
+    },
+    {
+     "text": "Or: the same runners, timed in old shoes, and then in new shoes.",
+     "caption": "Or: the same runners, timed in old shoes, and then in new shoes.",
+     "pause": 0.25
     }
    ]
   },
@@ -140,7 +160,7 @@
    "id": "s7",
    "title": "ANOVA",
    "lead": 0.3,
-   "hold": 1.5,
+   "hold": 1.15,
    "segments": [
     {
      "text": "ANOVA.",
@@ -150,12 +170,17 @@
     {
      "text": "Three or more groups. Is any of their averages different?",
      "caption": "Three or more groups. Is any of their averages different?",
-     "pause": 0.3
+     "pause": 0.35
     },
     {
      "text": "Waiting times at three coffee shops.",
      "caption": "Waiting times at three coffee shops.",
-     "pause": 0.2
+     "pause": 0.35
+    },
+    {
+     "text": "Or: which of four ad designs brings the most sales?",
+     "caption": "Or: which of 4 ad designs brings the most sales?",
+     "pause": 0.25
     }
    ]
   },
@@ -163,7 +188,7 @@
    "id": "s8",
    "title": "Chi-square test of independence",
    "lead": 0.3,
-   "hold": 1.5,
+   "hold": 1.15,
    "segments": [
     {
      "text": "Chi-square test of independence.",
@@ -173,12 +198,17 @@
     {
      "text": "Now the data are categories. Are two of them linked?",
      "caption": "Now the data are categories. Are two of them linked?",
-     "pause": 0.3
+     "pause": 0.35
     },
     {
      "text": "Does preferring tea or coffee depend on age?",
      "caption": "Does preferring tea or coffee depend on age?",
-     "pause": 0.2
+     "pause": 0.35
+    },
+    {
+     "text": "Or: is the phone brand people buy linked to the city they live in?",
+     "caption": "Or: is the phone brand people buy linked to the city they live in?",
+     "pause": 0.25
     }
    ]
   },
@@ -186,7 +216,7 @@
    "id": "s9",
    "title": "Chi-square goodness of fit",
    "lead": 0.3,
-   "hold": 1.5,
+   "hold": 1.15,
    "segments": [
     {
      "text": "Chi-square goodness of fit.",
@@ -196,12 +226,17 @@
     {
      "text": "One category. Do the counts match what you expected?",
      "caption": "One category. Do the counts match what you expected?",
-     "pause": 0.3
+     "pause": 0.35
     },
     {
      "text": "Is this dice fair? Roll it sixty times, and count each face.",
      "caption": "Is this dice fair? Roll it 60 times, and count each face.",
-     "pause": 0.2
+     "pause": 0.35
+    },
+    {
+     "text": "Or: do customers really visit evenly across all seven days of the week?",
+     "caption": "Or: do customers really visit evenly across all 7 days of the week?",
+     "pause": 0.25
     }
    ]
   },
@@ -227,7 +262,7 @@
    "id": "s11",
    "title": "The cheat sheet",
    "lead": 0.45,
-   "hold": 2.4,
+   "hold": 1.9,
    "segments": [
     {
      "text": "Here's the full cheat sheet.",

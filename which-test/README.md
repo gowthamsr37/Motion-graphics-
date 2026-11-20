@@ -1,6 +1,6 @@
 # Which Test Should I Use? (cheat sheet)
 
-A "save this" cheat sheet for **@curious_datascientist** that tells viewers which hypothesis test to use: z-test, one-sample t-test, two-sample t-test, paired t-test, ANOVA, and the two chi-square tests, plus the non-parametric swaps. 2:30, 1080×1920 (9:16), 30 fps, H.264 with AAC 48 kHz stereo, mastered to −14 LUFS.
+A "save this" cheat sheet for **@curious_datascientist** that tells viewers which hypothesis test to use: z-test, one-sample t-test, two-sample t-test, paired t-test, ANOVA, and the two chi-square tests, plus the non-parametric swaps. The first cut (2:30) felt squeezed, so the user asked for 170–175 s with more examples: every card now has two everyday examples and more breathing room. 2:55, 1080×1920 (9:16), 30 fps, H.264 with AAC 48 kHz stereo, mastered to −14 LUFS.
 
 It's the first video built with the **growth rules** the user asked for after reading their Instagram dashboard (recorded at the end of `.claude/skills/data-science-explainer/SKILL.md`):
 - a puzzle hook and a question cover ("WHICH TEST SHOULD I USE?");
@@ -36,7 +36,7 @@ The caption, poll and pinned comment are in [`CAPTION.md`](CAPTION.md).
 | --- | --- | --- |
 | 1 | **Hook** | 4 TESTS · 1 QUESTION; z-TEST, t-TEST, CHI-SQUARE and ANOVA tiles pop in on their names and wobble; **WHICH ONE?**; the tiles shake and **WRONG TEST = WRONG ANSWER** is stamped; THE COMPLETE CHEAT SHEET pill; a SAVE IT bookmark drops and wiggles. |
 | 2 | **Two questions** | 1 WHAT KIND OF DATA? NUMBERS (stopwatch, "you AVERAGE them", weight · time) vs CATEGORIES (chai glass, "you COUNT them", tea · coffee). 2 HOW MANY GROUPS? 1 · 2 · 3+ dot clusters. |
-| 3–9 | **Seven test cards** | Each: a 7-step progress bar, family tag (e.g. AVERAGES · 1 GROUP), 01/07 counter, the name, an animated diagram, USE IT WHEN (two lines), the EXAMPLE pill, H0 and the Python one-liner. Diagrams: z (40 bottles around a CLAIM 200 line, average 198, SIGMA KNOWN), one-sample t (10 phones vs CLAIM 20 h, SIGMA ?), two-sample t (groups A and B with their averages, DIFFERENT?), paired t (BEFORE → AFTER lines for the same people), ANOVA (shops A, B, C with their averages), chi-square independence (TEA/COFFEE × UNDER 30/30 AND UP counts 40/60/60/40 counting up), goodness of fit (60 dice rolls by face vs an EXPECTED 10 line). |
+| 3–9 | **Seven test cards** | Each: a 7-step progress bar, family tag (e.g. AVERAGES · 1 GROUP), 01/07 counter, the name, an animated diagram, USE IT WHEN (two lines), two numbered EXAMPLES pills (each spoken), H0 and the Python one-liner. Diagrams: z (40 bottles around a CLAIM 200 line, average 198, SIGMA KNOWN), one-sample t (10 phones vs CLAIM 20 h, SIGMA ?), two-sample t (groups A and B with their averages, DIFFERENT?), paired t (BEFORE → AFTER lines for the same people), ANOVA (shops A, B, C with their averages), chi-square independence (TEA/COFFEE × UNDER 30/30 AND UP counts 40/60/60/40 counting up), goodness of fit (60 dice rolls by face vs an EXPECTED 10 line). |
 | 10 | **Bonus: not normal?** | INTERVIEW TIP. t-TESTS & ANOVA ASSUME NORMAL DATA (bell icon); SMALL + SKEWED? SWAP: (skewed icon); 2-SAMPLE t → MANN-WHITNEY U, PAIRED t → WILCOXON, ANOVA → KRUSKAL-WALLIS on their words; THEY COMPARE RANKS, NOT AVERAGES. |
 | 11 | **The cheat sheet** | AVERAGES (NUMBERS): five rows, COUNTS (CATEGORIES): two rows, revealed on "One… Two… Three… Counts?", each with its mini diagram; a NOT NORMAL? footer; SEND and SAVE badges drop on their words; SCREENSHOT OR SAVE FOR YOUR INTERVIEW. |
 | 12 | **Quiz, teaser and CTA** | QUICK QUIZ: SAME STUDENTS · BEFORE vs AFTER COACHING, scores 62 → 71. "Did scores improve? **WHICH TEST?**" Options A 2-SAMPLE / B PAIRED / C ANOVA / D CHI-SQ with the countdown and the VOTE IN THE CAPTION POLL hint. **PAIRED t-TEST** wins; struck reasons "same kids", "only 2 sets", "not counts"; tag SAME PEOPLE, MEASURED TWICE. Teaser: NEXT: WITH A FULL CALCULATION · THE z-TEST. End card with chips 1 group: z / t · 2 groups: t · 3+: ANOVA · Counts: chi-square. |
@@ -54,60 +54,67 @@ Kokoro TTS `af_heart` at 1.05×.
 - `0:14.74` One: what kind of data? Numbers you can average, like weight or time? Or categories you count, like tea or coffee?
 - `0:21.48` Two: how many groups are you comparing?
 
-**S3 · Z-test** (0:24.21–0:37.91)
+**S3 · Z-test** (0:24.21–0:41.87)
 - `0:24.51` z-test.
 - `0:25.47` Compare one average with a claim, when sigma, the population's spread, is known, or the sample is large.
-- `0:32.04` Do these juice bottles really hold 200 ml? We checked 100 of them.
+- `0:32.09` Do these juice bottles really hold 200 ml? We checked 100 of them.
+- `0:36.81` Or: are a city's 500 students scoring above the national average?
 
-**S4 · One-sample t-test** (0:37.91–0:50.39)
-- `0:38.21` One-sample t-test.
-- `0:39.80` Same question, but the sample is small and sigma is unknown. That's most of real life.
-- `0:45.32` Do these 10 phones really last 20 hours, like the ad says?
+**S4 · One-sample t-test** (0:41.87–0:58.78)
+- `0:42.17` One-sample t-test.
+- `0:43.76` Same question, but the sample is small and sigma is unknown. That's most of real life.
+- `0:49.33` Do these 10 phones really last 20 hours, like the ad says?
+- `0:53.25` Or: is a café's average wait really 5 minutes? We timed 12 orders.
 
-**S5 · Two-sample t-test** (0:50.39–0:59.25)
-- `0:50.69` Two-sample t-test.
-- `0:52.20` Two separate groups. Are their averages different?
-- `0:55.14` Battery life of brand A, versus brand B.
+**S5 · Two-sample t-test** (0:58.78–1:10.91)
+- `0:59.08` Two-sample t-test.
+- `1:00.60` Two separate groups. Are their averages different?
+- `1:03.59` Battery life of brand A, versus brand B.
+- `1:06.55` Or: do online students score differently from classroom students?
 
-**S6 · Paired t-test** (0:59.25–1:07.54)
-- `0:59.55` Paired t-test.
-- `1:00.75` The same people, measured twice: before and after.
-- `1:03.82` Typing speed before a course, and after it.
+**S6 · Paired t-test** (1:10.91–1:22.82)
+- `1:11.21` Paired t-test.
+- `1:12.41` The same people, measured twice: before and after.
+- `1:15.53` Typing speed before a course, and after it.
+- `1:18.10` Or: the same runners, timed in old shoes, and then in new shoes.
 
-**S7 · ANOVA** (1:07.54–1:15.32)
-- `1:07.84` ANOVA.
-- `1:08.67` Three or more groups. Is any of their averages different?
-- `1:11.91` Waiting times at three coffee shops.
+**S7 · ANOVA** (1:22.82–1:33.41)
+- `1:23.12` ANOVA.
+- `1:23.95` Three or more groups. Is any of their averages different?
+- `1:27.24` Waiting times at three coffee shops.
+- `1:29.50` Or: which of 4 ad designs brings the most sales?
 
-**S8 · Chi-square test of independence** (1:15.32–1:24.71)
-- `1:15.62` Chi-square test of independence.
-- `1:17.66` Now the data are categories. Are two of them linked?
-- `1:20.69` Does preferring tea or coffee depend on age?
+**S8 · Chi-square test of independence** (1:33.41–1:46.15)
+- `1:33.71` Chi-square test of independence.
+- `1:35.75` Now the data are categories. Are two of them linked?
+- `1:38.83` Does preferring tea or coffee depend on age?
+- `1:41.70` Or: is the phone brand people buy linked to the city they live in?
 
-**S9 · Chi-square goodness of fit** (1:24.71–1:34.85)
-- `1:25.01` Chi-square goodness of fit.
-- `1:26.67` One category. Do the counts match what you expected?
-- `1:29.78` Is this dice fair? Roll it 60 times, and count each face.
+**S9 · Chi-square goodness of fit** (1:46.15–2:00.37)
+- `1:46.45` Chi-square goodness of fit.
+- `1:48.11` One category. Do the counts match what you expected?
+- `1:51.27` Is this dice fair? Roll it 60 times, and count each face.
+- `1:55.19` Or: do customers really visit evenly across all 7 days of the week?
 
-**S10 · Bonus: not normal?** (1:34.85–1:49.19)
-- `1:35.25` Bonus interview tip: t-tests and ANOVA assume the data are roughly normal.
-- `1:40.13` Small sample, heavily skewed? Swap them: Mann-Whitney for the two-sample t-test, Wilcoxon for paired, and Kruskal-Wallis for ANOVA.
+**S10 · Bonus: not normal?** (2:00.37–2:14.71)
+- `2:00.77` Bonus interview tip: t-tests and ANOVA assume the data are roughly normal.
+- `2:05.64` Small sample, heavily skewed? Swap them: Mann-Whitney for the two-sample t-test, Wilcoxon for paired, and Kruskal-Wallis for ANOVA.
 
-**S11 · The cheat sheet** (1:49.19–2:05.25)
-- `1:49.64` Here's the full cheat sheet.
-- `1:51.36` Averages? One group: z or t. Two groups: two-sample or paired t. Three or more: ANOVA. Counts? Chi-square.
-- `1:59.36` Save this reel, and send it to a friend preparing for interviews.
+**S11 · The cheat sheet** (2:14.71–2:30.27)
+- `2:15.16` Here's the full cheat sheet.
+- `2:16.88` Averages? One group: z or t. Two groups: two-sample or paired t. Three or more: ANOVA. Counts? Chi-square.
+- `2:24.88` Save this reel, and send it to a friend preparing for interviews.
 
-**S12 · Quiz, teaser and CTA** (2:05.25–2:29.62)
-- `2:05.60` Quick quiz!
-- `2:06.63` The same students take a test before and after coaching.
-- `2:09.87` Which test checks if their scores improved?
-- `2:17.60` Paired t-test!
-- `2:18.90` The same students are measured twice, so each one is compared with themselves.
-- `2:23.23` Next: the z-test, with a full calculation.
-- `2:26.35` Follow for data science made simple!
+**S12 · Quiz, teaser and CTA** (2:30.27–2:54.64)
+- `2:30.62` Quick quiz!
+- `2:31.65` The same students take a test before and after coaching.
+- `2:34.89` Which test checks if their scores improved?
+- `2:42.62` Paired t-test!
+- `2:43.92` The same students are measured twice, so each one is compared with themselves.
+- `2:48.25` Next: the z-test, with a full calculation.
+- `2:51.37` Follow for data science made simple!
 
-total 149.625
+total 174.643
 
 ## Accuracy notes
 

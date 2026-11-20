@@ -103,8 +103,9 @@ const useHits = (): Hit[] => {
     h(s.sent(0).from - 6, "pop.wav", 0.2);
     h(s.sent(1).from - 8, `blip${(i % 3) + 1}.wav`, 0.16);
     h(E - 8, "pop.wav", 0.14);
-    h(E + 12, "tick.wav", 0.08);
-    h(E + 24, "click.wav", 0.12);
+    h(s.sent(3).from - 8, "pop.wav", 0.14);
+    h(s.sent(3).from + 16, "tick.wav", 0.08);
+    h(s.sent(3).from + 30, "click.wav", 0.12);
   });
   // S10 — bonus swaps
   {
