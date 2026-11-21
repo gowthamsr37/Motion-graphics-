@@ -1,5 +1,5 @@
 // SCENE 7 — WHAT z = −2 MEANS. IF H0 IS TRUE: the standard normal curve (−3…3), a z = −2 marker drops into the left
-// tail, the tail shades and a HOW RARE? badge pops, then ASK THE Z TABLE.
+// tail, the tail shades; FAR ENOUGH TO REJECT H0? and the two methods (p-value, critical value).
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { Badge, FnCurve, gx, Marker, ValueAxis } from "../components/Curve";
@@ -17,7 +17,8 @@ export const S7Picture: React.FC = () => {
   const s = useScene("s7");
   const draw = ease(frame, [2, 30], [0, 1], theme.ease.inOut);
   const LEFT = s.cueS(0, "below");
-  const RARE = s.cueS(0, "rare");
+  const RARE = s.cueS(0, "far");
+  const TWO = s.cueS(1, "two");
   const tail = ease(frame, [LEFT - 8, LEFT + 10], [0, 1]);
   return (
     <AbsoluteFill>
@@ -30,11 +31,19 @@ export const S7Picture: React.FC = () => {
       <Badge x={gx(G, -2.75)} y={G.base - 60} p={spr(RARE - 4, theme.spring.pop)} color={TAIL} size={30}>
         ?
       </Badge>
-      <Pop at={RARE - 4} x={540} y={1230} from="up" dist={14} cfg={theme.spring.bouncy}>
-        <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 52, color: C.text, whiteSpace: "nowrap" }}>
-          HOW RARE IS THIS<span style={{ color: C.yellow }}>?</span>
+      <Pop at={RARE - 4} x={540} y={1190} from="up" dist={14} cfg={theme.spring.bouncy}>
+        <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 50, color: C.text, whiteSpace: "nowrap" }}>
+          FAR ENOUGH TO REJECT H0<span style={{ color: C.yellow }}>?</span>
         </div>
       </Pop>
+      {[
+        { t: "METHOD 1: p-VALUE", c: C.violet, x: 300 },
+        { t: "METHOD 2: CRITICAL VALUE", c: C.orange, x: 760 },
+      ].map((m, i) => (
+        <Pop key={i} at={TWO + 4 + i * 8} x={m.x} y={1290} from="up" dist={12} cfg={theme.spring.pop}>
+          <div style={{ padding: "10px 22px", borderRadius: 999, background: `${m.c}33`, border: `3px solid ${m.c}`, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 28, color: C.text, whiteSpace: "nowrap" }}>{m.t}</div>
+        </Pop>
+      ))}
     </AbsoluteFill>
   );
 };

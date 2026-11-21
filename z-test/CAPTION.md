@@ -15,12 +15,15 @@ A juice bottle says 200 ml. You measure 100 bottles and the average is 198 🧃 
    • Top: 198 − 200 = −2 (how far off we are)
    • Bottom: 10 / √100 = 10 / 10 = 1 (the standard error)
    • z = −2 / 1 = −2
-4️⃣ Z table: row −2.0, column 0.00 → 0.0228 (area to the left). Two-tailed → p = 2 × 0.0228 ≈ 0.046
-5️⃣ Decide: the 5% cut-off is ±1.96 (0.0250 in the table sits at −1.96). −2 is beyond −1.96 and p < 0.05 → reject H0. The machine is under-filling.
+4️⃣ Decide, with the z table, two ways:
+   📍 Method 1, the p-value (table: z → area): row −2.0, column 0.00 → 0.0228. Two-tailed → p = 2 × 0.0228 ≈ 0.046 < alpha 0.05
+   📍 Method 2, the critical value (table: area → z): 2.5% per tail → 0.0250 sits at −1.96. That's the CRITICAL VALUE.
+   Beyond ±1.96 is the CRITICAL REGION (rejection region); its total area = alpha = 5%. The middle 95% is where we fail to reject.
+5️⃣ z = −2 falls in the critical region and p < alpha → both methods agree: reject H0. The machine is under-filling.
 
-⚠️ 3 interview traps:
+⚠️ Interview traps:
+• One-tailed (testing only "less than"): the whole 5% critical region sits in the left tail → critical value −1.645
 • Sigma unknown and a small sample → use a t-test, not z
-• One-tailed (testing only "less than") → cut-off −1.645, p = 0.0228
 • A z-score describes one value; a z-test tests a sample mean
 
 🧠 Quiz: a two-tailed z-test gives z = 1.5. At 5%, do we reject H0? Vote in the poll before the answer 👇

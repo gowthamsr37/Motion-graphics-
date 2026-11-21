@@ -1,4 +1,4 @@
-// SCENE 11 — REMEMBER. The formula, then z = HOW FAR OFF ÷ STANDARD ERROR · LOOK UP THE Z TABLE · BEYOND ±1.96: REJECT,
+// SCENE 12 — REMEMBER. The formula, then z = HOW FAR OFF ÷ STANDARD ERROR · LOOK UP THE Z TABLE · BEYOND ±1.96: REJECT,
 // and a SAVE THIS bookmark that drops and wiggles.
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
@@ -12,9 +12,9 @@ import { useScene } from "../timing";
 
 const C = theme.colors;
 
-export const S11Remember: React.FC = () => {
+export const S12Remember: React.FC = () => {
   const frame = useCurrentFrame();
-  const s = useScene("s11");
+  const s = useScene("s12");
   const SAVE = s.cueS(1, "Save");
   return (
     <AbsoluteFill>
@@ -27,9 +27,9 @@ export const S11Remember: React.FC = () => {
         gap={150}
         size={34}
         items={[
-          { t: "z = HOW FAR OFF ÷ STANDARD ERROR", c: SE, at: s.cueS(0, "how") },
-          { t: "LOOK UP THE AREA IN THE Z TABLE", c: CLAIM, at: s.cueS(0, "standard") + 10 },
-          { t: "BEYOND ±1.96: REJECT H0", c: TAIL, at: s.cueS(0, "Beyond") },
+          { t: "z = HOW FAR OFF ÷ STANDARD ERROR", c: SE, at: s.sent(0).from },
+          { t: "z IN THE CRITICAL REGION: REJECT", c: TAIL, at: s.cueS(0, "region,") },
+          { t: "OR p BELOW ALPHA: REJECT", c: CLAIM, at: s.cueS(0, "below") },
         ]}
       />
       <Pop at={SAVE - 4} x={540} y={1200} from="up" dist={70} cfg={theme.spring.bouncy}>

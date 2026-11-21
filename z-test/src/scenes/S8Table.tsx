@@ -1,4 +1,4 @@
-// SCENE 8 — READING THE Z TABLE. AREA TO THE LEFT OF z; the row −2.0 and the column 0.00 sweep in, the cell 0.0228
+// SCENE 8 — METHOD 1, THE p-VALUE (table: z → area). AREA TO THE LEFT OF z; the row −2.0 and the column 0.00 sweep in, the cell 0.0228
 // pops; a mini curve shades that left tail (= 2.3%); then both tails and 2 × 0.0228 = p ≈ 0.046.
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
@@ -20,7 +20,8 @@ export const S8Table: React.FC = () => {
   const CELL = s.cueS(1, "0.0228.");
   const PCT = s.cueS(2, "2.3%");
   const DBL = s.cueS(2, "double");
-  const PV = s.cueS(2, "0.046.");
+  const PV = s.cueS(2, "0.046,");
+  const ALPHA = s.cueS(2, "alpha,");
   const tbl = spr(s.sent(0).from - 4, theme.spring.smooth);
   const draw = ease(frame, [CELL - 6, CELL + 20], [0, 1], theme.ease.inOut);
   const left = ease(frame, [CELL, CELL + 14], [0, 1]);
@@ -30,7 +31,7 @@ export const S8Table: React.FC = () => {
       <StepTracker active={3} />
       <Pop at={s.sent(0).from - 2} x={540} y={400} from="up" dist={10}>
         <div style={{ fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 24, letterSpacing: "0.16em", color: C.dim, whiteSpace: "nowrap" }}>
-          Z TABLE = AREA TO THE <span style={{ color: TAIL }}>LEFT</span> OF z
+          METHOD 1 · THE p-VALUE · TABLE: <span style={{ color: TAIL }}>z → AREA</span>
         </div>
       </Pop>
       <ZTable x={540} y={440} p={Math.min(1, tbl)} row={1} col={0} rowP={ease(frame, [ROW - 4, ROW + 12], [0, 1])} colP={ease(frame, [COL - 4, COL + 12], [0, 1])} cell={[1, 0]} cellP={ease(frame, [CELL - 6, CELL + 4], [0, 1])} />
@@ -50,6 +51,7 @@ export const S8Table: React.FC = () => {
       <Pop at={PV - 6} x={540} y={1268} from="scale" scaleFrom={0.5} cfg={theme.spring.pop}>
         <div style={{ padding: "12px 34px", borderRadius: 999, background: alpha(TAIL, 0.2), border: `3px solid ${TAIL}`, fontFamily: theme.fonts.mono, fontWeight: 800, fontSize: 44, color: C.text, whiteSpace: "nowrap" }}>
           p = 2 × 0.0228 = <span style={{ color: TAIL, textShadow: glowText(TAIL, 0.6) }}>0.046</span>
+          <span style={{ color: C.dim, fontSize: 34 }}>{frame >= ALPHA - 4 ? "  < 0.05" : ""}</span>
         </div>
       </Pop>
     </AbsoluteFill>

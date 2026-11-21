@@ -7,7 +7,7 @@
    "id": "s1",
    "title": "Hook",
    "lead": 0.4,
-   "hold": 1.0,
+   "hold": 0.7,
    "segments": [
     {
      "text": "A juice bottle says two hundred milliliters. You measure a hundred bottles, and the average is only one hundred ninety-eight.",
@@ -25,7 +25,7 @@
    "id": "s2",
    "title": "Textbook definition",
    "lead": 0.4,
-   "hold": 1.4,
+   "hold": 0.9,
    "segments": [
     {
      "text": "Here's the textbook definition, the one to use in interviews.",
@@ -43,11 +43,11 @@
    "id": "s3",
    "title": "When to use it",
    "lead": 0.4,
-   "hold": 0.75,
+   "hold": 0.7,
    "segments": [
     {
-     "text": "Use it for an average, when sigma, the population's standard deviation, is known, or n is thirty or more.",
-     "caption": "Use it for an average, when sigma, the population's standard deviation, is known, or n is 30 or more.",
+     "text": "Use it for an average, when sigma, the population's spread, is known, or n is thirty or more.",
+     "caption": "Use it for an average, when sigma, the population's spread, is known, or n is 30 or more.",
      "pause": 0.35
     },
     {
@@ -61,12 +61,12 @@
    "id": "s4",
    "title": "Steps 1 and 2",
    "lead": 0.4,
-   "hold": 0.8,
+   "hold": 0.6,
    "segments": [
     {
-     "text": "Step one: H zero says the average is two hundred milliliters. H one says it isn't.",
-     "caption": "Step one: H0 says the average is 200 ml. H1 says it isn't.",
-     "pause": 0.4
+     "text": "Step one: H zero, the average is two hundred milliliters. H one: it isn't.",
+     "caption": "Step one: H0, the average is 200 ml. H1: it isn't.",
+     "pause": 0.35
     },
     {
      "text": "Step two: alpha is five percent, split across both tails.",
@@ -79,7 +79,7 @@
    "id": "s5",
    "title": "The formula",
    "lead": 0.4,
-   "hold": 0.9,
+   "hold": 0.7,
    "segments": [
     {
      "text": "Step three: the formula. z equals x-bar minus mu, over sigma over root n.",
@@ -108,11 +108,11 @@
    "id": "s6",
    "title": "The calculation",
    "lead": 0.4,
-   "hold": 0.6,
+   "hold": 0.7,
    "segments": [
     {
-     "text": "Plug in our numbers. x-bar is one ninety-eight, and mu is two hundred, so the top is minus two.",
-     "caption": "Plug in our numbers. x-bar is 198, and mu is 200, so the top is -2.",
+     "text": "x-bar is one ninety-eight, and mu is two hundred, so the top is minus two.",
+     "caption": "x-bar is 198, and mu is 200, so the top is -2.",
      "pause": 0.4,
      "fix": [
       [
@@ -137,93 +137,111 @@
    "id": "s7",
    "title": "What z = -2 means",
    "lead": 0.4,
-   "hold": 0.75,
+   "hold": 0.4,
    "segments": [
     {
-     "text": "That's two standard errors below the claim. How rare is that? Ask the z table.",
-     "caption": "That's 2 standard errors below the claim. How rare is that? Ask the z table.",
+     "text": "That's two standard errors below the claim. Far enough to reject H zero?",
+     "caption": "That's 2 standard errors below the claim. Far enough to reject H0?",
+     "pause": 0.3
+    },
+    {
+     "text": "Two ways to decide, both using the z table.",
+     "caption": "Two ways to decide, both using the z table.",
      "pause": 0.3
     }
    ]
   },
   {
    "id": "s8",
-   "title": "Reading the z table",
+   "title": "Method 1: the p-value",
    "lead": 0.4,
-   "hold": 0.6,
+   "hold": 0.5,
    "segments": [
     {
-     "text": "A z table gives the area to the left of any z.",
-     "caption": "A z table gives the area to the left of any z.",
+     "text": "Method one: the p-value. Here the table goes from z to area: the area to the left of z.",
+     "caption": "Method one: the p-value. Here the table goes from z to area: the area to the left of z.",
      "pause": 0.35
     },
     {
-     "text": "Go to the row for minus two point zero, and the column for zero point zero zero. The area is zero point zero two two eight.",
-     "caption": "Go to the row for -2.0, and the column for 0.00. The area is 0.0228.",
+     "text": "Row minus two point zero, column zero point zero zero: the area is zero point zero two two eight.",
+     "caption": "Row -2.0, column 0.00: the area is 0.0228.",
      "pause": 0.4
     },
     {
-     "text": "That's two point three percent in one tail. Two-tailed, so we double it: p is about zero point zero four six.",
-     "caption": "That's 2.3% in one tail. Two-tailed, so we double it: p is about 0.046.",
+     "text": "That's two point three percent in one tail. Two-tailed, so we double it: p is about zero point zero four six, below alpha.",
+     "caption": "That's 2.3% in one tail. Two-tailed, so we double it: p is about 0.046, below alpha.",
      "pause": 0.3
     }
    ]
   },
   {
    "id": "s9",
-   "title": "The cut-off and the decision",
+   "title": "Method 2: the critical value",
    "lead": 0.4,
-   "hold": 0.7,
+   "hold": 0.5,
    "segments": [
     {
-     "text": "The cut-off: two point five percent per tail. Find zero point zero two five zero in the table. It sits at minus one point nine six.",
-     "caption": "The cut-off: 2.5% per tail. Find 0.0250 in the table. It sits at -1.96.",
-     "pause": 0.4
+     "text": "Method two: the critical value. Now the table goes from area to z.",
+     "caption": "Method two: the critical value. Now the table goes from area to z.",
+     "pause": 0.35
     },
     {
-     "text": "Our z of minus two is beyond minus one point nine six, and p is below zero point zero five. Reject H zero: the machine is under-filling.",
-     "caption": "Our z of -2 is beyond -1.96, and p is below 0.05. Reject H0: the machine is under-filling.",
+     "text": "Alpha is five percent, so two point five percent per tail. Find zero point zero two five zero in the table: it sits at minus one point nine six, the critical value.",
+     "caption": "Alpha is 5%, so 2.5% per tail. Find 0.0250 in the table: it sits at -1.96, the critical value.",
+     "pause": 0.35
+    },
+    {
+     "text": "Beyond plus or minus one point nine six is the critical region, or rejection region. Its total area is alpha, five percent. In the middle ninety-five percent, we fail to reject.",
+     "caption": "Beyond ±1.96 is the critical region, or rejection region. Its total area is alpha, 5%. In the middle 95%, we fail to reject.",
      "pause": 0.3
     }
    ]
   },
   {
    "id": "s10",
-   "title": "Three interview traps",
+   "title": "The decision",
    "lead": 0.4,
    "hold": 0.7,
    "segments": [
     {
-     "text": "Three interview traps.",
-     "caption": "Three interview traps.",
-     "pause": 0.3
+     "text": "Our z of minus two falls inside the critical region, and p is below alpha.",
+     "caption": "Our z of -2 falls inside the critical region, and p is below alpha.",
+     "pause": 0.35
     },
     {
-     "text": "One: sigma unknown and a small sample? Use a t-test.",
-     "caption": "One: sigma unknown and a small sample? Use a t-test.",
-     "pause": 0.3
-    },
-    {
-     "text": "Two: testing only for under-filling is one-tailed, with a cut-off of minus one point six four five.",
-     "caption": "Two: testing only for under-filling is one-tailed, with a cut-off of -1.645.",
-     "pause": 0.3
-    },
-    {
-     "text": "Three: a z-score describes one value. A z-test tests a sample mean.",
-     "caption": "Three: a z-score describes one value. A z-test tests a sample mean.",
+     "text": "Both methods agree: reject H zero. The machine is under-filling.",
+     "caption": "Both methods agree: reject H0. The machine is under-filling.",
      "pause": 0.3
     }
    ]
   },
   {
    "id": "s11",
-   "title": "Remember",
+   "title": "Interview trap: one tail or two?",
    "lead": 0.4,
-   "hold": 0.75,
+   "hold": 0.7,
    "segments": [
     {
-     "text": "Remember: z is how far off, over the standard error. Beyond plus or minus one point nine six, reject.",
-     "caption": "Remember: z is how far off, over the standard error. Beyond ±1.96, reject.",
+     "text": "Interview trap: one tail or two?",
+     "caption": "Interview trap: one tail or two?",
+     "pause": 0.3
+    },
+    {
+     "text": "If you only test for under-filling, it's one-tailed. The whole five percent critical region moves into the left tail, so the critical value becomes minus one point six four five.",
+     "caption": "If you only test for under-filling, it's one-tailed. The whole 5% critical region moves into the left tail, so the critical value becomes -1.645.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s12",
+   "title": "Remember",
+   "lead": 0.4,
+   "hold": 0.6,
+   "segments": [
+    {
+     "text": "Remember: if z lands in the critical region, or p is below alpha, reject H zero.",
+     "caption": "Remember: if z lands in the critical region, or p is below alpha, reject H0.",
      "pause": 0.35
     },
     {
@@ -234,35 +252,15 @@
    ]
   },
   {
-   "id": "s12",
-   "title": "Quiz, teaser and CTA",
+   "id": "s13",
+   "title": "Poll, teaser and CTA",
    "lead": 0.35,
    "hold": 1.35,
    "segments": [
     {
-     "text": "Quick quiz!",
-     "caption": "Quick quiz!",
-     "pause": 0.3
-    },
-    {
-     "text": "A two-tailed z-test gives z equals one point five.",
-     "caption": "A two-tailed z-test gives z equals 1.5.",
-     "pause": 0.35
-    },
-    {
-     "text": "At the five percent level, do we reject H zero?",
-     "caption": "At the 5% level, do we reject H0?",
-     "pause": 5.7
-    },
-    {
-     "text": "No!",
-     "caption": "No!",
-     "pause": 0.35
-    },
-    {
-     "text": "One point five is inside plus or minus one point nine six. p is zero point one three: it could be chance.",
-     "caption": "1.5 is inside ±1.96. p is 0.13: it could be chance.",
-     "pause": 0.3
+     "text": "Your turn: a two-tailed z of one point five. Reject H zero, or not? Vote in the caption poll!",
+     "caption": "Your turn: a two-tailed z of 1.5. Reject H0, or not? Vote in the caption poll!",
+     "pause": 0.45
     },
     {
      "text": "Next: what if we don't know sigma? The t-test.",

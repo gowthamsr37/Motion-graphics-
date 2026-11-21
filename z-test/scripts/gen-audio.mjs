@@ -31,17 +31,13 @@ const cueS = (id, i, tok) => {
 const ev = {
   allData: cueS("s1", 1, "z-test."), // the title
   sameType: cueS("s1", 1, "z-test.") + 0.5,
-  quiz: sent("s12", 0),
-  qEnd: sentEnd("s12", 2),
-  answer: sent("s12", 3),
-  tease: sent("s12", 5),
-  follow: sent("s12", 6),
+  quiz: sent("s13", 0), // the poll prompt (no in-video quiz)
+  tease: sent("s13", 1),
+  follow: sent("s13", 2),
   acc1: cueS("s6", 2, "z"), // z = -2
   acc2: cueS("s8", 1, "0.0228."), // the table value
-  acc3: cueS("s9", 1, "Reject"), // reject H0
+  acc3: cueS("s10", 1, "reject"), // reject H0
 };
-ev.cd0 = ev.qEnd + 0.2;
-ev.reveal = ev.cd0 + 5;
 
 // ---------- dsp utils ----------
 let seed = 2024;
@@ -211,10 +207,9 @@ const sections = [
   [ev.allData, S("s2"), "drop"],
   [S("s2"), S("s4"), "flow"], // definition, when to use: calm
   [S("s4"), S("s7"), "play"], // hypotheses, formula, calculation
-  [S("s7"), S("s11"), "grooveA"], // the curve, the table, the decision, traps
-  [S("s11"), ev.quiz, "build"], // remember
-  [ev.quiz, ev.reveal, "tension"],
-  [ev.reveal, DUR - 0.6, "finale"],
+  [S("s7"), S("s12"), "grooveA"], // the curve, both methods, the decision, traps
+  [S("s12"), ev.quiz, "build"], // remember
+  [ev.quiz, DUR - 0.6, "finale"], // your turn, teaser, CTA
 ];
 const styleAt = (t) => (sections.find(([a, b]) => t >= a && t < b) || [0, 0, "none"])[2];
 
@@ -267,7 +262,7 @@ for (let k = 0; k * (BEAT / 4) < DUR; k++) {
     }
     case "tension": {
       // clock ticks every beat, a low pulse each second of the countdown
-      if (onBeat && t < ev.cd0) hat(ML, MR, t, 0.5);
+      if (onBeat && t < ev.quiz) hat(ML, MR, t, 0.5);
       break;
     }
     default:
@@ -285,21 +280,13 @@ lead(ML, MR, ev.acc1 - 0.2, note("C5"), note("F5"), 1.2, 0.45);
 [0, 0.09, 0.18].forEach((d, i) => bell(ML, MR, ev.acc2 + 0.05 + d, [note("C5"), note("F5"), note("A5")][i], 0.6, (i - 1) * 0.4, 1.2));
 lead(ML, MR, ev.acc3 - 0.1, note("A4"), note("C5"), 1.0, 0.4);
 // recap: crash on entry
-crash(ML, MR, S("s11"), 0.7);
+crash(ML, MR, S("s12"), 0.7);
 // teaser: a lifted chord
 pad(ML, MR, ev.tease, ev.follow - ev.tease, CH.Bb.pad, 0.8, 0.3, 0.4, 0.05);
-// quiz: stinger, suspended pad, heartbeat pulse per countdown second
-impact(ML, MR, ev.quiz - 0.05, 0.5);
+// poll prompt: a bright stinger instead of the quiz countdown
+impact(ML, MR, ev.quiz - 0.05, 0.45);
 [0, 0.09, 0.18].forEach((d, i) => bell(ML, MR, ev.quiz + d, [note("C5"), note("F5"), note("A5")][i], 0.8, (i - 1) * 0.4, 1.4));
-pad(ML, MR, ev.quiz + 0.3, ev.reveal - ev.quiz - 0.3, CH.Gsus.pad, 1.0, 1.2, 0.3, 0.05);
-for (let k = 0; k < 5; k++) {
-  const t = ev.cd0 + k;
-  let ph = 0;
-  add(ML, MR, t, 0.5, 0, (x) => { ph += (TAU * (55 + 30 * Math.exp(-x * 30))) / SR; return Math.sin(ph) * Math.exp(-x * 9) * (0.5 + k * 0.1); });
-}
-riser(ML, MR, ev.reveal - 1.4, 1.4, 0.4);
-impact(ML, MR, ev.reveal, 0.7);
-crash(ML, MR, ev.reveal, 0.9);
+crash(ML, MR, ev.quiz, 0.6);
 // finale: resolve on F, final hit at the very end
 const endT = DUR - 2.0;
 pad(ML, MR, endT, 1.6, CH.F.pad, 1.1, 0.05, 1.0, 0.07);
