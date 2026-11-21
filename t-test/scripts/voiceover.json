@@ -7,12 +7,18 @@
    "id": "s1",
    "title": "Hook",
    "lead": 0.45,
-   "hold": 0.5,
+   "hold": 0.4,
    "segments": [
     {
      "text": "Brand B says its phone battery lasts longer. You test five phones of each: A averages seven hours, B averages ten.",
      "caption": "Brand B says its phone battery lasts longer. You test 5 phones of each: A averages 7 hours, B averages 10.",
-     "pause": 0.4
+     "pause": 0.4,
+     "fix": [
+      [
+       "ˈiːtʃ: ɐ ˈævɹɪdʒᵻz",
+       "ˈiːtʃ: ˈeɪ ˈævɹɪdʒᵻz"
+      ]
+     ]
     },
     {
      "text": "A real difference, or just luck? Let's settle it with a t-test.",
@@ -107,12 +113,24 @@
     {
      "text": "First, the averages: A is seven hours, B is ten. So the gap is three.",
      "caption": "First, the averages: A is 7 hours, B is 10. So the gap is 3.",
-     "pause": 0.4
+     "pause": 0.4,
+     "fix": [
+      [
+       "ˈævɹɪdʒᵻz: ɐ ɪz",
+       "ˈævɹɪdʒᵻz: ˈeɪ ɪz"
+      ]
+     ]
     },
     {
      "text": "Next, each variance. For A, square each value's distance from seven: one, one, zero, four, four. They add up to ten.",
      "caption": "Next, each variance. For A, square each value's distance from 7: 1, 1, 0, 4, 4. They add up to 10.",
-     "pause": 0.35
+     "pause": 0.35,
+     "fix": [
+      [
+       "fɚɹə,",
+       "fɔːɹ ˈeɪ,"
+      ]
+     ]
     },
     {
      "text": "Divide by n minus one, four: the variance is two point five. Brand B is the same: two point five.",
@@ -225,7 +243,7 @@
    "id": "s12",
    "title": "Poll, teaser and CTA",
    "lead": 0.35,
-   "hold": 0.9,
+   "hold": 0.7,
    "segments": [
     {
      "text": "Your turn: two-tailed, d f eight, and t equals two. Reject H zero, or not? Vote in the caption poll!",
