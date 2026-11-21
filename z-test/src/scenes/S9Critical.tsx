@@ -41,7 +41,7 @@ export const S9Critical: React.FC = () => {
   const CV = s.cueS(1, "critical");
   const REG = s.sent(2).from;
   const RR = s.cueS(2, "rejection");
-  const AREA = s.cueS(2, "alpha,");
+  const AREA = s.cueS(2, "alpha.");
   const MID = s.cueS(2, "95%");
   const tblOut = exitP(frame, REG - 10, 12);
   const draw = ease(frame, [REG - 4, REG + 24], [0, 1], theme.ease.inOut);

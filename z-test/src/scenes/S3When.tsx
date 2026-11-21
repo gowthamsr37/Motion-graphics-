@@ -57,7 +57,7 @@ export const S3When: React.FC = () => {
           );
         })}
       </div>
-      <Pop at={s.cueS(1, "ticked.") - 8} x={540} y={1170} from="up" dist={14} cfg={theme.spring.bouncy}>
+      <Pop at={s.sent(1).to + 2} x={540} y={1170} from="up" dist={14} cfg={theme.spring.bouncy}>
         <Tag color={C.green} size={32}>
           BOTH BOXES TICKED: USE A Z-TEST
         </Tag>

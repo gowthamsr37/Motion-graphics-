@@ -99,15 +99,15 @@ const useHits = (): Hit[] => {
     [s.cueS(0, "average,"), s.cueS(0, "sigma,"), s.cueS(0, "30")].forEach((f, k) => h(f - 10, `step${k + 1}.wav`, 0.22));
     h(s.cueS(1, "10") - 8, "pop.wav", 0.2);
     h(s.cueS(1, "100.") - 8, "pop.wav", 0.2);
-    h(s.cueS(1, "ticked.") - 8, "ding.wav", 0.2);
+    h(s.sent(1).to, "ding.wav", 0.2);
   }
   // S4 — hypotheses, one tail or two, alpha
   {
     const s = sceneTiming(fps, "s4");
     const h = at("s4");
-    h(s.cueS(0, "H0:") - 10, "pop.wav", 0.2);
-    h(s.cueS(1, "two-tailed:") - 10, "step1.wav", 0.2);
-    h(s.cueS(1, "one-tailed:") - 10, "step2.wav", 0.2);
+    h(s.cueS(0, "H0") - 10, "pop.wav", 0.2);
+    h(s.cueS(1, "two-tailed") - 10, "step1.wav", 0.2);
+    h(s.cueS(1, "one-tailed") - 10, "step2.wav", 0.2);
     h(s.sent(2).from - 6, "chime.wav", 0.18);
     h(s.cueS(2, "splits") - 6, "glide.wav", 0.14);
     h(s.cueS(2, "One-tailed") - 6, "glide.wav", 0.14);

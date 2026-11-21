@@ -25,7 +25,7 @@
    "id": "s2",
    "title": "Textbook definition",
    "lead": 0.4,
-   "hold": 0.9,
+   "hold": 0.6,
    "segments": [
     {
      "text": "Here's the textbook definition.",
@@ -43,7 +43,7 @@
    "id": "s3",
    "title": "When to use it",
    "lead": 0.4,
-   "hold": 0.7,
+   "hold": 0.5,
    "segments": [
     {
      "text": "Use it for an average, when sigma, the population's spread, is known, or n is thirty or more.",
@@ -51,8 +51,8 @@
      "pause": 0.35
     },
     {
-     "text": "Here, sigma is ten milliliters, and n is a hundred. Both boxes ticked.",
-     "caption": "Here, sigma is 10 ml, and n is 100. Both boxes ticked.",
+     "text": "Here, sigma is ten milliliters, and n is a hundred.",
+     "caption": "Here, sigma is 10 ml, and n is 100.",
      "pause": 0.3
     }
    ]
@@ -61,26 +61,21 @@
    "id": "s4",
    "title": "Steps 1 and 2: one tail or two",
    "lead": 0.4,
-   "hold": 0.7,
+   "hold": 0.4,
    "segments": [
     {
-     "text": "Step one: the hypotheses. H zero: the average is two hundred milliliters.",
-     "caption": "Step one: the hypotheses. H0: the average is 200 ml.",
+     "text": "Step one: H zero says the average is two hundred milliliters.",
+     "caption": "Step one: H0 says the average is 200 ml.",
+     "pause": 0.3
+    },
+    {
+     "text": "H one is two-tailed if it could differ in either direction, or one-tailed if we only ask: is it less?",
+     "caption": "H1 is two-tailed if it could differ in either direction, or one-tailed if we only ask: is it less?",
      "pause": 0.35
     },
     {
-     "text": "H one can be two-tailed: the average is different, in either direction. Or one-tailed: the average is less than two hundred, one direction only.",
-     "caption": "H1 can be two-tailed: the average is different, in either direction. Or one-tailed: the average is less than 200, one direction only.",
-     "pause": 0.4
-    },
-    {
-     "text": "Step two: alpha, five percent. Two-tailed splits it, two point five percent in each tail. One-tailed puts all five percent in the left tail.",
-     "caption": "Step two: alpha, 5%. Two-tailed splits it, 2.5% in each tail. One-tailed puts all 5% in the left tail.",
-     "pause": 0.35
-    },
-    {
-     "text": "We'll work out both.",
-     "caption": "We'll work out both.",
+     "text": "Step two: alpha, five percent. Two-tailed splits it, two point five percent per tail. One-tailed puts all five percent on the left. We'll do both.",
+     "caption": "Step two: alpha, 5%. Two-tailed splits it, 2.5% per tail. One-tailed puts all 5% on the left. We'll do both.",
      "pause": 0.3
     }
    ]
@@ -89,7 +84,7 @@
    "id": "s5",
    "title": "The formula",
    "lead": 0.4,
-   "hold": 0.7,
+   "hold": 0.5,
    "segments": [
     {
      "text": "Step three: the formula. z equals x-bar minus mu, over sigma over root n.",
@@ -118,7 +113,7 @@
    "id": "s6",
    "title": "The calculation",
    "lead": 0.4,
-   "hold": 0.7,
+   "hold": 0.5,
    "segments": [
     {
      "text": "x-bar is one ninety-eight, and mu is two hundred, so the top is minus two.",
@@ -160,11 +155,11 @@
    "id": "s8",
    "title": "Method 1: the p-value",
    "lead": 0.4,
-   "hold": 0.5,
+   "hold": 0.3,
    "segments": [
     {
-     "text": "Two-tailed first. Method one: the p-value. The table goes from z to area: the area to the left of z.",
-     "caption": "Two-tailed first. Method one: the p-value. The table goes from z to area: the area to the left of z.",
+     "text": "Two-tailed first. Method one, the p-value: the table goes from z to area, the area left of z.",
+     "caption": "Two-tailed first. Method one, the p-value: the table goes from z to area, the area left of z.",
      "pause": 0.35
     },
     {
@@ -183,21 +178,21 @@
    "id": "s9",
    "title": "Method 2: the critical value",
    "lead": 0.4,
-   "hold": 0.5,
+   "hold": 0.3,
    "segments": [
     {
-     "text": "Method two: the critical value. Now the table goes from area to z.",
-     "caption": "Method two: the critical value. Now the table goes from area to z.",
+     "text": "Method two, the critical value: the table goes from area to z.",
+     "caption": "Method two, the critical value: the table goes from area to z.",
      "pause": 0.35
     },
     {
-     "text": "Alpha is five percent, so two point five percent per tail. Find zero point zero two five zero in the table: it sits at minus one point nine six, the critical value.",
-     "caption": "Alpha is 5%, so 2.5% per tail. Find 0.0250 in the table: it sits at -1.96, the critical value.",
+     "text": "Two point five percent per tail: find zero point zero two five zero. It sits at minus one point nine six, the critical value.",
+     "caption": "2.5% per tail: find 0.0250. It sits at -1.96, the critical value.",
      "pause": 0.35
     },
     {
-     "text": "Beyond plus or minus one point nine six is the critical region, or rejection region. Its total area is alpha, five percent. In the middle ninety-five percent, we fail to reject.",
-     "caption": "Beyond ±1.96 is the critical region, or rejection region. Its total area is alpha, 5%. In the middle 95%, we fail to reject.",
+     "text": "Beyond plus or minus one point nine six is the critical region, or rejection region. Its area is alpha. In the middle ninety-five percent, we fail to reject.",
+     "caption": "Beyond ±1.96 is the critical region, or rejection region. Its area is alpha. In the middle 95%, we fail to reject.",
      "pause": 0.3
     }
    ]
@@ -219,26 +214,26 @@
    "id": "s11",
    "title": "One-tailed",
    "lead": 0.4,
-   "hold": 0.8,
+   "hold": 0.5,
    "segments": [
     {
-     "text": "Now one-tailed: H one says the average is less than two hundred.",
-     "caption": "Now one-tailed: H1 says the average is less than 200.",
-     "pause": 0.35
+     "text": "Now one-tailed: H one says less than two hundred.",
+     "caption": "Now one-tailed: H1 says less than 200.",
+     "pause": 0.3
     },
     {
-     "text": "z is still minus two. But p is just the left tail: zero point zero two two eight. No doubling.",
-     "caption": "z is still -2. But p is just the left tail: 0.0228. No doubling.",
-     "pause": 0.35
+     "text": "z is still minus two, but p is just the left tail: zero point zero two two eight. No doubling.",
+     "caption": "z is still -2, but p is just the left tail: 0.0228. No doubling.",
+     "pause": 0.3
     },
     {
-     "text": "And with all five percent in the left tail, the z table puts the critical value at minus one point six four five.",
-     "caption": "And with all 5% in the left tail, the z table puts the critical value at -1.645.",
-     "pause": 0.35
+     "text": "With all five percent on the left, the critical value is minus one point six four five.",
+     "caption": "With all 5% on the left, the critical value is -1.645.",
+     "pause": 0.3
     },
     {
-     "text": "Minus two is beyond it, and p is below alpha. Reject again: the machine is under-filling. Save this for your next interview.",
-     "caption": "-2 is beyond it, and p is below alpha. Reject again: the machine is under-filling. Save this for your next interview.",
+     "text": "Minus two is beyond it, and p is below alpha. Reject again: the machine is under-filling. Save this for your interview.",
+     "caption": "-2 is beyond it, and p is below alpha. Reject again: the machine is under-filling. Save this for your interview.",
      "pause": 0.3
     }
    ]
@@ -247,12 +242,12 @@
    "id": "s12",
    "title": "Poll, teaser and CTA",
    "lead": 0.35,
-   "hold": 1.35,
+   "hold": 1.1,
    "segments": [
     {
      "text": "Your turn: a two-tailed z of one point five. Reject H zero, or not? Vote in the caption poll!",
      "caption": "Your turn: a two-tailed z of 1.5. Reject H0, or not? Vote in the caption poll!",
-     "pause": 0.45
+     "pause": 0.3
     },
     {
      "text": "Next: what if we don't know sigma? The t-test.",

@@ -11,8 +11,8 @@ import { useScene } from "../timing";
 import { ZoneCurve } from "./S9Critical";
 
 const C = theme.colors;
-const GL = zGeo(1080, 150, 110, 520);
-const GR = zGeo(1080, 150, 560, 970);
+const GL = zGeo(1030, 150, 110, 520);
+const GR = zGeo(1030, 150, 560, 970);
 
 const Card: React.FC<{ x: number; at: number; c: string; title: string; h1: React.ReactNode; note: string }> = ({ x, at, c, title, h1, note }) => {
   const spr = useSpr();
@@ -30,8 +30,8 @@ const Card: React.FC<{ x: number; at: number; c: string; title: string; h1: Reac
 export const S4Setup: React.FC = () => {
   const frame = useCurrentFrame();
   const s = useScene("s4");
-  const TWO = s.cueS(1, "two-tailed:");
-  const ONE = s.cueS(1, "one-tailed:");
+  const TWO = s.cueS(1, "two-tailed");
+  const ONE = s.cueS(1, "one-tailed");
   const AL = s.sent(2).from;
   const zL = ease(frame, [s.cueS(2, "splits") - 6, s.cueS(2, "splits") + 12], [0, 1]);
   const zR = ease(frame, [s.cueS(2, "One-tailed") - 6, s.cueS(2, "One-tailed") + 12], [0, 1]);
@@ -40,7 +40,7 @@ export const S4Setup: React.FC = () => {
   return (
     <AbsoluteFill>
       <StepTracker active={frame >= AL ? 1 : 0} />
-      <Pop at={s.cueS(0, "H0:") - 4} x={540} y={430} from="up" dist={12} cfg={theme.spring.bouncy}>
+      <Pop at={s.cueS(0, "H0") - 4} x={540} y={430} from="up" dist={12} cfg={theme.spring.bouncy}>
         <div style={{ padding: "14px 40px", borderRadius: 26, background: alpha(CLAIM, 0.16), border: `3px solid ${CLAIM}`, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 50, color: C.text, whiteSpace: "nowrap" }}>
           <span style={{ color: CLAIM }}>H0</span>: µ = <span style={{ fontFamily: theme.fonts.mono }}>200 ml</span>
         </div>
@@ -61,11 +61,11 @@ export const S4Setup: React.FC = () => {
         { x: 305, at: s.cueS(2, "splits"), t: "2.5% + 2.5%" },
         { x: 775, at: s.cueS(2, "One-tailed"), t: "ALL 5% ON THE LEFT" },
       ].map((k, i) => (
-        <Pop key={i} at={k.at + 4} x={k.x} y={1130} from="up" dist={10}>
+        <Pop key={i} at={k.at + 4} x={k.x} y={1135} from="up" dist={10}>
           <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 28, color: TAIL, whiteSpace: "nowrap" }}>{k.t}</div>
         </Pop>
       ))}
-      <Pop at={s.sent(3).from - 4} x={540} y={1320} from="up" dist={10}>
+      <Pop at={s.cueS(2, "both.") - 4} x={540} y={1320} from="up" dist={10}>
         <div style={{ fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 24, letterSpacing: "0.2em", color: C.dim, whiteSpace: "nowrap" }}>WE'LL WORK OUT BOTH</div>
       </Pop>
     </AbsoluteFill>
