@@ -1,0 +1,121 @@
+date,file,opp,venue,city,match_inns,pos,runs,balls,fours,sixes,out,how,bowler,result
+2014-12-26,754741.json,Australia,Melbourne Cricket Ground,,2,6,3,8,0,0,1,caught,NM Lyon,draw
+2014-12-26,754741.json,Australia,Melbourne Cricket Ground,,4,3,1,5,0,0,1,caught,MG Johnson,draw
+2015-01-06,754743.json,Australia,Sydney Cricket Ground,,2,2,110,262,13,1,1,caught and bowled,MA Starc,draw
+2015-01-06,754743.json,Australia,Sydney Cricket Ground,,4,2,16,40,3,0,1,caught,NM Lyon,draw
+2015-08-12,895773.json,Sri Lanka,Galle International Stadium,,2,1,7,7,0,0,1,lbw,KTGD Prasad,lost
+2015-08-12,895773.json,Sri Lanka,Galle International Stadium,,4,1,5,14,0,0,1,lbw,HMRKB Herath,lost
+2015-08-20,895775.json,Sri Lanka,"P Saravanamuttu Stadium, Colombo",Colombo,1,2,108,190,13,1,1,caught,PVD Chameera,won
+2015-08-20,895775.json,Sri Lanka,"P Saravanamuttu Stadium, Colombo",Colombo,3,2,2,3,0,0,1,bowled,KTGD Prasad,won
+2015-08-28,895777.json,Sri Lanka,Sinhalese Sports Club Ground,Colombo,1,1,2,2,0,0,1,bowled,KTGD Prasad,won
+2015-08-28,895777.json,Sri Lanka,Sinhalese Sports Club Ground,Colombo,3,2,2,8,0,0,1,bowled,N Pradeep,won
+2016-07-30,1022595.json,West Indies,Sabina Park,Jamaica,2,1,158,303,15,3,1,caught,ST Gabriel,draw
+2016-08-09,1022597.json,West Indies,"Darren Sammy National Cricket Stadium, Gros Islet, St Lucia",St Lucia,1,1,50,65,6,0,1,caught,RL Chase,won
+2016-08-09,1022597.json,West Indies,"Darren Sammy National Cricket Stadium, Gros Islet, St Lucia",St Lucia,3,1,28,24,3,0,1,caught,ML Cummins,won
+2016-09-22,1030213.json,New Zealand,"Green Park, Kanpur",Kanpur,1,1,32,39,4,1,1,caught,MJ Santner,won
+2016-09-22,1030213.json,New Zealand,"Green Park, Kanpur",Kanpur,3,1,38,50,8,0,1,caught,IS Sodhi,won
+2016-11-17,1034811.json,England,"Andhra Cricket Association-Visakhapatnam District Cricket Association Stadium, Visakhapatnam",Visakhapatnam,1,2,0,5,0,0,1,caught,SCJ Broad,won
+2016-11-17,1034811.json,England,"Andhra Cricket Association-Visakhapatnam District Cricket Association Stadium, Visakhapatnam",Visakhapatnam,3,2,10,31,2,0,1,caught,SCJ Broad,won
+2016-12-08,1034815.json,England,"Wankhede Stadium, Mumbai",Mumbai,2,1,24,41,4,0,1,bowled,MM Ali,won
+2016-12-16,1034817.json,England,MA Chidambaram Stadium,Chennai,2,1,199,311,16,3,1,caught,AU Rashid,won
+2017-02-09,1041761.json,Bangladesh,"Rajiv Gandhi International Stadium, Uppal",Hyderabad,1,1,2,4,0,0,1,bowled,Taskin Ahmed,won
+2017-02-09,1041761.json,Bangladesh,"Rajiv Gandhi International Stadium, Uppal",Hyderabad,3,2,10,17,1,0,1,caught,Taskin Ahmed,won
+2017-02-23,1062573.json,Australia,"Maharashtra Cricket Association Stadium, Pune",Pune,2,2,64,97,10,1,1,caught,SNJ O'Keefe,lost
+2017-02-23,1062573.json,Australia,"Maharashtra Cricket Association Stadium, Pune",Pune,4,2,10,9,1,0,1,lbw,NM Lyon,lost
+2017-03-04,1062574.json,Australia,"M Chinnaswamy Stadium, Bengaluru",Bengaluru,1,1,90,205,9,0,1,caught,NM Lyon,won
+2017-03-04,1062574.json,Australia,"M Chinnaswamy Stadium, Bengaluru",Bengaluru,3,1,51,85,4,0,1,caught,SNJ O'Keefe,won
+2017-03-16,1062575.json,Australia,"JSCA International Stadium Complex, Ranchi",Ranchi,2,1,67,102,9,0,1,caught,PJ Cummins,draw
+2017-03-25,1062576.json,Australia,"Himachal Pradesh Cricket Association Stadium, Dharamsala",Dharamsala,2,1,60,124,9,1,1,caught,PJ Cummins,won
+2017-03-25,1062576.json,Australia,"Himachal Pradesh Cricket Association Stadium, Dharamsala",Dharamsala,4,1,51,76,9,0,0,not out,,won
+2017-08-03,1109603.json,Sri Lanka,Sinhalese Sports Club Ground,Colombo,1,2,57,82,7,0,1,run out,HMRKB Herath,won
+2017-08-12,1109604.json,Sri Lanka,Pallekele International Cricket Stadium,,1,2,85,135,8,0,1,caught,PM Pushpakumara,won
+2017-11-16,1122723.json,Sri Lanka,"Eden Gardens, Kolkata",Kolkata,1,1,0,1,0,0,1,caught,RAS Lakmal,draw
+2017-11-16,1122723.json,Sri Lanka,"Eden Gardens, Kolkata",Kolkata,3,1,79,125,8,0,1,bowled,RAS Lakmal,draw
+2017-11-24,1122724.json,Sri Lanka,"Vidarbha Cricket Association Stadium, Jamtha, Nagpur",Nagpur,2,1,7,13,1,0,1,bowled,PLS Gamage,won
+2018-01-13,1122277.json,South Africa,"SuperSport Park, Centurion",Centurion,2,2,10,21,2,0,1,caught and bowled,M Morkel,lost
+2018-01-13,1122277.json,South Africa,"SuperSport Park, Centurion",Centurion,4,2,4,29,0,0,1,caught,L Ngidi,lost
+2018-01-24,1122278.json,South Africa,"Wanderers Stadium, Johannesburg",Johannesburg,1,2,0,7,0,0,1,caught,VD Philander,won
+2018-01-24,1122278.json,South Africa,"Wanderers Stadium, Johannesburg",Johannesburg,3,3,16,44,2,0,1,caught,VD Philander,won
+2018-08-01,1119549.json,England,Edgbaston,Birmingham,2,3,4,2,1,0,1,bowled,SM Curran,lost
+2018-08-01,1119549.json,England,Edgbaston,Birmingham,4,3,13,24,2,0,1,caught,BA Stokes,lost
+2018-08-09,1119550.json,England,Lord's,London,1,2,8,14,2,0,1,caught,JM Anderson,lost
+2018-08-09,1119550.json,England,Lord's,London,3,2,10,16,2,0,1,lbw,JM Anderson,lost
+2018-08-18,1119551.json,England,Trent Bridge,Nottingham,1,2,23,53,4,0,1,lbw,CR Woakes,won
+2018-08-18,1119551.json,England,Trent Bridge,Nottingham,3,2,36,33,7,0,1,bowled,BA Stokes,won
+2018-08-30,1119552.json,England,"The Rose Bowl, Southampton",Southampton,2,2,19,24,2,0,1,lbw,SCJ Broad,lost
+2018-08-30,1119552.json,England,"The Rose Bowl, Southampton",Southampton,4,2,0,7,0,0,1,bowled,SCJ Broad,lost
+2018-09-07,1119553.json,England,The Oval,London,2,1,37,53,4,0,1,bowled,SM Curran,lost
+2018-09-07,1119553.json,England,The Oval,London,4,1,149,224,20,1,1,bowled,AU Rashid,lost
+2018-10-04,1157752.json,West Indies,"Saurashtra Cricket Association Stadium, Rajkot",Rajkot,1,2,0,4,0,0,1,lbw,ST Gabriel,won
+2018-10-12,1157753.json,West Indies,"Rajiv Gandhi International Stadium, Uppal",Hyderabad,2,1,4,25,0,0,1,bowled,JO Holder,won
+2018-10-12,1157753.json,West Indies,"Rajiv Gandhi International Stadium, Uppal",Hyderabad,4,2,33,53,1,1,0,not out,,won
+2018-12-06,1144993.json,Australia,Adelaide Oval,,1,1,2,8,0,0,1,caught,JR Hazlewood,won
+2018-12-06,1144993.json,Australia,Adelaide Oval,,3,1,44,67,3,1,1,caught,JR Hazlewood,won
+2018-12-14,1144994.json,Australia,Perth Stadium,,2,1,2,17,0,0,1,bowled,JR Hazlewood,lost
+2018-12-14,1144994.json,Australia,Perth Stadium,,4,1,0,4,0,0,1,bowled,MA Starc,lost
+2019-01-03,1144996.json,Australia,Sydney Cricket Ground,Sydney,1,2,9,6,2,0,1,caught,JR Hazlewood,draw
+2019-08-22,1188628.json,West Indies,"Sir Vivian Richards Stadium, North Sound, Antigua",North Sound,1,1,44,97,5,0,1,caught,RL Chase,won
+2019-08-22,1188628.json,West Indies,"Sir Vivian Richards Stadium, North Sound, Antigua",North Sound,3,1,38,85,4,0,1,bowled,RL Chase,won
+2019-08-30,1188629.json,West Indies,Sabina Park,Kingston,1,1,13,26,2,0,1,caught,JO Holder,won
+2019-08-30,1188629.json,West Indies,Sabina Park,Kingston,3,1,6,63,1,0,1,caught,KAJ Roach,won
+2021-08-04,1239543.json,England,Trent Bridge,Nottingham,2,2,84,214,12,0,1,caught,JM Anderson,draw
+2021-08-04,1239543.json,England,Trent Bridge,Nottingham,4,1,26,38,6,0,1,caught,SCJ Broad,draw
+2021-08-12,1239544.json,England,Lord's,London,1,2,129,250,12,1,1,caught,OE Robinson,won
+2021-08-12,1239544.json,England,Lord's,London,3,1,5,30,0,0,1,caught,MA Wood,won
+2021-08-25,1239545.json,England,Headingley,Leeds,1,2,0,4,0,0,1,caught,JM Anderson,lost
+2021-08-25,1239545.json,England,Headingley,Leeds,3,2,8,54,0,0,1,caught,C Overton,lost
+2021-09-02,1239546.json,England,The Oval,London,1,2,17,44,3,0,1,lbw,OE Robinson,won
+2021-09-02,1239546.json,England,The Oval,London,3,2,46,101,6,1,1,caught,JM Anderson,won
+2021-12-26,1277079.json,South Africa,"SuperSport Park, Centurion",Centurion,1,1,123,260,17,1,1,caught,K Rabada,won
+2021-12-26,1277079.json,South Africa,"SuperSport Park, Centurion",Centurion,3,1,23,74,4,0,1,caught,L Ngidi,won
+2022-01-03,1277080.json,South Africa,"Wanderers Stadium, Johannesburg",Johannesburg,1,1,50,133,9,0,1,caught,M Jansen,lost
+2022-01-03,1277080.json,South Africa,"Wanderers Stadium, Johannesburg",Johannesburg,3,1,8,21,1,0,1,caught,M Jansen,lost
+2022-01-11,1277081.json,South Africa,"Newlands, Cape Town",Cape Town,1,1,12,35,1,0,1,caught,D Olivier,lost
+2022-01-11,1277081.json,South Africa,"Newlands, Cape Town",Cape Town,3,1,10,22,2,0,1,caught,M Jansen,lost
+2022-12-14,1340848.json,Bangladesh,"Zahur Ahmed Chowdhury Stadium, Chattogram",Chattogram,1,1,22,54,3,0,1,bowled,Khaled Ahmed,won
+2022-12-14,1340848.json,Bangladesh,"Zahur Ahmed Chowdhury Stadium, Chattogram",Chattogram,3,1,23,62,3,0,1,caught,Khaled Ahmed,won
+2022-12-22,1340849.json,Bangladesh,"Shere Bangla National Stadium, Mirpur",Dhaka,2,1,10,45,1,0,1,lbw,Taijul Islam,won
+2022-12-22,1340849.json,Bangladesh,"Shere Bangla National Stadium, Mirpur",Dhaka,4,2,2,7,0,0,1,caught,Shakib Al Hasan,won
+2023-02-09,1348652.json,Australia,"Vidarbha Cricket Association Stadium, Jamtha, Nagpur",Nagpur,2,2,20,71,1,0,1,caught and bowled,T Murphy,won
+2023-02-17,1348653.json,Australia,Arun Jaitley Stadium,Delhi,2,2,17,41,0,1,1,lbw,NM Lyon,won
+2023-02-17,1348653.json,Australia,Arun Jaitley Stadium,Delhi,4,2,1,3,0,0,1,caught,NM Lyon,won
+2023-12-26,1387603.json,South Africa,"SuperSport Park, Centurion",Centurion,1,6,101,137,14,4,1,bowled,N Burger,lost
+2023-12-26,1387603.json,South Africa,"SuperSport Park, Centurion",Centurion,3,6,4,24,1,0,1,caught,N Burger,lost
+2024-01-03,1387604.json,South Africa,"Newlands, Cape Town",Cape Town,2,6,8,33,1,0,1,caught,L Ngidi,won
+2024-01-25,1389399.json,England,"Rajiv Gandhi International Stadium, Uppal",Hyderabad,2,4,86,123,8,2,1,caught,TW Hartley,lost
+2024-01-25,1389399.json,England,"Rajiv Gandhi International Stadium, Uppal",Hyderabad,4,4,22,48,3,0,1,lbw,JE Root,lost
+2024-09-19,1439891.json,Bangladesh,MA Chidambaram Stadium,Chennai,1,6,16,52,1,0,1,caught,Mehedi Hasan Miraz,won
+2024-09-19,1439891.json,Bangladesh,MA Chidambaram Stadium,Chennai,3,6,22,19,4,0,0,not out,,won
+2024-09-27,1439892.json,Bangladesh,"Green Park, Kanpur",Kanpur,2,6,68,43,7,2,1,stumped,Mehedi Hasan Miraz,won
+2024-10-16,1439896.json,New Zealand,"M Chinnaswamy Stadium, Bengaluru",Bengaluru,1,6,0,6,0,0,1,caught,W O'Rourke,lost
+2024-10-16,1439896.json,New Zealand,"M Chinnaswamy Stadium, Bengaluru",Bengaluru,3,6,12,16,2,0,1,caught,W O'Rourke,lost
+2024-11-22,1426555.json,Australia,Perth Stadium,Perth,1,2,26,74,3,0,1,caught,MA Starc,won
+2024-11-22,1426555.json,Australia,Perth Stadium,Perth,3,2,77,176,5,0,1,caught,MA Starc,won
+2024-12-06,1426556.json,Australia,Adelaide Oval,Adelaide,1,2,37,64,6,0,1,caught,MA Starc,lost
+2024-12-06,1426556.json,Australia,Adelaide Oval,Adelaide,3,2,7,10,1,0,1,caught,PJ Cummins,lost
+2024-12-14,1426557.json,Australia,Brisbane Cricket Ground,Brisbane,2,2,84,139,8,0,1,caught,NM Lyon,draw
+2024-12-14,1426557.json,Australia,Brisbane Cricket Ground,Brisbane,4,2,4,7,0,0,0,not out,,draw
+2024-12-26,1426558.json,Australia,Melbourne Cricket Ground,Melbourne,2,3,24,42,3,0,1,bowled,PJ Cummins,lost
+2024-12-26,1426558.json,Australia,Melbourne Cricket Ground,Melbourne,4,3,0,5,0,0,1,caught,PJ Cummins,lost
+2025-01-03,1426559.json,Australia,Sydney Cricket Ground,Sydney,1,2,4,14,0,0,1,caught,MA Starc,lost
+2025-01-03,1426559.json,Australia,Sydney Cricket Ground,Sydney,3,2,13,20,2,0,1,bowled,SM Boland,lost
+2025-06-20,1448349.json,England,Headingley,Leeds,1,2,42,78,8,0,1,caught,BA Carse,lost
+2025-06-20,1448349.json,England,Headingley,Leeds,3,2,137,247,18,0,1,bowled,BA Carse,lost
+2025-07-02,1448350.json,England,Edgbaston,Birmingham,1,2,2,26,0,0,1,bowled,CR Woakes,won
+2025-07-02,1448350.json,England,Edgbaston,Birmingham,3,2,55,84,10,0,1,bowled,JC Tongue,won
+2025-07-10,1448351.json,England,Lord's,London,2,2,100,177,13,0,1,caught,Shoaib Bashir,lost
+2025-07-10,1448351.json,England,Lord's,London,4,2,39,58,6,0,1,lbw,BA Stokes,lost
+2025-07-23,1448352.json,England,Old Trafford,Manchester,1,2,46,98,4,0,1,caught,CR Woakes,draw
+2025-07-23,1448352.json,England,Old Trafford,Manchester,3,2,90,230,8,0,1,lbw,BA Stokes,draw
+2025-07-31,1448353.json,England,The Oval,London,1,2,14,40,1,0,1,bowled,CR Woakes,won
+2025-07-31,1448353.json,England,The Oval,London,3,2,7,28,1,0,1,caught,JC Tongue,won
+2025-10-02,1479569.json,West Indies,"Narendra Modi Stadium, Ahmedabad",Ahmedabad,2,2,100,197,12,0,1,caught,JA Warrican,won
+2025-10-10,1479570.json,West Indies,Arun Jaitley Stadium,Delhi,1,2,38,54,5,1,1,stumped,JA Warrican,won
+2025-10-10,1479570.json,West Indies,Arun Jaitley Stadium,Delhi,4,2,58,108,6,2,0,not out,,won
+2025-11-14,1479571.json,South Africa,"Eden Gardens, Kolkata",Kolkata,2,2,39,119,4,1,1,caught,KA Maharaj,lost
+2025-11-14,1479571.json,South Africa,"Eden Gardens, Kolkata",Kolkata,4,2,1,6,0,0,1,caught,M Jansen,lost
+2025-11-22,1479572.json,South Africa,"Barsapara Cricket Stadium, Guwahati",Guwahati,2,2,22,63,2,0,1,caught,KA Maharaj,lost
+2025-11-22,1479572.json,South Africa,"Barsapara Cricket Stadium, Guwahati",Guwahati,4,2,6,29,0,0,1,bowled,SR Harmer,lost
+2026-08-15,1544001.json,Sri Lanka,Galle International Stadium,Galle,1,2,82,175,10,1,1,caught,K Nuwantha,won
+2026-08-15,1544001.json,Sri Lanka,Galle International Stadium,Galle,3,2,35,47,2,2,1,caught,NGRP Jayasuriya,won
+2026-08-23,1544002.json,Sri Lanka,Sinhalese Sports Club Ground,Colombo,1,2,18,33,2,1,1,caught,CBRLS Kumara,draw

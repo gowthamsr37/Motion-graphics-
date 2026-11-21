@@ -1,0 +1,562 @@
+{
+ "career": {
+  "inns": 123,
+  "runs": 4424,
+  "outs": 118,
+  "avg": 37.49,
+  "100s": 13,
+  "50s": 21,
+  "ducks": 9,
+  "tests": 71
+ },
+ "home": {
+  "inns": 40,
+  "runs": 1513,
+  "outs": 36,
+  "avg": 42.03,
+  "100s": 3,
+  "50s": 11,
+  "ducks": 4
+ },
+ "away": {
+  "inns": 83,
+  "runs": 2911,
+  "outs": 82,
+  "avg": 35.5,
+  "100s": 10,
+  "50s": 10,
+  "ducks": 5
+ },
+ "by_host": {
+  "Australia": {
+   "inns": 19,
+   "runs": 463,
+   "outs": 18,
+   "avg": 25.72,
+   "100s": 1,
+   "50s": 2,
+   "ducks": 2
+  },
+  "Bangladesh": {
+   "inns": 4,
+   "runs": 57,
+   "outs": 4,
+   "avg": 14.25,
+   "100s": 0,
+   "50s": 0,
+   "ducks": 0
+  },
+  "England": {
+   "inns": 28,
+   "runs": 1146,
+   "outs": 28,
+   "avg": 40.93,
+   "100s": 4,
+   "50s": 3,
+   "ducks": 2
+  },
+  "India": {
+   "inns": 40,
+   "runs": 1513,
+   "outs": 36,
+   "avg": 42.03,
+   "100s": 3,
+   "50s": 11,
+   "ducks": 4
+  },
+  "New Zealand": {
+   "inns": 1,
+   "runs": 136,
+   "outs": 1,
+   "avg": 136.0,
+   "100s": 1,
+   "50s": 0,
+   "ducks": 0
+  },
+  "South Africa": {
+   "inns": 13,
+   "runs": 369,
+   "outs": 13,
+   "avg": 28.38,
+   "100s": 2,
+   "50s": 1,
+   "ducks": 1
+  },
+  "Sri Lanka": {
+   "inns": 11,
+   "runs": 403,
+   "outs": 11,
+   "avg": 36.64,
+   "100s": 1,
+   "50s": 3,
+   "ducks": 0
+  },
+  "West Indies": {
+   "inns": 7,
+   "runs": 337,
+   "outs": 7,
+   "avg": 48.14,
+   "100s": 1,
+   "50s": 1,
+   "ducks": 0
+  }
+ },
+ "sena": {
+  "inns": 61,
+  "runs": 2114,
+  "outs": 60,
+  "avg": 35.23,
+  "100s": 8,
+  "50s": 6,
+  "ducks": 5
+ },
+ "opening": {
+  "inns": 105,
+  "runs": 3970,
+  "outs": 101,
+  "avg": 39.31,
+  "100s": 12,
+  "50s": 18,
+  "ducks": 7
+ },
+ "middle": {
+  "inns": 18,
+  "runs": 454,
+  "outs": 17,
+  "avg": 26.71,
+  "100s": 1,
+  "50s": 3,
+  "ducks": 2
+ },
+ "by_year": {
+  "2014": {
+   "inns": 2,
+   "runs": 4,
+   "outs": 2,
+   "avg": 2.0,
+   "100s": 0,
+   "50s": 0,
+   "ducks": 0
+  },
+  "2015": {
+   "inns": 8,
+   "runs": 252,
+   "outs": 8,
+   "avg": 31.5,
+   "100s": 2,
+   "50s": 0,
+   "ducks": 0
+  },
+  "2016": {
+   "inns": 9,
+   "runs": 539,
+   "outs": 9,
+   "avg": 59.89,
+   "100s": 2,
+   "50s": 1,
+   "ducks": 1
+  },
+  "2017": {
+   "inns": 14,
+   "runs": 633,
+   "outs": 13,
+   "avg": 48.69,
+   "100s": 0,
+   "50s": 9,
+   "ducks": 1
+  },
+  "2018": {
+   "inns": 22,
+   "runs": 468,
+   "outs": 21,
+   "avg": 22.29,
+   "100s": 1,
+   "50s": 1,
+   "ducks": 4
+  },
+  "2019": {
+   "inns": 5,
+   "runs": 110,
+   "outs": 5,
+   "avg": 22.0,
+   "100s": 0,
+   "50s": 0,
+   "ducks": 0
+  },
+  "2021": {
+   "inns": 10,
+   "runs": 461,
+   "outs": 10,
+   "avg": 46.1,
+   "100s": 2,
+   "50s": 1,
+   "ducks": 1
+  },
+  "2022": {
+   "inns": 8,
+   "runs": 137,
+   "outs": 8,
+   "avg": 17.12,
+   "100s": 0,
+   "50s": 1,
+   "ducks": 0
+  },
+  "2023": {
+   "inns": 5,
+   "runs": 143,
+   "outs": 5,
+   "avg": 28.6,
+   "100s": 1,
+   "50s": 0,
+   "ducks": 0
+  },
+  "2024": {
+   "inns": 16,
+   "runs": 493,
+   "outs": 14,
+   "avg": 35.21,
+   "100s": 0,
+   "50s": 4,
+   "ducks": 2
+  },
+  "2025": {
+   "inns": 19,
+   "runs": 813,
+   "outs": 18,
+   "avg": 45.17,
+   "100s": 3,
+   "50s": 3,
+   "ducks": 0
+  },
+  "2026": {
+   "inns": 5,
+   "runs": 371,
+   "outs": 5,
+   "avg": 74.2,
+   "100s": 2,
+   "50s": 1,
+   "ducks": 0
+  }
+ },
+ "streak50": {
+  "len": 7,
+  "innings": [
+   [
+    "2017-03-04",
+    "Bengaluru",
+    90
+   ],
+   [
+    "2017-03-04",
+    "Bengaluru",
+    51
+   ],
+   [
+    "2017-03-16",
+    "Ranchi",
+    67
+   ],
+   [
+    "2017-03-25",
+    "Dharamsala",
+    60
+   ],
+   [
+    "2017-03-25",
+    "Dharamsala",
+    51
+   ],
+   [
+    "2017-08-03",
+    "Colombo",
+    57
+   ],
+   [
+    "2017-08-12",
+    "",
+    85
+   ]
+  ]
+ },
+ "hundreds": [
+  [
+   "2015-01-06",
+   "Australia",
+   "Australia",
+   "",
+   110,
+   262
+  ],
+  [
+   "2015-08-20",
+   "Sri Lanka",
+   "Sri Lanka",
+   "Colombo",
+   108,
+   190
+  ],
+  [
+   "2016-07-30",
+   "West Indies",
+   "West Indies",
+   "Jamaica",
+   158,
+   303
+  ],
+  [
+   "2016-12-16",
+   "England",
+   "India",
+   "Chennai",
+   199,
+   311
+  ],
+  [
+   "2018-09-07",
+   "England",
+   "England",
+   "London",
+   149,
+   224
+  ],
+  [
+   "2021-08-12",
+   "England",
+   "England",
+   "London",
+   129,
+   250
+  ],
+  [
+   "2021-12-26",
+   "South Africa",
+   "South Africa",
+   "Centurion",
+   123,
+   260
+  ],
+  [
+   "2023-12-26",
+   "South Africa",
+   "South Africa",
+   "Centurion",
+   101,
+   137
+  ],
+  [
+   "2025-06-20",
+   "England",
+   "England",
+   "Leeds",
+   137,
+   247
+  ],
+  [
+   "2025-07-10",
+   "England",
+   "England",
+   "London",
+   100,
+   177
+  ],
+  [
+   "2025-10-02",
+   "West Indies",
+   "India",
+   "Ahmedabad",
+   100,
+   197
+  ],
+  [
+   "2026-06-06",
+   "Afghanistan",
+   "India",
+   "New Chandigarh",
+   100,
+   null
+  ],
+  [
+   "2026-11-19",
+   "New Zealand",
+   "New Zealand",
+   "Wellington",
+   136,
+   290
+  ]
+ ],
+ "eras": {
+  "2014-17 rise": {
+   "inns": 33,
+   "runs": 1428,
+   "outs": 32,
+   "avg": 44.62,
+   "100s": 4,
+   "50s": 10,
+   "ducks": 2
+  },
+  "2018-19 slump": {
+   "inns": 27,
+   "runs": 578,
+   "outs": 26,
+   "avg": 22.23,
+   "100s": 1,
+   "50s": 1,
+   "ducks": 4
+  },
+  "2021-22 comeback": {
+   "inns": 18,
+   "runs": 598,
+   "outs": 18,
+   "avg": 33.22,
+   "100s": 2,
+   "50s": 2,
+   "ducks": 1
+  },
+  "2023-24 middle order": {
+   "inns": 13,
+   "runs": 377,
+   "outs": 12,
+   "avg": 31.42,
+   "100s": 1,
+   "50s": 2,
+   "ducks": 1
+  },
+  "since Perth 2024": {
+   "inns": 32,
+   "runs": 1443,
+   "outs": 30,
+   "avg": 48.1,
+   "100s": 5,
+   "50s": 6,
+   "ducks": 1
+  },
+  "since Leeds 2025": {
+   "inns": 22,
+   "runs": 1167,
+   "outs": 21,
+   "avg": 55.57,
+   "100s": 5,
+   "50s": 4,
+   "ducks": 0
+  }
+ },
+ "slump_detail": {
+  "from": "2018-08-01",
+  "to": "2019-08-30",
+  "inns": 22,
+  "runs": 494,
+  "outs": 21,
+  "avg": 23.52,
+  "100s": 1,
+  "50s": 0,
+  "ducks": 3,
+  "without_149": {
+   "inns": 21,
+   "runs": 345,
+   "outs": 20,
+   "avg": 17.25,
+   "100s": 0,
+   "50s": 0,
+   "ducks": 3
+  },
+  "below20": 14
+ },
+ "gap": {
+  "last_before": "2019-08-30",
+  "return": "2021-08-04"
+ },
+ "dismissals": [
+  [
+   "caught",
+   71
+  ],
+  [
+   "bowled",
+   27
+  ],
+  [
+   "lbw",
+   13
+  ],
+  [
+   "caught and bowled",
+   3
+  ],
+  [
+   "stumped",
+   2
+  ],
+  [
+   "run out",
+   1
+  ],
+  [
+   "out",
+   1
+  ]
+ ],
+ "bowlers": [
+  [
+   "NM Lyon",
+   7
+  ],
+  [
+   "MA Starc",
+   6
+  ],
+  [
+   "SCJ Broad",
+   5
+  ],
+  [
+   "PJ Cummins",
+   5
+  ],
+  [
+   "JM Anderson",
+   5
+  ],
+  [
+   "BA Stokes",
+   4
+  ]
+ ],
+ "first_test": [
+  [
+   "2014-12-26",
+   "",
+   3,
+   "caught"
+  ],
+  [
+   "2014-12-26",
+   "",
+   1,
+   "caught"
+  ],
+  [
+   "2015-01-06",
+   "",
+   110,
+   "caught and bowled"
+  ],
+  [
+   "2015-01-06",
+   "",
+   16,
+   "caught"
+  ]
+ ],
+ "nineties": [
+  [
+   "2017-03-04",
+   "Bengaluru",
+   90
+  ],
+  [
+   "2025-07-23",
+   "Manchester",
+   90
+  ]
+ ]
+}

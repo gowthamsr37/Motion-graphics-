@@ -1,0 +1,202 @@
+{
+  "voice": "am_michael",
+  "lang": "en-us",
+  "speed": 1.0,
+  "fix": [
+    [
+      "kˌeɪˈɛl ɹˈɑːhʊl",
+      "kˈeɪ ˈɛl ɹˈɑːhʊl"
+    ],
+    [
+      "ˈɪpəl",
+      "ˌaɪpˌiːˈɛl"
+    ],
+    [
+      "ɪnnˈɪŋz",
+      "ˈɪnɪŋz"
+    ]
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "Wellington. Two hundred and ninety balls. One hundred and thirty-six runs.",
+          "caption": "Wellington. 290 balls. 136 runs.",
+          "pause": 0.45
+        },
+        {
+          "text": "KL Rahul's thirteenth Test hundred, in his first ever Test in New Zealand.",
+          "caption": "KL Rahul's 13th Test hundred, in his first ever Test in New Zealand.",
+          "pause": 0.4
+        },
+        {
+          "text": "And it made him the first Indian opener with Test hundreds in all four SENA countries.",
+          "caption": "And it made him the first Indian opener with Test hundreds in all four SENA countries.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "But his career has never been a straight line.",
+          "caption": "But his career has never been a straight line.",
+          "pause": 0.4
+        },
+        {
+          "text": "Seventy-one Tests. One hundred and twenty-three innings. Every bar here is one of them.",
+          "caption": "71 Tests. 123 innings. Every bar here is one of them.",
+          "pause": 0.4
+        },
+        {
+          "text": "The gold line is his average over his last ten innings. Watch it rise, crash, and rise again.",
+          "caption": "The gold line is his average over his last ten innings. Watch it rise, crash, and rise again.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "It began with three and one on debut, at Melbourne.",
+          "caption": "It began with 3 and 1 on debut, at Melbourne.",
+          "pause": 0.35
+        },
+        {
+          "text": "A week later, a hundred at Sydney.",
+          "caption": "A week later, a hundred at Sydney.",
+          "pause": 0.4
+        },
+        {
+          "text": "In twenty seventeen, he made seven fifties in a row, equalling a world record.",
+          "caption": "In 2017, he made seven fifties in a row, equalling a world record.",
+          "pause": 0.4
+        },
+        {
+          "text": "And at Chennai, he was out for one hundred and ninety-nine.",
+          "caption": "And at Chennai, he was out for 199.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "Then the line fell off a cliff.",
+          "caption": "Then the line fell off a cliff.",
+          "pause": 0.4
+        },
+        {
+          "text": "From August twenty eighteen: twenty-two innings, at an average of twenty-three.",
+          "caption": "From August 2018: 22 innings, at an average of 23.",
+          "pause": 0.38
+        },
+        {
+          "text": "Take away one great hundred at the Oval, and it drops to seventeen.",
+          "caption": "Take away one great hundred at the Oval, and it drops to 17.",
+          "pause": 0.4
+        },
+        {
+          "text": "In twenty nineteen he was dropped, and didn't play another Test for almost two years.",
+          "caption": "In 2019 he was dropped, and didn't play another Test for almost two years.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "He came back in England, and made a hundred at Lord's. Then another at Centurion.",
+          "caption": "He came back in England, and made a hundred at Lord's. Then another at Centurion.",
+          "pause": 0.38
+        },
+        {
+          "text": "Moved down the order, he made a third, again at Centurion, batting at number six.",
+          "caption": "Moved down the order, he made a third, again at Centurion, batting at number six.",
+          "pause": 0.4
+        },
+        {
+          "text": "But the middle order never really suited him. Twenty-seven there. Thirty-nine as an opener.",
+          "caption": "But the middle order never really suited him. 27 there. 39 as an opener.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "Back at the top, something changed.",
+          "caption": "Back at the top, something changed.",
+          "pause": 0.4
+        },
+        {
+          "text": "Since Leeds, twenty twenty-five: twenty-two innings, five hundreds, and an average of fifty-five.",
+          "caption": "Since Leeds 2025: 22 innings, five hundreds, and an average of 55.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "And here is the strangest part.",
+          "caption": "And here is the strangest part.",
+          "pause": 0.4
+        },
+        {
+          "text": "He averages forty-two at home, and thirty-five away.",
+          "caption": "He averages 42 at home, and 35 away.",
+          "pause": 0.4
+        },
+        {
+          "text": "Yet ten of his thirteen hundreds have come away from home. Four of them in England.",
+          "caption": "Yet 10 of his 13 hundreds have come away from home. Four of them in England.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "lead": 0.3,
+      "hold": 1.8,
+      "segments": [
+        {
+          "text": "Four thousand, four hundred and twenty-four runs. A career of crashes, and comebacks.",
+          "caption": "4,424 runs. A career of crashes, and comebacks.",
+          "pause": 0.45
+        },
+        {
+          "text": "At thirty-four, the best version of KL Rahul may be the one batting right now.",
+          "caption": "At 34, the best version of KL Rahul may be the one batting right now.",
+          "pause": 0.5
+        },
+        {
+          "text": "Beyond The Scoreboard.",
+          "caption": "Beyond The Scoreboard.",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}
