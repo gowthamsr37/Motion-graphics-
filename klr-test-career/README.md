@@ -1,6 +1,6 @@
 # Beyond The Scoreboard — KL Rahul in Tests: the highs, the lows, everything
 
-A 121-second Instagram Reel: 1080×1920, 30 fps, mastered to −14 LUFS, in the series' scoreboard style. It was made on the day of his 136 at Wellington (21 Nov 2026).
+A 173-second Instagram Reel (the deeper cut; the first version was 121 s): 1080×1920, 30 fps, mastered to −14 LUFS, in the series' scoreboard style. It was made on the day of his 136 at Wellington (21 Nov 2026).
 
 ## Story
 
@@ -12,8 +12,12 @@ A 121-second Instagram Reel: 1080×1920, 30 fps, mastered to −14 LUFS, in the 
 | 4 | The crash | Aug 2018 – Aug 2019 highlighted in red; average 23.5, 17.3 without the Oval 149, 14 scores under 20; DROPPED · 2 YEARS OUT, with the gap marked on the timeline |
 | 5 | The comeback | 2021–24 highlighted; 129 at Lord's, 123 and 101 (at No.6) at Centurion; average as an opener 39.3 against 26.7 at No.3 or lower |
 | 6 | The renaissance | Since Leeds 2025: average 55.6, 22 innings, 1,167 runs, five hundreds |
-| 7 | The paradox | Home 42.0 with 3 hundreds; away 35.5 with 10 hundreds; away hundreds by country (England 4) |
-| 8 | Verdict | 4,424 runs · 13 hundreds · 37.49; crashes and comebacks; "the best version, right now?" |
+| 7 | What changed | Era bars: strike rate barely moves (57.5, 54.0, 47.8, 49.6), while balls per dismissal goes 78 → 41 → 67 → 112 |
+| 8 | The first 20 balls | One dot per innings, red if he was out inside 20 balls: 13/33, 10/27, 8/41, 1/22. Two in five until 2019, one in 22 since Leeds |
+| 9 | The new ball | Average in the first 20 overs as an opener: 42.2, 23.8, 25.4, 57.8 (24.6 from 2018 to 2024; 8 dismissals in 981 balls since Leeds) |
+| 10 | The paradox | Home 42.0 with 3 hundreds; away 35.5 with 10. Conversion of fifty-plus scores: home 3 of 14 (21%), away 10 of 20 (50%) |
+| 11 | One more pattern | India's first innings: average 43.3 with 11 hundreds; India's second innings: 29.0 with 2 |
+| 12 | Verdict | 4,424 runs · 13 hundreds · 37.49; crashes and comebacks; "the best version, right now?" |
 
 ## Data and method
 
@@ -27,6 +31,12 @@ A 121-second Instagram Reel: 1080×1920, 30 fps, mastered to −14 LUFS, in the 
 - **Eras:**
   - Slump: Aug 2018 – Aug 2019, 22 innings. His last Test before being dropped was 30 Aug 2019; he returned on 4 Aug 2021.
   - Renaissance: from Leeds, 20 Jun 2025, 22 innings.
+- **Ball-level findings:** these come from `analysis/deep.py`, with the results in `deep.json`.
+  - Eras are calendar periods: 2014–17, 2018–19, 2021–24, and 2025–26 (from Leeds, 20 Jun 2025).
+  - Balls per dismissal and strike rate include the hand-added innings. The Mullanpur balls are taken as 165; reports say 164–165.
+  - "Out inside 20 balls" counts legal deliveries faced. The hand-added innings all lasted longer than 20 balls. The single early dismissal since Leeds was 1 off 6 at Kolkata, Nov 2025.
+  - New-ball figures cover team overs 1–20 when he opened. They use only innings with ball-by-ball data, so Mullanpur 2026 and Wellington 2026 are left out. Neither ended inside 20 overs, so the dismissal count is unaffected.
+  - "India's first innings" means match innings 1 or 2.
 - **Seven straight fifties (2017):** the scores come from the data. That this equals the Test record is widely reported.
 - **No photos:** no licensed photo of him in Test whites was found on Wikimedia Commons, so the reel is built from data graphics.
 

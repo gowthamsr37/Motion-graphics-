@@ -20,7 +20,7 @@
     {
       "id": "s1",
       "lead": 0.3,
-      "hold": 0.7,
+      "hold": 0.6,
       "segments": [
         {
           "text": "Wellington. Two hundred and ninety balls. One hundred and thirty-six runs.",
@@ -41,8 +41,8 @@
     },
     {
       "id": "s2",
-      "lead": 0.3,
-      "hold": 0.6,
+      "lead": 0.25,
+      "hold": 0.5,
       "segments": [
         {
           "text": "But his career has never been a straight line.",
@@ -63,8 +63,8 @@
     },
     {
       "id": "s3",
-      "lead": 0.3,
-      "hold": 0.6,
+      "lead": 0.25,
+      "hold": 0.5,
       "segments": [
         {
           "text": "It began with three and one on debut, at Melbourne.",
@@ -90,8 +90,8 @@
     },
     {
       "id": "s4",
-      "lead": 0.3,
-      "hold": 0.7,
+      "lead": 0.25,
+      "hold": 0.6,
       "segments": [
         {
           "text": "Then the line fell off a cliff.",
@@ -117,8 +117,8 @@
     },
     {
       "id": "s5",
-      "lead": 0.3,
-      "hold": 0.6,
+      "lead": 0.25,
+      "hold": 0.5,
       "segments": [
         {
           "text": "He came back in England, and made a hundred at Lord's. Then another at Centurion.",
@@ -139,8 +139,8 @@
     },
     {
       "id": "s6",
-      "lead": 0.3,
-      "hold": 0.7,
+      "lead": 0.25,
+      "hold": 0.6,
       "segments": [
         {
           "text": "Back at the top, something changed.",
@@ -156,30 +156,113 @@
     },
     {
       "id": "s7",
-      "lead": 0.3,
-      "hold": 0.7,
+      "lead": 0.25,
+      "hold": 0.5,
       "segments": [
         {
-          "text": "And here is the strangest part.",
-          "caption": "And here is the strangest part.",
+          "text": "So what changed?",
+          "caption": "So what changed?",
+          "pause": 0.45
+        },
+        {
+          "text": "He isn't scoring faster. His strike rate has barely moved, from fifty-seven to fifty.",
+          "caption": "He isn't scoring faster. His strike rate has barely moved, from 57 to 50.",
           "pause": 0.4
         },
         {
-          "text": "He averages forty-two at home, and thirty-five away.",
-          "caption": "He averages 42 at home, and 35 away.",
-          "pause": 0.4
-        },
-        {
-          "text": "Yet ten of his thirteen hundreds have come away from home. Four of them in England.",
-          "caption": "Yet 10 of his 13 hundreds have come away from home. Four of them in England.",
+          "text": "He's staying longer. In the slump, he lasted forty-one balls per dismissal. Now, one hundred and twelve.",
+          "caption": "He's staying longer. In the slump, he lasted 41 balls per dismissal. Now, 112.",
           "pause": 0.3
         }
       ]
     },
     {
       "id": "s8",
-      "lead": 0.3,
-      "hold": 1.8,
+      "lead": 0.25,
+      "hold": 0.5,
+      "segments": [
+        {
+          "text": "The biggest change is at the very start.",
+          "caption": "The biggest change is at the very start.",
+          "pause": 0.4
+        },
+        {
+          "text": "Until twenty nineteen, two in every five innings ended inside his first twenty balls.",
+          "caption": "Until 2019, two in every five innings ended inside his first 20 balls.",
+          "pause": 0.45
+        },
+        {
+          "text": "Since Leeds, it has happened once in twenty-two.",
+          "caption": "Since Leeds, it has happened once in 22.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "lead": 0.25,
+      "hold": 0.5,
+      "segments": [
+        {
+          "text": "Then there's the new ball, an opener's real test.",
+          "caption": "Then there's the new ball, an opener's real test.",
+          "pause": 0.4
+        },
+        {
+          "text": "In the first twenty overs, he used to average around twenty-five. Since Leeds: fifty-eight.",
+          "caption": "In the first 20 overs, he used to average around 25. Since Leeds: 58.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "lead": 0.25,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Now, the strangest part.",
+          "caption": "Now, the strangest part.",
+          "pause": 0.4
+        },
+        {
+          "text": "He averages forty-two at home, and thirty-five away. Yet ten of his thirteen hundreds came away.",
+          "caption": "He averages 42 at home, and 35 away. Yet 10 of his 13 hundreds came away.",
+          "pause": 0.45
+        },
+        {
+          "text": "The answer is conversion. At home, three of his fourteen fifty-plus scores became hundreds. Away, ten of twenty.",
+          "caption": "The answer is conversion. At home, 3 of his 14 fifty-plus scores became hundreds. Away, 10 of 20.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "lead": 0.25,
+      "hold": 0.5,
+      "segments": [
+        {
+          "text": "One more pattern.",
+          "caption": "One more pattern.",
+          "pause": 0.35
+        },
+        {
+          "text": "The first time India bat in a Test, he averages forty-three, with eleven of his thirteen hundreds.",
+          "caption": "The first time India bat in a Test, he averages 43, with 11 of his 13 hundreds.",
+          "pause": 0.4
+        },
+        {
+          "text": "Second time around: twenty-nine.",
+          "caption": "Second time around: 29.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "lead": 0.25,
+      "hold": 1.5,
       "segments": [
         {
           "text": "Four thousand, four hundred and twenty-four runs. A career of crashes, and comebacks.",

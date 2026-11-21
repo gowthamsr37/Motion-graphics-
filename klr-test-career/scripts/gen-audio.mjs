@@ -45,9 +45,13 @@ const ev = {
   middle: sent("s5", 2),
   since: sent("s6", 1),
   n55: word("s6", "55", 7.42),
-  yet: sent("s7", 2),
-  runs8: sent("s8", 0),
-  brand: sent("s8", 2) - f(8),
+  n112: word("s7", "112", 12.84),
+  once: word("s8", "once", 10.08),
+  n58: word("s9", "58", 8.5),
+  conv: sent("s10", 2),
+  n11: word("s11", "11", 5.92),
+  runs12: sent("s12", 0),
+  brand: sent("s12", 2) - f(8),
 };
 
 // ---------- dsp utils ----------
@@ -224,11 +228,24 @@ groove(S("s6"), E("s6"), [D, A, Bm, G], 0.23, 0.095, 0.13);
 strings(ML, MR, ev.since, E("s6") - ev.since + 0.3, D, 0.42, 0.6, 0.6, 0.09);
 brassHit(ML, MR, ev.n55, ch("D3", "F#3", "A3", "D4", "F#4"), 0.6, 2.0);
 crash(ML, MR, ev.n55, 0.24);
-// S7: the paradox — light and curious
-groove(S("s7"), E("s7"), [G, D, Em, A], 0.3, 0.075, 0.08);
-// S8: resolve
-strings(ML, MR, S("s8"), E("s8") - S("s8"), ch("D3", "F#3", "A3", "D4", "F#4"), 0.44, 0.6, 1.4, 0.09);
-groove(S("s8"), ev.brand, [D, Bm, G, A], 0.4, 0.06, 0.05);
+// S7: what changed — a thinking groove, a lift on 112
+groove(S("s7"), E("s7"), [Bm, G, D, A], 0.28, 0.075, 0.08);
+brassHit(ML, MR, ev.n112, ch("D3", "F#3", "A3", "D4"), 0.4, 1.4);
+// S8: the first 20 balls — tense, then relief on "once in 22"
+drone(ML, MR, S("s8"), ev.once - S("s8"), n("B0"), 0.18, 0.4, 0.3);
+strings(ML, MR, S("s8"), ev.once - S("s8"), ch("B2", "D3", "F#3"), 0.3, 0.8, 0.3, 0.05);
+strings(ML, MR, ev.once, E("s8") - ev.once + 0.4, D, 0.4, 0.2, 0.8, 0.08);
+timpani(ML, MR, ev.once, n("D2"), 0.4);
+// S9: the new ball — drive into 58
+groove(S("s9"), E("s9"), [D, A, Bm, G], 0.24, 0.09, 0.12);
+brassHit(ML, MR, ev.n58, ch("D3", "F#3", "A3", "D4", "F#4"), 0.5, 1.6);
+// S10–S11: the paradox and the pattern — light and curious
+groove(S("s10"), E("s10"), [G, D, Em, A], 0.3, 0.075, 0.08);
+timpani(ML, MR, ev.conv, n("D2"), 0.3);
+groove(S("s11"), E("s11"), [Em, G, D, A], 0.28, 0.075, 0.08);
+// S12: resolve
+strings(ML, MR, S("s12"), E("s12") - S("s12"), ch("D3", "F#3", "A3", "D4", "F#4"), 0.44, 0.6, 1.4, 0.09);
+groove(S("s12"), ev.brand, [D, Bm, G, A], 0.4, 0.06, 0.05);
 [["D3", 0], ["A3", 0.06], ["F#4", 0.12], ["D5", 0.7]].forEach(([nt, dt]) => piano(ML, MR, ev.brand + dt, n(nt), 0.28, 0.1, 4));
 
 // Schroeder reverb on the score for a cinematic room.

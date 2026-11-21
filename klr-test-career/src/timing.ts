@@ -1,7 +1,7 @@
 // All timing comes from src/timeline.json (scripts/gen-voice.py): every scene is lead-in + narration + hold.
 import timeline from "./timeline.json";
 
-export type SceneId = "s1" | "s2" | "s3" | "s4" | "s5" | "s6" | "s7" | "s8";
+export type SceneId = "s1" | "s2" | "s3" | "s4" | "s5" | "s6" | "s7" | "s8" | "s9" | "s10" | "s11" | "s12";
 
 const get = (id: SceneId) => {
   const s = timeline.scenes.find((x) => x.id === id);

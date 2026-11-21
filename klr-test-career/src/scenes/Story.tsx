@@ -1,7 +1,8 @@
 // KL Rahul in Tests: highs, lows and everything in between. Eight scenes timed to the narration.
 import React from "react";
 import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
-import { Ball, Callout, idxOf, INN, Timeline } from "../components/Career";
+import { Ball, Callout, EraBars, EraDots, idxOf, INN, Timeline } from "../components/Career";
+import deep from "../data/deep.json";
 import { CLAMP } from "../components/Motion";
 import { Lamp, Lettering, Panel } from "../components/Panel";
 import { SceneShell } from "../components/Pieces";
@@ -402,89 +403,39 @@ export const S6: React.FC = () => {
   );
 };
 
-/* ================= S7 — THE PARADOX ================= */
+/* ================= S7 — WHAT CHANGED ================= */
 export const s7Beats = (fps: number) => {
   const s = [0, 1, 2].map((i) => sentence(fps, "s7", i));
-  return { part: s[0].from, home: wordAt(fps, "s7", "42", 2.66), away: wordAt(fps, "s7", "35", 4.4), yet: s[2].from, england: wordAt(fps, "s7", "england", 10.48) };
+  return { q: s[0].from, sr: s[1].from, n57: wordAt(fps, "s7", "57", 5.72), n50: wordAt(fps, "s7", "50", 6.66), longer: s[2].from, n41: wordAt(fps, "s7", "41", 9.98), n112: wordAt(fps, "s7", "112", 12.84) };
 };
+const eraVals = (k: "sr" | "bpd") => ["2014-17", "2018-19", "2021-24", "2025-26"].map((e) => (deep.eras as Record<string, { sr: number; bpd: number }>)[e][k]);
 
 export const S7: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const b = s7Beats(fps);
-  const cols = [
-    { k: "HOME", avg: "42.0", n: 3, at: b.home - 4, sub: "40 INNINGS" },
-    { k: "AWAY", avg: "35.5", n: 10, at: b.away - 4, sub: "83 INNINGS" },
-  ];
-  const tally = [
-    { c: "ENGLAND", n: 4 },
-    { c: "SOUTH AFRICA", n: 2 },
-    { c: "AUSTRALIA", n: 1 },
-    { c: "NEW ZEALAND", n: 1 },
-    { c: "SRI LANKA", n: 1 },
-    { c: "WEST INDIES", n: 1 },
-  ];
+  const srAt = [b.n57 - 10, b.n57 - 4, b.n50 - 8, b.n50 - 2];
+  const bpdAt = [b.longer + 6, b.n41 - 4, b.n41 + 8, b.n112 - 4];
   return (
-    <SceneShell push={0.015}>
-      <Bar text="THE PARADOX" color={AMBER} />
-      <div style={{ position: "absolute", left: 60, top: 346, width: 960, display: "flex", gap: 16 }}>
-        {cols.map((c, ci) => (
-          <div key={c.k} style={{ position: "relative", width: 472, height: 560 }}>
-            <Panel x={0} y={0} w={472} h={560} delay={c.at - 6} seed={701 + ci} glow={C.amberGlow} glowOn={ci === 1 && frame >= b.yet ? 0.7 : 0}>
-              <div style={{ position: "absolute", top: 30, width: "100%", textAlign: "center" }}>
-                <Lettering size={64}>{c.k}</Lettering>
-              </div>
-              <div style={{ position: "absolute", top: 120, width: "100%", display: "flex", justifyContent: "center" }}>
-                <Plates text={c.avg} w={80} h={124} gap={6} color={ci === 0 ? GREEN : C.cream} />
-              </div>
-              <div style={{ position: "absolute", top: 260, width: "100%", textAlign: "center" }}>
-                <Lettering size={20} font="body" color={C.creamDim} spacing="0.18em">
-                  AVERAGE · {c.sub}
-                </Lettering>
-              </div>
-              <div style={{ position: "absolute", left: 40, right: 40, top: 320, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 10 }}>
-                {Array.from({ length: c.n }).map((_, i) => {
-                  const at = b.yet + 6 + (ci === 0 ? i * 4 : 14 + i * 3);
-                  const p = spring({ frame: frame - at, fps, config: theme.spring.bouncy });
-                  return (
-                    <div key={i} style={{ transform: `scale(${interpolate(p, [0, 1], [0.3, 1])})`, opacity: interpolate(p, [0, 0.2], [0, 1], CLAMP) }}>
-                      <Ball size={56} lit={1} />
-                    </div>
-                  );
-                })}
-              </div>
-              <div style={{ position: "absolute", bottom: 26, width: "100%", textAlign: "center", opacity: fade(frame, b.yet + (ci === 0 ? 10 : 46)) }}>
-                <Lettering size={48} color={ci === 1 ? AMBER : C.cream}>
-                  {c.n} HUNDREDS
-                </Lettering>
-              </div>
-            </Panel>
-          </div>
-        ))}
-      </div>
-      <Panel x={60} y={922} w={960} h={290} delay={b.england - 14} seed={703}>
-        <div style={{ position: "absolute", top: 22, width: "100%", textAlign: "center" }}>
-          <Lettering size={22} font="body" color={C.creamDim} spacing="0.2em">
-            AWAY HUNDREDS, BY COUNTRY
+    <SceneShell push={0.015} shakeFrames={[b.n112 + 10]}>
+      <Bar text="SO WHAT CHANGED?" color={AMBER} />
+      <Panel x={60} y={346} w={960} h={470} delay={b.sr - 8} seed={701}>
+        <div style={{ position: "absolute", left: 50, top: 26 }}>
+          <EraBars w={860} h={410} values={eraVals("sr")} max={70} at={srAt} colors={[C.creamDim, C.creamDim, C.creamDim, C.cream]} title="STRIKE RATE · RUNS PER 100 BALLS" />
+        </div>
+        <div style={{ position: "absolute", right: 40, top: 22, opacity: fade(frame, b.n50 + 10) }}>
+          <Lettering size={30} color={C.creamDim}>
+            BARELY MOVED
           </Lettering>
         </div>
-        <div style={{ position: "absolute", left: 50, right: 50, top: 70, display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px 40px" }}>
-          {tally.map((t, i) => (
-            <div key={t.c} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", opacity: fade(frame, b.england - 10 + i * 3) }}>
-              <Lettering size={38} color={i === 0 ? AMBER : C.cream}>
-                {t.c}
-              </Lettering>
-              <Lettering size={50} color={i === 0 ? AMBER : C.cream}>
-                {String(t.n)}
-              </Lettering>
-            </div>
-          ))}
-        </div>
       </Panel>
-      <Panel x={60} y={1228} w={960} h={128} delay={b.yet + 30} seed={704}>
-        <div style={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <Lettering size={44}>
-            SAFER AT HOME. <span style={{ color: AMBER }}>BIGGER AWAY.</span>
+      <Panel x={60} y={832} w={960} h={524} delay={b.longer - 8} seed={702} glow={C.amberGlow} glowOn={frame >= b.n112 ? 0.7 : 0}>
+        <div style={{ position: "absolute", left: 50, top: 26 }}>
+          <EraBars w={860} h={460} values={eraVals("bpd")} max={120} at={bpdAt} colors={[C.cream, RED, C.cream, AMBER]} fmt={(v) => String(Math.round(v))} title="BALLS FACED PER DISMISSAL" />
+        </div>
+        <div style={{ position: "absolute", right: 40, top: 22, opacity: fade(frame, b.n112 + 10) }}>
+          <Lettering size={34} color={AMBER}>
+            STAYING LONGER
           </Lettering>
         </div>
       </Panel>
@@ -492,22 +443,257 @@ export const S7: React.FC = () => {
   );
 };
 
-/* ================= S8 — THE VERDICT ================= */
+/* ================= S8 — THE FIRST 20 BALLS ================= */
 export const s8Beats = (fps: number) => {
   const s = [0, 1, 2].map((i) => sentence(fps, "s8", i));
-  return { runs: s[0].from, crash: wordAt(fps, "s8", "crashes", 3.92), best: s[1].from, now: wordAt(fps, "s8", "now", 10.76), brand: s[2].from - 8 };
+  return { start: s[0].from, until: s[1].from, balls: wordAt(fps, "s8", "balls", 7.4), since: s[2].from, once: wordAt(fps, "s8", "once", 10.08) };
 };
 
 export const S8: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const b = s8Beats(fps);
+  const dots = deep.dots as Record<string, boolean[]>;
+  const rows = ["2014-17", "2018-19", "2021-24", "2025-26"].map((k) => dots[k]);
+  return (
+    <SceneShell push={0.015}>
+      <Bar text="THE FIRST 20 BALLS" color={RED} />
+      <Panel x={60} y={346} w={960} h={700} delay={b.start - 6} seed={801}>
+        <div style={{ position: "absolute", top: 26, width: "100%", textAlign: "center" }}>
+          <Lettering size={22} font="body" color={C.creamDim} spacing="0.16em">
+            ONE DOT PER INNINGS · <span style={{ color: RED }}>RED = OUT INSIDE HIS FIRST 20 BALLS</span>
+          </Lettering>
+        </div>
+        <div style={{ position: "absolute", left: 40, top: 100 }}>
+          <EraDots w={880} rows={rows} at={[b.until, b.until + 24, b.balls + 10, b.since]} />
+        </div>
+      </Panel>
+      <Panel x={60} y={1062} w={960} h={294} delay={b.balls - 10} seed={802} glow={C.greenGlow} glowOn={frame >= b.once ? 0.6 : 0}>
+        <div style={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "space-around" }}>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 8, opacity: fade(frame, b.balls - 4) }}>
+            <Lettering size={110} color={RED}>
+              2 IN 5
+            </Lettering>
+            <Lettering size={22} font="body" color={C.creamDim} spacing="0.14em">
+              UNTIL 2019 · 23 OF 60 INNINGS
+            </Lettering>
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 8, opacity: fade(frame, b.once - 4) }}>
+            <Lettering size={110} color={GREEN}>
+              1 IN 22
+            </Lettering>
+            <Lettering size={22} font="body" color={C.creamDim} spacing="0.14em">
+              SINCE LEEDS 2025
+            </Lettering>
+          </div>
+        </div>
+      </Panel>
+    </SceneShell>
+  );
+};
+
+/* ================= S9 — THE NEW BALL ================= */
+export const s9Beats = (fps: number) => {
+  const s = [0, 1].map((i) => sentence(fps, "s9", i));
+  return { nb: s[0].from, first: s[1].from, n25: wordAt(fps, "s9", "25", 6.0), n58: wordAt(fps, "s9", "58", 8.5) };
+};
+
+export const S9: React.FC = () => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const b = s9Beats(fps);
+  const nb = deep.newball as Record<string, { avg: number }>;
+  const vals = ["2014-17", "2018-19", "2021-24", "2025-26"].map((k) => nb[k].avg);
+  return (
+    <SceneShell push={0.015} shakeFrames={[b.n58]}>
+      <Bar text="THE NEW BALL" />
+      <Panel x={60} y={346} w={960} h={740} delay={b.nb - 6} seed={901} glow={C.amberGlow} glowOn={frame >= b.n58 ? 0.7 : 0}>
+        <div style={{ position: "absolute", left: 50, top: 30 }}>
+          <EraBars w={860} h={660} values={vals} max={65} at={[b.first, b.n25 - 14, b.n25 - 6, b.n58 - 6]} colors={[C.cream, RED, RED, AMBER]} title="AVERAGE IN THE FIRST 20 OVERS · AS OPENER" />
+        </div>
+      </Panel>
+      <Panel x={60} y={1102} w={960} h={254} delay={b.n25 - 10} seed={902}>
+        <div style={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: 40 }}>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6, opacity: fade(frame, b.n25 - 6) }}>
+            <Lettering size={90} color={RED}>
+              24.6
+            </Lettering>
+            <Lettering size={20} font="body" color={C.creamDim} spacing="0.14em">
+              2018–2024
+            </Lettering>
+          </div>
+          <Lettering size={70} color={C.creamDim} style={{ opacity: fade(frame, b.n58 - 8) }}>
+            →
+          </Lettering>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6, opacity: fade(frame, b.n58 - 4) }}>
+            <Lettering size={90} color={AMBER}>
+              57.8
+            </Lettering>
+            <Lettering size={20} font="body" color={C.creamDim} spacing="0.14em">
+              SINCE LEEDS · 8 DISMISSALS IN 981 BALLS
+            </Lettering>
+          </div>
+        </div>
+      </Panel>
+    </SceneShell>
+  );
+};
+
+/* ================= S10 — THE PARADOX ================= */
+export const s10Beats = (fps: number) => {
+  const s = [0, 1, 2].map((i) => sentence(fps, "s10", i));
+  return { part: s[0].from, home: wordAt(fps, "s10", "42", 2.32), away: wordAt(fps, "s10", "35", 4.16), yet: wordAt(fps, "s10", "yet", 6.14), conv: s[2].from, h3: wordAt(fps, "s10", "three", 11.48), a10: wordAt(fps, "s10", "away", 15.14, 2) };
+};
+
+export const S10: React.FC = () => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const b = s10Beats(fps);
+  const cols = [
+    { k: "HOME", avg: "42.0", n: 3, f: 14, at: b.home - 4, convAt: b.h3 - 2, color: C.creamDim },
+    { k: "AWAY", avg: "35.5", n: 10, f: 20, at: b.away - 4, convAt: b.a10 - 2, color: AMBER },
+  ];
+  return (
+    <SceneShell push={0.015}>
+      <Bar text="THE PARADOX" color={AMBER} />
+      <div style={{ position: "absolute", left: 60, top: 346, width: 960, display: "flex", gap: 16 }}>
+        {cols.map((c, ci) => (
+          <div key={c.k} style={{ position: "relative", width: 472, height: 470 }}>
+            <Panel x={0} y={0} w={472} h={470} delay={c.at - 6} seed={1001 + ci} glow={C.amberGlow} glowOn={ci === 1 && frame >= b.yet ? 0.6 : 0}>
+              <div style={{ position: "absolute", top: 26, width: "100%", textAlign: "center" }}>
+                <Lettering size={60}>{c.k}</Lettering>
+              </div>
+              <div style={{ position: "absolute", top: 106, width: "100%", display: "flex", justifyContent: "center" }}>
+                <Plates text={c.avg} w={72} h={110} gap={6} color={ci === 0 ? GREEN : C.cream} />
+              </div>
+              <div style={{ position: "absolute", top: 230, width: "100%", textAlign: "center" }}>
+                <Lettering size={20} font="body" color={C.creamDim} spacing="0.18em">
+                  AVERAGE
+                </Lettering>
+              </div>
+              <div style={{ position: "absolute", left: 30, right: 30, top: 280, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 8 }}>
+                {Array.from({ length: c.n }).map((_, i) => {
+                  const at = b.yet + 4 + (ci === 0 ? i * 4 : 14 + i * 3);
+                  const p = spring({ frame: frame - at, fps, config: theme.spring.bouncy });
+                  return (
+                    <div key={i} style={{ transform: `scale(${interpolate(p, [0, 1], [0.3, 1])})`, opacity: interpolate(p, [0, 0.2], [0, 1], CLAMP) }}>
+                      <Ball size={48} lit={1} />
+                    </div>
+                  );
+                })}
+              </div>
+              <div style={{ position: "absolute", bottom: 22, width: "100%", textAlign: "center", opacity: fade(frame, b.yet + (ci === 0 ? 8 : 40)) }}>
+                <Lettering size={44} color={ci === 1 ? AMBER : C.cream}>
+                  {c.n} HUNDREDS
+                </Lettering>
+              </div>
+            </Panel>
+          </div>
+        ))}
+      </div>
+      <Panel x={60} y={832} w={960} h={524} delay={b.conv - 8} seed={1003} glow={C.amberGlow} glowOn={frame >= b.a10 ? 0.6 : 0}>
+        <div style={{ position: "absolute", top: 24, width: "100%", textAlign: "center" }}>
+          <Lettering size={40} color={AMBER}>
+            CONVERSION
+          </Lettering>
+          <div style={{ marginTop: 8 }}>
+            <Lettering size={18} font="body" color={C.creamDim} spacing="0.16em">
+              FIFTY-PLUS SCORES THAT BECAME HUNDREDS
+            </Lettering>
+          </div>
+        </div>
+        <div style={{ position: "absolute", left: 50, right: 50, top: 130, display: "flex", flexDirection: "column", gap: 40 }}>
+          {cols.map((c) => {
+            const p = theme.ease.out(interpolate(frame, [c.convAt, c.convAt + 18], [0, 1], CLAMP));
+            return (
+              <div key={c.k} style={{ display: "flex", flexDirection: "column", gap: 10, opacity: fade(frame, c.convAt - 4) }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
+                  <Lettering size={44}>{c.k}</Lettering>
+                  <Lettering size={50} color={c.color}>
+                    {c.n} OF {c.f} · {Math.round((100 * c.n) / c.f)}%
+                  </Lettering>
+                </div>
+                <div style={{ display: "flex", gap: 4 }}>
+                  {Array.from({ length: c.f }).map((_, i) => (
+                    <div key={i} style={{ flex: 1, height: 34, borderRadius: 4, background: i < c.n && i < c.f * p ? c.color : i < c.f * p ? C.plateHi : "rgba(255,255,255,0.04)", boxShadow: `inset 0 0 0 1px ${C.panelEdge}` }} />
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </Panel>
+    </SceneShell>
+  );
+};
+
+/* ================= S11 — FIRST INNINGS MAN ================= */
+export const s11Beats = (fps: number) => {
+  const s = [0, 1, 2].map((i) => sentence(fps, "s11", i));
+  return { more: s[0].from, first: s[1].from, n43: wordAt(fps, "s11", "43", 4.4), n11: wordAt(fps, "s11", "11", 5.92), second: s[2].from, n29: wordAt(fps, "s11", "29", 9.04) };
+};
+
+export const S11: React.FC = () => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const b = s11Beats(fps);
+  const sides = [
+    { k: "INDIA'S FIRST INNINGS", sub: "70 INNINGS · 3,031 RUNS", avg: "43.3", n: 11, at: b.n43 - 6, ballsAt: b.n11 - 2, color: AMBER },
+    { k: "INDIA'S SECOND INNINGS", sub: "53 INNINGS · 1,393 RUNS", avg: "29.0", n: 2, at: b.n29 - 6, ballsAt: b.n29 + 4, color: C.creamDim },
+  ];
+  return (
+    <SceneShell push={0.015}>
+      <Bar text="ONE MORE PATTERN" />
+      {sides.map((s, i) => (
+        <Panel key={s.k} x={60} y={346 + i * 512} w={960} h={496} delay={s.at - 6} seed={1101 + i} glow={C.amberGlow} glowOn={i === 0 && frame >= b.n11 ? 0.5 : 0}>
+          <div style={{ position: "absolute", top: 30, width: "100%", textAlign: "center" }}>
+            <Lettering size={52}>{s.k}</Lettering>
+            <div style={{ marginTop: 6 }}>
+              <Lettering size={18} font="body" color={C.creamDim} spacing="0.16em">
+                {s.sub}
+              </Lettering>
+            </div>
+          </div>
+          <div style={{ position: "absolute", top: 140, width: "100%", display: "flex", justifyContent: "center", alignItems: "center", gap: 30 }}>
+            <Plates text={s.avg} w={86} h={132} gap={8} color={s.color} glow={i === 0 ? C.amberGlow : undefined} />
+            <Lettering size={30} color={C.creamDim}>
+              AVERAGE
+            </Lettering>
+          </div>
+          <div style={{ position: "absolute", left: 60, right: 60, top: 320, display: "flex", justifyContent: "center", gap: 8 }}>
+            {Array.from({ length: s.n }).map((_, k) => (
+              <div key={k} style={{ opacity: fade(frame, s.ballsAt + k * 3, 4) }}>
+                <Ball size={52} lit={1} />
+              </div>
+            ))}
+          </div>
+          <div style={{ position: "absolute", bottom: 26, width: "100%", textAlign: "center", opacity: fade(frame, s.ballsAt + s.n * 3) }}>
+            <Lettering size={40} color={s.color}>
+              {s.n} OF HIS 13 HUNDREDS
+            </Lettering>
+          </div>
+        </Panel>
+      ))}
+    </SceneShell>
+  );
+};
+
+/* ================= S12 — THE VERDICT ================= */
+export const s12Beats = (fps: number) => {
+  const s = [0, 1, 2].map((i) => sentence(fps, "s12", i));
+  return { runs: s[0].from, crash: wordAt(fps, "s12", "crashes", 3.92), best: s[1].from, now: wordAt(fps, "s12", "now", 10.76), brand: s[2].from - 8 };
+};
+
+export const S12: React.FC = () => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const b = s12Beats(fps);
   const runs = useFlip(b.runs, 3);
   const brand = spring({ frame: frame - b.brand, fps, config: theme.spring.heavy });
   return (
     <SceneShell push={0} pull={0.03} turnOut={false}>
       <Bar text="KL RAHUL · TESTS" />
-      <Panel x={60} y={346} w={960} h={400} delay={b.runs - 8} seed={801} glow={C.amberGlow} glowOn={0.4}>
+      <Panel x={60} y={346} w={960} h={400} delay={b.runs - 8} seed={1201} glow={C.amberGlow} glowOn={0.4}>
         <div style={{ position: "absolute", top: 34, width: "100%", display: "flex", justifyContent: "center" }}>
           <Plates text="4,424" prev="     " progress={runs} w={104} h={160} gap={10} color={AMBER} glow={C.amberGlow} />
         </div>
@@ -522,10 +708,10 @@ export const S8: React.FC = () => {
           </Lettering>
         </div>
       </Panel>
-      <Panel x={60} y={762} w={960} h={190} delay={b.best - 6} seed={802}>
+      <Panel x={60} y={762} w={960} h={190} delay={b.best - 6} seed={1202}>
         <div style={{ height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 10 }}>
-          <Lettering size={30} font="body" color={C.creamDim} spacing="0.2em">
-            AGE 34 · AVERAGING 55.6 SINCE 2025
+          <Lettering size={26} font="body" color={C.creamDim} spacing="0.16em">
+            AGE 34 · SINCE LEEDS: AVG 55.6 · 112 BALLS PER DISMISSAL
           </Lettering>
           <Lettering size={58} color={AMBER} style={{ opacity: fade(frame, b.now - 10) }}>
             THE BEST VERSION, RIGHT NOW?
@@ -533,7 +719,7 @@ export const S8: React.FC = () => {
         </div>
       </Panel>
       <div style={{ position: "absolute", left: 60, top: 970, width: 960, opacity: interpolate(brand, [0, 0.3], [0, 1], CLAMP), transform: `scale(${interpolate(brand, [0, 1], [0.94, 1])})` }}>
-        <Panel x={0} y={0} w={960} h={300} delay={b.brand} seed={803}>
+        <Panel x={0} y={0} w={960} h={300} delay={b.brand} seed={1203}>
           <div style={{ height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 16 }}>
             <Lettering size={26} font="body" color={C.creamDim} spacing="0.3em">
               STORIES TOLD WITH DATA
@@ -546,7 +732,7 @@ export const S8: React.FC = () => {
       </div>
       <div style={{ position: "absolute", left: 60, right: 60, top: 1290, textAlign: "center", opacity: fade(frame, b.brand + 10) }}>
         <Lettering size={16} font="body" weight={500} color={C.creamDim} spacing="0.08em">
-          TESTS TO 21 NOV 2026, INCLUDING WELLINGTON 1ST INNINGS · CRICSHEET BALL-BY-BALL DATA + SCORECARDS FOR THE TWO AFGHANISTAN TESTS
+          TESTS TO 21 NOV 2026, INCLUDING WELLINGTON 1ST INNINGS · CRICSHEET BALL-BY-BALL DATA + SCORECARDS FOR THE AFGHANISTAN TESTS · NEW-BALL FIGURES USE BALL-BY-BALL INNINGS ONLY
         </Lettering>
       </div>
     </SceneShell>

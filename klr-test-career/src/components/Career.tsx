@@ -131,3 +131,66 @@ export const Ball: React.FC<{ size: number; lit: number }> = ({ size, lit }) => 
     <path d="M9 9 C16 16 16 24 9 31 M31 9 C24 16 24 24 31 31" fill="none" stroke={lit > 0.5 ? "#F4E6D0" : C.panelEdge} strokeWidth={1.6} strokeDasharray="2.5 2" />
   </svg>
 );
+
+/* four eras as columns: value bars with labels */
+export const ERAS = ["2014–17", "2018–19", "2021–24", "2025–26"];
+export const EraBars: React.FC<{ w: number; h: number; values: number[]; max: number; at: number[]; colors: string[]; fmt?: (v: number) => string; title: string }> = ({ w, h, values, max, at, colors, fmt = (v) => v.toFixed(1), title }) => {
+  const frame = useCurrentFrame();
+  const T = 46, B = 56;
+  const ph = h - T - B;
+  const slot = w / values.length;
+  const bw = slot * 0.56;
+  return (
+    <svg width={w} height={h} style={{ overflow: "visible" }}>
+      <text x={0} y={22} fontFamily={theme.fonts.body} fontWeight={600} fontSize={18} letterSpacing="0.18em" fill={C.creamDim}>
+        {title}
+      </text>
+      <line x1={0} x2={w} y1={T + ph} y2={T + ph} stroke={C.creamDim} strokeWidth={2} />
+      {values.map((v, k) => {
+        const p = theme.ease.out(interpolate(frame, [at[k], at[k] + 16], [0, 1], CLAMP));
+        const bh = (ph - 40) * (v / max) * p;
+        const x = slot * k + (slot - bw) / 2;
+        return (
+          <g key={k} opacity={interpolate(frame, [at[k], at[k] + 4], [0.15, 1], CLAMP)}>
+            <rect x={x} y={T + ph - bh} width={bw} height={bh} rx={6} fill={colors[k]} style={{ filter: `drop-shadow(0 0 8px ${colors[k]}55)` }} />
+            <text x={x + bw / 2} y={T + ph - bh - 12} textAnchor="middle" fontFamily={theme.fonts.display} fontSize={46} fill={colors[k]} opacity={p > 0.6 ? 1 : 0}>
+              {fmt(v)}
+            </text>
+            <text x={x + bw / 2} y={T + ph + 36} textAnchor="middle" fontFamily={theme.fonts.display} fontSize={30} fill={C.cream}>
+              {ERAS[k]}
+            </text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+};
+
+/* one dot per innings, red if it ended inside the first 20 balls */
+export const EraDots: React.FC<{ rows: boolean[][]; at: number[]; w: number }> = ({ rows, at, w }) => {
+  const frame = useCurrentFrame();
+  const LW = 140, RW = 130;
+  const size = 24, gap = 6;
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 40, width: w }}>
+      {rows.map((r, k) => {
+        const reds = r.filter(Boolean).length;
+        const on = interpolate(frame, [at[k], at[k] + 8], [0, 1], CLAMP);
+        return (
+          <div key={k} style={{ display: "flex", alignItems: "center", opacity: 0.2 + 0.8 * on }}>
+            <div style={{ width: LW, fontFamily: theme.fonts.display, fontSize: 38, color: C.cream }}>{ERAS[k]}</div>
+            <div style={{ flex: 1, display: "flex", flexWrap: "wrap", gap }}>
+              {r.map((red, i) => {
+                const lit = frame >= at[k] + i * 0.5;
+                return <div key={i} style={{ width: size, height: size, borderRadius: size, background: lit ? (red ? C.red : "rgba(237,228,204,0.55)") : C.plateHi, boxShadow: lit && red ? `0 0 8px ${C.redGlow}` : undefined }} />;
+              })}
+            </div>
+            <div style={{ width: RW, textAlign: "right", fontFamily: theme.fonts.display, fontSize: 50, color: reds / r.length > 0.3 ? C.red : reds / r.length < 0.1 ? "#38B47A" : C.cream, opacity: frame >= at[k] + r.length * 0.5 ? 1 : 0 }}>
+              {reds}/{r.length}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
