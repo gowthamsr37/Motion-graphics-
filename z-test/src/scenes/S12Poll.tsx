@@ -1,4 +1,4 @@
-// SCENE 13 — YOUR TURN (poll prompt, no in-video quiz) + TEASER + CTA. YOUR TURN · TWO-TAILED z = 1.5 · the zone curve
+// SCENE 12 — YOUR TURN (poll prompt, no in-video quiz) + TEASER + CTA. YOUR TURN · TWO-TAILED z = 1.5 · the zone curve
 // (no marker: the answer lives in the pinned comment) · REJECT H0, OR NOT? · a big bouncing VOTE IN THE CAPTION POLL.
 // Teaser: the t-test.
 import React from "react";
@@ -16,10 +16,10 @@ import { ZoneCurve } from "./S9Critical";
 const C = theme.colors;
 const G = zGeo(1010, 260, 160, 920);
 
-export const S13Poll: React.FC = () => {
+export const S12Poll: React.FC = () => {
   const frame = useCurrentFrame();
   const spr = useSpr();
-  const s = useScene("s13");
+  const s = useScene("s12");
   const P0 = s.sent(0).from;
   const Z = s.cueS(0, "1.5.");
   const REJ = s.cueS(0, "Reject");

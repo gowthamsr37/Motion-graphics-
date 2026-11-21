@@ -31,7 +31,7 @@ export const S8Table: React.FC = () => {
       <StepTracker active={3} />
       <Pop at={s.sent(0).from - 2} x={540} y={400} from="up" dist={10}>
         <div style={{ fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 24, letterSpacing: "0.16em", color: C.dim, whiteSpace: "nowrap" }}>
-          METHOD 1 · THE p-VALUE · TABLE: <span style={{ color: TAIL }}>z → AREA</span>
+          TWO-TAILED · METHOD 1 · p-VALUE · <span style={{ color: TAIL }}>z → AREA</span>
         </div>
       </Pop>
       <ZTable x={540} y={440} p={Math.min(1, tbl)} row={1} col={0} rowP={ease(frame, [ROW - 4, ROW + 12], [0, 1])} colP={ease(frame, [COL - 4, COL + 12], [0, 1])} cell={[1, 0]} cellP={ease(frame, [CELL - 6, CELL + 4], [0, 1])} />

@@ -18,7 +18,7 @@ export const S7Picture: React.FC = () => {
   const draw = ease(frame, [2, 30], [0, 1], theme.ease.inOut);
   const LEFT = s.cueS(0, "below");
   const RARE = s.cueS(0, "far");
-  const TWO = s.cueS(1, "two");
+  const TWO = s.cueS(0, "Two");
   const tail = ease(frame, [LEFT - 8, LEFT + 10], [0, 1]);
   return (
     <AbsoluteFill>

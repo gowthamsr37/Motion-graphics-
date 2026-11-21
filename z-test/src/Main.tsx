@@ -5,9 +5,8 @@ import { Backdrop, Grade, Grain, Vignette } from "./components/Backdrop";
 import { Captions } from "./components/Captions";
 import { ease } from "./components/Motion";
 import { S10Decision } from "./scenes/S10Decision";
-import { S11Traps } from "./scenes/S11Traps";
-import { S12Remember } from "./scenes/S12Remember";
-import { S13Poll } from "./scenes/S13Poll";
+import { S11OneTail } from "./scenes/S11OneTail";
+import { S12Poll } from "./scenes/S12Poll";
 import { S1Hook } from "./scenes/S1Hook";
 import { S2Definition } from "./scenes/S2Definition";
 import { S3When } from "./scenes/S3When";
@@ -22,7 +21,7 @@ import { theme } from "./theme";
 import { SCENE_IDS, sceneRange, SceneId, totalFrames } from "./timing";
 
 const C = theme.colors;
-const SCENES: Record<string, React.FC> = { s1: S1Hook, s2: S2Definition, s3: S3When, s4: S4Setup, s5: S5Formula, s6: S6Calc, s7: S7Picture, s8: S8Table, s9: S9Critical, s10: S10Decision, s11: S11Traps, s12: S12Remember, s13: S13Poll };
+const SCENES: Record<string, React.FC> = { s1: S1Hook, s2: S2Definition, s3: S3When, s4: S4Setup, s5: S5Formula, s6: S6Calc, s7: S7Picture, s8: S8Table, s9: S9Critical, s10: S10Decision, s11: S11OneTail, s12: S12Poll };
 // backdrop tints + caption accent: cyan = the claim, violet = the sample mean, green = standard error, orange = the tail
 const LOOK: Record<string, { a: string; b: string; accent: string }> = {
   s1: { a: C.orange, b: C.violet, accent: C.violet },
@@ -35,9 +34,8 @@ const LOOK: Record<string, { a: string; b: string; accent: string }> = {
   s8: { a: C.orange, b: C.cyan, accent: C.orange },
   s9: { a: C.orange, b: C.green, accent: C.orange },
   s10: { a: C.orange, b: C.green, accent: C.orange },
-  s11: { a: C.orange, b: C.cyan, accent: C.cyan },
-  s12: { a: C.cyan, b: C.green, accent: C.cyan },
-  s13: { a: C.green, b: C.violet, accent: C.yellow },
+  s11: { a: C.orange, b: C.violet, accent: C.orange },
+  s12: { a: C.green, b: C.violet, accent: C.yellow },
 };
 
 const useLook = () => {

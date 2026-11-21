@@ -51,7 +51,7 @@ export const S9Critical: React.FC = () => {
       <StepTracker active={3} />
       <Pop at={s.sent(0).from - 2} x={540} y={400} from="up" dist={10}>
         <div style={{ fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 24, letterSpacing: "0.16em", color: C.dim, whiteSpace: "nowrap" }}>
-          METHOD 2 · CRITICAL VALUE · TABLE: <span style={{ color: TAIL }}>AREA → z</span>
+          TWO-TAILED · METHOD 2 · CRITICAL VALUE · <span style={{ color: TAIL }}>AREA → z</span>
         </div>
       </Pop>
       {tblOut < 1 ? (

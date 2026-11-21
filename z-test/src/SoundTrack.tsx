@@ -101,14 +101,16 @@ const useHits = (): Hit[] => {
     h(s.cueS(1, "100.") - 8, "pop.wav", 0.2);
     h(s.cueS(1, "ticked.") - 8, "ding.wav", 0.2);
   }
-  // S4 — hypotheses and alpha
+  // S4 — hypotheses, one tail or two, alpha
   {
     const s = sceneTiming(fps, "s4");
     const h = at("s4");
-    h(s.cueS(0, "H0") - 10, "pop.wav", 0.2);
-    h(s.cueS(0, "H1") - 10, "pop.wav", 0.2);
-    h(s.cueS(1, "alpha") - 8, "chime.wav", 0.18);
-    h(s.cueS(1, "tails.") - 10, "glide.wav", 0.16);
+    h(s.cueS(0, "H0:") - 10, "pop.wav", 0.2);
+    h(s.cueS(1, "two-tailed:") - 10, "step1.wav", 0.2);
+    h(s.cueS(1, "one-tailed:") - 10, "step2.wav", 0.2);
+    h(s.sent(2).from - 6, "chime.wav", 0.18);
+    h(s.cueS(2, "splits") - 6, "glide.wav", 0.14);
+    h(s.cueS(2, "One-tailed") - 6, "glide.wav", 0.14);
   }
   // S5 — the formula
   {
@@ -135,8 +137,8 @@ const useHits = (): Hit[] => {
     const h = at("s7");
     h(2, "glide.wav", 0.14);
     h(s.sent(0).from + 2, "pop.wav", 0.2);
-    h(s.cueS(1, "two") - 4, "blip1.wav", 0.18);
-    h(s.cueS(1, "two") + 4, "blip2.wav", 0.18);
+    h(s.cueS(0, "Two") - 4, "blip1.wav", 0.18);
+    h(s.cueS(0, "Two") + 4, "blip2.wav", 0.18);
   }
   // S8 — method 1: the p-value (table z → area)
   {
@@ -160,33 +162,29 @@ const useHits = (): Hit[] => {
     h(s.cueS(2, "critical") - 8, "glide.wav", 0.18);
     h(s.cueS(2, "95%") - 10, "blip2.wav", 0.16);
   }
-  // S10 — the decision
+  // S10 — the two-tailed decision
   {
     const s = sceneTiming(fps, "s10");
     const h = at("s10");
-    h(s.cueS(0, "inside") - 10, "pop.wav", 0.2);
+    h(s.cueS(0, "critical") - 10, "pop.wav", 0.2);
     h(s.cueS(0, "p") - 8, "tick.wav", 0.12);
-    h(s.cueS(1, "reject") - 6, "stamp.wav", 0.26);
+    h(s.cueS(0, "reject") - 6, "stamp.wav", 0.26);
   }
-  // S11 — traps
+  // S11 — the one-tailed version
   {
     const s = sceneTiming(fps, "s11");
     const h = at("s11");
-    h(s.sent(0).from - 4, "glitch.wav", 0.08);
-    h(s.cueS(1, "one-tailed.") - 8, "step1.wav", 0.22);
-    h(s.cueS(1, "moves") - 8, "glide.wav", 0.18);
+    h(s.sent(0).from - 6, "whoosh.wav", 0.16);
+    h(s.sent(1).from + 4, "pop.wav", 0.18);
+    h(s.cueS(1, "0.0228.") - 10, "ding.wav", 0.2);
+    h(s.cueS(2, "-1.645.") - 10, "pop.wav", 0.2);
+    h(s.cueS(3, "Reject") - 6, "stamp.wav", 0.26);
+    h(s.cueS(3, "Save") - 8, "chime.wav", 0.24);
   }
-  // S12 — remember
+  // S12 — your turn (poll prompt), teaser, CTA
   {
     const s = sceneTiming(fps, "s12");
     const h = at("s12");
-    h(s.sent(0).from - 2, "sparkle.wav", 0.22);
-    h(s.cueS(1, "Save") - 8, "chime.wav", 0.24);
-  }
-  // S13 — your turn (poll prompt), teaser, CTA
-  {
-    const s = sceneTiming(fps, "s13");
-    const h = at("s13");
     h(s.sent(0).from - 6, "pop.wav", 0.36);
     h(s.cueS(0, "Reject") - 8, "glide.wav", 0.18);
     h(s.cueS(0, "Vote") - 6, "pop.wav", 0.26);

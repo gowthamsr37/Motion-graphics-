@@ -31,12 +31,12 @@ const cueS = (id, i, tok) => {
 const ev = {
   allData: cueS("s1", 1, "z-test."), // the title
   sameType: cueS("s1", 1, "z-test.") + 0.5,
-  quiz: sent("s13", 0), // the poll prompt (no in-video quiz)
-  tease: sent("s13", 1),
-  follow: sent("s13", 2),
+  quiz: sent("s12", 0), // the poll prompt (no in-video quiz)
+  tease: sent("s12", 1),
+  follow: sent("s12", 2),
   acc1: cueS("s6", 2, "z"), // z = -2
   acc2: cueS("s8", 1, "0.0228."), // the table value
-  acc3: cueS("s10", 1, "reject"), // reject H0
+  acc3: cueS("s10", 0, "reject"), // reject H0
 };
 
 // ---------- dsp utils ----------
@@ -207,8 +207,8 @@ const sections = [
   [ev.allData, S("s2"), "drop"],
   [S("s2"), S("s4"), "flow"], // definition, when to use: calm
   [S("s4"), S("s7"), "play"], // hypotheses, formula, calculation
-  [S("s7"), S("s12"), "grooveA"], // the curve, both methods, the decision, traps
-  [S("s12"), ev.quiz, "build"], // remember
+  [S("s7"), S("s11"), "grooveA"], // the curve, both methods, the two-tailed decision
+  [S("s11"), ev.quiz, "build"], // one-tailed
   [ev.quiz, DUR - 0.6, "finale"], // your turn, teaser, CTA
 ];
 const styleAt = (t) => (sections.find(([a, b]) => t >= a && t < b) || [0, 0, "none"])[2];
@@ -280,7 +280,7 @@ lead(ML, MR, ev.acc1 - 0.2, note("C5"), note("F5"), 1.2, 0.45);
 [0, 0.09, 0.18].forEach((d, i) => bell(ML, MR, ev.acc2 + 0.05 + d, [note("C5"), note("F5"), note("A5")][i], 0.6, (i - 1) * 0.4, 1.2));
 lead(ML, MR, ev.acc3 - 0.1, note("A4"), note("C5"), 1.0, 0.4);
 // recap: crash on entry
-crash(ML, MR, S("s12"), 0.7);
+crash(ML, MR, S("s11"), 0.7);
 // teaser: a lifted chord
 pad(ML, MR, ev.tease, ev.follow - ev.tease, CH.Bb.pad, 0.8, 0.3, 0.4, 0.05);
 // poll prompt: a bright stinger instead of the quiz countdown

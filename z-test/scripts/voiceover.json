@@ -28,9 +28,9 @@
    "hold": 0.9,
    "segments": [
     {
-     "text": "Here's the textbook definition, the one to use in interviews.",
-     "caption": "Here's the textbook definition, the one to use in interviews.",
-     "pause": 0.4
+     "text": "Here's the textbook definition.",
+     "caption": "Here's the textbook definition.",
+     "pause": 0.35
     },
     {
      "text": "A z-test is a hypothesis test that checks whether a sample mean is significantly different from a population mean, when the population standard deviation is known.",
@@ -59,18 +59,28 @@
   },
   {
    "id": "s4",
-   "title": "Steps 1 and 2",
+   "title": "Steps 1 and 2: one tail or two",
    "lead": 0.4,
-   "hold": 0.6,
+   "hold": 0.7,
    "segments": [
     {
-     "text": "Step one: H zero, the average is two hundred milliliters. H one: it isn't.",
-     "caption": "Step one: H0, the average is 200 ml. H1: it isn't.",
+     "text": "Step one: the hypotheses. H zero: the average is two hundred milliliters.",
+     "caption": "Step one: the hypotheses. H0: the average is 200 ml.",
      "pause": 0.35
     },
     {
-     "text": "Step two: alpha is five percent, split across both tails.",
-     "caption": "Step two: alpha is 5%, split across both tails.",
+     "text": "H one can be two-tailed: the average is different, in either direction. Or one-tailed: the average is less than two hundred, one direction only.",
+     "caption": "H1 can be two-tailed: the average is different, in either direction. Or one-tailed: the average is less than 200, one direction only.",
+     "pause": 0.4
+    },
+    {
+     "text": "Step two: alpha, five percent. Two-tailed splits it, two point five percent in each tail. One-tailed puts all five percent in the left tail.",
+     "caption": "Step two: alpha, 5%. Two-tailed splits it, 2.5% in each tail. One-tailed puts all 5% in the left tail.",
+     "pause": 0.35
+    },
+    {
+     "text": "We'll work out both.",
+     "caption": "We'll work out both.",
      "pause": 0.3
     }
    ]
@@ -140,13 +150,8 @@
    "hold": 0.4,
    "segments": [
     {
-     "text": "That's two standard errors below the claim. Far enough to reject H zero?",
-     "caption": "That's 2 standard errors below the claim. Far enough to reject H0?",
-     "pause": 0.3
-    },
-    {
-     "text": "Two ways to decide, both using the z table.",
-     "caption": "Two ways to decide, both using the z table.",
+     "text": "That's two standard errors below the claim. Far enough to reject H zero? Two ways to decide, both using the z table.",
+     "caption": "That's 2 standard errors below the claim. Far enough to reject H0? Two ways to decide, both using the z table.",
      "pause": 0.3
     }
    ]
@@ -158,8 +163,8 @@
    "hold": 0.5,
    "segments": [
     {
-     "text": "Method one: the p-value. Here the table goes from z to area: the area to the left of z.",
-     "caption": "Method one: the p-value. Here the table goes from z to area: the area to the left of z.",
+     "text": "Two-tailed first. Method one: the p-value. The table goes from z to area: the area to the left of z.",
+     "caption": "Two-tailed first. Method one: the p-value. The table goes from z to area: the area to the left of z.",
      "pause": 0.35
     },
     {
@@ -199,60 +204,47 @@
   },
   {
    "id": "s10",
-   "title": "The decision",
+   "title": "Two-tailed decision",
    "lead": 0.4,
-   "hold": 0.7,
+   "hold": 0.6,
    "segments": [
     {
-     "text": "Our z of minus two falls inside the critical region, and p is below alpha.",
-     "caption": "Our z of -2 falls inside the critical region, and p is below alpha.",
-     "pause": 0.35
-    },
-    {
-     "text": "Both methods agree: reject H zero. The machine is under-filling.",
-     "caption": "Both methods agree: reject H0. The machine is under-filling.",
+     "text": "Our z of minus two is in the critical region, and p is below alpha. Both methods agree: reject H zero.",
+     "caption": "Our z of -2 is in the critical region, and p is below alpha. Both methods agree: reject H0.",
      "pause": 0.3
     }
    ]
   },
   {
    "id": "s11",
-   "title": "Interview trap: one tail or two?",
+   "title": "One-tailed",
    "lead": 0.4,
-   "hold": 0.7,
+   "hold": 0.8,
    "segments": [
     {
-     "text": "Interview trap: one tail or two?",
-     "caption": "Interview trap: one tail or two?",
-     "pause": 0.3
+     "text": "Now one-tailed: H one says the average is less than two hundred.",
+     "caption": "Now one-tailed: H1 says the average is less than 200.",
+     "pause": 0.35
     },
     {
-     "text": "If you only test for under-filling, it's one-tailed. The whole five percent critical region moves into the left tail, so the critical value becomes minus one point six four five.",
-     "caption": "If you only test for under-filling, it's one-tailed. The whole 5% critical region moves into the left tail, so the critical value becomes -1.645.",
+     "text": "z is still minus two. But p is just the left tail: zero point zero two two eight. No doubling.",
+     "caption": "z is still -2. But p is just the left tail: 0.0228. No doubling.",
+     "pause": 0.35
+    },
+    {
+     "text": "And with all five percent in the left tail, the z table puts the critical value at minus one point six four five.",
+     "caption": "And with all 5% in the left tail, the z table puts the critical value at -1.645.",
+     "pause": 0.35
+    },
+    {
+     "text": "Minus two is beyond it, and p is below alpha. Reject again: the machine is under-filling. Save this for your next interview.",
+     "caption": "-2 is beyond it, and p is below alpha. Reject again: the machine is under-filling. Save this for your next interview.",
      "pause": 0.3
     }
    ]
   },
   {
    "id": "s12",
-   "title": "Remember",
-   "lead": 0.4,
-   "hold": 0.6,
-   "segments": [
-    {
-     "text": "Remember: if z lands in the critical region, or p is below alpha, reject H zero.",
-     "caption": "Remember: if z lands in the critical region, or p is below alpha, reject H0.",
-     "pause": 0.35
-    },
-    {
-     "text": "Save this for your next interview.",
-     "caption": "Save this for your next interview.",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s13",
    "title": "Poll, teaser and CTA",
    "lead": 0.35,
    "hold": 1.35,
