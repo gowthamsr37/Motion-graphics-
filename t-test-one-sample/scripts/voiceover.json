@@ -1,0 +1,59 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {"id": "s1", "title": "Hook", "lead": 0.45, "hold": 0.4, "segments": [
+      {"text": "Remember the juice bottles? The claim is two hundred milliliters. This time we don't know sigma, and we only measured nine bottles. The average is again one ninety-eight.", "caption": "Remember the juice bottles? The claim is 200 ml. This time we don't know sigma, and we only measured 9 bottles. The average is again 198.", "pause": 0.4},
+      {"text": "With z, that was enough to reject. Is it this time? Let's find out with a one-sample t-test.", "caption": "With z, that was enough to reject. Is it this time? Let's find out with a one-sample t-test.", "pause": 0.3}
+    ]},
+    {"id": "s2", "title": "Textbook definition", "lead": 0.4, "hold": 0.4, "segments": [
+      {"text": "Here's the textbook definition.", "caption": "Here's the textbook definition.", "pause": 0.35},
+      {"text": "A one-sample t-test is a hypothesis test that checks whether a sample mean is significantly different from a claimed population mean, when the population standard deviation is unknown.", "caption": "A one-sample t-test is a hypothesis test that checks whether a sample mean is significantly different from a claimed population mean, when the population standard deviation is unknown.", "pause": 0.3}
+    ]},
+    {"id": "s3", "title": "When to use it", "lead": 0.4, "hold": 0.3, "segments": [
+      {"text": "Use it for one average versus a claim, when sigma is unknown, especially with small samples.", "caption": "Use it for one average versus a claim, when sigma is unknown, especially with small samples.", "pause": 0.35},
+      {"text": "Nine bottles, no sigma: that's us.", "caption": "9 bottles, no sigma: that's us.", "pause": 0.3}
+    ]},
+    {"id": "s4", "title": "Steps 1 and 2: one tail or two", "lead": 0.4, "hold": 0.25, "segments": [
+      {"text": "Step one: H zero says the average is two hundred milliliters.", "caption": "Step one: H0 says the average is 200 ml.", "pause": 0.3},
+      {"text": "H one is two-tailed if it could differ either way, or one-tailed if we only ask: is it less?", "caption": "H1 is two-tailed if it could differ either way, or one-tailed if we only ask: is it less?", "pause": 0.35},
+      {"text": "Step two: alpha, five percent. Two-tailed splits it, two point five percent per tail. One-tailed puts all five percent on the left. We'll do both.", "caption": "Step two: alpha, 5%. Two-tailed splits it, 2.5% per tail. One-tailed puts all 5% on the left. We'll do both.", "pause": 0.3}
+    ]},
+    {"id": "s5", "title": "The formula", "lead": 0.4, "hold": 0.3, "segments": [
+      {"text": "Step three: the formula. t equals x-bar minus mu, over s over root n.", "caption": "Step three: the formula. t equals x-bar minus mu, over s over root n.", "pause": 0.4, "fix": [["mˈuː", "mjˈuː"]]},
+      {"text": "It's the z formula, with one change: s, the sample standard deviation, replaces sigma.", "caption": "It's the z formula, with one change: s, the sample standard deviation, replaces sigma.", "pause": 0.3}
+    ]},
+    {"id": "s6", "title": "The sample standard deviation", "lead": 0.4, "hold": 0.3, "segments": [
+      {"text": "First, s. Square each bottle's distance from one ninety-eight: twenty-five, nine, one, one, zero, one, one, nine, twenty-five. They add up to seventy-two.", "caption": "First, s. Square each bottle's distance from 198: 25, 9, 1, 1, 0, 1, 1, 9, 25. They add up to 72.", "pause": 0.35},
+      {"text": "Divide by n minus one, which is eight: that's nine. The square root of nine is three. So s is three.", "caption": "Divide by n - 1, which is 8: that's 9. The square root of 9 is 3. So s is 3.", "pause": 0.3}
+    ]},
+    {"id": "s7", "title": "Standard error and t", "lead": 0.4, "hold": 0.4, "segments": [
+      {"text": "Standard error: s over root n, three over root nine, which is three over three: one.", "caption": "Standard error: s over root n, 3 over root 9, which is 3 over 3: 1.", "pause": 0.35},
+      {"text": "So t equals one ninety-eight minus two hundred, over one: t equals minus two. The same number we got with z!", "caption": "So t equals 198 minus 200, over 1: t equals -2. The same number we got with z!", "pause": 0.3}
+    ]},
+    {"id": "s8", "title": "Degrees of freedom", "lead": 0.4, "hold": 0.25, "segments": [
+      {"text": "Degrees of freedom: n minus one, which is eight.", "caption": "Degrees of freedom: n - 1, which is 8.", "pause": 0.35},
+      {"text": "With so few bottles, the t curve has fatter tails than the normal curve, so the cut-offs are bigger.", "caption": "With so few bottles, the t curve has fatter tails than the normal curve, so the cut-offs are bigger.", "pause": 0.3}
+    ]},
+    {"id": "s9", "title": "Two-tailed: the t table", "lead": 0.4, "hold": 0.25, "segments": [
+      {"text": "Two-tailed first. In the t table, row eight, column two-tailed zero point zero five: the critical value is two point three zero six.", "caption": "Two-tailed first. In the t table, row 8, column two-tailed 0.05: the critical value is 2.306.", "pause": 0.35},
+      {"text": "So the critical region is beyond plus or minus two point three zero six.", "caption": "So the critical region is beyond ±2.306.", "pause": 0.35},
+      {"text": "Two is below two point three zero six, so p is above zero point zero five. Software says zero point zero eight.", "caption": "2 is below 2.306, so p is above 0.05. Software says 0.08.", "pause": 0.3}
+    ]},
+    {"id": "s10", "title": "Two-tailed decision", "lead": 0.4, "hold": 0.4, "segments": [
+      {"text": "Our t of minus two is not in the critical region. Two-tailed, we fail to reject H zero.", "caption": "Our t of -2 is not in the critical region. Two-tailed, we fail to reject H0.", "pause": 0.35},
+      {"text": "With z, minus two was enough. With t, it isn't: fatter tails need stronger evidence.", "caption": "With z, -2 was enough. With t, it isn't: fatter tails need stronger evidence.", "pause": 0.3}
+    ]},
+    {"id": "s11", "title": "One-tailed", "lead": 0.4, "hold": 0.3, "segments": [
+      {"text": "Now one-tailed: is the average less than two hundred?", "caption": "Now one-tailed: is the average less than 200?", "pause": 0.3},
+      {"text": "The one-tailed column gives one point eight six zero, so the critical value is minus one point eight six zero. And p halves, to zero point zero four.", "caption": "The one-tailed column gives 1.860, so the critical value is -1.860. And p halves, to 0.04.", "pause": 0.3},
+      {"text": "Minus two is beyond it: reject. The one-tailed test does find under-filling. Save this for your interview.", "caption": "-2 is beyond it: reject. The one-tailed test does find under-filling. Save this for your interview.", "pause": 0.3}
+    ]},
+    {"id": "s12", "title": "Poll, teaser and CTA", "lead": 0.35, "hold": 0.8, "segments": [
+      {"text": "Your turn: two-tailed, d f eight, and t equals minus two point five. Reject H zero, or not? Vote in the caption poll!", "caption": "Your turn: two-tailed, df 8, and t equals -2.5. Reject H0, or not? Vote in the caption poll!", "pause": 0.3},
+      {"text": "Next: comparing two groups. The two-sample t-test.", "caption": "Next: comparing two groups. The two-sample t-test.", "pause": 0.3},
+      {"text": "Follow for data science made simple!", "caption": "Follow for data science made simple!", "pause": 0.3}
+    ]}
+  ]
+}

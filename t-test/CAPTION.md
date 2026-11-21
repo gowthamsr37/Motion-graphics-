@@ -2,7 +2,7 @@
 
 ## Caption (paste this)
 
-Brand B says its battery lasts longer 🔋 You test 5 phones of each: A averages 7 hours, B averages 10. Real difference, or just luck? The T-TEST settles it, step by step 👇
+Brand B says its battery lasts longer 🔋 You test 5 phones of each: A averages 7 hours, B averages 10. Real difference, or just luck? T-TEST PART 2: the two-sample t-test, step by step 👇 (Part 1, the one-sample t-test, is on my page)
 
 🎤 INTERVIEW ANSWER (textbook definition): "A two-sample t-test is a hypothesis test that checks whether the means of two independent groups are significantly different, when the population standard deviations are unknown."
 
