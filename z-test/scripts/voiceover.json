@@ -1,0 +1,280 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Hook",
+   "lead": 0.4,
+   "hold": 1.0,
+   "segments": [
+    {
+     "text": "A juice bottle says two hundred milliliters. You measure a hundred bottles, and the average is only one hundred ninety-eight.",
+     "caption": "A juice bottle says 200 ml. You measure 100 bottles, and the average is only 198.",
+     "pause": 0.45
+    },
+    {
+     "text": "Cheating, or just chance? Let's settle it with a z-test.",
+     "caption": "Cheating, or just chance? Let's settle it with a z-test.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Textbook definition",
+   "lead": 0.4,
+   "hold": 1.4,
+   "segments": [
+    {
+     "text": "Here's the textbook definition, the one to use in interviews.",
+     "caption": "Here's the textbook definition, the one to use in interviews.",
+     "pause": 0.4
+    },
+    {
+     "text": "A z-test is a hypothesis test that checks whether a sample mean is significantly different from a population mean, when the population standard deviation is known.",
+     "caption": "A z-test is a hypothesis test that checks whether a sample mean is significantly different from a population mean, when the population standard deviation is known.",
+     "pause": 0.45
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "When to use it",
+   "lead": 0.4,
+   "hold": 0.75,
+   "segments": [
+    {
+     "text": "Use it for an average, when sigma, the population's standard deviation, is known, or n is thirty or more.",
+     "caption": "Use it for an average, when sigma, the population's standard deviation, is known, or n is 30 or more.",
+     "pause": 0.35
+    },
+    {
+     "text": "Here, sigma is ten milliliters, and n is a hundred. Both boxes ticked.",
+     "caption": "Here, sigma is 10 ml, and n is 100. Both boxes ticked.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Steps 1 and 2",
+   "lead": 0.4,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Step one: H zero says the average is two hundred milliliters. H one says it isn't.",
+     "caption": "Step one: H0 says the average is 200 ml. H1 says it isn't.",
+     "pause": 0.4
+    },
+    {
+     "text": "Step two: alpha is five percent, split across both tails.",
+     "caption": "Step two: alpha is 5%, split across both tails.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "The formula",
+   "lead": 0.4,
+   "hold": 0.9,
+   "segments": [
+    {
+     "text": "Step three: the formula. z equals x-bar minus mu, over sigma over root n.",
+     "caption": "Step three: the formula. z equals x-bar minus mu, over sigma over root n.",
+     "pause": 0.4,
+     "fix": [
+      [
+       "mˈuː",
+       "mjˈuː"
+      ]
+     ]
+    },
+    {
+     "text": "The top is how far our sample mean is from the claimed mean.",
+     "caption": "The top is how far our sample mean is from the claimed mean.",
+     "pause": 0.35
+    },
+    {
+     "text": "The bottom is the standard error: how much an average naturally wobbles.",
+     "caption": "The bottom is the standard error: how much an average naturally wobbles.",
+     "pause": 0.35
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "The calculation",
+   "lead": 0.4,
+   "hold": 0.6,
+   "segments": [
+    {
+     "text": "Plug in our numbers. x-bar is one ninety-eight, and mu is two hundred, so the top is minus two.",
+     "caption": "Plug in our numbers. x-bar is 198, and mu is 200, so the top is -2.",
+     "pause": 0.4,
+     "fix": [
+      [
+       "mˈuː",
+       "mjˈuː"
+      ]
+     ]
+    },
+    {
+     "text": "Sigma is ten, and the square root of a hundred is ten, so the standard error is one.",
+     "caption": "Sigma is 10, and the square root of 100 is 10, so the standard error is 1.",
+     "pause": 0.4
+    },
+    {
+     "text": "Minus two over one: z equals minus two.",
+     "caption": "-2 over 1: z equals -2.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "What z = -2 means",
+   "lead": 0.4,
+   "hold": 0.75,
+   "segments": [
+    {
+     "text": "That's two standard errors below the claim. How rare is that? Ask the z table.",
+     "caption": "That's 2 standard errors below the claim. How rare is that? Ask the z table.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Reading the z table",
+   "lead": 0.4,
+   "hold": 0.6,
+   "segments": [
+    {
+     "text": "A z table gives the area to the left of any z.",
+     "caption": "A z table gives the area to the left of any z.",
+     "pause": 0.35
+    },
+    {
+     "text": "Go to the row for minus two point zero, and the column for zero point zero zero. The area is zero point zero two two eight.",
+     "caption": "Go to the row for -2.0, and the column for 0.00. The area is 0.0228.",
+     "pause": 0.4
+    },
+    {
+     "text": "That's two point three percent in one tail. Two-tailed, so we double it: p is about zero point zero four six.",
+     "caption": "That's 2.3% in one tail. Two-tailed, so we double it: p is about 0.046.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "The cut-off and the decision",
+   "lead": 0.4,
+   "hold": 0.7,
+   "segments": [
+    {
+     "text": "The cut-off: two point five percent per tail. Find zero point zero two five zero in the table. It sits at minus one point nine six.",
+     "caption": "The cut-off: 2.5% per tail. Find 0.0250 in the table. It sits at -1.96.",
+     "pause": 0.4
+    },
+    {
+     "text": "Our z of minus two is beyond minus one point nine six, and p is below zero point zero five. Reject H zero: the machine is under-filling.",
+     "caption": "Our z of -2 is beyond -1.96, and p is below 0.05. Reject H0: the machine is under-filling.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "title": "Three interview traps",
+   "lead": 0.4,
+   "hold": 0.7,
+   "segments": [
+    {
+     "text": "Three interview traps.",
+     "caption": "Three interview traps.",
+     "pause": 0.3
+    },
+    {
+     "text": "One: sigma unknown and a small sample? Use a t-test.",
+     "caption": "One: sigma unknown and a small sample? Use a t-test.",
+     "pause": 0.3
+    },
+    {
+     "text": "Two: testing only for under-filling is one-tailed, with a cut-off of minus one point six four five.",
+     "caption": "Two: testing only for under-filling is one-tailed, with a cut-off of -1.645.",
+     "pause": 0.3
+    },
+    {
+     "text": "Three: a z-score describes one value. A z-test tests a sample mean.",
+     "caption": "Three: a z-score describes one value. A z-test tests a sample mean.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "title": "Remember",
+   "lead": 0.4,
+   "hold": 0.75,
+   "segments": [
+    {
+     "text": "Remember: z is how far off, over the standard error. Beyond plus or minus one point nine six, reject.",
+     "caption": "Remember: z is how far off, over the standard error. Beyond ±1.96, reject.",
+     "pause": 0.35
+    },
+    {
+     "text": "Save this for your next interview.",
+     "caption": "Save this for your next interview.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s12",
+   "title": "Quiz, teaser and CTA",
+   "lead": 0.35,
+   "hold": 1.35,
+   "segments": [
+    {
+     "text": "Quick quiz!",
+     "caption": "Quick quiz!",
+     "pause": 0.3
+    },
+    {
+     "text": "A two-tailed z-test gives z equals one point five.",
+     "caption": "A two-tailed z-test gives z equals 1.5.",
+     "pause": 0.35
+    },
+    {
+     "text": "At the five percent level, do we reject H zero?",
+     "caption": "At the 5% level, do we reject H0?",
+     "pause": 5.7
+    },
+    {
+     "text": "No!",
+     "caption": "No!",
+     "pause": 0.35
+    },
+    {
+     "text": "One point five is inside plus or minus one point nine six. p is zero point one three: it could be chance.",
+     "caption": "1.5 is inside ±1.96. p is 0.13: it could be chance.",
+     "pause": 0.3
+    },
+    {
+     "text": "Next: what if we don't know sigma? The t-test.",
+     "caption": "Next: what if we don't know sigma? The t-test.",
+     "pause": 0.3
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.3
+    }
+   ]
+  }
+ ]
+}
