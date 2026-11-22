@@ -1,0 +1,220 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.0,
+  "fix": [
+    [
+      "ˈɪpəl",
+      "ˌaɪpˌiːˈɛl"
+    ],
+    [
+      "ɪnnˈɪŋz",
+      "ˈɪnɪŋz"
+    ],
+    [
+      "ɹˈɪʃæb pˈænt",
+      "ɹˈɪʃəb pˈʌnt"
+    ],
+    [
+      "pˈænt",
+      "pˈʌnt"
+    ],
+    [
+      "də vˈɪlɪɹz",
+      "də vˈɪljɚz"
+    ],
+    [
+      "lˈaɪɑːn",
+      "lˈaɪən"
+    ],
+    [
+      "tʃˈɛnaɪ",
+      "tʃɛnˈaɪ"
+    ]
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.5,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "Wellington. One hundred and twenty-eight, off a hundred and fifty-three balls. Rishabh Pant's ninth Test hundred.",
+          "caption": "Wellington. 128, off 153 balls. Rishabh Pant's ninth Test hundred.",
+          "pause": 0.55
+        },
+        {
+          "text": "But to understand Pant, forget the hundreds.",
+          "caption": "But to understand Pant, forget the hundreds.",
+          "pause": 0.45
+        },
+        {
+          "text": "Watch what happens to a Test match when he walks in.",
+          "caption": "Watch what happens to a Test match when he walks in.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.3,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Since his debut, top-order batters in Test cricket have scored at fifty-three runs per hundred balls. Pant scores at seventy-four.",
+          "caption": "Since his debut, top-order batters in Test cricket have scored at 53 runs per 100 balls. Pant scores at 74.",
+          "pause": 0.5
+        },
+        {
+          "text": "With him at the crease, India score at almost four an over. Without him, just over three.",
+          "caption": "With him at the crease, India score at almost four an over. Without him, just over three.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.3,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "That speed is time.",
+          "caption": "That speed is time.",
+          "pause": 0.45
+        },
+        {
+          "text": "At an ordinary pace, his runs would have taken more than three hundred extra overs. That's three and a half days of Test cricket, handed back to India's bowlers.",
+          "caption": "At an ordinary pace, his runs would have taken more than 300 extra overs. That's three and a half days of Test cricket, handed back to India's bowlers.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.3,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "And he plays like this when the match is slipping.",
+          "caption": "And he plays like this when the match is slipping.",
+          "pause": 0.45
+        },
+        {
+          "text": "Sydney, 2021. India need four hundred and seven. While his partners crawl, Pant makes ninety-seven off a hundred and eighteen, and Australia start to worry.",
+          "caption": "Sydney, 2021. India need 407. While his partners crawl, Pant makes 97 off 118, and Australia start to worry.",
+          "pause": 0.5
+        },
+        {
+          "text": "A week later at the Gabba, eighty-nine not out wins the chase, and the series.",
+          "caption": "A week later at the Gabba, 89 not out wins the chase, and the series.",
+          "pause": 0.5
+        },
+        {
+          "text": "Ahmedabad. In at eighty for four, out with a hundred. India win by an innings.",
+          "caption": "Ahmedabad. In at 80 for 4, out with a hundred. India win by an innings.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.3,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "His other weapon is the six. A hundred and eight in Tests, second only to Ben Stokes. Almost one in five of India's Test sixes since 2018.",
+          "caption": "His other weapon is the six. 108 in Tests, second only to Ben Stokes. Almost one in five of India's Test sixes since 2018.",
+          "pause": 0.5
+        },
+        {
+          "text": "Most of them come off spin. Against spinners, he averages fifty-three, at eighty-six runs per hundred balls.",
+          "caption": "Most of them come off spin. Against spinners, he averages 53, at 86 runs per 100 balls.",
+          "pause": 0.45
+        },
+        {
+          "text": "Nathan Lyon got him out six times. Pant took two hundred and fifty-eight runs, and seven sixes, off him.",
+          "caption": "Nathan Lyon got him out six times. Pant took 258 runs, and seven sixes, off him.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.3,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Then, on the thirtieth of December 2022, a car crash nearly ended everything.",
+          "caption": "Then, on 30 December 2022, a car crash nearly ended everything.",
+          "pause": 0.5
+        },
+        {
+          "text": "Six hundred and thirty-seven days later, in his first Test back, he made a hundred at Chennai. India won.",
+          "caption": "637 days later, in his first Test back, he made a hundred at Chennai. India won.",
+          "pause": 0.5
+        },
+        {
+          "text": "At Leeds in 2025, a hundred in each innings. At Manchester, he batted on a fractured foot.",
+          "caption": "At Leeds in 2025, a hundred in each innings. At Manchester, he batted on a fractured foot.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "lead": 0.3,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "And he does it where it's hardest.",
+          "caption": "And he does it where it's hardest.",
+          "pause": 0.4
+        },
+        {
+          "text": "Away from home, no leading keeper of the last two decades averages more, has more hundreds, or scores faster.",
+          "caption": "Away from home, no leading keeper of the last two decades averages more, has more hundreds, or scores faster.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "lead": 0.3,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "The same instinct has a price. Seven times, he's fallen in the nineties, against nine hundreds.",
+          "caption": "The same instinct has a price. Seven times, he's fallen in the nineties, against nine hundreds.",
+          "pause": 0.45
+        },
+        {
+          "text": "Across Test cricket, fewer than one in five ninety-plus scores stop short. For Pant, it's almost half.",
+          "caption": "Across Test cricket, fewer than one in five 90-plus scores stop short. For Pant, it's almost half.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "lead": 0.3,
+      "hold": 2.0,
+      "segments": [
+        {
+          "text": "So don't judge Rishabh Pant by his average. Judge him by the match.",
+          "caption": "So don't judge Rishabh Pant by his average. Judge him by the match.",
+          "pause": 0.5
+        },
+        {
+          "text": "When he walks in, the game starts moving. And rarely at the pace the opposition wants.",
+          "caption": "When he walks in, the game starts moving. And rarely at the pace the opposition wants.",
+          "pause": 0.6
+        },
+        {
+          "text": "Beyond The Scoreboard.",
+          "caption": "Beyond The Scoreboard.",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}

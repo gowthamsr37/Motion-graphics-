@@ -1,0 +1,296 @@
+{
+ "career": {
+  "inns": 91,
+  "runs": 3853,
+  "outs": 86,
+  "avg": 44.8,
+  "100s": 9,
+  "50s": 21,
+  "90s": 7,
+  "tests": 53
+ },
+ "home": {
+  "inns": 26,
+  "runs": 1191,
+  "outs": 24,
+  "avg": 49.62,
+  "100s": 2,
+  "50s": 10,
+  "90s": 5
+ },
+ "away": {
+  "inns": 65,
+  "runs": 2662,
+  "outs": 62,
+  "avg": 42.94,
+  "100s": 7,
+  "50s": 11,
+  "90s": 2
+ },
+ "by_year": {
+  "2018": {
+   "inns": 14,
+   "runs": 537,
+   "outs": 14,
+   "avg": 38.36,
+   "100s": 1,
+   "50s": 2,
+   "90s": 2
+  },
+  "2019": {
+   "inns": 4,
+   "runs": 217,
+   "outs": 3,
+   "avg": 72.33,
+   "100s": 1,
+   "50s": 0,
+   "90s": 0
+  },
+  "2020": {
+   "inns": 5,
+   "runs": 89,
+   "outs": 5,
+   "avg": 17.8,
+   "100s": 0,
+   "50s": 0,
+   "90s": 0
+  },
+  "2021": {
+   "inns": 21,
+   "runs": 748,
+   "outs": 19,
+   "avg": 39.37,
+   "100s": 1,
+   "50s": 5,
+   "90s": 2
+  },
+  "2022": {
+   "inns": 12,
+   "runs": 680,
+   "outs": 11,
+   "avg": 61.82,
+   "100s": 2,
+   "50s": 4,
+   "90s": 2
+  },
+  "2024": {
+   "inns": 17,
+   "runs": 576,
+   "outs": 16,
+   "avg": 36.0,
+   "100s": 1,
+   "50s": 3,
+   "90s": 1
+  },
+  "2025": {
+   "inns": 13,
+   "runs": 629,
+   "outs": 13,
+   "avg": 48.38,
+   "100s": 2,
+   "50s": 4,
+   "90s": 0
+  },
+  "2026": {
+   "inns": 5,
+   "runs": 377,
+   "outs": 5,
+   "avg": 75.4,
+   "100s": 1,
+   "50s": 3,
+   "90s": 0
+  }
+ },
+ "gaps": [
+  [
+   196,
+   "2025-11-22",
+   "2026-06-06"
+  ],
+  [
+   231,
+   "2019-01-03",
+   "2019-08-22"
+  ],
+  [
+   301,
+   "2020-02-29",
+   "2020-12-26"
+  ],
+  [
+   637,
+   "2022-12-22",
+   "2024-09-19"
+  ]
+ ],
+ "bgt_2024": {
+  "inns": 11,
+  "runs": 379,
+  "outs": 11,
+  "avg": 34.45,
+  "100s": 0,
+  "50s": 3,
+  "90s": 0
+ },
+ "leeds": [
+  {
+   "date": "2025-06-20",
+   "opp": "England",
+   "city": "Leeds",
+   "runs": 134,
+   "out": 1,
+   "balls": 178,
+   "home": false,
+   "mi": 1,
+   "sixes": 6
+  },
+  {
+   "date": "2025-06-20",
+   "opp": "England",
+   "city": "Leeds",
+   "runs": 118,
+   "out": 1,
+   "balls": 140,
+   "home": false,
+   "mi": 3,
+   "sixes": 3
+  }
+ ],
+ "gabba": [
+  {
+   "date": "2021-01-15",
+   "opp": "Australia",
+   "city": "Brisbane",
+   "runs": 23,
+   "out": 1,
+   "balls": 29,
+   "home": false,
+   "mi": 2,
+   "sixes": 0
+  },
+  {
+   "date": "2021-01-15",
+   "opp": "Australia",
+   "city": "Brisbane",
+   "runs": 89,
+   "out": 0,
+   "balls": 138,
+   "home": false,
+   "mi": 4,
+   "sixes": 1
+  }
+ ],
+ "sydney21": [
+  {
+   "date": "2021-01-07",
+   "opp": "Australia",
+   "city": "Sydney",
+   "runs": 36,
+   "out": 1,
+   "balls": 67,
+   "home": false,
+   "mi": 2,
+   "sixes": 0
+  },
+  {
+   "date": "2021-01-07",
+   "opp": "Australia",
+   "city": "Sydney",
+   "runs": 97,
+   "out": 1,
+   "balls": 118,
+   "home": false,
+   "mi": 4,
+   "sixes": 3
+  }
+ ],
+ "first": [
+  {
+   "date": "2018-08-18",
+   "opp": "England",
+   "city": "Nottingham",
+   "runs": 24,
+   "out": 1,
+   "balls": 51,
+   "home": false,
+   "mi": 1,
+   "sixes": 1
+  },
+  {
+   "date": "2018-08-18",
+   "opp": "England",
+   "city": "Nottingham",
+   "runs": 1,
+   "out": 1,
+   "balls": 6,
+   "home": false,
+   "mi": 3,
+   "sixes": 0
+  }
+ ],
+ "hundreds": [
+  [
+   "2018-09-07",
+   "England",
+   "London",
+   114,
+   146
+  ],
+  [
+   "2019-01-03",
+   "Australia",
+   "Sydney",
+   159,
+   189
+  ],
+  [
+   "2021-03-04",
+   "England",
+   "Ahmedabad",
+   101,
+   118
+  ],
+  [
+   "2022-01-11",
+   "South Africa",
+   "Cape Town",
+   100,
+   139
+  ],
+  [
+   "2022-07-01",
+   "England",
+   "Birmingham",
+   146,
+   111
+  ],
+  [
+   "2024-09-19",
+   "Bangladesh",
+   "Chennai",
+   109,
+   128
+  ],
+  [
+   "2025-06-20",
+   "England",
+   "Leeds",
+   134,
+   178
+  ],
+  [
+   "2025-06-20",
+   "England",
+   "Leeds",
+   118,
+   140
+  ],
+  [
+   "2026-11-19",
+   "New Zealand",
+   "Wellington",
+   128,
+   153
+  ]
+ ]
+}
