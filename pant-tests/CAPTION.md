@@ -15,6 +15,6 @@ THE NINETIES: 7 scores in the nineties, 9 hundreds. 44% of his 90-plus scores st
 
 53 Tests · 3,853 runs · average 44.8 · 9 hundreds (the most by an Indian keeper)
 
-Data: Cricsheet ball-by-ball (cricsheet.org, ODC-BY), Tests to 22 Nov 2026, plus scorecards for the June 2026 Afghanistan Test and today's Wellington innings. Spin/pace and nineties strike rates use ball-by-ball innings only. Photo: Ben Sutherland, CC BY 2.0.
+Data: Cricsheet ball-by-ball (cricsheet.org, ODC-BY), Tests to 22 Nov 2026, plus scorecards for the June 2026 Afghanistan Test and today's Wellington innings. Spin/pace and nineties strike rates use ball-by-ball innings only. Oval 2018 photo: Ben Sutherland, CC BY 2.0; other photos supplied.
 
 #RishabhPant #TeamIndia #NZvIND #TestCricket #CricketStats #CricketAnalytics #BeyondTheScoreboard #Wicketkeeper #IndianCricket #CricketReels

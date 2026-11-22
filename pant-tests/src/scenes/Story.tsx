@@ -1,6 +1,6 @@
 // Rishabh Pant in Tests: highs, lows, spin, overseas, and the nervous nineties. Nine scenes timed to the narration.
 import React from "react";
-import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
+import { Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Ball, Callout, idxOf, INN, Timeline } from "../components/Career";
 import { CLAMP } from "../components/Motion";
 import { Lamp, Lettering, Panel } from "../components/Panel";
@@ -54,48 +54,49 @@ export const S1: React.FC = () => {
   return (
     <SceneShell push={0.02} turnIn={false}>
       <Bar text="WELLINGTON · BASIN RESERVE" delay={-14} />
-      <Panel x={60} y={346} w={960} h={360} delay={-8} seed={101} glow={C.amberGlow} glowOn={c >= 1 ? 0.7 : 0}>
-        <div style={{ position: "absolute", top: 26, width: "100%", textAlign: "center" }}>
-          <Lettering size={34} font="body" color={C.creamDim} spacing="0.3em">
-            RISHABH PANT · 1ST TEST v NZ
-          </Lettering>
-        </div>
-        <div style={{ position: "absolute", top: 86, width: "100%", display: "flex", justifyContent: "center", alignItems: "flex-end", gap: 26 }}>
-          <Plates text={String(Math.round(128 * c)).padStart(3, " ")} w={116} h={170} gap={10} color={AMBER} glow={C.amberGlow} blur={c > 0 && c < 0.9 ? 1 : 0} />
-          <div style={{ opacity: fade(frame, b.balls - 4), marginBottom: 14 }}>
-            <Lettering size={56} color={C.creamDim}>
+      <Framed src="pant-raise-bat.jpg" x={60} y={346} w={960} h={470} at={-8} position="50% 27%" />
+      <Panel x={60} y={830} w={960} h={124} delay={-4} seed={101} glow={C.amberGlow} glowOn={c >= 1 ? 0.7 : 0}>
+        <div style={{ position: "absolute", left: 36, top: 0, bottom: 0, display: "flex", alignItems: "center", gap: 16 }}>
+          <Plates text={String(Math.round(128 * c)).padStart(3, " ")} w={64} h={96} gap={6} color={AMBER} glow={C.amberGlow} blur={c > 0 && c < 0.9 ? 1 : 0} />
+          <div style={{ opacity: fade(frame, b.balls - 4) }}>
+            <Lettering size={40} color={C.creamDim}>
               (153)
             </Lettering>
           </div>
         </div>
-        <div style={{ position: "absolute", bottom: 26, width: "100%", textAlign: "center", opacity: fade(frame, b.ninth) }}>
-          <Lettering size={44}>9TH TEST HUNDRED · FIRST IN NEW ZEALAND</Lettering>
+        <div style={{ position: "absolute", right: 36, top: 0, bottom: 0, display: "flex", flexDirection: "column", alignItems: "flex-end", justifyContent: "center", gap: 10 }}>
+          <Lettering size={38} style={{ opacity: fade(frame, b.ninth) }}>
+            9TH TEST HUNDRED · FIRST IN NZ
+          </Lettering>
+          <Lettering size={30} color={AMBER} style={{ opacity: fade(frame, b.stokes - 4) }}>
+            108 TEST SIXES · ONLY STOKES HAS MORE
+          </Lettering>
         </div>
       </Panel>
-      <Panel x={60} y={722} w={960} h={420} delay={b.sena - 8} seed={102}>
-        <div style={{ position: "absolute", top: 20, width: "100%", textAlign: "center" }}>
+      <Panel x={60} y={970} w={960} h={386} delay={b.sena - 8} seed={102}>
+        <div style={{ position: "absolute", top: 18, width: "100%", textAlign: "center" }}>
           <Lettering size={22} font="body" color={C.creamDim} spacing="0.2em">
             FIRST TEST HUNDRED IN EACH SENA COUNTRY
           </Lettering>
         </div>
-        <div style={{ position: "absolute", left: 50, right: 50, top: 64, display: "flex", flexDirection: "column", gap: 10 }}>
+        <div style={{ position: "absolute", left: 50, right: 50, top: 58, display: "flex", flexDirection: "column", gap: 6 }}>
           {rows.map((r, i) => {
             const lit = frame >= b.sena + 10 + i * stepF;
             const last = i === 3;
             return (
-              <div key={r.c} style={{ display: "flex", alignItems: "center", gap: 22, height: 76, opacity: lit ? 1 : 0.2 }}>
-                <Lamp color={last ? AMBER : GREEN} glow={last ? C.amberGlow : C.greenGlow} on={lit ? 1 : 0} size={28} />
-                <div style={{ width: 360 }}>
-                  <Lettering size={48} color={last ? AMBER : C.cream}>
+              <div key={r.c} style={{ display: "flex", alignItems: "center", gap: 22, height: 70, opacity: lit ? 1 : 0.2 }}>
+                <Lamp color={last ? AMBER : GREEN} glow={last ? C.amberGlow : C.greenGlow} on={lit ? 1 : 0} size={26} />
+                <div style={{ width: 340 }}>
+                  <Lettering size={46} color={last ? AMBER : C.cream}>
                     {r.c}
                   </Lettering>
                 </div>
                 <div style={{ flex: 1 }}>
-                  <Lettering size={28} color={C.creamDim}>
+                  <Lettering size={26} color={C.creamDim}>
                     {r.g} · {r.y}
                   </Lettering>
                 </div>
-                <Lettering size={54} color={last ? AMBER : C.cream}>
+                <Lettering size={50} color={last ? AMBER : C.cream}>
                   {r.s}
                 </Lettering>
               </div>
@@ -103,20 +104,8 @@ export const S1: React.FC = () => {
           })}
         </div>
       </Panel>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 1160, display: "flex", justifyContent: "center", gap: 24, alignItems: "center" }}>
-        <Stamp text="FIRST ASIAN KEEPER" at={b.countries + 4} color={AMBER} size={48} rotate={-3} />
-        <div style={{ opacity: fade(frame, b.stokes - 4) }}>
-          <Panel x={0} y={0} w={330} h={150} delay={b.stokes - 6} seed={103} style={{ position: "relative" }}>
-            <div style={{ height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 6 }}>
-              <Lettering size={72} color={AMBER}>
-                108
-              </Lettering>
-              <Lettering size={18} font="body" color={C.creamDim} spacing="0.14em">
-                TEST SIXES · 2ND ALL-TIME
-              </Lettering>
-            </div>
-          </Panel>
-        </div>
+      <div style={{ position: "absolute", right: 90, top: 700 }}>
+        <Stamp text="FIRST ASIAN KEEPER" at={b.countries + 4} color={AMBER} size={46} rotate={-4} />
       </div>
     </SceneShell>
   );
@@ -248,24 +237,25 @@ export const S4: React.FC = () => {
           callouts={[{ i: iBack, text: "109 CHENNAI", at: b.chennai - 6, color: GREEN, side: "left", dy: 0 }]}
         />
       </ChartPanel>
-      <Panel x={60} y={962} w={960} h={394} delay={b.crash - 8} seed={402} glow={C.redGlow} glowOn={frame >= b.car && frame < b.days ? 0.6 : 0}>
+      <Panel x={60} y={962} w={560} h={394} delay={b.crash - 8} seed={402} glow={C.redGlow} glowOn={frame >= b.car && frame < b.days ? 0.6 : 0}>
         <div style={{ position: "absolute", top: 30, width: "100%", textAlign: "center" }}>
-          <Lettering size={30} font="body" color={C.creamDim} spacing="0.2em">
-            30 DECEMBER 2022 · THE CAR CRASH
+          <Lettering size={24} font="body" color={C.creamDim} spacing="0.18em">
+            30 DEC 2022 · THE CAR CRASH
           </Lettering>
         </div>
-        <div style={{ position: "absolute", top: 90, width: "100%", display: "flex", justifyContent: "center", alignItems: "center", gap: 28, opacity: fade(frame, b.days - 6) }}>
-          <Plates text={String(days).padStart(3, " ")} w={100} h={150} gap={10} color={C.cream} />
-          <Lettering size={56} color={C.creamDim}>
+        <div style={{ position: "absolute", top: 86, width: "100%", display: "flex", flexDirection: "column", alignItems: "center", gap: 10, opacity: fade(frame, b.days - 6) }}>
+          <Plates text={String(days).padStart(3, " ")} w={90} h={136} gap={8} color={C.cream} />
+          <Lettering size={40} color={C.creamDim}>
             DAYS BETWEEN TESTS
           </Lettering>
         </div>
-        <div style={{ position: "absolute", bottom: 34, width: "100%", textAlign: "center", opacity: fade(frame, b.chennai - 4) }}>
-          <Lettering size={52} color={GREEN}>
-            COMEBACK TEST: 109 v BANGLADESH
+        <div style={{ position: "absolute", bottom: 28, width: "100%", textAlign: "center", opacity: fade(frame, b.chennai - 4) }}>
+          <Lettering size={40} color={GREEN}>
+            COMEBACK TEST: 109
           </Lettering>
         </div>
       </Panel>
+      <Framed src="pant-lookup.jpg" x={636} y={962} w={384} h={394} at={b.chennai - 14} position="38% 30%" />
     </SceneShell>
   );
 };
@@ -286,27 +276,28 @@ export const S5: React.FC = () => {
   return (
     <SceneShell push={0.015}>
       <Bar text="2025 · LEEDS & MANCHESTER" color={AMBER} />
-      <Panel x={60} y={346} w={960} h={560} delay={b.leeds - 6} seed={501} glow={C.amberGlow} glowOn={frame >= b.flower ? 0.7 : 0}>
-        <div style={{ position: "absolute", top: 28, width: "100%", textAlign: "center" }}>
-          <Lettering size={30} font="body" color={C.creamDim} spacing="0.22em">
-            HEADINGLEY · ENGLAND v INDIA
+      <Framed src="pant-heart.jpg" x={60} y={346} w={420} h={560} at={b.leeds - 8} position="50% 18%" />
+      <Panel x={496} y={346} w={524} h={560} delay={b.leeds - 6} seed={501} glow={C.amberGlow} glowOn={frame >= b.flower ? 0.7 : 0}>
+        <div style={{ position: "absolute", top: 26, width: "100%", textAlign: "center" }}>
+          <Lettering size={24} font="body" color={C.creamDim} spacing="0.2em">
+            HEADINGLEY · ENG v IND
           </Lettering>
         </div>
-        <div style={{ position: "absolute", top: 100, width: "100%", display: "flex", justifyContent: "center", gap: 90 }}>
+        <div style={{ position: "absolute", top: 76, width: "100%", display: "flex", flexDirection: "column", alignItems: "center", gap: 18 }}>
           {[
             { t: "134", l: "1ST INNINGS", f: flip1 },
             { t: "118", l: "2ND INNINGS", f: flip2 },
           ].map((x) => (
-            <div key={x.l} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 14 }}>
-              <Plates text={x.t} prev="   " progress={x.f} w={96} h={146} gap={8} color={AMBER} glow={C.amberGlow} />
-              <Lettering size={30} color={C.creamDim}>
+            <div key={x.l} style={{ display: "flex", alignItems: "center", gap: 20 }}>
+              <Plates text={x.t} prev="   " progress={x.f} w={78} h={118} gap={6} color={AMBER} glow={C.amberGlow} />
+              <Lettering size={28} color={C.creamDim}>
                 {x.l}
               </Lettering>
             </div>
           ))}
         </div>
-        <div style={{ position: "absolute", left: 0, right: 0, bottom: 40, display: "flex", justifyContent: "center" }}>
-          <Stamp text="ONLY ANDY FLOWER BEFORE HIM" at={b.flower - 4} color={AMBER} size={50} rotate={-3} />
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 30, display: "flex", justifyContent: "center" }}>
+          <Stamp text="ONLY ANDY FLOWER BEFORE" at={b.flower - 4} color={AMBER} size={40} rotate={-3} />
         </div>
       </Panel>
       <Panel x={60} y={922} w={960} h={434} delay={b.man - 6} seed={502}>
@@ -356,6 +347,9 @@ export const S6: React.FC = () => {
         {cols.map((c, i) => (
           <div key={c.k} style={{ position: "relative", width: 472, height: 330 }}>
             <Panel x={0} y={0} w={472} h={330} delay={c.at - 4} seed={601 + i} glow={C.amberGlow} glowOn={i === 1 && frame >= b.n86 ? 0.6 : 0}>
+              {i === 1 && (
+                <Img src={staticFile("photos/pant-flick.jpg")} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 25%", opacity: 0.22, filter: "grayscale(0.3)" }} />
+              )}
               <div style={{ position: "absolute", top: 24, width: "100%", textAlign: "center" }}>
                 <Lettering size={56} color={c.color}>
                   {c.k}
@@ -391,19 +385,20 @@ export const S6: React.FC = () => {
           </Lettering>
         </div>
       </Panel>
-      <Panel x={60} y={692} w={960} h={664} delay={b.lyon - 4} seed={604}>
+      <Framed src="pant-hit.jpg" x={60} y={692} w={400} h={664} at={b.lyon - 6} position="40% 20%" />
+      <Panel x={476} y={692} w={544} h={664} delay={b.lyon - 4} seed={604}>
         <div style={{ position: "absolute", top: 26, width: "100%", textAlign: "center" }}>
-          <Lettering size={48}>PANT v NATHAN LYON</Lettering>
+          <Lettering size={44}>PANT v NATHAN LYON</Lettering>
         </div>
-        <div style={{ position: "absolute", left: 40, right: 40, top: 110, display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
+        <div style={{ position: "absolute", left: 24, right: 24, top: 96, display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
           {[
             { v: "6", l: "DISMISSALS · MOST BY ANY BOWLER", at: b.six6 - 6, c: RED },
             { v: "404", l: "BALLS FACED", at: b.n258 - 10, c: C.cream },
             { v: "258", l: "RUNS", at: b.n258 - 4, c: AMBER },
             { v: "7", l: "SIXES", at: b.n258 + 20, c: AMBER },
           ].map((x) => (
-            <div key={x.l} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 8, padding: 16, borderRadius: 10, background: C.plate, opacity: fade(frame, x.at) }}>
-              <Lettering size={110} color={x.c}>
+            <div key={x.l} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 8, padding: "26px 8px", borderRadius: 10, background: C.plate, opacity: fade(frame, x.at) }}>
+              <Lettering size={100} color={x.c}>
                 {x.v}
               </Lettering>
               <Lettering size={18} font="body" color={C.creamDim} spacing="0.12em">
@@ -630,34 +625,35 @@ export const S9: React.FC = () => {
   return (
     <SceneShell push={0} pull={0.03} turnOut={false}>
       <Bar text="RISHABH PANT · TESTS" />
-      <Panel x={60} y={346} w={960} h={420} delay={b.nine - 8} seed={901} glow={C.amberGlow} glowOn={0.5}>
-        <div style={{ position: "absolute", top: 30, width: "100%", textAlign: "center" }}>
-          <Lettering size={24} font="body" color={C.creamDim} spacing="0.2em">
-            MOST TEST HUNDREDS BY AN INDIAN WICKETKEEPER
+      <Framed src="pant-portrait.jpg" x={60} y={346} w={400} h={606} at={b.nine - 10} position="50% 20%" />
+      <Panel x={476} y={346} w={544} h={420} delay={b.nine - 8} seed={901} glow={C.amberGlow} glowOn={0.5}>
+        <div style={{ position: "absolute", top: 26, left: 20, right: 20, textAlign: "center" }}>
+          <Lettering size={20} font="body" color={C.creamDim} spacing="0.14em">
+            MOST TEST HUNDREDS BY AN INDIAN KEEPER
           </Lettering>
         </div>
-        <div style={{ position: "absolute", top: 80, width: "100%", display: "flex", justifyContent: "center", gap: 10 }}>
+        <div style={{ position: "absolute", top: 70, left: 20, right: 20, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 8 }}>
           {Array.from({ length: 9 }).map((_, i) => (
             <div key={i} style={{ opacity: fade(frame, b.nine + 4 + i * 3, 4) }}>
-              <Ball size={70} lit={1} />
+              <Ball size={50} lit={1} />
             </div>
           ))}
         </div>
-        <div style={{ position: "absolute", top: 190, width: "100%", display: "flex", justifyContent: "center", alignItems: "baseline", gap: 26 }}>
-          <Lettering size={70} color={AMBER}>
+        <div style={{ position: "absolute", top: 196, width: "100%", display: "flex", justifyContent: "center", alignItems: "baseline", gap: 18 }}>
+          <Lettering size={66} color={AMBER}>
             PANT 9
           </Lettering>
-          <Lettering size={44} color={C.creamDim}>
+          <Lettering size={40} color={C.creamDim}>
             · DHONI 6
           </Lettering>
         </div>
         <div style={{ position: "absolute", bottom: 30, width: "100%", textAlign: "center", opacity: fade(frame, b.overseas - 4) }}>
-          <Lettering size={46}>7 OF THEM OVERSEAS</Lettering>
+          <Lettering size={42}>7 OF THEM OVERSEAS</Lettering>
         </div>
       </Panel>
-      <Panel x={60} y={782} w={960} h={170} delay={b.fix - 6} seed={902}>
+      <Panel x={476} y={782} w={544} h={170} delay={b.fix - 6} seed={902}>
         <div style={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <Lettering size={52} color={AMBER}>
+          <Lettering size={46} color={AMBER}>
             FIX THE NINETIES…
           </Lettering>
         </div>

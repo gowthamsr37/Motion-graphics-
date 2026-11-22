@@ -43,9 +43,17 @@ A 175-second Instagram Reel: 1080×1920, 30 fps, mastered to −14 LUFS, in the 
   - Andy Flower was the first keeper to score a hundred in each innings of a Test.
   - Dhoni's 6 Test hundreds.
 
-## Photo
+## Photos
 
-"Rishabh Pant batting for India against England", The Oval, 11 Sep 2018, by Ben Sutherland ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Rishabh_Pant_(29693622367).jpg). It is cropped.
+- **Supplied by the page (six photos):**
+  - raised bat: opening scene and cover
+  - helmet in hand, looking up: comeback scene
+  - hand on heart: Leeds scene
+  - big hit: the Lyon duel
+  - falling flick: faint background in the spin column
+  - studio portrait: verdict
+  - They were upscaled to 1080 px where smaller.
+- "Rishabh Pant batting for India against England", The Oval, 11 Sep 2018, by Ben Sutherland ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Rishabh_Pant_(29693622367).jpg). Cropped; used in the highs scene with its credit on screen.
 
 ## Sources for today's innings
 

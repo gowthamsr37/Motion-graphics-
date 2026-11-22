@@ -23,7 +23,7 @@ export const Cover: React.FC = () => (
       </div>
     </Panel>
     <div style={{ position: "absolute", left: 60, top: 570, width: 960, height: 560, padding: 10, boxSizing: "border-box", borderRadius: 10, background: `linear-gradient(180deg, ${C.panelHi}, ${C.board})`, boxShadow: `inset 0 0 0 2px ${C.panelEdge}` }}>
-      <Img src={staticFile("photos/pant-oval-2018.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "38% 60%", borderRadius: 4 }} />
+      <Img src={staticFile("photos/pant-raise-bat.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 16%", borderRadius: 4 }} />
     </div>
     <Panel x={60} y={1146} w={960} h={300} delay={-30} seed={902}>
       <div style={{ height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 20 }}>
