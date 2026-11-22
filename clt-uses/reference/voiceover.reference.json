@@ -1,0 +1,263 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Hook",
+   "lead": 0.45,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Same juice bottles, same score of minus two. The z-test says reject. The t-test says don't.",
+     "caption": "Same juice bottles, same score of -2. The z-test says reject. The t-test says don't.",
+     "pause": 0.4
+    },
+    {
+     "text": "So who's right? Here's z-test versus t-test, the complete comparison. Save this one!",
+     "caption": "So who's right? Here's z-test versus t-test, the complete comparison. Save this one!",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Textbook definitions",
+   "lead": 0.4,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Here are the textbook definitions.",
+     "caption": "Here are the textbook definitions.",
+     "pause": 0.3
+    },
+    {
+     "text": "A z-test compares a sample mean with a population mean, when the population standard deviation is known.",
+     "caption": "A z-test compares a sample mean with a population mean, when the population standard deviation is known.",
+     "pause": 0.35
+    },
+    {
+     "text": "A t-test does the same, when it's unknown and has to be estimated from the sample.",
+     "caption": "A t-test does the same, when it's unknown and has to be estimated from the sample.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "One letter of difference",
+   "lead": 0.4,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "The formulas differ by one letter.",
+     "caption": "The formulas differ by one letter.",
+     "pause": 0.3
+    },
+    {
+     "text": "z divides by sigma, the true population spread. t divides by s, the spread estimated from the sample.",
+     "caption": "z divides by sigma, the true population spread. t divides by s, the spread estimated from the sample.",
+     "pause": 0.35
+    },
+    {
+     "text": "An estimate adds extra uncertainty, especially when the sample is small.",
+     "caption": "An estimate adds extra uncertainty, especially when the sample is small.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Fatter tails",
+   "lead": 0.4,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "That's why the t curve has fatter tails.",
+     "caption": "That's why the t curve has fatter tails.",
+     "pause": 0.3
+    },
+    {
+     "text": "With two degrees of freedom, the tails are very fat. With five, thinner. By thirty, t is almost the normal curve.",
+     "caption": "With 2 degrees of freedom, the tails are very fat. With 5, thinner. By 30, t is almost the normal curve.",
+     "pause": 0.35
+    },
+    {
+     "text": "Degrees of freedom, n minus one, tell you which t curve to use.",
+     "caption": "Degrees of freedom, n - 1, tell you which t curve to use.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "The cut-off ladder",
+   "lead": 0.4,
+   "hold": 0.6,
+   "segments": [
+    {
+     "text": "Now watch the five percent cut-off shrink as the sample grows.",
+     "caption": "Now watch the 5% cut-off shrink as the sample grows.",
+     "pause": 0.3
+    },
+    {
+     "text": "Five degrees of freedom: two point five seven one. Ten: two point two two eight. Thirty: two point zero four two. Sixty: exactly two. A hundred: one point nine eight four.",
+     "caption": "5 degrees of freedom: 2.571. 10: 2.228. 30: 2.042. 60: exactly 2. 100: 1.984.",
+     "pause": 0.35
+    },
+    {
+     "text": "And with infinite data: one point nine six. The z value. t becomes z.",
+     "caption": "And with infinite data: 1.96. The z value. t becomes z.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Who's right?",
+   "lead": 0.4,
+   "hold": 0.6,
+   "segments": [
+    {
+     "text": "Back to our puzzle. A score of minus two only beats the t cut-off with more than sixty degrees of freedom.",
+     "caption": "Back to our puzzle. A score of -2 only beats the t cut-off with more than 60 degrees of freedom.",
+     "pause": 0.35
+    },
+    {
+     "text": "Nine bottles: fail to reject. A hundred bottles: reject. Both tests were right, for what they knew.",
+     "caption": "9 bottles: fail to reject. 100 bottles: reject. Both tests were right, for what they knew.",
+     "pause": 0.35
+    },
+    {
+     "text": "The t-test wasn't wrong. It was more careful, because nine bottles can't pin down the spread.",
+     "caption": "The t-test wasn't wrong. It was more careful, because 9 bottles can't pin down the spread.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "Which one to use",
+   "lead": 0.4,
+   "hold": 0.5,
+   "segments": [
+    {
+     "text": "So which one should you use? Ask one question: do you know sigma?",
+     "caption": "So which one should you use? Ask one question: do you know sigma?",
+     "pause": 0.35
+    },
+    {
+     "text": "Yes: z-test. No: t-test, at any sample size. And with a big sample, the two give almost the same answer.",
+     "caption": "Yes: z-test. No: t-test, at any sample size. And with a big sample, the two give almost the same answer.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Interview trap",
+   "lead": 0.4,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Interview trap: use z when n is over thirty. That's a rule of thumb, not the definition.",
+     "caption": "Interview trap: use z when n is over 30. That's a rule of thumb, not the definition.",
+     "pause": 0.35
+    },
+    {
+     "text": "The real question is whether you know sigma. In practice, you rarely do, so t is the default.",
+     "caption": "The real question is whether you know sigma. In practice, you rarely do, so t is the default.",
+     "pause": 0.35
+    },
+    {
+     "text": "And with a big sample, s gets very close to sigma. That's why z works as an approximation there.",
+     "caption": "And with a big sample, s gets very close to sigma. That's why z works as an approximation there.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "Where z really lives",
+   "lead": 0.4,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "So where is the z-test really used? Proportions.",
+     "caption": "So where is the z-test really used? Proportions.",
+     "pause": 0.3
+    },
+    {
+     "text": "In an A-B test, or a poll, the spread comes from the proportion itself, so we use z. Ten percent versus twelve percent conversion? That's a z-test.",
+     "caption": "In an A/B test, or a poll, the spread comes from the proportion itself, so we use z. 10% versus 12% conversion? That's a z-test.",
+     "pause": 0.35
+    },
+    {
+     "text": "Its standard error is the square root of p times one minus p, over n. No sigma needed.",
+     "caption": "Its standard error is the square root of p times 1 - p, over n. No sigma needed.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "title": "Confidence intervals too",
+   "lead": 0.4,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "The same cut-offs build confidence intervals: plus or minus one point nine six with z, plus or minus the t value with t.",
+     "caption": "The same cut-offs build confidence intervals: ±1.96 with z, ±the t value with t.",
+     "pause": 0.35
+    },
+    {
+     "text": "That's why a small-sample t interval is always a little wider.",
+     "caption": "That's why a small-sample t interval is always a little wider.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "title": "The comparison table",
+   "lead": 0.4,
+   "hold": 4.0,
+   "segments": [
+    {
+     "text": "Here's the full comparison.",
+     "caption": "Here's the full comparison.",
+     "pause": 0.3
+    },
+    {
+     "text": "Screenshot it, save it, and send it to a friend preparing for interviews.",
+     "caption": "Screenshot it, save it, and send it to a friend preparing for interviews.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s12",
+   "title": "Poll, teaser and CTA",
+   "lead": 0.35,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Your turn: sigma is unknown, and n is two hundred. z or t? Vote in the caption poll!",
+     "caption": "Your turn: sigma is unknown, and n is 200. z or t? Vote in the caption poll!",
+     "pause": 0.3
+    },
+    {
+     "text": "Next: comparing three or more groups. ANOVA.",
+     "caption": "Next: comparing three or more groups. ANOVA.",
+     "pause": 0.3
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.3
+    }
+   ]
+  }
+ ]
+}
