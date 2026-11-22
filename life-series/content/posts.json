@@ -1,0 +1,10082 @@
+[
+ {
+  "id": "001",
+  "format": "pile",
+  "topic": "fitness",
+  "title": "Getting in shape:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "Everyone wants the result.",
+   "Nobody sees the *1,240 skipped workouts* before it."
+  ],
+  "pile": {
+   "unit": "skipped workouts",
+   "count": 1240,
+   "winWord": "Nailed it!"
+  }
+ },
+ {
+  "id": "002",
+  "format": "squiggle",
+  "topic": "running",
+  "title": "Becoming a runner:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "The mess *is* the path.",
+   "Keep drawing the line."
+  ],
+  "squiggle": {
+   "goal": "Marathon",
+   "setbacks": [
+    "Shin splints",
+    "Out of breath",
+    "Rainy months",
+    "Missed race",
+    "Felt too slow",
+    "Restarted"
+   ]
+  }
+ },
+ {
+  "id": "003",
+  "format": "iceberg",
+  "topic": "weight loss",
+  "title": "What weight loss really takes:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "Overnight success?",
+   "It took *years* of nights."
+  ],
+  "iceberg": {
+   "see": "Lost 20 kg",
+   "hidden": [
+    "Said no to dessert",
+    "Cooked every meal",
+    "Daily walks",
+    "Scale didn't move",
+    "Tracked every bite",
+    "18 months of patience"
+   ]
+  }
+ },
+ {
+  "id": "004",
+  "format": "compound",
+  "topic": "writing",
+  "title": "1% better every day:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Nothing changes on day 1.",
+   "Everything changes by *day 365*."
+  ],
+  "compound": {
+   "habit": "Write 300 words a day",
+   "perDay": 300,
+   "unit": "words",
+   "unitOne": "word"
+  }
+ },
+ {
+  "id": "005",
+  "format": "valley",
+  "topic": "drawing",
+  "title": "Getting good at drawing takes time:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "The curve always bends.",
+   "*Stay* for it."
+  ],
+  "valley": {
+   "quit": "month 4: still bad",
+   "win": "Dream commission"
+  }
+ },
+ {
+  "id": "006",
+  "format": "bamboo",
+  "topic": "guitar",
+  "title": "Why guitar feels slow:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Be patient.",
+   "*Year 5* is coming."
+  ],
+  "bamboo": {
+   "years": [
+    "3 chords",
+    "First full song",
+    "Learning solos",
+    "Open mic"
+   ],
+   "win": "First gig"
+  }
+ },
+ {
+  "id": "007",
+  "format": "domino",
+  "topic": "singing",
+  "title": "Finding your voice starts small:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "Don't chase the big domino.",
+   "Push the *small* one."
+  ],
+  "domino": {
+   "steps": [
+    "Hum a song",
+    "Do warm-ups",
+    "Record yourself",
+    "Take a lesson",
+    "Sing for friends",
+    "A singer"
+   ]
+  }
+ },
+ {
+  "id": "008",
+  "format": "pile",
+  "topic": "coding",
+  "title": "Learning to code:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Miss. Miss. Miss.",
+   "*Then* it goes in."
+  ],
+  "pile": {
+   "unit": "error messages",
+   "count": 4120,
+   "winWord": "Finally!"
+  }
+ },
+ {
+  "id": "009",
+  "format": "squiggle",
+  "topic": "business",
+  "title": "Starting a business:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "You're not lost.",
+   "You're in *the loops*."
+  ],
+  "squiggle": {
+   "goal": "Profitable",
+   "setbacks": [
+    "No customers",
+    "Ran out of cash",
+    "Co-founder left",
+    "Product flopped",
+    "Burnout",
+    "Started over"
+   ]
+  }
+ },
+ {
+  "id": "010",
+  "format": "iceberg",
+  "topic": "saving money",
+  "title": "What saving money really takes:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Don't compare your start",
+   "to someone's *tip of the iceberg*."
+  ],
+  "iceberg": {
+   "see": "Paid-off house",
+   "hidden": [
+    "Cooking at home",
+    "Old phone for years",
+    "No fancy holidays",
+    "Budget spreadsheets",
+    "Saying no to friends",
+    "20 years of saving"
+   ]
+  }
+ },
+ {
+  "id": "011",
+  "format": "compound",
+  "topic": "investing",
+  "title": "The power of tiny habits:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "Tiny habits.",
+   "*Massive* results."
+  ],
+  "compound": {
+   "habit": "Invest $10 a day",
+   "perDay": 10,
+   "unit": "dollars",
+   "unitOne": "dollar"
+  }
+ },
+ {
+  "id": "012",
+  "format": "valley",
+  "topic": "languages",
+  "title": "Learning a language takes time:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Your breakthrough is",
+   "*further up the curve*."
+  ],
+  "valley": {
+   "quit": "month 2: can't follow",
+   "win": "Dreaming in it"
+  }
+ },
+ {
+  "id": "013",
+  "format": "bamboo",
+  "topic": "public speaking",
+  "title": "Why public speaking feels slow:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "Roots first.",
+   "*Then* growth."
+  ],
+  "bamboo": {
+   "years": [
+    "Team meeting",
+    "Shaky first talk",
+    "Small conference",
+    "Main stage"
+   ],
+   "win": "Standing ovation"
+  }
+ },
+ {
+  "id": "014",
+  "format": "domino",
+  "topic": "reading",
+  "title": "Reading more starts small:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Big changes start",
+   "*embarrassingly small*."
+  ],
+  "domino": {
+   "steps": [
+    "Read one page",
+    "Read before bed",
+    "Swap scrolling",
+    "Finish a book",
+    "Think deeper",
+    "A new mind"
+   ]
+  }
+ },
+ {
+  "id": "015",
+  "format": "pile",
+  "topic": "meditation",
+  "title": "Learning to meditate:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "The pile is the *proof*.",
+   "Keep throwing."
+  ],
+  "pile": {
+   "unit": "distracted minutes",
+   "count": 5400,
+   "winWord": "Yes!!"
+  }
+ },
+ {
+  "id": "016",
+  "format": "squiggle",
+  "topic": "confidence",
+  "title": "Becoming confident:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Success is a *scribble*.",
+   "Keep your pen moving."
+  ],
+  "squiggle": {
+   "goal": "Confident",
+   "setbacks": [
+    "Got rejected",
+    "Said dumb stuff",
+    "Froze",
+    "Compared myself",
+    "Hid away",
+    "Tried again"
+   ]
+  }
+ },
+ {
+  "id": "017",
+  "format": "iceberg",
+  "topic": "photography",
+  "title": "What photography really takes:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "The work nobody sees",
+   "is *the work that counts*."
+  ],
+  "iceberg": {
+   "see": "Perfect photo",
+   "hidden": [
+    "Sunrise wake-ups",
+    "Thousands of deletes",
+    "Learning light",
+    "Free shoots",
+    "Editing all night",
+    "100,000 photos"
+   ]
+  }
+ },
+ {
+  "id": "018",
+  "format": "compound",
+  "topic": "cooking",
+  "title": "Small habits, big results:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "You don't need more time.",
+   "You need *a little, daily*."
+  ],
+  "compound": {
+   "habit": "Cook 1 new recipe a day",
+   "perDay": 1,
+   "unit": "recipes",
+   "unitOne": "recipe"
+  }
+ },
+ {
+  "id": "019",
+  "format": "valley",
+  "topic": "content creation",
+  "title": "Growing on social media takes time:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "The results are *coming*.",
+   "Don't quit in the valley."
+  ],
+  "valley": {
+   "quit": "post 40: 12 views",
+   "win": "1M views"
+  }
+ },
+ {
+  "id": "020",
+  "format": "bamboo",
+  "topic": "dancing",
+  "title": "Why dancing feels slow:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Nothing happening?",
+   "Your roots are *growing*."
+  ],
+  "bamboo": {
+   "years": [
+    "Two left feet",
+    "Basic steps",
+    "First routine",
+    "Joined a crew"
+   ],
+   "win": "First show"
+  }
+ },
+ {
+  "id": "021",
+  "format": "domino",
+  "topic": "studying",
+  "title": "Getting top grades starts small:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "One small habit",
+   "can change *everything*."
+  ],
+  "domino": {
+   "steps": [
+    "Open the book",
+    "Study 20 minutes",
+    "Make a schedule",
+    "Do past papers",
+    "Ace the exam",
+    "Dream college"
+   ]
+  }
+ },
+ {
+  "id": "022",
+  "format": "pile",
+  "topic": "job hunting",
+  "title": "Landing your dream job:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "They'll see one shot.",
+   "You'll know about *the 287*."
+  ],
+  "pile": {
+   "unit": "job applications",
+   "count": 287,
+   "winWord": "Got it!"
+  }
+ },
+ {
+  "id": "023",
+  "format": "squiggle",
+  "topic": "waking early",
+  "title": "Waking up early:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "They show the arrow.",
+   "Nobody shows *the scribble*."
+  ],
+  "squiggle": {
+   "goal": "5am club",
+   "setbacks": [
+    "Hit snooze",
+    "Stayed up late",
+    "Felt awful",
+    "Overslept",
+    "Weekend reset",
+    "Woke up anyway"
+   ]
+  }
+ },
+ {
+  "id": "024",
+  "format": "iceberg",
+  "topic": "quitting smoking",
+  "title": "What quitting smoking really takes:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Everyone admires the tip.",
+   "Respect *what's underneath*."
+  ],
+  "iceberg": {
+   "see": "Smoke-free",
+   "hidden": [
+    "Brutal cravings",
+    "Relapses",
+    "Mood swings",
+    "Avoiding old spots",
+    "Chewing gum, always",
+    "Years of trying"
+   ]
+  }
+ },
+ {
+  "id": "025",
+  "format": "compound",
+  "topic": "heartbreak",
+  "title": "1% better every day:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "*1%* a day.",
+   "That's all it takes."
+  ],
+  "compound": {
+   "habit": "Do 1 kind thing for you a day",
+   "perDay": 1,
+   "unit": "kind things",
+   "unitOne": "kind thing"
+  }
+ },
+ {
+  "id": "026",
+  "format": "valley",
+  "topic": "friendship",
+  "title": "Making real friends takes time:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Progress feels like nothing",
+   "until it's *everything*."
+  ],
+  "valley": {
+   "quit": "plans cancelled again",
+   "win": "Your people"
+  }
+ },
+ {
+  "id": "027",
+  "format": "bamboo",
+  "topic": "chess",
+  "title": "Why chess feels slow:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "Overnight success",
+   "takes *years* underground."
+  ],
+  "bamboo": {
+   "years": [
+    "Rating 600",
+    "Rating 900",
+    "Stuck at 1100",
+    "Rating 1500"
+   ],
+   "win": "Beat the master"
+  }
+ },
+ {
+  "id": "028",
+  "format": "domino",
+  "topic": "swimming",
+  "title": "Conquering the water starts small:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Start with domino one.",
+   "*The rest will follow.*"
+  ],
+  "domino": {
+   "steps": [
+    "Get in the pool",
+    "Float",
+    "Kick",
+    "Swim one lap",
+    "Swim daily",
+    "A swimmer"
+   ]
+  }
+ },
+ {
+  "id": "029",
+  "format": "pile",
+  "topic": "yoga",
+  "title": "Getting flexible:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "Every miss is a step",
+   "*towards the hit*."
+  ],
+  "pile": {
+   "unit": "wobbly poses",
+   "count": 1300,
+   "winWord": "Made it!"
+  }
+ },
+ {
+  "id": "030",
+  "format": "squiggle",
+  "topic": "piano",
+  "title": "Becoming a pianist:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Setbacks aren't detours.",
+   "They're *the road*."
+  ],
+  "squiggle": {
+   "goal": "Concert",
+   "setbacks": [
+    "Wrong notes",
+    "Slow hands",
+    "Lost focus",
+    "Recital nerves",
+    "Too hard",
+    "Played again"
+   ]
+  }
+ },
+ {
+  "id": "031",
+  "format": "iceberg",
+  "topic": "design",
+  "title": "What design really takes:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "They see *Dream portfolio*.",
+   "They don't see the cost."
+  ],
+  "iceberg": {
+   "see": "Dream portfolio",
+   "hidden": [
+    "Revision 14",
+    "Clients saying no",
+    "Studying great work",
+    "Free projects",
+    "Learning the tools",
+    "Years of bad designs"
+   ]
+  }
+ },
+ {
+  "id": "032",
+  "format": "compound",
+  "topic": "sales",
+  "title": "The power of tiny habits:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Small steps, *every day*.",
+   "They add up faster than you think."
+  ],
+  "compound": {
+   "habit": "Make 20 calls a day",
+   "perDay": 20,
+   "unit": "calls",
+   "unitOne": "call"
+  }
+ },
+ {
+  "id": "033",
+  "format": "valley",
+  "topic": "career",
+  "title": "Getting promoted takes time:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "Most people quit",
+   "*right before* it works."
+  ],
+  "valley": {
+   "quit": "passed over again",
+   "win": "Promoted"
+  }
+ },
+ {
+  "id": "034",
+  "format": "bamboo",
+  "topic": "freelancing",
+  "title": "Why freelancing feels slow:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Keep watering it.",
+   "*It's growing.*"
+  ],
+  "bamboo": {
+   "years": [
+    "1 client",
+    "Dry spells",
+    "Steady work",
+    "Turning work down"
+   ],
+   "win": "Fully booked"
+  }
+ },
+ {
+  "id": "035",
+  "format": "domino",
+  "topic": "app building",
+  "title": "Launching an app starts small:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "You don't need a big leap.",
+   "Just *the first push*."
+  ],
+  "domino": {
+   "steps": [
+    "Sketch the idea",
+    "Build a prototype",
+    "Show 10 people",
+    "Launch",
+    "Listen and fix",
+    "A real product"
+   ]
+  }
+ },
+ {
+  "id": "036",
+  "format": "pile",
+  "topic": "debt",
+  "title": "Getting out of debt:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Nobody gets it first try.",
+   "*Keep throwing.*"
+  ],
+  "pile": {
+   "unit": "payments made",
+   "count": 60,
+   "winWord": "Nailed it!"
+  }
+ },
+ {
+  "id": "037",
+  "format": "squiggle",
+  "topic": "maths",
+  "title": "Beating maths fear:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "Nobody's path is *straight*.",
+   "Don't quit in the loops."
+  ],
+  "squiggle": {
+   "goal": "Top marks",
+   "setbacks": [
+    "Didn't get it",
+    "Failed a test",
+    "Too embarrassed",
+    "Forgot formulas",
+    "Gave up",
+    "Asked for help"
+   ]
+  }
+ },
+ {
+  "id": "038",
+  "format": "iceberg",
+  "topic": "medicine",
+  "title": "What medicine really takes:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Success is an *iceberg*.",
+   "Most of it is underwater."
+  ],
+  "iceberg": {
+   "see": "Dr. on the door",
+   "hidden": [
+    "40,000 flashcards",
+    "Night shifts",
+    "Missed weddings",
+    "Failed exams",
+    "Student loans",
+    "10 years of training"
+   ]
+  }
+ },
+ {
+  "id": "039",
+  "format": "compound",
+  "topic": "teaching",
+  "title": "Small habits, big results:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "Don't wait for big changes.",
+   "Make *tiny* ones daily."
+  ],
+  "compound": {
+   "habit": "Plan 1 lesson a day",
+   "perDay": 1,
+   "unit": "lessons",
+   "unitOne": "lesson"
+  }
+ },
+ {
+  "id": "040",
+  "format": "valley",
+  "topic": "mental health",
+  "title": "Healing your mind takes time:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Feeling stuck?",
+   "You might be *almost there*."
+  ],
+  "valley": {
+   "quit": "relapse: felt like failing",
+   "win": "Good days again"
+  }
+ },
+ {
+  "id": "041",
+  "format": "bamboo",
+  "topic": "discipline",
+  "title": "Why discipline feels slow:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "What looks like nothing",
+   "is *building something*."
+  ],
+  "bamboo": {
+   "years": [
+    "Starting, quitting",
+    "Starting again",
+    "Longer streaks",
+    "It's who you are"
+   ],
+   "win": "Unstoppable"
+  }
+ },
+ {
+  "id": "042",
+  "format": "domino",
+  "topic": "gardening",
+  "title": "Growing your own food starts small:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Small today.",
+   "*Life-changing* tomorrow."
+  ],
+  "domino": {
+   "steps": [
+    "Plant one seed",
+    "Water it",
+    "Plant more",
+    "Learn the soil",
+    "Harvest",
+    "A garden"
+   ]
+  }
+ },
+ {
+  "id": "043",
+  "format": "pile",
+  "topic": "martial arts",
+  "title": "Learning martial arts:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "Everyone wants the result.",
+   "Nobody sees the *2,600 times knocked down* before it."
+  ],
+  "pile": {
+   "unit": "times knocked down",
+   "count": 2600,
+   "winWord": "Finally!"
+  }
+ },
+ {
+  "id": "044",
+  "format": "squiggle",
+  "topic": "cycling",
+  "title": "Becoming a cyclist:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "The mess *is* the path.",
+   "Keep drawing the line."
+  ],
+  "squiggle": {
+   "goal": "Century ride",
+   "setbacks": [
+    "Flat tyre",
+    "Hill defeated me",
+    "Fell off",
+    "Rainy months",
+    "Sore legs",
+    "Rode again"
+   ]
+  }
+ },
+ {
+  "id": "045",
+  "format": "iceberg",
+  "topic": "climbing",
+  "title": "What climbing really takes:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "Overnight success?",
+   "It took *years* of nights."
+  ],
+  "iceberg": {
+   "see": "Summit photo",
+   "hidden": [
+    "Torn hands",
+    "Endless falls",
+    "Finger training",
+    "Fear of heights",
+    "Failed attempts",
+    "Years on the wall"
+   ]
+  }
+ },
+ {
+  "id": "046",
+  "format": "compound",
+  "topic": "football",
+  "title": "1% better every day:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Nothing changes on day 1.",
+   "Everything changes by *day 365*."
+  ],
+  "compound": {
+   "habit": "Do 100 touches a day",
+   "perDay": 100,
+   "unit": "touches",
+   "unitOne": "touche"
+  }
+ },
+ {
+  "id": "047",
+  "format": "valley",
+  "topic": "tennis",
+  "title": "Learning tennis takes time:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "The curve always bends.",
+   "*Stay* for it."
+  ],
+  "valley": {
+   "quit": "lost 6-0, 6-0",
+   "win": "Tournament win"
+  }
+ },
+ {
+  "id": "048",
+  "format": "bamboo",
+  "topic": "boxing",
+  "title": "Why boxing feels slow:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Be patient.",
+   "*Year 5* is coming."
+  ],
+  "bamboo": {
+   "years": [
+    "Gassed in 1 round",
+    "Sparring",
+    "First fight",
+    "First win"
+   ],
+   "win": "Champion"
+  }
+ },
+ {
+  "id": "049",
+  "format": "domino",
+  "topic": "podcasting",
+  "title": "Growing a podcast starts small:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "Don't chase the big domino.",
+   "Push the *small* one."
+  ],
+  "domino": {
+   "steps": [
+    "Hit record",
+    "Publish one",
+    "Publish weekly",
+    "Find your voice",
+    "Grow",
+    "A podcast"
+   ]
+  }
+ },
+ {
+  "id": "050",
+  "format": "pile",
+  "topic": "acting",
+  "title": "Becoming an actor:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Miss. Miss. Miss.",
+   "*Then* it goes in."
+  ],
+  "pile": {
+   "unit": "failed auditions",
+   "count": 412,
+   "winWord": "Yes!!"
+  }
+ },
+ {
+  "id": "051",
+  "format": "squiggle",
+  "topic": "comedy",
+  "title": "Becoming a comedian:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "You're not lost.",
+   "You're in *the loops*."
+  ],
+  "squiggle": {
+   "goal": "Headliner",
+   "setbacks": [
+    "Total silence",
+    "Got heckled",
+    "Bombed",
+    "Forgot the set",
+    "Booed",
+    "Went up again"
+   ]
+  }
+ },
+ {
+  "id": "052",
+  "format": "iceberg",
+  "topic": "novel writing",
+  "title": "What novel writing really takes:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Don't compare your start",
+   "to someone's *tip of the iceberg*."
+  ],
+  "iceberg": {
+   "see": "Finished novel",
+   "hidden": [
+    "46 deleted chapters",
+    "Plot holes",
+    "Early mornings",
+    "Harsh beta readers",
+    "Three rewrites",
+    "5 years"
+   ]
+  }
+ },
+ {
+  "id": "053",
+  "format": "compound",
+  "topic": "driving",
+  "title": "The power of tiny habits:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "Tiny habits.",
+   "*Massive* results."
+  ],
+  "compound": {
+   "habit": "Drive 30 minutes a day",
+   "perDay": 30,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "054",
+  "format": "valley",
+  "topic": "video editing",
+  "title": "Learning video editing takes time:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Your breakthrough is",
+   "*further up the curve*."
+  ],
+  "valley": {
+   "quit": "lost the whole project",
+   "win": "Hired editor"
+  }
+ },
+ {
+  "id": "055",
+  "format": "bamboo",
+  "topic": "data science",
+  "title": "Why data science feels slow:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "Roots first.",
+   "*Then* growth."
+  ],
+  "bamboo": {
+   "years": [
+    "Python basics",
+    "Statistics pain",
+    "First model",
+    "First job"
+   ],
+   "win": "Hired"
+  }
+ },
+ {
+  "id": "056",
+  "format": "domino",
+  "topic": "university",
+  "title": "Chasing your dream school starts small:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Big changes start",
+   "*embarrassingly small*."
+  ],
+  "domino": {
+   "steps": [
+    "Pick a goal",
+    "Study daily",
+    "Raise your grades",
+    "Write the essay",
+    "Apply",
+    "Dream school"
+   ]
+  }
+ },
+ {
+  "id": "057",
+  "format": "pile",
+  "topic": "minimalism",
+  "title": "Living with less:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "The pile is the *proof*.",
+   "Keep throwing."
+  ],
+  "pile": {
+   "unit": "things given away",
+   "count": 1200,
+   "winWord": "Got it!"
+  }
+ },
+ {
+  "id": "058",
+  "format": "squiggle",
+  "topic": "journaling",
+  "title": "Knowing yourself:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Success is a *scribble*.",
+   "Keep your pen moving."
+  ],
+  "squiggle": {
+   "goal": "Self-aware",
+   "setbacks": [
+    "Nothing to say",
+    "Forgot a week",
+    "Felt silly",
+    "Too tired",
+    "Lost notebook",
+    "Wrote again"
+   ]
+  }
+ },
+ {
+  "id": "059",
+  "format": "iceberg",
+  "topic": "gratitude",
+  "title": "What gratitude really takes:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "The work nobody sees",
+   "is *the work that counts*."
+  ],
+  "iceberg": {
+   "see": "Happy person",
+   "hidden": [
+    "Writing 3 things daily",
+    "Hard days too",
+    "Thank-you notes",
+    "Noticing small stuff",
+    "Fighting negativity",
+    "1,000 entries"
+   ]
+  }
+ },
+ {
+  "id": "060",
+  "format": "compound",
+  "topic": "healthy eating",
+  "title": "Small habits, big results:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "You don't need more time.",
+   "You need *a little, daily*."
+  ],
+  "compound": {
+   "habit": "Eat 5 portions of veg a day",
+   "perDay": 5,
+   "unit": "portions",
+   "unitOne": "portion"
+  }
+ },
+ {
+  "id": "061",
+  "format": "valley",
+  "topic": "phone detox",
+  "title": "Breaking phone addiction takes time:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "The results are *coming*.",
+   "Don't quit in the valley."
+  ],
+  "valley": {
+   "quit": "day 3: reinstalled",
+   "win": "Time back"
+  }
+ },
+ {
+  "id": "062",
+  "format": "bamboo",
+  "topic": "sleep",
+  "title": "Why sleep feels slow:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Nothing happening?",
+   "Your roots are *growing*."
+  ],
+  "bamboo": {
+   "years": [
+    "4 hours a night",
+    "Sometimes 6",
+    "Usually 7",
+    "8, easily"
+   ],
+   "win": "8 hours"
+  }
+ },
+ {
+  "id": "063",
+  "format": "domino",
+  "topic": "patience",
+  "title": "Trusting the process starts small:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "One small habit",
+   "can change *everything*."
+  ],
+  "domino": {
+   "steps": [
+    "Start",
+    "Show up",
+    "Show up again",
+    "No results yet",
+    "Keep going",
+    "It works"
+   ]
+  }
+ },
+ {
+  "id": "064",
+  "format": "pile",
+  "topic": "self-love",
+  "title": "Learning to love yourself:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "They'll see one shot.",
+   "You'll know about *the 3,000*."
+  ],
+  "pile": {
+   "unit": "harsh thoughts caught",
+   "count": 3000,
+   "winWord": "Made it!"
+  }
+ },
+ {
+  "id": "065",
+  "format": "squiggle",
+  "topic": "parenting",
+  "title": "Raising kind kids:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "They show the arrow.",
+   "Nobody shows *the scribble*."
+  ],
+  "squiggle": {
+   "goal": "Kind kids",
+   "setbacks": [
+    "Lost my temper",
+    "Sleepless nights",
+    "Tantrum in shop",
+    "Felt I failed",
+    "Parent guilt",
+    "Tried again"
+   ]
+  }
+ },
+ {
+  "id": "066",
+  "format": "iceberg",
+  "topic": "marriage",
+  "title": "What marriage really takes:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Everyone admires the tip.",
+   "Respect *what's underneath*."
+  ],
+  "iceberg": {
+   "see": "Perfect couple",
+   "hidden": [
+    "Saying sorry first",
+    "Hard conversations",
+    "Date nights",
+    "Forgiving",
+    "Listening",
+    "Choosing each other"
+   ]
+  }
+ },
+ {
+  "id": "067",
+  "format": "compound",
+  "topic": "forgiveness",
+  "title": "1% better every day:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "*1%* a day.",
+   "That's all it takes."
+  ],
+  "compound": {
+   "habit": "Let go of 1 grudge a day",
+   "perDay": 1,
+   "unit": "grudges",
+   "unitOne": "grudge"
+  }
+ },
+ {
+  "id": "068",
+  "format": "valley",
+  "topic": "art career",
+  "title": "Selling your art takes time:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Progress feels like nothing",
+   "until it's *everything*."
+  ],
+  "valley": {
+   "quit": "market day: zero sales",
+   "win": "Full-time artist"
+  }
+ },
+ {
+  "id": "069",
+  "format": "bamboo",
+  "topic": "basketball",
+  "title": "Why basketball feels slow:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "Overnight success",
+   "takes *years* underground."
+  ],
+  "bamboo": {
+   "years": [
+    "Cut",
+    "JV bench",
+    "Starting JV",
+    "Varsity"
+   ],
+   "win": "Game winner"
+  }
+ },
+ {
+  "id": "070",
+  "format": "domino",
+  "topic": "skateboarding",
+  "title": "Landing your first trick starts small:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Start with domino one.",
+   "*The rest will follow.*"
+  ],
+  "domino": {
+   "steps": [
+    "Stand on the board",
+    "Push",
+    "Ollie",
+    "Fall a lot",
+    "Land it",
+    "A skater"
+   ]
+  }
+ },
+ {
+  "id": "071",
+  "format": "pile",
+  "topic": "kindness",
+  "title": "Becoming kinder:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "Every miss is a step",
+   "*towards the hit*."
+  ],
+  "pile": {
+   "unit": "small kind acts",
+   "count": 1000,
+   "winWord": "Nailed it!"
+  }
+ },
+ {
+  "id": "072",
+  "format": "squiggle",
+  "topic": "starting over",
+  "title": "Rebuilding your life:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Setbacks aren't detours.",
+   "They're *the road*."
+  ],
+  "squiggle": {
+   "goal": "New life",
+   "setbacks": [
+    "Lost everything",
+    "Moved cities",
+    "Doubted it",
+    "Lonely",
+    "Money tight",
+    "Kept building"
+   ]
+  }
+ },
+ {
+  "id": "073",
+  "format": "squiggle",
+  "topic": "fitness",
+  "title": "Getting fit:",
+  "music": 5,
+  "accent": 2,
+  "end": [
+   "Setbacks aren't detours.",
+   "They're *the road*."
+  ],
+  "squiggle": {
+   "goal": "Fit & strong",
+   "setbacks": [
+    "Sore for days",
+    "Plateaued",
+    "Injured knee",
+    "Lost motivation",
+    "Fell off diet",
+    "Started over"
+   ]
+  }
+ },
+ {
+  "id": "074",
+  "format": "iceberg",
+  "topic": "running",
+  "title": "What running really takes:",
+  "music": 4,
+  "accent": 3,
+  "end": [
+   "They see *Marathon medal*.",
+   "They don't see the cost."
+  ],
+  "iceberg": {
+   "see": "Marathon medal",
+   "hidden": [
+    "Runs in the rain",
+    "Blisters",
+    "Early alarms",
+    "Ice baths",
+    "Slow recovery runs",
+    "1,500 km of training"
+   ]
+  }
+ },
+ {
+  "id": "075",
+  "format": "compound",
+  "topic": "weight loss",
+  "title": "The power of tiny habits:",
+  "music": 3,
+  "accent": 4,
+  "end": [
+   "Small steps, *every day*.",
+   "They add up faster than you think."
+  ],
+  "compound": {
+   "habit": "Walk 8,000 steps a day",
+   "perDay": 8000,
+   "unit": "steps",
+   "unitOne": "step"
+  }
+ },
+ {
+  "id": "076",
+  "format": "valley",
+  "topic": "writing",
+  "title": "Getting good at writing takes time:",
+  "music": 2,
+  "accent": 5,
+  "end": [
+   "Most people quit",
+   "*right before* it works."
+  ],
+  "valley": {
+   "quit": "rejection number 30",
+   "win": "Book deal"
+  }
+ },
+ {
+  "id": "077",
+  "format": "bamboo",
+  "topic": "drawing",
+  "title": "Why drawing feels slow:",
+  "music": 1,
+  "accent": 0,
+  "end": [
+   "Keep watering it.",
+   "*It's growing.*"
+  ],
+  "bamboo": {
+   "years": [
+    "Stick figures",
+    "Wonky faces",
+    "Getting there",
+    "First fan"
+   ],
+   "win": "Dream commission"
+  }
+ },
+ {
+  "id": "078",
+  "format": "domino",
+  "topic": "guitar",
+  "title": "Becoming a musician starts small:",
+  "music": 0,
+  "accent": 1,
+  "end": [
+   "You don't need a big leap.",
+   "Just *the first push*."
+  ],
+  "domino": {
+   "steps": [
+    "Pick up the guitar",
+    "Learn one chord",
+    "Practise daily",
+    "Play a song",
+    "Write your own",
+    "A musician"
+   ]
+  }
+ },
+ {
+  "id": "079",
+  "format": "pile",
+  "topic": "singing",
+  "title": "Learning to sing:",
+  "music": 5,
+  "accent": 2,
+  "end": [
+   "Nobody gets it first try.",
+   "*Keep throwing.*"
+  ],
+  "pile": {
+   "unit": "off-key notes",
+   "count": 1870,
+   "winWord": "Got it!"
+  }
+ },
+ {
+  "id": "080",
+  "format": "squiggle",
+  "topic": "coding",
+  "title": "Becoming a developer:",
+  "music": 4,
+  "accent": 3,
+  "end": [
+   "Nobody's path is *straight*.",
+   "Don't quit in the loops."
+  ],
+  "squiggle": {
+   "goal": "Developer",
+   "setbacks": [
+    "Syntax errors",
+    "Tutorial hell",
+    "Imposter feels",
+    "Failed interview",
+    "App crashed",
+    "Debugged it"
+   ]
+  }
+ },
+ {
+  "id": "081",
+  "format": "iceberg",
+  "topic": "business",
+  "title": "What business really takes:",
+  "music": 3,
+  "accent": 4,
+  "end": [
+   "Success is an *iceberg*.",
+   "Most of it is underwater."
+  ],
+  "iceberg": {
+   "see": "Success story",
+   "hidden": [
+    "Maxed-out credit cards",
+    "Failed products",
+    "No salary for years",
+    "Lost friends",
+    "Sleepless nights",
+    "Thousands of no's"
+   ]
+  }
+ },
+ {
+  "id": "082",
+  "format": "compound",
+  "topic": "saving money",
+  "title": "Small habits, big results:",
+  "music": 2,
+  "accent": 5,
+  "end": [
+   "Don't wait for big changes.",
+   "Make *tiny* ones daily."
+  ],
+  "compound": {
+   "habit": "Save $5 a day",
+   "perDay": 5,
+   "unit": "dollars",
+   "unitOne": "dollar"
+  }
+ },
+ {
+  "id": "083",
+  "format": "valley",
+  "topic": "investing",
+  "title": "Learning to invest takes time:",
+  "music": 1,
+  "accent": 0,
+  "end": [
+   "Feeling stuck?",
+   "You might be *almost there*."
+  ],
+  "valley": {
+   "quit": "first crash: down 30%",
+   "win": "Compounding wins"
+  }
+ },
+ {
+  "id": "084",
+  "format": "bamboo",
+  "topic": "languages",
+  "title": "Why languages feels slow:",
+  "music": 0,
+  "accent": 1,
+  "end": [
+   "What looks like nothing",
+   "is *building something*."
+  ],
+  "bamboo": {
+   "years": [
+    "Hello, thank you",
+    "Ordering food",
+    "Real chats, slowly",
+    "Watching films"
+   ],
+   "win": "Dreaming in it"
+  }
+ },
+ {
+  "id": "085",
+  "format": "domino",
+  "topic": "public speaking",
+  "title": "Finding confidence on stage starts small:",
+  "music": 5,
+  "accent": 2,
+  "end": [
+   "Small today.",
+   "*Life-changing* tomorrow."
+  ],
+  "domino": {
+   "steps": [
+    "Speak up once",
+    "Ask a question",
+    "Lead a meeting",
+    "Give a talk",
+    "Get invited back",
+    "A speaker"
+   ]
+  }
+ },
+ {
+  "id": "086",
+  "format": "pile",
+  "topic": "reading",
+  "title": "Becoming a reader:",
+  "music": 4,
+  "accent": 3,
+  "end": [
+   "Everyone wants the result.",
+   "Nobody sees the *96 books abandoned* before it."
+  ],
+  "pile": {
+   "unit": "books abandoned",
+   "count": 96,
+   "winWord": "Made it!"
+  }
+ },
+ {
+  "id": "087",
+  "format": "squiggle",
+  "topic": "meditation",
+  "title": "Finding calm:",
+  "music": 3,
+  "accent": 4,
+  "end": [
+   "The mess *is* the path.",
+   "Keep drawing the line."
+  ],
+  "squiggle": {
+   "goal": "Inner peace",
+   "setbacks": [
+    "Mind racing",
+    "Fell asleep",
+    "Felt nothing",
+    "Too busy",
+    "Skipped a month",
+    "Sat down again"
+   ]
+  }
+ },
+ {
+  "id": "088",
+  "format": "iceberg",
+  "topic": "confidence",
+  "title": "What confidence really takes:",
+  "music": 2,
+  "accent": 5,
+  "end": [
+   "Overnight success?",
+   "It took *years* of nights."
+  ],
+  "iceberg": {
+   "see": "Born confident",
+   "hidden": [
+    "Doing it scared",
+    "Cringe moments",
+    "Saying hi first",
+    "Rejections",
+    "Therapy sessions",
+    "Years of small wins"
+   ]
+  }
+ },
+ {
+  "id": "089",
+  "format": "compound",
+  "topic": "photography",
+  "title": "1% better every day:",
+  "music": 1,
+  "accent": 0,
+  "end": [
+   "Nothing changes on day 1.",
+   "Everything changes by *day 365*."
+  ],
+  "compound": {
+   "habit": "Take 30 photos a day",
+   "perDay": 30,
+   "unit": "photos",
+   "unitOne": "photo"
+  }
+ },
+ {
+  "id": "090",
+  "format": "valley",
+  "topic": "cooking",
+  "title": "Learning to cook takes time:",
+  "music": 0,
+  "accent": 1,
+  "end": [
+   "The curve always bends.",
+   "*Stay* for it."
+  ],
+  "valley": {
+   "quit": "week 2: burnt again",
+   "win": "Dinner party hit"
+  }
+ },
+ {
+  "id": "091",
+  "format": "bamboo",
+  "topic": "content creation",
+  "title": "Why content creation feels slow:",
+  "music": 5,
+  "accent": 2,
+  "end": [
+   "Be patient.",
+   "*Year 5* is coming."
+  ],
+  "bamboo": {
+   "years": [
+    "40 followers",
+    "Still 300",
+    "2,000. Almost quit.",
+    "10,000"
+   ],
+   "win": "1M views"
+  }
+ },
+ {
+  "id": "092",
+  "format": "domino",
+  "topic": "dancing",
+  "title": "Becoming a dancer starts small:",
+  "music": 4,
+  "accent": 3,
+  "end": [
+   "Don't chase the big domino.",
+   "Push the *small* one."
+  ],
+  "domino": {
+   "steps": [
+    "Play a song",
+    "Move to it",
+    "Take a class",
+    "Practise daily",
+    "Perform",
+    "A dancer"
+   ]
+  }
+ },
+ {
+  "id": "093",
+  "format": "pile",
+  "topic": "studying",
+  "title": "Acing your exams:",
+  "music": 3,
+  "accent": 4,
+  "end": [
+   "Miss. Miss. Miss.",
+   "*Then* it goes in."
+  ],
+  "pile": {
+   "unit": "practice questions",
+   "count": 3600,
+   "winWord": "Nailed it!"
+  }
+ },
+ {
+  "id": "094",
+  "format": "squiggle",
+  "topic": "job hunting",
+  "title": "Getting hired:",
+  "music": 2,
+  "accent": 5,
+  "end": [
+   "You're not lost.",
+   "You're in *the loops*."
+  ],
+  "squiggle": {
+   "goal": "Hired",
+   "setbacks": [
+    "No reply",
+    "Rejected",
+    "Ghosted",
+    "Bad interview",
+    "Final round, no",
+    "Applied again"
+   ]
+  }
+ },
+ {
+  "id": "095",
+  "format": "iceberg",
+  "topic": "waking early",
+  "title": "What waking early really takes:",
+  "music": 1,
+  "accent": 0,
+  "end": [
+   "Don't compare your start",
+   "to someone's *tip of the iceberg*."
+  ],
+  "iceberg": {
+   "see": "Perfect mornings",
+   "hidden": [
+    "Phone out of bedroom",
+    "Earlier bedtimes",
+    "Cold mornings",
+    "Tired first weeks",
+    "Skipping late nights",
+    "Hundreds of alarms"
+   ]
+  }
+ },
+ {
+  "id": "096",
+  "format": "compound",
+  "topic": "quitting smoking",
+  "title": "The power of tiny habits:",
+  "music": 0,
+  "accent": 1,
+  "end": [
+   "Tiny habits.",
+   "*Massive* results."
+  ],
+  "compound": {
+   "habit": "Beat 1 craving at a time",
+   "perDay": 1,
+   "unit": "cravings",
+   "unitOne": "craving"
+  }
+ },
+ {
+  "id": "097",
+  "format": "valley",
+  "topic": "heartbreak",
+  "title": "Healing a broken heart takes time:",
+  "music": 5,
+  "accent": 2,
+  "end": [
+   "Your breakthrough is",
+   "*further up the curve*."
+  ],
+  "valley": {
+   "quit": "week 3: miss them most",
+   "win": "Happy again"
+  }
+ },
+ {
+  "id": "098",
+  "format": "bamboo",
+  "topic": "friendship",
+  "title": "Why friendship feels slow:",
+  "music": 4,
+  "accent": 3,
+  "end": [
+   "Roots first.",
+   "*Then* growth."
+  ],
+  "bamboo": {
+   "years": [
+    "New city, nobody",
+    "A few coffee chats",
+    "Two close friends",
+    "Group trips"
+   ],
+   "win": "Your people"
+  }
+ },
+ {
+  "id": "099",
+  "format": "domino",
+  "topic": "chess",
+  "title": "Becoming a chess player starts small:",
+  "music": 3,
+  "accent": 4,
+  "end": [
+   "Big changes start",
+   "*embarrassingly small*."
+  ],
+  "domino": {
+   "steps": [
+    "Learn the moves",
+    "Play one game",
+    "Do puzzles daily",
+    "Study openings",
+    "Win a tournament",
+    "A master"
+   ]
+  }
+ },
+ {
+  "id": "100",
+  "format": "pile",
+  "topic": "swimming",
+  "title": "Learning to swim:",
+  "music": 2,
+  "accent": 5,
+  "end": [
+   "The pile is the *proof*.",
+   "Keep throwing."
+  ],
+  "pile": {
+   "unit": "mouthfuls of pool",
+   "count": 920,
+   "winWord": "Finally!"
+  }
+ },
+ {
+  "id": "101",
+  "format": "squiggle",
+  "topic": "yoga",
+  "title": "Learning yoga:",
+  "music": 1,
+  "accent": 0,
+  "end": [
+   "Success is a *scribble*.",
+   "Keep your pen moving."
+  ],
+  "squiggle": {
+   "goal": "Full split",
+   "setbacks": [
+    "Can't touch toes",
+    "Fell over",
+    "Pulled a muscle",
+    "Felt silly",
+    "Missed a month",
+    "Back on the mat"
+   ]
+  }
+ },
+ {
+  "id": "102",
+  "format": "iceberg",
+  "topic": "piano",
+  "title": "What piano really takes:",
+  "music": 0,
+  "accent": 1,
+  "end": [
+   "The work nobody sees",
+   "is *the work that counts*."
+  ],
+  "iceberg": {
+   "see": "Beautiful piece",
+   "hidden": [
+    "Scales every day",
+    "Slow practice",
+    "Wrong notes, always",
+    "Missed parties",
+    "Recital nerves",
+    "10 years of keys"
+   ]
+  }
+ },
+ {
+  "id": "103",
+  "format": "compound",
+  "topic": "design",
+  "title": "Small habits, big results:",
+  "music": 5,
+  "accent": 2,
+  "end": [
+   "You don't need more time.",
+   "You need *a little, daily*."
+  ],
+  "compound": {
+   "habit": "Design 1 thing a day",
+   "perDay": 1,
+   "unit": "designs",
+   "unitOne": "design"
+  }
+ },
+ {
+  "id": "104",
+  "format": "valley",
+  "topic": "sales",
+  "title": "Getting good at sales takes time:",
+  "music": 4,
+  "accent": 3,
+  "end": [
+   "The results are *coming*.",
+   "Don't quit in the valley."
+  ],
+  "valley": {
+   "quit": "month 1: zero deals",
+   "win": "President's Club"
+  }
+ },
+ {
+  "id": "105",
+  "format": "bamboo",
+  "topic": "career",
+  "title": "Why career feels slow:",
+  "music": 3,
+  "accent": 4,
+  "end": [
+   "Nothing happening?",
+   "Your roots are *growing*."
+  ],
+  "bamboo": {
+   "years": [
+    "Junior",
+    "Passed over",
+    "Leading projects",
+    "Manager"
+   ],
+   "win": "Promoted"
+  }
+ },
+ {
+  "id": "106",
+  "format": "domino",
+  "topic": "freelancing",
+  "title": "Becoming your own boss starts small:",
+  "music": 2,
+  "accent": 5,
+  "end": [
+   "One small habit",
+   "can change *everything*."
+  ],
+  "domino": {
+   "steps": [
+    "Make a portfolio",
+    "Send a pitch",
+    "Land a client",
+    "Do great work",
+    "Get referrals",
+    "Freedom"
+   ]
+  }
+ },
+ {
+  "id": "107",
+  "format": "pile",
+  "topic": "app building",
+  "title": "Building an app:",
+  "music": 1,
+  "accent": 0,
+  "end": [
+   "They'll see one shot.",
+   "You'll know about *the 2,700*."
+  ],
+  "pile": {
+   "unit": "bugs fixed",
+   "count": 2700,
+   "winWord": "Yes!!"
+  }
+ },
+ {
+  "id": "108",
+  "format": "squiggle",
+  "topic": "debt",
+  "title": "Becoming debt free:",
+  "music": 0,
+  "accent": 1,
+  "end": [
+   "They show the arrow.",
+   "Nobody shows *the scribble*."
+  ],
+  "squiggle": {
+   "goal": "Debt free",
+   "setbacks": [
+    "Surprise bill",
+    "Interest grew",
+    "Lost hours",
+    "Car repair",
+    "Slipped up",
+    "Paid anyway"
+   ]
+  }
+ },
+ {
+  "id": "109",
+  "format": "iceberg",
+  "topic": "maths",
+  "title": "What maths really takes:",
+  "music": 5,
+  "accent": 2,
+  "end": [
+   "Everyone admires the tip.",
+   "Respect *what's underneath*."
+  ],
+  "iceberg": {
+   "see": "Maths genius",
+   "hidden": [
+    "Wrong answers",
+    "Practice sheets",
+    "Asking dumb questions",
+    "Re-learning basics",
+    "Tutoring",
+    "Thousands of problems"
+   ]
+  }
+ },
+ {
+  "id": "110",
+  "format": "compound",
+  "topic": "medicine",
+  "title": "1% better every day:",
+  "music": 4,
+  "accent": 3,
+  "end": [
+   "*1%* a day.",
+   "That's all it takes."
+  ],
+  "compound": {
+   "habit": "Study 4 hours a day",
+   "perDay": 4,
+   "unit": "hours",
+   "unitOne": "hour"
+  }
+ },
+ {
+  "id": "111",
+  "format": "valley",
+  "topic": "teaching",
+  "title": "Becoming a great teacher takes time:",
+  "music": 3,
+  "accent": 4,
+  "end": [
+   "Progress feels like nothing",
+   "until it's *everything*."
+  ],
+  "valley": {
+   "quit": "year 1: chaos",
+   "win": "Students thrive"
+  }
+ },
+ {
+  "id": "112",
+  "format": "bamboo",
+  "topic": "mental health",
+  "title": "Why mental health feels slow:",
+  "music": 2,
+  "accent": 5,
+  "end": [
+   "Overnight success",
+   "takes *years* underground."
+  ],
+  "bamboo": {
+   "years": [
+    "Couldn't get up",
+    "Started therapy",
+    "More good days",
+    "Helping others"
+   ],
+   "win": "Good days again"
+  }
+ },
+ {
+  "id": "113",
+  "format": "domino",
+  "topic": "discipline",
+  "title": "Becoming disciplined starts small:",
+  "music": 1,
+  "accent": 0,
+  "end": [
+   "Start with domino one.",
+   "*The rest will follow.*"
+  ],
+  "domino": {
+   "steps": [
+    "Make your bed",
+    "Keep one promise",
+    "Do hard things",
+    "Trust yourself",
+    "Achieve goals",
+    "A new identity"
+   ]
+  }
+ },
+ {
+  "id": "114",
+  "format": "pile",
+  "topic": "gardening",
+  "title": "Learning to garden:",
+  "music": 0,
+  "accent": 1,
+  "end": [
+   "Every miss is a step",
+   "*towards the hit*."
+  ],
+  "pile": {
+   "unit": "dead plants",
+   "count": 140,
+   "winWord": "Got it!"
+  }
+ },
+ {
+  "id": "115",
+  "format": "squiggle",
+  "topic": "martial arts",
+  "title": "Earning a black belt:",
+  "music": 5,
+  "accent": 2,
+  "end": [
+   "Setbacks aren't detours.",
+   "They're *the road*."
+  ],
+  "squiggle": {
+   "goal": "Black belt",
+   "setbacks": [
+    "Got tapped",
+    "Bruised ribs",
+    "Failed grading",
+    "Plateaued",
+    "Injury",
+    "Back on the mat"
+   ]
+  }
+ },
+ {
+  "id": "116",
+  "format": "iceberg",
+  "topic": "cycling",
+  "title": "What cycling really takes:",
+  "music": 4,
+  "accent": 3,
+  "end": [
+   "They see *100-mile ride*.",
+   "They don't see the cost."
+  ],
+  "iceberg": {
+   "see": "100-mile ride",
+   "hidden": [
+    "Walking up hills",
+    "Flat tyres",
+    "Rain rides",
+    "Saddle sores",
+    "Early mornings",
+    "5,000 km"
+   ]
+  }
+ },
+ {
+  "id": "117",
+  "format": "compound",
+  "topic": "climbing",
+  "title": "The power of tiny habits:",
+  "music": 3,
+  "accent": 4,
+  "end": [
+   "Small steps, *every day*.",
+   "They add up faster than you think."
+  ],
+  "compound": {
+   "habit": "Climb 30 minutes a day",
+   "perDay": 30,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "118",
+  "format": "valley",
+  "topic": "football",
+  "title": "Getting good at football takes time:",
+  "music": 2,
+  "accent": 5,
+  "end": [
+   "Most people quit",
+   "*right before* it works."
+  ],
+  "valley": {
+   "quit": "benched all season",
+   "win": "Match winner"
+  }
+ },
+ {
+  "id": "119",
+  "format": "bamboo",
+  "topic": "tennis",
+  "title": "Why tennis feels slow:",
+  "music": 1,
+  "accent": 0,
+  "end": [
+   "Keep watering it.",
+   "*It's growing.*"
+  ],
+  "bamboo": {
+   "years": [
+    "Can't rally",
+    "Short rallies",
+    "First match win",
+    "Club champion"
+   ],
+   "win": "Tournament win"
+  }
+ },
+ {
+  "id": "120",
+  "format": "domino",
+  "topic": "boxing",
+  "title": "Becoming a fighter starts small:",
+  "music": 0,
+  "accent": 1,
+  "end": [
+   "You don't need a big leap.",
+   "Just *the first push*."
+  ],
+  "domino": {
+   "steps": [
+    "Walk in the gym",
+    "Wrap your hands",
+    "Train daily",
+    "Spar",
+    "Fight",
+    "A champion"
+   ]
+  }
+ },
+ {
+  "id": "121",
+  "format": "pile",
+  "topic": "podcasting",
+  "title": "Starting a podcast:",
+  "music": 5,
+  "accent": 2,
+  "end": [
+   "Nobody gets it first try.",
+   "*Keep throwing.*"
+  ],
+  "pile": {
+   "unit": "episodes nobody heard",
+   "count": 120,
+   "winWord": "Made it!"
+  }
+ },
+ {
+  "id": "122",
+  "format": "squiggle",
+  "topic": "acting",
+  "title": "Chasing the stage:",
+  "music": 4,
+  "accent": 3,
+  "end": [
+   "Nobody's path is *straight*.",
+   "Don't quit in the loops."
+  ],
+  "squiggle": {
+   "goal": "Lead role",
+   "setbacks": [
+    "Didn't get it",
+    "Forgot lines",
+    "No callback",
+    "Typecast",
+    "Broke again",
+    "Auditioned again"
+   ]
+  }
+ },
+ {
+  "id": "123",
+  "format": "iceberg",
+  "topic": "comedy",
+  "title": "What comedy really takes:",
+  "music": 3,
+  "accent": 4,
+  "end": [
+   "Success is an *iceberg*.",
+   "Most of it is underwater."
+  ],
+  "iceberg": {
+   "see": "Sold-out show",
+   "hidden": [
+    "Silent rooms",
+    "Open mics at 1am",
+    "Hecklers",
+    "Rewriting jokes",
+    "Driving to gigs",
+    "1,000 sets"
+   ]
+  }
+ },
+ {
+  "id": "124",
+  "format": "compound",
+  "topic": "novel writing",
+  "title": "Small habits, big results:",
+  "music": 2,
+  "accent": 5,
+  "end": [
+   "Don't wait for big changes.",
+   "Make *tiny* ones daily."
+  ],
+  "compound": {
+   "habit": "Write 500 words a day",
+   "perDay": 500,
+   "unit": "words",
+   "unitOne": "word"
+  }
+ },
+ {
+  "id": "125",
+  "format": "valley",
+  "topic": "driving",
+  "title": "Learning to drive takes time:",
+  "music": 1,
+  "accent": 0,
+  "end": [
+   "Feeling stuck?",
+   "You might be *almost there*."
+  ],
+  "valley": {
+   "quit": "failed the first test",
+   "win": "Passed!"
+  }
+ },
+ {
+  "id": "126",
+  "format": "bamboo",
+  "topic": "video editing",
+  "title": "Why video editing feels slow:",
+  "music": 0,
+  "accent": 1,
+  "end": [
+   "What looks like nothing",
+   "is *building something*."
+  ],
+  "bamboo": {
+   "years": [
+    "Jump cuts",
+    "Smooth cuts",
+    "Colour grading",
+    "Paid work"
+   ],
+   "win": "Hired editor"
+  }
+ },
+ {
+  "id": "127",
+  "format": "domino",
+  "topic": "data science",
+  "title": "Becoming a data scientist starts small:",
+  "music": 5,
+  "accent": 2,
+  "end": [
+   "Small today.",
+   "*Life-changing* tomorrow."
+  ],
+  "domino": {
+   "steps": [
+    "Learn Python",
+    "Analyse one file",
+    "Build a model",
+    "Share projects",
+    "Get hired",
+    "Data scientist"
+   ]
+  }
+ },
+ {
+  "id": "128",
+  "format": "pile",
+  "topic": "university",
+  "title": "Getting into your dream university:",
+  "music": 4,
+  "accent": 3,
+  "end": [
+   "Everyone wants the result.",
+   "Nobody sees the *85 practice essays* before it."
+  ],
+  "pile": {
+   "unit": "practice essays",
+   "count": 85,
+   "winWord": "Nailed it!"
+  }
+ },
+ {
+  "id": "129",
+  "format": "squiggle",
+  "topic": "minimalism",
+  "title": "Simplifying life:",
+  "music": 3,
+  "accent": 4,
+  "end": [
+   "The mess *is* the path.",
+   "Keep drawing the line."
+  ],
+  "squiggle": {
+   "goal": "Clear space",
+   "setbacks": [
+    "Kept everything",
+    "Sentimental box",
+    "Shopping again",
+    "Clutter is back",
+    "Family pushback",
+    "Let go again"
+   ]
+  }
+ },
+ {
+  "id": "130",
+  "format": "iceberg",
+  "topic": "journaling",
+  "title": "What journaling really takes:",
+  "music": 2,
+  "accent": 5,
+  "end": [
+   "Overnight success?",
+   "It took *years* of nights."
+  ],
+  "iceberg": {
+   "see": "Clear mind",
+   "hidden": [
+    "Blank pages",
+    "Honest entries",
+    "Missed weeks",
+    "Uncomfortable truths",
+    "Writing tired",
+    "365 pages"
+   ]
+  }
+ },
+ {
+  "id": "131",
+  "format": "compound",
+  "topic": "gratitude",
+  "title": "1% better every day:",
+  "music": 1,
+  "accent": 0,
+  "end": [
+   "Nothing changes on day 1.",
+   "Everything changes by *day 365*."
+  ],
+  "compound": {
+   "habit": "Write 3 thank-yous a day",
+   "perDay": 3,
+   "unit": "thank-yous",
+   "unitOne": "thank-you"
+  }
+ },
+ {
+  "id": "132",
+  "format": "valley",
+  "topic": "healthy eating",
+  "title": "Eating healthy takes time:",
+  "music": 0,
+  "accent": 1,
+  "end": [
+   "The curve always bends.",
+   "*Stay* for it."
+  ],
+  "valley": {
+   "quit": "week 2: sugar cravings",
+   "win": "Feeling amazing"
+  }
+ },
+ {
+  "id": "133",
+  "format": "bamboo",
+  "topic": "phone detox",
+  "title": "Why phone detox feels slow:",
+  "music": 5,
+  "accent": 2,
+  "end": [
+   "Be patient.",
+   "*Year 5* is coming."
+  ],
+  "bamboo": {
+   "years": [
+    "7 hours a day",
+    "5 hours",
+    "3 hours",
+    "1 hour"
+   ],
+   "win": "Time back"
+  }
+ },
+ {
+  "id": "134",
+  "format": "domino",
+  "topic": "sleep",
+  "title": "Sleeping well again starts small:",
+  "music": 4,
+  "accent": 3,
+  "end": [
+   "Don't chase the big domino.",
+   "Push the *small* one."
+  ],
+  "domino": {
+   "steps": [
+    "Set a bedtime",
+    "No screens",
+    "Wake same time",
+    "Sleep deeper",
+    "More energy",
+    "A better life"
+   ]
+  }
+ },
+ {
+  "id": "135",
+  "format": "pile",
+  "topic": "patience",
+  "title": "Learning patience:",
+  "music": 3,
+  "accent": 4,
+  "end": [
+   "Miss. Miss. Miss.",
+   "*Then* it goes in."
+  ],
+  "pile": {
+   "unit": "days of waiting",
+   "count": 1000,
+   "winWord": "Finally!"
+  }
+ },
+ {
+  "id": "136",
+  "format": "squiggle",
+  "topic": "self-love",
+  "title": "Being kind to you:",
+  "music": 2,
+  "accent": 5,
+  "end": [
+   "You're not lost.",
+   "You're in *the loops*."
+  ],
+  "squiggle": {
+   "goal": "Self-love",
+   "setbacks": [
+    "Mirror day",
+    "Compared myself",
+    "Said yes again",
+    "Inner critic",
+    "Bad photo",
+    "Chose me"
+   ]
+  }
+ },
+ {
+  "id": "137",
+  "format": "iceberg",
+  "topic": "parenting",
+  "title": "What parenting really takes:",
+  "music": 1,
+  "accent": 0,
+  "end": [
+   "Don't compare your start",
+   "to someone's *tip of the iceberg*."
+  ],
+  "iceberg": {
+   "see": "Happy family",
+   "hidden": [
+    "Sleepless nights",
+    "Patience, always",
+    "Repeating yourself",
+    "Guilt",
+    "Giving up hobbies",
+    "Showing up daily"
+   ]
+  }
+ },
+ {
+  "id": "138",
+  "format": "compound",
+  "topic": "marriage",
+  "title": "The power of tiny habits:",
+  "music": 0,
+  "accent": 1,
+  "end": [
+   "Tiny habits.",
+   "*Massive* results."
+  ],
+  "compound": {
+   "habit": "Ask 1 real question a day",
+   "perDay": 1,
+   "unit": "questions",
+   "unitOne": "question"
+  }
+ },
+ {
+  "id": "139",
+  "format": "valley",
+  "topic": "forgiveness",
+  "title": "Learning to forgive takes time:",
+  "music": 5,
+  "accent": 2,
+  "end": [
+   "Your breakthrough is",
+   "*further up the curve*."
+  ],
+  "valley": {
+   "quit": "still angry, month 2",
+   "win": "Free"
+  }
+ },
+ {
+  "id": "140",
+  "format": "bamboo",
+  "topic": "art career",
+  "title": "Why art career feels slow:",
+  "music": 4,
+  "accent": 3,
+  "end": [
+   "Roots first.",
+   "*Then* growth."
+  ],
+  "bamboo": {
+   "years": [
+    "0 sales",
+    "A few sales",
+    "Commissions",
+    "Quit day job"
+   ],
+   "win": "Full-time artist"
+  }
+ },
+ {
+  "id": "141",
+  "format": "domino",
+  "topic": "basketball",
+  "title": "Making the team starts small:",
+  "music": 3,
+  "accent": 4,
+  "end": [
+   "Big changes start",
+   "*embarrassingly small*."
+  ],
+  "domino": {
+   "steps": [
+    "Grab a ball",
+    "Shoot 100",
+    "Daily drills",
+    "Make the team",
+    "Start",
+    "A player"
+   ]
+  }
+ },
+ {
+  "id": "142",
+  "format": "pile",
+  "topic": "skateboarding",
+  "title": "Learning to skate:",
+  "music": 2,
+  "accent": 5,
+  "end": [
+   "The pile is the *proof*.",
+   "Keep throwing."
+  ],
+  "pile": {
+   "unit": "falls",
+   "count": 2500,
+   "winWord": "Yes!!"
+  }
+ },
+ {
+  "id": "143",
+  "format": "squiggle",
+  "topic": "kindness",
+  "title": "Changing the world:",
+  "music": 1,
+  "accent": 0,
+  "end": [
+   "Success is a *scribble*.",
+   "Keep your pen moving."
+  ],
+  "squiggle": {
+   "goal": "Kinder world",
+   "setbacks": [
+    "Felt pointless",
+    "Unthanked",
+    "Rude reply",
+    "Too busy",
+    "Bad mood",
+    "Kind anyway"
+   ]
+  }
+ },
+ {
+  "id": "144",
+  "format": "iceberg",
+  "topic": "starting over",
+  "title": "What starting over really takes:",
+  "music": 0,
+  "accent": 1,
+  "end": [
+   "The work nobody sees",
+   "is *the work that counts*."
+  ],
+  "iceberg": {
+   "see": "Happy new life",
+   "hidden": [
+    "Starting from zero",
+    "Lonely nights",
+    "Learning new skills",
+    "Money worries",
+    "Doubting yourself",
+    "Building daily"
+   ]
+  }
+ },
+ {
+  "id": "145",
+  "format": "iceberg",
+  "topic": "fitness",
+  "title": "What fitness really takes:",
+  "music": 5,
+  "accent": 3,
+  "end": [
+   "The work nobody sees",
+   "is *the work that counts*."
+  ],
+  "iceberg": {
+   "see": "Six-pack",
+   "hidden": [
+    "5am alarms",
+    "Sore every morning",
+    "Meal prep Sundays",
+    "No to late nights",
+    "Training when tired",
+    "Two years of reps"
+   ]
+  }
+ },
+ {
+  "id": "146",
+  "format": "compound",
+  "topic": "running",
+  "title": "Small habits, big results:",
+  "music": 4,
+  "accent": 4,
+  "end": [
+   "You don't need more time.",
+   "You need *a little, daily*."
+  ],
+  "compound": {
+   "habit": "Run 3 km a day",
+   "perDay": 3,
+   "unit": "km",
+   "unitOne": "km"
+  }
+ },
+ {
+  "id": "147",
+  "format": "valley",
+  "topic": "weight loss",
+  "title": "Losing weight takes time:",
+  "music": 3,
+  "accent": 5,
+  "end": [
+   "The results are *coming*.",
+   "Don't quit in the valley."
+  ],
+  "valley": {
+   "quit": "month 2: scale stuck",
+   "win": "Down 20 kg"
+  }
+ },
+ {
+  "id": "148",
+  "format": "bamboo",
+  "topic": "writing",
+  "title": "Why writing feels slow:",
+  "music": 2,
+  "accent": 0,
+  "end": [
+   "Nothing happening?",
+   "Your roots are *growing*."
+  ],
+  "bamboo": {
+   "years": [
+    "Half a draft",
+    "Finished. It's bad.",
+    "Rewrite. Rejected.",
+    "Agent said maybe"
+   ],
+   "win": "Book deal"
+  }
+ },
+ {
+  "id": "149",
+  "format": "domino",
+  "topic": "drawing",
+  "title": "Becoming an artist starts small:",
+  "music": 1,
+  "accent": 1,
+  "end": [
+   "One small habit",
+   "can change *everything*."
+  ],
+  "domino": {
+   "steps": [
+    "Buy a sketchbook",
+    "Draw one thing",
+    "Draw every day",
+    "Study anatomy",
+    "Find your style",
+    "An artist"
+   ]
+  }
+ },
+ {
+  "id": "150",
+  "format": "pile",
+  "topic": "guitar",
+  "title": "Learning guitar:",
+  "music": 0,
+  "accent": 2,
+  "end": [
+   "They'll see one shot.",
+   "You'll know about *the 3,210*."
+  ],
+  "pile": {
+   "unit": "wrong chords",
+   "count": 3210,
+   "winWord": "Nailed it!"
+  }
+ },
+ {
+  "id": "151",
+  "format": "squiggle",
+  "topic": "singing",
+  "title": "Finding your voice:",
+  "music": 5,
+  "accent": 3,
+  "end": [
+   "They show the arrow.",
+   "Nobody shows *the scribble*."
+  ],
+  "squiggle": {
+   "goal": "Front stage",
+   "setbacks": [
+    "Cracked notes",
+    "Laughed at",
+    "Lost my voice",
+    "Stage fright",
+    "Bad recording",
+    "Sang again"
+   ]
+  }
+ },
+ {
+  "id": "152",
+  "format": "iceberg",
+  "topic": "coding",
+  "title": "What coding really takes:",
+  "music": 4,
+  "accent": 4,
+  "end": [
+   "Everyone admires the tip.",
+   "Respect *what's underneath*."
+  ],
+  "iceberg": {
+   "see": "Dream tech job",
+   "hidden": [
+    "Tutorial hell",
+    "Stack Overflow at 2am",
+    "Broken code",
+    "100 job rejections",
+    "Side projects",
+    "3 years of learning"
+   ]
+  }
+ },
+ {
+  "id": "153",
+  "format": "compound",
+  "topic": "business",
+  "title": "1% better every day:",
+  "music": 3,
+  "accent": 5,
+  "end": [
+   "*1%* a day.",
+   "That's all it takes."
+  ],
+  "compound": {
+   "habit": "Call 5 customers a day",
+   "perDay": 5,
+   "unit": "calls",
+   "unitOne": "call"
+  }
+ },
+ {
+  "id": "154",
+  "format": "valley",
+  "topic": "saving money",
+  "title": "Saving money takes time:",
+  "music": 2,
+  "accent": 0,
+  "end": [
+   "Progress feels like nothing",
+   "until it's *everything*."
+  ],
+  "valley": {
+   "quit": "year 1: barely anything",
+   "win": "Debt free"
+  }
+ },
+ {
+  "id": "155",
+  "format": "bamboo",
+  "topic": "investing",
+  "title": "Why investing feels slow:",
+  "music": 1,
+  "accent": 1,
+  "end": [
+   "Overnight success",
+   "takes *years* underground."
+  ],
+  "bamboo": {
+   "years": [
+    "$1,200 invested",
+    "Market crashed",
+    "Still investing",
+    "Back up"
+   ],
+   "win": "Compounding wins"
+  }
+ },
+ {
+  "id": "156",
+  "format": "domino",
+  "topic": "languages",
+  "title": "Becoming fluent starts small:",
+  "music": 0,
+  "accent": 2,
+  "end": [
+   "Start with domino one.",
+   "*The rest will follow.*"
+  ],
+  "domino": {
+   "steps": [
+    "Learn one word",
+    "Use an app daily",
+    "Speak to a native",
+    "Read a book",
+    "Travel there",
+    "Fluent"
+   ]
+  }
+ },
+ {
+  "id": "157",
+  "format": "pile",
+  "topic": "public speaking",
+  "title": "Getting good at public speaking:",
+  "music": 5,
+  "accent": 3,
+  "end": [
+   "Every miss is a step",
+   "*towards the hit*."
+  ],
+  "pile": {
+   "unit": "nervous rehearsals",
+   "count": 480,
+   "winWord": "Finally!"
+  }
+ },
+ {
+  "id": "158",
+  "format": "squiggle",
+  "topic": "reading",
+  "title": "Reading more:",
+  "music": 4,
+  "accent": 4,
+  "end": [
+   "Setbacks aren't detours.",
+   "They're *the road*."
+  ],
+  "squiggle": {
+   "goal": "Well-read",
+   "setbacks": [
+    "Too busy",
+    "Phone in hand",
+    "Boring books",
+    "Fell asleep",
+    "Reading slump",
+    "Picked it up"
+   ]
+  }
+ },
+ {
+  "id": "159",
+  "format": "iceberg",
+  "topic": "meditation",
+  "title": "What meditation really takes:",
+  "music": 3,
+  "accent": 5,
+  "end": [
+   "They see *Calm person*.",
+   "They don't see the cost."
+  ],
+  "iceberg": {
+   "see": "Calm person",
+   "hidden": [
+    "Sitting with chaos",
+    "Wandering thoughts",
+    "Missed days",
+    "Restarting streaks",
+    "Uncomfortable silence",
+    "1,000 sessions"
+   ]
+  }
+ },
+ {
+  "id": "160",
+  "format": "compound",
+  "topic": "confidence",
+  "title": "The power of tiny habits:",
+  "music": 2,
+  "accent": 0,
+  "end": [
+   "Small steps, *every day*.",
+   "They add up faster than you think."
+  ],
+  "compound": {
+   "habit": "Do 1 scary thing a day",
+   "perDay": 1,
+   "unit": "brave acts",
+   "unitOne": "brave act"
+  }
+ },
+ {
+  "id": "161",
+  "format": "valley",
+  "topic": "photography",
+  "title": "Getting good at photography takes time:",
+  "music": 1,
+  "accent": 1,
+  "end": [
+   "Most people quit",
+   "*right before* it works."
+  ],
+  "valley": {
+   "quit": "month 3: still blurry",
+   "win": "Magazine cover"
+  }
+ },
+ {
+  "id": "162",
+  "format": "bamboo",
+  "topic": "cooking",
+  "title": "Why cooking feels slow:",
+  "music": 0,
+  "accent": 2,
+  "end": [
+   "Keep watering it.",
+   "*It's growing.*"
+  ],
+  "bamboo": {
+   "years": [
+    "Toast, burnt",
+    "Pasta, edible",
+    "Real recipes",
+    "Friends ask for more"
+   ],
+   "win": "Dinner party hit"
+  }
+ },
+ {
+  "id": "163",
+  "format": "domino",
+  "topic": "content creation",
+  "title": "Becoming a creator starts small:",
+  "music": 5,
+  "accent": 3,
+  "end": [
+   "You don't need a big leap.",
+   "Just *the first push*."
+  ],
+  "domino": {
+   "steps": [
+    "Post one video",
+    "Post daily",
+    "Learn editing",
+    "Find your voice",
+    "Go viral",
+    "A creator"
+   ]
+  }
+ },
+ {
+  "id": "164",
+  "format": "pile",
+  "topic": "dancing",
+  "title": "Learning to dance:",
+  "music": 4,
+  "accent": 4,
+  "end": [
+   "Nobody gets it first try.",
+   "*Keep throwing.*"
+  ],
+  "pile": {
+   "unit": "missed steps",
+   "count": 2900,
+   "winWord": "Yes!!"
+  }
+ },
+ {
+  "id": "165",
+  "format": "squiggle",
+  "topic": "studying",
+  "title": "Getting top grades:",
+  "music": 3,
+  "accent": 5,
+  "end": [
+   "Nobody's path is *straight*.",
+   "Don't quit in the loops."
+  ],
+  "squiggle": {
+   "goal": "Top grades",
+   "setbacks": [
+    "Failed a test",
+    "Procrastinated",
+    "Didn't get it",
+    "Blanked out",
+    "Burnout",
+    "Studied again"
+   ]
+  }
+ },
+ {
+  "id": "166",
+  "format": "iceberg",
+  "topic": "job hunting",
+  "title": "What job hunting really takes:",
+  "music": 2,
+  "accent": 0,
+  "end": [
+   "Success is an *iceberg*.",
+   "Most of it is underwater."
+  ],
+  "iceberg": {
+   "see": "Dream job offer",
+   "hidden": [
+    "287 applications",
+    "Ghosted, constantly",
+    "Rewriting your CV",
+    "Mock interviews",
+    "Rejection emails",
+    "Learning new skills"
+   ]
+  }
+ },
+ {
+  "id": "167",
+  "format": "compound",
+  "topic": "waking early",
+  "title": "Small habits, big results:",
+  "music": 1,
+  "accent": 1,
+  "end": [
+   "Don't wait for big changes.",
+   "Make *tiny* ones daily."
+  ],
+  "compound": {
+   "habit": "Wake 15 minutes earlier",
+   "perDay": 15,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "168",
+  "format": "valley",
+  "topic": "quitting smoking",
+  "title": "Quitting smoking takes time:",
+  "music": 0,
+  "accent": 2,
+  "end": [
+   "Feeling stuck?",
+   "You might be *almost there*."
+  ],
+  "valley": {
+   "quit": "day 3: worst cravings",
+   "win": "1 year free"
+  }
+ },
+ {
+  "id": "169",
+  "format": "bamboo",
+  "topic": "heartbreak",
+  "title": "Why heartbreak feels slow:",
+  "music": 5,
+  "accent": 3,
+  "end": [
+   "What looks like nothing",
+   "is *building something*."
+  ],
+  "bamboo": {
+   "years": [
+    "Can't stop crying",
+    "Good days, bad days",
+    "Rarely think of it",
+    "Grateful it ended"
+   ],
+   "win": "Happy again"
+  }
+ },
+ {
+  "id": "170",
+  "format": "domino",
+  "topic": "friendship",
+  "title": "Building your people starts small:",
+  "music": 4,
+  "accent": 4,
+  "end": [
+   "Small today.",
+   "*Life-changing* tomorrow."
+  ],
+  "domino": {
+   "steps": [
+    "Say hello",
+    "Ask a question",
+    "Grab coffee",
+    "Invite them out",
+    "Show up again",
+    "Real friends"
+   ]
+  }
+ },
+ {
+  "id": "171",
+  "format": "pile",
+  "topic": "chess",
+  "title": "Getting good at chess:",
+  "music": 3,
+  "accent": 5,
+  "end": [
+   "Everyone wants the result.",
+   "Nobody sees the *3,150 lost games* before it."
+  ],
+  "pile": {
+   "unit": "lost games",
+   "count": 3150,
+   "winWord": "Got it!"
+  }
+ },
+ {
+  "id": "172",
+  "format": "squiggle",
+  "topic": "swimming",
+  "title": "Conquering the water:",
+  "music": 2,
+  "accent": 0,
+  "end": [
+   "The mess *is* the path.",
+   "Keep drawing the line."
+  ],
+  "squiggle": {
+   "goal": "Swim a mile",
+   "setbacks": [
+    "Swallowed water",
+    "Panicked",
+    "Sank",
+    "Sore shoulders",
+    "Cold pool",
+    "Swam again"
+   ]
+  }
+ },
+ {
+  "id": "173",
+  "format": "iceberg",
+  "topic": "yoga",
+  "title": "What yoga really takes:",
+  "music": 1,
+  "accent": 1,
+  "end": [
+   "Overnight success?",
+   "It took *years* of nights."
+  ],
+  "iceberg": {
+   "see": "Perfect pose",
+   "hidden": [
+    "Shaky balances",
+    "Tight hamstrings",
+    "Falling over",
+    "Morning stretches",
+    "Breathing through it",
+    "Years of practice"
+   ]
+  }
+ },
+ {
+  "id": "174",
+  "format": "compound",
+  "topic": "piano",
+  "title": "1% better every day:",
+  "music": 0,
+  "accent": 2,
+  "end": [
+   "Nothing changes on day 1.",
+   "Everything changes by *day 365*."
+  ],
+  "compound": {
+   "habit": "Practise 20 minutes a day",
+   "perDay": 20,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "175",
+  "format": "valley",
+  "topic": "design",
+  "title": "Getting good at design takes time:",
+  "music": 5,
+  "accent": 3,
+  "end": [
+   "The curve always bends.",
+   "*Stay* for it."
+  ],
+  "valley": {
+   "quit": "client said start over",
+   "win": "Award winner"
+  }
+ },
+ {
+  "id": "176",
+  "format": "bamboo",
+  "topic": "sales",
+  "title": "Why sales feels slow:",
+  "music": 4,
+  "accent": 4,
+  "end": [
+   "Be patient.",
+   "*Year 5* is coming."
+  ],
+  "bamboo": {
+   "years": [
+    "0 deals",
+    "Some deals",
+    "Hit quota",
+    "Top 3"
+   ],
+   "win": "President's Club"
+  }
+ },
+ {
+  "id": "177",
+  "format": "domino",
+  "topic": "career",
+  "title": "Climbing the ladder starts small:",
+  "music": 3,
+  "accent": 5,
+  "end": [
+   "Don't chase the big domino.",
+   "Push the *small* one."
+  ],
+  "domino": {
+   "steps": [
+    "Do great work",
+    "Ask for feedback",
+    "Take on more",
+    "Help others",
+    "Lead a project",
+    "Promoted"
+   ]
+  }
+ },
+ {
+  "id": "178",
+  "format": "pile",
+  "topic": "freelancing",
+  "title": "Going freelance:",
+  "music": 2,
+  "accent": 0,
+  "end": [
+   "Miss. Miss. Miss.",
+   "*Then* it goes in."
+  ],
+  "pile": {
+   "unit": "unanswered pitches",
+   "count": 530,
+   "winWord": "Made it!"
+  }
+ },
+ {
+  "id": "179",
+  "format": "squiggle",
+  "topic": "app building",
+  "title": "Launching an app:",
+  "music": 1,
+  "accent": 1,
+  "end": [
+   "You're not lost.",
+   "You're in *the loops*."
+  ],
+  "squiggle": {
+   "goal": "Launched",
+   "setbacks": [
+    "App crashed",
+    "Store rejected",
+    "Zero downloads",
+    "Bad reviews",
+    "Server bill",
+    "Shipped update"
+   ]
+  }
+ },
+ {
+  "id": "180",
+  "format": "iceberg",
+  "topic": "debt",
+  "title": "What debt really takes:",
+  "music": 0,
+  "accent": 2,
+  "end": [
+   "Don't compare your start",
+   "to someone's *tip of the iceberg*."
+  ],
+  "iceberg": {
+   "see": "Debt free",
+   "hidden": [
+    "Side hustles",
+    "Cancelled everything",
+    "No holidays",
+    "Selling stuff",
+    "Budget meetings",
+    "60 payments"
+   ]
+  }
+ },
+ {
+  "id": "181",
+  "format": "compound",
+  "topic": "maths",
+  "title": "The power of tiny habits:",
+  "music": 5,
+  "accent": 3,
+  "end": [
+   "Tiny habits.",
+   "*Massive* results."
+  ],
+  "compound": {
+   "habit": "Solve 5 problems a day",
+   "perDay": 5,
+   "unit": "problems",
+   "unitOne": "problem"
+  }
+ },
+ {
+  "id": "182",
+  "format": "valley",
+  "topic": "medicine",
+  "title": "Becoming a doctor takes time:",
+  "music": 4,
+  "accent": 4,
+  "end": [
+   "Your breakthrough is",
+   "*further up the curve*."
+  ],
+  "valley": {
+   "quit": "failed anatomy",
+   "win": "Graduation day"
+  }
+ },
+ {
+  "id": "183",
+  "format": "bamboo",
+  "topic": "teaching",
+  "title": "Why teaching feels slow:",
+  "music": 3,
+  "accent": 5,
+  "end": [
+   "Roots first.",
+   "*Then* growth."
+  ],
+  "bamboo": {
+   "years": [
+    "Chaos",
+    "Surviving",
+    "Lessons click",
+    "Students thank you"
+   ],
+   "win": "Students thrive"
+  }
+ },
+ {
+  "id": "184",
+  "format": "domino",
+  "topic": "mental health",
+  "title": "Getting better starts small:",
+  "music": 2,
+  "accent": 0,
+  "end": [
+   "Big changes start",
+   "*embarrassingly small*."
+  ],
+  "domino": {
+   "steps": [
+    "Tell one person",
+    "Get out of bed",
+    "Step outside",
+    "Ask for help",
+    "Keep going",
+    "Hope"
+   ]
+  }
+ },
+ {
+  "id": "185",
+  "format": "pile",
+  "topic": "discipline",
+  "title": "Building discipline:",
+  "music": 1,
+  "accent": 1,
+  "end": [
+   "The pile is the *proof*.",
+   "Keep throwing."
+  ],
+  "pile": {
+   "unit": "broken promises",
+   "count": 400,
+   "winWord": "Nailed it!"
+  }
+ },
+ {
+  "id": "186",
+  "format": "squiggle",
+  "topic": "gardening",
+  "title": "Growing your own food:",
+  "music": 0,
+  "accent": 2,
+  "end": [
+   "Success is a *scribble*.",
+   "Keep your pen moving."
+  ],
+  "squiggle": {
+   "goal": "Lush garden",
+   "setbacks": [
+    "Plants died",
+    "Pests",
+    "Overwatered",
+    "Frost",
+    "Snails ate it",
+    "Planted again"
+   ]
+  }
+ },
+ {
+  "id": "187",
+  "format": "iceberg",
+  "topic": "martial arts",
+  "title": "What martial arts really takes:",
+  "music": 5,
+  "accent": 3,
+  "end": [
+   "The work nobody sees",
+   "is *the work that counts*."
+  ],
+  "iceberg": {
+   "see": "Black belt",
+   "hidden": [
+    "Thousands of reps",
+    "Bruises",
+    "Failed gradings",
+    "Getting tapped",
+    "Sore mornings",
+    "8 years of training"
+   ]
+  }
+ },
+ {
+  "id": "188",
+  "format": "compound",
+  "topic": "cycling",
+  "title": "Small habits, big results:",
+  "music": 4,
+  "accent": 4,
+  "end": [
+   "You don't need more time.",
+   "You need *a little, daily*."
+  ],
+  "compound": {
+   "habit": "Ride 10 km a day",
+   "perDay": 10,
+   "unit": "km",
+   "unitOne": "km"
+  }
+ },
+ {
+  "id": "189",
+  "format": "valley",
+  "topic": "climbing",
+  "title": "Learning to climb takes time:",
+  "music": 3,
+  "accent": 5,
+  "end": [
+   "The results are *coming*.",
+   "Don't quit in the valley."
+  ],
+  "valley": {
+   "quit": "same route, 20 falls",
+   "win": "First summit"
+  }
+ },
+ {
+  "id": "190",
+  "format": "bamboo",
+  "topic": "football",
+  "title": "Why football feels slow:",
+  "music": 2,
+  "accent": 0,
+  "end": [
+   "Nothing happening?",
+   "Your roots are *growing*."
+  ],
+  "bamboo": {
+   "years": [
+    "Bench",
+    "Sub",
+    "Starting sometimes",
+    "Captain"
+   ],
+   "win": "Match winner"
+  }
+ },
+ {
+  "id": "191",
+  "format": "domino",
+  "topic": "tennis",
+  "title": "Becoming a tennis player starts small:",
+  "music": 1,
+  "accent": 1,
+  "end": [
+   "One small habit",
+   "can change *everything*."
+  ],
+  "domino": {
+   "steps": [
+    "Pick up a racket",
+    "Hit a ball",
+    "Rally daily",
+    "Fix your serve",
+    "Win a match",
+    "A champion"
+   ]
+  }
+ },
+ {
+  "id": "192",
+  "format": "pile",
+  "topic": "boxing",
+  "title": "Learning to box:",
+  "music": 0,
+  "accent": 2,
+  "end": [
+   "They'll see one shot.",
+   "You'll know about *the 3,300*."
+  ],
+  "pile": {
+   "unit": "punches taken",
+   "count": 3300,
+   "winWord": "Finally!"
+  }
+ },
+ {
+  "id": "193",
+  "format": "squiggle",
+  "topic": "podcasting",
+  "title": "Growing a podcast:",
+  "music": 5,
+  "accent": 3,
+  "end": [
+   "They show the arrow.",
+   "Nobody shows *the scribble*."
+  ],
+  "squiggle": {
+   "goal": "Top charts",
+   "setbacks": [
+    "8 listeners",
+    "Audio broke",
+    "Guest cancelled",
+    "Bad reviews",
+    "Burnout",
+    "Recorded again"
+   ]
+  }
+ },
+ {
+  "id": "194",
+  "format": "iceberg",
+  "topic": "acting",
+  "title": "What acting really takes:",
+  "music": 4,
+  "accent": 4,
+  "end": [
+   "Everyone admires the tip.",
+   "Respect *what's underneath*."
+  ],
+  "iceberg": {
+   "see": "Lead role",
+   "hidden": [
+    "412 auditions",
+    "Waiting tables",
+    "Forgotten lines",
+    "No callbacks",
+    "Acting classes",
+    "Years of rejection"
+   ]
+  }
+ },
+ {
+  "id": "195",
+  "format": "compound",
+  "topic": "comedy",
+  "title": "1% better every day:",
+  "music": 3,
+  "accent": 5,
+  "end": [
+   "*1%* a day.",
+   "That's all it takes."
+  ],
+  "compound": {
+   "habit": "Write 3 jokes a day",
+   "perDay": 3,
+   "unit": "jokes",
+   "unitOne": "joke"
+  }
+ },
+ {
+  "id": "196",
+  "format": "valley",
+  "topic": "novel writing",
+  "title": "Writing a novel takes time:",
+  "music": 2,
+  "accent": 0,
+  "end": [
+   "Progress feels like nothing",
+   "until it's *everything*."
+  ],
+  "valley": {
+   "quit": "chapter 3, again",
+   "win": "The End"
+  }
+ },
+ {
+  "id": "197",
+  "format": "bamboo",
+  "topic": "driving",
+  "title": "Why driving feels slow:",
+  "music": 1,
+  "accent": 1,
+  "end": [
+   "Overnight success",
+   "takes *years* underground."
+  ],
+  "bamboo": {
+   "years": [
+    "Stalled",
+    "Moving",
+    "Failed test",
+    "Passed"
+   ],
+   "win": "Passed!"
+  }
+ },
+ {
+  "id": "198",
+  "format": "domino",
+  "topic": "video editing",
+  "title": "Becoming an editor starts small:",
+  "music": 0,
+  "accent": 2,
+  "end": [
+   "Start with domino one.",
+   "*The rest will follow.*"
+  ],
+  "domino": {
+   "steps": [
+    "Open the software",
+    "Cut one clip",
+    "Edit daily",
+    "Build a reel",
+    "Get clients",
+    "An editor"
+   ]
+  }
+ },
+ {
+  "id": "199",
+  "format": "pile",
+  "topic": "data science",
+  "title": "Learning data science:",
+  "music": 5,
+  "accent": 3,
+  "end": [
+   "Every miss is a step",
+   "*towards the hit*."
+  ],
+  "pile": {
+   "unit": "broken notebooks",
+   "count": 640,
+   "winWord": "Yes!!"
+  }
+ },
+ {
+  "id": "200",
+  "format": "squiggle",
+  "topic": "university",
+  "title": "Chasing your dream school:",
+  "music": 4,
+  "accent": 4,
+  "end": [
+   "Setbacks aren't detours.",
+   "They're *the road*."
+  ],
+  "squiggle": {
+   "goal": "Accepted",
+   "setbacks": [
+    "Low score",
+    "Rejected",
+    "Essay rewrite",
+    "Waitlisted",
+    "Retake",
+    "Applied again"
+   ]
+  }
+ },
+ {
+  "id": "201",
+  "format": "iceberg",
+  "topic": "minimalism",
+  "title": "What minimalism really takes:",
+  "music": 3,
+  "accent": 5,
+  "end": [
+   "They see *Calm home*.",
+   "They don't see the cost."
+  ],
+  "iceberg": {
+   "see": "Calm home",
+   "hidden": [
+    "Letting go of gifts",
+    "Sorting every drawer",
+    "Selling things",
+    "No impulse buys",
+    "Hard choices",
+    "1,200 things gone"
+   ]
+  }
+ },
+ {
+  "id": "202",
+  "format": "compound",
+  "topic": "journaling",
+  "title": "The power of tiny habits:",
+  "music": 2,
+  "accent": 0,
+  "end": [
+   "Small steps, *every day*.",
+   "They add up faster than you think."
+  ],
+  "compound": {
+   "habit": "Write 1 page a day",
+   "perDay": 1,
+   "unit": "pages",
+   "unitOne": "page"
+  }
+ },
+ {
+  "id": "203",
+  "format": "valley",
+  "topic": "gratitude",
+  "title": "Practising gratitude takes time:",
+  "music": 1,
+  "accent": 1,
+  "end": [
+   "Most people quit",
+   "*right before* it works."
+  ],
+  "valley": {
+   "quit": "week 1: felt forced",
+   "win": "Real joy"
+  }
+ },
+ {
+  "id": "204",
+  "format": "bamboo",
+  "topic": "healthy eating",
+  "title": "Why healthy eating feels slow:",
+  "music": 0,
+  "accent": 2,
+  "end": [
+   "Keep watering it.",
+   "*It's growing.*"
+  ],
+  "bamboo": {
+   "years": [
+    "Takeaway daily",
+    "Cooking sometimes",
+    "Cooking most days",
+    "Love it now"
+   ],
+   "win": "Feeling amazing"
+  }
+ },
+ {
+  "id": "205",
+  "format": "domino",
+  "topic": "phone detox",
+  "title": "Getting your time back starts small:",
+  "music": 5,
+  "accent": 3,
+  "end": [
+   "You don't need a big leap.",
+   "Just *the first push*."
+  ],
+  "domino": {
+   "steps": [
+    "Turn off alerts",
+    "Phone out of bed",
+    "Delete one app",
+    "Read instead",
+    "Sleep better",
+    "Your life back"
+   ]
+  }
+ },
+ {
+  "id": "206",
+  "format": "pile",
+  "topic": "sleep",
+  "title": "Fixing your sleep:",
+  "music": 4,
+  "accent": 4,
+  "end": [
+   "Nobody gets it first try.",
+   "*Keep throwing.*"
+  ],
+  "pile": {
+   "unit": "restless nights",
+   "count": 300,
+   "winWord": "Got it!"
+  }
+ },
+ {
+  "id": "207",
+  "format": "squiggle",
+  "topic": "patience",
+  "title": "Trusting the process:",
+  "music": 3,
+  "accent": 5,
+  "end": [
+   "Nobody's path is *straight*.",
+   "Don't quit in the loops."
+  ],
+  "squiggle": {
+   "goal": "Results",
+   "setbacks": [
+    "Wanted it now",
+    "Compared myself",
+    "Gave up early",
+    "Rushed it",
+    "Frustrated",
+    "Waited"
+   ]
+  }
+ },
+ {
+  "id": "208",
+  "format": "iceberg",
+  "topic": "self-love",
+  "title": "What self-love really takes:",
+  "music": 2,
+  "accent": 0,
+  "end": [
+   "Success is an *iceberg*.",
+   "Most of it is underwater."
+  ],
+  "iceberg": {
+   "see": "Confident smile",
+   "hidden": [
+    "Kind self-talk",
+    "Setting boundaries",
+    "Saying no",
+    "Therapy",
+    "Hard mirror days",
+    "Years of unlearning"
+   ]
+  }
+ },
+ {
+  "id": "209",
+  "format": "compound",
+  "topic": "parenting",
+  "title": "Small habits, big results:",
+  "music": 1,
+  "accent": 1,
+  "end": [
+   "Don't wait for big changes.",
+   "Make *tiny* ones daily."
+  ],
+  "compound": {
+   "habit": "Read 1 story a day",
+   "perDay": 1,
+   "unit": "stories",
+   "unitOne": "storie"
+  }
+ },
+ {
+  "id": "210",
+  "format": "valley",
+  "topic": "marriage",
+  "title": "Building a strong relationship takes time:",
+  "music": 0,
+  "accent": 2,
+  "end": [
+   "Feeling stuck?",
+   "You might be *almost there*."
+  ],
+  "valley": {
+   "quit": "the first big fight",
+   "win": "Still in love"
+  }
+ },
+ {
+  "id": "211",
+  "format": "bamboo",
+  "topic": "forgiveness",
+  "title": "Why forgiveness feels slow:",
+  "music": 5,
+  "accent": 3,
+  "end": [
+   "What looks like nothing",
+   "is *building something*."
+  ],
+  "bamboo": {
+   "years": [
+    "Angry",
+    "Less angry",
+    "Rarely think of it",
+    "Free"
+   ],
+   "win": "Free"
+  }
+ },
+ {
+  "id": "212",
+  "format": "domino",
+  "topic": "art career",
+  "title": "Living from your art starts small:",
+  "music": 4,
+  "accent": 4,
+  "end": [
+   "Small today.",
+   "*Life-changing* tomorrow."
+  ],
+  "domino": {
+   "steps": [
+    "Make one piece",
+    "Share it",
+    "Sell one",
+    "Build an audience",
+    "Raise prices",
+    "Full-time"
+   ]
+  }
+ },
+ {
+  "id": "213",
+  "format": "pile",
+  "topic": "basketball",
+  "title": "Getting good at basketball:",
+  "music": 3,
+  "accent": 5,
+  "end": [
+   "Everyone wants the result.",
+   "Nobody sees the *864 missed shots* before it."
+  ],
+  "pile": {
+   "unit": "missed shots",
+   "count": 864,
+   "winWord": "Made it!"
+  }
+ },
+ {
+  "id": "214",
+  "format": "squiggle",
+  "topic": "skateboarding",
+  "title": "Landing your first trick:",
+  "music": 2,
+  "accent": 0,
+  "end": [
+   "The mess *is* the path.",
+   "Keep drawing the line."
+  ],
+  "squiggle": {
+   "goal": "Kickflip",
+   "setbacks": [
+    "Fell",
+    "Scraped knee",
+    "Broke wrist",
+    "Laughed at",
+    "Board snapped",
+    "Got back on"
+   ]
+  }
+ },
+ {
+  "id": "215",
+  "format": "iceberg",
+  "topic": "kindness",
+  "title": "What kindness really takes:",
+  "music": 1,
+  "accent": 1,
+  "end": [
+   "Overnight success?",
+   "It took *years* of nights."
+  ],
+  "iceberg": {
+   "see": "Good person",
+   "hidden": [
+    "Small daily acts",
+    "Holding doors",
+    "Listening longer",
+    "Kind when tired",
+    "Unthanked help",
+    "1,000 small acts"
+   ]
+  }
+ },
+ {
+  "id": "216",
+  "format": "compound",
+  "topic": "starting over",
+  "title": "1% better every day:",
+  "music": 0,
+  "accent": 2,
+  "end": [
+   "Nothing changes on day 1.",
+   "Everything changes by *day 365*."
+  ],
+  "compound": {
+   "habit": "Take 1 step a day",
+   "perDay": 1,
+   "unit": "steps",
+   "unitOne": "step"
+  }
+ },
+ {
+  "id": "217",
+  "format": "compound",
+  "topic": "fitness",
+  "title": "1% better every day:",
+  "music": 5,
+  "accent": 4,
+  "end": [
+   "Nothing changes on day 1.",
+   "Everything changes by *day 365*."
+  ],
+  "compound": {
+   "habit": "20 push-ups a day",
+   "perDay": 20,
+   "unit": "push-ups",
+   "unitOne": "push-up"
+  }
+ },
+ {
+  "id": "218",
+  "format": "valley",
+  "topic": "running",
+  "title": "Learning to run takes time:",
+  "music": 4,
+  "accent": 5,
+  "end": [
+   "The curve always bends.",
+   "*Stay* for it."
+  ],
+  "valley": {
+   "quit": "week 3: lungs on fire",
+   "win": "Finished 42 km"
+  }
+ },
+ {
+  "id": "219",
+  "format": "bamboo",
+  "topic": "weight loss",
+  "title": "Why weight loss feels slow:",
+  "music": 3,
+  "accent": 0,
+  "end": [
+   "Be patient.",
+   "*Year 5* is coming."
+  ],
+  "bamboo": {
+   "years": [
+    "Lost 2 kg",
+    "Gained 1 back",
+    "Down 9 kg",
+    "Down 15 kg"
+   ],
+   "win": "Down 20 kg"
+  }
+ },
+ {
+  "id": "220",
+  "format": "domino",
+  "topic": "writing",
+  "title": "Becoming a writer starts small:",
+  "music": 2,
+  "accent": 1,
+  "end": [
+   "Don't chase the big domino.",
+   "Push the *small* one."
+  ],
+  "domino": {
+   "steps": [
+    "Write one sentence",
+    "Write one page",
+    "Write every day",
+    "Finish a draft",
+    "Find an agent",
+    "Published"
+   ]
+  }
+ },
+ {
+  "id": "221",
+  "format": "pile",
+  "topic": "drawing",
+  "title": "Getting good at drawing:",
+  "music": 1,
+  "accent": 2,
+  "end": [
+   "Miss. Miss. Miss.",
+   "*Then* it goes in."
+  ],
+  "pile": {
+   "unit": "bad sketches",
+   "count": 2140,
+   "winWord": "Yes!!"
+  }
+ },
+ {
+  "id": "222",
+  "format": "squiggle",
+  "topic": "guitar",
+  "title": "Becoming a musician:",
+  "music": 0,
+  "accent": 3,
+  "end": [
+   "You're not lost.",
+   "You're in *the loops*."
+  ],
+  "squiggle": {
+   "goal": "On stage",
+   "setbacks": [
+    "Sore fingers",
+    "F chord",
+    "Buzzing strings",
+    "Gave up twice",
+    "Stage fright",
+    "Played anyway"
+   ]
+  }
+ },
+ {
+  "id": "223",
+  "format": "iceberg",
+  "topic": "singing",
+  "title": "What singing really takes:",
+  "music": 5,
+  "accent": 4,
+  "end": [
+   "Don't compare your start",
+   "to someone's *tip of the iceberg*."
+  ],
+  "iceberg": {
+   "see": "Perfect voice",
+   "hidden": [
+    "Breathing drills",
+    "Singing in the car",
+    "Recordings you hated",
+    "Vocal rest days",
+    "Choir rejections",
+    "Years of warm-ups"
+   ]
+  }
+ },
+ {
+  "id": "224",
+  "format": "compound",
+  "topic": "coding",
+  "title": "The power of tiny habits:",
+  "music": 4,
+  "accent": 5,
+  "end": [
+   "Tiny habits.",
+   "*Massive* results."
+  ],
+  "compound": {
+   "habit": "Code 1 hour a day",
+   "perDay": 1,
+   "unit": "hours",
+   "unitOne": "hour"
+  }
+ },
+ {
+  "id": "225",
+  "format": "valley",
+  "topic": "business",
+  "title": "Building a business takes time:",
+  "music": 3,
+  "accent": 0,
+  "end": [
+   "Your breakthrough is",
+   "*further up the curve*."
+  ],
+  "valley": {
+   "quit": "month 8: no revenue",
+   "win": "First $1M"
+  }
+ },
+ {
+  "id": "226",
+  "format": "bamboo",
+  "topic": "saving money",
+  "title": "Why saving money feels slow:",
+  "music": 2,
+  "accent": 1,
+  "end": [
+   "Roots first.",
+   "*Then* growth."
+  ],
+  "bamboo": {
+   "years": [
+    "$800 saved",
+    "Emergency fund",
+    "Paid off a card",
+    "First investment"
+   ],
+   "win": "Debt free"
+  }
+ },
+ {
+  "id": "227",
+  "format": "domino",
+  "topic": "investing",
+  "title": "Growing wealth starts small:",
+  "music": 1,
+  "accent": 2,
+  "end": [
+   "Big changes start",
+   "*embarrassingly small*."
+  ],
+  "domino": {
+   "steps": [
+    "Open an account",
+    "Invest $10",
+    "Automate it",
+    "Never stop",
+    "Let it compound",
+    "Freedom"
+   ]
+  }
+ },
+ {
+  "id": "228",
+  "format": "pile",
+  "topic": "languages",
+  "title": "Learning a language:",
+  "music": 0,
+  "accent": 3,
+  "end": [
+   "The pile is the *proof*.",
+   "Keep throwing."
+  ],
+  "pile": {
+   "unit": "embarrassing mistakes",
+   "count": 2650,
+   "winWord": "Got it!"
+  }
+ },
+ {
+  "id": "229",
+  "format": "squiggle",
+  "topic": "public speaking",
+  "title": "Finding confidence on stage:",
+  "music": 5,
+  "accent": 4,
+  "end": [
+   "Success is a *scribble*.",
+   "Keep your pen moving."
+  ],
+  "squiggle": {
+   "goal": "Keynote",
+   "setbacks": [
+    "Blanked out",
+    "Shaking hands",
+    "Boring talk",
+    "Got heckled",
+    "Slides broke",
+    "Spoke again"
+   ]
+  }
+ },
+ {
+  "id": "230",
+  "format": "iceberg",
+  "topic": "reading",
+  "title": "What reading really takes:",
+  "music": 4,
+  "accent": 5,
+  "end": [
+   "The work nobody sees",
+   "is *the work that counts*."
+  ],
+  "iceberg": {
+   "see": "Smart friend",
+   "hidden": [
+    "Reading before bed",
+    "Phone in another room",
+    "Books on the commute",
+    "Quitting bad books",
+    "Notes in margins",
+    "500 books"
+   ]
+  }
+ },
+ {
+  "id": "231",
+  "format": "compound",
+  "topic": "meditation",
+  "title": "Small habits, big results:",
+  "music": 3,
+  "accent": 0,
+  "end": [
+   "You don't need more time.",
+   "You need *a little, daily*."
+  ],
+  "compound": {
+   "habit": "Meditate 10 minutes a day",
+   "perDay": 10,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "232",
+  "format": "valley",
+  "topic": "confidence",
+  "title": "Building confidence takes time:",
+  "music": 2,
+  "accent": 1,
+  "end": [
+   "The results are *coming*.",
+   "Don't quit in the valley."
+  ],
+  "valley": {
+   "quit": "first rejection",
+   "win": "Fearless"
+  }
+ },
+ {
+  "id": "233",
+  "format": "bamboo",
+  "topic": "photography",
+  "title": "Why photography feels slow:",
+  "music": 1,
+  "accent": 2,
+  "end": [
+   "Nothing happening?",
+   "Your roots are *growing*."
+  ],
+  "bamboo": {
+   "years": [
+    "Phone snaps",
+    "First camera",
+    "Free shoots",
+    "First paid gig"
+   ],
+   "win": "Magazine cover"
+  }
+ },
+ {
+  "id": "234",
+  "format": "domino",
+  "topic": "cooking",
+  "title": "Becoming a great cook starts small:",
+  "music": 0,
+  "accent": 3,
+  "end": [
+   "One small habit",
+   "can change *everything*."
+  ],
+  "domino": {
+   "steps": [
+    "Boil an egg",
+    "Cook one meal",
+    "Cook every day",
+    "Try new recipes",
+    "Host friends",
+    "A chef"
+   ]
+  }
+ },
+ {
+  "id": "235",
+  "format": "pile",
+  "topic": "content creation",
+  "title": "Growing on social media:",
+  "music": 5,
+  "accent": 4,
+  "end": [
+   "They'll see one shot.",
+   "You'll know about *the 640*."
+  ],
+  "pile": {
+   "unit": "posts nobody saw",
+   "count": 640,
+   "winWord": "Made it!"
+  }
+ },
+ {
+  "id": "236",
+  "format": "squiggle",
+  "topic": "dancing",
+  "title": "Becoming a dancer:",
+  "music": 4,
+  "accent": 5,
+  "end": [
+   "They show the arrow.",
+   "Nobody shows *the scribble*."
+  ],
+  "squiggle": {
+   "goal": "On stage",
+   "setbacks": [
+    "Two left feet",
+    "Sprained ankle",
+    "Forgot routine",
+    "Laughed at",
+    "Lost rhythm",
+    "Danced again"
+   ]
+  }
+ },
+ {
+  "id": "237",
+  "format": "iceberg",
+  "topic": "studying",
+  "title": "What studying really takes:",
+  "music": 3,
+  "accent": 0,
+  "end": [
+   "Everyone admires the tip.",
+   "Respect *what's underneath*."
+  ],
+  "iceberg": {
+   "see": "Top of the class",
+   "hidden": [
+    "Late-night revision",
+    "Practice papers",
+    "Failed mocks",
+    "No social life",
+    "Asking dumb questions",
+    "Months of notes"
+   ]
+  }
+ },
+ {
+  "id": "238",
+  "format": "compound",
+  "topic": "job hunting",
+  "title": "1% better every day:",
+  "music": 2,
+  "accent": 1,
+  "end": [
+   "*1%* a day.",
+   "That's all it takes."
+  ],
+  "compound": {
+   "habit": "Send 5 applications a day",
+   "perDay": 5,
+   "unit": "applications",
+   "unitOne": "application"
+  }
+ },
+ {
+  "id": "239",
+  "format": "valley",
+  "topic": "waking early",
+  "title": "Becoming a morning person takes time:",
+  "music": 1,
+  "accent": 2,
+  "end": [
+   "Progress feels like nothing",
+   "until it's *everything*."
+  ],
+  "valley": {
+   "quit": "day 4: exhausted",
+   "win": "Owning mornings"
+  }
+ },
+ {
+  "id": "240",
+  "format": "bamboo",
+  "topic": "quitting smoking",
+  "title": "Why quitting smoking feels slow:",
+  "music": 0,
+  "accent": 3,
+  "end": [
+   "Overnight success",
+   "takes *years* underground."
+  ],
+  "bamboo": {
+   "years": [
+    "Tried, relapsed",
+    "Cut down",
+    "6 months free",
+    "Barely think of it"
+   ],
+   "win": "1 year free"
+  }
+ },
+ {
+  "id": "241",
+  "format": "domino",
+  "topic": "heartbreak",
+  "title": "Moving on starts small:",
+  "music": 5,
+  "accent": 4,
+  "end": [
+   "Start with domino one.",
+   "*The rest will follow.*"
+  ],
+  "domino": {
+   "steps": [
+    "Get out of bed",
+    "Call a friend",
+    "Move your body",
+    "Try something new",
+    "Meet new people",
+    "A better life"
+   ]
+  }
+ },
+ {
+  "id": "242",
+  "format": "pile",
+  "topic": "friendship",
+  "title": "Making real friends:",
+  "music": 4,
+  "accent": 5,
+  "end": [
+   "Every miss is a step",
+   "*towards the hit*."
+  ],
+  "pile": {
+   "unit": "awkward hellos",
+   "count": 380,
+   "winWord": "Nailed it!"
+  }
+ },
+ {
+  "id": "243",
+  "format": "squiggle",
+  "topic": "chess",
+  "title": "Becoming a chess player:",
+  "music": 3,
+  "accent": 0,
+  "end": [
+   "Setbacks aren't detours.",
+   "They're *the road*."
+  ],
+  "squiggle": {
+   "goal": "2000 rating",
+   "setbacks": [
+    "Blundered queen",
+    "Rating crash",
+    "Tilted",
+    "Opening trap",
+    "Lost 10 in a row",
+    "Studied more"
+   ]
+  }
+ },
+ {
+  "id": "244",
+  "format": "iceberg",
+  "topic": "swimming",
+  "title": "What swimming really takes:",
+  "music": 2,
+  "accent": 1,
+  "end": [
+   "They see *Effortless laps*.",
+   "They don't see the cost."
+  ],
+  "iceberg": {
+   "see": "Effortless laps",
+   "hidden": [
+    "Fear of deep water",
+    "Swallowing water",
+    "Kickboard drills",
+    "Freezing mornings",
+    "Breathing practice",
+    "Hundreds of laps"
+   ]
+  }
+ },
+ {
+  "id": "245",
+  "format": "compound",
+  "topic": "yoga",
+  "title": "The power of tiny habits:",
+  "music": 1,
+  "accent": 2,
+  "end": [
+   "Small steps, *every day*.",
+   "They add up faster than you think."
+  ],
+  "compound": {
+   "habit": "Stretch 15 minutes a day",
+   "perDay": 15,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "246",
+  "format": "valley",
+  "topic": "piano",
+  "title": "Learning piano takes time:",
+  "music": 0,
+  "accent": 3,
+  "end": [
+   "Most people quit",
+   "*right before* it works."
+  ],
+  "valley": {
+   "quit": "month 2: hands won't obey",
+   "win": "First recital"
+  }
+ },
+ {
+  "id": "247",
+  "format": "bamboo",
+  "topic": "design",
+  "title": "Why design feels slow:",
+  "music": 5,
+  "accent": 4,
+  "end": [
+   "Keep watering it.",
+   "*It's growing.*"
+  ],
+  "bamboo": {
+   "years": [
+    "Ugly posters",
+    "Better posters",
+    "First client",
+    "Full-time"
+   ],
+   "win": "Award winner"
+  }
+ },
+ {
+  "id": "248",
+  "format": "domino",
+  "topic": "sales",
+  "title": "Becoming a top seller starts small:",
+  "music": 4,
+  "accent": 5,
+  "end": [
+   "You don't need a big leap.",
+   "Just *the first push*."
+  ],
+  "domino": {
+   "steps": [
+    "Make one call",
+    "Make 20 calls",
+    "Follow up",
+    "Close a deal",
+    "Get referrals",
+    "Top seller"
+   ]
+  }
+ },
+ {
+  "id": "249",
+  "format": "pile",
+  "topic": "career",
+  "title": "Getting promoted:",
+  "music": 3,
+  "accent": 0,
+  "end": [
+   "Nobody gets it first try.",
+   "*Keep throwing.*"
+  ],
+  "pile": {
+   "unit": "late evenings",
+   "count": 600,
+   "winWord": "Finally!"
+  }
+ },
+ {
+  "id": "250",
+  "format": "squiggle",
+  "topic": "freelancing",
+  "title": "Becoming your own boss:",
+  "music": 2,
+  "accent": 1,
+  "end": [
+   "Nobody's path is *straight*.",
+   "Don't quit in the loops."
+  ],
+  "squiggle": {
+   "goal": "Fully booked",
+   "setbacks": [
+    "No clients",
+    "Late payment",
+    "Scope creep",
+    "Bad review",
+    "Dry month",
+    "Pitched again"
+   ]
+  }
+ },
+ {
+  "id": "251",
+  "format": "iceberg",
+  "topic": "app building",
+  "title": "What app building really takes:",
+  "music": 1,
+  "accent": 2,
+  "end": [
+   "Success is an *iceberg*.",
+   "Most of it is underwater."
+  ],
+  "iceberg": {
+   "see": "Top of the charts",
+   "hidden": [
+    "Bugs at 3am",
+    "Store rejections",
+    "12 downloads",
+    "1-star reviews",
+    "Rewriting it twice",
+    "Two years of nights"
+   ]
+  }
+ },
+ {
+  "id": "252",
+  "format": "compound",
+  "topic": "debt",
+  "title": "Small habits, big results:",
+  "music": 0,
+  "accent": 3,
+  "end": [
+   "Don't wait for big changes.",
+   "Make *tiny* ones daily."
+  ],
+  "compound": {
+   "habit": "Put $10 a day to debt",
+   "perDay": 10,
+   "unit": "dollars",
+   "unitOne": "dollar"
+  }
+ },
+ {
+  "id": "253",
+  "format": "valley",
+  "topic": "maths",
+  "title": "Getting good at maths takes time:",
+  "music": 5,
+  "accent": 4,
+  "end": [
+   "Feeling stuck?",
+   "You might be *almost there*."
+  ],
+  "valley": {
+   "quit": "failed the first test",
+   "win": "Top of the class"
+  }
+ },
+ {
+  "id": "254",
+  "format": "bamboo",
+  "topic": "medicine",
+  "title": "Why medicine feels slow:",
+  "music": 4,
+  "accent": 5,
+  "end": [
+   "What looks like nothing",
+   "is *building something*."
+  ],
+  "bamboo": {
+   "years": [
+    "Drowning in books",
+    "Anatomy",
+    "On the wards",
+    "Final exams"
+   ],
+   "win": "Graduation day"
+  }
+ },
+ {
+  "id": "255",
+  "format": "domino",
+  "topic": "teaching",
+  "title": "Learning to teach starts small:",
+  "music": 3,
+  "accent": 0,
+  "end": [
+   "Small today.",
+   "*Life-changing* tomorrow."
+  ],
+  "domino": {
+   "steps": [
+    "Learn their names",
+    "Plan well",
+    "Listen",
+    "Adapt",
+    "Inspire one kid",
+    "A legacy"
+   ]
+  }
+ },
+ {
+  "id": "256",
+  "format": "pile",
+  "topic": "mental health",
+  "title": "Healing your mind:",
+  "music": 2,
+  "accent": 1,
+  "end": [
+   "Everyone wants the result.",
+   "Nobody sees the *365 hard days* before it."
+  ],
+  "pile": {
+   "unit": "hard days",
+   "count": 365,
+   "winWord": "Yes!!"
+  }
+ },
+ {
+  "id": "257",
+  "format": "squiggle",
+  "topic": "discipline",
+  "title": "Becoming disciplined:",
+  "music": 1,
+  "accent": 2,
+  "end": [
+   "The mess *is* the path.",
+   "Keep drawing the line."
+  ],
+  "squiggle": {
+   "goal": "Unstoppable",
+   "setbacks": [
+    "Skipped a day",
+    "Phone won",
+    "Lazy weekend",
+    "Broke the streak",
+    "Excuses",
+    "Restarted"
+   ]
+  }
+ },
+ {
+  "id": "258",
+  "format": "iceberg",
+  "topic": "gardening",
+  "title": "What gardening really takes:",
+  "music": 0,
+  "accent": 3,
+  "end": [
+   "Overnight success?",
+   "It took *years* of nights."
+  ],
+  "iceberg": {
+   "see": "Beautiful garden",
+   "hidden": [
+    "Dead plants",
+    "Bad soil",
+    "Pests",
+    "Watering at dawn",
+    "Learning seasons",
+    "Years of patience"
+   ]
+  }
+ },
+ {
+  "id": "259",
+  "format": "compound",
+  "topic": "martial arts",
+  "title": "1% better every day:",
+  "music": 5,
+  "accent": 4,
+  "end": [
+   "Nothing changes on day 1.",
+   "Everything changes by *day 365*."
+  ],
+  "compound": {
+   "habit": "Train 30 minutes a day",
+   "perDay": 30,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "260",
+  "format": "valley",
+  "topic": "cycling",
+  "title": "Getting into cycling takes time:",
+  "music": 4,
+  "accent": 5,
+  "end": [
+   "The curve always bends.",
+   "*Stay* for it."
+  ],
+  "valley": {
+   "quit": "the first big hill",
+   "win": "Century ride"
+  }
+ },
+ {
+  "id": "261",
+  "format": "bamboo",
+  "topic": "climbing",
+  "title": "Why climbing feels slow:",
+  "music": 3,
+  "accent": 0,
+  "end": [
+   "Be patient.",
+   "*Year 5* is coming."
+  ],
+  "bamboo": {
+   "years": [
+    "Easy walls",
+    "Fell a lot",
+    "Harder routes",
+    "Outdoor rock"
+   ],
+   "win": "First summit"
+  }
+ },
+ {
+  "id": "262",
+  "format": "domino",
+  "topic": "football",
+  "title": "Becoming a player starts small:",
+  "music": 2,
+  "accent": 1,
+  "end": [
+   "Don't chase the big domino.",
+   "Push the *small* one."
+  ],
+  "domino": {
+   "steps": [
+    "Kick a ball",
+    "Practise daily",
+    "Join a team",
+    "Earn a spot",
+    "Score",
+    "A player"
+   ]
+  }
+ },
+ {
+  "id": "263",
+  "format": "pile",
+  "topic": "tennis",
+  "title": "Learning tennis:",
+  "music": 1,
+  "accent": 2,
+  "end": [
+   "Miss. Miss. Miss.",
+   "*Then* it goes in."
+  ],
+  "pile": {
+   "unit": "balls in the net",
+   "count": 4400,
+   "winWord": "Got it!"
+  }
+ },
+ {
+  "id": "264",
+  "format": "squiggle",
+  "topic": "boxing",
+  "title": "Becoming a fighter:",
+  "music": 0,
+  "accent": 3,
+  "end": [
+   "You're not lost.",
+   "You're in *the loops*."
+  ],
+  "squiggle": {
+   "goal": "Champion",
+   "setbacks": [
+    "Got knocked down",
+    "Gassed out",
+    "Lost a bout",
+    "Bruised",
+    "Doubted myself",
+    "Got back up"
+   ]
+  }
+ },
+ {
+  "id": "265",
+  "format": "iceberg",
+  "topic": "podcasting",
+  "title": "What podcasting really takes:",
+  "music": 5,
+  "accent": 4,
+  "end": [
+   "Don't compare your start",
+   "to someone's *tip of the iceberg*."
+  ],
+  "iceberg": {
+   "see": "Top 10 podcast",
+   "hidden": [
+    "8 listeners",
+    "Editing all night",
+    "Cancelled guests",
+    "Bad audio",
+    "Weekly deadlines",
+    "120 episodes first"
+   ]
+  }
+ },
+ {
+  "id": "266",
+  "format": "compound",
+  "topic": "acting",
+  "title": "The power of tiny habits:",
+  "music": 4,
+  "accent": 5,
+  "end": [
+   "Tiny habits.",
+   "*Massive* results."
+  ],
+  "compound": {
+   "habit": "Rehearse 30 minutes a day",
+   "perDay": 30,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "267",
+  "format": "valley",
+  "topic": "comedy",
+  "title": "Getting good at stand-up takes time:",
+  "music": 3,
+  "accent": 0,
+  "end": [
+   "Your breakthrough is",
+   "*further up the curve*."
+  ],
+  "valley": {
+   "quit": "open mic 15: silence",
+   "win": "Sold-out show"
+  }
+ },
+ {
+  "id": "268",
+  "format": "bamboo",
+  "topic": "novel writing",
+  "title": "Why novel writing feels slow:",
+  "music": 2,
+  "accent": 1,
+  "end": [
+   "Roots first.",
+   "*Then* growth."
+  ],
+  "bamboo": {
+   "years": [
+    "Chapter 1",
+    "Restarted",
+    "First draft done",
+    "Rewrite done"
+   ],
+   "win": "The End"
+  }
+ },
+ {
+  "id": "269",
+  "format": "domino",
+  "topic": "driving",
+  "title": "Getting your licence starts small:",
+  "music": 1,
+  "accent": 2,
+  "end": [
+   "Big changes start",
+   "*embarrassingly small*."
+  ],
+  "domino": {
+   "steps": [
+    "Book a lesson",
+    "Start the car",
+    "Practise",
+    "Take the test",
+    "Pass",
+    "Freedom"
+   ]
+  }
+ },
+ {
+  "id": "270",
+  "format": "pile",
+  "topic": "video editing",
+  "title": "Learning video editing:",
+  "music": 0,
+  "accent": 3,
+  "end": [
+   "The pile is the *proof*.",
+   "Keep throwing."
+  ],
+  "pile": {
+   "unit": "crashed renders",
+   "count": 310,
+   "winWord": "Made it!"
+  }
+ },
+ {
+  "id": "271",
+  "format": "squiggle",
+  "topic": "data science",
+  "title": "Becoming a data scientist:",
+  "music": 5,
+  "accent": 4,
+  "end": [
+   "Success is a *scribble*.",
+   "Keep your pen moving."
+  ],
+  "squiggle": {
+   "goal": "Data scientist",
+   "setbacks": [
+    "Maths wall",
+    "Bad model",
+    "Overfit",
+    "Rejected",
+    "Data was a mess",
+    "Fixed it"
+   ]
+  }
+ },
+ {
+  "id": "272",
+  "format": "iceberg",
+  "topic": "university",
+  "title": "What university really takes:",
+  "music": 4,
+  "accent": 5,
+  "end": [
+   "The work nobody sees",
+   "is *the work that counts*."
+  ],
+  "iceberg": {
+   "see": "Acceptance letter",
+   "hidden": [
+    "Practice tests",
+    "85 essay drafts",
+    "Retakes",
+    "Weekend study",
+    "Rejections",
+    "Years of grades"
+   ]
+  }
+ },
+ {
+  "id": "273",
+  "format": "compound",
+  "topic": "minimalism",
+  "title": "Small habits, big results:",
+  "music": 3,
+  "accent": 0,
+  "end": [
+   "You don't need more time.",
+   "You need *a little, daily*."
+  ],
+  "compound": {
+   "habit": "Give away 1 thing a day",
+   "perDay": 1,
+   "unit": "things",
+   "unitOne": "thing"
+  }
+ },
+ {
+  "id": "274",
+  "format": "valley",
+  "topic": "journaling",
+  "title": "Building a journaling habit takes time:",
+  "music": 2,
+  "accent": 1,
+  "end": [
+   "The results are *coming*.",
+   "Don't quit in the valley."
+  ],
+  "valley": {
+   "quit": "week 2: nothing to say",
+   "win": "Clear mind"
+  }
+ },
+ {
+  "id": "275",
+  "format": "bamboo",
+  "topic": "gratitude",
+  "title": "Why gratitude feels slow:",
+  "music": 1,
+  "accent": 2,
+  "end": [
+   "Nothing happening?",
+   "Your roots are *growing*."
+  ],
+  "bamboo": {
+   "years": [
+    "Forced",
+    "Sometimes real",
+    "Most days",
+    "Changed how you see"
+   ],
+   "win": "Real joy"
+  }
+ },
+ {
+  "id": "276",
+  "format": "domino",
+  "topic": "healthy eating",
+  "title": "Fixing your diet starts small:",
+  "music": 0,
+  "accent": 3,
+  "end": [
+   "One small habit",
+   "can change *everything*."
+  ],
+  "domino": {
+   "steps": [
+    "Drink water",
+    "Add one vegetable",
+    "Cook at home",
+    "Cut sugar",
+    "More energy",
+    "A healthy life"
+   ]
+  }
+ },
+ {
+  "id": "277",
+  "format": "pile",
+  "topic": "phone detox",
+  "title": "Breaking phone addiction:",
+  "music": 5,
+  "accent": 4,
+  "end": [
+   "They'll see one shot.",
+   "You'll know about *the 5,000*."
+  ],
+  "pile": {
+   "unit": "urges to scroll",
+   "count": 5000,
+   "winWord": "Nailed it!"
+  }
+ },
+ {
+  "id": "278",
+  "format": "squiggle",
+  "topic": "sleep",
+  "title": "Sleeping well again:",
+  "music": 4,
+  "accent": 5,
+  "end": [
+   "They show the arrow.",
+   "Nobody shows *the scribble*."
+  ],
+  "squiggle": {
+   "goal": "Deep sleep",
+   "setbacks": [
+    "Insomnia",
+    "Late screens",
+    "Coffee at 6pm",
+    "Stress",
+    "Bad weekend",
+    "Tried again"
+   ]
+  }
+ },
+ {
+  "id": "279",
+  "format": "iceberg",
+  "topic": "patience",
+  "title": "What patience really takes:",
+  "music": 3,
+  "accent": 0,
+  "end": [
+   "Everyone admires the tip.",
+   "Respect *what's underneath*."
+  ],
+  "iceberg": {
+   "see": "Lucky break",
+   "hidden": [
+    "Waiting",
+    "Doing it anyway",
+    "No results yet",
+    "Comparing less",
+    "Trusting it",
+    "1,000 days"
+   ]
+  }
+ },
+ {
+  "id": "280",
+  "format": "compound",
+  "topic": "self-love",
+  "title": "1% better every day:",
+  "music": 2,
+  "accent": 1,
+  "end": [
+   "*1%* a day.",
+   "That's all it takes."
+  ],
+  "compound": {
+   "habit": "Say 1 kind thing to you a day",
+   "perDay": 1,
+   "unit": "kind things",
+   "unitOne": "kind thing"
+  }
+ },
+ {
+  "id": "281",
+  "format": "valley",
+  "topic": "parenting",
+  "title": "Being a good parent takes time:",
+  "music": 1,
+  "accent": 2,
+  "end": [
+   "Progress feels like nothing",
+   "until it's *everything*."
+  ],
+  "valley": {
+   "quit": "the toddler years",
+   "win": "Kind kids"
+  }
+ },
+ {
+  "id": "282",
+  "format": "bamboo",
+  "topic": "marriage",
+  "title": "Why marriage feels slow:",
+  "music": 0,
+  "accent": 3,
+  "end": [
+   "Overnight success",
+   "takes *years* underground."
+  ],
+  "bamboo": {
+   "years": [
+    "Honeymoon",
+    "First fights",
+    "Learning",
+    "Stronger"
+   ],
+   "win": "Still in love"
+  }
+ },
+ {
+  "id": "283",
+  "format": "domino",
+  "topic": "forgiveness",
+  "title": "Letting go starts small:",
+  "music": 5,
+  "accent": 4,
+  "end": [
+   "Start with domino one.",
+   "*The rest will follow.*"
+  ],
+  "domino": {
+   "steps": [
+    "Admit it hurts",
+    "Talk about it",
+    "Stop replaying",
+    "Choose peace",
+    "Let go",
+    "Freedom"
+   ]
+  }
+ },
+ {
+  "id": "284",
+  "format": "pile",
+  "topic": "art career",
+  "title": "Selling your art:",
+  "music": 4,
+  "accent": 5,
+  "end": [
+   "Every miss is a step",
+   "*towards the hit*."
+  ],
+  "pile": {
+   "unit": "unsold pieces",
+   "count": 380,
+   "winWord": "Finally!"
+  }
+ },
+ {
+  "id": "285",
+  "format": "squiggle",
+  "topic": "basketball",
+  "title": "Making the team:",
+  "music": 3,
+  "accent": 0,
+  "end": [
+   "Setbacks aren't detours.",
+   "They're *the road*."
+  ],
+  "squiggle": {
+   "goal": "Starter",
+   "setbacks": [
+    "Cut from team",
+    "Airballed",
+    "Sprained ankle",
+    "Benched",
+    "Lost the final",
+    "Shot again"
+   ]
+  }
+ },
+ {
+  "id": "286",
+  "format": "iceberg",
+  "topic": "skateboarding",
+  "title": "What skateboarding really takes:",
+  "music": 2,
+  "accent": 1,
+  "end": [
+   "They see *Clean kickflip*.",
+   "They don't see the cost."
+  ],
+  "iceberg": {
+   "see": "Clean kickflip",
+   "hidden": [
+    "2,500 falls",
+    "Scraped knees",
+    "Sore ankles",
+    "Laughed at",
+    "Broken boards",
+    "Hours alone"
+   ]
+  }
+ },
+ {
+  "id": "287",
+  "format": "compound",
+  "topic": "kindness",
+  "title": "The power of tiny habits:",
+  "music": 1,
+  "accent": 2,
+  "end": [
+   "Small steps, *every day*.",
+   "They add up faster than you think."
+  ],
+  "compound": {
+   "habit": "Do 1 kind act a day",
+   "perDay": 1,
+   "unit": "kind acts",
+   "unitOne": "kind act"
+  }
+ },
+ {
+  "id": "288",
+  "format": "valley",
+  "topic": "starting over",
+  "title": "Starting over takes time:",
+  "music": 0,
+  "accent": 3,
+  "end": [
+   "Most people quit",
+   "*right before* it works."
+  ],
+  "valley": {
+   "quit": "month 2: miss the old life",
+   "win": "Thriving"
+  }
+ },
+ {
+  "id": "289",
+  "format": "valley",
+  "topic": "fitness",
+  "title": "Getting in shape takes time:",
+  "music": 5,
+  "accent": 5,
+  "end": [
+   "Most people quit",
+   "*right before* it works."
+  ],
+  "valley": {
+   "quit": "week 6: no abs yet",
+   "win": "Strongest ever"
+  }
+ },
+ {
+  "id": "290",
+  "format": "bamboo",
+  "topic": "running",
+  "title": "Why running feels slow:",
+  "music": 4,
+  "accent": 0,
+  "end": [
+   "Keep watering it.",
+   "*It's growing.*"
+  ],
+  "bamboo": {
+   "years": [
+    "Can't run 1 km",
+    "5 km, slowly",
+    "First 10 km",
+    "Half marathon"
+   ],
+   "win": "Finished 42 km"
+  }
+ },
+ {
+  "id": "291",
+  "format": "domino",
+  "topic": "weight loss",
+  "title": "Getting healthy starts small:",
+  "music": 3,
+  "accent": 1,
+  "end": [
+   "You don't need a big leap.",
+   "Just *the first push*."
+  ],
+  "domino": {
+   "steps": [
+    "Swap soda for water",
+    "Cook at home",
+    "Walk daily",
+    "Sleep better",
+    "Less cravings",
+    "A healthy you"
+   ]
+  }
+ },
+ {
+  "id": "292",
+  "format": "pile",
+  "topic": "writing",
+  "title": "Getting good at writing:",
+  "music": 2,
+  "accent": 2,
+  "end": [
+   "Nobody gets it first try.",
+   "*Keep throwing.*"
+  ],
+  "pile": {
+   "unit": "drafts in the bin",
+   "count": 1460,
+   "winWord": "Made it!"
+  }
+ },
+ {
+  "id": "293",
+  "format": "squiggle",
+  "topic": "drawing",
+  "title": "Becoming an artist:",
+  "music": 1,
+  "accent": 3,
+  "end": [
+   "Nobody's path is *straight*.",
+   "Don't quit in the loops."
+  ],
+  "squiggle": {
+   "goal": "Real artist",
+   "setbacks": [
+    "Hands look weird",
+    "Compared myself",
+    "Art block",
+    "Zero likes",
+    "Bad perspective",
+    "Kept sketching"
+   ]
+  }
+ },
+ {
+  "id": "294",
+  "format": "iceberg",
+  "topic": "guitar",
+  "title": "What guitar really takes:",
+  "music": 0,
+  "accent": 4,
+  "end": [
+   "Success is an *iceberg*.",
+   "Most of it is underwater."
+  ],
+  "iceberg": {
+   "see": "Shredding solo",
+   "hidden": [
+    "Bleeding fingertips",
+    "The F chord. Months.",
+    "Metronome practice",
+    "Annoyed neighbours",
+    "Shaky first gigs",
+    "5 years of scales"
+   ]
+  }
+ },
+ {
+  "id": "295",
+  "format": "compound",
+  "topic": "singing",
+  "title": "Small habits, big results:",
+  "music": 5,
+  "accent": 5,
+  "end": [
+   "Don't wait for big changes.",
+   "Make *tiny* ones daily."
+  ],
+  "compound": {
+   "habit": "Sing for 10 minutes a day",
+   "perDay": 10,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "296",
+  "format": "valley",
+  "topic": "coding",
+  "title": "Learning to code takes time:",
+  "music": 4,
+  "accent": 0,
+  "end": [
+   "Feeling stuck?",
+   "You might be *almost there*."
+  ],
+  "valley": {
+   "quit": "month 3: still lost",
+   "win": "First dev job"
+  }
+ },
+ {
+  "id": "297",
+  "format": "bamboo",
+  "topic": "business",
+  "title": "Why business feels slow:",
+  "music": 3,
+  "accent": 1,
+  "end": [
+   "What looks like nothing",
+   "is *building something*."
+  ],
+  "bamboo": {
+   "years": [
+    "0 customers",
+    "12 customers",
+    "Almost broke",
+    "Break-even"
+   ],
+   "win": "First $1M"
+  }
+ },
+ {
+  "id": "298",
+  "format": "domino",
+  "topic": "saving money",
+  "title": "Building wealth starts small:",
+  "music": 2,
+  "accent": 2,
+  "end": [
+   "Small today.",
+   "*Life-changing* tomorrow."
+  ],
+  "domino": {
+   "steps": [
+    "Track one expense",
+    "Make a budget",
+    "Save 10%",
+    "Pay off debt",
+    "Invest",
+    "Freedom"
+   ]
+  }
+ },
+ {
+  "id": "299",
+  "format": "pile",
+  "topic": "investing",
+  "title": "Learning to invest:",
+  "music": 1,
+  "accent": 3,
+  "end": [
+   "Everyone wants the result.",
+   "Nobody sees the *240 boring deposits* before it."
+  ],
+  "pile": {
+   "unit": "boring deposits",
+   "count": 240,
+   "winWord": "Nailed it!"
+  }
+ },
+ {
+  "id": "300",
+  "format": "squiggle",
+  "topic": "languages",
+  "title": "Becoming fluent:",
+  "music": 0,
+  "accent": 4,
+  "end": [
+   "The mess *is* the path.",
+   "Keep drawing the line."
+  ],
+  "squiggle": {
+   "goal": "Fluent",
+   "setbacks": [
+    "Grammar hell",
+    "Froze up",
+    "Wrong word",
+    "Forgot it all",
+    "Couldn't follow",
+    "Kept talking"
+   ]
+  }
+ },
+ {
+  "id": "301",
+  "format": "iceberg",
+  "topic": "public speaking",
+  "title": "What public speaking really takes:",
+  "music": 5,
+  "accent": 5,
+  "end": [
+   "Overnight success?",
+   "It took *years* of nights."
+  ],
+  "iceberg": {
+   "see": "Confident speaker",
+   "hidden": [
+    "Rehearsing in mirrors",
+    "Shaky first talks",
+    "Forgetting lines",
+    "Recording yourself",
+    "Tiny audiences",
+    "Years of practice"
+   ]
+  }
+ },
+ {
+  "id": "302",
+  "format": "compound",
+  "topic": "reading",
+  "title": "1% better every day:",
+  "music": 4,
+  "accent": 0,
+  "end": [
+   "Nothing changes on day 1.",
+   "Everything changes by *day 365*."
+  ],
+  "compound": {
+   "habit": "Read 10 pages a day",
+   "perDay": 10,
+   "unit": "pages",
+   "unitOne": "page"
+  }
+ },
+ {
+  "id": "303",
+  "format": "valley",
+  "topic": "meditation",
+  "title": "Learning to meditate takes time:",
+  "music": 3,
+  "accent": 1,
+  "end": [
+   "The curve always bends.",
+   "*Stay* for it."
+  ],
+  "valley": {
+   "quit": "week 1: mind racing",
+   "win": "Calm in chaos"
+  }
+ },
+ {
+  "id": "304",
+  "format": "bamboo",
+  "topic": "confidence",
+  "title": "Why confidence feels slow:",
+  "music": 2,
+  "accent": 2,
+  "end": [
+   "Be patient.",
+   "*Year 5* is coming."
+  ],
+  "bamboo": {
+   "years": [
+    "Afraid to speak",
+    "Said hi to strangers",
+    "Spoke in meetings",
+    "Led a team"
+   ],
+   "win": "Fearless"
+  }
+ },
+ {
+  "id": "305",
+  "format": "domino",
+  "topic": "photography",
+  "title": "Becoming a photographer starts small:",
+  "music": 1,
+  "accent": 3,
+  "end": [
+   "Don't chase the big domino.",
+   "Push the *small* one."
+  ],
+  "domino": {
+   "steps": [
+    "Take one photo",
+    "Shoot daily",
+    "Learn light",
+    "Build a portfolio",
+    "Get a client",
+    "A photographer"
+   ]
+  }
+ },
+ {
+  "id": "306",
+  "format": "pile",
+  "topic": "cooking",
+  "title": "Learning to cook:",
+  "music": 0,
+  "accent": 4,
+  "end": [
+   "Miss. Miss. Miss.",
+   "*Then* it goes in."
+  ],
+  "pile": {
+   "unit": "burnt dinners",
+   "count": 412,
+   "winWord": "Finally!"
+  }
+ },
+ {
+  "id": "307",
+  "format": "squiggle",
+  "topic": "content creation",
+  "title": "Becoming a creator:",
+  "music": 5,
+  "accent": 5,
+  "end": [
+   "You're not lost.",
+   "You're in *the loops*."
+  ],
+  "squiggle": {
+   "goal": "Big audience",
+   "setbacks": [
+    "12 views",
+    "Algorithm change",
+    "Hate comments",
+    "Burnout",
+    "Account hacked",
+    "Posted again"
+   ]
+  }
+ },
+ {
+  "id": "308",
+  "format": "iceberg",
+  "topic": "dancing",
+  "title": "What dancing really takes:",
+  "music": 4,
+  "accent": 0,
+  "end": [
+   "Don't compare your start",
+   "to someone's *tip of the iceberg*."
+  ],
+  "iceberg": {
+   "see": "Effortless moves",
+   "hidden": [
+    "Mirror practice",
+    "Sore everything",
+    "Missed steps",
+    "Classes after work",
+    "Bruised knees",
+    "Years of rehearsal"
+   ]
+  }
+ },
+ {
+  "id": "309",
+  "format": "compound",
+  "topic": "studying",
+  "title": "The power of tiny habits:",
+  "music": 3,
+  "accent": 1,
+  "end": [
+   "Tiny habits.",
+   "*Massive* results."
+  ],
+  "compound": {
+   "habit": "Study 2 hours a day",
+   "perDay": 2,
+   "unit": "hours",
+   "unitOne": "hour"
+  }
+ },
+ {
+  "id": "310",
+  "format": "valley",
+  "topic": "job hunting",
+  "title": "Landing your dream job takes time:",
+  "music": 2,
+  "accent": 2,
+  "end": [
+   "Your breakthrough is",
+   "*further up the curve*."
+  ],
+  "valley": {
+   "quit": "rejection number 50",
+   "win": "Offer letter"
+  }
+ },
+ {
+  "id": "311",
+  "format": "bamboo",
+  "topic": "waking early",
+  "title": "Why waking early feels slow:",
+  "music": 1,
+  "accent": 3,
+  "end": [
+   "Roots first.",
+   "*Then* growth."
+  ],
+  "bamboo": {
+   "years": [
+    "8am, groggy",
+    "7am, sometimes",
+    "6am most days",
+    "5:30, naturally"
+   ],
+   "win": "Owning mornings"
+  }
+ },
+ {
+  "id": "312",
+  "format": "domino",
+  "topic": "quitting smoking",
+  "title": "Breaking free starts small:",
+  "music": 0,
+  "accent": 4,
+  "end": [
+   "Big changes start",
+   "*embarrassingly small*."
+  ],
+  "domino": {
+   "steps": [
+    "Throw out the pack",
+    "Beat one craving",
+    "One day free",
+    "One week free",
+    "Breathe easier",
+    "A longer life"
+   ]
+  }
+ },
+ {
+  "id": "313",
+  "format": "pile",
+  "topic": "heartbreak",
+  "title": "Healing a broken heart:",
+  "music": 5,
+  "accent": 5,
+  "end": [
+   "The pile is the *proof*.",
+   "Keep throwing."
+  ],
+  "pile": {
+   "unit": "bad nights",
+   "count": 214,
+   "winWord": "Yes!!"
+  }
+ },
+ {
+  "id": "314",
+  "format": "squiggle",
+  "topic": "friendship",
+  "title": "Building your people:",
+  "music": 4,
+  "accent": 0,
+  "end": [
+   "Success is a *scribble*.",
+   "Keep your pen moving."
+  ],
+  "squiggle": {
+   "goal": "Real friends",
+   "setbacks": [
+    "Nobody replied",
+    "Awkward silence",
+    "Plans cancelled",
+    "Felt left out",
+    "Moved cities",
+    "Texted again"
+   ]
+  }
+ },
+ {
+  "id": "315",
+  "format": "iceberg",
+  "topic": "chess",
+  "title": "What chess really takes:",
+  "music": 3,
+  "accent": 1,
+  "end": [
+   "The work nobody sees",
+   "is *the work that counts*."
+  ],
+  "iceberg": {
+   "see": "Brilliant move",
+   "hidden": [
+    "Thousands of losses",
+    "Puzzles daily",
+    "Opening study",
+    "Reviewing blunders",
+    "Rating crashes",
+    "Years of games"
+   ]
+  }
+ },
+ {
+  "id": "316",
+  "format": "compound",
+  "topic": "swimming",
+  "title": "Small habits, big results:",
+  "music": 2,
+  "accent": 2,
+  "end": [
+   "You don't need more time.",
+   "You need *a little, daily*."
+  ],
+  "compound": {
+   "habit": "Swim 10 laps a day",
+   "perDay": 10,
+   "unit": "laps",
+   "unitOne": "lap"
+  }
+ },
+ {
+  "id": "317",
+  "format": "valley",
+  "topic": "yoga",
+  "title": "Getting flexible takes time:",
+  "music": 1,
+  "accent": 3,
+  "end": [
+   "The results are *coming*.",
+   "Don't quit in the valley."
+  ],
+  "valley": {
+   "quit": "week 2: still stiff",
+   "win": "Full split"
+  }
+ },
+ {
+  "id": "318",
+  "format": "bamboo",
+  "topic": "piano",
+  "title": "Why piano feels slow:",
+  "music": 0,
+  "accent": 4,
+  "end": [
+   "Nothing happening?",
+   "Your roots are *growing*."
+  ],
+  "bamboo": {
+   "years": [
+    "Chopsticks",
+    "Simple songs",
+    "Both hands",
+    "First recital"
+   ],
+   "win": "First recital"
+  }
+ },
+ {
+  "id": "319",
+  "format": "domino",
+  "topic": "design",
+  "title": "Becoming a designer starts small:",
+  "music": 5,
+  "accent": 5,
+  "end": [
+   "One small habit",
+   "can change *everything*."
+  ],
+  "domino": {
+   "steps": [
+    "Copy a design",
+    "Design daily",
+    "Get feedback",
+    "Build a portfolio",
+    "Land clients",
+    "A designer"
+   ]
+  }
+ },
+ {
+  "id": "320",
+  "format": "pile",
+  "topic": "sales",
+  "title": "Getting good at sales:",
+  "music": 4,
+  "accent": 0,
+  "end": [
+   "They'll see one shot.",
+   "You'll know about *the 2,400*."
+  ],
+  "pile": {
+   "unit": "rejected calls",
+   "count": 2400,
+   "winWord": "Got it!"
+  }
+ },
+ {
+  "id": "321",
+  "format": "squiggle",
+  "topic": "career",
+  "title": "Climbing the ladder:",
+  "music": 3,
+  "accent": 1,
+  "end": [
+   "They show the arrow.",
+   "Nobody shows *the scribble*."
+  ],
+  "squiggle": {
+   "goal": "Promoted",
+   "setbacks": [
+    "Passed over",
+    "Bad review",
+    "Project failed",
+    "Boss left",
+    "Restructured",
+    "Kept going"
+   ]
+  }
+ },
+ {
+  "id": "322",
+  "format": "iceberg",
+  "topic": "freelancing",
+  "title": "What freelancing really takes:",
+  "music": 2,
+  "accent": 2,
+  "end": [
+   "Everyone admires the tip.",
+   "Respect *what's underneath*."
+  ],
+  "iceberg": {
+   "see": "Freedom",
+   "hidden": [
+    "530 pitches",
+    "Clients who didn't pay",
+    "Dry months",
+    "Learning to invoice",
+    "Weekend work",
+    "Building a reputation"
+   ]
+  }
+ },
+ {
+  "id": "323",
+  "format": "compound",
+  "topic": "app building",
+  "title": "1% better every day:",
+  "music": 1,
+  "accent": 3,
+  "end": [
+   "*1%* a day.",
+   "That's all it takes."
+  ],
+  "compound": {
+   "habit": "Ship 1 fix a day",
+   "perDay": 1,
+   "unit": "fixes",
+   "unitOne": "fixe"
+  }
+ },
+ {
+  "id": "324",
+  "format": "valley",
+  "topic": "debt",
+  "title": "Getting out of debt takes time:",
+  "music": 0,
+  "accent": 4,
+  "end": [
+   "Progress feels like nothing",
+   "until it's *everything*."
+  ],
+  "valley": {
+   "quit": "barely made a dent",
+   "win": "Debt free!"
+  }
+ },
+ {
+  "id": "325",
+  "format": "bamboo",
+  "topic": "maths",
+  "title": "Why maths feels slow:",
+  "music": 5,
+  "accent": 5,
+  "end": [
+   "Overnight success",
+   "takes *years* underground."
+  ],
+  "bamboo": {
+   "years": [
+    "Failing",
+    "Passing",
+    "Understanding it",
+    "Teaching others"
+   ],
+   "win": "Top of the class"
+  }
+ },
+ {
+  "id": "326",
+  "format": "domino",
+  "topic": "medicine",
+  "title": "Getting through med school starts small:",
+  "music": 4,
+  "accent": 0,
+  "end": [
+   "Start with domino one.",
+   "*The rest will follow.*"
+  ],
+  "domino": {
+   "steps": [
+    "Pick up a book",
+    "Study daily",
+    "Pass the exam",
+    "Get into med school",
+    "Survive residency",
+    "A doctor"
+   ]
+  }
+ },
+ {
+  "id": "327",
+  "format": "pile",
+  "topic": "teaching",
+  "title": "Becoming a great teacher:",
+  "music": 3,
+  "accent": 1,
+  "end": [
+   "Every miss is a step",
+   "*towards the hit*."
+  ],
+  "pile": {
+   "unit": "lesson plans",
+   "count": 1800,
+   "winWord": "Made it!"
+  }
+ },
+ {
+  "id": "328",
+  "format": "squiggle",
+  "topic": "mental health",
+  "title": "Getting better:",
+  "music": 2,
+  "accent": 2,
+  "end": [
+   "Setbacks aren't detours.",
+   "They're *the road*."
+  ],
+  "squiggle": {
+   "goal": "Okay again",
+   "setbacks": [
+    "Bad week",
+    "Relapse",
+    "Couldn't get up",
+    "Felt alone",
+    "Therapy was hard",
+    "Tried again"
+   ]
+  }
+ },
+ {
+  "id": "329",
+  "format": "iceberg",
+  "topic": "discipline",
+  "title": "What discipline really takes:",
+  "music": 1,
+  "accent": 3,
+  "end": [
+   "They see *Iron discipline*.",
+   "They don't see the cost."
+  ],
+  "iceberg": {
+   "see": "Iron discipline",
+   "hidden": [
+    "Doing it bored",
+    "Broken streaks",
+    "Early nights",
+    "Phone in a drawer",
+    "No motivation",
+    "Showing up anyway"
+   ]
+  }
+ },
+ {
+  "id": "330",
+  "format": "compound",
+  "topic": "gardening",
+  "title": "The power of tiny habits:",
+  "music": 0,
+  "accent": 4,
+  "end": [
+   "Small steps, *every day*.",
+   "They add up faster than you think."
+  ],
+  "compound": {
+   "habit": "Garden 20 minutes a day",
+   "perDay": 20,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "331",
+  "format": "valley",
+  "topic": "martial arts",
+  "title": "Learning martial arts takes time:",
+  "music": 5,
+  "accent": 5,
+  "end": [
+   "Most people quit",
+   "*right before* it works."
+  ],
+  "valley": {
+   "quit": "failed first grading",
+   "win": "Black belt"
+  }
+ },
+ {
+  "id": "332",
+  "format": "bamboo",
+  "topic": "cycling",
+  "title": "Why cycling feels slow:",
+  "music": 4,
+  "accent": 0,
+  "end": [
+   "Keep watering it.",
+   "*It's growing.*"
+  ],
+  "bamboo": {
+   "years": [
+    "5 km, wobbly",
+    "20 km rides",
+    "Climbing hills",
+    "100 km"
+   ],
+   "win": "Century ride"
+  }
+ },
+ {
+  "id": "333",
+  "format": "domino",
+  "topic": "climbing",
+  "title": "Reaching the top starts small:",
+  "music": 3,
+  "accent": 1,
+  "end": [
+   "You don't need a big leap.",
+   "Just *the first push*."
+  ],
+  "domino": {
+   "steps": [
+    "Go to a gym",
+    "Climb one wall",
+    "Fall safely",
+    "Climb weekly",
+    "Go outdoors",
+    "A summit"
+   ]
+  }
+ },
+ {
+  "id": "334",
+  "format": "pile",
+  "topic": "football",
+  "title": "Getting good at football:",
+  "music": 2,
+  "accent": 2,
+  "end": [
+   "Nobody gets it first try.",
+   "*Keep throwing.*"
+  ],
+  "pile": {
+   "unit": "missed shots",
+   "count": 5200,
+   "winWord": "Nailed it!"
+  }
+ },
+ {
+  "id": "335",
+  "format": "squiggle",
+  "topic": "tennis",
+  "title": "Becoming a tennis player:",
+  "music": 1,
+  "accent": 3,
+  "end": [
+   "Nobody's path is *straight*.",
+   "Don't quit in the loops."
+  ],
+  "squiggle": {
+   "goal": "Win a tournament",
+   "setbacks": [
+    "Double faults",
+    "Tennis elbow",
+    "Lost 6-0",
+    "Bad serve",
+    "Choked",
+    "Played again"
+   ]
+  }
+ },
+ {
+  "id": "336",
+  "format": "iceberg",
+  "topic": "boxing",
+  "title": "What boxing really takes:",
+  "music": 0,
+  "accent": 4,
+  "end": [
+   "Success is an *iceberg*.",
+   "Most of it is underwater."
+  ],
+  "iceberg": {
+   "see": "Champion belt",
+   "hidden": [
+    "Skipping rope",
+    "Early runs",
+    "Punches taken",
+    "Lost bouts",
+    "Strict diet",
+    "Years in the gym"
+   ]
+  }
+ },
+ {
+  "id": "337",
+  "format": "compound",
+  "topic": "podcasting",
+  "title": "Small habits, big results:",
+  "music": 5,
+  "accent": 5,
+  "end": [
+   "Don't wait for big changes.",
+   "Make *tiny* ones daily."
+  ],
+  "compound": {
+   "habit": "Record 10 minutes a day",
+   "perDay": 10,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "338",
+  "format": "valley",
+  "topic": "acting",
+  "title": "Becoming an actor takes time:",
+  "music": 4,
+  "accent": 0,
+  "end": [
+   "Feeling stuck?",
+   "You might be *almost there*."
+  ],
+  "valley": {
+   "quit": "audition 80: no",
+   "win": "Lead role"
+  }
+ },
+ {
+  "id": "339",
+  "format": "bamboo",
+  "topic": "comedy",
+  "title": "Why comedy feels slow:",
+  "music": 3,
+  "accent": 1,
+  "end": [
+   "What looks like nothing",
+   "is *building something*."
+  ],
+  "bamboo": {
+   "years": [
+    "Bombing",
+    "A few laughs",
+    "Paid spots",
+    "Opening act"
+   ],
+   "win": "Sold-out show"
+  }
+ },
+ {
+  "id": "340",
+  "format": "domino",
+  "topic": "novel writing",
+  "title": "Finishing your book starts small:",
+  "music": 2,
+  "accent": 2,
+  "end": [
+   "Small today.",
+   "*Life-changing* tomorrow."
+  ],
+  "domino": {
+   "steps": [
+    "Write a sentence",
+    "Write a page",
+    "Write daily",
+    "Finish a draft",
+    "Edit",
+    "A novel"
+   ]
+  }
+ },
+ {
+  "id": "341",
+  "format": "pile",
+  "topic": "driving",
+  "title": "Learning to drive:",
+  "music": 1,
+  "accent": 3,
+  "end": [
+   "Everyone wants the result.",
+   "Nobody sees the *140 stalled engines* before it."
+  ],
+  "pile": {
+   "unit": "stalled engines",
+   "count": 140,
+   "winWord": "Finally!"
+  }
+ },
+ {
+  "id": "342",
+  "format": "squiggle",
+  "topic": "video editing",
+  "title": "Becoming an editor:",
+  "music": 0,
+  "accent": 4,
+  "end": [
+   "The mess *is* the path.",
+   "Keep drawing the line."
+  ],
+  "squiggle": {
+   "goal": "Pro editor",
+   "setbacks": [
+    "Software crash",
+    "Lost project",
+    "Client hated it",
+    "Bad cuts",
+    "Revision 9",
+    "Edited again"
+   ]
+  }
+ },
+ {
+  "id": "343",
+  "format": "iceberg",
+  "topic": "data science",
+  "title": "What data science really takes:",
+  "music": 5,
+  "accent": 5,
+  "end": [
+   "Overnight success?",
+   "It took *years* of nights."
+  ],
+  "iceberg": {
+   "see": "Data scientist",
+   "hidden": [
+    "Statistics again",
+    "Messy data",
+    "Broken code",
+    "Kaggle failures",
+    "Rejections",
+    "Years of learning"
+   ]
+  }
+ },
+ {
+  "id": "344",
+  "format": "compound",
+  "topic": "university",
+  "title": "1% better every day:",
+  "music": 4,
+  "accent": 0,
+  "end": [
+   "Nothing changes on day 1.",
+   "Everything changes by *day 365*."
+  ],
+  "compound": {
+   "habit": "Study 2 hours a day",
+   "perDay": 2,
+   "unit": "hours",
+   "unitOne": "hour"
+  }
+ },
+ {
+  "id": "345",
+  "format": "valley",
+  "topic": "minimalism",
+  "title": "Living with less takes time:",
+  "music": 3,
+  "accent": 1,
+  "end": [
+   "The curve always bends.",
+   "*Stay* for it."
+  ],
+  "valley": {
+   "quit": "the sentimental box",
+   "win": "Calm home"
+  }
+ },
+ {
+  "id": "346",
+  "format": "bamboo",
+  "topic": "journaling",
+  "title": "Why journaling feels slow:",
+  "music": 2,
+  "accent": 2,
+  "end": [
+   "Be patient.",
+   "*Year 5* is coming."
+  ],
+  "bamboo": {
+   "years": [
+    "A few pages",
+    "Skipped months",
+    "Daily habit",
+    "Life changed"
+   ],
+   "win": "Clear mind"
+  }
+ },
+ {
+  "id": "347",
+  "format": "domino",
+  "topic": "gratitude",
+  "title": "Finding joy starts small:",
+  "music": 1,
+  "accent": 3,
+  "end": [
+   "Don't chase the big domino.",
+   "Push the *small* one."
+  ],
+  "domino": {
+   "steps": [
+    "Notice one thing",
+    "Write it down",
+    "Do it daily",
+    "Thank someone",
+    "Feel happier",
+    "Joy"
+   ]
+  }
+ },
+ {
+  "id": "348",
+  "format": "pile",
+  "topic": "healthy eating",
+  "title": "Eating healthy:",
+  "music": 0,
+  "accent": 4,
+  "end": [
+   "Miss. Miss. Miss.",
+   "*Then* it goes in."
+  ],
+  "pile": {
+   "unit": "cravings resisted",
+   "count": 2200,
+   "winWord": "Yes!!"
+  }
+ },
+ {
+  "id": "349",
+  "format": "squiggle",
+  "topic": "phone detox",
+  "title": "Getting your time back:",
+  "music": 5,
+  "accent": 5,
+  "end": [
+   "You're not lost.",
+   "You're in *the loops*."
+  ],
+  "squiggle": {
+   "goal": "Present",
+   "setbacks": [
+    "Doom scrolled",
+    "Reinstalled app",
+    "FOMO",
+    "Bored",
+    "Up till 2am",
+    "Deleted it again"
+   ]
+  }
+ },
+ {
+  "id": "350",
+  "format": "iceberg",
+  "topic": "sleep",
+  "title": "What sleep really takes:",
+  "music": 4,
+  "accent": 0,
+  "end": [
+   "Don't compare your start",
+   "to someone's *tip of the iceberg*."
+  ],
+  "iceberg": {
+   "see": "Well rested",
+   "hidden": [
+    "Same bedtime daily",
+    "No screens at night",
+    "No late coffee",
+    "Dark room",
+    "Restless nights",
+    "Months of routine"
+   ]
+  }
+ },
+ {
+  "id": "351",
+  "format": "compound",
+  "topic": "patience",
+  "title": "The power of tiny habits:",
+  "music": 3,
+  "accent": 1,
+  "end": [
+   "Tiny habits.",
+   "*Massive* results."
+  ],
+  "compound": {
+   "habit": "Show up 1 more day",
+   "perDay": 1,
+   "unit": "days",
+   "unitOne": "day"
+  }
+ },
+ {
+  "id": "352",
+  "format": "valley",
+  "topic": "self-love",
+  "title": "Learning to love yourself takes time:",
+  "music": 2,
+  "accent": 2,
+  "end": [
+   "Your breakthrough is",
+   "*further up the curve*."
+  ],
+  "valley": {
+   "quit": "a bad mirror day",
+   "win": "At peace"
+  }
+ },
+ {
+  "id": "353",
+  "format": "bamboo",
+  "topic": "parenting",
+  "title": "Why parenting feels slow:",
+  "music": 1,
+  "accent": 3,
+  "end": [
+   "Roots first.",
+   "*Then* growth."
+  ],
+  "bamboo": {
+   "years": [
+    "No sleep",
+    "Tantrums",
+    "First words",
+    "Kind little human"
+   ],
+   "win": "Kind kids"
+  }
+ },
+ {
+  "id": "354",
+  "format": "domino",
+  "topic": "marriage",
+  "title": "Loving for the long run starts small:",
+  "music": 0,
+  "accent": 4,
+  "end": [
+   "Big changes start",
+   "*embarrassingly small*."
+  ],
+  "domino": {
+   "steps": [
+    "Listen",
+    "Say thank you",
+    "Apologise",
+    "Make time",
+    "Grow together",
+    "Lifelong love"
+   ]
+  }
+ },
+ {
+  "id": "355",
+  "format": "pile",
+  "topic": "forgiveness",
+  "title": "Learning to forgive:",
+  "music": 5,
+  "accent": 5,
+  "end": [
+   "The pile is the *proof*.",
+   "Keep throwing."
+  ],
+  "pile": {
+   "unit": "times you let it go",
+   "count": 700,
+   "winWord": "Got it!"
+  }
+ },
+ {
+  "id": "356",
+  "format": "squiggle",
+  "topic": "art career",
+  "title": "Living from your art:",
+  "music": 4,
+  "accent": 0,
+  "end": [
+   "Success is a *scribble*.",
+   "Keep your pen moving."
+  ],
+  "squiggle": {
+   "goal": "Full-time",
+   "setbacks": [
+    "No sales",
+    "Gallery said no",
+    "Copied",
+    "Low prices",
+    "Day job still",
+    "Kept making"
+   ]
+  }
+ },
+ {
+  "id": "357",
+  "format": "iceberg",
+  "topic": "basketball",
+  "title": "What basketball really takes:",
+  "music": 3,
+  "accent": 1,
+  "end": [
+   "The work nobody sees",
+   "is *the work that counts*."
+  ],
+  "iceberg": {
+   "see": "Game winner",
+   "hidden": [
+    "Shooting alone",
+    "Cut from the team",
+    "Ball-handling drills",
+    "Early gym sessions",
+    "Sprained ankles",
+    "Thousands of misses"
+   ]
+  }
+ },
+ {
+  "id": "358",
+  "format": "compound",
+  "topic": "skateboarding",
+  "title": "Small habits, big results:",
+  "music": 2,
+  "accent": 2,
+  "end": [
+   "You don't need more time.",
+   "You need *a little, daily*."
+  ],
+  "compound": {
+   "habit": "Try 50 kickflips a day",
+   "perDay": 50,
+   "unit": "attempts",
+   "unitOne": "attempt"
+  }
+ },
+ {
+  "id": "359",
+  "format": "valley",
+  "topic": "kindness",
+  "title": "Becoming kinder takes time:",
+  "music": 1,
+  "accent": 3,
+  "end": [
+   "The results are *coming*.",
+   "Don't quit in the valley."
+  ],
+  "valley": {
+   "quit": "nobody noticed",
+   "win": "Changed lives"
+  }
+ },
+ {
+  "id": "360",
+  "format": "bamboo",
+  "topic": "starting over",
+  "title": "Why starting over feels slow:",
+  "music": 0,
+  "accent": 4,
+  "end": [
+   "Nothing happening?",
+   "Your roots are *growing*."
+  ],
+  "bamboo": {
+   "years": [
+    "Lost",
+    "Finding your feet",
+    "Building",
+    "Thriving"
+   ],
+   "win": "Thriving"
+  }
+ },
+ {
+  "id": "361",
+  "format": "bamboo",
+  "topic": "fitness",
+  "title": "Why fitness feels slow:",
+  "music": 5,
+  "accent": 0,
+  "end": [
+   "Nothing happening?",
+   "Your roots are *growing*."
+  ],
+  "bamboo": {
+   "years": [
+    "Can't do 1 pull-up",
+    "Still can't",
+    "3 pull-ups",
+    "Feeling different"
+   ],
+   "win": "Strongest ever"
+  }
+ },
+ {
+  "id": "362",
+  "format": "domino",
+  "topic": "running",
+  "title": "Becoming a runner starts small:",
+  "music": 4,
+  "accent": 1,
+  "end": [
+   "One small habit",
+   "can change *everything*."
+  ],
+  "domino": {
+   "steps": [
+    "Buy running shoes",
+    "Run 1 km",
+    "Run every morning",
+    "Sleep earlier",
+    "First race",
+    "Marathoner"
+   ]
+  }
+ },
+ {
+  "id": "363",
+  "format": "pile",
+  "topic": "weight loss",
+  "title": "Losing weight:",
+  "music": 3,
+  "accent": 2,
+  "end": [
+   "They'll see one shot.",
+   "You'll know about *the 730*."
+  ],
+  "pile": {
+   "unit": "days on the diet",
+   "count": 730,
+   "winWord": "Finally!"
+  }
+ },
+ {
+  "id": "364",
+  "format": "squiggle",
+  "topic": "writing",
+  "title": "Becoming a writer:",
+  "music": 2,
+  "accent": 3,
+  "end": [
+   "They show the arrow.",
+   "Nobody shows *the scribble*."
+  ],
+  "squiggle": {
+   "goal": "Published",
+   "setbacks": [
+    "Writer's block",
+    "47 rejections",
+    "Rewrote it all",
+    "Lost the file",
+    "Bad reviews",
+    "Kept writing"
+   ]
+  }
+ },
+ {
+  "id": "365",
+  "format": "iceberg",
+  "topic": "drawing",
+  "title": "What drawing really takes:",
+  "music": 1,
+  "accent": 4,
+  "end": [
+   "Everyone admires the tip.",
+   "Respect *what's underneath*."
+  ],
+  "iceberg": {
+   "see": "Amazing art",
+   "hidden": [
+    "Sketchbooks full",
+    "Ugly hands for months",
+    "Anatomy studies",
+    "Copying the masters",
+    "Zero likes for years",
+    "10,000 hours"
+   ]
+  }
+ },
+ {
+  "id": "366",
+  "format": "compound",
+  "topic": "guitar",
+  "title": "1% better every day:",
+  "music": 0,
+  "accent": 5,
+  "end": [
+   "*1%* a day.",
+   "That's all it takes."
+  ],
+  "compound": {
+   "habit": "Practise 15 minutes a day",
+   "perDay": 15,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "367",
+  "format": "valley",
+  "topic": "singing",
+  "title": "Learning to sing takes time:",
+  "music": 5,
+  "accent": 0,
+  "end": [
+   "Progress feels like nothing",
+   "until it's *everything*."
+  ],
+  "valley": {
+   "quit": "first bad recording",
+   "win": "Standing ovation"
+  }
+ },
+ {
+  "id": "368",
+  "format": "bamboo",
+  "topic": "coding",
+  "title": "Why coding feels slow:",
+  "music": 4,
+  "accent": 1,
+  "end": [
+   "Overnight success",
+   "takes *years* underground."
+  ],
+  "bamboo": {
+   "years": [
+    "Hello, world",
+    "First broken app",
+    "Still no job",
+    "Junior offer"
+   ],
+   "win": "First dev job"
+  }
+ },
+ {
+  "id": "369",
+  "format": "domino",
+  "topic": "business",
+  "title": "Starting a business starts small:",
+  "music": 3,
+  "accent": 2,
+  "end": [
+   "Start with domino one.",
+   "*The rest will follow.*"
+  ],
+  "domino": {
+   "steps": [
+    "Write down an idea",
+    "Talk to customers",
+    "Make a first sale",
+    "Hire someone",
+    "Grow",
+    "Your company"
+   ]
+  }
+ },
+ {
+  "id": "370",
+  "format": "pile",
+  "topic": "saving money",
+  "title": "Saving money:",
+  "music": 2,
+  "accent": 3,
+  "end": [
+   "Every miss is a step",
+   "*towards the hit*."
+  ],
+  "pile": {
+   "unit": "small savings",
+   "count": 1095,
+   "winWord": "Yes!!"
+  }
+ },
+ {
+  "id": "371",
+  "format": "squiggle",
+  "topic": "investing",
+  "title": "Growing wealth:",
+  "music": 1,
+  "accent": 4,
+  "end": [
+   "Setbacks aren't detours.",
+   "They're *the road*."
+  ],
+  "squiggle": {
+   "goal": "Retired early",
+   "setbacks": [
+    "Market crash",
+    "Panic sold",
+    "Bad stock tip",
+    "Fees ate gains",
+    "Lost 30%",
+    "Stayed invested"
+   ]
+  }
+ },
+ {
+  "id": "372",
+  "format": "iceberg",
+  "topic": "languages",
+  "title": "What languages really takes:",
+  "music": 0,
+  "accent": 5,
+  "end": [
+   "They see *Fluent speaker*.",
+   "They don't see the cost."
+  ],
+  "iceberg": {
+   "see": "Fluent speaker",
+   "hidden": [
+    "Flashcards daily",
+    "Awkward conversations",
+    "Wrong genders, always",
+    "Movies with subtitles",
+    "Laughed at",
+    "1,000 days of streaks"
+   ]
+  }
+ },
+ {
+  "id": "373",
+  "format": "compound",
+  "topic": "public speaking",
+  "title": "The power of tiny habits:",
+  "music": 5,
+  "accent": 0,
+  "end": [
+   "Small steps, *every day*.",
+   "They add up faster than you think."
+  ],
+  "compound": {
+   "habit": "Rehearse 10 minutes a day",
+   "perDay": 10,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "374",
+  "format": "valley",
+  "topic": "reading",
+  "title": "Becoming a reader takes time:",
+  "music": 4,
+  "accent": 1,
+  "end": [
+   "Most people quit",
+   "*right before* it works."
+  ],
+  "valley": {
+   "quit": "week 2: no time",
+   "win": "50 books a year"
+  }
+ },
+ {
+  "id": "375",
+  "format": "bamboo",
+  "topic": "meditation",
+  "title": "Why meditation feels slow:",
+  "music": 3,
+  "accent": 2,
+  "end": [
+   "Keep watering it.",
+   "*It's growing.*"
+  ],
+  "bamboo": {
+   "years": [
+    "Can't sit still",
+    "5 calm minutes",
+    "Less anxious",
+    "Sleeping better"
+   ],
+   "win": "Calm in chaos"
+  }
+ },
+ {
+  "id": "376",
+  "format": "domino",
+  "topic": "confidence",
+  "title": "Becoming confident starts small:",
+  "music": 2,
+  "accent": 3,
+  "end": [
+   "You don't need a big leap.",
+   "Just *the first push*."
+  ],
+  "domino": {
+   "steps": [
+    "Make eye contact",
+    "Say hi first",
+    "Speak up",
+    "Take a risk",
+    "Win small",
+    "Confidence"
+   ]
+  }
+ },
+ {
+  "id": "377",
+  "format": "pile",
+  "topic": "photography",
+  "title": "Getting good at photography:",
+  "music": 1,
+  "accent": 4,
+  "end": [
+   "Nobody gets it first try.",
+   "*Keep throwing.*"
+  ],
+  "pile": {
+   "unit": "blurry photos",
+   "count": 18400,
+   "winWord": "Got it!"
+  }
+ },
+ {
+  "id": "378",
+  "format": "squiggle",
+  "topic": "cooking",
+  "title": "Becoming a great cook:",
+  "music": 0,
+  "accent": 5,
+  "end": [
+   "Nobody's path is *straight*.",
+   "Don't quit in the loops."
+  ],
+  "squiggle": {
+   "goal": "Chef level",
+   "setbacks": [
+    "Burnt it",
+    "Too salty",
+    "Smoke alarm",
+    "Undercooked",
+    "Guests hated it",
+    "Cooked again"
+   ]
+  }
+ },
+ {
+  "id": "379",
+  "format": "iceberg",
+  "topic": "content creation",
+  "title": "What content creation really takes:",
+  "music": 5,
+  "accent": 0,
+  "end": [
+   "Success is an *iceberg*.",
+   "Most of it is underwater."
+  ],
+  "iceberg": {
+   "see": "Viral video",
+   "hidden": [
+    "Posting to 12 people",
+    "Editing at 2am",
+    "Hate comments",
+    "Learning the algorithm",
+    "Burnout weeks",
+    "500 posts before it"
+   ]
+  }
+ },
+ {
+  "id": "380",
+  "format": "compound",
+  "topic": "dancing",
+  "title": "Small habits, big results:",
+  "music": 4,
+  "accent": 1,
+  "end": [
+   "Don't wait for big changes.",
+   "Make *tiny* ones daily."
+  ],
+  "compound": {
+   "habit": "Dance 15 minutes a day",
+   "perDay": 15,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "381",
+  "format": "valley",
+  "topic": "studying",
+  "title": "Acing your exams takes time:",
+  "music": 3,
+  "accent": 2,
+  "end": [
+   "Feeling stuck?",
+   "You might be *almost there*."
+  ],
+  "valley": {
+   "quit": "failed the first mock",
+   "win": "Top marks"
+  }
+ },
+ {
+  "id": "382",
+  "format": "bamboo",
+  "topic": "job hunting",
+  "title": "Why job hunting feels slow:",
+  "music": 2,
+  "accent": 3,
+  "end": [
+   "What looks like nothing",
+   "is *building something*."
+  ],
+  "bamboo": {
+   "years": [
+    "0 replies",
+    "First interview",
+    "Final round, rejected",
+    "Two offers"
+   ],
+   "win": "Offer letter"
+  }
+ },
+ {
+  "id": "383",
+  "format": "domino",
+  "topic": "waking early",
+  "title": "Waking up early starts small:",
+  "music": 1,
+  "accent": 4,
+  "end": [
+   "Small today.",
+   "*Life-changing* tomorrow."
+  ],
+  "domino": {
+   "steps": [
+    "Set one alarm",
+    "Sleep 30 min earlier",
+    "Wake early",
+    "Morning workout",
+    "Productive days",
+    "A new you"
+   ]
+  }
+ },
+ {
+  "id": "384",
+  "format": "pile",
+  "topic": "quitting smoking",
+  "title": "Quitting smoking:",
+  "music": 0,
+  "accent": 5,
+  "end": [
+   "Everyone wants the result.",
+   "Nobody sees the *4,300 cravings beaten* before it."
+  ],
+  "pile": {
+   "unit": "cravings beaten",
+   "count": 4300,
+   "winWord": "Made it!"
+  }
+ },
+ {
+  "id": "385",
+  "format": "squiggle",
+  "topic": "heartbreak",
+  "title": "Moving on:",
+  "music": 5,
+  "accent": 0,
+  "end": [
+   "The mess *is* the path.",
+   "Keep drawing the line."
+  ],
+  "squiggle": {
+   "goal": "Whole again",
+   "setbacks": [
+    "Stalked their IG",
+    "Cried at a song",
+    "Almost texted",
+    "Lonely Sunday",
+    "Saw them out",
+    "Kept healing"
+   ]
+  }
+ },
+ {
+  "id": "386",
+  "format": "iceberg",
+  "topic": "friendship",
+  "title": "What friendship really takes:",
+  "music": 4,
+  "accent": 1,
+  "end": [
+   "Overnight success?",
+   "It took *years* of nights."
+  ],
+  "iceberg": {
+   "see": "Big friend group",
+   "hidden": [
+    "Inviting first",
+    "Awkward first chats",
+    "Unanswered texts",
+    "Showing up anyway",
+    "Remembering birthdays",
+    "Years of effort"
+   ]
+  }
+ },
+ {
+  "id": "387",
+  "format": "compound",
+  "topic": "chess",
+  "title": "1% better every day:",
+  "music": 3,
+  "accent": 2,
+  "end": [
+   "Nothing changes on day 1.",
+   "Everything changes by *day 365*."
+  ],
+  "compound": {
+   "habit": "Solve 10 puzzles a day",
+   "perDay": 10,
+   "unit": "puzzles",
+   "unitOne": "puzzle"
+  }
+ },
+ {
+  "id": "388",
+  "format": "valley",
+  "topic": "swimming",
+  "title": "Learning to swim takes time:",
+  "music": 2,
+  "accent": 3,
+  "end": [
+   "The curve always bends.",
+   "*Stay* for it."
+  ],
+  "valley": {
+   "quit": "lesson 3: still sinking",
+   "win": "Open water"
+  }
+ },
+ {
+  "id": "389",
+  "format": "bamboo",
+  "topic": "yoga",
+  "title": "Why yoga feels slow:",
+  "music": 1,
+  "accent": 4,
+  "end": [
+   "Be patient.",
+   "*Year 5* is coming."
+  ],
+  "bamboo": {
+   "years": [
+    "Can't touch toes",
+    "Touching toes",
+    "Headstand attempts",
+    "First headstand"
+   ],
+   "win": "Full split"
+  }
+ },
+ {
+  "id": "390",
+  "format": "domino",
+  "topic": "piano",
+  "title": "Becoming a pianist starts small:",
+  "music": 0,
+  "accent": 5,
+  "end": [
+   "Don't chase the big domino.",
+   "Push the *small* one."
+  ],
+  "domino": {
+   "steps": [
+    "Sit at the piano",
+    "Learn one scale",
+    "Practise daily",
+    "Learn a piece",
+    "Perform",
+    "A pianist"
+   ]
+  }
+ },
+ {
+  "id": "391",
+  "format": "pile",
+  "topic": "design",
+  "title": "Getting good at design:",
+  "music": 5,
+  "accent": 0,
+  "end": [
+   "Miss. Miss. Miss.",
+   "*Then* it goes in."
+  ],
+  "pile": {
+   "unit": "rejected mockups",
+   "count": 870,
+   "winWord": "Nailed it!"
+  }
+ },
+ {
+  "id": "392",
+  "format": "squiggle",
+  "topic": "sales",
+  "title": "Becoming a top seller:",
+  "music": 4,
+  "accent": 1,
+  "end": [
+   "You're not lost.",
+   "You're in *the loops*."
+  ],
+  "squiggle": {
+   "goal": "Top seller",
+   "setbacks": [
+    "Hung up on",
+    "Lost the deal",
+    "Missed quota",
+    "Ghosted",
+    "Price objection",
+    "Called again"
+   ]
+  }
+ },
+ {
+  "id": "393",
+  "format": "iceberg",
+  "topic": "career",
+  "title": "What career really takes:",
+  "music": 3,
+  "accent": 2,
+  "end": [
+   "Don't compare your start",
+   "to someone's *tip of the iceberg*."
+  ],
+  "iceberg": {
+   "see": "Big promotion",
+   "hidden": [
+    "Extra projects",
+    "Passed over twice",
+    "Learning new skills",
+    "Hard feedback",
+    "Late evenings",
+    "Years of trust"
+   ]
+  }
+ },
+ {
+  "id": "394",
+  "format": "compound",
+  "topic": "freelancing",
+  "title": "The power of tiny habits:",
+  "music": 2,
+  "accent": 3,
+  "end": [
+   "Tiny habits.",
+   "*Massive* results."
+  ],
+  "compound": {
+   "habit": "Send 3 pitches a day",
+   "perDay": 3,
+   "unit": "pitches",
+   "unitOne": "pitche"
+  }
+ },
+ {
+  "id": "395",
+  "format": "valley",
+  "topic": "app building",
+  "title": "Building an app takes time:",
+  "music": 1,
+  "accent": 4,
+  "end": [
+   "Your breakthrough is",
+   "*further up the curve*."
+  ],
+  "valley": {
+   "quit": "launch day: 12 downloads",
+   "win": "1M downloads"
+  }
+ },
+ {
+  "id": "396",
+  "format": "bamboo",
+  "topic": "debt",
+  "title": "Why debt feels slow:",
+  "music": 0,
+  "accent": 5,
+  "end": [
+   "Roots first.",
+   "*Then* growth."
+  ],
+  "bamboo": {
+   "years": [
+    "$40k owed",
+    "$33k owed",
+    "$21k owed",
+    "$8k owed"
+   ],
+   "win": "Debt free!"
+  }
+ },
+ {
+  "id": "397",
+  "format": "domino",
+  "topic": "maths",
+  "title": "Beating maths fear starts small:",
+  "music": 5,
+  "accent": 0,
+  "end": [
+   "Big changes start",
+   "*embarrassingly small*."
+  ],
+  "domino": {
+   "steps": [
+    "Do one problem",
+    "Practise daily",
+    "Ask for help",
+    "Master basics",
+    "Pass the exam",
+    "Confidence"
+   ]
+  }
+ },
+ {
+  "id": "398",
+  "format": "pile",
+  "topic": "medicine",
+  "title": "Becoming a doctor:",
+  "music": 4,
+  "accent": 1,
+  "end": [
+   "The pile is the *proof*.",
+   "Keep throwing."
+  ],
+  "pile": {
+   "unit": "flashcards",
+   "count": 40000,
+   "winWord": "Finally!"
+  }
+ },
+ {
+  "id": "399",
+  "format": "squiggle",
+  "topic": "teaching",
+  "title": "Learning to teach:",
+  "music": 3,
+  "accent": 2,
+  "end": [
+   "Success is a *scribble*.",
+   "Keep your pen moving."
+  ],
+  "squiggle": {
+   "goal": "Inspiring",
+   "setbacks": [
+    "Class ignored me",
+    "Lesson flopped",
+    "Parent complaint",
+    "Burnout",
+    "Bad observation",
+    "Taught again"
+   ]
+  }
+ },
+ {
+  "id": "400",
+  "format": "iceberg",
+  "topic": "mental health",
+  "title": "What mental health really takes:",
+  "music": 2,
+  "accent": 3,
+  "end": [
+   "The work nobody sees",
+   "is *the work that counts*."
+  ],
+  "iceberg": {
+   "see": "Smiling again",
+   "hidden": [
+    "Therapy sessions",
+    "Hard mornings",
+    "Asking for help",
+    "Medication trials",
+    "Bad days",
+    "Choosing to stay"
+   ]
+  }
+ },
+ {
+  "id": "401",
+  "format": "compound",
+  "topic": "discipline",
+  "title": "Small habits, big results:",
+  "music": 1,
+  "accent": 4,
+  "end": [
+   "You don't need more time.",
+   "You need *a little, daily*."
+  ],
+  "compound": {
+   "habit": "Keep 1 promise a day",
+   "perDay": 1,
+   "unit": "promises",
+   "unitOne": "promise"
+  }
+ },
+ {
+  "id": "402",
+  "format": "valley",
+  "topic": "gardening",
+  "title": "Learning to garden takes time:",
+  "music": 0,
+  "accent": 5,
+  "end": [
+   "The results are *coming*.",
+   "Don't quit in the valley."
+  ],
+  "valley": {
+   "quit": "first harvest: nothing",
+   "win": "First harvest"
+  }
+ },
+ {
+  "id": "403",
+  "format": "bamboo",
+  "topic": "martial arts",
+  "title": "Why martial arts feels slow:",
+  "music": 5,
+  "accent": 0,
+  "end": [
+   "Nothing happening?",
+   "Your roots are *growing*."
+  ],
+  "bamboo": {
+   "years": [
+    "White belt",
+    "Yellow belt",
+    "Failed a grading",
+    "Brown belt"
+   ],
+   "win": "Black belt"
+  }
+ },
+ {
+  "id": "404",
+  "format": "domino",
+  "topic": "cycling",
+  "title": "Becoming a cyclist starts small:",
+  "music": 4,
+  "accent": 1,
+  "end": [
+   "One small habit",
+   "can change *everything*."
+  ],
+  "domino": {
+   "steps": [
+    "Pump the tyres",
+    "Ride 2 km",
+    "Ride daily",
+    "Climb a hill",
+    "Join a club",
+    "A cyclist"
+   ]
+  }
+ },
+ {
+  "id": "405",
+  "format": "pile",
+  "topic": "climbing",
+  "title": "Learning to climb:",
+  "music": 3,
+  "accent": 2,
+  "end": [
+   "They'll see one shot.",
+   "You'll know about *the 1,900*."
+  ],
+  "pile": {
+   "unit": "falls",
+   "count": 1900,
+   "winWord": "Yes!!"
+  }
+ },
+ {
+  "id": "406",
+  "format": "squiggle",
+  "topic": "football",
+  "title": "Becoming a player:",
+  "music": 2,
+  "accent": 3,
+  "end": [
+   "They show the arrow.",
+   "Nobody shows *the scribble*."
+  ],
+  "squiggle": {
+   "goal": "Starting XI",
+   "setbacks": [
+    "Bench again",
+    "Missed penalty",
+    "Injury",
+    "Not picked",
+    "Lost the final",
+    "Trained harder"
+   ]
+  }
+ },
+ {
+  "id": "407",
+  "format": "iceberg",
+  "topic": "tennis",
+  "title": "What tennis really takes:",
+  "music": 1,
+  "accent": 4,
+  "end": [
+   "Everyone admires the tip.",
+   "Respect *what's underneath*."
+  ],
+  "iceberg": {
+   "see": "Perfect serve",
+   "hidden": [
+    "Thousands of serves",
+    "Balls in the net",
+    "Footwork drills",
+    "Losing 6-0",
+    "Sore elbow",
+    "Years of rallies"
+   ]
+  }
+ },
+ {
+  "id": "408",
+  "format": "compound",
+  "topic": "boxing",
+  "title": "1% better every day:",
+  "music": 0,
+  "accent": 5,
+  "end": [
+   "*1%* a day.",
+   "That's all it takes."
+  ],
+  "compound": {
+   "habit": "Do 3 rounds a day",
+   "perDay": 3,
+   "unit": "rounds",
+   "unitOne": "round"
+  }
+ },
+ {
+  "id": "409",
+  "format": "valley",
+  "topic": "podcasting",
+  "title": "Starting a podcast takes time:",
+  "music": 5,
+  "accent": 0,
+  "end": [
+   "Progress feels like nothing",
+   "until it's *everything*."
+  ],
+  "valley": {
+   "quit": "episode 20: 8 listeners",
+   "win": "Top 10 chart"
+  }
+ },
+ {
+  "id": "410",
+  "format": "bamboo",
+  "topic": "acting",
+  "title": "Why acting feels slow:",
+  "music": 4,
+  "accent": 1,
+  "end": [
+   "Overnight success",
+   "takes *years* underground."
+  ],
+  "bamboo": {
+   "years": [
+    "Extra",
+    "Background",
+    "One line",
+    "Small role"
+   ],
+   "win": "Lead role"
+  }
+ },
+ {
+  "id": "411",
+  "format": "domino",
+  "topic": "comedy",
+  "title": "Becoming a comedian starts small:",
+  "music": 3,
+  "accent": 2,
+  "end": [
+   "Start with domino one.",
+   "*The rest will follow.*"
+  ],
+  "domino": {
+   "steps": [
+    "Write a joke",
+    "Try it on a friend",
+    "Do an open mic",
+    "Do 100 more",
+    "Find your voice",
+    "A comedian"
+   ]
+  }
+ },
+ {
+  "id": "412",
+  "format": "pile",
+  "topic": "novel writing",
+  "title": "Writing a novel:",
+  "music": 2,
+  "accent": 3,
+  "end": [
+   "Every miss is a step",
+   "*towards the hit*."
+  ],
+  "pile": {
+   "unit": "deleted chapters",
+   "count": 46,
+   "winWord": "Got it!"
+  }
+ },
+ {
+  "id": "413",
+  "format": "squiggle",
+  "topic": "driving",
+  "title": "Getting your licence:",
+  "music": 1,
+  "accent": 4,
+  "end": [
+   "Setbacks aren't detours.",
+   "They're *the road*."
+  ],
+  "squiggle": {
+   "goal": "Licence",
+   "setbacks": [
+    "Stalled",
+    "Failed the test",
+    "Hit a kerb",
+    "Panicked",
+    "Failed again",
+    "Booked again"
+   ]
+  }
+ },
+ {
+  "id": "414",
+  "format": "iceberg",
+  "topic": "video editing",
+  "title": "What video editing really takes:",
+  "music": 0,
+  "accent": 5,
+  "end": [
+   "They see *Cinematic edit*.",
+   "They don't see the cost."
+  ],
+  "iceberg": {
+   "see": "Cinematic edit",
+   "hidden": [
+    "Crashed renders",
+    "Tutorials at 2am",
+    "Bad first edits",
+    "Revision 9",
+    "Free projects",
+    "Thousands of cuts"
+   ]
+  }
+ },
+ {
+  "id": "415",
+  "format": "compound",
+  "topic": "data science",
+  "title": "The power of tiny habits:",
+  "music": 5,
+  "accent": 0,
+  "end": [
+   "Small steps, *every day*.",
+   "They add up faster than you think."
+  ],
+  "compound": {
+   "habit": "Study 1 hour a day",
+   "perDay": 1,
+   "unit": "hours",
+   "unitOne": "hour"
+  }
+ },
+ {
+  "id": "416",
+  "format": "valley",
+  "topic": "university",
+  "title": "Getting into your dream university takes time:",
+  "music": 4,
+  "accent": 1,
+  "end": [
+   "Most people quit",
+   "*right before* it works."
+  ],
+  "valley": {
+   "quit": "first rejection letter",
+   "win": "Accepted!"
+  }
+ },
+ {
+  "id": "417",
+  "format": "bamboo",
+  "topic": "minimalism",
+  "title": "Why minimalism feels slow:",
+  "music": 3,
+  "accent": 2,
+  "end": [
+   "Keep watering it.",
+   "*It's growing.*"
+  ],
+  "bamboo": {
+   "years": [
+    "Cluttered",
+    "One room clear",
+    "Half the stuff",
+    "Only what you love"
+   ],
+   "win": "Calm home"
+  }
+ },
+ {
+  "id": "418",
+  "format": "domino",
+  "topic": "journaling",
+  "title": "Knowing yourself starts small:",
+  "music": 2,
+  "accent": 3,
+  "end": [
+   "You don't need a big leap.",
+   "Just *the first push*."
+  ],
+  "domino": {
+   "steps": [
+    "Buy a notebook",
+    "Write one line",
+    "Write daily",
+    "Notice patterns",
+    "Change one",
+    "A new you"
+   ]
+  }
+ },
+ {
+  "id": "419",
+  "format": "pile",
+  "topic": "gratitude",
+  "title": "Practising gratitude:",
+  "music": 1,
+  "accent": 4,
+  "end": [
+   "Nobody gets it first try.",
+   "*Keep throwing.*"
+  ],
+  "pile": {
+   "unit": "thank-yous written",
+   "count": 1095,
+   "winWord": "Made it!"
+  }
+ },
+ {
+  "id": "420",
+  "format": "squiggle",
+  "topic": "healthy eating",
+  "title": "Fixing your diet:",
+  "music": 0,
+  "accent": 5,
+  "end": [
+   "Nobody's path is *straight*.",
+   "Don't quit in the loops."
+  ],
+  "squiggle": {
+   "goal": "Healthy",
+   "setbacks": [
+    "Pizza night",
+    "Sugar cravings",
+    "Party food",
+    "Too busy to cook",
+    "Stress eating",
+    "Back on track"
+   ]
+  }
+ },
+ {
+  "id": "421",
+  "format": "iceberg",
+  "topic": "phone detox",
+  "title": "What phone detox really takes:",
+  "music": 5,
+  "accent": 0,
+  "end": [
+   "Success is an *iceberg*.",
+   "Most of it is underwater."
+  ],
+  "iceberg": {
+   "see": "Present person",
+   "hidden": [
+    "Deleting apps",
+    "Fighting urges",
+    "FOMO",
+    "Phone in a drawer",
+    "Boredom",
+    "5,000 urges beaten"
+   ]
+  }
+ },
+ {
+  "id": "422",
+  "format": "compound",
+  "topic": "sleep",
+  "title": "Small habits, big results:",
+  "music": 4,
+  "accent": 1,
+  "end": [
+   "Don't wait for big changes.",
+   "Make *tiny* ones daily."
+  ],
+  "compound": {
+   "habit": "Sleep 15 minutes earlier",
+   "perDay": 15,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "423",
+  "format": "valley",
+  "topic": "patience",
+  "title": "Learning patience takes time:",
+  "music": 3,
+  "accent": 2,
+  "end": [
+   "Feeling stuck?",
+   "You might be *almost there*."
+  ],
+  "valley": {
+   "quit": "day 30: nothing yet",
+   "win": "It worked"
+  }
+ },
+ {
+  "id": "424",
+  "format": "bamboo",
+  "topic": "self-love",
+  "title": "Why self-love feels slow:",
+  "music": 2,
+  "accent": 3,
+  "end": [
+   "What looks like nothing",
+   "is *building something*."
+  ],
+  "bamboo": {
+   "years": [
+    "Harsh critic",
+    "Noticing it",
+    "Kinder",
+    "At peace"
+   ],
+   "win": "At peace"
+  }
+ },
+ {
+  "id": "425",
+  "format": "domino",
+  "topic": "parenting",
+  "title": "Raising kind kids starts small:",
+  "music": 1,
+  "accent": 4,
+  "end": [
+   "Small today.",
+   "*Life-changing* tomorrow."
+  ],
+  "domino": {
+   "steps": [
+    "Listen",
+    "Read together",
+    "Be patient",
+    "Show up",
+    "Lead by example",
+    "A kind adult"
+   ]
+  }
+ },
+ {
+  "id": "426",
+  "format": "pile",
+  "topic": "marriage",
+  "title": "Building a strong relationship:",
+  "music": 0,
+  "accent": 5,
+  "end": [
+   "Everyone wants the result.",
+   "Nobody sees the *2,000 small apologies* before it."
+  ],
+  "pile": {
+   "unit": "small apologies",
+   "count": 2000,
+   "winWord": "Nailed it!"
+  }
+ },
+ {
+  "id": "427",
+  "format": "squiggle",
+  "topic": "forgiveness",
+  "title": "Letting go:",
+  "music": 5,
+  "accent": 0,
+  "end": [
+   "The mess *is* the path.",
+   "Keep drawing the line."
+  ],
+  "squiggle": {
+   "goal": "Free",
+   "setbacks": [
+    "Still angry",
+    "Replayed it",
+    "They didn't care",
+    "Old wound",
+    "Bitter day",
+    "Let go again"
+   ]
+  }
+ },
+ {
+  "id": "428",
+  "format": "iceberg",
+  "topic": "art career",
+  "title": "What art career really takes:",
+  "music": 4,
+  "accent": 1,
+  "end": [
+   "Overnight success?",
+   "It took *years* of nights."
+  ],
+  "iceberg": {
+   "see": "Sold out",
+   "hidden": [
+    "380 unsold pieces",
+    "Gallery rejections",
+    "Markets in the rain",
+    "Day jobs",
+    "Building an audience",
+    "10 years of art"
+   ]
+  }
+ },
+ {
+  "id": "429",
+  "format": "compound",
+  "topic": "basketball",
+  "title": "1% better every day:",
+  "music": 3,
+  "accent": 2,
+  "end": [
+   "Nothing changes on day 1.",
+   "Everything changes by *day 365*."
+  ],
+  "compound": {
+   "habit": "Shoot 100 shots a day",
+   "perDay": 100,
+   "unit": "shots",
+   "unitOne": "shot"
+  }
+ },
+ {
+  "id": "430",
+  "format": "valley",
+  "topic": "skateboarding",
+  "title": "Learning to skate takes time:",
+  "music": 2,
+  "accent": 3,
+  "end": [
+   "The curve always bends.",
+   "*Stay* for it."
+  ],
+  "valley": {
+   "quit": "attempt 300: fell again",
+   "win": "Landed it!"
+  }
+ },
+ {
+  "id": "431",
+  "format": "bamboo",
+  "topic": "kindness",
+  "title": "Why kindness feels slow:",
+  "music": 1,
+  "accent": 4,
+  "end": [
+   "Be patient.",
+   "*Year 5* is coming."
+  ],
+  "bamboo": {
+   "years": [
+    "Small acts",
+    "Habit",
+    "People notice",
+    "Others copy"
+   ],
+   "win": "Changed lives"
+  }
+ },
+ {
+  "id": "432",
+  "format": "domino",
+  "topic": "starting over",
+  "title": "Rebuilding your life starts small:",
+  "music": 0,
+  "accent": 5,
+  "end": [
+   "Don't chase the big domino.",
+   "Push the *small* one."
+  ],
+  "domino": {
+   "steps": [
+    "Accept it",
+    "Take one step",
+    "Build a routine",
+    "Make friends",
+    "Find purpose",
+    "A new life"
+   ]
+  }
+ },
+ {
+  "id": "433",
+  "format": "domino",
+  "topic": "fitness",
+  "title": "Getting fit starts small:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "Don't chase the big domino.",
+   "Push the *small* one."
+  ],
+  "domino": {
+   "steps": [
+    "Drink more water",
+    "Walk after dinner",
+    "Sleep 8 hours",
+    "Start lifting",
+    "More energy",
+    "A new body"
+   ]
+  }
+ },
+ {
+  "id": "434",
+  "format": "pile",
+  "topic": "running",
+  "title": "Learning to run:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Miss. Miss. Miss.",
+   "*Then* it goes in."
+  ],
+  "pile": {
+   "unit": "slow, painful kms",
+   "count": 2380,
+   "winWord": "Got it!"
+  }
+ },
+ {
+  "id": "435",
+  "format": "squiggle",
+  "topic": "weight loss",
+  "title": "Getting healthy:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "You're not lost.",
+   "You're in *the loops*."
+  ],
+  "squiggle": {
+   "goal": "Healthy",
+   "setbacks": [
+    "Gained it back",
+    "Holiday binge",
+    "Scale stuck",
+    "Gave up sugar",
+    "Gave in again",
+    "Kept going"
+   ]
+  }
+ },
+ {
+  "id": "436",
+  "format": "iceberg",
+  "topic": "writing",
+  "title": "What writing really takes:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Don't compare your start",
+   "to someone's *tip of the iceberg*."
+  ],
+  "iceberg": {
+   "see": "Bestseller",
+   "hidden": [
+    "Writing at 5am",
+    "100 rejections",
+    "Rewriting chapter 1",
+    "Lonely weekends",
+    "Brutal feedback",
+    "8 years of drafts"
+   ]
+  }
+ },
+ {
+  "id": "437",
+  "format": "compound",
+  "topic": "drawing",
+  "title": "The power of tiny habits:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "Tiny habits.",
+   "*Massive* results."
+  ],
+  "compound": {
+   "habit": "Draw for 20 minutes a day",
+   "perDay": 20,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "438",
+  "format": "valley",
+  "topic": "guitar",
+  "title": "Learning guitar takes time:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Your breakthrough is",
+   "*further up the curve*."
+  ],
+  "valley": {
+   "quit": "week 2: fingers hurt",
+   "win": "First gig"
+  }
+ },
+ {
+  "id": "439",
+  "format": "bamboo",
+  "topic": "singing",
+  "title": "Why singing feels slow:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "Roots first.",
+   "*Then* growth."
+  ],
+  "bamboo": {
+   "years": [
+    "Afraid to sing",
+    "Singing alone",
+    "Small choir",
+    "First solo"
+   ],
+   "win": "Standing ovation"
+  }
+ },
+ {
+  "id": "440",
+  "format": "domino",
+  "topic": "coding",
+  "title": "Becoming a developer starts small:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Big changes start",
+   "*embarrassingly small*."
+  ],
+  "domino": {
+   "steps": [
+    "Write one line",
+    "Finish a tutorial",
+    "Build something",
+    "Ship a project",
+    "Get hired",
+    "A developer"
+   ]
+  }
+ },
+ {
+  "id": "441",
+  "format": "pile",
+  "topic": "business",
+  "title": "Building a business:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "The pile is the *proof*.",
+   "Keep throwing."
+  ],
+  "pile": {
+   "unit": "failed ideas",
+   "count": 312,
+   "winWord": "Made it!"
+  }
+ },
+ {
+  "id": "442",
+  "format": "squiggle",
+  "topic": "saving money",
+  "title": "Building wealth:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Success is a *scribble*.",
+   "Keep your pen moving."
+  ],
+  "squiggle": {
+   "goal": "Money freedom",
+   "setbacks": [
+    "Car broke down",
+    "Impulse buys",
+    "Job loss",
+    "Market crash",
+    "Medical bill",
+    "Kept saving"
+   ]
+  }
+ },
+ {
+  "id": "443",
+  "format": "iceberg",
+  "topic": "investing",
+  "title": "What investing really takes:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "The work nobody sees",
+   "is *the work that counts*."
+  ],
+  "iceberg": {
+   "see": "Big portfolio",
+   "hidden": [
+    "Boring index funds",
+    "Watching it drop",
+    "Not panic selling",
+    "Monthly deposits",
+    "Living below means",
+    "Decades of patience"
+   ]
+  }
+ },
+ {
+  "id": "444",
+  "format": "compound",
+  "topic": "languages",
+  "title": "Small habits, big results:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "You don't need more time.",
+   "You need *a little, daily*."
+  ],
+  "compound": {
+   "habit": "Learn 10 words a day",
+   "perDay": 10,
+   "unit": "words",
+   "unitOne": "word"
+  }
+ },
+ {
+  "id": "445",
+  "format": "valley",
+  "topic": "public speaking",
+  "title": "Getting good at public speaking takes time:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "The results are *coming*.",
+   "Don't quit in the valley."
+  ],
+  "valley": {
+   "quit": "first talk: blanked",
+   "win": "Standing ovation"
+  }
+ },
+ {
+  "id": "446",
+  "format": "bamboo",
+  "topic": "reading",
+  "title": "Why reading feels slow:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Nothing happening?",
+   "Your roots are *growing*."
+  ],
+  "bamboo": {
+   "years": [
+    "4 books",
+    "12 books",
+    "Reading slump",
+    "30 books"
+   ],
+   "win": "50 books a year"
+  }
+ },
+ {
+  "id": "447",
+  "format": "domino",
+  "topic": "meditation",
+  "title": "Finding calm starts small:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "One small habit",
+   "can change *everything*."
+  ],
+  "domino": {
+   "steps": [
+    "Take one breath",
+    "Sit 2 minutes",
+    "Do it daily",
+    "Notice thoughts",
+    "React less",
+    "Peace"
+   ]
+  }
+ },
+ {
+  "id": "448",
+  "format": "pile",
+  "topic": "confidence",
+  "title": "Building confidence:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "They'll see one shot.",
+   "You'll know about *the 860*."
+  ],
+  "pile": {
+   "unit": "awkward moments",
+   "count": 860,
+   "winWord": "Nailed it!"
+  }
+ },
+ {
+  "id": "449",
+  "format": "squiggle",
+  "topic": "photography",
+  "title": "Becoming a photographer:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "They show the arrow.",
+   "Nobody shows *the scribble*."
+  ],
+  "squiggle": {
+   "goal": "Pro shooter",
+   "setbacks": [
+    "Blurry shots",
+    "Bad lighting",
+    "Lost a client",
+    "Gear stolen",
+    "Zero likes",
+    "Shot again"
+   ]
+  }
+ },
+ {
+  "id": "450",
+  "format": "iceberg",
+  "topic": "cooking",
+  "title": "What cooking really takes:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Everyone admires the tip.",
+   "Respect *what's underneath*."
+  ],
+  "iceberg": {
+   "see": "Perfect dinner",
+   "hidden": [
+    "Burnt pans",
+    "Smoke alarms",
+    "Knife skills drills",
+    "Failed recipes",
+    "Cleaning up, always",
+    "1,000 meals"
+   ]
+  }
+ },
+ {
+  "id": "451",
+  "format": "compound",
+  "topic": "content creation",
+  "title": "1% better every day:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "*1%* a day.",
+   "That's all it takes."
+  ],
+  "compound": {
+   "habit": "Post 1 video a day",
+   "perDay": 1,
+   "unit": "videos",
+   "unitOne": "video"
+  }
+ },
+ {
+  "id": "452",
+  "format": "valley",
+  "topic": "dancing",
+  "title": "Learning to dance takes time:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Progress feels like nothing",
+   "until it's *everything*."
+  ],
+  "valley": {
+   "quit": "class 3: two left feet",
+   "win": "First show"
+  }
+ },
+ {
+  "id": "453",
+  "format": "bamboo",
+  "topic": "studying",
+  "title": "Why studying feels slow:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "Overnight success",
+   "takes *years* underground."
+  ],
+  "bamboo": {
+   "years": [
+    "Failing",
+    "Scraping a pass",
+    "Getting it",
+    "Top 10"
+   ],
+   "win": "Top marks"
+  }
+ },
+ {
+  "id": "454",
+  "format": "domino",
+  "topic": "job hunting",
+  "title": "Getting hired starts small:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Start with domino one.",
+   "*The rest will follow.*"
+  ],
+  "domino": {
+   "steps": [
+    "Fix your CV",
+    "Apply to one job",
+    "Apply daily",
+    "Get an interview",
+    "Get the offer",
+    "Dream job"
+   ]
+  }
+ },
+ {
+  "id": "455",
+  "format": "pile",
+  "topic": "waking early",
+  "title": "Becoming a morning person:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "Every miss is a step",
+   "*towards the hit*."
+  ],
+  "pile": {
+   "unit": "snoozed alarms",
+   "count": 640,
+   "winWord": "Finally!"
+  }
+ },
+ {
+  "id": "456",
+  "format": "squiggle",
+  "topic": "quitting smoking",
+  "title": "Breaking free:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Setbacks aren't detours.",
+   "They're *the road*."
+  ],
+  "squiggle": {
+   "goal": "Smoke-free",
+   "setbacks": [
+    "Relapsed",
+    "Stressful week",
+    "Party cigarette",
+    "Mood swings",
+    "Relapsed again",
+    "Quit again"
+   ]
+  }
+ },
+ {
+  "id": "457",
+  "format": "iceberg",
+  "topic": "heartbreak",
+  "title": "What heartbreak really takes:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "They see *Glowing again*.",
+   "They don't see the cost."
+  ],
+  "iceberg": {
+   "see": "Glowing again",
+   "hidden": [
+    "Not texting back",
+    "Crying in the car",
+    "Deleting photos",
+    "Therapy",
+    "Lonely weekends",
+    "Choosing you, daily"
+   ]
+  }
+ },
+ {
+  "id": "458",
+  "format": "compound",
+  "topic": "friendship",
+  "title": "The power of tiny habits:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Small steps, *every day*.",
+   "They add up faster than you think."
+  ],
+  "compound": {
+   "habit": "Message 1 friend a day",
+   "perDay": 1,
+   "unit": "friends",
+   "unitOne": "friend"
+  }
+ },
+ {
+  "id": "459",
+  "format": "valley",
+  "topic": "chess",
+  "title": "Getting good at chess takes time:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "Most people quit",
+   "*right before* it works."
+  ],
+  "valley": {
+   "quit": "lost 10 in a row",
+   "win": "Beat the master"
+  }
+ },
+ {
+  "id": "460",
+  "format": "bamboo",
+  "topic": "swimming",
+  "title": "Why swimming feels slow:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Keep watering it.",
+   "*It's growing.*"
+  ],
+  "bamboo": {
+   "years": [
+    "Afraid of water",
+    "Floating",
+    "First full lap",
+    "100 laps"
+   ],
+   "win": "Open water"
+  }
+ },
+ {
+  "id": "461",
+  "format": "domino",
+  "topic": "yoga",
+  "title": "Learning yoga starts small:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "You don't need a big leap.",
+   "Just *the first push*."
+  ],
+  "domino": {
+   "steps": [
+    "Roll out the mat",
+    "Stretch once",
+    "Daily practice",
+    "Breathe deeper",
+    "Feel lighter",
+    "Inner balance"
+   ]
+  }
+ },
+ {
+  "id": "462",
+  "format": "pile",
+  "topic": "piano",
+  "title": "Learning piano:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Nobody gets it first try.",
+   "*Keep throwing.*"
+  ],
+  "pile": {
+   "unit": "wrong notes",
+   "count": 6200,
+   "winWord": "Yes!!"
+  }
+ },
+ {
+  "id": "463",
+  "format": "squiggle",
+  "topic": "design",
+  "title": "Becoming a designer:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "Nobody's path is *straight*.",
+   "Don't quit in the loops."
+  ],
+  "squiggle": {
+   "goal": "Senior designer",
+   "setbacks": [
+    "Client hated it",
+    "Ugly fonts",
+    "Revision 12",
+    "Lost the pitch",
+    "Copied, again",
+    "Designed again"
+   ]
+  }
+ },
+ {
+  "id": "464",
+  "format": "iceberg",
+  "topic": "sales",
+  "title": "What sales really takes:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Success is an *iceberg*.",
+   "Most of it is underwater."
+  ],
+  "iceberg": {
+   "see": "Top earner",
+   "hidden": [
+    "Hundreds of no's",
+    "Cold calls",
+    "Ghosted daily",
+    "Learning objections",
+    "Missed quotas",
+    "Follow-up #7"
+   ]
+  }
+ },
+ {
+  "id": "465",
+  "format": "compound",
+  "topic": "career",
+  "title": "Small habits, big results:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "Don't wait for big changes.",
+   "Make *tiny* ones daily."
+  ],
+  "compound": {
+   "habit": "Learn 30 minutes a day",
+   "perDay": 30,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "466",
+  "format": "valley",
+  "topic": "freelancing",
+  "title": "Going freelance takes time:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Feeling stuck?",
+   "You might be *almost there*."
+  ],
+  "valley": {
+   "quit": "month 2: no clients",
+   "win": "Fully booked"
+  }
+ },
+ {
+  "id": "467",
+  "format": "bamboo",
+  "topic": "app building",
+  "title": "Why app building feels slow:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "What looks like nothing",
+   "is *building something*."
+  ],
+  "bamboo": {
+   "years": [
+    "A sketch",
+    "Ugly beta",
+    "Launch: 12 downloads",
+    "10,000 users"
+   ],
+   "win": "1M downloads"
+  }
+ },
+ {
+  "id": "468",
+  "format": "domino",
+  "topic": "debt",
+  "title": "Becoming debt free starts small:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Small today.",
+   "*Life-changing* tomorrow."
+  ],
+  "domino": {
+   "steps": [
+    "Face the number",
+    "Make a budget",
+    "Pay the smallest",
+    "Snowball it",
+    "Last payment",
+    "Freedom"
+   ]
+  }
+ },
+ {
+  "id": "469",
+  "format": "pile",
+  "topic": "maths",
+  "title": "Getting good at maths:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "Everyone wants the result.",
+   "Nobody sees the *2,100 wrong answers* before it."
+  ],
+  "pile": {
+   "unit": "wrong answers",
+   "count": 2100,
+   "winWord": "Got it!"
+  }
+ },
+ {
+  "id": "470",
+  "format": "squiggle",
+  "topic": "medicine",
+  "title": "Getting through med school:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "The mess *is* the path.",
+   "Keep drawing the line."
+  ],
+  "squiggle": {
+   "goal": "Doctor",
+   "setbacks": [
+    "Failed an exam",
+    "Night shifts",
+    "Burnout",
+    "Missed holidays",
+    "Doubted myself",
+    "Kept studying"
+   ]
+  }
+ },
+ {
+  "id": "471",
+  "format": "iceberg",
+  "topic": "teaching",
+  "title": "What teaching really takes:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "Overnight success?",
+   "It took *years* of nights."
+  ],
+  "iceberg": {
+   "see": "Favourite teacher",
+   "hidden": [
+    "Marking at midnight",
+    "Lessons that flopped",
+    "Paying for supplies",
+    "Difficult kids",
+    "Endless planning",
+    "Years of caring"
+   ]
+  }
+ },
+ {
+  "id": "472",
+  "format": "compound",
+  "topic": "mental health",
+  "title": "1% better every day:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Nothing changes on day 1.",
+   "Everything changes by *day 365*."
+  ],
+  "compound": {
+   "habit": "Walk 10 minutes a day",
+   "perDay": 10,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "473",
+  "format": "valley",
+  "topic": "discipline",
+  "title": "Building discipline takes time:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "The curve always bends.",
+   "*Stay* for it."
+  ],
+  "valley": {
+   "quit": "streak broken: day 9",
+   "win": "Unstoppable"
+  }
+ },
+ {
+  "id": "474",
+  "format": "bamboo",
+  "topic": "gardening",
+  "title": "Why gardening feels slow:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Be patient.",
+   "*Year 5* is coming."
+  ],
+  "bamboo": {
+   "years": [
+    "Dead basil",
+    "Some tomatoes",
+    "Real veg",
+    "Feeding friends"
+   ],
+   "win": "First harvest"
+  }
+ },
+ {
+  "id": "475",
+  "format": "domino",
+  "topic": "martial arts",
+  "title": "Earning a black belt starts small:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "Don't chase the big domino.",
+   "Push the *small* one."
+  ],
+  "domino": {
+   "steps": [
+    "Walk in the dojo",
+    "First class",
+    "Train weekly",
+    "Earn a belt",
+    "Never quit",
+    "Black belt"
+   ]
+  }
+ },
+ {
+  "id": "476",
+  "format": "pile",
+  "topic": "cycling",
+  "title": "Getting into cycling:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Miss. Miss. Miss.",
+   "*Then* it goes in."
+  ],
+  "pile": {
+   "unit": "hills walked up",
+   "count": 340,
+   "winWord": "Made it!"
+  }
+ },
+ {
+  "id": "477",
+  "format": "squiggle",
+  "topic": "climbing",
+  "title": "Reaching the top:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "You're not lost.",
+   "You're in *the loops*."
+  ],
+  "squiggle": {
+   "goal": "Summit",
+   "setbacks": [
+    "Fell off",
+    "Torn skin",
+    "Fear of heights",
+    "Stuck on a route",
+    "Injured finger",
+    "Climbed again"
+   ]
+  }
+ },
+ {
+  "id": "478",
+  "format": "iceberg",
+  "topic": "football",
+  "title": "What football really takes:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Don't compare your start",
+   "to someone's *tip of the iceberg*."
+  ],
+  "iceberg": {
+   "see": "Winning goal",
+   "hidden": [
+    "Training in the rain",
+    "Missed shots",
+    "Bench seasons",
+    "Injuries",
+    "Skill drills alone",
+    "10,000 touches"
+   ]
+  }
+ },
+ {
+  "id": "479",
+  "format": "compound",
+  "topic": "tennis",
+  "title": "The power of tiny habits:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "Tiny habits.",
+   "*Massive* results."
+  ],
+  "compound": {
+   "habit": "Hit 50 serves a day",
+   "perDay": 50,
+   "unit": "serves",
+   "unitOne": "serve"
+  }
+ },
+ {
+  "id": "480",
+  "format": "valley",
+  "topic": "boxing",
+  "title": "Learning to box takes time:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Your breakthrough is",
+   "*further up the curve*."
+  ],
+  "valley": {
+   "quit": "first spar: knocked down",
+   "win": "Champion"
+  }
+ },
+ {
+  "id": "481",
+  "format": "bamboo",
+  "topic": "podcasting",
+  "title": "Why podcasting feels slow:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "Roots first.",
+   "*Then* growth."
+  ],
+  "bamboo": {
+   "years": [
+    "8 listeners",
+    "Still 50",
+    "500. Almost quit.",
+    "5,000"
+   ],
+   "win": "Top 10 chart"
+  }
+ },
+ {
+  "id": "482",
+  "format": "domino",
+  "topic": "acting",
+  "title": "Chasing the stage starts small:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Big changes start",
+   "*embarrassingly small*."
+  ],
+  "domino": {
+   "steps": [
+    "Take a class",
+    "Audition once",
+    "Audition weekly",
+    "Get a callback",
+    "Get a part",
+    "An actor"
+   ]
+  }
+ },
+ {
+  "id": "483",
+  "format": "pile",
+  "topic": "comedy",
+  "title": "Getting good at stand-up:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "The pile is the *proof*.",
+   "Keep throwing."
+  ],
+  "pile": {
+   "unit": "jokes that bombed",
+   "count": 900,
+   "winWord": "Nailed it!"
+  }
+ },
+ {
+  "id": "484",
+  "format": "squiggle",
+  "topic": "novel writing",
+  "title": "Finishing your book:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Success is a *scribble*.",
+   "Keep your pen moving."
+  ],
+  "squiggle": {
+   "goal": "The end",
+   "setbacks": [
+    "Plot hole",
+    "Lost motivation",
+    "Deleted chapter",
+    "Bad feedback",
+    "Rewrite",
+    "Wrote on"
+   ]
+  }
+ },
+ {
+  "id": "485",
+  "format": "iceberg",
+  "topic": "driving",
+  "title": "What driving really takes:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "The work nobody sees",
+   "is *the work that counts*."
+  ],
+  "iceberg": {
+   "see": "Driving licence",
+   "hidden": [
+    "Stalling at lights",
+    "Two failed tests",
+    "Parallel parking",
+    "Nervous sweats",
+    "Hours of lessons",
+    "Booking it again"
+   ]
+  }
+ },
+ {
+  "id": "486",
+  "format": "compound",
+  "topic": "video editing",
+  "title": "Small habits, big results:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "You don't need more time.",
+   "You need *a little, daily*."
+  ],
+  "compound": {
+   "habit": "Edit 30 minutes a day",
+   "perDay": 30,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "487",
+  "format": "valley",
+  "topic": "data science",
+  "title": "Learning data science takes time:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "The results are *coming*.",
+   "Don't quit in the valley."
+  ],
+  "valley": {
+   "quit": "stuck on statistics",
+   "win": "Hired"
+  }
+ },
+ {
+  "id": "488",
+  "format": "bamboo",
+  "topic": "university",
+  "title": "Why university feels slow:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Nothing happening?",
+   "Your roots are *growing*."
+  ],
+  "bamboo": {
+   "years": [
+    "Average grades",
+    "Better grades",
+    "Retook the test",
+    "Applied"
+   ],
+   "win": "Accepted!"
+  }
+ },
+ {
+  "id": "489",
+  "format": "domino",
+  "topic": "minimalism",
+  "title": "Simplifying life starts small:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "One small habit",
+   "can change *everything*."
+  ],
+  "domino": {
+   "steps": [
+    "Clear one drawer",
+    "One item a day",
+    "Stop buying",
+    "Clear a room",
+    "Feel lighter",
+    "Freedom"
+   ]
+  }
+ },
+ {
+  "id": "490",
+  "format": "pile",
+  "topic": "journaling",
+  "title": "Building a journaling habit:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "They'll see one shot.",
+   "You'll know about *the 365*."
+  ],
+  "pile": {
+   "unit": "blank pages",
+   "count": 365,
+   "winWord": "Finally!"
+  }
+ },
+ {
+  "id": "491",
+  "format": "squiggle",
+  "topic": "gratitude",
+  "title": "Finding joy:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "They show the arrow.",
+   "Nobody shows *the scribble*."
+  ],
+  "squiggle": {
+   "goal": "Joyful",
+   "setbacks": [
+    "Bad day",
+    "Felt fake",
+    "Forgot",
+    "Complained",
+    "Hard month",
+    "Started again"
+   ]
+  }
+ },
+ {
+  "id": "492",
+  "format": "iceberg",
+  "topic": "healthy eating",
+  "title": "What healthy eating really takes:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Everyone admires the tip.",
+   "Respect *what's underneath*."
+  ],
+  "iceberg": {
+   "see": "Glowing skin",
+   "hidden": [
+    "Meal prep",
+    "Saying no to sweets",
+    "Reading labels",
+    "Cravings",
+    "Cooking when tired",
+    "Two years of meals"
+   ]
+  }
+ },
+ {
+  "id": "493",
+  "format": "compound",
+  "topic": "phone detox",
+  "title": "1% better every day:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "*1%* a day.",
+   "That's all it takes."
+  ],
+  "compound": {
+   "habit": "Cut 10 minutes a day",
+   "perDay": 10,
+   "unit": "minutes",
+   "unitOne": "minute"
+  }
+ },
+ {
+  "id": "494",
+  "format": "valley",
+  "topic": "sleep",
+  "title": "Fixing your sleep takes time:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Progress feels like nothing",
+   "until it's *everything*."
+  ],
+  "valley": {
+   "quit": "week 1: still awake",
+   "win": "8 hours"
+  }
+ },
+ {
+  "id": "495",
+  "format": "bamboo",
+  "topic": "patience",
+  "title": "Why patience feels slow:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "Overnight success",
+   "takes *years* underground."
+  ],
+  "bamboo": {
+   "years": [
+    "Nothing",
+    "Still nothing",
+    "A little",
+    "Almost"
+   ],
+   "win": "It worked"
+  }
+ },
+ {
+  "id": "496",
+  "format": "domino",
+  "topic": "self-love",
+  "title": "Being kind to you starts small:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Start with domino one.",
+   "*The rest will follow.*"
+  ],
+  "domino": {
+   "steps": [
+    "Notice one thought",
+    "Be kind back",
+    "Set a boundary",
+    "Say no",
+    "Respect yourself",
+    "Self-love"
+   ]
+  }
+ },
+ {
+  "id": "497",
+  "format": "pile",
+  "topic": "parenting",
+  "title": "Being a good parent:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "Every miss is a step",
+   "*towards the hit*."
+  ],
+  "pile": {
+   "unit": "patient deep breaths",
+   "count": 9000,
+   "winWord": "Yes!!"
+  }
+ },
+ {
+  "id": "498",
+  "format": "squiggle",
+  "topic": "marriage",
+  "title": "Loving for the long run:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Setbacks aren't detours.",
+   "They're *the road*."
+  ],
+  "squiggle": {
+   "goal": "Lifelong love",
+   "setbacks": [
+    "Big fight",
+    "Money stress",
+    "Busy months",
+    "Grew apart",
+    "Hurt feelings",
+    "Chose each other"
+   ]
+  }
+ },
+ {
+  "id": "499",
+  "format": "iceberg",
+  "topic": "forgiveness",
+  "title": "What forgiveness really takes:",
+  "music": 5,
+  "accent": 1,
+  "end": [
+   "They see *Peaceful*.",
+   "They don't see the cost."
+  ],
+  "iceberg": {
+   "see": "Peaceful",
+   "hidden": [
+    "Choosing peace",
+    "Replaying it less",
+    "Hard conversations",
+    "Letting go of sorry",
+    "Therapy",
+    "Again and again"
+   ]
+  }
+ },
+ {
+  "id": "500",
+  "format": "compound",
+  "topic": "art career",
+  "title": "The power of tiny habits:",
+  "music": 4,
+  "accent": 2,
+  "end": [
+   "Small steps, *every day*.",
+   "They add up faster than you think."
+  ],
+  "compound": {
+   "habit": "Make 1 piece a day",
+   "perDay": 1,
+   "unit": "pieces",
+   "unitOne": "piece"
+  }
+ },
+ {
+  "id": "501",
+  "format": "valley",
+  "topic": "basketball",
+  "title": "Getting good at basketball takes time:",
+  "music": 3,
+  "accent": 3,
+  "end": [
+   "Most people quit",
+   "*right before* it works."
+  ],
+  "valley": {
+   "quit": "cut from the team",
+   "win": "Game winner"
+  }
+ },
+ {
+  "id": "502",
+  "format": "bamboo",
+  "topic": "skateboarding",
+  "title": "Why skateboarding feels slow:",
+  "music": 2,
+  "accent": 4,
+  "end": [
+   "Keep watering it.",
+   "*It's growing.*"
+  ],
+  "bamboo": {
+   "years": [
+    "Rolling",
+    "Ollies",
+    "Almost kickflips",
+    "Kickflips"
+   ],
+   "win": "Landed it!"
+  }
+ },
+ {
+  "id": "503",
+  "format": "domino",
+  "topic": "kindness",
+  "title": "Changing the world starts small:",
+  "music": 1,
+  "accent": 5,
+  "end": [
+   "You don't need a big leap.",
+   "Just *the first push*."
+  ],
+  "domino": {
+   "steps": [
+    "Smile at someone",
+    "Help one person",
+    "Do it daily",
+    "Inspire others",
+    "They pass it on",
+    "A kinder world"
+   ]
+  }
+ },
+ {
+  "id": "504",
+  "format": "pile",
+  "topic": "starting over",
+  "title": "Starting over:",
+  "music": 0,
+  "accent": 0,
+  "end": [
+   "Nobody gets it first try.",
+   "*Keep throwing.*"
+  ],
+  "pile": {
+   "unit": "fresh starts",
+   "count": 7,
+   "winWord": "Got it!"
+  }
+ }
+]
