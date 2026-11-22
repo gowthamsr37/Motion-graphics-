@@ -28,7 +28,7 @@ export const S8DF: React.FC = () => {
       </Pop>
       <Pop at={s.cueS(0, "degrees")} x={540} y={520} from="scale" scaleFrom={0.6} cfg={theme.spring.pop}>
         <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 60, color: C.text, whiteSpace: "nowrap" }}>
-          df = n<Sub>A</Sub> + n<Sub>B</Sub> − 2
+          = n<Sub>A</Sub> + n<Sub>B</Sub> − 2
         </div>
       </Pop>
       <Pop at={EIGHT - 10} x={540} y={620} from="up" dist={12} cfg={theme.spring.bouncy}>
@@ -39,7 +39,7 @@ export const S8DF: React.FC = () => {
       <FnCurve g={G} f={npdf} fmax={TFMAX} p={draw} color={C.dim} fill={0} dashed width={4} />
       <FnCurve g={G} f={tf} fmax={TFMAX} p={draw} color={BB} fill={0.12} bands={[{ a: -4.5, b: -2.306, color: TAIL, opacity: 0.6, p: ease(frame, [FAT - 6, FAT + 10], [0, 1]) }, { a: 2.306, b: 4.5, color: TAIL, opacity: 0.6, p: ease(frame, [FAT - 6, FAT + 10], [0, 1]) }]} />
       <ValueAxis g={G} p={draw} ticks={[{ v: -1.96, label: "−1.96 (z)", color: C.dim }, { v: 2.306, label: "2.306 (t)", color: TAIL, big: true }]} />
-      <div style={{ position: "absolute", left: gx(G, 1.2), top: G.base - G.h - 10, opacity: draw, fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 22, letterSpacing: "0.12em", color: BB }}>t CURVE (df 8)</div>
+      <div style={{ position: "absolute", left: gx(G, 0.9), top: G.base - G.h - 30, opacity: draw, whiteSpace: "nowrap", fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 22, letterSpacing: "0.12em", color: BB }}>t CURVE<br />8 DEGREES OF FREEDOM</div>
       <div style={{ position: "absolute", left: gx(G, -3.9), top: G.base - G.h * 0.62, opacity: draw, fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 20, letterSpacing: "0.12em", color: C.dim }}>NORMAL (dashed)</div>
       <Pop at={FAT - 4} x={540} y={1250} from="up" dist={12}>
         <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 40, color: C.text, whiteSpace: "nowrap" }}>

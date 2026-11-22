@@ -141,6 +141,8 @@ export const TTable: React.FC<{ x: number; y: number; p: number; row?: number; c
   const H = rh * (TROWS.length + 2);
   const headC = (which: "one" | "two") => (hiHead === which ? TAIL : C.dim);
   return (
+    <>
+      <div style={{ position: "absolute", left: x - W / 2 - 30, top: y + rh * 2 + (H - rh * 2) / 2, transform: `translate(-50%, -50%) translateY(${(1 - p) * 20}px) rotate(-90deg)`, opacity: Math.min(1, p * 1.5), fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 17, letterSpacing: "0.14em", color: row !== undefined && rowP > 0.5 ? TAIL : C.dim, whiteSpace: "nowrap" }}>DEGREES OF FREEDOM</div>
     <div style={{ position: "absolute", left: x, top: y, width: W, height: H, transform: `translateX(-50%) translateY(${(1 - p) * 20}px)`, opacity: Math.min(1, p * 1.5), borderRadius: 18, overflow: "hidden", background: "rgba(10,18,52,0.95)", border: `2px solid ${alpha(C.text, 0.2)}` }}>
       <div style={{ position: "absolute", left: 0, top: 0, width: W, height: rh * 2, background: alpha(C.text, 0.08) }} />
       <div style={{ position: "absolute", left: 0, top: 0, width: hw, height: H, background: alpha(C.text, 0.08) }} />
@@ -157,7 +159,7 @@ export const TTable: React.FC<{ x: number; y: number; p: number; row?: number; c
       {TROWS.map((r, i) => (
         <React.Fragment key={r}>
           <div style={{ position: "absolute", left: 0, top: rh * (i + 2), width: hw, height: rh, display: "flex", alignItems: "center", justifyContent: "center", gap: 8, fontFamily: theme.fonts.mono, fontWeight: 800, fontSize: 26, color: row === i && rowP > 0.5 ? TAIL : C.dim }}>
-            <span style={{ fontFamily: theme.fonts.body, fontSize: 16 }}>df</span> {r}
+            {r}
           </div>
           {TVALS[r].map((v, j) => {
             const hot = cells.some(([a, b]) => a === i && b === j) ? cellP : 0;
@@ -170,6 +172,7 @@ export const TTable: React.FC<{ x: number; y: number; p: number; row?: number; c
         </React.Fragment>
       ))}
     </div>
+    </>
   );
 };
 

@@ -38,8 +38,8 @@ export const S11OneTail: React.FC = () => {
       {frame >= T3 - 8 ? <TZone g={G} p={draw} zones={zones} side="right" /> : null}
       <Marker x={gx(G, 3)} base={G.base} top={G.base - 230} p={spr(T3, theme.spring.bouncy)} color={BB} label="t = 3 (SAME)" size={26} />
       <Pop at={CV - 6} x={540} y={960} from="up" dist={10}>
-        <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 36, color: C.text, whiteSpace: "nowrap" }}>
-          ONE-TAILED 0.05 COLUMN, df 8: <span style={{ fontFamily: theme.fonts.mono, color: TAIL, textShadow: glowText(TAIL, 0.5) }}>1.860</span>
+        <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 31, color: C.text, whiteSpace: "nowrap" }}>
+          ONE-TAILED 0.05, 8 DEGREES OF FREEDOM: <span style={{ fontFamily: theme.fonts.mono, color: TAIL, textShadow: glowText(TAIL, 0.5) }}>1.860</span>
         </div>
       </Pop>
       <Pop at={PW - 6} x={540} y={1040} from="up" dist={10}>

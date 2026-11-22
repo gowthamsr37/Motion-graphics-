@@ -43,7 +43,7 @@ export const S12Poll: React.FC = () => {
               <div style={{ padding: "12px 34px", borderRadius: 999, background: alpha(BB, 0.2), border: `3px solid ${BB}`, fontFamily: theme.fonts.mono, fontWeight: 800, fontSize: 60, color: C.text }}>
                 <span style={{ fontFamily: theme.fonts.display, fontStyle: "italic" }}>t</span> = <span style={{ color: BB, textShadow: glowText(BB, 0.5) }}>2</span>
               </div>
-              <div style={{ fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 24, letterSpacing: "0.16em", color: C.dim }}>df 8 · ALPHA 5%</div>
+              <div style={{ fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 21, letterSpacing: "0.12em", color: C.dim, lineHeight: 1.35 }}>8 DEGREES<br />OF FREEDOM<br />ALPHA 5%</div>
             </div>
           ) : null}
           {frame >= Z - 4 ? <TZone g={G} p={draw} zones={draw} /> : null}
@@ -82,8 +82,8 @@ export const S12Poll: React.FC = () => {
           next="CHI-SQUARE TEST"
           chips={[
             { l: "t = gap ÷ SE", c: SE },
-            { l: "df = nA + nB − 2", c: BA },
-            { l: "±2.306 at df 8", c: TAIL },
+            { l: "Degrees of freedom: 8", c: BA },
+            { l: "Critical: ±2.306", c: TAIL },
             { l: "One-tailed: 1.860", c: BB },
           ]}
         />

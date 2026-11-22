@@ -1,266 +1,266 @@
 {
- "voice": "af_heart",
- "lang": "en-us",
- "speed": 1.05,
- "scenes": [
-  {
-   "id": "s1",
-   "title": "Hook",
-   "lead": 0.45,
-   "hold": 0.4,
-   "segments": [
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
     {
-     "text": "Brand B says its phone battery lasts longer. You test five phones of each: A averages seven hours, B averages ten.",
-     "caption": "Brand B says its phone battery lasts longer. You test 5 phones of each: A averages 7 hours, B averages 10.",
-     "pause": 0.4,
-     "fix": [
-      [
-       "ˈiːtʃ: ɐ ˈævɹɪdʒᵻz",
-       "ˈiːtʃ: ˈeɪ ˈævɹɪdʒᵻz"
+      "id": "s1",
+      "title": "Hook",
+      "lead": 0.45,
+      "hold": 0.4,
+      "segments": [
+        {
+          "text": "Brand B says its phone battery lasts longer. You test five phones of each: A averages seven hours, B averages ten.",
+          "caption": "Brand B says its phone battery lasts longer. You test 5 phones of each: A averages 7 hours, B averages 10.",
+          "pause": 0.4,
+          "fix": [
+            [
+              "ˈiːtʃ: ɐ ˈævɹɪdʒᵻz",
+              "ˈiːtʃ: ˈeɪ ˈævɹɪdʒᵻz"
+            ]
+          ]
+        },
+        {
+          "text": "A real difference, or just luck? Let's settle it with a t-test.",
+          "caption": "A real difference, or just luck? Let's settle it with a t-test.",
+          "pause": 0.3
+        }
       ]
-     ]
     },
     {
-     "text": "A real difference, or just luck? Let's settle it with a t-test.",
-     "caption": "A real difference, or just luck? Let's settle it with a t-test.",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s2",
-   "title": "Textbook definition",
-   "lead": 0.4,
-   "hold": 0.4,
-   "segments": [
-    {
-     "text": "Here's the textbook definition.",
-     "caption": "Here's the textbook definition.",
-     "pause": 0.35
-    },
-    {
-     "text": "A two-sample t-test is a hypothesis test that checks whether the means of two independent groups are significantly different, when the population standard deviations are unknown.",
-     "caption": "A two-sample t-test is a hypothesis test that checks whether the means of two independent groups are significantly different, when the population standard deviations are unknown.",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s3",
-   "title": "When to use it",
-   "lead": 0.4,
-   "hold": 0.3,
-   "segments": [
-    {
-     "text": "Use it to compare the averages of two separate groups, when sigma is unknown and the samples are small.",
-     "caption": "Use it to compare the averages of two separate groups, when sigma is unknown and the samples are small.",
-     "pause": 0.35
-    },
-    {
-     "text": "Five phones each, sigma unknown: that's us.",
-     "caption": "5 phones each, sigma unknown: that's us.",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s4",
-   "title": "Steps 1 and 2: one tail or two",
-   "lead": 0.4,
-   "hold": 0.25,
-   "segments": [
-    {
-     "text": "Step one: H zero says both brands last the same on average.",
-     "caption": "Step one: H0 says both brands last the same on average.",
-     "pause": 0.3
-    },
-    {
-     "text": "H one is two-tailed if they could differ either way, or one-tailed if we only ask: does B last longer?",
-     "caption": "H1 is two-tailed if they could differ either way, or one-tailed if we only ask: does B last longer?",
-     "pause": 0.35
-    },
-    {
-     "text": "Step two: alpha, five percent. Two-tailed splits it, two point five percent per tail. One-tailed puts all five percent on the right. We'll do both.",
-     "caption": "Step two: alpha, 5%. Two-tailed splits it, 2.5% per tail. One-tailed puts all 5% on the right. We'll do both.",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s5",
-   "title": "The formula",
-   "lead": 0.4,
-   "hold": 0.3,
-   "segments": [
-    {
-     "text": "Step three: the formula. t equals the gap between the two averages, over the standard error of that gap.",
-     "caption": "Step three: the formula. t equals the gap between the two averages, over the standard error of that gap.",
-     "pause": 0.4
-    },
-    {
-     "text": "The standard error uses the pooled variance, s-p squared, and both sample sizes.",
-     "caption": "The standard error uses the pooled variance, sp squared, and both sample sizes.",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s6",
-   "title": "Averages and variances",
-   "lead": 0.4,
-   "hold": 0.3,
-   "segments": [
-    {
-     "text": "First, the averages: A is seven hours, B is ten. So the gap is three.",
-     "caption": "First, the averages: A is 7 hours, B is 10. So the gap is 3.",
-     "pause": 0.4,
-     "fix": [
-      [
-       "ˈævɹɪdʒᵻz: ɐ ɪz",
-       "ˈævɹɪdʒᵻz: ˈeɪ ɪz"
+      "id": "s2",
+      "title": "Textbook definition",
+      "lead": 0.3,
+      "hold": 0.4,
+      "segments": [
+        {
+          "text": "Here's the textbook definition.",
+          "caption": "Here's the textbook definition.",
+          "pause": 0.35
+        },
+        {
+          "text": "A two-sample t-test is a hypothesis test that checks whether the means of two independent groups are significantly different, when the population standard deviations are unknown.",
+          "caption": "A two-sample t-test is a hypothesis test that checks whether the means of two independent groups are significantly different, when the population standard deviations are unknown.",
+          "pause": 0.3
+        }
       ]
-     ]
     },
     {
-     "text": "Next, each variance. For A, square each value's distance from seven: one, one, zero, four, four. They add up to ten.",
-     "caption": "Next, each variance. For A, square each value's distance from 7: 1, 1, 0, 4, 4. They add up to 10.",
-     "pause": 0.35,
-     "fix": [
-      [
-       "fɚɹə,",
-       "fɔːɹ ˈeɪ,"
+      "id": "s3",
+      "title": "When to use it",
+      "lead": 0.3,
+      "hold": 0.3,
+      "segments": [
+        {
+          "text": "Use it to compare the averages of two separate groups, when sigma is unknown and the samples are small.",
+          "caption": "Use it to compare the averages of two separate groups, when sigma is unknown and the samples are small.",
+          "pause": 0.35
+        },
+        {
+          "text": "Five phones each, sigma unknown: that's us.",
+          "caption": "5 phones each, sigma unknown: that's us.",
+          "pause": 0.3
+        }
       ]
-     ]
     },
     {
-     "text": "Divide by n minus one, four: the variance is two point five. Brand B is the same: two point five.",
-     "caption": "Divide by n - 1, 4: the variance is 2.5. Brand B is the same: 2.5.",
-     "pause": 0.3
+      "id": "s4",
+      "title": "Steps 1 and 2: one tail or two",
+      "lead": 0.3,
+      "hold": 0.25,
+      "segments": [
+        {
+          "text": "Step one: H zero says both brands last the same on average.",
+          "caption": "Step one: H0 says both brands last the same on average.",
+          "pause": 0.3
+        },
+        {
+          "text": "H one is two-tailed if they could differ either way, or one-tailed if we only ask: does B last longer?",
+          "caption": "H1 is two-tailed if they could differ either way, or one-tailed if we only ask: does B last longer?",
+          "pause": 0.35
+        },
+        {
+          "text": "Step two: alpha, five percent. Two-tailed splits it, two point five percent per tail. One-tailed puts all five percent on the right. We'll do both.",
+          "caption": "Step two: alpha, 5%. Two-tailed splits it, 2.5% per tail. One-tailed puts all 5% on the right. We'll do both.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "The formula",
+      "lead": 0.3,
+      "hold": 0.3,
+      "segments": [
+        {
+          "text": "Step three: the formula. t equals the gap between the two averages, over the standard error of that gap.",
+          "caption": "Step three: the formula. t equals the gap between the two averages, over the standard error of that gap.",
+          "pause": 0.4
+        },
+        {
+          "text": "The standard error uses the pooled variance, s-p squared, and both sample sizes.",
+          "caption": "The standard error uses the pooled variance, sp squared, and both sample sizes.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Averages and variances",
+      "lead": 0.3,
+      "hold": 0.3,
+      "segments": [
+        {
+          "text": "First, the averages: A is seven hours, B is ten. So the gap is three.",
+          "caption": "First, the averages: A is 7 hours, B is 10. So the gap is 3.",
+          "pause": 0.4,
+          "fix": [
+            [
+              "ˈævɹɪdʒᵻz: ɐ ɪz",
+              "ˈævɹɪdʒᵻz: ˈeɪ ɪz"
+            ]
+          ]
+        },
+        {
+          "text": "Next, each variance. For A, square each value's distance from seven: one, one, zero, four, four. They add up to ten.",
+          "caption": "Next, each variance. For A, square each value's distance from 7: 1, 1, 0, 4, 4. They add up to 10.",
+          "pause": 0.35,
+          "fix": [
+            [
+              "fɚɹə,",
+              "fɔːɹ ˈeɪ,"
+            ]
+          ]
+        },
+        {
+          "text": "Divide by n minus one, four: the variance is two point five. Brand B is the same: two point five.",
+          "caption": "Divide by n - 1, 4: the variance is 2.5. Brand B is the same: 2.5.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Standard error and t",
+      "lead": 0.3,
+      "hold": 0.4,
+      "segments": [
+        {
+          "text": "Pooled variance: two point five. Standard error: the square root of two point five, times a fifth plus a fifth. That's root one, which is one.",
+          "caption": "Pooled variance: 2.5. Standard error: the square root of 2.5, times a fifth plus a fifth. That's root 1, which is 1.",
+          "pause": 0.35
+        },
+        {
+          "text": "So t equals three over one: t equals three.",
+          "caption": "So t equals 3 over 1: t equals 3.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Degrees of freedom",
+      "lead": 0.3,
+      "hold": 0.25,
+      "segments": [
+        {
+          "text": "The t table needs the degrees of freedom: five plus five, minus two, equals eight.",
+          "caption": "The t table needs the degrees of freedom: 5 + 5 - 2 = 8.",
+          "pause": 0.35
+        },
+        {
+          "text": "Small samples are less certain, so the t curve has fatter tails, and bigger cut-offs.",
+          "caption": "Small samples are less certain, so the t curve has fatter tails, and bigger cut-offs.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Two-tailed: the t table",
+      "lead": 0.3,
+      "hold": 0.25,
+      "segments": [
+        {
+          "text": "Two-tailed first. A t table lists critical values directly.",
+          "caption": "Two-tailed first. A t table lists critical values directly.",
+          "pause": 0.35
+        },
+        {
+          "text": "Row eight, column two-tailed zero point zero five: the critical value is two point three zero six.",
+          "caption": "Row 8, column two-tailed 0.05: the critical value is 2.306.",
+          "pause": 0.35
+        },
+        {
+          "text": "Beyond plus or minus two point three zero six is the critical region, with area alpha.",
+          "caption": "Beyond ±2.306 is the critical region, with area alpha.",
+          "pause": 0.35
+        },
+        {
+          "text": "For p: our t of three sits between two point eight nine six and three point three five five, so p is between zero point zero one and zero point zero two. Software says zero point zero one seven.",
+          "caption": "For p: our t of 3 sits between 2.896 and 3.355, so p is between 0.01 and 0.02. Software says 0.017.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "Two-tailed decision",
+      "lead": 0.3,
+      "hold": 0.3,
+      "segments": [
+        {
+          "text": "Our t of three is in the critical region, and p is below alpha. Both methods agree: reject H zero.",
+          "caption": "Our t of 3 is in the critical region, and p is below alpha. Both methods agree: reject H0.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "One-tailed",
+      "lead": 0.3,
+      "hold": 0.3,
+      "segments": [
+        {
+          "text": "Now one-tailed: does B last longer? t is still three.",
+          "caption": "Now one-tailed: does B last longer? t is still 3.",
+          "pause": 0.3
+        },
+        {
+          "text": "The one-tailed column gives one point eight six zero, and p halves to zero point zero zero eight five.",
+          "caption": "The one-tailed column gives 1.860, and p halves to 0.0085.",
+          "pause": 0.3
+        },
+        {
+          "text": "Three is beyond one point eight six zero: reject again. Brand B really lasts longer. Save this for your interview.",
+          "caption": "3 is beyond 1.860: reject again. Brand B really lasts longer. Save this for your interview.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "Poll, teaser and CTA",
+      "lead": 0.35,
+      "hold": 0.55,
+      "segments": [
+        {
+          "text": "Your turn: two-tailed, eight degrees of freedom, and t equals two. Reject H zero, or not? Vote in the caption poll!",
+          "caption": "Your turn: two-tailed, 8 degrees of freedom, and t equals 2. Reject H0, or not? Vote in the caption poll!",
+          "pause": 0.3
+        },
+        {
+          "text": "Next: what if the data are categories? The chi-square test.",
+          "caption": "Next: what if the data are categories? The chi-square test.",
+          "pause": 0.3
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.3
+        }
+      ]
     }
-   ]
-  },
-  {
-   "id": "s7",
-   "title": "Standard error and t",
-   "lead": 0.4,
-   "hold": 0.4,
-   "segments": [
-    {
-     "text": "Pooled variance: two point five. Standard error: the square root of two point five, times a fifth plus a fifth. That's root one, which is one.",
-     "caption": "Pooled variance: 2.5. Standard error: the square root of 2.5, times a fifth plus a fifth. That's root 1, which is 1.",
-     "pause": 0.35
-    },
-    {
-     "text": "So t equals three over one: t equals three.",
-     "caption": "So t equals 3 over 1: t equals 3.",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s8",
-   "title": "Degrees of freedom",
-   "lead": 0.4,
-   "hold": 0.25,
-   "segments": [
-    {
-     "text": "The t table needs the degrees of freedom: five plus five, minus two, equals eight.",
-     "caption": "The t table needs the degrees of freedom: 5 + 5 - 2 = 8.",
-     "pause": 0.35
-    },
-    {
-     "text": "Small samples are less certain, so the t curve has fatter tails, and bigger cut-offs.",
-     "caption": "Small samples are less certain, so the t curve has fatter tails, and bigger cut-offs.",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s9",
-   "title": "Two-tailed: the t table",
-   "lead": 0.4,
-   "hold": 0.25,
-   "segments": [
-    {
-     "text": "Two-tailed first. A t table lists critical values directly.",
-     "caption": "Two-tailed first. A t table lists critical values directly.",
-     "pause": 0.35
-    },
-    {
-     "text": "Row eight, column two-tailed zero point zero five: the critical value is two point three zero six.",
-     "caption": "Row 8, column two-tailed 0.05: the critical value is 2.306.",
-     "pause": 0.35
-    },
-    {
-     "text": "Beyond plus or minus two point three zero six is the critical region, with area alpha.",
-     "caption": "Beyond ±2.306 is the critical region, with area alpha.",
-     "pause": 0.35
-    },
-    {
-     "text": "For p: our t of three sits between two point eight nine six and three point three five five, so p is between zero point zero one and zero point zero two. Software says zero point zero one seven.",
-     "caption": "For p: our t of 3 sits between 2.896 and 3.355, so p is between 0.01 and 0.02. Software says 0.017.",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s10",
-   "title": "Two-tailed decision",
-   "lead": 0.4,
-   "hold": 0.3,
-   "segments": [
-    {
-     "text": "Our t of three is in the critical region, and p is below alpha. Both methods agree: reject H zero.",
-     "caption": "Our t of 3 is in the critical region, and p is below alpha. Both methods agree: reject H0.",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s11",
-   "title": "One-tailed",
-   "lead": 0.4,
-   "hold": 0.3,
-   "segments": [
-    {
-     "text": "Now one-tailed: does B last longer? t is still three.",
-     "caption": "Now one-tailed: does B last longer? t is still 3.",
-     "pause": 0.3
-    },
-    {
-     "text": "The one-tailed column gives one point eight six zero, and p halves to zero point zero zero eight five.",
-     "caption": "The one-tailed column gives 1.860, and p halves to 0.0085.",
-     "pause": 0.3
-    },
-    {
-     "text": "Three is beyond one point eight six zero: reject again. Brand B really lasts longer. Save this for your interview.",
-     "caption": "3 is beyond 1.860: reject again. Brand B really lasts longer. Save this for your interview.",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s12",
-   "title": "Poll, teaser and CTA",
-   "lead": 0.35,
-   "hold": 0.7,
-   "segments": [
-    {
-     "text": "Your turn: two-tailed, d f eight, and t equals two. Reject H zero, or not? Vote in the caption poll!",
-     "caption": "Your turn: two-tailed, df 8, and t equals 2. Reject H0, or not? Vote in the caption poll!",
-     "pause": 0.3
-    },
-    {
-     "text": "Next: what if the data are categories? The chi-square test.",
-     "caption": "Next: what if the data are categories? The chi-square test.",
-     "pause": 0.3
-    },
-    {
-     "text": "Follow for data science made simple!",
-     "caption": "Follow for data science made simple!",
-     "pause": 0.3
-    }
-   ]
-  }
- ]
+  ]
 }

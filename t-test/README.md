@@ -97,6 +97,8 @@ Kokoro TTS `af_heart` at 1.05×.
 
 total 179.487
 
+**v2 (user feedback):** every on-screen "df" is now written out as "degrees of freedom" (the t table gets a DEGREES OF FREEDOM side label; the poll line says "8 degrees of freedom"), the cover is a puzzle hook (BRAND B LASTS 3 HOURS LONGER. REAL, OR JUST LUCK? with the real data as dots and the overlap highlighted), and the caption was rewritten. 2:59.
+
 ## Accuracy notes (every number checked)
 
 - **Data:** A = 6, 8, 7, 5, 9 h (mean 7); B = 9, 10, 8, 11, 12 h (mean 10). Squared deviations: A 1, 1, 0, 4, 4 → 10; B 1, 0, 4, 1, 4 → 10. Sample variances 10/4 = 2.5 each.
