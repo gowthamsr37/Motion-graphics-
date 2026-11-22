@@ -19,7 +19,7 @@ Day 1 rebuilt in **"The File"**, the editorial template from the Beyond The Scor
 | 4 | ML flips it | Three labelled emails (SPAM / NOT SPAM / SPAM); the rules it found (weird spelling · lots of $$$ · unknown sender · "urgent!!!"); NORMAL: DATA + RULES → ANSWERS (muted) vs MACHINE LEARNING: DATA + ANSWERS → **RULES** (underlined in red) |
 | 5 | Textbook definition | The definition in Fraunces, "learn patterns from data" underlined blue, "explicitly programmed" red; Arthur Samuel 1959 quote on a taped print |
 | 6 | Watch a machine learn | 10 houses on a hairline chart; ROUND 1 red guess line ("terrible!"), dashed miss lines, AVERAGE MISS meter in $k; rounds 2–4, then fast-forward to ROUND 50, line turns blue, miss $17k; GUESS → ERROR → ADJUST → REPEAT, "= that's learning" |
-| 7 | The model | A house it has never seen: 1,500 SQ FT → MODEL → **$275K**; "feature = input", "label = answer"; size · feature / price · label table |
+| 7 | The model | A house it has never seen: 1,500 SQ FT → MODEL → **$275K**; "feature = input", "label = answer"; size · feature / price · label table (Rs lakh) |
 | 8 | The 3 types | 1 SUPERVISED · 2 UNSUPERVISED · 3 REINFORCEMENT, each with a Fraunces line and an example |
 | 9 | Where it fits | Nested rings: ARTIFICIAL INTELLIGENCE ⊃ MACHINE LEARNING ⊃ DEEP LEARNING, "ChatGPT lives here" |
 | 10 | Remember this | Case file · Day 1: NORMAL PROGRAMMING "We write the rules" vs MACHINE LEARNING "The machine learns them"; the red **FROM DATA** stamp lands on "data"; SAVE THIS, send it to a friend |
@@ -93,4 +93,4 @@ python scripts/gen-voice.py --model <kokoro dir> --whisper <faster-whisper dir>
 BROWSER=<chrome-headless-shell> bash scripts/build.sh
 ```
 
-Accuracy notes are the same as `../ml-day-01-what-is-ml/README.md` (same data: price = 50 + 0.15 × size, 1,500 sq ft → $275k).
+**Currency (user: "use Rs, I'm targeting an Indian audience"):** prices are in **Rs lakh** (written "Rs" because none of the template fonts include the ₹ glyph). The 10 houses follow price = Rs 10 lakh + Rs 3,000 per sq ft (= 10 + 0.03 × size, in lakh) plus zero-mean noise uncorrelated with size, so the least-squares line is exactly that rule: 1,500 sq ft → **Rs 55 lakh**; 800 → Rs 34L, 1,200 → Rs 46L, 2,000 → Rs 70L. The AVERAGE MISS meter shows the true mean absolute error of the line on screen (Rs 18.9L for the first guess, Rs 3.4L at round 50). Everything else as in `../ml-day-01-what-is-ml/README.md`.

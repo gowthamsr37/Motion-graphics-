@@ -304,7 +304,7 @@ const S4: React.FC = () => {
         </Label>
       </div>
       <div style={{ position: "absolute", left: 70, top: 752, display: "flex", gap: 18, flexWrap: "wrap", width: 940 }}>
-        {["Weird spelling", "Lots of $$$", "Unknown sender", "“Urgent!!!”"].map((t, i) => (
+        {["Weird spelling", "Lots of cash", "Unknown sender", "“Urgent!!!”"].map((t, i) => (
           <Rise key={t} at={b.itself - 4 + i * 4}>
             <span style={{ display: "inline-block", border: `3px solid ${C.accent}`, padding: "4px 16px 0" }}>
               <Disp size={42} color={C.accent}>
@@ -474,7 +474,7 @@ const S6: React.FC = () => {
       </div>
       <div style={{ position: "absolute", left: 92, top: 735, transform: "translate(-50%, -50%) rotate(-90deg)", opacity: fade(frame, b.hou) }}>
         <Label size={20} color={C.ink2}>
-          Price ($k) →
+          Price (Rs lakh) →
         </Label>
       </div>
       {frame >= b.guess - 4 ? (
@@ -488,7 +488,7 @@ const S6: React.FC = () => {
         </Serif>
       </div>
       {/* error meter */}
-      <div style={{ position: "absolute", left: 830, top: 470, width: 170, opacity: fade(frame, b.err - 6) }}>
+      <div style={{ position: "absolute", left: 812, top: 470, width: 210, opacity: fade(frame, b.err - 6), whiteSpace: "nowrap" }}>
         <Label size={18} color={C.ink2}>
           Average miss
         </Label>
@@ -496,7 +496,7 @@ const S6: React.FC = () => {
           <div style={{ position: "absolute", left: 10, bottom: 0, width: 70, height: 420 * meter, background: done ? C.accent : C.red }} />
         </div>
         <div style={{ marginTop: 10 }}>
-          <Disp size={60} color={done ? C.accent : C.red}>{`$${Math.round(err)}k`}</Disp>
+          <Disp size={46} color={done ? C.accent : C.red}>{`Rs ${(err * 0.2).toFixed(1)}L`}</Disp>
         </div>
       </div>
       {/* the loop */}
@@ -525,10 +525,10 @@ const S7: React.FC = () => {
   const b = s7B(fps);
   const box = useP(b.model - 6, theme.spring.heavy);
   const rows: [string, string, boolean][] = [
-    ["800", "$170k", false],
-    ["1,200", "$230k", false],
-    ["2,000", "$350k", false],
-    ["1,500", "$275k", true],
+    ["800", "Rs 34L", false],
+    ["1,200", "Rs 46L", false],
+    ["2,000", "Rs 70L", false],
+    ["1,500", "Rs 55L", true],
   ];
   return (
     <Shell>
@@ -558,9 +558,9 @@ const S7: React.FC = () => {
       </div>
       <SeamArrow x={180} y={745} w={50} at={b.pred - 6} down />
       <div style={{ position: "absolute", left: 70, top: 810 }}>
-        <Slam text="$275k" at={b.pred + 4} size={130} color={C.accent} />
+        <Slam text="Rs 55 lakh" at={b.pred + 4} size={120} color={C.accent} />
       </div>
-      <div style={{ position: "absolute", left: 600, top: 868, opacity: fade(frame, b.label - 4) }}>
+      <div style={{ position: "absolute", left: 70, top: 955, opacity: fade(frame, b.label - 4) }}>
         <Band at={-100} color={C.red} text="label = answer" size={40} />
       </div>
       {/* the table */}

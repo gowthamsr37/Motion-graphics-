@@ -11,7 +11,7 @@ You've used machine learning about 12 times today 📱 Face unlock, spam filter,
 
 ✅ Machine learning flips it:
 Data + answers go in → the computer finds the rules by itself.
-(10,000 emails, each labelled spam / not spam → it learns: weird spelling, lots of $$$, unknown senders…)
+(10,000 emails, each labelled spam / not spam → it learns: weird spelling, lots of ₹₹₹, unknown senders…)
 
 📖 Textbook definition: machine learning is a branch of AI where computers learn patterns from data, instead of being explicitly programmed. (Arthur Samuel, 1959: "the ability to learn without being explicitly programmed.")
 
