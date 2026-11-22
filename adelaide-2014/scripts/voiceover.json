@@ -1,7 +1,7 @@
 {
   "voice": "am_michael",
   "lang": "en-us",
-  "speed": 0.96,
+  "speed": 1.0,
   "fix": [
     [
       "ɪnnˈɪŋz",
@@ -43,237 +43,165 @@
   "scenes": [
     {
       "id": "s1",
-      "lead": 0.8,
-      "hold": 1.2,
+      "lead": 0.5,
+      "hold": 0.6,
       "segments": [
         {
-          "text": "Adelaide. December 2014.",
-          "caption": "Adelaide. December 2014.",
-          "pause": 0.8
+          "text": "Adelaide, 2014. The final day. India need one hundred and twenty-two, with eight wickets in hand.",
+          "caption": "Adelaide, 2014. The final day. India need 122, with eight wickets in hand.",
+          "pause": 0.5
         },
         {
-          "text": "Two weeks earlier, in Sydney, Phillip Hughes was batting on sixty-three, when a bouncer hit him on the neck. Two days later, he was gone. He was twenty-five.",
-          "caption": "Two weeks earlier, in Sydney, Phillip Hughes was batting on 63, when a bouncer hit him on the neck. Two days later, he was gone. He was 25.",
-          "pause": 0.8
+          "text": "Their captain is twenty-six, in his first Test in charge.",
+          "caption": "Their captain is 26, in his first Test in charge.",
+          "pause": 0.6
         },
         {
-          "text": "Now the first Test of the summer comes to Adelaide. The ground he called home.",
-          "caption": "Now the first Test of the summer comes to Adelaide. The ground he called home.",
-          "pause": 0.7
-        },
-        {
-          "text": "Before a ball is bowled, the whole ground rises, and claps, for sixty-three seconds.",
-          "caption": "Before a ball is bowled, the whole ground rises, and claps, for 63 seconds.",
-          "pause": 0.9
-        },
-        {
-          "text": "This is the Adelaide Test.",
-          "caption": "This is the Adelaide Test.",
-          "pause": 0.4
+          "text": "Rewind four days.",
+          "caption": "Rewind four days.",
+          "pause": 0.3
         }
       ]
     },
     {
       "id": "s2",
-      "lead": 0.4,
-      "hold": 1.0,
+      "lead": 0.3,
+      "hold": 0.8,
       "segments": [
         {
-          "text": "Day one. Australia bat. They wear black armbands, and four-oh-eight, Hughes's Test cap number, on their shirts.",
-          "caption": "Day one. Australia bat. They wear black armbands, and 408, Hughes's Test cap number, on their shirts.",
-          "pause": 0.55
+          "text": "It's a Test played in grief, two weeks after Phillip Hughes's death.",
+          "caption": "It's a Test played in grief, two weeks after Phillip Hughes's death.",
+          "pause": 0.5
         },
         {
-          "text": "David Warner, Hughes's friend, reaches sixty-three, and looks to the sky. He goes on to a hundred and forty-five.",
-          "caption": "David Warner, Hughes's friend, reaches 63, and looks to the sky. He goes on to 145.",
-          "pause": 0.55
+          "text": "Australia bat first and pile up five hundred and seventeen. Warner, Clarke and Smith all make hundreds.",
+          "caption": "Australia bat first and pile up 517. Warner, Clarke and Smith all make hundreds.",
+          "pause": 0.5
         },
         {
-          "text": "Michael Clarke can barely bend. His back gives way on sixty. He retires hurt.",
-          "caption": "Michael Clarke can barely bend. His back gives way on 60. He retires hurt.",
-          "pause": 0.55
+          "text": "MS Dhoni is injured, so Virat Kohli leads India.",
+          "caption": "MS Dhoni is injured, so Virat Kohli leads India.",
+          "pause": 0.45
         },
         {
-          "text": "Australia close the day on three hundred and fifty-four for six.",
-          "caption": "Australia close the day on 354 for 6.",
-          "pause": 0.4
+          "text": "The first ball he faces from Mitchell Johnson hits him on the helmet. He gets up, and makes a hundred and fifteen.",
+          "caption": "The first ball he faces from Mitchell Johnson hits him on the helmet. He gets up, and makes 115.",
+          "pause": 0.5
+        },
+        {
+          "text": "Warner makes another hundred. Australia declare. India need three hundred and sixty-four on the final day.",
+          "caption": "Warner makes another hundred. Australia declare. India need 364 on the final day.",
+          "pause": 0.5
+        },
+        {
+          "text": "Most captains would settle for a draw. Kohli's India go for the win.",
+          "caption": "Most captains would settle for a draw. Kohli's India go for the win.",
+          "pause": 0.3
         }
       ]
     },
     {
       "id": "s3",
-      "lead": 0.4,
-      "hold": 1.0,
+      "lead": 0.3,
+      "hold": 0.7,
       "segments": [
         {
-          "text": "Day two. Clarke walks back out. He will call it the most important Test of his career.",
-          "caption": "Day two. Clarke walks back out. He will call it the most important Test of his career.",
-          "pause": 0.55
+          "text": "Day five. Dhawan falls for nine. Pujara for twenty-one. Fifty-seven for two.",
+          "caption": "Day five. Dhawan falls for 9. Pujara for 21. 57 for 2.",
+          "pause": 0.5
         },
         {
-          "text": "He makes a hundred and twenty-eight. Steve Smith, one hundred and sixty-two not out.",
-          "caption": "He makes 128. Steve Smith, 162 not out.",
-          "pause": 0.55
-        },
-        {
-          "text": "Australia declare on five hundred and seventeen for seven.",
-          "caption": "Australia declare on 517 for 7.",
-          "pause": 0.4
+          "text": "Kohli walks out. Three hundred and seven still to get.",
+          "caption": "Kohli walks out. 307 still to get.",
+          "pause": 0.3
         }
       ]
     },
     {
       "id": "s4",
-      "lead": 0.4,
-      "hold": 1.0,
+      "lead": 0.3,
+      "hold": 0.8,
       "segments": [
         {
-          "text": "Day three. MS Dhoni is injured. India's stand-in captain is Virat Kohli. Twenty-six, the age Hughes would have turned, just days before this Test.",
-          "caption": "Day three. MS Dhoni is injured. India's stand-in captain is Virat Kohli. 26, the age Hughes would have turned, just days before this Test.",
-          "pause": 0.6
+          "text": "He doesn't block. He goes after Nathan Lyon, Australia's best weapon on a turning pitch.",
+          "caption": "He doesn't block. He goes after Nathan Lyon, Australia's best weapon on a turning pitch.",
+          "pause": 0.5
         },
         {
-          "text": "He walks in at one hundred and eleven for two. The first ball from Mitchell Johnson hits him on the helmet.",
-          "caption": "He walks in at 111 for 2. The first ball from Mitchell Johnson hits him on the helmet.",
-          "pause": 0.8
+          "text": "Against Lyon, Kohli scores seventy-four, off eighty-two balls.",
+          "caption": "Against Lyon, Kohli scores 74, off 82 balls.",
+          "pause": 0.5
         },
         {
-          "text": "The ground falls silent. Australia's players rush to him. Johnson looks shaken. Clarke puts a hand on his shoulder.",
-          "caption": "The ground falls silent. Australia's players rush to him. Johnson looks shaken. Clarke puts a hand on his shoulder.",
-          "pause": 0.8
-        },
-        {
-          "text": "Kohli gets up. And makes a hundred and fifteen.",
-          "caption": "Kohli gets up. And makes 115.",
-          "pause": 0.55
-        },
-        {
-          "text": "India finish on four hundred and forty-four, seventy-three behind. Nathan Lyon takes five.",
-          "caption": "India finish on 444, 73 behind. Nathan Lyon takes five.",
-          "pause": 0.4
+          "text": "With Murali Vijay holding the other end, India reach tea on two hundred and five for two. One hundred and fifty-nine to win, in one session.",
+          "caption": "With Murali Vijay holding the other end, India reach tea on 205 for 2. 159 to win, in one session.",
+          "pause": 0.3
         }
       ]
     },
     {
       "id": "s5",
-      "lead": 0.4,
-      "hold": 1.0,
+      "lead": 0.3,
+      "hold": 0.8,
       "segments": [
         {
-          "text": "Day four. Warner makes his second hundred of the match. Australia declare overnight.",
-          "caption": "Day four. Warner makes his second hundred of the match. Australia declare overnight.",
-          "pause": 0.55
+          "text": "Kohli reaches his hundred, off a hundred and thirty-five balls. His second of the match, in his first Test as captain. Only Greg Chappell had ever done that.",
+          "caption": "Kohli reaches his hundred, off 135 balls. His second of the match, in his first Test as captain. Only Greg Chappell had ever done that.",
+          "pause": 0.5
         },
         {
-          "text": "India need three hundred and sixty-four, on the final day, on a turning pitch.",
-          "caption": "India need 364, on the final day, on a turning pitch.",
-          "pause": 0.6
-        },
-        {
-          "text": "Most teams would block for a draw. India go for it.",
-          "caption": "Most teams would block for a draw. India go for it.",
-          "pause": 0.4
+          "text": "Two hundred and forty-two for two. One hundred and twenty-two to win. The impossible chase is on.",
+          "caption": "242 for 2. 122 to win. The impossible chase is on.",
+          "pause": 0.3
         }
       ]
     },
     {
       "id": "s6",
-      "lead": 0.4,
-      "hold": 1.0,
+      "lead": 0.3,
+      "hold": 0.8,
       "segments": [
         {
-          "text": "Day five. Shikhar Dhawan goes early. Cheteshwar Pujara follows. Fifty-seven for two.",
-          "caption": "Day five. Shikhar Dhawan goes early. Cheteshwar Pujara follows. 57 for 2.",
+          "text": "Then Lyon finds a way.",
+          "caption": "Then Lyon finds a way.",
           "pause": 0.55
         },
         {
-          "text": "Then Kohli and Murali Vijay start to believe.",
-          "caption": "Then Kohli and Murali Vijay start to believe.",
+          "text": "Vijay, lbw for ninety-nine. In the same over, Rahane is given out caught, off his pad. There's no DRS in this series.",
+          "caption": "Vijay, lbw for 99. In the same over, Rahane is given out caught, off his pad. There's no DRS in this series.",
           "pause": 0.5
         },
         {
-          "text": "They take India to tea on two hundred and five for two. One hundred and fifty-nine to win, in a session.",
-          "caption": "They take India to tea on 205 for 2. 159 to win, in a session.",
-          "pause": 0.55
+          "text": "Rohit goes. Saha swings, and is bowled. As wickets fall around him, Kohli keeps swinging. Forty-one runs, off forty balls.",
+          "caption": "Rohit goes. Saha swings, and is bowled. As wickets fall around him, Kohli keeps swinging. 41 runs, off 40 balls.",
+          "pause": 0.5
         },
         {
-          "text": "Kohli reaches a second hundred. Only Greg Chappell had ever made twin hundreds in his first Test as captain.",
-          "caption": "Kohli reaches a second hundred. Only Greg Chappell had ever made twin hundreds in his first Test as captain.",
-          "pause": 0.55
-        },
-        {
-          "text": "The stand reaches one hundred and eighty-five. Two hundred and forty-two for two. One hundred and twenty-two to win. Eight wickets in hand.",
-          "caption": "The stand reaches 185. 242 for 2. 122 to win. Eight wickets in hand.",
-          "pause": 0.4
+          "text": "He's on one hundred and forty-one. India need sixty. He pulls Lyon, and Mitchell Marsh takes the catch on the boundary.",
+          "caption": "He's on 141. India need 60. He pulls Lyon, and Mitchell Marsh takes the catch on the boundary.",
+          "pause": 0.3
         }
       ]
     },
     {
       "id": "s7",
       "lead": 0.3,
-      "hold": 1.0,
+      "hold": 1.8,
       "segments": [
         {
-          "text": "Then, Nathan Lyon.",
-          "caption": "Then, Nathan Lyon.",
-          "pause": 0.8
+          "text": "India lose eight wickets for seventy-three. Australia win by forty-eight. Lyon takes twelve in the match.",
+          "caption": "India lose eight wickets for 73. Australia win by 48. Lyon takes 12 in the match.",
+          "pause": 0.5
         },
         {
-          "text": "Vijay, lbw, for ninety-nine.",
-          "caption": "Vijay, lbw, for 99.",
-          "pause": 0.6
-        },
-        {
-          "text": "Same over. Ajinkya Rahane is given out caught, off his pad. There is no review system in this series.",
-          "caption": "Same over. Ajinkya Rahane is given out caught, off his pad. There is no review system in this series.",
-          "pause": 0.6
-        },
-        {
-          "text": "Rohit Sharma falls. Wriddhiman Saha swings, and is bowled.",
-          "caption": "Rohit Sharma falls. Wriddhiman Saha swings, and is bowled.",
+          "text": "But Kohli's two hundred and fifty-six runs are the most by an Indian in his first Test as captain. Within a month, the captaincy is his.",
+          "caption": "But Kohli's 256 runs are the most by an Indian in his first Test as captain. Within a month, the captaincy is his.",
           "pause": 0.55
         },
         {
-          "text": "And on one hundred and forty-one, Kohli goes for one more big hit, and is caught by Mitchell Marsh.",
-          "caption": "And on 141, Kohli goes for one more big hit, and is caught by Mitchell Marsh.",
+          "text": "India lost a Test that day. They found a captain.",
+          "caption": "India lost a Test that day. They found a captain.",
           "pause": 0.6
-        },
-        {
-          "text": "From two hundred and forty-two for two, India lose eight wickets for seventy-three. The last man is stumped. Lyon, again.",
-          "caption": "From 242 for 2, India lose eight wickets for 73. The last man is stumped. Lyon, again.",
-          "pause": 0.4
-        }
-      ]
-    },
-    {
-      "id": "s8",
-      "lead": 0.3,
-      "hold": 2.4,
-      "segments": [
-        {
-          "text": "Australia win by forty-eight runs. Lyon takes seven for one hundred and fifty-two, and twelve in the match.",
-          "caption": "Australia win by 48 runs. Lyon takes 7 for 152, and 12 in the match.",
-          "pause": 0.6
-        },
-        {
-          "text": "Kohli's two hundred and fifty-six runs are the most by an Indian in his first Test as captain. Within a month, the job is his for good.",
-          "caption": "Kohli's 256 runs are the most by an Indian in his first Test as captain. Within a month, the job is his for good.",
-          "pause": 0.6
-        },
-        {
-          "text": "India lose the Test. But they find their captain.",
-          "caption": "India lose the Test. But they find their captain.",
-          "pause": 0.7
-        },
-        {
-          "text": "Some Tests are won. This one is remembered.",
-          "caption": "Some Tests are won. This one is remembered.",
-          "pause": 0.8
-        },
-        {
-          "text": "Sixty-three, not out. Forever.",
-          "caption": "63, not out. Forever.",
-          "pause": 1.0
         },
         {
           "text": "Beyond The Scoreboard.",

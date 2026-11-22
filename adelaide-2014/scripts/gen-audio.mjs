@@ -34,14 +34,15 @@ const f = (n) => n / FPS;
 // ---------- EDIT PER REEL: story events, in seconds (mirror the beats in src/scenes/Story.tsx) ----------
 // Helpers: S(id) scene start · E(id) scene end · sent(id, i) sentence start · word(id, "prefix", fallbackSec)
 const ev = {
-  title: sent("s1", 4), // the title card
-  s2: S("s2"),
-  s4: S("s4"), helmet: word("s4", "helmet", 17.12), // the bouncer: music stops
-  up: sent("s4", 3), // "Kohli gets up": music returns
-  s5: S("s5"), n364: word("s5", "364", 6.6),
-  s6: S("s6"), second: word("s6", "second", 18.86), // Kohli's second hundred
-  s7: S("s7"), eight: word("s7", "eight", 27.74), // 8 for 73
-  s8: S("s8"), forever: sent("s8", 4), // "63, not out. Forever."
+  rewind: sent("s1", 2), // "Rewind four days"
+  helmet: word("s2", "helmet", 19.3), // the bouncer: music stops
+  up: word("s2", "gets", 20.36), // "He gets up"
+  n364: word("s2", "364", 27.72),
+  s3: S("s3"), // day 5 begins
+  hundred: word("s5", "100", 0.88), // Kohli's hundred
+  s6: S("s6"),
+  out: word("s6", "pulls", 25.62) + 0.4, // Kohli caught
+  s7: S("s7"), found: word("s7", "found", 18.92), // "They found a captain."
   end: DUR,
 };
 
@@ -214,28 +215,25 @@ const hit = (t, amp = 1) => { kick(t, 0.9 * amp); sub(t, 1.6, n("A1"), 0.45 * am
 // ---------- EDIT PER REEL: arrangement ----------
 // section(from, to, level): 0 = piano + strings, 1 = + sub pulse, 2 = + kick and shaker.  hit(t, amp): kick + sub + crash.
 // Build: quiet under the hook → pulse once the hero arrives → drums at the lift → strip back → drums at the turn → resolve.
-// cold open: just piano and strings; the title lands with a hit
-section(0.05, ev.title, 0, 0.035);
-hit(ev.title, 0.9);
-section(ev.title, ev.helmet, 1, 0.05);
-// the bouncer: silence until he gets up
+// the hook: tense pulse under the climax, a hit on the rewind
+section(0.05, ev.rewind, 1, 0.06);
+hit(ev.rewind, 0.7);
+// four days earlier: quiet, then silence for the bouncer
+section(ev.rewind, ev.helmet, 0, 0.04);
 hit(ev.helmet, 0.6);
 hit(ev.up, 0.7);
-section(ev.up, ev.n364, 1);
-hit(ev.n364, 0.8);
-section(ev.n364, ev.s6, 1);
-// day five: the drums come in, the second hundred lifts it
-section(ev.s6, ev.second, 2);
-hit(ev.second, 0.9);
-section(ev.second, ev.s7, 2, 0.07);
-// Lyon: keep the drive under the collapse, a hit on 8 for 73
-section(ev.s7, ev.eight, 2, 0.05);
-hit(ev.eight, 1);
-section(ev.eight, ev.s8, 1, 0.04);
-// the ending: back to piano, resolving on "Forever"
-section(ev.s8, ev.forever, 0, 0.05);
-const verdictT = ev.forever;
-hit(verdictT, 0.8);
+section(ev.up, ev.s3, 1);
+hit(ev.n364, 0.7);
+// day five: drums all the way, a lift on the hundred
+hit(ev.s3, 0.8);
+section(ev.s3, ev.hundred, 2);
+hit(ev.hundred, 1);
+section(ev.hundred, ev.out, 2, 0.07);
+// Kohli falls: the drums stop
+hit(ev.out, 1);
+section(ev.out, ev.found, 0, 0.04);
+const verdictT = ev.found;
+hit(verdictT, 0.9);
 // the resolution: A major under the verdict and brand
 strings(ML, MR, verdictT, ev.end - verdictT, ch("A2", "E3", "A3", "C#4", "E4"), 0.4, 0.3, 1.6, 0.09);
 [["A3", 0], ["E4", 0.1], ["A4", 0.2], ["C#5", 0.9]].forEach(([nt, dt]) => piano(ML, MR, verdictT + 1.2 + dt, n(nt), 0.26, 0.1, 5));

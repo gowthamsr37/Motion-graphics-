@@ -1,23 +1,24 @@
-Adelaide, December 2014. The Test that had everything. 🎬🏏
+Day 5. 364 to win. A 26-year-old captain in his first Test in charge. 🔥🏏
 
-Two weeks after Phillip Hughes was struck on 63, the whole ground stood and clapped for 63 seconds. Then came five days nobody could have scripted.
+Adelaide, 2014. Most captains would have batted for a draw. Virat Kohli's India went for the win.
 
-DAY 1: Australia wear 408, Hughes's Test cap number. Warner reaches 63, looks to the sky, and makes 145. Clarke's back gives way on 60. He retires hurt.
-DAY 2: Clarke comes back for 128 ("the most important Test of my career"). Smith, 162*. Australia 517/7d.
-DAY 3: Virat Kohli, 26, captaining India for the first time. Mitchell Johnson's first ball hits him on the helmet. The ground falls silent. Kohli gets up and makes 115.
-DAY 4: Warner's second hundred. India need 364 on the last day. They don't block. They go for it.
-DAY 5: From 57/2, Kohli and Vijay take India to 205/2 at tea and 242/2, needing 122 with 8 wickets in hand. Kohli's second hundred: only Greg Chappell had twin tons in his first Test as captain.
+⏱️ 57/2: Kohli walks in. 307 still to get.
+⚔️ He goes after Nathan Lyon, Australia's best weapon on a turning pitch: 74 off 82 balls, with 9 fours and a six.
+☕ Tea: 205/2. Kohli 82*, Vijay 85*. 159 to win in one session.
+💯 Kohli's hundred, his second of the match in his first Test as captain. Only Greg Chappell had done that before.
+📈 242/2. 122 to win. 8 wickets in hand. The impossible chase is on.
 
-Then, Nathan Lyon.
-Vijay lbw 99. Rahane given out caught off his pad, with no DRS in the series. Kohli caught on 141. India lose 8 for 73. Australia win by 48. Lyon: 7/152, 12 in the match.
+Then Lyon finds a way.
+Vijay lbw 99. Rahane given out caught off his pad, with no DRS in the series. Rohit goes. Saha is bowled. As wickets fall around him, Kohli makes 41 off 40 balls. On 141, with India needing 60, he pulls Lyon and Mitchell Marsh takes it on the boundary.
 
-India lost the Test. But they found their captain. 256 runs, the most by an Indian on captaincy debut, and the job was his for good within a month.
+India lose 8 for 73. Australia win by 48.
 
-Some Tests are won. This one is remembered.
-63, not out. Forever. 🖤
+But Kohli's 256 runs were the most by an Indian in his first Test as captain, and within a month the captaincy was his.
 
-Where were you watching this one? 👇
+India lost a Test that day. They found a captain. 🇮🇳
+
+Was this Kohli's greatest Test innings? 👇
 
 Scores and timeline: Cricsheet ball-by-ball (cricsheet.org, ODC-BY). Photos supplied by the page.
 
-#AUSvIND #AdelaideTest #ViratKohli #NathanLyon #PhillipHughes #63NotOut #408 #BorderGavaskarTrophy #TestCricket #BeyondTheScoreboard #CricketReels
+#ViratKohli #AUSvIND #AdelaideTest #KingKohli #NathanLyon #TestCricket #BorderGavaskarTrophy #IndianCricket #BeyondTheScoreboard #CricketReels

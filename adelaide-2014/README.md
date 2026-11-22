@@ -1,21 +1,26 @@
-# Beyond The Scoreboard — The Adelaide Test, 2014
+# Beyond The Scoreboard — The Chase: Kohli's Day 5, Adelaide 2014
 
-A 233-second film-style Reel of the Australia v India Test at Adelaide Oval, 9–13 December 2014: 1080×1920, 30 fps, mastered to −14 LUFS. Built from `../templates/the-file`, with Kokoro `am_michael` narrating at 0.96 speed.
+A 155-second film-style Reel (under the 3-minute cap) of Australia v India at Adelaide Oval, 9–13 December 2014, with Virat Kohli as the hero and day five as the story. It is 1080×1920 at 30 fps, mastered to −14 LUFS, and built from `../templates/the-file`, with Kokoro `am_michael` narrating.
 
-It runs past the usual 3-minute Reel cap, as requested, for full detail. Check that the account can post Reels of this length.
+The first cut was 3:53 with a long Hughes tribute. This version mentions Hughes once and gives about 94 of its 155 seconds to the final day.
 
 ## Story
 
-| # | Act | On screen |
+| # | Scene | On screen |
 | --- | --- | --- |
-| 1 | Cold open | A black-bordered card: Phillip Hughes, 30 Nov 1988 – 27 Nov 2014, Test cap 408, **63\***, struck in Sydney on 25 Nov 2014. "Adelaide: the ground he called home". A 63-second applause ring, then the title card |
-| 2 | Day 1, Tue 9 Dec | 408 drawn in outline (armbands, cap number on every shirt); Warner 63, "looks to the sky", 145; Clarke counts up to 60 and retires hurt (back); stumps 354/6 |
-| 3 | Day 2, Wed 10 Dec | Clarke: "The most important Test of my career", 128; Smith beside the 408 painted on the outfield, 162\*; 517/7 declared |
-| 4 | Day 3, Thu 11 Dec | Kohli, stand-in captain with Dhoni injured, aged 26 (the age Hughes would have turned on 30 Nov); walks in at 111/2; Johnson's first ball hits the helmet. A flash and shake, then the music stops and four lines appear in the silence. He gets up: 115 off 184; India 444, 73 behind; Lyon 5/134 |
-| 5 | Day 4, Fri 12 Dec | Warner 102, a hundred in each innings; 290/5 declared overnight; India need 364 on day 5 on a turning pitch; "Block for a draw" is struck out for "Go for it" |
-| 6 | Day 5, Sat 13 Dec | A live chase chart (India's score over by over, the 364 line, tea at 205/2, Kohli's 100 marker); twin hundreds on captaincy debut, Chappell 1975 and Kohli 2014; the 185 stand; 242/2, 122 to win |
-| 7 | Then, Nathan Lyon | The chart continues as wickets turn red; a ledger of all eight wickets (Vijay 99 lbw; Rahane 0 c Rogers, off the pad; Rohit; Saha; Kohli 141 c Marsh; Shami; Aaron; Ishant st Haddin); "No DRS in this series"; **8 for 73** |
-| 8 | Ending | Australia win by 48 (517/7d & 290/5d v 444 & 315); Lyon in front of a giant 12 (7/152, 12/286, player of the match); Kohli's 256 (115 + 141, most by an Indian on captaincy debut), full-time captain within a month; "India lose the Test. But they find their captain"; "Some Tests are won. This one is remembered"; the Hughes card returns: 63\*, forever |
+| 1 | Hook, day 5 | The chase chart frozen at 242/2, needing 122 with 8 wickets in hand. Kohli cut-out: 26, first Test as captain. "◀◀ Rewind 4 days": the line erases |
+| 2 | Four days earlier | "A Test played in grief, two weeks after Phillip Hughes's death" (the one mention); Australia 517 (Warner 145, Clarke 128, Smith 162\*); Dhoni injured, Kohli leads; Johnson's first ball hits the helmet (flash, shake, music stops), and he gets up for 115; Warner 102, 364 on the final day; "Settle for a draw" is struck out for "Go for the win" |
+| 3 | Day 5 morning | A DAY 5 chapter card; the chart runs to 57/2 (Dhawan 9, Pujara 21); "Kohli walks in at 57/2", 307 to get |
+| 4 | Kohli v Lyon | Lyon cut-out: Kohli took 74 off 82 balls from Lyon on day 5, with 9 fours and a six. The chart runs to tea at 205/2 (Kohli 82\*, Vijay 85\*): "159 to win. One session." |
+| 5 | The hundred | Kohli's celebration print; 100 off 135 balls; twin hundreds on captaincy debut (Greg Chappell 1975, Virat Kohli 2014); the chart reaches 242/2 with 8 wickets in hand: "The impossible chase is on." |
+| 6 | Lyon finds a way | Lyon celebration print; the chart turns red wicket by wicket while a ledger fills (Vijay 99 lbw; Rahane 0, off the pad, with "No DRS in this series"; Rohit 6; Saha 13 b); "Kohli: 41 off 40 as wickets fall"; 304/6, Kohli 141\*, need 60; then "c Marsh b Lyon, on the boundary", 304/7 |
+| 7 | Ending | India lose 8 for 73, Australia win by 48, Lyon 12 in the match (Lyon cut-out with the stump); Kohli 256 (115 + 141, most by an Indian on captaincy debut), full-time captain within a month; "India lost a Test that day. They found a captain." |
+
+Kohli's day-5 figures come from Cricsheet ball by ball:
+- **His innings:** in at 57/2 (over 20), 50 off 69 balls, 82\* at tea, 100 off 135, 141 off 175 with 16 fours and 1 six.
+- **Against Lyon:** 74 runs off 82 balls, with 9 fours and 1 six.
+- **The collapse:** from his hundred at 242/2 to his dismissal at 304/7, he made 41 off 40 balls.
+- **His dismissal:** pulling Lyon to Mitchell Marsh at deep midwicket ([ESPNcricinfo](https://www.espncricinfo.com/print/story/809851), [Dawn](https://www.dawn.com/news/1150671)).
 
 ## Data and sources
 
@@ -31,8 +36,7 @@ It runs past the usual 3-minute Reel cap, as requested, for full detail. Check t
   - **Day 5:** the overnight declaration, tea at 205/2 and the 185 stand ([ESPNcricinfo](https://www.espncricinfo.com/print/story/809851), [cricket.com.au](https://www.cricket.com.au/news/3256356)).
   - **Kohli's records:** twin hundreds on captaincy debut, after only Greg Chappell (1975), and the first overseas; 256, the most by an Indian on captaincy debut ([ESPNcricinfo stats](https://www.espncricinfo.com/story/twin-hundreds-on-captaincy-debut-and-lyon-s-ten-for-810001), [Sportskeeda](https://www.sportskeeda.com/cricket/virat-kohlis-twin-centuries-adelaide-australia-stats-records-created)).
   - **Rahane:** given out caught at short leg when replays showed pad, in a series with no DRS ([Sportskeeda](https://sportskeeda.com/cricket/5-instances-when-team-india-paid-price-bccis-reluctance-use-drs/5)).
-  - **Hughes:** born 30 Nov 1988; struck on 63 at the SCG on 25 Nov 2014 playing for South Australia; died 27 Nov 2014.
-
+  
 ## Photos
 
 - **Supplied by the page:**
