@@ -18,6 +18,13 @@ export const PALS: Record<string, CoverPal> = {
   black: { bg: "#0B0B0D", bg2: "#1D1D22", deep: "#000000", glowA: "#FFD60A", glowB: "#FFD60A", ink: "#FFFFFF", accent: "#FFD60A", banner: "#FFD60A", bannerText: "#0B0B0D", num: "#FFD60A", topic: "linear-gradient(90deg, #FFFFFF, #FFFFFF)", panel: "rgba(16,16,20,0.92)" },
   royal: { bg: "#08206E", bg2: "#1546C4", deep: "#030D33", glowA: "#60A5FA", glowB: "#F97316", ink: "#FFFFFF", accent: "#FDBA74", banner: "#FFFFFF", bannerText: "#0A1F66", num: "#FB923C", topic: "linear-gradient(90deg, #FFFFFF, #FED7AA)", panel: "rgba(6,22,80,0.9)" },
   crimson: { bg: "#3A0710", bg2: "#8B1A2B", deep: "#14020A", glowA: "#F43F5E", glowB: "#F59E0B", ink: "#FFF7ED", accent: "#FCD34D", banner: "#FFFFFF", bannerText: "#5B0B18", num: "#FCD34D", topic: "linear-gradient(90deg, #FFFFFF, #FDE68A)", panel: "rgba(40,5,12,0.9)" },
+  teal: { bg: "#042F2E", bg2: "#0F766E", deep: "#011413", glowA: "#2DD4BF", glowB: "#FB7185", ink: "#F0FDFA", accent: "#5EEAD4", banner: "#FB7185", bannerText: "#2A0A10", num: "#FB7185", topic: "linear-gradient(90deg, #FFFFFF, #99F6E4)", panel: "rgba(2,30,28,0.9)" },
+  charcoal: { bg: "#121519", bg2: "#262C33", deep: "#050607", glowA: "#22D3EE", glowB: "#22D3EE", ink: "#FFFFFF", accent: "#22D3EE", banner: "#22D3EE", bannerText: "#04141A", num: "#22D3EE", topic: "linear-gradient(90deg, #FFFFFF, #FFFFFF)", panel: "rgba(18,21,25,0.92)" },
+  sunset: { bg: "#8A2E0C", bg2: "#EA580C", deep: "#3B0A02", glowA: "#FDBA74", glowB: "#F43F5E", ink: "#FFFFFF", accent: "#FDE047", banner: "#FFFFFF", bannerText: "#7C2D12", num: "#FDE047", topic: "linear-gradient(90deg, #FFFFFF, #FEF3C7)", panel: "rgba(60,14,4,0.88)" },
+  lime: { bg: "#1E0B3A", bg2: "#4C1D95", deep: "#0B0418", glowA: "#A3E635", glowB: "#8B5CF6", ink: "#FFFFFF", accent: "#A3E635", banner: "#A3E635", bannerText: "#13200A", num: "#A3E635", topic: "linear-gradient(90deg, #FFFFFF, #D9F99D)", panel: "rgba(20,8,40,0.9)" },
+  cream: { bg: "#FFF4DE", bg2: "#FFFFFF", deep: "#EBD9B4", glowA: "#FDE68A", glowB: "#FDA4AF", ink: "#141414", accent: "#E11D48", banner: "#141414", bannerText: "#FFD60A", num: "#E11D48", topic: "linear-gradient(90deg, #141414, #141414)", panel: "rgba(255,255,255,0.9)" },
+  magenta: { bg: "#4A0430", bg2: "#A21656", deep: "#1A0110", glowA: "#F472B6", glowB: "#FDE047", ink: "#FFFFFF", accent: "#FDE047", banner: "#FFFFFF", bannerText: "#6B0F3A", num: "#FDE047", topic: "linear-gradient(90deg, #FFFFFF, #FBCFE8)", panel: "rgba(40,3,26,0.9)" },
+  ocean: { bg: "#083B57", bg2: "#0891B2", deep: "#021826", glowA: "#67E8F9", glowB: "#FDE047", ink: "#FFFFFF", accent: "#FDE047", banner: "#FDE047", bannerText: "#082F49", num: "#FDE047", topic: "linear-gradient(90deg, #FFFFFF, #CFFAFE)", panel: "rgba(4,30,46,0.9)" },
 };
 export const ML_PAL = "plum"; // the series cover colour (one place to change it)
 export const usePal = (name?: string): CoverPal => PALS[name ?? ML_PAL] ?? PALS[ML_PAL];
@@ -90,7 +97,7 @@ export const MLCover: React.FC<{
     </div>
     {/* 2. the day, as big as the grid allows */}
     <div style={{ position: "absolute", left: 0, right: 0, top: 430, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 800, lineHeight: 1, letterSpacing: "-0.04em", whiteSpace: "nowrap" }}>
-      <span style={{ fontSize: 210, color: P.ink, textShadow: "0 6px 30px rgba(0,0,0,0.6)" }}>DAY </span>
+      <span style={{ fontSize: 210, color: P.ink, textShadow: P.ink === "#141414" ? "none" : "0 6px 30px rgba(0,0,0,0.6)" }}>DAY </span>
       <span style={{ fontSize: 330, color: P.num, textShadow: glowText(P.num, 0.9) }}>{day}</span>
     </div>
     <Progress day={day} y={770} P={P} />
