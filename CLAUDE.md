@@ -17,7 +17,10 @@ Read `templates/the-file/README.md` before building. It covers the look, the wid
 - **Storytelling with data:** hook in the first seconds, and explain every chart in the narration.
 - **Pacing:** natural, never squeezed. Extra seconds are fine.
 - **Narrator:** Kokoro `am_michael`.
-- **Photos:** genuine and relevant only, in the right kit. Use photos the page supplies when it does.
+- **Photos:** genuine and relevant, in the right kit. Use photos the page supplies when it does.
+  - Otherwise the best-quality photos found online (news sites, board and ICC sites, photo galleries) are fine. They don't need a free licence.
+  - Skip watermarked stock previews (Getty or Alamy samples) and never remove watermarks.
+  - Credit each photo's source on screen and in the README.
 - **Delivery:**
   - decode check, duration, −14 LUFS, a stills check
   - send the MP4, the cover and `CAPTION.md`
