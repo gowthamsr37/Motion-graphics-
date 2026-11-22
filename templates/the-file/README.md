@@ -64,7 +64,7 @@ The scaffold copies everything except `node_modules`, `out/`, the generated `pub
 | `Lollipop` | ranking against the field, with a dashed benchmark | `rows[{name,sub,value,at,tone}], max, ticks, benchmark{value,label,at}` |
 | `Road` | career timeline with a tracking camera and dotted gaps | `stations[{x,value,date,place,note,at,tone}], camera[{t,x}], gaps[{from,to,label,at}], width` |
 | `DotColumn` | one dot per unit (balls per dismissal, runs …) | `n, at, x, label, sub, tone` |
-| `Versus`, `FlyRow`, `Crack` | butterfly comparison of A (accent) and B (ink, muted once A wins: `winA`), and a red zigzag break | `label, a, b, max, at, fmtA, fmtB` |
+| `Versus`, `FlyRow`, `Crack` | butterfly comparison of A (accent) and B (ink, muted once A wins: `winA`; or set `colorA`/`colorB`, e.g. two team colours), and a red zigzag break | `label, a, b, max, at, fmtA, fmtB, colorA, colorB` |
 | `CaseFile`, `Stamp` | taped photo print; a stamp that lands on frame `at` | `src, at, pos` / `text, sub, at, x, y` |
 | `StatRow` | 3–5 headline stats | `stats[{v,l,accent}], at, outAt` |
 | `Brand` | the sign-off lockup | `at, series, tagline` |

@@ -304,22 +304,23 @@ export const DotColumn: React.FC<{ n: number; at: number; x: number; label: stri
 
 /* ---------- FlyRow / Crack ---------- */
 // A sits left in the accent colour; B right in ink (or muted once A clearly wins: winA).
-export const FlyRow: React.FC<{ label: string; a: number; b: number; max: number; at: number; fmtA: string; fmtB: string; winA?: boolean }> = ({ label, a, b, max, at, fmtA, fmtB, winA }) => {
+export const FlyRow: React.FC<{ label: string; a: number; b: number; max: number; at: number; fmtA: string; fmtB: string; winA?: boolean; colorA?: string; colorB?: string }> = ({ label, a, b, max, at, fmtA, fmtB, winA, colorA = C.accent, colorB }) => {
+  const cB = colorB ?? (winA ? C.mute : C.ink);
   const frame = useCurrentFrame();
   const p = theme.ease.out(interpolate(frame, [at, at + 18], [0, 1], CLAMP));
   const W = 270;
   const left = 540 - 120 - W * (a / max) * p;
   return (
     <div style={{ position: "relative", height: 92, opacity: interpolate(p, [0, 0.15], [0.12, 1], CLAMP) }}>
-      <div style={{ position: "absolute", left, top: 26, width: W * (a / max) * p, height: 40, background: C.accent }} />
-      <div style={{ position: "absolute", left: 540 + 120, top: 26, width: W * (b / max) * p, height: 40, background: winA ? C.mute : C.ink }} />
+      <div style={{ position: "absolute", left, top: 26, width: W * (a / max) * p, height: 40, background: colorA }} />
+      <div style={{ position: "absolute", left: 540 + 120, top: 26, width: W * (b / max) * p, height: 40, background: cB }} />
       <div style={{ position: "absolute", right: 1080 - (left - 12), top: 10, textAlign: "right" }}>
-        <Disp size={64} color={C.accent}>
+        <Disp size={64} color={colorA}>
           {fmtA}
         </Disp>
       </div>
       <div style={{ position: "absolute", left: 540 + 130 + W * (b / max) * p, top: 10, width: 200 }}>
-        <Disp size={64} color={winA ? C.mute : C.ink}>
+        <Disp size={64} color={cB}>
           {fmtB}
         </Disp>
       </div>
@@ -460,7 +461,7 @@ export const Lockup: React.FC<{ name: string; tag?: string; at: number; top?: nu
   );
 };
 
-export const Versus: React.FC<{ a: string; b: string; top?: number; size?: number }> = ({ a, b, top = 250, size = 86 }) => (
+export const Versus: React.FC<{ a: string; b: string; top?: number; size?: number; colorB?: string }> = ({ a, b, top = 250, size = 86, colorB = C.ink }) => (
   <div style={{ position: "absolute", left: 60, right: 60, top, display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
     <Disp size={size} color={C.accent}>
       {a}
@@ -468,7 +469,9 @@ export const Versus: React.FC<{ a: string; b: string; top?: number; size?: numbe
     <Serif size={44} color={C.mute}>
       vs
     </Serif>
-    <Disp size={size}>{b}</Disp>
+    <Disp size={size} color={colorB}>
+      {b}
+    </Disp>
   </div>
 );
 

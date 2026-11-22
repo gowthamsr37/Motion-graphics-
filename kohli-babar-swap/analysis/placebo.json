@@ -1,0 +1,9224 @@
+{
+ "n_sims": 10000,
+ "teams": {
+  "India": {
+   "matches": 154,
+   "actual_wins": 98.0,
+   "swap_wins_mean": 100.97,
+   "swap_wins_p10": 97.5,
+   "swap_wins_p90": 104.5,
+   "p_fewer": 0.1057,
+   "p_more": 0.8467,
+   "batting_first": {
+    "n": 69,
+    "actual": 44.5,
+    "swap": 44.23
+   },
+   "chasing": {
+    "n": 85,
+    "actual": 53.5,
+    "swap": 56.74
+   },
+   "lost_wins": [
+    {
+     "key": "1030223:India",
+     "date": "2016-10-23",
+     "team": "India",
+     "opp": "New Zealand",
+     "event": "New Zealand in India ODI Series",
+     "stage": "3",
+     "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",
+     "result": "W",
+     "by": {
+      "wickets": 7
+     },
+     "method": "",
+     "star": {
+      "r": 154,
+      "b": 134,
+      "out": false
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.1714,
+     "change": -0.8286,
+     "batting": "second",
+     "score": "New Zealand 285/10 v India 289/3"
+    },
+    {
+     "key": "1168243:India",
+     "date": "2019-03-05",
+     "team": "India",
+     "opp": "Australia",
+     "event": "Australia tour of India",
+     "stage": "2",
+     "venue": "Vidarbha Cricket Association Stadium, Jamtha, Nagpur",
+     "result": "W",
+     "by": {
+      "runs": 8
+     },
+     "method": "",
+     "star": {
+      "r": 116,
+      "b": 120,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.3078,
+     "change": -0.6922,
+     "batting": "first",
+     "score": "India 250/10 v Australia 242/10"
+    },
+    {
+     "key": "1034821:India",
+     "date": "2017-01-19",
+     "team": "India",
+     "opp": "England",
+     "event": "England in India ODI Series",
+     "stage": "2",
+     "venue": "Barabati Stadium, Cuttack",
+     "result": "W",
+     "by": {
+      "runs": 15
+     },
+     "method": "",
+     "star": {
+      "r": 8,
+      "b": 5,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.584,
+     "change": -0.416,
+     "batting": "first",
+     "score": "India 381/6 v England 366/8"
+    },
+    {
+     "key": "1120092:India",
+     "date": "2017-10-29",
+     "team": "India",
+     "opp": "New Zealand",
+     "event": "New Zealand tour of India",
+     "stage": "3",
+     "venue": "Green Park, Kanpur",
+     "result": "W",
+     "by": {
+      "runs": 6
+     },
+     "method": "",
+     "star": {
+      "r": 113,
+      "b": 106,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.6568,
+     "change": -0.3432,
+     "batting": "first",
+     "score": "India 337/6 v New Zealand 331/7"
+    },
+    {
+     "key": "1243395:India",
+     "date": "2021-03-28",
+     "team": "India",
+     "opp": "England",
+     "event": "England tour of India",
+     "stage": "3",
+     "venue": "Maharashtra Cricket Association Stadium, Pune",
+     "result": "W",
+     "by": {
+      "runs": 7
+     },
+     "method": "",
+     "star": {
+      "r": 7,
+      "b": 10,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.6728,
+     "change": -0.3272,
+     "batting": "first",
+     "score": "India 329/10 v England 322/9"
+    },
+    {
+     "key": "895815:India",
+     "date": "2016-01-23",
+     "team": "India",
+     "opp": "Australia",
+     "event": "India in Australia ODI Series",
+     "stage": "5",
+     "venue": "Sydney Cricket Ground",
+     "result": "W",
+     "by": {
+      "wickets": 6
+     },
+     "method": "",
+     "star": {
+      "r": 8,
+      "b": 11,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.6801,
+     "change": -0.3199,
+     "batting": "second",
+     "score": "Australia 330/7 v India 331/4"
+    },
+    {
+     "key": "1479573:India",
+     "date": "2025-11-30",
+     "team": "India",
+     "opp": "South Africa",
+     "event": "South Africa tour of India",
+     "stage": "1",
+     "venue": "JSCA International Stadium Complex, Ranchi",
+     "result": "W",
+     "by": {
+      "runs": 17
+     },
+     "method": "",
+     "star": {
+      "r": 135,
+      "b": 120,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.6916,
+     "change": -0.3084,
+     "batting": "first",
+     "score": "India 349/8 v South Africa 332/10"
+    },
+    {
+     "key": "1348646:India",
+     "date": "2023-01-18",
+     "team": "India",
+     "opp": "New Zealand",
+     "event": "New Zealand tour of India",
+     "stage": "1",
+     "venue": "Rajiv Gandhi International Stadium, Uppal",
+     "result": "W",
+     "by": {
+      "runs": 12
+     },
+     "method": "",
+     "star": {
+      "r": 8,
+      "b": 10,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.7176,
+     "change": -0.2824,
+     "batting": "first",
+     "score": "India 349/8 v New Zealand 337/10"
+    }
+   ],
+   "gained_wins": [
+    {
+     "key": "1277084:India",
+     "date": "2022-01-23",
+     "team": "India",
+     "opp": "South Africa",
+     "event": "India tour of South Africa",
+     "stage": "3",
+     "venue": "Newlands, Cape Town",
+     "result": "L",
+     "by": {
+      "runs": 4
+     },
+     "method": "",
+     "star": {
+      "r": 65,
+      "b": 84,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.874,
+     "change": 0.874,
+     "batting": "second",
+     "score": "South Africa 287/10 v India 283/10"
+    },
+    {
+     "key": "1098209:India",
+     "date": "2017-07-02",
+     "team": "India",
+     "opp": "West Indies",
+     "event": "India in West Indies ODI Series",
+     "stage": "4",
+     "venue": "Sir Vivian Richards Stadium, North Sound, Antigua",
+     "result": "L",
+     "by": {
+      "runs": 11
+     },
+     "method": "",
+     "star": {
+      "r": 3,
+      "b": 12,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.6447,
+     "change": 0.6447,
+     "batting": "second",
+     "score": "West Indies 189/9 v India 178/10"
+    },
+    {
+     "key": "1340845:India",
+     "date": "2022-12-04",
+     "team": "India",
+     "opp": "Bangladesh",
+     "event": "India tour of Bangladesh",
+     "stage": "1",
+     "venue": "Shere Bangla National Stadium, Mirpur",
+     "result": "L",
+     "by": {
+      "wickets": 1
+     },
+     "method": "",
+     "star": {
+      "r": 9,
+      "b": 15,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.513,
+     "change": 0.513,
+     "batting": "first",
+     "score": "India 186/10 v Bangladesh 187/9"
+    },
+    {
+     "key": "1030221:India",
+     "date": "2016-10-20",
+     "team": "India",
+     "opp": "New Zealand",
+     "event": "New Zealand in India ODI Series",
+     "stage": "2",
+     "venue": "Feroz Shah Kotla, Delhi",
+     "result": "L",
+     "by": {
+      "runs": 6
+     },
+     "method": "",
+     "star": {
+      "r": 9,
+      "b": 13,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.4905,
+     "change": 0.4905,
+     "batting": "second",
+     "score": "New Zealand 242/9 v India 236/10"
+    },
+    {
+     "key": "1034823:India",
+     "date": "2017-01-22",
+     "team": "India",
+     "opp": "England",
+     "event": "England in India ODI Series",
+     "stage": "3",
+     "venue": "Eden Gardens, Kolkata",
+     "result": "L",
+     "by": {
+      "runs": 5
+     },
+     "method": "",
+     "star": {
+      "r": 55,
+      "b": 63,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.4328,
+     "change": 0.4328,
+     "batting": "second",
+     "score": "England 321/8 v India 316/9"
+    },
+    {
+     "key": "903593:India",
+     "date": "2015-10-11",
+     "team": "India",
+     "opp": "South Africa",
+     "event": "South Africa in India ODI Series",
+     "stage": "1",
+     "venue": "Green Park, Kanpur",
+     "result": "L",
+     "by": {
+      "runs": 5
+     },
+     "method": "",
+     "star": {
+      "r": 11,
+      "b": 18,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.4124,
+     "change": 0.4124,
+     "batting": "second",
+     "score": "South Africa 303/5 v India 298/7"
+    },
+    {
+     "key": "1340846:India",
+     "date": "2022-12-07",
+     "team": "India",
+     "opp": "Bangladesh",
+     "event": "India tour of Bangladesh",
+     "stage": "2",
+     "venue": "Shere Bangla National Stadium, Mirpur",
+     "result": "L",
+     "by": {
+      "runs": 5
+     },
+     "method": "",
+     "star": {
+      "r": 5,
+      "b": 6,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.4116,
+     "change": 0.4116,
+     "batting": "second",
+     "score": "Bangladesh 271/7 v India 266/9"
+    },
+    {
+     "key": "1144528:India",
+     "date": "2019-07-09",
+     "team": "India",
+     "opp": "New Zealand",
+     "event": "World Cup",
+     "stage": "Semi Final",
+     "venue": "Old Trafford",
+     "result": "L",
+     "by": {
+      "runs": 18
+     },
+     "method": "",
+     "star": {
+      "r": 1,
+      "b": 6,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.349,
+     "change": 0.349,
+     "batting": "second",
+     "score": "New Zealand 239/8 v India 221/10"
+    }
+   ]
+  },
+  "Pakistan": {
+   "matches": 138,
+   "actual_wins": 75.5,
+   "swap_wins_mean": 72.05,
+   "swap_wins_p10": 69.5,
+   "swap_wins_p90": 74.5,
+   "p_fewer": 0.9563,
+   "p_more": 0.0269,
+   "batting_first": {
+    "n": 60,
+    "actual": 30.0,
+    "swap": 31.12
+   },
+   "chasing": {
+    "n": 78,
+    "actual": 45.5,
+    "swap": 40.93
+   },
+   "lost_wins": [
+    {
+     "key": "1288314:Pakistan",
+     "date": "2022-03-31",
+     "team": "Pakistan",
+     "opp": "Australia",
+     "event": "Australia tour of Pakistan",
+     "stage": "2",
+     "venue": "Gaddafi Stadium, Lahore",
+     "result": "W",
+     "by": {
+      "wickets": 6
+     },
+     "method": "",
+     "star": {
+      "r": 114,
+      "b": 83,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.0144,
+     "change": -0.9856,
+     "batting": "second",
+     "score": "Australia 348/8 v Pakistan 349/4"
+    },
+    {
+     "key": "1251572:Pakistan",
+     "date": "2021-04-02",
+     "team": "Pakistan",
+     "opp": "South Africa",
+     "event": "Pakistan tour of South Africa",
+     "stage": "1",
+     "venue": "SuperSport Park, Centurion",
+     "result": "W",
+     "by": {
+      "wickets": 3
+     },
+     "method": "",
+     "star": {
+      "r": 103,
+      "b": 104,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.0282,
+     "change": -0.9718,
+     "batting": "second",
+     "score": "South Africa 273/6 v Pakistan 274/7"
+    },
+    {
+     "key": "1442222:Pakistan",
+     "date": "2025-02-12",
+     "team": "Pakistan",
+     "opp": "South Africa",
+     "event": "Pakistan Tri-Nation Series",
+     "stage": "3",
+     "venue": "National Bank Cricket Arena, Karachi",
+     "result": "W",
+     "by": {
+      "wickets": 6
+     },
+     "method": "",
+     "star": {
+      "r": 23,
+      "b": 19,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.3659,
+     "change": -0.6341,
+     "batting": "second",
+     "score": "South Africa 352/5 v Pakistan 355/4"
+    },
+    {
+     "key": "1315038:Pakistan",
+     "date": "2022-06-08",
+     "team": "Pakistan",
+     "opp": "West Indies",
+     "event": "West Indies tour of Pakistan",
+     "stage": "1",
+     "venue": "Multan Cricket Stadium",
+     "result": "W",
+     "by": {
+      "wickets": 5
+     },
+     "method": "",
+     "star": {
+      "r": 103,
+      "b": 107,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.7012,
+     "change": -0.2988,
+     "batting": "second",
+     "score": "West Indies 305/8 v Pakistan 306/5"
+    },
+    {
+     "key": "1311739:Pakistan",
+     "date": "2022-08-21",
+     "team": "Pakistan",
+     "opp": "Netherlands",
+     "event": "Pakistan tour of Netherlands",
+     "stage": "3",
+     "venue": "Hazelaarweg, Rotterdam",
+     "result": "W",
+     "by": {
+      "runs": 9
+     },
+     "method": "",
+     "star": {
+      "r": 91,
+      "b": 125,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.7334,
+     "change": -0.2666,
+     "batting": "first",
+     "score": "Pakistan 206/10 v Netherlands 197/10"
+    },
+    {
+     "key": "1384426:Pakistan",
+     "date": "2023-11-04",
+     "team": "Pakistan",
+     "opp": "New Zealand",
+     "event": "ICC Cricket World Cup",
+     "stage": "35",
+     "venue": "M Chinnaswamy Stadium, Bengaluru",
+     "result": "W",
+     "by": {
+      "runs": 21
+     },
+     "method": "D/L",
+     "star": {
+      "r": 66,
+      "b": 63,
+      "out": false
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.781,
+     "change": -0.219,
+     "batting": "second",
+     "score": "New Zealand 401/6 v Pakistan 200/1"
+    },
+    {
+     "key": "1198488:Pakistan",
+     "date": "2019-10-02",
+     "team": "Pakistan",
+     "opp": "Sri Lanka",
+     "event": "Sri Lanka tour of Pakistan",
+     "stage": "3",
+     "venue": "National Stadium, Karachi",
+     "result": "W",
+     "by": {
+      "wickets": 5
+     },
+     "method": "",
+     "star": {
+      "r": 31,
+      "b": 26,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.7997,
+     "change": -0.2003,
+     "batting": "second",
+     "score": "Sri Lanka 297/9 v Pakistan 299/5"
+    },
+    {
+     "key": "913661:Pakistan",
+     "date": "2016-09-04",
+     "team": "Pakistan",
+     "opp": "England",
+     "event": "Pakistan in England ODI Series",
+     "stage": "5",
+     "venue": "Sophia Gardens, Cardiff",
+     "result": "W",
+     "by": {
+      "wickets": 4
+     },
+     "method": "",
+     "star": {
+      "r": 31,
+      "b": 29,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.8316,
+     "change": -0.1684,
+     "batting": "second",
+     "score": "England 302/9 v Pakistan 304/6"
+    }
+   ],
+   "gained_wins": [
+    {
+     "key": "1388410:Pakistan",
+     "date": "2023-09-14",
+     "team": "Pakistan",
+     "opp": "Sri Lanka",
+     "event": "Asia Cup",
+     "stage": "11",
+     "venue": "R Premadasa Stadium, Colombo",
+     "result": "L",
+     "by": {
+      "wickets": 2
+     },
+     "method": "D/L",
+     "star": {
+      "r": 29,
+      "b": 35,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.44,
+     "change": 0.44,
+     "batting": "first",
+     "score": "Pakistan 252/7 v Sri Lanka 252/8"
+    },
+    {
+     "key": "1384417:Pakistan",
+     "date": "2023-10-27",
+     "team": "Pakistan",
+     "opp": "South Africa",
+     "event": "ICC Cricket World Cup",
+     "stage": "26",
+     "venue": "MA Chidambaram Stadium",
+     "result": "L",
+     "by": {
+      "wickets": 1
+     },
+     "method": "",
+     "star": {
+      "r": 50,
+      "b": 65,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.2497,
+     "change": 0.2497,
+     "batting": "first",
+     "score": "Pakistan 270/10 v South Africa 271/9"
+    },
+    {
+     "key": "1152844:Pakistan",
+     "date": "2019-05-17",
+     "team": "Pakistan",
+     "opp": "England",
+     "event": "Pakistan tour of England",
+     "stage": "4",
+     "venue": "Trent Bridge",
+     "result": "L",
+     "by": {
+      "wickets": 3
+     },
+     "method": "",
+     "star": {
+      "r": 115,
+      "b": 112,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.2182,
+     "change": 0.2182,
+     "batting": "first",
+     "score": "Pakistan 340/7 v England 341/7"
+    },
+    {
+     "key": "1115806:Pakistan",
+     "date": "2018-01-19",
+     "team": "Pakistan",
+     "opp": "New Zealand",
+     "event": "Pakistan tour of New Zealand",
+     "stage": "5",
+     "venue": "Basin Reserve, Wellington",
+     "result": "L",
+     "by": {
+      "runs": 15
+     },
+     "method": "",
+     "star": {
+      "r": 10,
+      "b": 21,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.1943,
+     "change": 0.1943,
+     "batting": "second",
+     "score": "New Zealand 271/7 v Pakistan 256/10"
+    },
+    {
+     "key": "913659:Pakistan",
+     "date": "2016-09-01",
+     "team": "Pakistan",
+     "opp": "England",
+     "event": "Pakistan in England ODI Series",
+     "stage": "4",
+     "venue": "Headingley",
+     "result": "L",
+     "by": {
+      "wickets": 4
+     },
+     "method": "",
+     "star": {
+      "r": 12,
+      "b": 21,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.1747,
+     "change": 0.1747,
+     "batting": "first",
+     "score": "Pakistan 247/8 v England 252/6"
+    },
+    {
+     "key": "1077949:Pakistan",
+     "date": "2017-04-07",
+     "team": "Pakistan",
+     "opp": "West Indies",
+     "event": "Pakistan in West Indies ODI Series",
+     "stage": "1",
+     "venue": "Providence Stadium, Guyana",
+     "result": "L",
+     "by": {
+      "wickets": 4
+     },
+     "method": "",
+     "star": {
+      "r": 13,
+      "b": 21,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.1583,
+     "change": 0.1583,
+     "batting": "first",
+     "score": "Pakistan 308/5 v West Indies 309/6"
+    },
+    {
+     "key": "1339613:Pakistan",
+     "date": "2023-01-13",
+     "team": "Pakistan",
+     "opp": "New Zealand",
+     "event": "New Zealand tour of Pakistan",
+     "stage": "3",
+     "venue": "National Bank Cricket Arena, Karachi",
+     "result": "L",
+     "by": {
+      "wickets": 2
+     },
+     "method": "",
+     "star": {
+      "r": 4,
+      "b": 13,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.1411,
+     "change": 0.1411,
+     "batting": "first",
+     "score": "Pakistan 280/9 v New Zealand 281/8"
+    },
+    {
+     "key": "860271:Pakistan",
+     "date": "2015-07-15",
+     "team": "Pakistan",
+     "opp": "Sri Lanka",
+     "event": "Pakistan in Sri Lanka ODI Series",
+     "stage": "2",
+     "venue": "Pallekele International Cricket Stadium",
+     "result": "L",
+     "by": {
+      "wickets": 2
+     },
+     "method": "",
+     "star": {
+      "r": 12,
+      "b": 19,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.1202,
+     "change": 0.1202,
+     "batting": "first",
+     "score": "Pakistan 287/8 v Sri Lanka 288/8"
+    }
+   ]
+  }
+ },
+ "matches": [
+  {
+   "key": "870731:India",
+   "date": "2015-06-18",
+   "team": "India",
+   "opp": "Bangladesh",
+   "event": "India in Bangladesh ODI Series",
+   "stage": "1",
+   "venue": "Shere Bangla National Stadium, Mirpur",
+   "result": "L",
+   "by": {
+    "runs": 79
+   },
+   "method": "",
+   "star": {
+    "r": 1,
+    "b": 4,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Bangladesh 307/10 v India 228/10"
+  },
+  {
+   "key": "870733:India",
+   "date": "2015-06-21",
+   "team": "India",
+   "opp": "Bangladesh",
+   "event": "India in Bangladesh ODI Series",
+   "stage": "2",
+   "venue": "Shere Bangla National Stadium, Mirpur",
+   "result": "L",
+   "by": {
+    "wickets": 6
+   },
+   "method": "D/L",
+   "star": {
+    "r": 23,
+    "b": 27,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0155,
+   "change": 0.0155,
+   "batting": "first",
+   "score": "India 200/10 v Bangladesh 200/4"
+  },
+  {
+   "key": "870735:India",
+   "date": "2015-06-24",
+   "team": "India",
+   "opp": "Bangladesh",
+   "event": "India in Bangladesh ODI Series",
+   "stage": "3",
+   "venue": "Shere Bangla National Stadium, Mirpur",
+   "result": "W",
+   "by": {
+    "runs": 77
+   },
+   "method": "",
+   "star": {
+    "r": 25,
+    "b": 35,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 317/6 v Bangladesh 240/10"
+  },
+  {
+   "key": "860269:Pakistan",
+   "date": "2015-07-11",
+   "team": "Pakistan",
+   "opp": "Sri Lanka",
+   "event": "Pakistan in Sri Lanka ODI Series",
+   "stage": "1",
+   "venue": "Rangiri Dambulla International Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 25,
+    "b": 30,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Sri Lanka 255/8 v Pakistan 259/4"
+  },
+  {
+   "key": "860271:Pakistan",
+   "date": "2015-07-15",
+   "team": "Pakistan",
+   "opp": "Sri Lanka",
+   "event": "Pakistan in Sri Lanka ODI Series",
+   "stage": "2",
+   "venue": "Pallekele International Cricket Stadium",
+   "result": "L",
+   "by": {
+    "wickets": 2
+   },
+   "method": "",
+   "star": {
+    "r": 12,
+    "b": 19,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.1202,
+   "change": 0.1202,
+   "batting": "first",
+   "score": "Pakistan 287/8 v Sri Lanka 288/8"
+  },
+  {
+   "key": "903593:India",
+   "date": "2015-10-11",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "South Africa in India ODI Series",
+   "stage": "1",
+   "venue": "Green Park, Kanpur",
+   "result": "L",
+   "by": {
+    "runs": 5
+   },
+   "method": "",
+   "star": {
+    "r": 11,
+    "b": 18,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.4124,
+   "change": 0.4124,
+   "batting": "second",
+   "score": "South Africa 303/5 v India 298/7"
+  },
+  {
+   "key": "903595:India",
+   "date": "2015-10-14",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "South Africa in India ODI Series",
+   "stage": "2",
+   "venue": "Holkar Cricket Stadium, Indore",
+   "result": "W",
+   "by": {
+    "runs": 22
+   },
+   "method": "",
+   "star": {
+    "r": 12,
+    "b": 18,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 247/9 v South Africa 225/10"
+  },
+  {
+   "key": "903597:India",
+   "date": "2015-10-18",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "South Africa in India ODI Series",
+   "stage": "3",
+   "venue": "Saurashtra Cricket Association Stadium, Rajkot",
+   "result": "L",
+   "by": {
+    "runs": 18
+   },
+   "method": "",
+   "star": {
+    "r": 77,
+    "b": 99,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.2402,
+   "change": 0.2402,
+   "batting": "second",
+   "score": "South Africa 270/7 v India 252/6"
+  },
+  {
+   "key": "903599:India",
+   "date": "2015-10-22",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "South Africa in India ODI Series",
+   "stage": "4",
+   "venue": "MA Chidambaram Stadium",
+   "result": "W",
+   "by": {
+    "runs": 35
+   },
+   "method": "",
+   "star": {
+    "r": 138,
+    "b": 140,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 299/8 v South Africa 264/9"
+  },
+  {
+   "key": "903601:India",
+   "date": "2015-10-25",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "South Africa in India ODI Series",
+   "stage": "5",
+   "venue": "Wankhede Stadium, Mumbai",
+   "result": "L",
+   "by": {
+    "runs": 214
+   },
+   "method": "",
+   "star": {
+    "r": 7,
+    "b": 6,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "South Africa 438/4 v India 224/10"
+  },
+  {
+   "key": "902641:Pakistan",
+   "date": "2015-11-11",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "Pakistan v England ODI Series",
+   "stage": "1",
+   "venue": "Sheikh Zayed Stadium, Abu Dhabi",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 62,
+    "b": 62,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "England 216/10 v Pakistan 217/4"
+  },
+  {
+   "key": "902643:Pakistan",
+   "date": "2015-11-13",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "Pakistan v England ODI Series",
+   "stage": "2",
+   "venue": "Sheikh Zayed Stadium, Abu Dhabi",
+   "result": "L",
+   "by": {
+    "runs": 95
+   },
+   "method": "",
+   "star": {
+    "r": 4,
+    "b": 6,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "England 283/5 v Pakistan 188/10"
+  },
+  {
+   "key": "902645:Pakistan",
+   "date": "2015-11-17",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "Pakistan v England ODI Series",
+   "stage": "3",
+   "venue": "Sharjah Cricket Stadium",
+   "result": "L",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 22,
+    "b": 30,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 208/10 v England 210/4"
+  },
+  {
+   "key": "902647:Pakistan",
+   "date": "2015-11-20",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "Pakistan v England ODI Series",
+   "stage": "4",
+   "venue": "Dubai International Cricket Stadium",
+   "result": "L",
+   "by": {
+    "runs": 84
+   },
+   "method": "",
+   "star": {
+    "r": 51,
+    "b": 51,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "England 355/5 v Pakistan 271/10"
+  },
+  {
+   "key": "895807:India",
+   "date": "2016-01-12",
+   "team": "India",
+   "opp": "Australia",
+   "event": "India in Australia ODI Series",
+   "stage": "1",
+   "venue": "WACA, Perth",
+   "result": "L",
+   "by": {
+    "wickets": 5
+   },
+   "method": "",
+   "star": {
+    "r": 91,
+    "b": 97,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.3034,
+   "change": 0.3034,
+   "batting": "first",
+   "score": "India 309/3 v Australia 310/5"
+  },
+  {
+   "key": "895809:India",
+   "date": "2016-01-15",
+   "team": "India",
+   "opp": "Australia",
+   "event": "India in Australia ODI Series",
+   "stage": "2",
+   "venue": "Brisbane Cricket Ground",
+   "result": "L",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 59,
+    "b": 67,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.2999,
+   "change": 0.2999,
+   "batting": "first",
+   "score": "India 308/8 v Australia 309/3"
+  },
+  {
+   "key": "895811:India",
+   "date": "2016-01-17",
+   "team": "India",
+   "opp": "Australia",
+   "event": "India in Australia ODI Series",
+   "stage": "3",
+   "venue": "Melbourne Cricket Ground",
+   "result": "L",
+   "by": {
+    "wickets": 3
+   },
+   "method": "",
+   "star": {
+    "r": 117,
+    "b": 117,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.1172,
+   "change": 0.1172,
+   "batting": "first",
+   "score": "India 295/6 v Australia 296/7"
+  },
+  {
+   "key": "895813:India",
+   "date": "2016-01-20",
+   "team": "India",
+   "opp": "Australia",
+   "event": "India in Australia ODI Series",
+   "stage": "4",
+   "venue": "Manuka Oval, Canberra",
+   "result": "L",
+   "by": {
+    "runs": 25
+   },
+   "method": "",
+   "star": {
+    "r": 106,
+    "b": 92,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0135,
+   "change": 0.0135,
+   "batting": "second",
+   "score": "Australia 348/8 v India 323/10"
+  },
+  {
+   "key": "895815:India",
+   "date": "2016-01-23",
+   "team": "India",
+   "opp": "Australia",
+   "event": "India in Australia ODI Series",
+   "stage": "5",
+   "venue": "Sydney Cricket Ground",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 8,
+    "b": 11,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.6801,
+   "change": -0.3199,
+   "batting": "second",
+   "score": "Australia 330/7 v India 331/4"
+  },
+  {
+   "key": "914227:Pakistan",
+   "date": "2016-01-25",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "Pakistan in New Zealand ODI Series",
+   "stage": "1",
+   "venue": "Basin Reserve, Wellington",
+   "result": "L",
+   "by": {
+    "runs": 70
+   },
+   "method": "",
+   "star": {
+    "r": 62,
+    "b": 76,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "New Zealand 280/8 v Pakistan 210/10"
+  },
+  {
+   "key": "914265:Pakistan",
+   "date": "2016-01-31",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "Pakistan in New Zealand ODI Series",
+   "stage": "3",
+   "venue": "Eden Park, Auckland",
+   "result": "L",
+   "by": {
+    "wickets": 3
+   },
+   "method": "D/L",
+   "star": {
+    "r": 83,
+    "b": 77,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.018,
+   "change": 0.018,
+   "batting": "first",
+   "score": "Pakistan 290/10 v New Zealand 265/7"
+  },
+  {
+   "key": "913649:Pakistan",
+   "date": "2016-08-18",
+   "team": "Pakistan",
+   "opp": "Ireland",
+   "event": "Pakistan in Ireland ODI Series",
+   "stage": "1",
+   "venue": "Malahide Cricket Ground, Dublin",
+   "result": "W",
+   "by": {
+    "runs": 255
+   },
+   "method": "",
+   "star": {
+    "r": 29,
+    "b": 29,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 337/6 v Ireland 82/10"
+  },
+  {
+   "key": "913653:Pakistan",
+   "date": "2016-08-24",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "Pakistan in England ODI Series",
+   "stage": "1",
+   "venue": "The Rose Bowl, Southampton",
+   "result": "L",
+   "by": {
+    "runs": 44
+   },
+   "method": "D/L",
+   "star": {
+    "r": 40,
+    "b": 42,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 260/6 v England 194/3"
+  },
+  {
+   "key": "913655:Pakistan",
+   "date": "2016-08-27",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "Pakistan in England ODI Series",
+   "stage": "2",
+   "venue": "Lord's",
+   "result": "L",
+   "by": {
+    "wickets": 4
+   },
+   "method": "",
+   "star": {
+    "r": 30,
+    "b": 33,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0469,
+   "change": 0.0469,
+   "batting": "first",
+   "score": "Pakistan 251/10 v England 255/6"
+  },
+  {
+   "key": "913657:Pakistan",
+   "date": "2016-08-30",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "Pakistan in England ODI Series",
+   "stage": "3",
+   "venue": "Trent Bridge",
+   "result": "L",
+   "by": {
+    "runs": 169
+   },
+   "method": "",
+   "star": {
+    "r": 9,
+    "b": 19,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "England 444/3 v Pakistan 275/10"
+  },
+  {
+   "key": "913659:Pakistan",
+   "date": "2016-09-01",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "Pakistan in England ODI Series",
+   "stage": "4",
+   "venue": "Headingley",
+   "result": "L",
+   "by": {
+    "wickets": 4
+   },
+   "method": "",
+   "star": {
+    "r": 12,
+    "b": 21,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.1747,
+   "change": 0.1747,
+   "batting": "first",
+   "score": "Pakistan 247/8 v England 252/6"
+  },
+  {
+   "key": "913661:Pakistan",
+   "date": "2016-09-04",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "Pakistan in England ODI Series",
+   "stage": "5",
+   "venue": "Sophia Gardens, Cardiff",
+   "result": "W",
+   "by": {
+    "wickets": 4
+   },
+   "method": "",
+   "star": {
+    "r": 31,
+    "b": 29,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.8316,
+   "change": -0.1684,
+   "batting": "second",
+   "score": "England 302/9 v Pakistan 304/6"
+  },
+  {
+   "key": "1050223:Pakistan",
+   "date": "2016-09-30",
+   "team": "Pakistan",
+   "opp": "West Indies",
+   "event": "Pakistan v West Indies ODI Series",
+   "stage": "1",
+   "venue": "Sharjah Cricket Stadium",
+   "result": "W",
+   "by": {
+    "runs": 111
+   },
+   "method": "D/L",
+   "star": {
+    "r": 120,
+    "b": 131,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 284/9 v West Indies 175/10"
+  },
+  {
+   "key": "1050225:Pakistan",
+   "date": "2016-10-02",
+   "team": "Pakistan",
+   "opp": "West Indies",
+   "event": "Pakistan v West Indies ODI Series",
+   "stage": "2",
+   "venue": "Sharjah Cricket Stadium",
+   "result": "W",
+   "by": {
+    "runs": 59
+   },
+   "method": "",
+   "star": {
+    "r": 123,
+    "b": 126,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 337/5 v West Indies 278/7"
+  },
+  {
+   "key": "1050227:Pakistan",
+   "date": "2016-10-05",
+   "team": "Pakistan",
+   "opp": "West Indies",
+   "event": "Pakistan v West Indies ODI Series",
+   "stage": "3",
+   "venue": "Sheikh Zayed Stadium, Abu Dhabi",
+   "result": "W",
+   "by": {
+    "runs": 136
+   },
+   "method": "",
+   "star": {
+    "r": 117,
+    "b": 106,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 308/6 v West Indies 172/10"
+  },
+  {
+   "key": "1030219:India",
+   "date": "2016-10-16",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "New Zealand in India ODI Series",
+   "stage": "1",
+   "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 85,
+    "b": 81,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "New Zealand 190/10 v India 194/4"
+  },
+  {
+   "key": "1030221:India",
+   "date": "2016-10-20",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "New Zealand in India ODI Series",
+   "stage": "2",
+   "venue": "Feroz Shah Kotla, Delhi",
+   "result": "L",
+   "by": {
+    "runs": 6
+   },
+   "method": "",
+   "star": {
+    "r": 9,
+    "b": 13,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.4905,
+   "change": 0.4905,
+   "batting": "second",
+   "score": "New Zealand 242/9 v India 236/10"
+  },
+  {
+   "key": "1030223:India",
+   "date": "2016-10-23",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "New Zealand in India ODI Series",
+   "stage": "3",
+   "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",
+   "result": "W",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 154,
+    "b": 134,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.1714,
+   "change": -0.8286,
+   "batting": "second",
+   "score": "New Zealand 285/10 v India 289/3"
+  },
+  {
+   "key": "1030225:India",
+   "date": "2016-10-26",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "New Zealand in India ODI Series",
+   "stage": "4",
+   "venue": "JSCA International Stadium Complex, Ranchi",
+   "result": "L",
+   "by": {
+    "runs": 19
+   },
+   "method": "",
+   "star": {
+    "r": 45,
+    "b": 51,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.1698,
+   "change": 0.1698,
+   "batting": "second",
+   "score": "New Zealand 260/7 v India 241/10"
+  },
+  {
+   "key": "1030227:India",
+   "date": "2016-10-29",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "New Zealand in India ODI Series",
+   "stage": "5",
+   "venue": "Andhra Cricket Association-Visakhapatnam District Cricket Association Stadium, Visakhapatnam",
+   "result": "W",
+   "by": {
+    "runs": 190
+   },
+   "method": "",
+   "star": {
+    "r": 65,
+    "b": 76,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 269/6 v New Zealand 79/10"
+  },
+  {
+   "key": "1000887:Pakistan",
+   "date": "2017-01-13",
+   "team": "Pakistan",
+   "opp": "Australia",
+   "event": "Pakistan in Australia ODI Series",
+   "stage": "1",
+   "venue": "Brisbane Cricket Ground",
+   "result": "L",
+   "by": {
+    "runs": 92
+   },
+   "method": "",
+   "star": {
+    "r": 33,
+    "b": 46,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 268/9 v Pakistan 176/10"
+  },
+  {
+   "key": "1000889:Pakistan",
+   "date": "2017-01-15",
+   "team": "Pakistan",
+   "opp": "Australia",
+   "event": "Pakistan in Australia ODI Series",
+   "stage": "2",
+   "venue": "Melbourne Cricket Ground",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 34,
+    "b": 49,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 220/10 v Pakistan 221/4"
+  },
+  {
+   "key": "1034819:India",
+   "date": "2017-01-15",
+   "team": "India",
+   "opp": "England",
+   "event": "England in India ODI Series",
+   "stage": "1",
+   "venue": "Maharashtra Cricket Association Stadium, Pune",
+   "result": "W",
+   "by": {
+    "wickets": 3
+   },
+   "method": "",
+   "star": {
+    "r": 122,
+    "b": 105,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.7712,
+   "change": -0.2288,
+   "batting": "second",
+   "score": "England 350/7 v India 356/7"
+  },
+  {
+   "key": "1000891:Pakistan",
+   "date": "2017-01-19",
+   "team": "Pakistan",
+   "opp": "Australia",
+   "event": "Pakistan in Australia ODI Series",
+   "stage": "3",
+   "venue": "WACA, Perth",
+   "result": "L",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 84,
+    "b": 100,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 263/7 v Australia 265/3"
+  },
+  {
+   "key": "1034821:India",
+   "date": "2017-01-19",
+   "team": "India",
+   "opp": "England",
+   "event": "England in India ODI Series",
+   "stage": "2",
+   "venue": "Barabati Stadium, Cuttack",
+   "result": "W",
+   "by": {
+    "runs": 15
+   },
+   "method": "",
+   "star": {
+    "r": 8,
+    "b": 5,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.584,
+   "change": -0.416,
+   "batting": "first",
+   "score": "India 381/6 v England 366/8"
+  },
+  {
+   "key": "1000893:Pakistan",
+   "date": "2017-01-22",
+   "team": "Pakistan",
+   "opp": "Australia",
+   "event": "Pakistan in Australia ODI Series",
+   "stage": "4",
+   "venue": "Sydney Cricket Ground",
+   "result": "L",
+   "by": {
+    "runs": 86
+   },
+   "method": "",
+   "star": {
+    "r": 31,
+    "b": 39,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 353/6 v Pakistan 267/10"
+  },
+  {
+   "key": "1034823:India",
+   "date": "2017-01-22",
+   "team": "India",
+   "opp": "England",
+   "event": "England in India ODI Series",
+   "stage": "3",
+   "venue": "Eden Gardens, Kolkata",
+   "result": "L",
+   "by": {
+    "runs": 5
+   },
+   "method": "",
+   "star": {
+    "r": 55,
+    "b": 63,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.4328,
+   "change": 0.4328,
+   "batting": "second",
+   "score": "England 321/8 v India 316/9"
+  },
+  {
+   "key": "1000895:Pakistan",
+   "date": "2017-01-26",
+   "team": "Pakistan",
+   "opp": "Australia",
+   "event": "Pakistan in Australia ODI Series",
+   "stage": "5",
+   "venue": "Adelaide Oval",
+   "result": "L",
+   "by": {
+    "runs": 57
+   },
+   "method": "",
+   "star": {
+    "r": 100,
+    "b": 109,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 369/7 v Pakistan 312/9"
+  },
+  {
+   "key": "1077949:Pakistan",
+   "date": "2017-04-07",
+   "team": "Pakistan",
+   "opp": "West Indies",
+   "event": "Pakistan in West Indies ODI Series",
+   "stage": "1",
+   "venue": "Providence Stadium, Guyana",
+   "result": "L",
+   "by": {
+    "wickets": 4
+   },
+   "method": "",
+   "star": {
+    "r": 13,
+    "b": 21,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.1583,
+   "change": 0.1583,
+   "batting": "first",
+   "score": "Pakistan 308/5 v West Indies 309/6"
+  },
+  {
+   "key": "1077950:Pakistan",
+   "date": "2017-04-09",
+   "team": "Pakistan",
+   "opp": "West Indies",
+   "event": "Pakistan in West Indies ODI Series",
+   "stage": "2",
+   "venue": "Providence Stadium, Guyana",
+   "result": "W",
+   "by": {
+    "runs": 74
+   },
+   "method": "",
+   "star": {
+    "r": 125,
+    "b": 132,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 282/5 v West Indies 208/10"
+  },
+  {
+   "key": "1077951:Pakistan",
+   "date": "2017-04-11",
+   "team": "Pakistan",
+   "opp": "West Indies",
+   "event": "Pakistan in West Indies ODI Series",
+   "stage": "3",
+   "venue": "Providence Stadium, Guyana",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 16,
+    "b": 22,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "West Indies 233/9 v Pakistan 236/4"
+  },
+  {
+   "key": "1022353:India",
+   "date": "2017-06-04",
+   "team": "India",
+   "opp": "Pakistan",
+   "event": "ICC Champions Trophy",
+   "stage": "4",
+   "venue": "Edgbaston",
+   "result": "W",
+   "by": {
+    "runs": 124
+   },
+   "method": "D/L",
+   "star": {
+    "r": 81,
+    "b": 68,
+    "out": false
+   },
+   "opp_star": {
+    "r": 8,
+    "b": 12,
+    "out": true
+   },
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 319/3 v Pakistan 164/9"
+  },
+  {
+   "key": "1022353:Pakistan",
+   "date": "2017-06-04",
+   "team": "Pakistan",
+   "opp": "India",
+   "event": "ICC Champions Trophy",
+   "stage": "4",
+   "venue": "Edgbaston",
+   "result": "L",
+   "by": {
+    "runs": 124
+   },
+   "method": "D/L",
+   "star": {
+    "r": 8,
+    "b": 12,
+    "out": true
+   },
+   "opp_star": {
+    "r": 81,
+    "b": 68,
+    "out": false
+   },
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "India 319/3 v Pakistan 164/9"
+  },
+  {
+   "key": "1022359:Pakistan",
+   "date": "2017-06-07",
+   "team": "Pakistan",
+   "opp": "South Africa",
+   "event": "ICC Champions Trophy",
+   "stage": "7",
+   "venue": "Edgbaston",
+   "result": "W",
+   "by": {
+    "runs": 19
+   },
+   "method": "D/L",
+   "star": {
+    "r": 31,
+    "b": 51,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "South Africa 219/8 v Pakistan 119/3"
+  },
+  {
+   "key": "1022361:India",
+   "date": "2017-06-08",
+   "team": "India",
+   "opp": "Sri Lanka",
+   "event": "ICC Champions Trophy",
+   "stage": "8",
+   "venue": "The Oval",
+   "result": "L",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 0,
+    "b": 5,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.1026,
+   "change": 0.1026,
+   "batting": "first",
+   "score": "India 321/6 v Sri Lanka 322/3"
+  },
+  {
+   "key": "1022367:India",
+   "date": "2017-06-11",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "ICC Champions Trophy",
+   "stage": "11",
+   "venue": "The Oval",
+   "result": "W",
+   "by": {
+    "wickets": 8
+   },
+   "method": "",
+   "star": {
+    "r": 76,
+    "b": 101,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "South Africa 191/10 v India 193/2"
+  },
+  {
+   "key": "1022369:Pakistan",
+   "date": "2017-06-12",
+   "team": "Pakistan",
+   "opp": "Sri Lanka",
+   "event": "ICC Champions Trophy",
+   "stage": "12",
+   "venue": "Sophia Gardens, Cardiff",
+   "result": "W",
+   "by": {
+    "wickets": 3
+   },
+   "method": "",
+   "star": {
+    "r": 10,
+    "b": 18,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Sri Lanka 236/10 v Pakistan 237/7"
+  },
+  {
+   "key": "1022371:Pakistan",
+   "date": "2017-06-14",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "ICC Champions Trophy",
+   "stage": "Semi Final",
+   "venue": "Sophia Gardens, Cardiff",
+   "result": "W",
+   "by": {
+    "wickets": 8
+   },
+   "method": "",
+   "star": {
+    "r": 38,
+    "b": 45,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "England 211/10 v Pakistan 215/2"
+  },
+  {
+   "key": "1022373:India",
+   "date": "2017-06-15",
+   "team": "India",
+   "opp": "Bangladesh",
+   "event": "ICC Champions Trophy",
+   "stage": "Semi Final",
+   "venue": "Edgbaston",
+   "result": "W",
+   "by": {
+    "wickets": 9
+   },
+   "method": "",
+   "star": {
+    "r": 96,
+    "b": 78,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Bangladesh 264/7 v India 265/1"
+  },
+  {
+   "key": "1022375:India",
+   "date": "2017-06-18",
+   "team": "India",
+   "opp": "Pakistan",
+   "event": "ICC Champions Trophy",
+   "stage": "Final",
+   "venue": "The Oval",
+   "result": "L",
+   "by": {
+    "runs": 180
+   },
+   "method": "",
+   "star": {
+    "r": 5,
+    "b": 9,
+    "out": true
+   },
+   "opp_star": {
+    "r": 46,
+    "b": 52,
+    "out": true
+   },
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Pakistan 338/4 v India 158/10"
+  },
+  {
+   "key": "1022375:Pakistan",
+   "date": "2017-06-18",
+   "team": "Pakistan",
+   "opp": "India",
+   "event": "ICC Champions Trophy",
+   "stage": "Final",
+   "venue": "The Oval",
+   "result": "W",
+   "by": {
+    "runs": 180
+   },
+   "method": "",
+   "star": {
+    "r": 46,
+    "b": 52,
+    "out": true
+   },
+   "opp_star": {
+    "r": 5,
+    "b": 9,
+    "out": true
+   },
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 338/4 v India 158/10"
+  },
+  {
+   "key": "1098207:India",
+   "date": "2017-06-25",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "India in West Indies ODI Series",
+   "stage": "2",
+   "venue": "Queen's Park Oval, Port of Spain, Trinidad",
+   "result": "W",
+   "by": {
+    "runs": 105
+   },
+   "method": "",
+   "star": {
+    "r": 87,
+    "b": 66,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 310/5 v West Indies 205/6"
+  },
+  {
+   "key": "1098208:India",
+   "date": "2017-06-30",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "India in West Indies ODI Series",
+   "stage": "3",
+   "venue": "Sir Vivian Richards Stadium, North Sound, Antigua",
+   "result": "W",
+   "by": {
+    "runs": 93
+   },
+   "method": "",
+   "star": {
+    "r": 11,
+    "b": 22,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 251/4 v West Indies 158/10"
+  },
+  {
+   "key": "1098209:India",
+   "date": "2017-07-02",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "India in West Indies ODI Series",
+   "stage": "4",
+   "venue": "Sir Vivian Richards Stadium, North Sound, Antigua",
+   "result": "L",
+   "by": {
+    "runs": 11
+   },
+   "method": "",
+   "star": {
+    "r": 3,
+    "b": 12,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.6447,
+   "change": 0.6447,
+   "batting": "second",
+   "score": "West Indies 189/9 v India 178/10"
+  },
+  {
+   "key": "1098210:India",
+   "date": "2017-07-06",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "India in West Indies ODI Series",
+   "stage": "5",
+   "venue": "Sabina Park",
+   "result": "W",
+   "by": {
+    "wickets": 8
+   },
+   "method": "",
+   "star": {
+    "r": 111,
+    "b": 115,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "West Indies 205/9 v India 206/2"
+  },
+  {
+   "key": "1109605:India",
+   "date": "2017-08-20",
+   "team": "India",
+   "opp": "Sri Lanka",
+   "event": "India tour of Sri Lanka",
+   "stage": "1",
+   "venue": "Rangiri Dambulla International Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 9
+   },
+   "method": "",
+   "star": {
+    "r": 82,
+    "b": 70,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Sri Lanka 216/10 v India 220/1"
+  },
+  {
+   "key": "1109606:India",
+   "date": "2017-08-24",
+   "team": "India",
+   "opp": "Sri Lanka",
+   "event": "India tour of Sri Lanka",
+   "stage": "2",
+   "venue": "Pallekele International Cricket Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 3
+   },
+   "method": "D/L",
+   "star": {
+    "r": 4,
+    "b": 2,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Sri Lanka 236/8 v India 231/7"
+  },
+  {
+   "key": "1109607:India",
+   "date": "2017-08-27",
+   "team": "India",
+   "opp": "Sri Lanka",
+   "event": "India tour of Sri Lanka",
+   "stage": "3",
+   "venue": "Pallekele International Cricket Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 3,
+    "b": 11,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Sri Lanka 217/9 v India 218/4"
+  },
+  {
+   "key": "1109608:India",
+   "date": "2017-08-31",
+   "team": "India",
+   "opp": "Sri Lanka",
+   "event": "India tour of Sri Lanka",
+   "stage": "4",
+   "venue": "R Premadasa Stadium, Colombo",
+   "result": "W",
+   "by": {
+    "runs": 168
+   },
+   "method": "",
+   "star": {
+    "r": 131,
+    "b": 96,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 375/5 v Sri Lanka 207/10"
+  },
+  {
+   "key": "1109609:India",
+   "date": "2017-09-03",
+   "team": "India",
+   "opp": "Sri Lanka",
+   "event": "India tour of Sri Lanka",
+   "stage": "5",
+   "venue": "R Premadasa Stadium, Colombo",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 110,
+    "b": 116,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Sri Lanka 238/10 v India 239/4"
+  },
+  {
+   "key": "1119496:India",
+   "date": "2017-09-17",
+   "team": "India",
+   "opp": "Australia",
+   "event": "Australia tour of India",
+   "stage": "1",
+   "venue": "MA Chidambaram Stadium",
+   "result": "W",
+   "by": {
+    "runs": 26
+   },
+   "method": "D/L",
+   "star": {
+    "r": 0,
+    "b": 4,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 281/7 v Australia 137/9"
+  },
+  {
+   "key": "1119497:India",
+   "date": "2017-09-21",
+   "team": "India",
+   "opp": "Australia",
+   "event": "Australia tour of India",
+   "stage": "2",
+   "venue": "Eden Gardens, Kolkata",
+   "result": "W",
+   "by": {
+    "runs": 50
+   },
+   "method": "",
+   "star": {
+    "r": 92,
+    "b": 107,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 252/10 v Australia 202/10"
+  },
+  {
+   "key": "1119498:India",
+   "date": "2017-09-24",
+   "team": "India",
+   "opp": "Australia",
+   "event": "Australia tour of India",
+   "stage": "3",
+   "venue": "Holkar Cricket Stadium, Indore",
+   "result": "W",
+   "by": {
+    "wickets": 5
+   },
+   "method": "",
+   "star": {
+    "r": 28,
+    "b": 35,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 293/6 v India 294/5"
+  },
+  {
+   "key": "1119499:India",
+   "date": "2017-09-28",
+   "team": "India",
+   "opp": "Australia",
+   "event": "Australia tour of India",
+   "stage": "4",
+   "venue": "M Chinnaswamy Stadium, Bengaluru",
+   "result": "L",
+   "by": {
+    "runs": 21
+   },
+   "method": "",
+   "star": {
+    "r": 21,
+    "b": 21,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0493,
+   "change": 0.0493,
+   "batting": "second",
+   "score": "Australia 334/5 v India 313/8"
+  },
+  {
+   "key": "1119500:India",
+   "date": "2017-10-01",
+   "team": "India",
+   "opp": "Australia",
+   "event": "Australia tour of India",
+   "stage": "5",
+   "venue": "Vidarbha Cricket Association Stadium, Jamtha, Nagpur",
+   "result": "W",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 39,
+    "b": 55,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 242/9 v India 243/3"
+  },
+  {
+   "key": "1120286:Pakistan",
+   "date": "2017-10-13",
+   "team": "Pakistan",
+   "opp": "Sri Lanka",
+   "event": "Pakistan tour of United Arab Emirates",
+   "stage": "1",
+   "venue": "Dubai International Cricket Stadium",
+   "result": "W",
+   "by": {
+    "runs": 83
+   },
+   "method": "",
+   "star": {
+    "r": 103,
+    "b": 131,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 292/6 v Sri Lanka 209/8"
+  },
+  {
+   "key": "1120287:Pakistan",
+   "date": "2017-10-16",
+   "team": "Pakistan",
+   "opp": "Sri Lanka",
+   "event": "Pakistan tour of United Arab Emirates",
+   "stage": "2",
+   "venue": "Sheikh Zayed Stadium, Abu Dhabi",
+   "result": "W",
+   "by": {
+    "runs": 32
+   },
+   "method": "",
+   "star": {
+    "r": 101,
+    "b": 133,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 219/9 v Sri Lanka 187/10"
+  },
+  {
+   "key": "1120288:Pakistan",
+   "date": "2017-10-18",
+   "team": "Pakistan",
+   "opp": "Sri Lanka",
+   "event": "Pakistan tour of United Arab Emirates",
+   "stage": "3",
+   "venue": "Sheikh Zayed Stadium, Abu Dhabi",
+   "result": "W",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 30,
+    "b": 39,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Sri Lanka 208/10 v Pakistan 209/3"
+  },
+  {
+   "key": "1120289:Pakistan",
+   "date": "2017-10-20",
+   "team": "Pakistan",
+   "opp": "Sri Lanka",
+   "event": "Pakistan tour of United Arab Emirates",
+   "stage": "4",
+   "venue": "Sharjah Cricket Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 69,
+    "b": 101,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Sri Lanka 173/10 v Pakistan 177/3"
+  },
+  {
+   "key": "1120090:India",
+   "date": "2017-10-22",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "New Zealand tour of India",
+   "stage": "1",
+   "venue": "Wankhede Stadium, Mumbai",
+   "result": "L",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 121,
+    "b": 125,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.1201,
+   "change": 0.1201,
+   "batting": "first",
+   "score": "India 280/8 v New Zealand 284/4"
+  },
+  {
+   "key": "1120290:Pakistan",
+   "date": "2017-10-23",
+   "team": "Pakistan",
+   "opp": "Sri Lanka",
+   "event": "Pakistan tour of United Arab Emirates",
+   "stage": "5",
+   "venue": "Sharjah Cricket Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 9
+   },
+   "method": "",
+   "star": null,
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Sri Lanka 103/10 v Pakistan 105/1"
+  },
+  {
+   "key": "1120091:India",
+   "date": "2017-10-25",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "New Zealand tour of India",
+   "stage": "2",
+   "venue": "Maharashtra Cricket Association Stadium, Pune",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 29,
+    "b": 29,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "New Zealand 230/9 v India 232/4"
+  },
+  {
+   "key": "1120092:India",
+   "date": "2017-10-29",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "New Zealand tour of India",
+   "stage": "3",
+   "venue": "Green Park, Kanpur",
+   "result": "W",
+   "by": {
+    "runs": 6
+   },
+   "method": "",
+   "star": {
+    "r": 113,
+    "b": 106,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.6568,
+   "change": -0.3432,
+   "batting": "first",
+   "score": "India 337/6 v New Zealand 331/7"
+  },
+  {
+   "key": "1115802:Pakistan",
+   "date": "2018-01-06",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "Pakistan tour of New Zealand",
+   "stage": "1",
+   "venue": "Basin Reserve, Wellington",
+   "result": "L",
+   "by": {
+    "runs": 61
+   },
+   "method": "D/L",
+   "star": {
+    "r": 0,
+    "b": 1,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "New Zealand 315/7 v Pakistan 166/6"
+  },
+  {
+   "key": "1115803:Pakistan",
+   "date": "2018-01-09",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "Pakistan tour of New Zealand",
+   "stage": "2",
+   "venue": "Saxton Oval, Nelson",
+   "result": "L",
+   "by": {
+    "wickets": 8
+   },
+   "method": "D/L",
+   "star": {
+    "r": 10,
+    "b": 17,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0355,
+   "change": 0.0355,
+   "batting": "first",
+   "score": "Pakistan 246/9 v New Zealand 151/2"
+  },
+  {
+   "key": "1115804:Pakistan",
+   "date": "2018-01-13",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "Pakistan tour of New Zealand",
+   "stage": "3",
+   "venue": "University Oval, Dunedin",
+   "result": "L",
+   "by": {
+    "runs": 183
+   },
+   "method": "",
+   "star": {
+    "r": 8,
+    "b": 28,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "New Zealand 257/10 v Pakistan 74/10"
+  },
+  {
+   "key": "1115805:Pakistan",
+   "date": "2018-01-16",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "Pakistan tour of New Zealand",
+   "stage": "4",
+   "venue": "Seddon Park, Hamilton",
+   "result": "L",
+   "by": {
+    "wickets": 5
+   },
+   "method": "",
+   "star": {
+    "r": 3,
+    "b": 9,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 262/8 v New Zealand 263/5"
+  },
+  {
+   "key": "1115806:Pakistan",
+   "date": "2018-01-19",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "Pakistan tour of New Zealand",
+   "stage": "5",
+   "venue": "Basin Reserve, Wellington",
+   "result": "L",
+   "by": {
+    "runs": 15
+   },
+   "method": "",
+   "star": {
+    "r": 10,
+    "b": 21,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.1943,
+   "change": 0.1943,
+   "batting": "second",
+   "score": "New Zealand 271/7 v Pakistan 256/10"
+  },
+  {
+   "key": "1122279:India",
+   "date": "2018-02-01",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "India tour of South Africa",
+   "stage": "1",
+   "venue": "Kingsmead, Durban",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 112,
+    "b": 119,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "South Africa 269/8 v India 270/4"
+  },
+  {
+   "key": "1122280:India",
+   "date": "2018-02-04",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "India tour of South Africa",
+   "stage": "2",
+   "venue": "SuperSport Park, Centurion",
+   "result": "W",
+   "by": {
+    "wickets": 9
+   },
+   "method": "",
+   "star": {
+    "r": 46,
+    "b": 50,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "South Africa 118/10 v India 119/1"
+  },
+  {
+   "key": "1122281:India",
+   "date": "2018-02-07",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "India tour of South Africa",
+   "stage": "3",
+   "venue": "Newlands, Cape Town",
+   "result": "W",
+   "by": {
+    "runs": 124
+   },
+   "method": "",
+   "star": {
+    "r": 160,
+    "b": 159,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 303/6 v South Africa 179/10"
+  },
+  {
+   "key": "1122282:India",
+   "date": "2018-02-10",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "India tour of South Africa",
+   "stage": "4",
+   "venue": "Wanderers Stadium, Johannesburg",
+   "result": "L",
+   "by": {
+    "wickets": 5
+   },
+   "method": "D/L",
+   "star": {
+    "r": 75,
+    "b": 83,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0151,
+   "change": 0.0151,
+   "batting": "first",
+   "score": "India 289/7 v South Africa 207/5"
+  },
+  {
+   "key": "1122283:India",
+   "date": "2018-02-13",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "India tour of South Africa",
+   "stage": "5",
+   "venue": "St George's Park, Port Elizabeth",
+   "result": "W",
+   "by": {
+    "runs": 73
+   },
+   "method": "",
+   "star": {
+    "r": 36,
+    "b": 54,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 274/7 v South Africa 201/10"
+  },
+  {
+   "key": "1122284:India",
+   "date": "2018-02-16",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "India tour of South Africa",
+   "stage": "6",
+   "venue": "SuperSport Park, Centurion",
+   "result": "W",
+   "by": {
+    "wickets": 8
+   },
+   "method": "",
+   "star": {
+    "r": 129,
+    "b": 96,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "South Africa 204/10 v India 206/2"
+  },
+  {
+   "key": "1119546:India",
+   "date": "2018-07-12",
+   "team": "India",
+   "opp": "England",
+   "event": "India tour of Ireland and England",
+   "stage": "1",
+   "venue": "Trent Bridge",
+   "result": "W",
+   "by": {
+    "wickets": 8
+   },
+   "method": "",
+   "star": {
+    "r": 75,
+    "b": 82,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "England 268/10 v India 269/2"
+  },
+  {
+   "key": "1142920:Pakistan",
+   "date": "2018-07-13",
+   "team": "Pakistan",
+   "opp": "Zimbabwe",
+   "event": "Pakistan tour of Zimbabwe",
+   "stage": "1",
+   "venue": "Queens Sports Club, Bulawayo",
+   "result": "W",
+   "by": {
+    "runs": 201
+   },
+   "method": "",
+   "star": {
+    "r": 30,
+    "b": 34,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 308/7 v Zimbabwe 107/10"
+  },
+  {
+   "key": "1119547:India",
+   "date": "2018-07-14",
+   "team": "India",
+   "opp": "England",
+   "event": "India tour of Ireland and England",
+   "stage": "2",
+   "venue": "Lord's",
+   "result": "L",
+   "by": {
+    "runs": 86
+   },
+   "method": "",
+   "star": {
+    "r": 45,
+    "b": 56,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "England 322/7 v India 236/10"
+  },
+  {
+   "key": "1142921:Pakistan",
+   "date": "2018-07-16",
+   "team": "Pakistan",
+   "opp": "Zimbabwe",
+   "event": "Pakistan tour of Zimbabwe",
+   "stage": "2",
+   "venue": "Queens Sports Club, Bulawayo",
+   "result": "W",
+   "by": {
+    "wickets": 9
+   },
+   "method": "",
+   "star": {
+    "r": 29,
+    "b": 36,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Zimbabwe 194/10 v Pakistan 195/1"
+  },
+  {
+   "key": "1119548:India",
+   "date": "2018-07-17",
+   "team": "India",
+   "opp": "England",
+   "event": "India tour of Ireland and England",
+   "stage": "3",
+   "venue": "Headingley",
+   "result": "L",
+   "by": {
+    "wickets": 8
+   },
+   "method": "",
+   "star": {
+    "r": 71,
+    "b": 72,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0135,
+   "change": 0.0135,
+   "batting": "first",
+   "score": "India 256/8 v England 260/2"
+  },
+  {
+   "key": "1142922:Pakistan",
+   "date": "2018-07-18",
+   "team": "Pakistan",
+   "opp": "Zimbabwe",
+   "event": "Pakistan tour of Zimbabwe",
+   "stage": "3",
+   "venue": "Queens Sports Club, Bulawayo",
+   "result": "W",
+   "by": {
+    "wickets": 9
+   },
+   "method": "",
+   "star": {
+    "r": 19,
+    "b": 34,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Zimbabwe 67/10 v Pakistan 69/1"
+  },
+  {
+   "key": "1142923:Pakistan",
+   "date": "2018-07-20",
+   "team": "Pakistan",
+   "opp": "Zimbabwe",
+   "event": "Pakistan tour of Zimbabwe",
+   "stage": "4",
+   "venue": "Queens Sports Club, Bulawayo",
+   "result": "W",
+   "by": {
+    "runs": 244
+   },
+   "method": "",
+   "star": null,
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 399/1 v Zimbabwe 155/10"
+  },
+  {
+   "key": "1142924:Pakistan",
+   "date": "2018-07-22",
+   "team": "Pakistan",
+   "opp": "Zimbabwe",
+   "event": "Pakistan tour of Zimbabwe",
+   "stage": "5",
+   "venue": "Queens Sports Club, Bulawayo",
+   "result": "W",
+   "by": {
+    "runs": 131
+   },
+   "method": "",
+   "star": {
+    "r": 106,
+    "b": 76,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 364/4 v Zimbabwe 233/4"
+  },
+  {
+   "key": "1153244:Pakistan",
+   "date": "2018-09-16",
+   "team": "Pakistan",
+   "opp": "Hong Kong",
+   "event": "Asia Cup",
+   "stage": "2",
+   "venue": "Dubai International Cricket Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 8
+   },
+   "method": "",
+   "star": {
+    "r": 33,
+    "b": 36,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Hong Kong 116/10 v Pakistan 120/2"
+  },
+  {
+   "key": "1153247:Pakistan",
+   "date": "2018-09-19",
+   "team": "Pakistan",
+   "opp": "India",
+   "event": "Asia Cup",
+   "stage": "5",
+   "venue": "Dubai International Cricket Stadium",
+   "result": "L",
+   "by": {
+    "wickets": 8
+   },
+   "method": "",
+   "star": {
+    "r": 47,
+    "b": 62,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 162/10 v India 164/2"
+  },
+  {
+   "key": "1153251:Pakistan",
+   "date": "2018-09-23",
+   "team": "Pakistan",
+   "opp": "India",
+   "event": "Asia Cup",
+   "stage": "3",
+   "venue": "Dubai International Cricket Stadium",
+   "result": "L",
+   "by": {
+    "wickets": 9
+   },
+   "method": "",
+   "star": {
+    "r": 9,
+    "b": 25,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 237/7 v India 238/1"
+  },
+  {
+   "key": "1153254:Pakistan",
+   "date": "2018-09-26",
+   "team": "Pakistan",
+   "opp": "Bangladesh",
+   "event": "Asia Cup",
+   "stage": "6",
+   "venue": "Sheikh Zayed Stadium, Abu Dhabi",
+   "result": "L",
+   "by": {
+    "runs": 37
+   },
+   "method": "",
+   "star": {
+    "r": 1,
+    "b": 3,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0222,
+   "change": 0.0222,
+   "batting": "second",
+   "score": "Bangladesh 239/10 v Pakistan 202/9"
+  },
+  {
+   "key": "1157754:India",
+   "date": "2018-10-21",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "West Indies tour of India",
+   "stage": "1",
+   "venue": "Barsapara Cricket Stadium, Guwahati",
+   "result": "W",
+   "by": {
+    "wickets": 8
+   },
+   "method": "",
+   "star": {
+    "r": 140,
+    "b": 107,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "West Indies 322/8 v India 326/2"
+  },
+  {
+   "key": "1157755:India",
+   "date": "2018-10-24",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "West Indies tour of India",
+   "stage": "2",
+   "venue": "Andhra Cricket Association-Visakhapatnam District Cricket Association Stadium, Visakhapatnam",
+   "result": "T",
+   "by": {},
+   "method": "",
+   "star": {
+    "r": 157,
+    "b": 129,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 0.5,
+   "p_swap": 0.0361,
+   "change": -0.4639,
+   "batting": "first",
+   "score": "India 321/6 v West Indies 321/7"
+  },
+  {
+   "key": "1157756:India",
+   "date": "2018-10-27",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "West Indies tour of India",
+   "stage": "3",
+   "venue": "Maharashtra Cricket Association Stadium, Pune",
+   "result": "L",
+   "by": {
+    "runs": 43
+   },
+   "method": "",
+   "star": {
+    "r": 107,
+    "b": 119,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0111,
+   "change": 0.0111,
+   "batting": "second",
+   "score": "West Indies 283/9 v India 240/10"
+  },
+  {
+   "key": "1157757:India",
+   "date": "2018-10-29",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "West Indies tour of India",
+   "stage": "4",
+   "venue": "Brabourne Stadium, Mumbai",
+   "result": "W",
+   "by": {
+    "runs": 224
+   },
+   "method": "",
+   "star": {
+    "r": 16,
+    "b": 17,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 377/5 v West Indies 153/10"
+  },
+  {
+   "key": "1157758:India",
+   "date": "2018-11-01",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "West Indies tour of India",
+   "stage": "5",
+   "venue": "Greenfield International Stadium, Thiruvananthapuram",
+   "result": "W",
+   "by": {
+    "wickets": 9
+   },
+   "method": "",
+   "star": {
+    "r": 33,
+    "b": 29,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "West Indies 104/10 v India 105/1"
+  },
+  {
+   "key": "1157378:Pakistan",
+   "date": "2018-11-07",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "New Zealand tour of United Arab Emirates",
+   "stage": "1",
+   "venue": "Sheikh Zayed Stadium, Abu Dhabi",
+   "result": "L",
+   "by": {
+    "runs": 47
+   },
+   "method": "",
+   "star": {
+    "r": 0,
+    "b": 1,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0135,
+   "change": 0.0135,
+   "batting": "second",
+   "score": "New Zealand 266/9 v Pakistan 219/10"
+  },
+  {
+   "key": "1157379:Pakistan",
+   "date": "2018-11-09",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "New Zealand tour of United Arab Emirates",
+   "stage": "2",
+   "venue": "Sheikh Zayed Stadium, Abu Dhabi",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 46,
+    "b": 50,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "New Zealand 209/9 v Pakistan 212/4"
+  },
+  {
+   "key": "1144997:India",
+   "date": "2019-01-12",
+   "team": "India",
+   "opp": "Australia",
+   "event": "India tour of Australia",
+   "stage": "1",
+   "venue": "Sydney Cricket Ground",
+   "result": "L",
+   "by": {
+    "runs": 34
+   },
+   "method": "",
+   "star": {
+    "r": 3,
+    "b": 8,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.1056,
+   "change": 0.1056,
+   "batting": "second",
+   "score": "Australia 288/5 v India 254/9"
+  },
+  {
+   "key": "1144998:India",
+   "date": "2019-01-15",
+   "team": "India",
+   "opp": "Australia",
+   "event": "India tour of Australia",
+   "stage": "2",
+   "venue": "Adelaide Oval",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 104,
+    "b": 112,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.8761,
+   "change": -0.1239,
+   "batting": "second",
+   "score": "Australia 298/9 v India 299/4"
+  },
+  {
+   "key": "1144999:India",
+   "date": "2019-01-18",
+   "team": "India",
+   "opp": "Australia",
+   "event": "India tour of Australia",
+   "stage": "3",
+   "venue": "Melbourne Cricket Ground",
+   "result": "W",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 46,
+    "b": 62,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 230/10 v India 234/3"
+  },
+  {
+   "key": "1144156:Pakistan",
+   "date": "2019-01-19",
+   "team": "Pakistan",
+   "opp": "South Africa",
+   "event": "Pakistan tour of South Africa",
+   "stage": "1",
+   "venue": "St George's Park, Port Elizabeth",
+   "result": "W",
+   "by": {
+    "wickets": 5
+   },
+   "method": "",
+   "star": {
+    "r": 49,
+    "b": 69,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.9584,
+   "change": -0.0416,
+   "batting": "second",
+   "score": "South Africa 266/2 v Pakistan 267/5"
+  },
+  {
+   "key": "1144157:Pakistan",
+   "date": "2019-01-22",
+   "team": "Pakistan",
+   "opp": "South Africa",
+   "event": "Pakistan tour of South Africa",
+   "stage": "2",
+   "venue": "Kingsmead, Durban",
+   "result": "L",
+   "by": {
+    "wickets": 5
+   },
+   "method": "",
+   "star": {
+    "r": 12,
+    "b": 15,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 203/10 v South Africa 207/5"
+  },
+  {
+   "key": "1153691:India",
+   "date": "2019-01-23",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "India tour of New Zealand",
+   "stage": "1",
+   "venue": "McLean Park, Napier",
+   "result": "W",
+   "by": {
+    "wickets": 8
+   },
+   "method": "D/L",
+   "star": {
+    "r": 45,
+    "b": 59,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "New Zealand 157/10 v India 156/2"
+  },
+  {
+   "key": "1144158:Pakistan",
+   "date": "2019-01-25",
+   "team": "Pakistan",
+   "opp": "South Africa",
+   "event": "Pakistan tour of South Africa",
+   "stage": "3",
+   "venue": "SuperSport Park, Centurion",
+   "result": "L",
+   "by": {
+    "runs": 13
+   },
+   "method": "D/L",
+   "star": {
+    "r": 69,
+    "b": 72,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0089,
+   "change": 0.0089,
+   "batting": "first",
+   "score": "Pakistan 317/6 v South Africa 187/2"
+  },
+  {
+   "key": "1153692:India",
+   "date": "2019-01-26",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "India tour of New Zealand",
+   "stage": "2",
+   "venue": "Bay Oval, Mount Maunganui",
+   "result": "W",
+   "by": {
+    "runs": 90
+   },
+   "method": "",
+   "star": {
+    "r": 43,
+    "b": 45,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 324/4 v New Zealand 234/10"
+  },
+  {
+   "key": "1144159:Pakistan",
+   "date": "2019-01-27",
+   "team": "Pakistan",
+   "opp": "South Africa",
+   "event": "Pakistan tour of South Africa",
+   "stage": "4",
+   "venue": "Wanderers Stadium, Johannesburg",
+   "result": "W",
+   "by": {
+    "wickets": 8
+   },
+   "method": "",
+   "star": {
+    "r": 41,
+    "b": 53,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "South Africa 164/10 v Pakistan 168/2"
+  },
+  {
+   "key": "1153693:India",
+   "date": "2019-01-28",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "India tour of New Zealand",
+   "stage": "3",
+   "venue": "Bay Oval, Mount Maunganui",
+   "result": "W",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 60,
+    "b": 74,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "New Zealand 243/10 v India 245/3"
+  },
+  {
+   "key": "1144160:Pakistan",
+   "date": "2019-01-30",
+   "team": "Pakistan",
+   "opp": "South Africa",
+   "event": "Pakistan tour of South Africa",
+   "stage": "5",
+   "venue": "Newlands, Cape Town",
+   "result": "L",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 24,
+    "b": 25,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 240/8 v South Africa 241/3"
+  },
+  {
+   "key": "1168242:India",
+   "date": "2019-03-02",
+   "team": "India",
+   "opp": "Australia",
+   "event": "Australia tour of India",
+   "stage": "1",
+   "venue": "Rajiv Gandhi International Stadium, Uppal",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 44,
+    "b": 45,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 236/7 v India 240/4"
+  },
+  {
+   "key": "1168243:India",
+   "date": "2019-03-05",
+   "team": "India",
+   "opp": "Australia",
+   "event": "Australia tour of India",
+   "stage": "2",
+   "venue": "Vidarbha Cricket Association Stadium, Jamtha, Nagpur",
+   "result": "W",
+   "by": {
+    "runs": 8
+   },
+   "method": "",
+   "star": {
+    "r": 116,
+    "b": 120,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.3078,
+   "change": -0.6922,
+   "batting": "first",
+   "score": "India 250/10 v Australia 242/10"
+  },
+  {
+   "key": "1168244:India",
+   "date": "2019-03-08",
+   "team": "India",
+   "opp": "Australia",
+   "event": "Australia tour of India",
+   "stage": "3",
+   "venue": "JSCA International Stadium Complex, Ranchi",
+   "result": "L",
+   "by": {
+    "runs": 32
+   },
+   "method": "",
+   "star": {
+    "r": 123,
+    "b": 95,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 313/5 v India 281/10"
+  },
+  {
+   "key": "1168245:India",
+   "date": "2019-03-10",
+   "team": "India",
+   "opp": "Australia",
+   "event": "Australia tour of India",
+   "stage": "4",
+   "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali, Chandigarh",
+   "result": "L",
+   "by": {
+    "wickets": 4
+   },
+   "method": "",
+   "star": {
+    "r": 7,
+    "b": 6,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0126,
+   "change": 0.0126,
+   "batting": "first",
+   "score": "India 358/9 v Australia 359/6"
+  },
+  {
+   "key": "1168246:India",
+   "date": "2019-03-13",
+   "team": "India",
+   "opp": "Australia",
+   "event": "Australia tour of India",
+   "stage": "5",
+   "venue": "Feroz Shah Kotla, Delhi",
+   "result": "L",
+   "by": {
+    "runs": 35
+   },
+   "method": "",
+   "star": {
+    "r": 20,
+    "b": 22,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.1106,
+   "change": 0.1106,
+   "batting": "second",
+   "score": "Australia 272/9 v India 237/10"
+  },
+  {
+   "key": "1152842:Pakistan",
+   "date": "2019-05-11",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "Pakistan tour of England",
+   "stage": "2",
+   "venue": "The Rose Bowl, Southampton",
+   "result": "L",
+   "by": {
+    "runs": 12
+   },
+   "method": "",
+   "star": {
+    "r": 51,
+    "b": 52,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0275,
+   "change": 0.0275,
+   "batting": "second",
+   "score": "England 373/3 v Pakistan 361/7"
+  },
+  {
+   "key": "1152843:Pakistan",
+   "date": "2019-05-14",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "Pakistan tour of England",
+   "stage": "3",
+   "venue": "County Ground, Bristol",
+   "result": "L",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 15,
+    "b": 11,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 358/9 v England 359/4"
+  },
+  {
+   "key": "1152844:Pakistan",
+   "date": "2019-05-17",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "Pakistan tour of England",
+   "stage": "4",
+   "venue": "Trent Bridge",
+   "result": "L",
+   "by": {
+    "wickets": 3
+   },
+   "method": "",
+   "star": {
+    "r": 115,
+    "b": 112,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.2182,
+   "change": 0.2182,
+   "batting": "first",
+   "score": "Pakistan 340/7 v England 341/7"
+  },
+  {
+   "key": "1152845:Pakistan",
+   "date": "2019-05-19",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "Pakistan tour of England",
+   "stage": "5",
+   "venue": "Headingley",
+   "result": "L",
+   "by": {
+    "runs": 54
+   },
+   "method": "",
+   "star": {
+    "r": 80,
+    "b": 83,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "England 351/9 v Pakistan 297/10"
+  },
+  {
+   "key": "1144484:Pakistan",
+   "date": "2019-05-31",
+   "team": "Pakistan",
+   "opp": "West Indies",
+   "event": "World Cup",
+   "stage": "2",
+   "venue": "Trent Bridge",
+   "result": "L",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 22,
+    "b": 33,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 105/10 v West Indies 108/3"
+  },
+  {
+   "key": "1144488:Pakistan",
+   "date": "2019-06-03",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "World Cup",
+   "stage": "6",
+   "venue": "Trent Bridge",
+   "result": "W",
+   "by": {
+    "runs": 14
+   },
+   "method": "",
+   "star": {
+    "r": 63,
+    "b": 66,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.8397,
+   "change": -0.1603,
+   "batting": "first",
+   "score": "Pakistan 348/8 v England 334/9"
+  },
+  {
+   "key": "1144490:India",
+   "date": "2019-06-05",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "World Cup",
+   "stage": "8",
+   "venue": "The Rose Bowl, Southampton",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 18,
+    "b": 34,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "South Africa 227/9 v India 230/4"
+  },
+  {
+   "key": "1144496:India",
+   "date": "2019-06-09",
+   "team": "India",
+   "opp": "Australia",
+   "event": "World Cup",
+   "stage": "14",
+   "venue": "The Oval",
+   "result": "W",
+   "by": {
+    "runs": 36
+   },
+   "method": "",
+   "star": {
+    "r": 82,
+    "b": 77,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 352/5 v Australia 316/10"
+  },
+  {
+   "key": "1144499:Pakistan",
+   "date": "2019-06-12",
+   "team": "Pakistan",
+   "opp": "Australia",
+   "event": "World Cup",
+   "stage": "17",
+   "venue": "The County Ground, Taunton",
+   "result": "L",
+   "by": {
+    "runs": 41
+   },
+   "method": "",
+   "star": {
+    "r": 30,
+    "b": 28,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 307/10 v Pakistan 266/10"
+  },
+  {
+   "key": "1144504:India",
+   "date": "2019-06-16",
+   "team": "India",
+   "opp": "Pakistan",
+   "event": "World Cup",
+   "stage": "22",
+   "venue": "Old Trafford",
+   "result": "W",
+   "by": {
+    "runs": 89
+   },
+   "method": "D/L",
+   "star": {
+    "r": 77,
+    "b": 65,
+    "out": true
+   },
+   "opp_star": {
+    "r": 48,
+    "b": 57,
+    "out": true
+   },
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 336/5 v Pakistan 212/6"
+  },
+  {
+   "key": "1144504:Pakistan",
+   "date": "2019-06-16",
+   "team": "Pakistan",
+   "opp": "India",
+   "event": "World Cup",
+   "stage": "22",
+   "venue": "Old Trafford",
+   "result": "L",
+   "by": {
+    "runs": 89
+   },
+   "method": "D/L",
+   "star": {
+    "r": 48,
+    "b": 57,
+    "out": true
+   },
+   "opp_star": {
+    "r": 77,
+    "b": 65,
+    "out": true
+   },
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "India 336/5 v Pakistan 212/6"
+  },
+  {
+   "key": "1144512:Pakistan",
+   "date": "2019-06-23",
+   "team": "Pakistan",
+   "opp": "South Africa",
+   "event": "World Cup",
+   "stage": "30",
+   "venue": "Lord's",
+   "result": "W",
+   "by": {
+    "runs": 49
+   },
+   "method": "",
+   "star": {
+    "r": 69,
+    "b": 80,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 308/7 v South Africa 259/9"
+  },
+  {
+   "key": "1144515:Pakistan",
+   "date": "2019-06-26",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "World Cup",
+   "stage": "33",
+   "venue": "Edgbaston",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 101,
+    "b": 127,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.9488,
+   "change": -0.0512,
+   "batting": "second",
+   "score": "New Zealand 237/6 v Pakistan 241/4"
+  },
+  {
+   "key": "1144516:India",
+   "date": "2019-06-27",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "World Cup",
+   "stage": "34",
+   "venue": "Old Trafford",
+   "result": "W",
+   "by": {
+    "runs": 125
+   },
+   "method": "",
+   "star": {
+    "r": 72,
+    "b": 82,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 268/7 v West Indies 143/10"
+  },
+  {
+   "key": "1144520:India",
+   "date": "2019-06-30",
+   "team": "India",
+   "opp": "England",
+   "event": "World Cup",
+   "stage": "38",
+   "venue": "Edgbaston",
+   "result": "L",
+   "by": {
+    "runs": 31
+   },
+   "method": "",
+   "star": {
+    "r": 66,
+    "b": 76,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0549,
+   "change": 0.0549,
+   "batting": "second",
+   "score": "England 337/7 v India 306/5"
+  },
+  {
+   "key": "1144522:India",
+   "date": "2019-07-02",
+   "team": "India",
+   "opp": "Bangladesh",
+   "event": "World Cup",
+   "stage": "40",
+   "venue": "Edgbaston",
+   "result": "W",
+   "by": {
+    "runs": 28
+   },
+   "method": "",
+   "star": {
+    "r": 26,
+    "b": 27,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 314/9 v Bangladesh 286/10"
+  },
+  {
+   "key": "1144525:Pakistan",
+   "date": "2019-07-05",
+   "team": "Pakistan",
+   "opp": "Bangladesh",
+   "event": "World Cup",
+   "stage": "43",
+   "venue": "Lord's",
+   "result": "W",
+   "by": {
+    "runs": 94
+   },
+   "method": "",
+   "star": {
+    "r": 96,
+    "b": 98,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 315/9 v Bangladesh 221/10"
+  },
+  {
+   "key": "1144526:India",
+   "date": "2019-07-06",
+   "team": "India",
+   "opp": "Sri Lanka",
+   "event": "World Cup",
+   "stage": "44",
+   "venue": "Headingley",
+   "result": "W",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 34,
+    "b": 41,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Sri Lanka 264/7 v India 265/3"
+  },
+  {
+   "key": "1144528:India",
+   "date": "2019-07-09",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "World Cup",
+   "stage": "Semi Final",
+   "venue": "Old Trafford",
+   "result": "L",
+   "by": {
+    "runs": 18
+   },
+   "method": "",
+   "star": {
+    "r": 1,
+    "b": 6,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.349,
+   "change": 0.349,
+   "batting": "second",
+   "score": "New Zealand 239/8 v India 221/10"
+  },
+  {
+   "key": "1188625:India",
+   "date": "2019-08-11",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "India tour of United States of America and West Indies",
+   "stage": "2",
+   "venue": "Queen's Park Oval, Port of Spain, Trinidad",
+   "result": "W",
+   "by": {
+    "runs": 59
+   },
+   "method": "D/L",
+   "star": {
+    "r": 120,
+    "b": 125,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 279/7 v West Indies 210/10"
+  },
+  {
+   "key": "1188626:India",
+   "date": "2019-08-14",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "India tour of United States of America and West Indies",
+   "stage": "3",
+   "venue": "Queen's Park Oval, Port of Spain, Trinidad",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "D/L",
+   "star": {
+    "r": 114,
+    "b": 99,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.9421,
+   "change": -0.0579,
+   "batting": "second",
+   "score": "West Indies 240/7 v India 256/4"
+  },
+  {
+   "key": "1198487:Pakistan",
+   "date": "2019-09-30",
+   "team": "Pakistan",
+   "opp": "Sri Lanka",
+   "event": "Sri Lanka tour of Pakistan",
+   "stage": "2",
+   "venue": "National Stadium, Karachi",
+   "result": "W",
+   "by": {
+    "runs": 67
+   },
+   "method": "",
+   "star": {
+    "r": 115,
+    "b": 105,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 305/7 v Sri Lanka 238/10"
+  },
+  {
+   "key": "1198488:Pakistan",
+   "date": "2019-10-02",
+   "team": "Pakistan",
+   "opp": "Sri Lanka",
+   "event": "Sri Lanka tour of Pakistan",
+   "stage": "3",
+   "venue": "National Stadium, Karachi",
+   "result": "W",
+   "by": {
+    "wickets": 5
+   },
+   "method": "",
+   "star": {
+    "r": 31,
+    "b": 26,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.7997,
+   "change": -0.2003,
+   "batting": "second",
+   "score": "Sri Lanka 297/9 v Pakistan 299/5"
+  },
+  {
+   "key": "1187021:India",
+   "date": "2019-12-15",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "West Indies tour of India",
+   "stage": "1",
+   "venue": "MA Chidambaram Stadium",
+   "result": "L",
+   "by": {
+    "wickets": 8
+   },
+   "method": "",
+   "star": {
+    "r": 4,
+    "b": 4,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0752,
+   "change": 0.0752,
+   "batting": "first",
+   "score": "India 287/8 v West Indies 291/2"
+  },
+  {
+   "key": "1187022:India",
+   "date": "2019-12-18",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "West Indies tour of India",
+   "stage": "2",
+   "venue": "Andhra Cricket Association-Visakhapatnam District Cricket Association Stadium, Visakhapatnam",
+   "result": "W",
+   "by": {
+    "runs": 107
+   },
+   "method": "",
+   "star": {
+    "r": 0,
+    "b": 1,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 387/5 v West Indies 280/10"
+  },
+  {
+   "key": "1187023:India",
+   "date": "2019-12-22",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "West Indies tour of India",
+   "stage": "3",
+   "venue": "Barabati Stadium, Cuttack",
+   "result": "W",
+   "by": {
+    "wickets": 4
+   },
+   "method": "",
+   "star": {
+    "r": 85,
+    "b": 81,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.8647,
+   "change": -0.1353,
+   "batting": "second",
+   "score": "West Indies 315/5 v India 316/6"
+  },
+  {
+   "key": "1187027:India",
+   "date": "2020-01-14",
+   "team": "India",
+   "opp": "Australia",
+   "event": "Australia tour of India",
+   "stage": "1",
+   "venue": "Wankhede Stadium, Mumbai",
+   "result": "L",
+   "by": {
+    "wickets": 10
+   },
+   "method": "",
+   "star": {
+    "r": 16,
+    "b": 14,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 255/10 v Australia 258/0"
+  },
+  {
+   "key": "1187028:India",
+   "date": "2020-01-17",
+   "team": "India",
+   "opp": "Australia",
+   "event": "Australia tour of India",
+   "stage": "2",
+   "venue": "Saurashtra Cricket Association Stadium, Rajkot",
+   "result": "W",
+   "by": {
+    "runs": 36
+   },
+   "method": "",
+   "star": {
+    "r": 78,
+    "b": 76,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 340/6 v Australia 304/10"
+  },
+  {
+   "key": "1187029:India",
+   "date": "2020-01-19",
+   "team": "India",
+   "opp": "Australia",
+   "event": "Australia tour of India",
+   "stage": "3",
+   "venue": "M Chinnaswamy Stadium, Bengaluru",
+   "result": "W",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 89,
+    "b": 91,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 286/9 v India 289/3"
+  },
+  {
+   "key": "1187682:India",
+   "date": "2020-02-05",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "India tour of New Zealand",
+   "stage": "1",
+   "venue": "Seddon Park, Hamilton",
+   "result": "L",
+   "by": {
+    "wickets": 4
+   },
+   "method": "",
+   "star": {
+    "r": 51,
+    "b": 63,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.2958,
+   "change": 0.2958,
+   "batting": "first",
+   "score": "India 347/4 v New Zealand 348/6"
+  },
+  {
+   "key": "1187683:India",
+   "date": "2020-02-08",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "India tour of New Zealand",
+   "stage": "2",
+   "venue": "Eden Park, Auckland",
+   "result": "L",
+   "by": {
+    "runs": 22
+   },
+   "method": "",
+   "star": {
+    "r": 15,
+    "b": 25,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.2131,
+   "change": 0.2131,
+   "batting": "second",
+   "score": "New Zealand 273/8 v India 251/10"
+  },
+  {
+   "key": "1187684:India",
+   "date": "2020-02-11",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "India tour of New Zealand",
+   "stage": "3",
+   "venue": "Bay Oval, Mount Maunganui",
+   "result": "L",
+   "by": {
+    "wickets": 5
+   },
+   "method": "",
+   "star": {
+    "r": 9,
+    "b": 12,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0557,
+   "change": 0.0557,
+   "batting": "first",
+   "score": "India 296/7 v New Zealand 300/5"
+  },
+  {
+   "key": "1233461:Pakistan",
+   "date": "2020-10-30",
+   "team": "Pakistan",
+   "opp": "Zimbabwe",
+   "event": "Zimbabwe tour of Pakistan",
+   "stage": "1",
+   "venue": "Rawalpindi Cricket Stadium",
+   "result": "W",
+   "by": {
+    "runs": 26
+   },
+   "method": "",
+   "star": {
+    "r": 19,
+    "b": 18,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 281/8 v Zimbabwe 255/10"
+  },
+  {
+   "key": "1233462:Pakistan",
+   "date": "2020-11-01",
+   "team": "Pakistan",
+   "opp": "Zimbabwe",
+   "event": "Zimbabwe tour of Pakistan",
+   "stage": "2",
+   "venue": "Rawalpindi Cricket Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 77,
+    "b": 74,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Zimbabwe 206/10 v Pakistan 208/4"
+  },
+  {
+   "key": "1233463:Pakistan",
+   "date": "2020-11-03",
+   "team": "Pakistan",
+   "opp": "Zimbabwe",
+   "event": "Zimbabwe tour of Pakistan",
+   "stage": "3",
+   "venue": "Rawalpindi Cricket Stadium",
+   "result": "T",
+   "by": {},
+   "method": "",
+   "star": {
+    "r": 125,
+    "b": 125,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.5,
+   "p_swap": 0.0187,
+   "change": -0.4813,
+   "batting": "second",
+   "score": "Zimbabwe 278/6 v Pakistan 278/9"
+  },
+  {
+   "key": "1223955:India",
+   "date": "2020-11-27",
+   "team": "India",
+   "opp": "Australia",
+   "event": "India tour of Australia",
+   "stage": "1",
+   "venue": "Sydney Cricket Ground",
+   "result": "L",
+   "by": {
+    "runs": 66
+   },
+   "method": "",
+   "star": {
+    "r": 21,
+    "b": 21,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 374/6 v India 308/8"
+  },
+  {
+   "key": "1223956:India",
+   "date": "2020-11-29",
+   "team": "India",
+   "opp": "Australia",
+   "event": "India tour of Australia",
+   "stage": "2",
+   "venue": "Sydney Cricket Ground",
+   "result": "L",
+   "by": {
+    "runs": 51
+   },
+   "method": "",
+   "star": {
+    "r": 89,
+    "b": 87,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 389/4 v India 338/9"
+  },
+  {
+   "key": "1223957:India",
+   "date": "2020-12-02",
+   "team": "India",
+   "opp": "Australia",
+   "event": "India tour of Australia",
+   "stage": "3",
+   "venue": "Manuka Oval, Canberra",
+   "result": "W",
+   "by": {
+    "runs": 13
+   },
+   "method": "",
+   "star": {
+    "r": 63,
+    "b": 78,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 302/5 v Australia 289/10"
+  },
+  {
+   "key": "1243393:India",
+   "date": "2021-03-23",
+   "team": "India",
+   "opp": "England",
+   "event": "England tour of India",
+   "stage": "1",
+   "venue": "Maharashtra Cricket Association Stadium, Pune",
+   "result": "W",
+   "by": {
+    "runs": 66
+   },
+   "method": "",
+   "star": {
+    "r": 56,
+    "b": 60,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 317/5 v England 251/10"
+  },
+  {
+   "key": "1243394:India",
+   "date": "2021-03-26",
+   "team": "India",
+   "opp": "England",
+   "event": "England tour of India",
+   "stage": "2",
+   "venue": "Maharashtra Cricket Association Stadium, Pune",
+   "result": "L",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 66,
+    "b": 79,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0152,
+   "change": 0.0152,
+   "batting": "first",
+   "score": "India 336/6 v England 337/4"
+  },
+  {
+   "key": "1243395:India",
+   "date": "2021-03-28",
+   "team": "India",
+   "opp": "England",
+   "event": "England tour of India",
+   "stage": "3",
+   "venue": "Maharashtra Cricket Association Stadium, Pune",
+   "result": "W",
+   "by": {
+    "runs": 7
+   },
+   "method": "",
+   "star": {
+    "r": 7,
+    "b": 10,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.6728,
+   "change": -0.3272,
+   "batting": "first",
+   "score": "India 329/10 v England 322/9"
+  },
+  {
+   "key": "1251572:Pakistan",
+   "date": "2021-04-02",
+   "team": "Pakistan",
+   "opp": "South Africa",
+   "event": "Pakistan tour of South Africa",
+   "stage": "1",
+   "venue": "SuperSport Park, Centurion",
+   "result": "W",
+   "by": {
+    "wickets": 3
+   },
+   "method": "",
+   "star": {
+    "r": 103,
+    "b": 104,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.0282,
+   "change": -0.9718,
+   "batting": "second",
+   "score": "South Africa 273/6 v Pakistan 274/7"
+  },
+  {
+   "key": "1251573:Pakistan",
+   "date": "2021-04-04",
+   "team": "Pakistan",
+   "opp": "South Africa",
+   "event": "Pakistan tour of South Africa",
+   "stage": "2",
+   "venue": "Wanderers Stadium, Johannesburg",
+   "result": "L",
+   "by": {
+    "runs": 17
+   },
+   "method": "",
+   "star": {
+    "r": 31,
+    "b": 33,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.014,
+   "change": 0.014,
+   "batting": "second",
+   "score": "South Africa 341/6 v Pakistan 324/9"
+  },
+  {
+   "key": "1251574:Pakistan",
+   "date": "2021-04-07",
+   "team": "Pakistan",
+   "opp": "South Africa",
+   "event": "Pakistan tour of South Africa",
+   "stage": "3",
+   "venue": "SuperSport Park, Centurion",
+   "result": "W",
+   "by": {
+    "runs": 28
+   },
+   "method": "",
+   "star": {
+    "r": 94,
+    "b": 82,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.84,
+   "change": -0.16,
+   "batting": "first",
+   "score": "Pakistan 320/7 v South Africa 292/10"
+  },
+  {
+   "key": "1239537:Pakistan",
+   "date": "2021-07-08",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "Pakistan tour of England",
+   "stage": "1",
+   "venue": "Sophia Gardens, Cardiff",
+   "result": "L",
+   "by": {
+    "wickets": 9
+   },
+   "method": "",
+   "star": {
+    "r": 0,
+    "b": 2,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 141/10 v England 142/1"
+  },
+  {
+   "key": "1239538:Pakistan",
+   "date": "2021-07-10",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "Pakistan tour of England",
+   "stage": "2",
+   "venue": "Lord's",
+   "result": "L",
+   "by": {
+    "runs": 52
+   },
+   "method": "",
+   "star": {
+    "r": 19,
+    "b": 15,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "England 247/10 v Pakistan 195/10"
+  },
+  {
+   "key": "1239539:Pakistan",
+   "date": "2021-07-13",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "Pakistan tour of England",
+   "stage": "3",
+   "venue": "Edgbaston",
+   "result": "L",
+   "by": {
+    "wickets": 3
+   },
+   "method": "",
+   "star": {
+    "r": 158,
+    "b": 139,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 331/9 v England 332/7"
+  },
+  {
+   "key": "1277082:India",
+   "date": "2022-01-19",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "India tour of South Africa",
+   "stage": "1",
+   "venue": "Boland Park, Paarl",
+   "result": "L",
+   "by": {
+    "runs": 31
+   },
+   "method": "",
+   "star": {
+    "r": 51,
+    "b": 63,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.1064,
+   "change": 0.1064,
+   "batting": "second",
+   "score": "South Africa 296/4 v India 265/8"
+  },
+  {
+   "key": "1277083:India",
+   "date": "2022-01-21",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "India tour of South Africa",
+   "stage": "2",
+   "venue": "Boland Park, Paarl",
+   "result": "L",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 0,
+    "b": 5,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.1646,
+   "change": 0.1646,
+   "batting": "first",
+   "score": "India 287/6 v South Africa 288/3"
+  },
+  {
+   "key": "1277084:India",
+   "date": "2022-01-23",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "India tour of South Africa",
+   "stage": "3",
+   "venue": "Newlands, Cape Town",
+   "result": "L",
+   "by": {
+    "runs": 4
+   },
+   "method": "",
+   "star": {
+    "r": 65,
+    "b": 84,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.874,
+   "change": 0.874,
+   "batting": "second",
+   "score": "South Africa 287/10 v India 283/10"
+  },
+  {
+   "key": "1278676:India",
+   "date": "2022-02-06",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "West Indies tour of India",
+   "stage": "1",
+   "venue": "Narendra Modi Stadium, Ahmedabad",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 8,
+    "b": 4,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "West Indies 176/10 v India 178/4"
+  },
+  {
+   "key": "1278677:India",
+   "date": "2022-02-09",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "West Indies tour of India",
+   "stage": "2",
+   "venue": "Narendra Modi Stadium, Ahmedabad",
+   "result": "W",
+   "by": {
+    "runs": 44
+   },
+   "method": "",
+   "star": {
+    "r": 18,
+    "b": 30,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 237/9 v West Indies 193/10"
+  },
+  {
+   "key": "1278678:India",
+   "date": "2022-02-11",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "West Indies tour of India",
+   "stage": "3",
+   "venue": "Narendra Modi Stadium, Ahmedabad",
+   "result": "W",
+   "by": {
+    "runs": 96
+   },
+   "method": "",
+   "star": {
+    "r": 0,
+    "b": 2,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 265/10 v West Indies 169/10"
+  },
+  {
+   "key": "1288313:Pakistan",
+   "date": "2022-03-29",
+   "team": "Pakistan",
+   "opp": "Australia",
+   "event": "Australia tour of Pakistan",
+   "stage": "1",
+   "venue": "Gaddafi Stadium, Lahore",
+   "result": "L",
+   "by": {
+    "runs": 88
+   },
+   "method": "",
+   "star": {
+    "r": 57,
+    "b": 72,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 313/7 v Pakistan 225/10"
+  },
+  {
+   "key": "1288314:Pakistan",
+   "date": "2022-03-31",
+   "team": "Pakistan",
+   "opp": "Australia",
+   "event": "Australia tour of Pakistan",
+   "stage": "2",
+   "venue": "Gaddafi Stadium, Lahore",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 114,
+    "b": 83,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.0144,
+   "change": -0.9856,
+   "batting": "second",
+   "score": "Australia 348/8 v Pakistan 349/4"
+  },
+  {
+   "key": "1288315:Pakistan",
+   "date": "2022-04-02",
+   "team": "Pakistan",
+   "opp": "Australia",
+   "event": "Australia tour of Pakistan",
+   "stage": "3",
+   "venue": "Gaddafi Stadium, Lahore",
+   "result": "W",
+   "by": {
+    "wickets": 9
+   },
+   "method": "",
+   "star": {
+    "r": 105,
+    "b": 115,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 210/10 v Pakistan 214/1"
+  },
+  {
+   "key": "1315038:Pakistan",
+   "date": "2022-06-08",
+   "team": "Pakistan",
+   "opp": "West Indies",
+   "event": "West Indies tour of Pakistan",
+   "stage": "1",
+   "venue": "Multan Cricket Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 5
+   },
+   "method": "",
+   "star": {
+    "r": 103,
+    "b": 107,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.7012,
+   "change": -0.2988,
+   "batting": "second",
+   "score": "West Indies 305/8 v Pakistan 306/5"
+  },
+  {
+   "key": "1315039:Pakistan",
+   "date": "2022-06-10",
+   "team": "Pakistan",
+   "opp": "West Indies",
+   "event": "West Indies tour of Pakistan",
+   "stage": "2",
+   "venue": "Multan Cricket Stadium",
+   "result": "W",
+   "by": {
+    "runs": 120
+   },
+   "method": "",
+   "star": {
+    "r": 77,
+    "b": 93,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 275/8 v West Indies 155/10"
+  },
+  {
+   "key": "1315040:Pakistan",
+   "date": "2022-06-12",
+   "team": "Pakistan",
+   "opp": "West Indies",
+   "event": "West Indies tour of Pakistan",
+   "stage": "3",
+   "venue": "Multan Cricket Stadium",
+   "result": "W",
+   "by": {
+    "runs": 53
+   },
+   "method": "D/L",
+   "star": {
+    "r": 1,
+    "b": 3,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 269/9 v West Indies 216/10"
+  },
+  {
+   "key": "1276908:India",
+   "date": "2022-07-14",
+   "team": "India",
+   "opp": "England",
+   "event": "India tour of England",
+   "stage": "2",
+   "venue": "Lord's",
+   "result": "L",
+   "by": {
+    "runs": 100
+   },
+   "method": "",
+   "star": {
+    "r": 16,
+    "b": 25,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "England 246/10 v India 146/10"
+  },
+  {
+   "key": "1276909:India",
+   "date": "2022-07-17",
+   "team": "India",
+   "opp": "England",
+   "event": "India tour of England",
+   "stage": "3",
+   "venue": "Old Trafford",
+   "result": "W",
+   "by": {
+    "wickets": 5
+   },
+   "method": "",
+   "star": {
+    "r": 17,
+    "b": 22,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "England 259/10 v India 261/5"
+  },
+  {
+   "key": "1311737:Pakistan",
+   "date": "2022-08-16",
+   "team": "Pakistan",
+   "opp": "Netherlands",
+   "event": "Pakistan tour of Netherlands",
+   "stage": "1",
+   "venue": "Hazelaarweg, Rotterdam",
+   "result": "W",
+   "by": {
+    "runs": 16
+   },
+   "method": "",
+   "star": {
+    "r": 74,
+    "b": 85,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.9519,
+   "change": -0.0481,
+   "batting": "first",
+   "score": "Pakistan 314/6 v Netherlands 298/8"
+  },
+  {
+   "key": "1311738:Pakistan",
+   "date": "2022-08-18",
+   "team": "Pakistan",
+   "opp": "Netherlands",
+   "event": "Pakistan tour of Netherlands",
+   "stage": "2",
+   "venue": "Hazelaarweg, Rotterdam",
+   "result": "W",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 57,
+    "b": 65,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Netherlands 186/10 v Pakistan 191/3"
+  },
+  {
+   "key": "1311739:Pakistan",
+   "date": "2022-08-21",
+   "team": "Pakistan",
+   "opp": "Netherlands",
+   "event": "Pakistan tour of Netherlands",
+   "stage": "3",
+   "venue": "Hazelaarweg, Rotterdam",
+   "result": "W",
+   "by": {
+    "runs": 9
+   },
+   "method": "",
+   "star": {
+    "r": 91,
+    "b": 125,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.7334,
+   "change": -0.2666,
+   "batting": "first",
+   "score": "Pakistan 206/10 v Netherlands 197/10"
+  },
+  {
+   "key": "1340845:India",
+   "date": "2022-12-04",
+   "team": "India",
+   "opp": "Bangladesh",
+   "event": "India tour of Bangladesh",
+   "stage": "1",
+   "venue": "Shere Bangla National Stadium, Mirpur",
+   "result": "L",
+   "by": {
+    "wickets": 1
+   },
+   "method": "",
+   "star": {
+    "r": 9,
+    "b": 15,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.513,
+   "change": 0.513,
+   "batting": "first",
+   "score": "India 186/10 v Bangladesh 187/9"
+  },
+  {
+   "key": "1340846:India",
+   "date": "2022-12-07",
+   "team": "India",
+   "opp": "Bangladesh",
+   "event": "India tour of Bangladesh",
+   "stage": "2",
+   "venue": "Shere Bangla National Stadium, Mirpur",
+   "result": "L",
+   "by": {
+    "runs": 5
+   },
+   "method": "",
+   "star": {
+    "r": 5,
+    "b": 6,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.4116,
+   "change": 0.4116,
+   "batting": "second",
+   "score": "Bangladesh 271/7 v India 266/9"
+  },
+  {
+   "key": "1340847:India",
+   "date": "2022-12-10",
+   "team": "India",
+   "opp": "Bangladesh",
+   "event": "India tour of Bangladesh",
+   "stage": "3",
+   "venue": "Zahur Ahmed Chowdhury Stadium, Chattogram",
+   "result": "W",
+   "by": {
+    "runs": 227
+   },
+   "method": "",
+   "star": {
+    "r": 113,
+    "b": 91,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 409/8 v Bangladesh 182/10"
+  },
+  {
+   "key": "1339611:Pakistan",
+   "date": "2023-01-09",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "New Zealand tour of Pakistan",
+   "stage": "1",
+   "venue": "National Bank Cricket Arena, Karachi",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 66,
+    "b": 82,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.9856,
+   "change": -0.0144,
+   "batting": "second",
+   "score": "New Zealand 255/9 v Pakistan 258/4"
+  },
+  {
+   "key": "1348643:India",
+   "date": "2023-01-10",
+   "team": "India",
+   "opp": "Sri Lanka",
+   "event": "Sri Lanka tour of India",
+   "stage": "1",
+   "venue": "Barsapara Cricket Stadium, Guwahati",
+   "result": "W",
+   "by": {
+    "runs": 67
+   },
+   "method": "",
+   "star": {
+    "r": 113,
+    "b": 87,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 373/7 v Sri Lanka 306/8"
+  },
+  {
+   "key": "1339612:Pakistan",
+   "date": "2023-01-11",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "New Zealand tour of Pakistan",
+   "stage": "2",
+   "venue": "National Bank Cricket Arena, Karachi",
+   "result": "L",
+   "by": {
+    "runs": 79
+   },
+   "method": "",
+   "star": {
+    "r": 79,
+    "b": 114,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "New Zealand 261/10 v Pakistan 182/10"
+  },
+  {
+   "key": "1348644:India",
+   "date": "2023-01-12",
+   "team": "India",
+   "opp": "Sri Lanka",
+   "event": "Sri Lanka tour of India",
+   "stage": "2",
+   "venue": "Eden Gardens, Kolkata",
+   "result": "W",
+   "by": {
+    "wickets": 4
+   },
+   "method": "",
+   "star": {
+    "r": 4,
+    "b": 9,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Sri Lanka 215/10 v India 219/6"
+  },
+  {
+   "key": "1339613:Pakistan",
+   "date": "2023-01-13",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "New Zealand tour of Pakistan",
+   "stage": "3",
+   "venue": "National Bank Cricket Arena, Karachi",
+   "result": "L",
+   "by": {
+    "wickets": 2
+   },
+   "method": "",
+   "star": {
+    "r": 4,
+    "b": 13,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.1411,
+   "change": 0.1411,
+   "batting": "first",
+   "score": "Pakistan 280/9 v New Zealand 281/8"
+  },
+  {
+   "key": "1348645:India",
+   "date": "2023-01-15",
+   "team": "India",
+   "opp": "Sri Lanka",
+   "event": "Sri Lanka tour of India",
+   "stage": "3",
+   "venue": "Greenfield International Stadium, Thiruvananthapuram",
+   "result": "W",
+   "by": {
+    "runs": 317
+   },
+   "method": "",
+   "star": {
+    "r": 166,
+    "b": 110,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 390/5 v Sri Lanka 73/9"
+  },
+  {
+   "key": "1348646:India",
+   "date": "2023-01-18",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "New Zealand tour of India",
+   "stage": "1",
+   "venue": "Rajiv Gandhi International Stadium, Uppal",
+   "result": "W",
+   "by": {
+    "runs": 12
+   },
+   "method": "",
+   "star": {
+    "r": 8,
+    "b": 10,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.7176,
+   "change": -0.2824,
+   "batting": "first",
+   "score": "India 349/8 v New Zealand 337/10"
+  },
+  {
+   "key": "1348647:India",
+   "date": "2023-01-21",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "New Zealand tour of India",
+   "stage": "2",
+   "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
+   "result": "W",
+   "by": {
+    "wickets": 8
+   },
+   "method": "",
+   "star": {
+    "r": 11,
+    "b": 9,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "New Zealand 108/10 v India 111/2"
+  },
+  {
+   "key": "1348648:India",
+   "date": "2023-01-24",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "New Zealand tour of India",
+   "stage": "3",
+   "venue": "Holkar Cricket Stadium, Indore",
+   "result": "W",
+   "by": {
+    "runs": 90
+   },
+   "method": "",
+   "star": {
+    "r": 36,
+    "b": 27,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 385/9 v New Zealand 295/10"
+  },
+  {
+   "key": "1348656:India",
+   "date": "2023-03-17",
+   "team": "India",
+   "opp": "Australia",
+   "event": "Australia tour of India",
+   "stage": "1",
+   "venue": "Wankhede Stadium, Mumbai",
+   "result": "W",
+   "by": {
+    "wickets": 5
+   },
+   "method": "",
+   "star": {
+    "r": 4,
+    "b": 9,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 188/10 v India 191/5"
+  },
+  {
+   "key": "1348657:India",
+   "date": "2023-03-19",
+   "team": "India",
+   "opp": "Australia",
+   "event": "Australia tour of India",
+   "stage": "2",
+   "venue": "Andhra Cricket Association-Visakhapatnam District Cricket Association Stadium, Visakhapatnam",
+   "result": "L",
+   "by": {
+    "wickets": 10
+   },
+   "method": "",
+   "star": {
+    "r": 31,
+    "b": 35,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 117/10 v Australia 121/0"
+  },
+  {
+   "key": "1348658:India",
+   "date": "2023-03-22",
+   "team": "India",
+   "opp": "Australia",
+   "event": "Australia tour of India",
+   "stage": "3",
+   "venue": "MA Chidambaram Stadium",
+   "result": "L",
+   "by": {
+    "runs": 21
+   },
+   "method": "",
+   "star": {
+    "r": 54,
+    "b": 72,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.2185,
+   "change": 0.2185,
+   "batting": "second",
+   "score": "Australia 269/10 v India 248/10"
+  },
+  {
+   "key": "1339619:Pakistan",
+   "date": "2023-04-27",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "New Zealand tour of Pakistan",
+   "stage": "1",
+   "venue": "Rawalpindi Cricket Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 5
+   },
+   "method": "",
+   "star": {
+    "r": 49,
+    "b": 46,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.8588,
+   "change": -0.1412,
+   "batting": "second",
+   "score": "New Zealand 288/7 v Pakistan 291/5"
+  },
+  {
+   "key": "1339620:Pakistan",
+   "date": "2023-04-29",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "New Zealand tour of Pakistan",
+   "stage": "2",
+   "venue": "Rawalpindi Cricket Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 65,
+    "b": 66,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.9002,
+   "change": -0.0998,
+   "batting": "second",
+   "score": "New Zealand 336/5 v Pakistan 337/3"
+  },
+  {
+   "key": "1339621:Pakistan",
+   "date": "2023-05-03",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "New Zealand tour of Pakistan",
+   "stage": "3",
+   "venue": "National Bank Cricket Arena, Karachi",
+   "result": "W",
+   "by": {
+    "runs": 26
+   },
+   "method": "",
+   "star": {
+    "r": 54,
+    "b": 62,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 287/6 v New Zealand 261/10"
+  },
+  {
+   "key": "1339622:Pakistan",
+   "date": "2023-05-05",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "New Zealand tour of Pakistan",
+   "stage": "4",
+   "venue": "National Bank Cricket Arena, Karachi",
+   "result": "W",
+   "by": {
+    "runs": 102
+   },
+   "method": "",
+   "star": {
+    "r": 107,
+    "b": 117,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 334/6 v New Zealand 232/10"
+  },
+  {
+   "key": "1339623:Pakistan",
+   "date": "2023-05-07",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "New Zealand tour of Pakistan",
+   "stage": "5",
+   "venue": "National Bank Cricket Arena, Karachi",
+   "result": "L",
+   "by": {
+    "runs": 47
+   },
+   "method": "",
+   "star": {
+    "r": 1,
+    "b": 5,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "New Zealand 299/10 v Pakistan 252/10"
+  },
+  {
+   "key": "1381214:India",
+   "date": "2023-07-27",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "India tour of West Indies",
+   "stage": "1",
+   "venue": "Kensington Oval",
+   "result": "W",
+   "by": {
+    "wickets": 5
+   },
+   "method": "",
+   "star": null,
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "West Indies 114/10 v India 118/5"
+  },
+  {
+   "key": "1388392:Pakistan",
+   "date": "2023-08-30",
+   "team": "Pakistan",
+   "opp": "Nepal",
+   "event": "Asia Cup",
+   "stage": "1",
+   "venue": "Multan Cricket Stadium",
+   "result": "W",
+   "by": {
+    "runs": 238
+   },
+   "method": "",
+   "star": {
+    "r": 151,
+    "b": 131,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 342/6 v Nepal 104/10"
+  },
+  {
+   "key": "1388398:India",
+   "date": "2023-09-04",
+   "team": "India",
+   "opp": "Nepal",
+   "event": "Asia Cup",
+   "stage": "5",
+   "venue": "Pallekele International Cricket Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 10
+   },
+   "method": "D/L",
+   "star": null,
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Nepal 230/10 v India 147/0"
+  },
+  {
+   "key": "1388401:Pakistan",
+   "date": "2023-09-06",
+   "team": "Pakistan",
+   "opp": "Bangladesh",
+   "event": "Asia Cup",
+   "stage": "7",
+   "venue": "Gaddafi Stadium, Lahore",
+   "result": "W",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 17,
+    "b": 22,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Bangladesh 193/10 v Pakistan 194/3"
+  },
+  {
+   "key": "1388406:India",
+   "date": "2023-09-10",
+   "team": "India",
+   "opp": "Pakistan",
+   "event": "Asia Cup",
+   "stage": "9",
+   "venue": "R Premadasa Stadium, Colombo",
+   "result": "W",
+   "by": {
+    "runs": 228
+   },
+   "method": "",
+   "star": {
+    "r": 122,
+    "b": 94,
+    "out": false
+   },
+   "opp_star": {
+    "r": 10,
+    "b": 24,
+    "out": true
+   },
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 356/2 v Pakistan 128/8"
+  },
+  {
+   "key": "1388406:Pakistan",
+   "date": "2023-09-10",
+   "team": "Pakistan",
+   "opp": "India",
+   "event": "Asia Cup",
+   "stage": "9",
+   "venue": "R Premadasa Stadium, Colombo",
+   "result": "L",
+   "by": {
+    "runs": 228
+   },
+   "method": "",
+   "star": {
+    "r": 10,
+    "b": 24,
+    "out": true
+   },
+   "opp_star": {
+    "r": 122,
+    "b": 94,
+    "out": false
+   },
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "India 356/2 v Pakistan 128/8"
+  },
+  {
+   "key": "1388407:India",
+   "date": "2023-09-12",
+   "team": "India",
+   "opp": "Sri Lanka",
+   "event": "Asia Cup",
+   "stage": "10",
+   "venue": "R Premadasa Stadium, Colombo",
+   "result": "W",
+   "by": {
+    "runs": 41
+   },
+   "method": "",
+   "star": {
+    "r": 3,
+    "b": 12,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 213/10 v Sri Lanka 172/10"
+  },
+  {
+   "key": "1388410:Pakistan",
+   "date": "2023-09-14",
+   "team": "Pakistan",
+   "opp": "Sri Lanka",
+   "event": "Asia Cup",
+   "stage": "11",
+   "venue": "R Premadasa Stadium, Colombo",
+   "result": "L",
+   "by": {
+    "wickets": 2
+   },
+   "method": "D/L",
+   "star": {
+    "r": 29,
+    "b": 35,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.44,
+   "change": 0.44,
+   "batting": "first",
+   "score": "Pakistan 252/7 v Sri Lanka 252/8"
+  },
+  {
+   "key": "1388414:India",
+   "date": "2023-09-17",
+   "team": "India",
+   "opp": "Sri Lanka",
+   "event": "Asia Cup",
+   "stage": "Final",
+   "venue": "R Premadasa Stadium, Colombo",
+   "result": "W",
+   "by": {
+    "wickets": 10
+   },
+   "method": "",
+   "star": null,
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Sri Lanka 50/10 v India 51/0"
+  },
+  {
+   "key": "1389390:India",
+   "date": "2023-09-27",
+   "team": "India",
+   "opp": "Australia",
+   "event": "Australia tour of India",
+   "stage": "3",
+   "venue": "Saurashtra Cricket Association Stadium, Rajkot",
+   "result": "L",
+   "by": {
+    "runs": 66
+   },
+   "method": "",
+   "star": {
+    "r": 56,
+    "b": 61,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 352/7 v India 286/10"
+  },
+  {
+   "key": "1384393:Pakistan",
+   "date": "2023-10-06",
+   "team": "Pakistan",
+   "opp": "Netherlands",
+   "event": "ICC Cricket World Cup",
+   "stage": "2",
+   "venue": "Rajiv Gandhi International Stadium, Uppal",
+   "result": "W",
+   "by": {
+    "runs": 81
+   },
+   "method": "",
+   "star": {
+    "r": 5,
+    "b": 18,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 286/10 v Netherlands 205/10"
+  },
+  {
+   "key": "1384396:India",
+   "date": "2023-10-08",
+   "team": "India",
+   "opp": "Australia",
+   "event": "ICC Cricket World Cup",
+   "stage": "5",
+   "venue": "MA Chidambaram Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 85,
+    "b": 116,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 199/10 v India 201/4"
+  },
+  {
+   "key": "1384399:Pakistan",
+   "date": "2023-10-10",
+   "team": "Pakistan",
+   "opp": "Sri Lanka",
+   "event": "ICC Cricket World Cup",
+   "stage": "8",
+   "venue": "Rajiv Gandhi International Stadium, Uppal",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 10,
+    "b": 15,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.8694,
+   "change": -0.1306,
+   "batting": "second",
+   "score": "Sri Lanka 344/9 v Pakistan 345/4"
+  },
+  {
+   "key": "1384403:India",
+   "date": "2023-10-14",
+   "team": "India",
+   "opp": "Pakistan",
+   "event": "ICC Cricket World Cup",
+   "stage": "12",
+   "venue": "Narendra Modi Stadium, Ahmedabad",
+   "result": "W",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 16,
+    "b": 18,
+    "out": true
+   },
+   "opp_star": {
+    "r": 50,
+    "b": 58,
+    "out": true
+   },
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Pakistan 191/10 v India 192/3"
+  },
+  {
+   "key": "1384403:Pakistan",
+   "date": "2023-10-14",
+   "team": "Pakistan",
+   "opp": "India",
+   "event": "ICC Cricket World Cup",
+   "stage": "12",
+   "venue": "Narendra Modi Stadium, Ahmedabad",
+   "result": "L",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 50,
+    "b": 58,
+    "out": true
+   },
+   "opp_star": {
+    "r": 16,
+    "b": 18,
+    "out": true
+   },
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 191/10 v India 192/3"
+  },
+  {
+   "key": "1384408:India",
+   "date": "2023-10-19",
+   "team": "India",
+   "opp": "Bangladesh",
+   "event": "ICC Cricket World Cup",
+   "stage": "17",
+   "venue": "Maharashtra Cricket Association Stadium, Pune",
+   "result": "W",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 103,
+    "b": 97,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Bangladesh 256/8 v India 261/3"
+  },
+  {
+   "key": "1384409:Pakistan",
+   "date": "2023-10-20",
+   "team": "Pakistan",
+   "opp": "Australia",
+   "event": "ICC Cricket World Cup",
+   "stage": "18",
+   "venue": "M Chinnaswamy Stadium, Bengaluru",
+   "result": "L",
+   "by": {
+    "runs": 62
+   },
+   "method": "",
+   "star": {
+    "r": 18,
+    "b": 14,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 367/9 v Pakistan 305/10"
+  },
+  {
+   "key": "1384412:India",
+   "date": "2023-10-22",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "ICC Cricket World Cup",
+   "stage": "21",
+   "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+   "result": "W",
+   "by": {
+    "wickets": 4
+   },
+   "method": "",
+   "star": {
+    "r": 95,
+    "b": 104,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.9892,
+   "change": -0.0108,
+   "batting": "second",
+   "score": "New Zealand 273/10 v India 274/6"
+  },
+  {
+   "key": "1384417:Pakistan",
+   "date": "2023-10-27",
+   "team": "Pakistan",
+   "opp": "South Africa",
+   "event": "ICC Cricket World Cup",
+   "stage": "26",
+   "venue": "MA Chidambaram Stadium",
+   "result": "L",
+   "by": {
+    "wickets": 1
+   },
+   "method": "",
+   "star": {
+    "r": 50,
+    "b": 65,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.2497,
+   "change": 0.2497,
+   "batting": "first",
+   "score": "Pakistan 270/10 v South Africa 271/9"
+  },
+  {
+   "key": "1384420:India",
+   "date": "2023-10-29",
+   "team": "India",
+   "opp": "England",
+   "event": "ICC Cricket World Cup",
+   "stage": "29",
+   "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+   "result": "W",
+   "by": {
+    "runs": 100
+   },
+   "method": "",
+   "star": {
+    "r": 0,
+    "b": 9,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 229/9 v England 129/10"
+  },
+  {
+   "key": "1384422:Pakistan",
+   "date": "2023-10-31",
+   "team": "Pakistan",
+   "opp": "Bangladesh",
+   "event": "ICC Cricket World Cup",
+   "stage": "31",
+   "venue": "Eden Gardens, Kolkata",
+   "result": "W",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 9,
+    "b": 16,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Bangladesh 204/10 v Pakistan 205/3"
+  },
+  {
+   "key": "1384424:India",
+   "date": "2023-11-02",
+   "team": "India",
+   "opp": "Sri Lanka",
+   "event": "ICC Cricket World Cup",
+   "stage": "33",
+   "venue": "Wankhede Stadium, Mumbai",
+   "result": "W",
+   "by": {
+    "runs": 302
+   },
+   "method": "",
+   "star": {
+    "r": 88,
+    "b": 94,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 357/8 v Sri Lanka 55/10"
+  },
+  {
+   "key": "1384426:Pakistan",
+   "date": "2023-11-04",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "ICC Cricket World Cup",
+   "stage": "35",
+   "venue": "M Chinnaswamy Stadium, Bengaluru",
+   "result": "W",
+   "by": {
+    "runs": 21
+   },
+   "method": "D/L",
+   "star": {
+    "r": 66,
+    "b": 63,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.781,
+   "change": -0.219,
+   "batting": "second",
+   "score": "New Zealand 401/6 v Pakistan 200/1"
+  },
+  {
+   "key": "1384428:India",
+   "date": "2023-11-05",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "ICC Cricket World Cup",
+   "stage": "37",
+   "venue": "Eden Gardens, Kolkata",
+   "result": "W",
+   "by": {
+    "runs": 243
+   },
+   "method": "",
+   "star": {
+    "r": 101,
+    "b": 121,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 326/5 v South Africa 83/10"
+  },
+  {
+   "key": "1384435:Pakistan",
+   "date": "2023-11-11",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "ICC Cricket World Cup",
+   "stage": "44",
+   "venue": "Eden Gardens, Kolkata",
+   "result": "L",
+   "by": {
+    "runs": 93
+   },
+   "method": "",
+   "star": {
+    "r": 38,
+    "b": 45,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "England 337/9 v Pakistan 244/10"
+  },
+  {
+   "key": "1384436:India",
+   "date": "2023-11-12",
+   "team": "India",
+   "opp": "Netherlands",
+   "event": "ICC Cricket World Cup",
+   "stage": "45",
+   "venue": "M Chinnaswamy Stadium, Bengaluru",
+   "result": "W",
+   "by": {
+    "runs": 160
+   },
+   "method": "",
+   "star": {
+    "r": 51,
+    "b": 56,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 410/4 v Netherlands 250/10"
+  },
+  {
+   "key": "1384437:India",
+   "date": "2023-11-15",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "ICC Cricket World Cup",
+   "stage": "Semi Final",
+   "venue": "Wankhede Stadium, Mumbai",
+   "result": "W",
+   "by": {
+    "runs": 70
+   },
+   "method": "",
+   "star": {
+    "r": 117,
+    "b": 113,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 397/4 v New Zealand 327/10"
+  },
+  {
+   "key": "1384439:India",
+   "date": "2023-11-19",
+   "team": "India",
+   "opp": "Australia",
+   "event": "ICC Cricket World Cup",
+   "stage": "Final",
+   "venue": "Narendra Modi Stadium, Ahmedabad",
+   "result": "L",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 54,
+    "b": 63,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.014,
+   "change": 0.014,
+   "batting": "first",
+   "score": "India 240/10 v Australia 241/4"
+  },
+  {
+   "key": "1442990:India",
+   "date": "2024-08-02",
+   "team": "India",
+   "opp": "Sri Lanka",
+   "event": "India tour of Sri Lanka",
+   "stage": "1",
+   "venue": "R Premadasa Stadium, Colombo",
+   "result": "T",
+   "by": {},
+   "method": "",
+   "star": {
+    "r": 24,
+    "b": 32,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.5,
+   "p_swap": 0.6984,
+   "change": 0.1984,
+   "batting": "second",
+   "score": "Sri Lanka 230/8 v India 230/10"
+  },
+  {
+   "key": "1442991:India",
+   "date": "2024-08-04",
+   "team": "India",
+   "opp": "Sri Lanka",
+   "event": "India tour of Sri Lanka",
+   "stage": "2",
+   "venue": "R Premadasa Stadium, Colombo",
+   "result": "L",
+   "by": {
+    "runs": 32
+   },
+   "method": "",
+   "star": {
+    "r": 14,
+    "b": 19,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.1247,
+   "change": 0.1247,
+   "batting": "second",
+   "score": "Sri Lanka 240/9 v India 208/10"
+  },
+  {
+   "key": "1442992:India",
+   "date": "2024-08-07",
+   "team": "India",
+   "opp": "Sri Lanka",
+   "event": "India tour of Sri Lanka",
+   "stage": "3",
+   "venue": "R Premadasa Stadium, Colombo",
+   "result": "L",
+   "by": {
+    "runs": 110
+   },
+   "method": "",
+   "star": {
+    "r": 20,
+    "b": 18,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Sri Lanka 248/7 v India 138/10"
+  },
+  {
+   "key": "1426549:Pakistan",
+   "date": "2024-11-04",
+   "team": "Pakistan",
+   "opp": "Australia",
+   "event": "Pakistan tour of Australia",
+   "stage": "1",
+   "venue": "Melbourne Cricket Ground",
+   "result": "L",
+   "by": {
+    "wickets": 2
+   },
+   "method": "",
+   "star": {
+    "r": 37,
+    "b": 44,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0291,
+   "change": 0.0291,
+   "batting": "first",
+   "score": "Pakistan 203/10 v Australia 204/8"
+  },
+  {
+   "key": "1426550:Pakistan",
+   "date": "2024-11-08",
+   "team": "Pakistan",
+   "opp": "Australia",
+   "event": "Pakistan tour of Australia",
+   "stage": "2",
+   "venue": "Adelaide Oval",
+   "result": "W",
+   "by": {
+    "wickets": 9
+   },
+   "method": "",
+   "star": {
+    "r": 15,
+    "b": 20,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 163/10 v Pakistan 169/1"
+  },
+  {
+   "key": "1426551:Pakistan",
+   "date": "2024-11-10",
+   "team": "Pakistan",
+   "opp": "Australia",
+   "event": "Pakistan tour of Australia",
+   "stage": "3",
+   "venue": "Perth Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 8
+   },
+   "method": "",
+   "star": {
+    "r": 28,
+    "b": 30,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 140/9 v Pakistan 143/2"
+  },
+  {
+   "key": "1432214:Pakistan",
+   "date": "2024-12-17",
+   "team": "Pakistan",
+   "opp": "South Africa",
+   "event": "Pakistan tour of South Africa",
+   "stage": "1",
+   "venue": "Boland Park, Paarl",
+   "result": "W",
+   "by": {
+    "wickets": 3
+   },
+   "method": "",
+   "star": {
+    "r": 23,
+    "b": 38,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.9847,
+   "change": -0.0153,
+   "batting": "second",
+   "score": "South Africa 239/9 v Pakistan 242/7"
+  },
+  {
+   "key": "1432215:Pakistan",
+   "date": "2024-12-19",
+   "team": "Pakistan",
+   "opp": "South Africa",
+   "event": "Pakistan tour of South Africa",
+   "stage": "2",
+   "venue": "Newlands, Cape Town",
+   "result": "W",
+   "by": {
+    "runs": 81
+   },
+   "method": "",
+   "star": {
+    "r": 73,
+    "b": 95,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 329/10 v South Africa 248/10"
+  },
+  {
+   "key": "1432216:Pakistan",
+   "date": "2024-12-22",
+   "team": "Pakistan",
+   "opp": "South Africa",
+   "event": "Pakistan tour of South Africa",
+   "stage": "3",
+   "venue": "Wanderers Stadium, Johannesburg",
+   "result": "W",
+   "by": {
+    "runs": 36
+   },
+   "method": "D/L",
+   "star": {
+    "r": 52,
+    "b": 71,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 308/9 v South Africa 271/10"
+  },
+  {
+   "key": "1442220:Pakistan",
+   "date": "2025-02-08",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "Pakistan Tri-Nation Series",
+   "stage": "1",
+   "venue": "Gaddafi Stadium, Lahore",
+   "result": "L",
+   "by": {
+    "runs": 78
+   },
+   "method": "",
+   "star": {
+    "r": 10,
+    "b": 23,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "New Zealand 330/6 v Pakistan 252/9"
+  },
+  {
+   "key": "1439905:India",
+   "date": "2025-02-09",
+   "team": "India",
+   "opp": "England",
+   "event": "England tour of India",
+   "stage": "2",
+   "venue": "Barabati Stadium, Cuttack",
+   "result": "W",
+   "by": {
+    "wickets": 4
+   },
+   "method": "",
+   "star": {
+    "r": 5,
+    "b": 8,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "England 304/10 v India 308/6"
+  },
+  {
+   "key": "1439906:India",
+   "date": "2025-02-12",
+   "team": "India",
+   "opp": "England",
+   "event": "England tour of India",
+   "stage": "3",
+   "venue": "Narendra Modi Stadium, Ahmedabad",
+   "result": "W",
+   "by": {
+    "runs": 142
+   },
+   "method": "",
+   "star": {
+    "r": 52,
+    "b": 55,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 356/10 v England 214/10"
+  },
+  {
+   "key": "1442222:Pakistan",
+   "date": "2025-02-12",
+   "team": "Pakistan",
+   "opp": "South Africa",
+   "event": "Pakistan Tri-Nation Series",
+   "stage": "3",
+   "venue": "National Bank Cricket Arena, Karachi",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 23,
+    "b": 19,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.3659,
+   "change": -0.6341,
+   "batting": "second",
+   "score": "South Africa 352/5 v Pakistan 355/4"
+  },
+  {
+   "key": "1442223:Pakistan",
+   "date": "2025-02-14",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "Pakistan Tri-Nation Series",
+   "stage": "Final",
+   "venue": "National Bank Cricket Arena, Karachi",
+   "result": "L",
+   "by": {
+    "wickets": 5
+   },
+   "method": "",
+   "star": {
+    "r": 29,
+    "b": 34,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0154,
+   "change": 0.0154,
+   "batting": "first",
+   "score": "Pakistan 242/10 v New Zealand 243/5"
+  },
+  {
+   "key": "1466414:Pakistan",
+   "date": "2025-02-19",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "ICC Champions Trophy",
+   "stage": "1",
+   "venue": "National Bank Cricket Arena, Karachi",
+   "result": "L",
+   "by": {
+    "runs": 60
+   },
+   "method": "",
+   "star": {
+    "r": 64,
+    "b": 90,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "New Zealand 320/5 v Pakistan 260/10"
+  },
+  {
+   "key": "1466415:India",
+   "date": "2025-02-20",
+   "team": "India",
+   "opp": "Bangladesh",
+   "event": "ICC Champions Trophy",
+   "stage": "2",
+   "venue": "Dubai International Cricket Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 22,
+    "b": 38,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Bangladesh 228/10 v India 231/4"
+  },
+  {
+   "key": "1466418:India",
+   "date": "2025-02-23",
+   "team": "India",
+   "opp": "Pakistan",
+   "event": "ICC Champions Trophy",
+   "stage": "5",
+   "venue": "Dubai International Cricket Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 100,
+    "b": 111,
+    "out": false
+   },
+   "opp_star": {
+    "r": 23,
+    "b": 26,
+    "out": true
+   },
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Pakistan 241/10 v India 244/4"
+  },
+  {
+   "key": "1466418:Pakistan",
+   "date": "2025-02-23",
+   "team": "Pakistan",
+   "opp": "India",
+   "event": "ICC Champions Trophy",
+   "stage": "5",
+   "venue": "Dubai International Cricket Stadium",
+   "result": "L",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 23,
+    "b": 26,
+    "out": true
+   },
+   "opp_star": {
+    "r": 100,
+    "b": 111,
+    "out": false
+   },
+   "actual": 0.0,
+   "p_swap": 0.0001,
+   "change": 0.0001,
+   "batting": "first",
+   "score": "Pakistan 241/10 v India 244/4"
+  },
+  {
+   "key": "1466425:India",
+   "date": "2025-03-02",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "ICC Champions Trophy",
+   "stage": "12",
+   "venue": "Dubai International Cricket Stadium",
+   "result": "W",
+   "by": {
+    "runs": 44
+   },
+   "method": "",
+   "star": {
+    "r": 11,
+    "b": 14,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 249/9 v New Zealand 205/10"
+  },
+  {
+   "key": "1466426:India",
+   "date": "2025-03-04",
+   "team": "India",
+   "opp": "Australia",
+   "event": "ICC Champions Trophy",
+   "stage": "Semi Final",
+   "venue": "Dubai International Cricket Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 4
+   },
+   "method": "",
+   "star": {
+    "r": 84,
+    "b": 98,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 264/10 v India 267/6"
+  },
+  {
+   "key": "1466428:India",
+   "date": "2025-03-09",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "ICC Champions Trophy",
+   "stage": "Final",
+   "venue": "Dubai International Cricket Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 4
+   },
+   "method": "",
+   "star": {
+    "r": 1,
+    "b": 2,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.9689,
+   "change": -0.0311,
+   "batting": "second",
+   "score": "New Zealand 251/7 v India 254/6"
+  },
+  {
+   "key": "1443554:Pakistan",
+   "date": "2025-03-29",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "Pakistan tour of New Zealand",
+   "stage": "1",
+   "venue": "McLean Park, Napier",
+   "result": "L",
+   "by": {
+    "runs": 73
+   },
+   "method": "",
+   "star": {
+    "r": 78,
+    "b": 83,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "New Zealand 344/9 v Pakistan 271/10"
+  },
+  {
+   "key": "1443555:Pakistan",
+   "date": "2025-04-02",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "Pakistan tour of New Zealand",
+   "stage": "2",
+   "venue": "Seddon Park, Hamilton",
+   "result": "L",
+   "by": {
+    "runs": 84
+   },
+   "method": "",
+   "star": {
+    "r": 1,
+    "b": 3,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "New Zealand 292/8 v Pakistan 208/10"
+  },
+  {
+   "key": "1443556:Pakistan",
+   "date": "2025-04-05",
+   "team": "Pakistan",
+   "opp": "New Zealand",
+   "event": "Pakistan tour of New Zealand",
+   "stage": "3",
+   "venue": "Bay Oval, Mount Maunganui",
+   "result": "L",
+   "by": {
+    "runs": 43
+   },
+   "method": "",
+   "star": {
+    "r": 50,
+    "b": 58,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0066,
+   "change": 0.0066,
+   "batting": "second",
+   "score": "New Zealand 264/8 v Pakistan 221/10"
+  },
+  {
+   "key": "1472528:Pakistan",
+   "date": "2025-08-08",
+   "team": "Pakistan",
+   "opp": "West Indies",
+   "event": "Pakistan tour of West Indies",
+   "stage": "1",
+   "venue": "Brian Lara Stadium, Tarouba, Trinidad",
+   "result": "W",
+   "by": {
+    "wickets": 5
+   },
+   "method": "",
+   "star": {
+    "r": 47,
+    "b": 64,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.9855,
+   "change": -0.0145,
+   "batting": "second",
+   "score": "West Indies 280/10 v Pakistan 284/5"
+  },
+  {
+   "key": "1472529:Pakistan",
+   "date": "2025-08-10",
+   "team": "Pakistan",
+   "opp": "West Indies",
+   "event": "Pakistan tour of West Indies",
+   "stage": "2",
+   "venue": "Brian Lara Stadium, Tarouba, Trinidad",
+   "result": "L",
+   "by": {
+    "wickets": 5
+   },
+   "method": "D/L",
+   "star": {
+    "r": 0,
+    "b": 3,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.1193,
+   "change": 0.1193,
+   "batting": "first",
+   "score": "Pakistan 171/7 v West Indies 184/5"
+  },
+  {
+   "key": "1472530:Pakistan",
+   "date": "2025-08-12",
+   "team": "Pakistan",
+   "opp": "West Indies",
+   "event": "Pakistan tour of West Indies",
+   "stage": "3",
+   "venue": "Brian Lara Stadium, Tarouba, Trinidad",
+   "result": "L",
+   "by": {
+    "runs": 202
+   },
+   "method": "",
+   "star": {
+    "r": 9,
+    "b": 23,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "West Indies 294/6 v Pakistan 92/10"
+  },
+  {
+   "key": "1478904:India",
+   "date": "2025-10-19",
+   "team": "India",
+   "opp": "Australia",
+   "event": "India tour of Australia",
+   "stage": "1",
+   "venue": "Perth Stadium",
+   "result": "L",
+   "by": {
+    "wickets": 7
+   },
+   "method": "D/L",
+   "star": {
+    "r": 0,
+    "b": 8,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "India 136/9 v Australia 131/3"
+  },
+  {
+   "key": "1478905:India",
+   "date": "2025-10-23",
+   "team": "India",
+   "opp": "Australia",
+   "event": "India tour of Australia",
+   "stage": "2",
+   "venue": "Adelaide Oval",
+   "result": "L",
+   "by": {
+    "wickets": 2
+   },
+   "method": "",
+   "star": {
+    "r": 0,
+    "b": 4,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.2102,
+   "change": 0.2102,
+   "batting": "first",
+   "score": "India 264/9 v Australia 265/8"
+  },
+  {
+   "key": "1478906:India",
+   "date": "2025-10-25",
+   "team": "India",
+   "opp": "Australia",
+   "event": "India tour of Australia",
+   "stage": "3",
+   "venue": "Sydney Cricket Ground",
+   "result": "W",
+   "by": {
+    "wickets": 9
+   },
+   "method": "",
+   "star": {
+    "r": 74,
+    "b": 81,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 236/10 v India 237/1"
+  },
+  {
+   "key": "1501898:Pakistan",
+   "date": "2025-11-04",
+   "team": "Pakistan",
+   "opp": "South Africa",
+   "event": "South Africa tour of Pakistan",
+   "stage": "1",
+   "venue": "Iqbal Stadium, Faisalabad",
+   "result": "W",
+   "by": {
+    "wickets": 2
+   },
+   "method": "",
+   "star": {
+    "r": 7,
+    "b": 12,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.8512,
+   "change": -0.1488,
+   "batting": "second",
+   "score": "South Africa 263/10 v Pakistan 264/8"
+  },
+  {
+   "key": "1501899:Pakistan",
+   "date": "2025-11-06",
+   "team": "Pakistan",
+   "opp": "South Africa",
+   "event": "South Africa tour of Pakistan",
+   "stage": "2",
+   "venue": "Iqbal Stadium, Faisalabad",
+   "result": "L",
+   "by": {
+    "wickets": 8
+   },
+   "method": "",
+   "star": {
+    "r": 11,
+    "b": 13,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 269/9 v South Africa 270/2"
+  },
+  {
+   "key": "1501900:Pakistan",
+   "date": "2025-11-08",
+   "team": "Pakistan",
+   "opp": "South Africa",
+   "event": "South Africa tour of Pakistan",
+   "stage": "3",
+   "venue": "Iqbal Stadium, Faisalabad",
+   "result": "W",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 27,
+    "b": 32,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "South Africa 143/10 v Pakistan 144/3"
+  },
+  {
+   "key": "1502167:Pakistan",
+   "date": "2025-11-11",
+   "team": "Pakistan",
+   "opp": "Sri Lanka",
+   "event": "Sri Lanka tour of Pakistan",
+   "stage": "1",
+   "venue": "Rawalpindi Cricket Stadium",
+   "result": "W",
+   "by": {
+    "runs": 6
+   },
+   "method": "",
+   "star": {
+    "r": 29,
+    "b": 51,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.9787,
+   "change": -0.0213,
+   "batting": "first",
+   "score": "Pakistan 299/5 v Sri Lanka 293/9"
+  },
+  {
+   "key": "1502168:Pakistan",
+   "date": "2025-11-14",
+   "team": "Pakistan",
+   "opp": "Sri Lanka",
+   "event": "Sri Lanka tour of Pakistan",
+   "stage": "2",
+   "venue": "Rawalpindi Cricket Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 8
+   },
+   "method": "",
+   "star": {
+    "r": 102,
+    "b": 119,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.9761,
+   "change": -0.0239,
+   "batting": "second",
+   "score": "Sri Lanka 288/8 v Pakistan 289/2"
+  },
+  {
+   "key": "1502169:Pakistan",
+   "date": "2025-11-16",
+   "team": "Pakistan",
+   "opp": "Sri Lanka",
+   "event": "Sri Lanka tour of Pakistan",
+   "stage": "3",
+   "venue": "Rawalpindi Cricket Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 34,
+    "b": 52,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Sri Lanka 211/10 v Pakistan 215/4"
+  },
+  {
+   "key": "1479573:India",
+   "date": "2025-11-30",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "South Africa tour of India",
+   "stage": "1",
+   "venue": "JSCA International Stadium Complex, Ranchi",
+   "result": "W",
+   "by": {
+    "runs": 17
+   },
+   "method": "",
+   "star": {
+    "r": 135,
+    "b": 120,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.6916,
+   "change": -0.3084,
+   "batting": "first",
+   "score": "India 349/8 v South Africa 332/10"
+  },
+  {
+   "key": "1479574:India",
+   "date": "2025-12-03",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "South Africa tour of India",
+   "stage": "2",
+   "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
+   "result": "L",
+   "by": {
+    "wickets": 4
+   },
+   "method": "",
+   "star": {
+    "r": 102,
+    "b": 93,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.1016,
+   "change": 0.1016,
+   "batting": "first",
+   "score": "India 358/5 v South Africa 362/6"
+  },
+  {
+   "key": "1479575:India",
+   "date": "2025-12-06",
+   "team": "India",
+   "opp": "South Africa",
+   "event": "South Africa tour of India",
+   "stage": "3",
+   "venue": "Andhra Cricket Association-Visakhapatnam District Cricket Association Stadium, Visakhapatnam",
+   "result": "W",
+   "by": {
+    "wickets": 9
+   },
+   "method": "",
+   "star": {
+    "r": 65,
+    "b": 45,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "South Africa 270/10 v India 271/1"
+  },
+  {
+   "key": "1490231:India",
+   "date": "2026-01-11",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "New Zealand tour of India",
+   "stage": "1",
+   "venue": "Kotambi Stadium, Vadodara",
+   "result": "W",
+   "by": {
+    "wickets": 4
+   },
+   "method": "",
+   "star": {
+    "r": 93,
+    "b": 91,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.7732,
+   "change": -0.2268,
+   "batting": "second",
+   "score": "New Zealand 300/8 v India 306/6"
+  },
+  {
+   "key": "1490232:India",
+   "date": "2026-01-14",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "New Zealand tour of India",
+   "stage": "2",
+   "venue": "Niranjan Shah Stadium, Rajkot",
+   "result": "L",
+   "by": {
+    "wickets": 7
+   },
+   "method": "",
+   "star": {
+    "r": 23,
+    "b": 29,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.072,
+   "change": 0.072,
+   "batting": "first",
+   "score": "India 284/7 v New Zealand 286/3"
+  },
+  {
+   "key": "1490233:India",
+   "date": "2026-01-18",
+   "team": "India",
+   "opp": "New Zealand",
+   "event": "New Zealand tour of India",
+   "stage": "3",
+   "venue": "Holkar Cricket Stadium, Indore",
+   "result": "L",
+   "by": {
+    "runs": 41
+   },
+   "method": "",
+   "star": {
+    "r": 124,
+    "b": 108,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "New Zealand 337/8 v India 296/10"
+  },
+  {
+   "key": "1535645:Pakistan",
+   "date": "2026-05-30",
+   "team": "Pakistan",
+   "opp": "Australia",
+   "event": "Australia tour of Pakistan",
+   "stage": "1",
+   "venue": "Rawalpindi Cricket Stadium",
+   "result": "W",
+   "by": {
+    "wickets": 5
+   },
+   "method": "",
+   "star": {
+    "r": 69,
+    "b": 94,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 200/10 v Pakistan 202/5"
+  },
+  {
+   "key": "1535646:Pakistan",
+   "date": "2026-06-02",
+   "team": "Pakistan",
+   "opp": "Australia",
+   "event": "Australia tour of Pakistan",
+   "stage": "2",
+   "venue": "Gaddafi Stadium, Lahore",
+   "result": "L",
+   "by": {
+    "runs": 41
+   },
+   "method": "",
+   "star": {
+    "r": 16,
+    "b": 16,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0135,
+   "change": 0.0135,
+   "batting": "second",
+   "score": "Australia 231/9 v Pakistan 190/10"
+  },
+  {
+   "key": "1535647:Pakistan",
+   "date": "2026-06-04",
+   "team": "Pakistan",
+   "opp": "Australia",
+   "event": "Australia tour of Pakistan",
+   "stage": "3",
+   "venue": "Gaddafi Stadium, Lahore",
+   "result": "W",
+   "by": {
+    "wickets": 4
+   },
+   "method": "",
+   "star": {
+    "r": 40,
+    "b": 84,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "Australia 157/10 v Pakistan 161/6"
+  },
+  {
+   "key": "1496579:India",
+   "date": "2026-07-14",
+   "team": "India",
+   "opp": "England",
+   "event": "India tour of England",
+   "stage": "1",
+   "venue": "Edgbaston",
+   "result": "W",
+   "by": {
+    "wickets": 6
+   },
+   "method": "",
+   "star": {
+    "r": 5,
+    "b": 6,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "England 258/10 v India 262/4"
+  },
+  {
+   "key": "1496580:India",
+   "date": "2026-07-16",
+   "team": "India",
+   "opp": "England",
+   "event": "India tour of England",
+   "stage": "2",
+   "venue": "Sophia Gardens, Cardiff",
+   "result": "L",
+   "by": {
+    "wickets": 4
+   },
+   "method": "",
+   "star": {
+    "r": 65,
+    "b": 66,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0138,
+   "change": 0.0138,
+   "batting": "first",
+   "score": "India 233/10 v England 235/6"
+  },
+  {
+   "key": "1496581:India",
+   "date": "2026-07-19",
+   "team": "India",
+   "opp": "England",
+   "event": "India tour of England",
+   "stage": "3",
+   "venue": "Lord's",
+   "result": "L",
+   "by": {
+    "runs": 27
+   },
+   "method": "",
+   "star": {
+    "r": 74,
+    "b": 60,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0115,
+   "change": 0.0115,
+   "batting": "second",
+   "score": "England 387/3 v India 360/7"
+  },
+  {
+   "key": "1529227:India",
+   "date": "2026-09-27",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "West Indies tour of India",
+   "stage": "1",
+   "venue": "Greenfield International Stadium, Thiruvananthapuram",
+   "result": "W",
+   "by": {
+    "wickets": 8
+   },
+   "method": "",
+   "star": {
+    "r": 139,
+    "b": 88,
+    "out": false
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "second",
+   "score": "West Indies 295/7 v India 300/2"
+  },
+  {
+   "key": "1529228:India",
+   "date": "2026-09-30",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "West Indies tour of India",
+   "stage": "2",
+   "venue": "Barsapara Cricket Stadium, Guwahati",
+   "result": "W",
+   "by": {
+    "wickets": 8
+   },
+   "method": "",
+   "star": {
+    "r": 29,
+    "b": 19,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.9636,
+   "change": -0.0364,
+   "batting": "second",
+   "score": "West Indies 405/7 v India 406/2"
+  },
+  {
+   "key": "1529229:India",
+   "date": "2026-10-03",
+   "team": "India",
+   "opp": "West Indies",
+   "event": "West Indies tour of India",
+   "stage": "3",
+   "venue": "Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",
+   "result": "L",
+   "by": {
+    "wickets": 5
+   },
+   "method": "",
+   "star": {
+    "r": 0,
+    "b": 1,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0308,
+   "change": 0.0308,
+   "batting": "first",
+   "score": "India 351/7 v West Indies 352/5"
+  },
+  {
+   "key": "1550713:Pakistan",
+   "date": "2026-10-18",
+   "team": "Pakistan",
+   "opp": "Sri Lanka",
+   "event": "Pakistan ODI Tri-Series",
+   "stage": "1",
+   "venue": "Rawalpindi Cricket Stadium",
+   "result": "W",
+   "by": {
+    "runs": 37
+   },
+   "method": "",
+   "star": {
+    "r": 45,
+    "b": 57,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 305/10 v Sri Lanka 268/10"
+  },
+  {
+   "key": "1550714:Pakistan",
+   "date": "2026-10-20",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "Pakistan ODI Tri-Series",
+   "stage": "2",
+   "venue": "Rawalpindi Cricket Stadium",
+   "result": "W",
+   "by": {
+    "runs": 87
+   },
+   "method": "",
+   "star": {
+    "r": 34,
+    "b": 52,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 1.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 302/9 v England 215/10"
+  },
+  {
+   "key": "1550716:Pakistan",
+   "date": "2026-10-25",
+   "team": "Pakistan",
+   "opp": "England",
+   "event": "Pakistan ODI Tri-Series",
+   "stage": "4",
+   "venue": "Gaddafi Stadium, Lahore",
+   "result": "W",
+   "by": {
+    "wickets": 1
+   },
+   "method": "",
+   "star": {
+    "r": 10,
+    "b": 12,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.9419,
+   "change": -0.0581,
+   "batting": "second",
+   "score": "England 241/10 v Pakistan 243/9"
+  },
+  {
+   "key": "1550717:Pakistan",
+   "date": "2026-10-27",
+   "team": "Pakistan",
+   "opp": "Sri Lanka",
+   "event": "Pakistan ODI Tri-Series",
+   "stage": "5",
+   "venue": "Gaddafi Stadium, Lahore",
+   "result": "L",
+   "by": {
+    "wickets": 8
+   },
+   "method": "",
+   "star": {
+    "r": 29,
+    "b": 33,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 0.0,
+   "p_swap": 0.0,
+   "change": 0.0,
+   "batting": "first",
+   "score": "Pakistan 110/10 v Sri Lanka 114/2"
+  },
+  {
+   "key": "1550719:Pakistan",
+   "date": "2026-10-31",
+   "team": "Pakistan",
+   "opp": "Sri Lanka",
+   "event": "Pakistan ODI Tri-Series",
+   "stage": "Final",
+   "venue": "Gaddafi Stadium, Lahore",
+   "result": "W",
+   "by": {
+    "wickets": 3
+   },
+   "method": "",
+   "star": {
+    "r": 0,
+    "b": 5,
+    "out": true
+   },
+   "opp_star": null,
+   "actual": 1.0,
+   "p_swap": 0.8385,
+   "change": -0.1615,
+   "batting": "second",
+   "score": "Sri Lanka 325/8 v Pakistan 331/7"
+  }
+ ],
+ "h2h": {
+  "matches": [
+   {
+    "key": "1022353:India",
+    "date": "2017-06-04",
+    "team": "India",
+    "opp": "Pakistan",
+    "event": "ICC Champions Trophy",
+    "stage": "4",
+    "venue": "Edgbaston",
+    "result": "W",
+    "by": {
+     "runs": 124
+    },
+    "method": "D/L",
+    "star": {
+     "r": 81,
+     "b": 68,
+     "out": false
+    },
+    "opp_star": {
+     "r": 8,
+     "b": 12,
+     "out": true
+    },
+    "actual": 1.0,
+    "p_swap": 1.0,
+    "change": 0.0,
+    "batting": "first",
+    "score": "India 319/3 v Pakistan 164/9"
+   },
+   {
+    "key": "1022375:India",
+    "date": "2017-06-18",
+    "team": "India",
+    "opp": "Pakistan",
+    "event": "ICC Champions Trophy",
+    "stage": "Final",
+    "venue": "The Oval",
+    "result": "L",
+    "by": {
+     "runs": 180
+    },
+    "method": "",
+    "star": {
+     "r": 5,
+     "b": 9,
+     "out": true
+    },
+    "opp_star": {
+     "r": 46,
+     "b": 52,
+     "out": true
+    },
+    "actual": 0.0,
+    "p_swap": 0.0,
+    "change": 0.0,
+    "batting": "second",
+    "score": "Pakistan 338/4 v India 158/10"
+   },
+   {
+    "key": "1144504:India",
+    "date": "2019-06-16",
+    "team": "India",
+    "opp": "Pakistan",
+    "event": "World Cup",
+    "stage": "22",
+    "venue": "Old Trafford",
+    "result": "W",
+    "by": {
+     "runs": 89
+    },
+    "method": "D/L",
+    "star": {
+     "r": 77,
+     "b": 65,
+     "out": true
+    },
+    "opp_star": {
+     "r": 48,
+     "b": 57,
+     "out": true
+    },
+    "actual": 1.0,
+    "p_swap": 1.0,
+    "change": 0.0,
+    "batting": "first",
+    "score": "India 336/5 v Pakistan 212/6"
+   },
+   {
+    "key": "1388406:India",
+    "date": "2023-09-10",
+    "team": "India",
+    "opp": "Pakistan",
+    "event": "Asia Cup",
+    "stage": "9",
+    "venue": "R Premadasa Stadium, Colombo",
+    "result": "W",
+    "by": {
+     "runs": 228
+    },
+    "method": "",
+    "star": {
+     "r": 122,
+     "b": 94,
+     "out": false
+    },
+    "opp_star": {
+     "r": 10,
+     "b": 24,
+     "out": true
+    },
+    "actual": 1.0,
+    "p_swap": 1.0,
+    "change": 0.0,
+    "batting": "first",
+    "score": "India 356/2 v Pakistan 128/8"
+   },
+   {
+    "key": "1384403:India",
+    "date": "2023-10-14",
+    "team": "India",
+    "opp": "Pakistan",
+    "event": "ICC Cricket World Cup",
+    "stage": "12",
+    "venue": "Narendra Modi Stadium, Ahmedabad",
+    "result": "W",
+    "by": {
+     "wickets": 7
+    },
+    "method": "",
+    "star": {
+     "r": 16,
+     "b": 18,
+     "out": true
+    },
+    "opp_star": {
+     "r": 50,
+     "b": 58,
+     "out": true
+    },
+    "actual": 1.0,
+    "p_swap": 1.0,
+    "change": 0.0,
+    "batting": "second",
+    "score": "Pakistan 191/10 v India 192/3"
+   },
+   {
+    "key": "1466418:India",
+    "date": "2025-02-23",
+    "team": "India",
+    "opp": "Pakistan",
+    "event": "ICC Champions Trophy",
+    "stage": "5",
+    "venue": "Dubai International Cricket Stadium",
+    "result": "W",
+    "by": {
+     "wickets": 6
+    },
+    "method": "",
+    "star": {
+     "r": 100,
+     "b": 111,
+     "out": false
+    },
+    "opp_star": {
+     "r": 23,
+     "b": 26,
+     "out": true
+    },
+    "actual": 1.0,
+    "p_swap": 1.0,
+    "change": 0.0,
+    "batting": "second",
+    "score": "Pakistan 241/10 v India 244/4"
+   }
+  ],
+  "actual_india": 5.0,
+  "swap_india": 5.0
+ },
+ "tournaments": {
+  "pak_wc2019": {
+   "matches": [
+    {
+     "key": "1144484:Pakistan",
+     "date": "2019-05-31",
+     "team": "Pakistan",
+     "opp": "West Indies",
+     "event": "World Cup",
+     "stage": "2",
+     "venue": "Trent Bridge",
+     "result": "L",
+     "by": {
+      "wickets": 7
+     },
+     "method": "",
+     "star": {
+      "r": 22,
+      "b": 33,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.0,
+     "change": 0.0,
+     "batting": "first",
+     "score": "Pakistan 105/10 v West Indies 108/3"
+    },
+    {
+     "key": "1144488:Pakistan",
+     "date": "2019-06-03",
+     "team": "Pakistan",
+     "opp": "England",
+     "event": "World Cup",
+     "stage": "6",
+     "venue": "Trent Bridge",
+     "result": "W",
+     "by": {
+      "runs": 14
+     },
+     "method": "",
+     "star": {
+      "r": 63,
+      "b": 66,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.8397,
+     "change": -0.1603,
+     "batting": "first",
+     "score": "Pakistan 348/8 v England 334/9"
+    },
+    {
+     "key": "1144499:Pakistan",
+     "date": "2019-06-12",
+     "team": "Pakistan",
+     "opp": "Australia",
+     "event": "World Cup",
+     "stage": "17",
+     "venue": "The County Ground, Taunton",
+     "result": "L",
+     "by": {
+      "runs": 41
+     },
+     "method": "",
+     "star": {
+      "r": 30,
+      "b": 28,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.0,
+     "change": 0.0,
+     "batting": "second",
+     "score": "Australia 307/10 v Pakistan 266/10"
+    },
+    {
+     "key": "1144504:Pakistan",
+     "date": "2019-06-16",
+     "team": "Pakistan",
+     "opp": "India",
+     "event": "World Cup",
+     "stage": "22",
+     "venue": "Old Trafford",
+     "result": "L",
+     "by": {
+      "runs": 89
+     },
+     "method": "D/L",
+     "star": {
+      "r": 48,
+      "b": 57,
+      "out": true
+     },
+     "opp_star": {
+      "r": 77,
+      "b": 65,
+      "out": true
+     },
+     "actual": 0.0,
+     "p_swap": 0.0,
+     "change": 0.0,
+     "batting": "second",
+     "score": "India 336/5 v Pakistan 212/6"
+    },
+    {
+     "key": "1144512:Pakistan",
+     "date": "2019-06-23",
+     "team": "Pakistan",
+     "opp": "South Africa",
+     "event": "World Cup",
+     "stage": "30",
+     "venue": "Lord's",
+     "result": "W",
+     "by": {
+      "runs": 49
+     },
+     "method": "",
+     "star": {
+      "r": 69,
+      "b": 80,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 1.0,
+     "change": 0.0,
+     "batting": "first",
+     "score": "Pakistan 308/7 v South Africa 259/9"
+    },
+    {
+     "key": "1144515:Pakistan",
+     "date": "2019-06-26",
+     "team": "Pakistan",
+     "opp": "New Zealand",
+     "event": "World Cup",
+     "stage": "33",
+     "venue": "Edgbaston",
+     "result": "W",
+     "by": {
+      "wickets": 6
+     },
+     "method": "",
+     "star": {
+      "r": 101,
+      "b": 127,
+      "out": false
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.9488,
+     "change": -0.0512,
+     "batting": "second",
+     "score": "New Zealand 237/6 v Pakistan 241/4"
+    },
+    {
+     "key": "1144525:Pakistan",
+     "date": "2019-07-05",
+     "team": "Pakistan",
+     "opp": "Bangladesh",
+     "event": "World Cup",
+     "stage": "43",
+     "venue": "Lord's",
+     "result": "W",
+     "by": {
+      "runs": 94
+     },
+     "method": "",
+     "star": {
+      "r": 96,
+      "b": 98,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 1.0,
+     "change": 0.0,
+     "batting": "first",
+     "score": "Pakistan 315/9 v Bangladesh 221/10"
+    }
+   ],
+   "p_one_more_win": [
+    0.0,
+    4.0,
+    3.79
+   ]
+  },
+  "pak_wc2023": {
+   "matches": [
+    {
+     "key": "1384393:Pakistan",
+     "date": "2023-10-06",
+     "team": "Pakistan",
+     "opp": "Netherlands",
+     "event": "ICC Cricket World Cup",
+     "stage": "2",
+     "venue": "Rajiv Gandhi International Stadium, Uppal",
+     "result": "W",
+     "by": {
+      "runs": 81
+     },
+     "method": "",
+     "star": {
+      "r": 5,
+      "b": 18,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 1.0,
+     "change": 0.0,
+     "batting": "first",
+     "score": "Pakistan 286/10 v Netherlands 205/10"
+    },
+    {
+     "key": "1384399:Pakistan",
+     "date": "2023-10-10",
+     "team": "Pakistan",
+     "opp": "Sri Lanka",
+     "event": "ICC Cricket World Cup",
+     "stage": "8",
+     "venue": "Rajiv Gandhi International Stadium, Uppal",
+     "result": "W",
+     "by": {
+      "wickets": 6
+     },
+     "method": "",
+     "star": {
+      "r": 10,
+      "b": 15,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.8694,
+     "change": -0.1306,
+     "batting": "second",
+     "score": "Sri Lanka 344/9 v Pakistan 345/4"
+    },
+    {
+     "key": "1384403:Pakistan",
+     "date": "2023-10-14",
+     "team": "Pakistan",
+     "opp": "India",
+     "event": "ICC Cricket World Cup",
+     "stage": "12",
+     "venue": "Narendra Modi Stadium, Ahmedabad",
+     "result": "L",
+     "by": {
+      "wickets": 7
+     },
+     "method": "",
+     "star": {
+      "r": 50,
+      "b": 58,
+      "out": true
+     },
+     "opp_star": {
+      "r": 16,
+      "b": 18,
+      "out": true
+     },
+     "actual": 0.0,
+     "p_swap": 0.0,
+     "change": 0.0,
+     "batting": "first",
+     "score": "Pakistan 191/10 v India 192/3"
+    },
+    {
+     "key": "1384409:Pakistan",
+     "date": "2023-10-20",
+     "team": "Pakistan",
+     "opp": "Australia",
+     "event": "ICC Cricket World Cup",
+     "stage": "18",
+     "venue": "M Chinnaswamy Stadium, Bengaluru",
+     "result": "L",
+     "by": {
+      "runs": 62
+     },
+     "method": "",
+     "star": {
+      "r": 18,
+      "b": 14,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.0,
+     "change": 0.0,
+     "batting": "second",
+     "score": "Australia 367/9 v Pakistan 305/10"
+    },
+    {
+     "key": "1384417:Pakistan",
+     "date": "2023-10-27",
+     "team": "Pakistan",
+     "opp": "South Africa",
+     "event": "ICC Cricket World Cup",
+     "stage": "26",
+     "venue": "MA Chidambaram Stadium",
+     "result": "L",
+     "by": {
+      "wickets": 1
+     },
+     "method": "",
+     "star": {
+      "r": 50,
+      "b": 65,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.2497,
+     "change": 0.2497,
+     "batting": "first",
+     "score": "Pakistan 270/10 v South Africa 271/9"
+    },
+    {
+     "key": "1384422:Pakistan",
+     "date": "2023-10-31",
+     "team": "Pakistan",
+     "opp": "Bangladesh",
+     "event": "ICC Cricket World Cup",
+     "stage": "31",
+     "venue": "Eden Gardens, Kolkata",
+     "result": "W",
+     "by": {
+      "wickets": 7
+     },
+     "method": "",
+     "star": {
+      "r": 9,
+      "b": 16,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 1.0,
+     "change": 0.0,
+     "batting": "second",
+     "score": "Bangladesh 204/10 v Pakistan 205/3"
+    },
+    {
+     "key": "1384426:Pakistan",
+     "date": "2023-11-04",
+     "team": "Pakistan",
+     "opp": "New Zealand",
+     "event": "ICC Cricket World Cup",
+     "stage": "35",
+     "venue": "M Chinnaswamy Stadium, Bengaluru",
+     "result": "W",
+     "by": {
+      "runs": 21
+     },
+     "method": "D/L",
+     "star": {
+      "r": 66,
+      "b": 63,
+      "out": false
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.781,
+     "change": -0.219,
+     "batting": "second",
+     "score": "New Zealand 401/6 v Pakistan 200/1"
+    },
+    {
+     "key": "1384435:Pakistan",
+     "date": "2023-11-11",
+     "team": "Pakistan",
+     "opp": "England",
+     "event": "ICC Cricket World Cup",
+     "stage": "44",
+     "venue": "Eden Gardens, Kolkata",
+     "result": "L",
+     "by": {
+      "runs": 93
+     },
+     "method": "",
+     "star": {
+      "r": 38,
+      "b": 45,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.0,
+     "change": 0.0,
+     "batting": "second",
+     "score": "England 337/9 v Pakistan 244/10"
+    }
+   ],
+   "p_one_more_win": [
+    0.1611,
+    4.0,
+    3.9
+   ]
+  },
+  "ind_wc2019": {
+   "matches": [
+    {
+     "key": "1144490:India",
+     "date": "2019-06-05",
+     "team": "India",
+     "opp": "South Africa",
+     "event": "World Cup",
+     "stage": "8",
+     "venue": "The Rose Bowl, Southampton",
+     "result": "W",
+     "by": {
+      "wickets": 6
+     },
+     "method": "",
+     "star": {
+      "r": 18,
+      "b": 34,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 1.0,
+     "change": 0.0,
+     "batting": "second",
+     "score": "South Africa 227/9 v India 230/4"
+    },
+    {
+     "key": "1144496:India",
+     "date": "2019-06-09",
+     "team": "India",
+     "opp": "Australia",
+     "event": "World Cup",
+     "stage": "14",
+     "venue": "The Oval",
+     "result": "W",
+     "by": {
+      "runs": 36
+     },
+     "method": "",
+     "star": {
+      "r": 82,
+      "b": 77,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 1.0,
+     "change": 0.0,
+     "batting": "first",
+     "score": "India 352/5 v Australia 316/10"
+    },
+    {
+     "key": "1144504:India",
+     "date": "2019-06-16",
+     "team": "India",
+     "opp": "Pakistan",
+     "event": "World Cup",
+     "stage": "22",
+     "venue": "Old Trafford",
+     "result": "W",
+     "by": {
+      "runs": 89
+     },
+     "method": "D/L",
+     "star": {
+      "r": 77,
+      "b": 65,
+      "out": true
+     },
+     "opp_star": {
+      "r": 48,
+      "b": 57,
+      "out": true
+     },
+     "actual": 1.0,
+     "p_swap": 1.0,
+     "change": 0.0,
+     "batting": "first",
+     "score": "India 336/5 v Pakistan 212/6"
+    },
+    {
+     "key": "1144516:India",
+     "date": "2019-06-27",
+     "team": "India",
+     "opp": "West Indies",
+     "event": "World Cup",
+     "stage": "34",
+     "venue": "Old Trafford",
+     "result": "W",
+     "by": {
+      "runs": 125
+     },
+     "method": "",
+     "star": {
+      "r": 72,
+      "b": 82,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 1.0,
+     "change": 0.0,
+     "batting": "first",
+     "score": "India 268/7 v West Indies 143/10"
+    },
+    {
+     "key": "1144520:India",
+     "date": "2019-06-30",
+     "team": "India",
+     "opp": "England",
+     "event": "World Cup",
+     "stage": "38",
+     "venue": "Edgbaston",
+     "result": "L",
+     "by": {
+      "runs": 31
+     },
+     "method": "",
+     "star": {
+      "r": 66,
+      "b": 76,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.0549,
+     "change": 0.0549,
+     "batting": "second",
+     "score": "England 337/7 v India 306/5"
+    },
+    {
+     "key": "1144522:India",
+     "date": "2019-07-02",
+     "team": "India",
+     "opp": "Bangladesh",
+     "event": "World Cup",
+     "stage": "40",
+     "venue": "Edgbaston",
+     "result": "W",
+     "by": {
+      "runs": 28
+     },
+     "method": "",
+     "star": {
+      "r": 26,
+      "b": 27,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 1.0,
+     "change": 0.0,
+     "batting": "first",
+     "score": "India 314/9 v Bangladesh 286/10"
+    },
+    {
+     "key": "1144526:India",
+     "date": "2019-07-06",
+     "team": "India",
+     "opp": "Sri Lanka",
+     "event": "World Cup",
+     "stage": "44",
+     "venue": "Headingley",
+     "result": "W",
+     "by": {
+      "wickets": 7
+     },
+     "method": "",
+     "star": {
+      "r": 34,
+      "b": 41,
+      "out": false
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 1.0,
+     "change": 0.0,
+     "batting": "second",
+     "score": "Sri Lanka 264/7 v India 265/3"
+    },
+    {
+     "key": "1144528:India",
+     "date": "2019-07-09",
+     "team": "India",
+     "opp": "New Zealand",
+     "event": "World Cup",
+     "stage": "Semi Final",
+     "venue": "Old Trafford",
+     "result": "L",
+     "by": {
+      "runs": 18
+     },
+     "method": "",
+     "star": {
+      "r": 1,
+      "b": 6,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.349,
+     "change": 0.349,
+     "batting": "second",
+     "score": "New Zealand 239/8 v India 221/10"
+    }
+   ]
+  },
+  "ind_wc2023": {
+   "matches": [
+    {
+     "key": "1384396:India",
+     "date": "2023-10-08",
+     "team": "India",
+     "opp": "Australia",
+     "event": "ICC Cricket World Cup",
+     "stage": "5",
+     "venue": "MA Chidambaram Stadium",
+     "result": "W",
+     "by": {
+      "wickets": 6
+     },
+     "method": "",
+     "star": {
+      "r": 85,
+      "b": 116,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 1.0,
+     "change": 0.0,
+     "batting": "second",
+     "score": "Australia 199/10 v India 201/4"
+    },
+    {
+     "key": "1384403:India",
+     "date": "2023-10-14",
+     "team": "India",
+     "opp": "Pakistan",
+     "event": "ICC Cricket World Cup",
+     "stage": "12",
+     "venue": "Narendra Modi Stadium, Ahmedabad",
+     "result": "W",
+     "by": {
+      "wickets": 7
+     },
+     "method": "",
+     "star": {
+      "r": 16,
+      "b": 18,
+      "out": true
+     },
+     "opp_star": {
+      "r": 50,
+      "b": 58,
+      "out": true
+     },
+     "actual": 1.0,
+     "p_swap": 1.0,
+     "change": 0.0,
+     "batting": "second",
+     "score": "Pakistan 191/10 v India 192/3"
+    },
+    {
+     "key": "1384408:India",
+     "date": "2023-10-19",
+     "team": "India",
+     "opp": "Bangladesh",
+     "event": "ICC Cricket World Cup",
+     "stage": "17",
+     "venue": "Maharashtra Cricket Association Stadium, Pune",
+     "result": "W",
+     "by": {
+      "wickets": 7
+     },
+     "method": "",
+     "star": {
+      "r": 103,
+      "b": 97,
+      "out": false
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 1.0,
+     "change": 0.0,
+     "batting": "second",
+     "score": "Bangladesh 256/8 v India 261/3"
+    },
+    {
+     "key": "1384412:India",
+     "date": "2023-10-22",
+     "team": "India",
+     "opp": "New Zealand",
+     "event": "ICC Cricket World Cup",
+     "stage": "21",
+     "venue": "Himachal Pradesh Cricket Association Stadium, Dharamsala",
+     "result": "W",
+     "by": {
+      "wickets": 4
+     },
+     "method": "",
+     "star": {
+      "r": 95,
+      "b": 104,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 0.9892,
+     "change": -0.0108,
+     "batting": "second",
+     "score": "New Zealand 273/10 v India 274/6"
+    },
+    {
+     "key": "1384420:India",
+     "date": "2023-10-29",
+     "team": "India",
+     "opp": "England",
+     "event": "ICC Cricket World Cup",
+     "stage": "29",
+     "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+     "result": "W",
+     "by": {
+      "runs": 100
+     },
+     "method": "",
+     "star": {
+      "r": 0,
+      "b": 9,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 1.0,
+     "change": 0.0,
+     "batting": "first",
+     "score": "India 229/9 v England 129/10"
+    },
+    {
+     "key": "1384424:India",
+     "date": "2023-11-02",
+     "team": "India",
+     "opp": "Sri Lanka",
+     "event": "ICC Cricket World Cup",
+     "stage": "33",
+     "venue": "Wankhede Stadium, Mumbai",
+     "result": "W",
+     "by": {
+      "runs": 302
+     },
+     "method": "",
+     "star": {
+      "r": 88,
+      "b": 94,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 1.0,
+     "change": 0.0,
+     "batting": "first",
+     "score": "India 357/8 v Sri Lanka 55/10"
+    },
+    {
+     "key": "1384428:India",
+     "date": "2023-11-05",
+     "team": "India",
+     "opp": "South Africa",
+     "event": "ICC Cricket World Cup",
+     "stage": "37",
+     "venue": "Eden Gardens, Kolkata",
+     "result": "W",
+     "by": {
+      "runs": 243
+     },
+     "method": "",
+     "star": {
+      "r": 101,
+      "b": 121,
+      "out": false
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 1.0,
+     "change": 0.0,
+     "batting": "first",
+     "score": "India 326/5 v South Africa 83/10"
+    },
+    {
+     "key": "1384436:India",
+     "date": "2023-11-12",
+     "team": "India",
+     "opp": "Netherlands",
+     "event": "ICC Cricket World Cup",
+     "stage": "45",
+     "venue": "M Chinnaswamy Stadium, Bengaluru",
+     "result": "W",
+     "by": {
+      "runs": 160
+     },
+     "method": "",
+     "star": {
+      "r": 51,
+      "b": 56,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 1.0,
+     "change": 0.0,
+     "batting": "first",
+     "score": "India 410/4 v Netherlands 250/10"
+    },
+    {
+     "key": "1384437:India",
+     "date": "2023-11-15",
+     "team": "India",
+     "opp": "New Zealand",
+     "event": "ICC Cricket World Cup",
+     "stage": "Semi Final",
+     "venue": "Wankhede Stadium, Mumbai",
+     "result": "W",
+     "by": {
+      "runs": 70
+     },
+     "method": "",
+     "star": {
+      "r": 117,
+      "b": 113,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 1.0,
+     "p_swap": 1.0,
+     "change": 0.0,
+     "batting": "first",
+     "score": "India 397/4 v New Zealand 327/10"
+    },
+    {
+     "key": "1384439:India",
+     "date": "2023-11-19",
+     "team": "India",
+     "opp": "Australia",
+     "event": "ICC Cricket World Cup",
+     "stage": "Final",
+     "venue": "Narendra Modi Stadium, Ahmedabad",
+     "result": "L",
+     "by": {
+      "wickets": 6
+     },
+     "method": "",
+     "star": {
+      "r": 54,
+      "b": 63,
+      "out": true
+     },
+     "opp_star": null,
+     "actual": 0.0,
+     "p_swap": 0.014,
+     "change": 0.014,
+     "batting": "first",
+     "score": "India 240/10 v Australia 241/4"
+    }
+   ]
+  }
+ }
+}

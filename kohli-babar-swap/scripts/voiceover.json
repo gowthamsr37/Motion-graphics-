@@ -1,0 +1,268 @@
+{
+  "voice": "am_michael",
+  "lang": "en-us",
+  "speed": 1.0,
+  "fix": [
+    [
+      "ɪnnˈɪŋz",
+      "ˈɪnɪŋz"
+    ],
+    [
+      "bˈæbɑːɹ",
+      "bˈɑːbəɹ"
+    ],
+    [
+      "ˈæzæm",
+      "ˈɑːzəm"
+    ],
+    [
+      "vˈɜːɹæt",
+      "vɪɹˈɑːt"
+    ],
+    [
+      "tʃˈɛnaɪ",
+      "tʃɛnˈaɪ"
+    ],
+    [
+      "deɪbjˈuː",
+      "dˈeɪbjuː"
+    ]
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.5,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Eighteen, and fifty-six.",
+          "caption": "18 and 56.",
+          "pause": 0.5
+        },
+        {
+          "text": "What if Virat Kohli had played for Pakistan, and Babar Azam for India?",
+          "caption": "What if Virat Kohli had played for Pakistan, and Babar Azam for India?",
+          "pause": 0.5
+        },
+        {
+          "text": "We replayed every ODI they have played since 2015. Ten thousand times each.",
+          "caption": "We replayed every ODI they have played since 2015. 10,000 times each.",
+          "pause": 0.5
+        },
+        {
+          "text": "This is The Swap.",
+          "caption": "This is The Swap.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.3,
+      "hold": 0.9,
+      "segments": [
+        {
+          "text": "Since May 2015, Kohli averages sixty-five in ODIs, with thirty-three hundreds.",
+          "caption": "Since May 2015, Kohli averages 65 in ODIs, with 33 hundreds.",
+          "pause": 0.4
+        },
+        {
+          "text": "Babar averages fifty-two, with twenty.",
+          "caption": "Babar averages 52, with 20.",
+          "pause": 0.4
+        },
+        {
+          "text": "Thirteen more runs every innings for Kohli. And faster.",
+          "caption": "13 more runs every innings for Kohli. And faster.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.3,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "The gap is widest in a chase.",
+          "caption": "The gap is widest in a chase.",
+          "pause": 0.4
+        },
+        {
+          "text": "Batting first, Kohli averages sixty-three. Babar, fifty-six.",
+          "caption": "Batting first, Kohli averages 63. Babar, 56.",
+          "pause": 0.4
+        },
+        {
+          "text": "Chasing, Kohli climbs to sixty-eight. Babar drops to forty-nine.",
+          "caption": "Chasing, Kohli climbs to 68. Babar drops to 49.",
+          "pause": 0.45
+        },
+        {
+          "text": "One gets better. The other gets worse.",
+          "caption": "One gets better. The other gets worse.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.3,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Here's the replay. Mohali, 2016. Kohli's one hundred and fifty-four not out chases down two hundred and eighty-six.",
+          "caption": "Here's the replay. Mohali, 2016. Kohli's 154 not out chases down 286.",
+          "pause": 0.45
+        },
+        {
+          "text": "Take it out. Drop in a Babar innings, picked at random from his record: chasing, against a top team.",
+          "caption": "Take it out. Drop in a Babar innings, picked at random from his record: chasing, against a top team.",
+          "pause": 0.45
+        },
+        {
+          "text": "His teammates bat the balls he leaves.",
+          "caption": "His teammates bat the balls he leaves.",
+          "pause": 0.45
+        },
+        {
+          "text": "Ten thousand replays later, India win less than twice in a hundred.",
+          "caption": "10,000 replays later, India win less than twice in 100.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.3,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "But first, a fair test.",
+          "caption": "But first, a fair test.",
+          "pause": 0.35
+        },
+        {
+          "text": "Each man replaces himself, with a random innings from his own record. That takes the luck out.",
+          "caption": "Each man replaces himself, with a random innings from his own record. That takes the luck out.",
+          "pause": 0.45
+        },
+        {
+          "text": "India win a hundred and one of a hundred and fifty-four. Pakistan, seventy-two of a hundred and thirty-eight.",
+          "caption": "India win 101 of 154. Pakistan, 72 of 138.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.3,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Now, the swap. India, with Babar at number three, win ninety-five. About six fewer, more than half of them in chases.",
+          "caption": "Now, the swap. India, with Babar at No.3, win 95. About six fewer, more than half of them in chases.",
+          "pause": 0.55
+        },
+        {
+          "text": "Pakistan, with Kohli, win seventy-six and a half. Four and a half more: one extra win every thirty games.",
+          "caption": "Pakistan, with Kohli, win 76.5. 4.5 more: one extra win every 30 games.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "lead": 0.3,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Why not more? Most ODIs aren't close.",
+          "caption": "Why not more? Most ODIs aren't close.",
+          "pause": 0.4
+        },
+        {
+          "text": "Every dot is a match, placed by its winning margin.",
+          "caption": "Every dot is a match, placed by its winning margin.",
+          "pause": 0.4
+        },
+        {
+          "text": "Kohli's thirteen extra runs mostly matter in this red band. Only forty-four of two hundred and ninety-two games landed there.",
+          "caption": "Kohli's 13 extra runs mostly matter in this red band. Only 44 of 292 games landed there.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "lead": 0.3,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "But some nights change.",
+          "caption": "But some nights change.",
+          "pause": 0.45
+        },
+        {
+          "text": "Colombo, 2023. Pakistan lose to Sri Lanka off the last ball, and miss the Asia Cup final. With Kohli, they win two times in three.",
+          "caption": "Colombo, 2023. Pakistan lose to Sri Lanka off the last ball, and miss the Asia Cup final. With Kohli, they win two times in three.",
+          "pause": 0.55
+        },
+        {
+          "text": "Manchester, 2019. The World Cup semi-final. Kohli makes one. With Babar, India win one time in five.",
+          "caption": "Manchester, 2019. The World Cup semi-final. Kohli makes 1. With Babar, India win one time in five.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "lead": 0.3,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "And India against Pakistan?",
+          "caption": "And India against Pakistan?",
+          "pause": 0.4
+        },
+        {
+          "text": "Both men played six of them. India won five. Swap them, and India still win five.",
+          "caption": "Both men played six of them. India won five. Swap them, and India still win five.",
+          "pause": 0.45
+        },
+        {
+          "text": "This rivalry was never just about Kohli.",
+          "caption": "This rivalry was never just about Kohli.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "lead": 0.3,
+      "hold": 1.8,
+      "segments": [
+        {
+          "text": "So, the verdict.",
+          "caption": "So, the verdict.",
+          "pause": 0.45
+        },
+        {
+          "text": "Over a decade, Kohli is worth about five more ODI wins than Babar, and the difference lives in the chase.",
+          "caption": "Over a decade, Kohli is worth about five more ODI wins than Babar, and the difference lives in the chase.",
+          "pause": 0.5
+        },
+        {
+          "text": "Swap the shirts, and the gap between the teams narrows. It doesn't close.",
+          "caption": "Swap the shirts, and the gap between the teams narrows. It doesn't close.",
+          "pause": 0.6
+        },
+        {
+          "text": "Beyond The Scoreboard.",
+          "caption": "Beyond The Scoreboard.",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}
