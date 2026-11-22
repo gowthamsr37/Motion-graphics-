@@ -1,0 +1,82 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.0,
+  "fix": [
+    ["lˈæk", "lˈɑːk"],
+    ["ˈɛmi", "ˌiːˌɛmˈaɪ"],
+    ["mˈɪɹə", "mˈiːɹə"]
+  ],
+  "scenes": [
+    {
+      "id": "s1", "lead": 0.3, "hold": 0.4,
+      "segments": [
+        { "text": "Arjun and Meera are both twenty-eight. Same job, same salary, same city: Bangalore.", "caption": "Arjun and Meera are both 28. Same job, same salary, same city: Bangalore.", "pause": 0.4 },
+        { "text": "And both their parents give them the same gift: twenty-five lakh rupees.", "caption": "And both their parents give them the same gift: ₹25 lakh.", "pause": 0.4 },
+        { "text": "One buys a flat. One rents.", "caption": "One buys a flat. One rents.", "pause": 0.35 },
+        { "text": "Twenty years later, the gap is more than one crore.", "caption": "Twenty years later, the gap is more than ₹1 crore.", "pause": 0.35 },
+        { "text": "But it almost went the other way.", "caption": "But it almost went the other way.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s2", "lead": 0.3, "hold": 0.5,
+      "segments": [
+        { "text": "Arjun's father has one rule: rent is money thrown away.", "caption": "Arjun's father has one rule: \"Rent is money thrown away.\"", "pause": 0.4 },
+        { "text": "So Arjun buys a ninety-lakh flat.", "caption": "So Arjun buys a ₹90 lakh flat.", "pause": 0.25 },
+        { "text": "His twenty-five lakh goes on the down payment, stamp duty and registration.", "caption": "His ₹25 lakh goes on the down payment, stamp duty and registration.", "pause": 0.35 },
+        { "text": "The rest is a home loan at eight and a half percent. His EMI: sixty-two thousand five hundred a month, for twenty years.", "caption": "The rest is a home loan at 8.5%. His EMI: ₹62,500 a month, for 20 years.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s3", "lead": 0.3, "hold": 0.5,
+      "segments": [
+        { "text": "Meera rents a similar flat next door, for twenty-one thousand a month.", "caption": "Meera rents a similar flat next door, for ₹21,000 a month.", "pause": 0.3 },
+        { "text": "She puts her twenty-five lakh into an index fund.", "caption": "She puts her ₹25 lakh into an index fund.", "pause": 0.3 },
+        { "text": "And every month, she invests the difference between owning and renting: about forty-five thousand rupees.", "caption": "And every month, she invests the difference between owning and renting: about ₹45,000.", "pause": 0.4 },
+        { "text": "Her mother is not impressed.", "caption": "Her mother is not impressed.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s4", "lead": 0.2, "hold": 0.3,
+      "segments": [
+        { "text": "For five years, the plan works.", "caption": "For five years, the plan works.", "pause": 0.3 },
+        { "text": "Her rent goes up every year, but her investments grow faster.", "caption": "Her rent goes up every year, but her investments grow faster.", "pause": 0.3 },
+        { "text": "By year five, Meera has seventy-eight lakh. Arjun's share of his flat: fifty-one.", "caption": "By year 5, Meera has ₹78 lakh. Arjun's share of his flat: ₹51 lakh.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s5", "lead": 0.3, "hold": 0.5,
+      "segments": [
+        { "text": "Then, in year six, the market crashes thirty-five percent.", "caption": "Then, in year 6, the market crashes 35%.", "pause": 0.35 },
+        { "text": "Meera loses twenty-three lakh on paper. For the first time, Arjun is ahead.", "caption": "Meera loses ₹23 lakh on paper. For the first time, Arjun is ahead.", "pause": 0.35 },
+        { "text": "Her mother calls. Her friends are selling. Every instinct says: get out.", "caption": "Her mother calls. Her friends are selling. Every instinct says: get out.", "pause": 0.45 },
+        { "text": "Meera does nothing. She keeps investing, every single month.", "caption": "Meera does nothing. She keeps investing, every single month.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s6", "lead": 0.3, "hold": 0.6,
+      "segments": [
+        { "text": "Fourteen years later, Arjun owns his flat outright. It's worth about two point four crore.", "caption": "Fourteen years later, Arjun owns his flat outright. It's worth about ₹2.4 crore.", "pause": 0.45 },
+        { "text": "Meera's portfolio: four point one crore.", "caption": "Meera's portfolio: ₹4.1 crore.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s7", "lead": 0.3, "hold": 0.6,
+      "segments": [
+        { "text": "But here's what the spreadsheet doesn't show.", "caption": "But here's what the spreadsheet doesn't show.", "pause": 0.35 },
+        { "text": "If Meera had sold in that crash, and waited three years to feel safe again, she'd have ended with two point six crore.", "caption": "If Meera had sold in that crash, and waited three years to feel safe again, she'd have ended with ₹2.6 crore.", "pause": 0.35 },
+        { "text": "One panic would have cost her one and a half crore.", "caption": "One panic would have cost her ₹1.5 crore.", "pause": 0.45 },
+        { "text": "And if Bangalore prices had grown eight percent a year instead of five, Arjun would have won.", "caption": "And if Bangalore prices had grown 8% a year instead of 5%, Arjun would have won.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s8", "lead": 0.3, "hold": 3.6,
+      "segments": [
+        { "text": "So renting doesn't beat buying. Discipline does.", "caption": "So renting doesn't beat buying. Discipline does.", "pause": 0.4 },
+        { "text": "Renting only wins if you invest the difference, every month, through every crash.", "caption": "Renting only wins if you invest the difference, every month, through every crash.", "pause": 0.4 },
+        { "text": "And Arjun? No landlord ever asked him to leave. That's worth something too.", "caption": "And Arjun? No landlord ever asked him to leave. That's worth something too.", "pause": 0.4 },
+        { "text": "Next time: should Arjun have prepaid his loan? Follow, so you don't miss it.", "caption": "Next time: should Arjun have prepaid his loan? Follow, so you don't miss it.", "pause": 0.3 }
+      ]
+    }
+  ]
+}
