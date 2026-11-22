@@ -26,7 +26,7 @@ export const PALS: Record<string, CoverPal> = {
   magenta: { bg: "#4A0430", bg2: "#A21656", deep: "#1A0110", glowA: "#F472B6", glowB: "#FDE047", ink: "#FFFFFF", accent: "#FDE047", banner: "#FFFFFF", bannerText: "#6B0F3A", num: "#FDE047", topic: "linear-gradient(90deg, #FFFFFF, #FBCFE8)", panel: "rgba(40,3,26,0.9)" },
   ocean: { bg: "#083B57", bg2: "#0891B2", deep: "#021826", glowA: "#67E8F9", glowB: "#FDE047", ink: "#FFFFFF", accent: "#FDE047", banner: "#FDE047", bannerText: "#082F49", num: "#FDE047", topic: "linear-gradient(90deg, #FFFFFF, #CFFAFE)", panel: "rgba(4,30,46,0.9)" },
 };
-export const ML_PAL = "plum"; // the series cover colour (one place to change it)
+export const ML_PAL = "ocean"; // the series cover colour (one place to change it)
 export const usePal = (name?: string): CoverPal => PALS[name ?? ML_PAL] ?? PALS[ML_PAL];
 // legacy names (the plum set)
 export const ML = { bg: PALS.plum.bg, bg2: PALS.plum.bg2, glowA: PALS.plum.glowA, glowB: PALS.plum.glowB, ink: PALS.plum.ink, pink: PALS.plum.accent };
