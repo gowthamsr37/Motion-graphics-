@@ -91,3 +91,12 @@ TRACKS.forEach((tr, ti) => {
   save(join(ROOT, "public", "audio", "music", `m${ti}.wav`), b, 0.6);
 });
 console.log("audio kit written");
+
+// clank: metal plates (inharmonic partials + noise)
+{
+  seed = 77;
+  const b = buf(0.9);
+  for (const [f, a, d] of [[523, 1, 7], [1371, 0.6, 9], [2489, 0.4, 12], [3720, 0.25, 15], [187, 0.7, 10]]) { let ph = rand() * TAU; add(b, 0, 0.85, 0, (t) => { ph += (TAU * f) / SR; return Math.sin(ph) * a * Math.exp(-t * d) * Math.min(1, t / 0.001); }); }
+  let lp = 0; add(b, 0, 0.1, 0, (t) => { lp += 0.5 * (noise() - lp); return lp * Math.exp(-t * 60) * 1.2; });
+  save(join(ROOT, "public", "audio", "sfx", "clank.wav"), b, 0.7);
+}

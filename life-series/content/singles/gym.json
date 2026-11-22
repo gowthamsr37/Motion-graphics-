@@ -1,0 +1,3 @@
+{ "p": { "id": "gym-01", "format": "lift", "topic": "gym", "title": "Building muscle:", "music": 2, "accent": 0,
+  "end": ["Everyone wants the body.", "Nobody sees *the 25,000 reps*."],
+  "lift": { "reps": 25000, "months": 24, "maxKg": 140 } } }

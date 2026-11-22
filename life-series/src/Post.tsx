@@ -10,8 +10,9 @@ import { compound } from "./formats/compound";
 import { valley } from "./formats/valley";
 import { bamboo } from "./formats/bamboo";
 import { domino } from "./formats/domino";
+import { lift } from "./formats/lift";
 
-export const FORMATS: Record<PostT["format"], FormatModule> = { pile, squiggle, iceberg, compound, valley, bamboo, domino };
+export const FORMATS: Record<PostT["format"], FormatModule> = { pile, squiggle, iceberg, compound, valley, bamboo, domino, lift };
 
 export const PostFilm: React.FC<{ p: PostT }> = ({ p }) => {
   const { durationInFrames } = useVideoConfig();

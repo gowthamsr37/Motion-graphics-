@@ -1,4 +1,4 @@
-export type Format = "pile" | "squiggle" | "iceberg" | "compound" | "valley" | "bamboo" | "domino";
+export type Format = "pile" | "squiggle" | "iceberg" | "compound" | "valley" | "bamboo" | "domino" | "lift";
 
 export type Post = {
   id: string; // e.g. "001"
@@ -15,6 +15,7 @@ export type Post = {
   valley?: { quit: string; win: string };
   bamboo?: { years: string[]; win: string };
   domino?: { steps: string[] };
+  lift?: { reps: number; months: number; maxKg: number };
 };
 
 export type FormatModule = {
