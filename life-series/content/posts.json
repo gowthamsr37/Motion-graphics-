@@ -8,10 +8,10 @@
   "accent": 1,
   "end": [
    "Everyone wants the result.",
-   "Nobody sees the *1,240 skipped workouts* before it."
+   "Nobody sees *the 1,240 sweaty workouts*."
   ],
   "pile": {
-   "unit": "skipped workouts",
+   "unit": "sweaty workouts",
    "count": 1240,
    "winWord": "Nailed it!"
   }
@@ -848,7 +848,7 @@
   "accent": 1,
   "end": [
    "Everyone wants the result.",
-   "Nobody sees the *2,600 times knocked down* before it."
+   "Nobody sees *the 2,600 times knocked down*."
   ],
   "pile": {
    "unit": "times knocked down",
@@ -1711,7 +1711,7 @@
   "accent": 3,
   "end": [
    "Everyone wants the result.",
-   "Nobody sees the *96 books abandoned* before it."
+   "Nobody sees *the 96 books abandoned*."
   ],
   "pile": {
    "unit": "books abandoned",
@@ -2551,7 +2551,7 @@
   "accent": 3,
   "end": [
    "Everyone wants the result.",
-   "Nobody sees the *85 practice essays* before it."
+   "Nobody sees *the 85 practice essays*."
   ],
   "pile": {
    "unit": "practice essays",
@@ -3414,7 +3414,7 @@
   "accent": 5,
   "end": [
    "Everyone wants the result.",
-   "Nobody sees the *3,150 lost games* before it."
+   "Nobody sees *the 3,150 lost games*."
   ],
   "pile": {
    "unit": "lost games",
@@ -4254,7 +4254,7 @@
   "accent": 5,
   "end": [
    "Everyone wants the result.",
-   "Nobody sees the *864 missed shots* before it."
+   "Nobody sees *the 864 missed shots*."
   ],
   "pile": {
    "unit": "missed shots",
@@ -5112,7 +5112,7 @@
   "accent": 1,
   "end": [
    "Everyone wants the result.",
-   "Nobody sees the *365 hard days* before it."
+   "Nobody sees *the 365 hard days*."
   ],
   "pile": {
    "unit": "hard days",
@@ -5968,7 +5968,7 @@
   "accent": 3,
   "end": [
    "Everyone wants the result.",
-   "Nobody sees the *240 boring deposits* before it."
+   "Nobody sees *the 240 boring deposits*."
   ],
   "pile": {
    "unit": "boring deposits",
@@ -6808,7 +6808,7 @@
   "accent": 3,
   "end": [
    "Everyone wants the result.",
-   "Nobody sees the *140 stalled engines* before it."
+   "Nobody sees *the 140 stalled engines*."
   ],
   "pile": {
    "unit": "stalled engines",
@@ -7669,7 +7669,7 @@
   "accent": 5,
   "end": [
    "Everyone wants the result.",
-   "Nobody sees the *4,300 cravings beaten* before it."
+   "Nobody sees *the 4,300 cravings beaten*."
   ],
   "pile": {
    "unit": "cravings beaten",
@@ -8509,7 +8509,7 @@
   "accent": 5,
   "end": [
    "Everyone wants the result.",
-   "Nobody sees the *2,000 small apologies* before it."
+   "Nobody sees *the 2,000 small apologies*."
   ],
   "pile": {
    "unit": "small apologies",
@@ -9371,7 +9371,7 @@
   "accent": 1,
   "end": [
    "Everyone wants the result.",
-   "Nobody sees the *2,100 wrong answers* before it."
+   "Nobody sees *the 2,100 wrong answers*."
   ],
   "pile": {
    "unit": "wrong answers",

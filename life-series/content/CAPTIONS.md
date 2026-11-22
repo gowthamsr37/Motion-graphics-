@@ -2,7 +2,7 @@
 
 ## 001 · pile · fitness
 
-Expectation: 1 try. Reality: 1,240 skipped workouts. 🎯
+Expectation: 1 try. Reality: 1,240 sweaty workouts. 🎯
 
 Everyone you admire has a pile like this behind them. Keep throwing.
 
