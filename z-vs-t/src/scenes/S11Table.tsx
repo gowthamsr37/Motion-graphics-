@@ -13,9 +13,9 @@ const C = theme.colors;
 
 const ROWS: [string, string, string][] = [
   ["SPREAD USED", "sigma (known)", "s (from sample)"],
-  ["DISTRIBUTION", "Normal", "t, df = n − 1"],
+  ["DISTRIBUTION", "Normal", "t, with n − 1 degrees of freedom"],
   ["TAILS", "Thin", "Fatter (small n)"],
-  ["5% CUT-OFF", "±1.96", "±2.306 at df 8, shrinks"],
+  ["5% CUT-OFF", "±1.96", "±2.306 for n = 9, shrinks as n grows"],
   ["USE WHEN", "sigma known", "sigma unknown"],
   ["CLASSIC USE", "Proportions, A/B", "Means, small samples"],
   ["PYTHON", "ztest()", "ttest_1samp()"],

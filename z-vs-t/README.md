@@ -1,13 +1,13 @@
 # Z-Test vs t-Test: The Complete Comparison
 
-A save-worthy comparison Reel for **@curious_datascientist** that ties `z-test/`, `t-test-one-sample/`, `t-test/`, the CI and A/B videos together. It opens on the puzzle from the last two videos (same −2: z rejects, t doesn't), then covers the definitions, the one-letter formula difference, fatter tails by df, the 5% cut-off ladder (2.571 → 1.96), why −2 only rejects beyond df 60, which test to use, the "n > 30" myth, z for proportions, confidence intervals, and a full comparison table, ending on a caption-poll prompt. 2:58, 1080×1920 (9:16), 30 fps, H.264 with AAC 48 kHz stereo, mastered to −14 LUFS.
+A save-worthy comparison Reel for **@curious_datascientist** that ties `z-test/`, `t-test-one-sample/`, `t-test/`, the CI and A/B videos together. It opens on the puzzle from the last two videos (same −2: z rejects, t doesn't), then covers the definitions, the one-letter formula difference, fatter tails by degrees of freedom, the 5% cut-off ladder (2.571 → 1.96), why −2 only rejects beyond 60 degrees of freedom, which test to use, the "n > 30" myth, z for proportions, confidence intervals, and a full comparison table, ending on a caption-poll prompt. 2:58, 1080×1920 (9:16), 30 fps, H.264 with AAC 48 kHz stereo, mastered to −14 LUFS.
 
 ## Deliverables (in `out/`, produced by `scripts/build.sh`)
 
 | File | What it is |
 | --- | --- |
 | `Z_Test_vs_T_Test.mp4` | the finished Reel |
-| `Z_Test_vs_T_Test_Cover.png` | 1080×1920 cover: THE COMPLETE COMPARISON tag, Z-TEST vs t-TEST, SAME −2. WHO'S RIGHT? with z: REJECT / t: FAIL TO REJECT, a mini cut-off ladder (df 5 → z) and t BECOMES z, SAVE THIS FOR YOUR INTERVIEW, @curious_datascientist |
+| `Z_Test_vs_T_Test_Cover.png` | 1080×1920 cover (v2): MOST ASKED IN INTERVIEWS, Z-TEST OR t-TEST?, the thin-tailed z bell (dashed) over the fat-tailed t bell, SAME DATA. OPPOSITE ANSWERS. with z: REJECT / t: FAIL TO REJECT, THE ONE QUESTION: IS σ KNOWN?, SAVE THIS FOR YOUR INTERVIEW, @curious_datascientist |
 | `Z_Test_vs_T_Test.srt` | the on-screen subtitle pages |
 
 The caption, poll and pinned comment are in [`CAPTION.md`](CAPTION.md).
@@ -23,9 +23,9 @@ z = cyan, t = violet, cut-offs / traps / tails = orange, the save moment and "fa
 | 1 | **Hook** | The bottle; verdict cards slide in from both sides: z-TEST −2 vs ±1.96: REJECT · t-TEST −2 vs ±2.306: FAIL TO REJECT; the screen shakes on WHO'S RIGHT?; Z-TEST vs t-TEST; THE COMPLETE COMPARISON bookmark. |
 | 2 | **Textbook definitions** | Split cards (z cyan, t violet) with the definitions; σ KNOWN vs σ UNKNOWN; THAT ONE DIFFERENCE CHANGES EVERYTHING. |
 | 3 | **One letter of difference** | The z and t formulas stacked; σ glows (THE TRUE POPULATION SPREAD), then s (ESTIMATED FROM THE SAMPLE); + EXTRA UNCERTAINTY, ESPECIALLY FOR SMALL n. |
-| 4 | **Fatter tails** | The normal curve (dashed) and a t curve that morphs df 2 → 5 → 30 on the words, tails shaded; MORE DATA = t LOOKS LIKE z; df = n − 1. |
-| 5 | **The cut-off ladder** | Rows df 5 / 10 / 30 / 60 / 100 / INFINITE (z) fill on their spoken values, bars shrinking toward the dashed 1.96 line; t BECOMES z. |
-| 6 | **Who's right?** | A number line with OUR SCORE: 2 and the cut-offs for df 8, 30, 60, 100 and z; 2 BEATS THE CUT-OFF ONLY WHEN df > 60; 9 BOTTLES (df 8): FAIL TO REJECT · 100 BOTTLES (df 99): REJECT; BOTH WERE RIGHT, FOR WHAT THEY KNEW; t WAS MORE CAREFUL. |
+| 4 | **Fatter tails** | The normal curve (dashed) and a t curve that morphs through 2 → 5 → 30 DEGREES OF FREEDOM on the words, tails shaded; MORE DATA = t LOOKS LIKE z; DEGREES OF FREEDOM = n − 1. |
+| 5 | **The cut-off ladder** | Rows 5 / 10 / 30 / 60 / 100 / INFINITE (z) under the DEGREES OF FREEDOM header fill on their spoken values, bars shrinking toward the dashed 1.96 line; t BECOMES z. |
+| 6 | **Who's right?** | A number line with OUR SCORE: 2 and the cut-offs t, 8 / t, 30 / t, 60 / t, 100 and z; 2 BEATS IT ONLY ABOVE 60 DEGREES OF FREEDOM; 9 BOTTLES, 8 DEGREES OF FREEDOM: FAIL TO REJECT · 100 BOTTLES, 99 DEGREES OF FREEDOM: REJECT; BOTH WERE RIGHT, FOR WHAT THEY KNEW; t WAS MORE CAREFUL. |
 | 7 | **Which one to use** | Flowchart: DO YOU KNOW σ? → YES: z-TEST · NO: t-TEST (AT ANY SAMPLE SIZE); BIG SAMPLE: t AND z GIVE ALMOST THE SAME ANSWER. |
 | 8 | **Interview trap** | "USE z WHEN n > 30" stamped ONLY A RULE OF THUMB; THE REAL QUESTION: DO YOU KNOW σ?; IN PRACTICE YOU RARELY DO, SO t IS THE DEFAULT; BIG n: s GETS CLOSE TO σ, SO z WORKS AS AN APPROXIMATION. |
 | 9 | **Where z really lives** | PROPORTIONS; A/B TESTS · POLLS · CONVERSION RATES; version A 10% vs version B 12% bars; 10% vs 12% CONVERSION: THAT'S A z-TEST; SE = √(p(1 − p) ÷ n), NO SIGMA NEEDED. |
@@ -94,6 +94,8 @@ Kokoro TTS `af_heart` at 1.05×. "A/B" is written "A-B" in the TTS text.
 - `2:54.87` Follow for data science made simple!
 
 total 177.586
+
+**v2 (user feedback):** every on-screen "df" is now written out as "degrees of freedom" (viewers read "df" as a data frame), and the cover was redesigned as a puzzle hook.
 
 ## Accuracy notes (every number checked)
 

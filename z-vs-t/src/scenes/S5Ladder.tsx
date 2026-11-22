@@ -27,9 +27,9 @@ export const S5Ladder: React.FC = () => {
   return (
     <AbsoluteFill>
       <SceneTitle label="THE 5% CUT-OFF LADDER" pill="TWO-TAILED" color={TL} at={2} pillAt={s.sent(0).from} />
-      <div style={{ position: "absolute", left: 120, top: y0 - 70, fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 20, letterSpacing: "0.16em", color: C.dim }}>DEGREES OF FREEDOM</div>
+      <div style={{ position: "absolute", left: 120, top: y0 - 70, fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 24, letterSpacing: "0.16em", color: TC }}>DEGREES OF FREEDOM</div>
       <div style={{ position: "absolute", left: bx(1.96) - 2, top: y0 - 40, width: 4, height: gap * 6, background: `repeating-linear-gradient(${ZC} 0 12px, transparent 12px 22px)`, opacity: 0.8 }} />
-      <div style={{ position: "absolute", left: bx(1.96) - 40, top: y0 - 70, fontFamily: theme.fonts.mono, fontWeight: 800, fontSize: 22, color: ZC }}>z 1.96</div>
+      <div style={{ position: "absolute", left: bx(1.96) - 40, top: y0 - 40 + gap * 6 + 8, fontFamily: theme.fonts.mono, fontWeight: 800, fontSize: 22, color: ZC }}>z 1.96</div>
       {rows.map((r, i) => {
         const p = spr(r.at - 6, theme.spring.bouncy);
         const y = y0 + i * gap;
@@ -37,7 +37,7 @@ export const S5Ladder: React.FC = () => {
         const c = last ? ZC : TC;
         return (
           <React.Fragment key={r.df}>
-            <div style={{ position: "absolute", left: 120, top: y, height: 90, display: "flex", alignItems: "center", opacity: Math.min(1, p * 2), fontFamily: theme.fonts.display, fontWeight: 800, fontSize: last ? 34 : 40, color: c }}>{r.df === "inf" ? "INFINITE (z)" : `df ${r.df}`}</div>
+            <div style={{ position: "absolute", left: 120, top: y, height: 90, display: "flex", alignItems: "center", opacity: Math.min(1, p * 2), fontFamily: theme.fonts.display, fontWeight: 800, fontSize: last ? 34 : 40, color: c }}>{r.df === "inf" ? "INFINITE (z)" : r.df}</div>
             <div style={{ position: "absolute", left: X0, top: y + 20, width: Math.max(0, (bx(r.v) - X0) * Math.min(1, p)), height: 50, borderRadius: 12, background: `linear-gradient(90deg, ${alpha(c, 0.25)}, ${alpha(c, 0.7)})`, border: `2px solid ${c}` }} />
             {p > 0.001 ? (
               <div style={{ position: "absolute", left: bx(r.v) + 14, top: y + 45, transform: `translateY(-50%) scale(${interpolate(Math.min(1, p), [0, 1], [1.4, 1])})`, transformOrigin: "left center", opacity: Math.min(1, p * 2), fontFamily: theme.fonts.mono, fontWeight: 800, fontSize: 38, color: C.text, textShadow: glowText(c, 0.4), whiteSpace: "nowrap" }}>{r.v === 2 ? "2.000" : r.v.toFixed(r.v === 1.96 ? 2 : 3)}</div>

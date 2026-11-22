@@ -35,7 +35,10 @@ export const S4Tails: React.FC = () => {
       <div style={{ position: "absolute", left: gx(G, 1.3), top: G.base - G.h - 40, opacity: draw, fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 22, letterSpacing: "0.12em", color: ZC }}>NORMAL (z) · dashed</div>
       {tcur > 0.001 ? (
         <div style={{ position: "absolute", left: 0, right: 0, top: 440, textAlign: "center", opacity: tcur, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 56, color: C.text }}>
-          t CURVE · <span style={{ fontFamily: theme.fonts.mono, color: TC, textShadow: glowText(TC, 0.5) }}>df {label}</span>
+          t CURVE
+          <div style={{ fontSize: 36, marginTop: 6 }}>
+            WITH <span style={{ fontFamily: theme.fonts.mono, color: TC, textShadow: glowText(TC, 0.5) }}>{label}</span> DEGREES OF FREEDOM
+          </div>
         </div>
       ) : null}
       <Pop at={s.cueS(1, "fat.") - 4} x={240} y={1000} from="up" dist={10}>
@@ -47,7 +50,7 @@ export const S4Tails: React.FC = () => {
         </div>
       </Pop>
       <Pop at={s.sent(2).from - 2} x={540} y={1310} from="up" dist={10}>
-        <div style={{ padding: "8px 26px", borderRadius: 999, background: alpha(TC, 0.18), border: `2px solid ${TC}`, fontFamily: theme.fonts.mono, fontWeight: 800, fontSize: 32, color: C.text, whiteSpace: "nowrap" }}>df = n − 1</div>
+        <div style={{ padding: "8px 26px", borderRadius: 999, background: alpha(TC, 0.18), border: `2px solid ${TC}`, fontFamily: theme.fonts.mono, fontWeight: 800, fontSize: 30, color: C.text, whiteSpace: "nowrap" }}>DEGREES OF FREEDOM = n − 1</div>
       </Pop>
     </AbsoluteFill>
   );

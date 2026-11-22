@@ -1,6 +1,6 @@
 // SCENE 6 — WHO'S RIGHT? A number line 1.9–2.4 with the |t| = 2 line (violet); cut-offs drop in: df 8 2.306, df 30 2.042
-// (above 2 → FAIL), df 60 2.000, df 100 1.984, z 1.96 (at or below 2 → REJECT from df > 60); then 9 BOTTLES (df 8): FAIL TO
-// REJECT · 100 BOTTLES (df 99): REJECT · BOTH TESTS WERE RIGHT FOR WHAT THEY KNEW.
+// (above 2 → FAIL), df 60 2.000, df 100 1.984, z 1.96 (at or below 2 → REJECT from df > 60); then 9 BOTTLES, 8 DEGREES OF FREEDOM: FAIL TO
+// REJECT · 100 BOTTLES, 99 DEGREES OF FREEDOM: REJECT · BOTH TESTS WERE RIGHT FOR WHAT THEY KNEW.
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { SceneTitle } from "../components/Kit";
@@ -21,10 +21,10 @@ export const S6Puzzle: React.FC = () => {
   const S0 = s.sent(0).from;
   const SIXTY = s.cueS(0, "60");
   const cuts = [
-    { v: 2.306, l: "df 8", c: SEc },
-    { v: 2.042, l: "df 30", c: SEc },
-    { v: 2.0, l: "df 60", c: C.yellow },
-    { v: 1.984, l: "df 100", c: TL },
+    { v: 2.306, l: "8", c: SEc },
+    { v: 2.042, l: "30", c: SEc },
+    { v: 2.0, l: "60", c: C.yellow },
+    { v: 1.984, l: "100", c: TL },
     { v: 1.96, l: "z", c: TL },
   ];
   const line = ease(frame, [S0, S0 + 20], [0, 1]);
@@ -44,23 +44,23 @@ export const S6Puzzle: React.FC = () => {
         return (
           <div key={k.l} style={{ position: "absolute", left: px(k.v), top: yy, transform: `translateX(-50%) scale(${Math.min(1.1, p)})`, transformOrigin: "center top", opacity: Math.min(1, p * 2), display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
             <div style={{ padding: "4px 12px", borderRadius: 10, background: "rgba(10,18,52,0.97)", border: `2px solid ${k.c}`, fontFamily: theme.fonts.mono, fontWeight: 800, fontSize: 22, color: C.text, whiteSpace: "nowrap" }}>
-              {k.l} · {k.v === 2 ? "2.000" : k.v}
+              {k.l === "z" ? "z" : `t, ${k.l}`} · {k.v === 2 ? "2.000" : k.v}
             </div>
             <div style={{ width: 3, height: Y - yy - 36, background: k.c }} />
           </div>
         );
       })}
       <Pop at={SIXTY - 4} x={540} y={1000} from="up" dist={12}>
-        <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 36, color: C.text, whiteSpace: "nowrap" }}>
-          2 BEATS THE CUT-OFF ONLY WHEN df &gt; <span style={{ color: C.yellow }}>60</span>
+        <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 32, color: C.text, whiteSpace: "nowrap" }}>
+          2 BEATS IT ONLY ABOVE <span style={{ color: C.yellow }}>60</span> DEGREES OF FREEDOM
         </div>
       </Pop>
       {[
-        { y: 1090, at: s.cueS(1, "9"), t: <>9 BOTTLES (df 8): <span style={{ color: SEc }}>FAIL TO REJECT</span></>, c: SEc },
-        { y: 1170, at: s.cueS(1, "100"), t: <>100 BOTTLES (df 99): <span style={{ color: TL }}>REJECT</span></>, c: TL },
+        { y: 1090, at: s.cueS(1, "9"), t: <>9 BOTTLES, 8 DEGREES OF FREEDOM: <span style={{ color: SEc }}>FAIL TO REJECT</span></>, c: SEc },
+        { y: 1170, at: s.cueS(1, "100"), t: <>100 BOTTLES, 99 DEGREES OF FREEDOM: <span style={{ color: TL }}>REJECT</span></>, c: TL },
       ].map((r, i) => (
         <Pop key={i} at={r.at - 4} x={540} y={r.y} from="left" dist={30} cfg={theme.spring.bouncy}>
-          <div style={{ padding: "10px 28px", borderRadius: 18, background: "rgba(14,24,64,0.9)", border: `2px solid ${alpha(r.c, 0.7)}`, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 34, color: C.text, whiteSpace: "nowrap" }}>{r.t}</div>
+          <div style={{ padding: "10px 28px", borderRadius: 18, background: "rgba(14,24,64,0.9)", border: `2px solid ${alpha(r.c, 0.7)}`, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 27, color: C.text, whiteSpace: "nowrap" }}>{r.t}</div>
         </Pop>
       ))}
       <Pop at={s.cueS(1, "Both") - 4} x={540} y={1265} from="scale" scaleFrom={0.5} cfg={theme.spring.pop}>

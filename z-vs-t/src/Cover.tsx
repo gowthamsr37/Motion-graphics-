@@ -1,56 +1,58 @@
-// Reel cover: THE COMPLETE COMPARISON tag · Z-TEST vs t-TEST · SAME −2, WHO'S RIGHT? with the two verdicts, a mini cut-off
-// ladder (2.571 → 1.96: "t BECOMES z"), SAVE THIS FOR YOUR INTERVIEW, @curious_datascientist.
+// Reel cover (v2): MOST ASKED IN INTERVIEWS · Z-TEST OR t-TEST? · hero chart (thin-tailed z bell, dashed, vs the fat-tailed
+// t bell with its tails shaded) · SAME DATA, OPPOSITE ANSWERS with the two verdicts · THE ONE QUESTION: IS σ KNOWN? ·
+// SAVE THIS FOR YOUR INTERVIEW · @curious_datascientist. No "df" anywhere (viewers read it as "data frame").
 import React from "react";
 import { AbsoluteFill } from "remotion";
 import { Backdrop, Grade, Grain, Vignette } from "./components/Backdrop";
+import { FnCurve } from "./components/Curve";
 import { Bookmark } from "./components/Guide";
+import { npdf, tpdf } from "./components/TDist";
+import { Sigma } from "./components/ZKit";
 import { SEc, TC, TL, ZC } from "./components/ZT";
 import { alpha, glowText, HANDLE, theme } from "./theme";
 
 const C = theme.colors;
-const LAD: [string, number][] = [["df 5", 2.571], ["df 10", 2.228], ["df 30", 2.042], ["df 100", 1.984], ["z", 1.96]];
+const G = { x0: 120, x1: 960, vmin: -4.2, vmax: 4.2, base: 1010, h: 300 };
+const FM = npdf(0);
+const t2 = (v: number) => tpdf(v, 2);
 
 export const Cover: React.FC = () => (
   <AbsoluteFill style={{ background: C.bg }}>
     <Backdrop a={C.cyan} b={C.violet} />
-    <div style={{ position: "absolute", left: 540, top: 290, transform: "translate(-50%, -50%)", padding: "10px 26px", borderRadius: 999, background: alpha(SEc, 0.18), border: `2px solid ${SEc}`, fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 26, letterSpacing: "0.2em", color: C.text, whiteSpace: "nowrap" }}>THE COMPLETE COMPARISON</div>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 360, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 800, lineHeight: 1, letterSpacing: "-0.03em" }}>
-      <div style={{ fontSize: 150, color: ZC, textShadow: glowText(ZC, 0.5) }}>Z-TEST</div>
-      <div style={{ fontSize: 60, color: C.dim, margin: "6px 0" }}>vs</div>
-      <div style={{ fontSize: 150, color: TC, textShadow: glowText(TC, 0.5) }}>
-        <span style={{ fontStyle: "italic" }}>t</span>-TEST
+    <div style={{ position: "absolute", left: 540, top: 270, transform: "translate(-50%, -50%)", padding: "10px 28px", borderRadius: 999, background: alpha(C.yellow, 0.16), border: `2px solid ${C.yellow}`, fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 26, letterSpacing: "0.2em", color: C.text, whiteSpace: "nowrap" }}>MOST ASKED IN INTERVIEWS</div>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 330, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 800, lineHeight: 0.95, letterSpacing: "-0.03em", whiteSpace: "nowrap" }}>
+      <div style={{ fontSize: 140, color: ZC, textShadow: glowText(ZC, 0.55) }}>Z-TEST</div>
+      <div style={{ fontSize: 56, color: C.dim, margin: "8px 0" }}>OR</div>
+      <div style={{ fontSize: 140, color: TC, textShadow: glowText(TC, 0.55) }}>
+        <span style={{ fontStyle: "italic" }}>t</span>-TEST<span style={{ color: C.yellow }}>?</span>
       </div>
     </div>
-    <div style={{ position: "absolute", left: 90, top: 820, width: 900, height: 520, boxSizing: "border-box", borderRadius: 36, background: "linear-gradient(180deg, rgba(26,40,98,0.9), rgba(14,24,64,0.9))", border: `2px solid ${C.edge}` }} />
-    <div style={{ position: "absolute", left: 0, right: 0, top: 860, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 46, color: C.text }}>
-      SAME −2. <span style={{ color: TL, textShadow: glowText(TL, 0.5) }}>WHO&apos;S RIGHT</span>
-      <span style={{ color: C.yellow }}>?</span>
+    {/* hero: two bells */}
+    <FnCurve g={G} f={t2} fmax={FM} color={TC} fill={0.16} width={7} bands={[{ a: -4.2, b: -2, color: TL, opacity: 0.6 }, { a: 2, b: 4.2, color: TL, opacity: 0.6 }]} />
+    <FnCurve g={G} f={npdf} fmax={FM} color={ZC} fill={0} dashed width={6} />
+    <div style={{ position: "absolute", left: G.x0, width: G.x1 - G.x0, top: G.base, height: 4, background: alpha(C.text, 0.4) }} />
+    <div style={{ position: "absolute", left: 640, top: 735, fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 24, letterSpacing: "0.1em", color: ZC, whiteSpace: "nowrap" }}>z: THIN TAILS</div>
+    <div style={{ position: "absolute", left: 720, top: 905, fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 24, letterSpacing: "0.1em", color: TL, whiteSpace: "nowrap" }}>t: FAT TAILS</div>
+    {/* the puzzle */}
+    <div style={{ position: "absolute", left: 0, right: 0, top: 1050, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 50, color: C.text, whiteSpace: "nowrap" }}>
+      SAME DATA. <span style={{ color: TL, textShadow: glowText(TL, 0.5) }}>OPPOSITE ANSWERS.</span>
     </div>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 950, display: "flex", justifyContent: "center", gap: 20 }}>
-      <div style={{ padding: "10px 22px", borderRadius: 18, background: alpha(ZC, 0.16), border: `2px solid ${ZC}`, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 30, color: C.text }}>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 1135, display: "flex", justifyContent: "center", gap: 22 }}>
+      <div style={{ padding: "12px 26px", borderRadius: 20, background: alpha(ZC, 0.16), border: `3px solid ${ZC}`, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 34, color: C.text, whiteSpace: "nowrap" }}>
         z: <span style={{ color: TL }}>REJECT</span>
       </div>
-      <div style={{ padding: "10px 22px", borderRadius: 18, background: alpha(TC, 0.16), border: `2px solid ${TC}`, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 30, color: C.text }}>
+      <div style={{ padding: "12px 26px", borderRadius: 20, background: alpha(TC, 0.16), border: `3px solid ${TC}`, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 34, color: C.text, whiteSpace: "nowrap" }}>
         t: <span style={{ color: SEc }}>FAIL TO REJECT</span>
       </div>
     </div>
-    {LAD.map(([l, v], i) => (
-      <div key={l} style={{ position: "absolute", left: 200, top: 1050 + i * 52, display: "flex", alignItems: "center", gap: 18 }}>
-        <div style={{ width: 110, fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 22, letterSpacing: "0.1em", color: l === "z" ? ZC : C.dim, textAlign: "right" }}>{l}</div>
-        <div style={{ width: (v - 1.9) * 700, height: 30, borderRadius: 8, background: alpha(l === "z" ? ZC : TC, 0.6), border: `2px solid ${l === "z" ? ZC : TC}` }} />
-        <div style={{ fontFamily: theme.fonts.mono, fontWeight: 800, fontSize: 26, color: C.text }}>{v === 1.96 ? "1.96" : v.toFixed(3)}</div>
-      </div>
-    ))}
-    <div style={{ position: "absolute", left: 790, top: 1170, transform: "translate(-50%, -50%)", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 34, color: C.text, textAlign: "center", lineHeight: 1.1 }}>
-      <span style={{ color: TC }}>t</span> BECOMES
-      <br />
-      <span style={{ color: ZC, textShadow: glowText(ZC, 0.5) }}>z</span>
+    <div style={{ position: "absolute", left: 540, top: 1290, transform: "translate(-50%, -50%)", display: "flex", alignItems: "center", gap: 14, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 42, color: C.text, whiteSpace: "nowrap" }}>
+      THE ONE QUESTION: IS <Sigma size={62} color={C.yellow} /> <span>KNOWN<span style={{ color: C.yellow }}>?</span></span>
     </div>
-    <div style={{ position: "absolute", left: 540, top: 1410, transform: "translate(-50%, -50%)", display: "flex", alignItems: "center", gap: 14, padding: "10px 28px", borderRadius: 999, background: alpha(SEc, 0.2), border: `3px solid ${SEc}`, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 30, color: C.text, whiteSpace: "nowrap" }}>
+    <div style={{ position: "absolute", left: 540, top: 1400, transform: "translate(-50%, -50%)", display: "flex", alignItems: "center", gap: 14, padding: "10px 28px", borderRadius: 999, background: alpha(SEc, 0.2), border: `3px solid ${SEc}`, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 30, color: C.text, whiteSpace: "nowrap" }}>
       <Bookmark size={32} color={SEc} />
       SAVE THIS FOR YOUR INTERVIEW
     </div>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 1490, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 700, fontSize: 36, color: C.text }}>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 1480, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 700, fontSize: 36, color: C.text }}>
       <span style={{ color: C.cyan }}>@</span>
       {HANDLE.slice(1)}
     </div>
