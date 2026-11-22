@@ -40,6 +40,8 @@ export const Paper: React.FC<{ warm?: number }> = ({ warm = 0 }) => {
           <rect width="1080" height="1920" filter="url(#fib)" />
         </svg>
       </AbsoluteFill>
+      {/* faint graph-paper grid: the data-science twist on the template's cricket-whites paper */}
+      <AbsoluteFill style={{ backgroundImage: "linear-gradient(rgba(47,93,168,0.07) 1.5px, transparent 1.5px), linear-gradient(90deg, rgba(47,93,168,0.07) 1.5px, transparent 1.5px), linear-gradient(rgba(47,93,168,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(47,93,168,0.035) 1px, transparent 1px)", backgroundSize: "120px 120px, 120px 120px, 24px 24px, 24px 24px" }} />
       {warm > 0 && <AbsoluteFill style={{ background: C.accent, opacity: warm * 0.08, mixBlendMode: "multiply" }} />}
     </AbsoluteFill>
   );

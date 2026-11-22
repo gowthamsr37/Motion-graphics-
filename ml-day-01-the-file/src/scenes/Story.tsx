@@ -7,6 +7,8 @@ import { CLAMP, Disp, fade, Label, Seam, Serif, Shell, useP } from "../component
 import { Cue } from "../components/Sound";
 import { Crack, Kicker, Slam, Stamp, Tally } from "../components/Viz";
 import { config } from "../config";
+import { Bank, ChatBubble, Checkers, Clusters, Computer, Envelope, Flashcards, Gamepad, House, MapPin, Person, PhoneFace, PlayBtn, Robot, Trophy } from "../components/Doodles";
+import { Cross, Layer } from "../components/NB";
 import { theme } from "../theme";
 import { scene, sentence, wordAt } from "../timing";
 
@@ -106,6 +108,9 @@ const S1: React.FC = () => {
       <div style={{ position: "absolute", left: 70, top: 668 }}>
         <Slam text="Learning?" at={6} size={196} color={C.accent} />
       </div>
+      <Layer>
+        <Robot x={860} y={395} s={190} at={2} />
+      </Layer>
       <Seam x={70} y={892} w={940} p={ease(frame, 6, 24)} />
       <div style={{ position: "absolute", left: 70, top: 918, opacity: fade(frame, 10, 6) }}>
         <Label size={22} color={C.ink2} spacing="0.3em">
@@ -160,8 +165,13 @@ const S2: React.FC = () => {
           </Label>
         </div>
       </div>
+      <Layer>
+        {[PhoneFace, Envelope, PlayBtn, MapPin].map((Ic, i) => (
+          <Ic key={i} x={112} y={800 + i * 92} s={74} at={at[i] - 8} />
+        ))}
+      </Layer>
       {USES.map(([t, l], i) => (
-        <Rise key={t} at={at[i] - 6} style={{ position: "absolute", left: 70, right: 70, top: 760 + i * 92, display: "flex", alignItems: "baseline", justifyContent: "space-between", borderBottom: `2px solid ${C.line}`, paddingBottom: 8 }}>
+        <Rise key={t} at={at[i] - 6} style={{ position: "absolute", left: 175, right: 70, top: 760 + i * 92, display: "flex", alignItems: "baseline", justifyContent: "space-between", borderBottom: `2px solid ${C.line}`, paddingBottom: 8 }}>
           <Disp size={68}>{t}</Disp>
           <Label size={22} color={C.mute}>
             {l}
@@ -190,13 +200,16 @@ const S3: React.FC = () => {
   return (
     <Shell>
       <Kicker title="The old way" sub="Normal programming · a human writes every rule" subAt={b.prog - 4} />
-      <Print x={90} y={420} w={900} h={250} at={b.rule - 8} tilt={-2}>
+      <Layer>
+        <Person x={160} y={545} s={170} at={b.prog - 6} />
+      </Layer>
+      <Print x={270} y={420} w={740} h={250} at={b.rule - 8} tilt={-2}>
         <Label size={20} color={C.red} spacing="0.3em">
           Rule #1
         </Label>
         <div style={{ marginTop: 10 }}>
-          <Serif size={50} weight={700}>
-            If the email says &ldquo;free money&rdquo;
+          <Serif size={44} weight={700} style={{ whiteSpace: "nowrap" }}>
+            If an email says &ldquo;free money&rdquo;
           </Serif>
         </div>
         <div style={{ marginTop: 6 }}>
@@ -222,8 +235,12 @@ const S3: React.FC = () => {
           </Disp>
         </Rise>
       </div>
-      <SeamArrow x={520} y={812} w={150} at={b.ans - 10} />
-      <div style={{ position: "absolute", left: 720, top: 760 }}>
+      <SeamArrow x={515} y={812} w={40} at={b.ans - 12} />
+      <Layer>
+        <Computer x={613} y={815} s={84} at={b.ans - 10} />
+      </Layer>
+      <SeamArrow x={660} y={812} w={40} at={b.ans - 6} />
+      <div style={{ position: "absolute", left: 735, top: 760 }}>
         <Rise at={b.ans - 4}>
           <Disp size={84}>Answers</Disp>
         </Rise>
@@ -231,6 +248,10 @@ const S3: React.FC = () => {
       <div style={{ position: "absolute", left: 70, top: 920, opacity: fade(frame, b.spam + 6) }}>
         <Slam text="fr3e m0ney!!!" at={b.spam + 6} size={130} color={C.red} />
       </div>
+      <Layer>
+        <Envelope x={935} y={985} s={110} at={b.spam + 8} />
+        <Cross x={935} y={985} s={84} at={b.breaks} />
+      </Layer>
       <div style={{ position: "absolute", left: 70, top: 1070, opacity: fade(frame, b.breaks) }}>
         <Label size={24} color={C.red} weight={900}>
           Rule broken · straight to the inbox
@@ -258,9 +279,15 @@ const S4: React.FC = () => {
       <Kicker title="Machine learning flips it" sub="10,000 emails · each one already labelled" subAt={b.thou} />
       {MAILS.map(([m, tag, spam], i) => (
         <Rise key={m} at={b.thou - 6 + i * 5} style={{ position: "absolute", left: 70, right: 70, top: 400 + i * 96, display: "flex", alignItems: "center", justifyContent: "space-between", background: C.paperHi, padding: "14px 24px", boxShadow: "0 8px 20px rgba(40,30,10,0.12)" }}>
-          <Serif size={40} weight={700}>
-            {m}
-          </Serif>
+          <span style={{ display: "flex", alignItems: "center", gap: 18 }}>
+            <svg width={56} height={44} viewBox="0 0 56 44" style={{ overflow: "visible" }}>
+              <rect x={2} y={4} width={52} height={36} rx={3} fill={spam ? "#F6D5DA" : "#D8E6F6"} stroke={C.ink} strokeWidth={3} />
+              <path d="M3 6 L28 26 L53 6" fill="none" stroke={C.ink} strokeWidth={3} strokeLinejoin="round" />
+            </svg>
+            <Serif size={40} weight={700}>
+              {m}
+            </Serif>
+          </span>
           <span style={{ opacity: fade(frame, (i === 1 ? b.not : b.lab) + i * 3), border: `4px solid ${spam ? C.red : C.ink}`, padding: "2px 14px 0" }}>
             <Disp size={34} color={spam ? C.red : C.ink}>
               {tag}
@@ -268,6 +295,9 @@ const S4: React.FC = () => {
           </span>
         </Rise>
       ))}
+      <Layer>
+        <Robot x={935} y={862} s={96} at={b.self - 8} />
+      </Layer>
       <div style={{ position: "absolute", left: 70, top: 712, opacity: fade(frame, b.self - 4) }}>
         <Label size={22} color={C.ink2} spacing="0.3em">
           The machine works out the rules itself
@@ -347,12 +377,15 @@ const S5: React.FC = () => {
           </Serif>
         </Rise>
       ))}
-      <Print x={90} y={810} w={900} h={360} at={b.q - 4} tilt={2}>
+      <Print x={90} y={810} w={900} h={380} at={b.q - 4} tilt={2}>
+        <svg width={170} height={170} viewBox="0 0 170 170" style={{ position: "absolute", right: 26, bottom: 22, overflow: "visible" }}>
+          <Checkers x={85} y={85} s={150} at={b.q + 8} />
+        </svg>
         <Serif size={120} color={C.accent} weight={900} style={{ position: "absolute", left: 24, top: -18, opacity: 0.35 }}>
           &ldquo;
         </Serif>
         <div style={{ marginTop: 40, padding: "0 20px" }}>
-          <Serif size={58} weight={900}>
+          <Serif size={50} weight={900} style={{ display: "block", maxWidth: 680 }}>
             The ability to learn without being explicitly programmed.
           </Serif>
         </div>
@@ -360,6 +393,11 @@ const S5: React.FC = () => {
           <Label size={22} color={C.red} spacing="0.3em">
             Arthur Samuel · 1959
           </Label>
+          <div style={{ marginTop: 6 }}>
+            <Label size={17} color={C.ink2}>
+              His checkers program taught itself to play
+            </Label>
+          </div>
         </div>
       </Print>
     </Shell>
@@ -382,7 +420,7 @@ const params = (r: number) => {
 };
 const mae = (q: { b: number; m: number }) => DATA.reduce((a, [s, p]) => a + Math.abs(p - (q.b + q.m * s)), 0) / DATA.length;
 const MAE0 = mae(START);
-const s6B = (fps: number) => ({ hou: W("s6", "houses", 3.7)(fps), guess: W("s6", "random", 7.3)(fps), ter: W("s6", "terrible", 9.4)(fps), err: W("s6", "error", 12.3)(fps), steps: [W("s6", "nudges", 13.2)(fps), W("s6", "again", 15.6)(fps), W("s6", "again", 16.3, 1)(fps)], af: sentence(fps, "s6", 5).from, tiny: W("s6", "tiny", 18.6)(fps), loop: [W("s6", "gue", 19.8)(fps), W("s6", "measure", 19.8)(fps) + 6, W("s6", "adjust", 20.7)(fps), W("s6", "repeat", 21.2)(fps)], learn: W("s6", "learning", 22.1)(fps) });
+const s6B = (fps: number) => ({ hou: W("s6", "houses", 3.7)(fps), guess: W("s6", "random", 7.3)(fps), ter: W("s6", "terrible", 9.4)(fps), err: W("s6", "error", 12.3)(fps), steps: [W("s6", "nudges", 13.2)(fps), W("s6", "again", 15.6)(fps), W("s6", "again", 16.3, 1)(fps)], af: sentence(fps, "s6", 5).from, tiny: W("s6", "tiny", 18.6)(fps), loop: [W("s6", "gue", 19.8, 1)(fps), W("s6", "measure", 19.8, 1)(fps) + 6, W("s6", "adjust", 20.7)(fps), W("s6", "repeat", 21.2)(fps)], learn: W("s6", "learning", 22.1)(fps) });
 const S6: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -400,6 +438,9 @@ const S6: React.FC = () => {
   return (
     <Shell>
       <Kicker title="Watch a machine learn" sub="10 houses · size against price" subAt={b.hou - 4} />
+      <Layer>
+        <House x={950} y={300} s={100} at={b.hou - 8} />
+      </Layer>
       <svg width={1080} height={1920} style={{ position: "absolute", inset: 0, overflow: "visible" }}>
         {/* axes */}
         <line x1={X0} y1={Y1 - 30} x2={X0} y2={Y0} stroke={C.ink} strokeWidth={3} opacity={fade(frame, b.hou - 10)} />
@@ -413,9 +454,18 @@ const S6: React.FC = () => {
         {b.steps.map((t, i) => (frame >= t + 8 && frame < b.af + 20 ? <line key={i} x1={sx(500)} y1={py(params(i + 1).b + params(i + 1).m * 500)} x2={sx(2500)} y2={py(params(i + 1).b + params(i + 1).m * 2500)} stroke={C.mute} strokeWidth={3} strokeDasharray="3 9" opacity={0.6} /> : null))}
         {lineOn > 0 ? <line x1={sx(500)} y1={py(q.b + q.m * 500)} x2={sx(500 + 2000 * lineOn)} y2={py(q.b + q.m * (500 + 2000 * lineOn))} stroke={lineCol} strokeWidth={8} strokeLinecap="round" /> : null}
         {/* houses */}
-        {DATA.map(([s, p], i) => (
-          <circle key={i} cx={sx(s)} cy={py(p)} r={13 * ease(frame, b.hou + 2 + i * 3, 8)} fill={C.ink} stroke={C.paperHi} strokeWidth={3} />
-        ))}
+        {DATA.map(([s, p], i) => {
+          const k = ease(frame, b.hou + 2 + i * 3, 8);
+          if (k <= 0) return null;
+          const x = sx(s), y = py(p);
+          return (
+            <g key={i} transform={`translate(${x} ${y}) scale(${k})`}>
+              <path d="M-15 -2 L0 -16 L15 -2" fill={C.accent} stroke={C.ink} strokeWidth={3} strokeLinejoin="round" />
+              <rect x={-11} y={-2} width={22} height={17} fill={C.paperHi} stroke={C.ink} strokeWidth={3} />
+              <rect x={-3} y={5} width={6} height={10} fill={C.ink} />
+            </g>
+          );
+        })}
       </svg>
       <div style={{ position: "absolute", left: X0, top: Y0 + 16, width: X1 - X0, textAlign: "center", opacity: fade(frame, b.hou) }}>
         <Label size={20} color={C.ink2}>
@@ -432,7 +482,7 @@ const S6: React.FC = () => {
           <Disp size={56} color={done ? C.accent : C.red}>{`Round ${Math.max(1, Math.round(r))}`}</Disp>
         </div>
       ) : null}
-      <div style={{ position: "absolute", left: 560, top: 640, opacity: win(frame, b.ter - 4, b.steps[0] + 6) }}>
+      <div style={{ position: "absolute", left: 470, top: 905, opacity: win(frame, b.ter - 4, b.err - 8) }}>
         <Serif size={54} color={C.red} weight={900}>
           terrible!
         </Serif>
@@ -497,6 +547,9 @@ const S7: React.FC = () => {
       <div style={{ position: "absolute", left: 600, top: 452, opacity: fade(frame, b.feat - 4) }}>
         <Band at={-100} color={C.ink} text="feature = input" size={40} />
       </div>
+      <Layer>
+        <House x={560} y={630} s={120} at={b.never - 6} />
+      </Layer>
       <SeamArrow x={180} y={545} w={45} at={b.n1500} down />
       <div style={{ position: "absolute", left: 70, top: 610, width: 420, height: 130, border: `6px solid ${C.ink}`, display: "flex", alignItems: "center", justifyContent: "center", opacity: interpolate(box, [0, 0.3], [0, 1], CLAMP), transform: `scale(${interpolate(box, [0, 1], [0.8, 1])})`, transformOrigin: "0% 50%" }}>
         <Disp size={84} color={C.accent}>
@@ -549,15 +602,21 @@ const S8: React.FC = () => {
   return (
     <Shell>
       <Kicker title="The 3 types of machine learning" />
+      <Layer>
+        <Flashcards x={955} y={450} s={104} at={at[0] - 4} />
+        <Clusters x={955} y={740} s={110} at={at[1] - 4} />
+        <Gamepad x={950} y={1035} s={104} at={at[2] - 4} />
+        <Trophy x={985} y={980} s={50} at={at[2] + 10} />
+      </Layer>
       {TYPES.map(([t, d, e], i) => (
         <Rise key={t} at={at[i] - 6} style={{ position: "absolute", left: 70, right: 70, top: 380 + i * 290, height: 260, borderTop: `3px solid ${i === 0 ? C.ink : C.line}`, paddingTop: 22, display: "flex", gap: 34 }}>
           <Disp size={190} color={C.accent} style={{ lineHeight: 0.9 }}>
             {`${i + 1}`}
           </Disp>
           <div>
-            <Disp size={96}>{t}</Disp>
+            <Disp size={88}>{t}</Disp>
             <div style={{ marginTop: 6 }}>
-              <Serif size={46} weight={700}>
+              <Serif size={42} weight={700}>
                 {d}
               </Serif>
             </div>
@@ -621,7 +680,12 @@ const S9: React.FC = () => {
         </Disp>
       </T>
       <T y={1010} at={b.gpt - 2}>
-        <Band at={-100} color={C.ink} text="ChatGPT lives here" size={36} />
+        <span style={{ display: "inline-flex", alignItems: "center", gap: 12 }}>
+          <svg width={64} height={64} viewBox="0 0 64 64" style={{ overflow: "visible" }}>
+            <ChatBubble x={32} y={32} s={60} at={b.gpt - 4} />
+          </svg>
+          <Band at={-100} color={C.ink} text="ChatGPT lives here" size={34} />
+        </span>
       </T>
     </Shell>
   );
@@ -669,7 +733,13 @@ const S10: React.FC = () => {
             </Disp>
           </div>
         </div>
-        <Stamp text="From data" at={b.data} x={500} y={410} rotate={-9} size={78} />
+        <svg width={150} height={150} viewBox="0 0 150 150" style={{ position: "absolute", left: 740, top: 70, overflow: "visible" }}>
+          <Person x={75} y={75} s={130} at={b.normal - 2} />
+        </svg>
+        <svg width={150} height={150} viewBox="0 0 150 150" style={{ position: "absolute", left: 740, top: 245, overflow: "visible" }}>
+          <Robot x={75} y={75} s={130} at={b.mach - 2} />
+        </svg>
+        <Stamp text="From data" at={b.data} x={500} y={420} rotate={-9} size={78} />
       </Print>
       <div style={{ position: "absolute", left: 70, top: 1060 }}>
         <Band at={b.save - 4} color={C.ink} text="Save this" size={48} />
@@ -703,6 +773,9 @@ const S11: React.FC = () => {
               A bank learns to catch fraud from past transactions, each labelled <span style={{ color: C.red }}>fraud</span> or <span style={{ color: C.accent }}>not fraud</span>.
             </Serif>
           </Rise>
+          <Layer>
+            <Bank x={905} y={680} s={150} at={b.q} />
+          </Layer>
           <div style={{ position: "absolute", left: 70, top: 640, opacity: fade(frame, b.which - 4) }}>
             <Disp size={84}>Which type is it?</Disp>
           </div>
@@ -743,7 +816,17 @@ const S11: React.FC = () => {
               in depth
             </Serif>
           </div>
+          <Layer>
+            <Flashcards x={330} y={1060} s={130} at={b.tease + 4} />
+            <Clusters x={540} y={1060} s={140} at={b.tease + 10} />
+            <Gamepad x={750} y={1070} s={130} at={b.tease + 16} />
+          </Layer>
         </div>
+      ) : null}
+      {frame >= b.fol ? (
+        <Layer>
+          <Robot x={540} y={370} s={160} at={b.fol} />
+        </Layer>
       ) : null}
       {frame >= b.fol ? (
         <div style={{ position: "absolute", left: 0, right: 0, top: 470, textAlign: "center", opacity: interpolate(brand, [0, 0.3], [0, 1], CLAMP), transform: `translateY(${interpolate(brand, [0, 1], [24, 0])}px)` }}>

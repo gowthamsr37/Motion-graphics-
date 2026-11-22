@@ -1,9 +1,11 @@
 // Cover in The File style: Day 1 of 100 · WHAT IS MACHINE LEARNING? · the hook
-// "You use it 12 times a day" · three headline stats · the series and handle. Key content inside the 3:4 grid crop.
+// "You use it 12 times a day" · a robot and the four everyday-ML icons · the series and handle. Key content inside the 3:4 grid crop.
 import React from "react";
 import { AbsoluteFill } from "remotion";
 import { Disp, Grain, Label, Paper, Seam, Serif, Vignette } from "./components/Ed";
 import { config } from "./config";
+import { Envelope, MapPin, PhoneFace, PlayBtn, Robot } from "./components/Doodles";
+import { Layer } from "./components/NB";
 import { theme } from "./theme";
 
 const C = theme.colors;
@@ -40,20 +42,13 @@ export const Cover: React.FC = () => (
         </Serif>
       </div>
     </div>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 1310, display: "flex", justifyContent: "center", gap: 70 }}>
-      {[
-        ["12×", "A DAY"],
-        ["3", "TYPES"],
-        ["0", "RULES WRITTEN"],
-      ].map(([v, l]) => (
-        <div key={l} style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-          <Disp size={96}>{v}</Disp>
-          <Label size={18} color={C.mute}>
-            {l}
-          </Label>
-        </div>
-      ))}
-    </div>
+    <Layer>
+      <Robot x={860} y={470} s={200} at={-200} />
+      <PhoneFace x={230} y={1330} s={140} at={-200} />
+      <Envelope x={436} y={1330} s={140} at={-200} />
+      <PlayBtn x={644} y={1330} s={140} at={-200} />
+      <MapPin x={850} y={1330} s={140} at={-200} />
+    </Layer>
     <div style={{ position: "absolute", left: 0, right: 0, top: 1520, textAlign: "center" }}>
       <Serif size={46} weight={900}>
         {config.handle}

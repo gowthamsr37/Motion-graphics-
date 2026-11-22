@@ -4,7 +4,8 @@ Day 1 rebuilt in **"The File"**, the editorial template from the Beyond The Scor
 
 ## The look (from the template)
 
-- Warm cricket-whites **paper** with grain and vignette, **navy ink**, one accent colour (**ML blue #1F5FD6** here, where Pant used India saffron), and the **red seam** as the series thread (masthead progress seam, scene wipes, arrows, the crack, the stamp).
+- Warm cricket-whites **paper** with grain and vignette, **navy ink**, one accent colour (**saffron #EE7D1E**, as in the Pant reel), and the **red seam** as the series thread (masthead progress seam, scene wipes, arrows, the crack, the stamp).
+- **Data-science twist (v2, user feedback):** the template's paper gets a faint **graph-paper grid**; the accent is back to the Pant reel's **saffron** ("its text colour looks better"); and meaningful **illustrations** from the ML kit, drawn as clean navy ink with flat fills, appear wherever they explain something: a robot on the title card, phone / envelope / play-button / map-pin icons on the everyday uses, a programmer writing RULE #1, a computer in the DATA + RULES → ANSWERS diagram, a crossed-out spam envelope, envelope icons on the labelled emails, the robot working out the rules, the data points drawn as little **houses**, a house going into the MODEL, flash cards / clusters / gamepad + trophy for the 3 types, a ChatGPT chat bubble, **Arthur Samuel's checkers board** (his self-learning checkers program), "we" vs robot icons on the case file, a bank on the poll, the three type icons on the Day 2 teaser and a robot on the end card.
 - **Anton** (uppercase) for headlines and numbers, **Fraunces italic** for the editorial voice and scene titles, **Inter Display** for small labels and the karaoke captions.
 - Masthead "100 DAYS OF ML · *Day 1 · What is ML?*"; seam-wipe transitions; a taped case-file print with a rubber **stamp** to close; the template's cinematic piano + strings score with pulse and drums, re-timed to this story.
 
