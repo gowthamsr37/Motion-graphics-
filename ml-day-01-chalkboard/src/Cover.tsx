@@ -19,7 +19,7 @@ export const Cover: React.FC = () => (
     <WriteAt x={325} y={300} at={DONE} size={40} color={nb.blue} font="body">
       100 DAYS OF ML
     </WriteAt>
-    <WriteAt x={800} y={300} at={DONE} size={68} color={nb.red} rot={-5}>
+    <WriteAt x={800} y={300} at={DONE} size={72} color={nb.pink} rot={-5}>
       Day 1 / 100
     </WriteAt>
     <div style={{ position: "absolute", left: 160, top: 390, lineHeight: 1 }}>
@@ -54,15 +54,15 @@ export const Cover: React.FC = () => (
       {Array.from({ length: 12 }, (_, i) => {
         const grp = Math.floor(i / 5);
         const j = i % 5;
-        const x0 = 745 + grp * 92;
+        const x0 = 752 + grp * 90;
         if (j === 4) return <Sketch key={i} s={{ k: "line", x1: x0 - 8, y1: 1184, x2: x0 + 56, y2: 1150 }} at={DONE} o={{ color: nb.red, width: 5, seed: 80 + i }} />;
         return <Sketch key={i} s={{ k: "line", x1: x0 + j * 13, y1: 1144, x2: x0 + j * 13 + 3, y2: 1188 }} at={DONE} o={{ color: nb.ink, width: 5, seed: 80 + i }} />;
       })}
     </Layer>
-    <WriteAt x={165} y={1165} align="left" at={DONE} size={72} color={nb.red}>
+    <WriteAt x={165} y={1165} align="left" at={DONE} size={70} color={nb.yellow}>
       you use it 12x a day
     </WriteAt>
-    <WriteAt x={540} y={1260} at={DONE} size={48} color={nb.pencil} font="body">
+    <WriteAt x={540} y={1262} at={DONE} size={52} color={nb.pink} font="body">
       but do you know what it actually is?
     </WriteAt>
     <Sticky x={330} y={1430} w={330} h={150} at={DONE} rot={-4}>

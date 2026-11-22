@@ -93,7 +93,7 @@ export const ChalkDefs: React.FC = () =>
     <svg width={0} height={0} style={{ position: "absolute" }}>
       <filter id="chalkfx" x="-5%" y="-20%" width="110%" height="140%">
         <feTurbulence type="fractalNoise" baseFrequency="1.35" numOctaves={2} seed={4} result="n" />
-        <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 -2.2 1.75" result="m" />
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 -1.7 1.6" result="m" />
         <feComposite in="SourceGraphic" in2="m" operator="in" result="g" />
         <feGaussianBlur in="g" stdDeviation="0.5" />
       </filter>
@@ -315,7 +315,7 @@ export const Write: React.FC<{
           ...base,
           clipPath: p >= 1 ? "none" : `inset(-30% ${(1 - p) * 100}% -40% -8%)`,
           filter: STYLE === "chalk" ? "url(#chalkfx)" : undefined,
-          textShadow: STYLE === "chalk" ? "0 0 2px rgba(255,255,255,0.35)" : undefined,
+          textShadow: STYLE === "chalk" ? "0 0 3px rgba(255,255,255,0.45), 0 0 14px rgba(255,255,255,0.12)" : undefined,
         }}
       >
         {children}
@@ -347,14 +347,14 @@ export const Hi: React.FC<{ at: number; color?: string; dur?: number; children: 
           position: "absolute",
           left: -pad,
           right: -pad,
-          top: "22%",
-          bottom: "6%",
+          top: STYLE === "chalk" ? "60%" : "22%",
+          bottom: STYLE === "chalk" ? "0%" : "6%",
           background: color,
-          opacity: STYLE === "chalk" ? 0.3 : STYLE === "comic" ? 1 : 0.85,
+          opacity: STYLE === "chalk" ? 0.8 : STYLE === "comic" ? 1 : 0.85,
           borderRadius: STYLE === "comic" ? 2 : "6px 12px 8px 14px",
           transform: `scaleX(${p}) rotate(${STYLE === "comic" ? -1 : -1.2}deg)`,
           transformOrigin: "left center",
-          mixBlendMode: STYLE === "chalk" ? "normal" : "multiply",
+          mixBlendMode: STYLE === "chalk" ? "screen" : "multiply",
           filter: STYLE === "chalk" ? "blur(2px)" : undefined,
           border: STYLE === "comic" ? "3px solid #111" : undefined,
         }}
@@ -467,3 +467,32 @@ const PenHeader: React.FC<{ text: string; at: number; color: string; y: number }
     </Layer>
   </>
 );
+
+// a puff of chalk dust (e.g. when the title hits the board on frame 0)
+export const ChalkDust: React.FC<{ x: number; y: number; at: number; count?: number; spread?: number; w?: number; seed?: number }> = ({ x, y, at, count = 46, spread = 220, w = 500, seed = 3 }) => {
+  const frame = useCurrentFrame();
+  const t = frame - at;
+  if (t < 0 || t > 40) return null;
+  let a = seed * 9301 + 49297;
+  const r = () => {
+    a = (a * 16807) % 2147483647;
+    return a / 2147483647;
+  };
+  return (
+    <>
+      {Array.from({ length: count }, (_, i) => {
+        const ox = (r() - 0.5) * w;
+        const ang = r() * Math.PI * 2;
+        const dist = (0.3 + r()) * spread;
+        const sz = 3 + r() * 9;
+        const delay = r() * 6;
+        const k = Math.max(0, Math.min(1, (t - delay) / 34));
+        const e = 1 - Math.pow(1 - k, 3);
+        const px = x + ox + Math.cos(ang) * dist * e;
+        const py = y + Math.sin(ang) * dist * e * 0.6 - 30 * e;
+        return <div key={i} style={{ position: "absolute", left: px, top: py, width: sz, height: sz, borderRadius: "50%", background: "#FFFFFF", opacity: (k > 0 ? 1 - k : 0) * 0.7, filter: `blur(${1 + sz * 0.15}px)` }} />;
+      })}
+      <div style={{ position: "absolute", left: x - w * 0.6, top: y - 90, width: w * 1.2, height: 180, borderRadius: "50%", background: "rgba(255,255,255,0.16)", filter: "blur(30px)", opacity: Math.max(0, 1 - t / 30) }} />
+    </>
+  );
+};

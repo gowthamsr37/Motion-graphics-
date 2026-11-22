@@ -5,7 +5,7 @@
 import React from "react";
 import { AbsoluteFill } from "remotion";
 import { Robot } from "../components/Doodles";
-import { Check, Hi, Layer, Sketch, Sticky, Write, WriteAt } from "../components/NB";
+import { ChalkDust, Check, Hi, Layer, Sketch, Sticky, Write, WriteAt } from "../components/NB";
 import { hand, nb } from "../theme";
 import { useScene } from "../timing";
 
@@ -53,6 +53,9 @@ export const S1Title: React.FC = () => {
       <Layer>
         <Robot x={810} y={430} s={210} at={6} />
       </Layer>
+      {/* chalk-dust burst as the title hits the board */}
+      <ChalkDust x={400} y={420} at={0} count={60} spread={260} w={560} seed={2} />
+      <ChalkDust x={420} y={640} at={14} count={34} spread={180} w={480} seed={5} />
       {/* checklist */}
       <WriteAt x={170} y={850} align="left" at={22} size={40} color={nb.pencil} font="body" cps={80} pencil={false}>
         In this one:
@@ -70,6 +73,7 @@ export const S1Title: React.FC = () => {
           {t}
         </WriteAt>
       ))}
+      <ChalkDust x={850} y={1290} at={SAVE - 2} count={26} spread={150} w={260} seed={8} />
       <Sticky x={850} y={1290} w={300} h={160} at={SAVE - 4} rot={5}>
         <div style={{ fontFamily: hand.title, fontWeight: 700, fontSize: 60, color: nb.red, lineHeight: 1 }}>Save this!</div>
         <div style={{ fontFamily: hand.body, fontSize: 30, color: nb.ink }}>you&apos;ll need it</div>

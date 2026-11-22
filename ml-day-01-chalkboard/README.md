@@ -1,6 +1,6 @@
-# 100 Days of ML · Day 1: What Is Machine Learning? (CHALKBOARD trial)
+# 100 Days of ML · Day 1: What Is Machine Learning? (CHALKBOARD, the series look)
 
-**Trial version of Day 1 in the CHALKBOARD look** (user asked for chalkboard and comic versions of the same video to choose the series style). Same script, narration and timeline as `ml-day-01-what-is-ml/`; only the look and sound change:
+**The approved look for 100 Days of Machine Learning.** The user compared notebook, chalkboard and comic versions of this same Day 1 and picked chalkboard ("it looks like classroom teaching"). Polish applied after the pick: brighter chalk palette and less grain erosion, a stronger chalk glow on letters, highlights as bright chalk swashes under the word (screen blend, no more olive tint), a chalk-dust burst as the title hits the board on frame 0 (`ChalkDust` in `NB.tsx`), and a brighter cover hook. Same script, narration and timeline as `ml-day-01-what-is-ml/`; only the look and sound change:
 
 - **Board:** green slate with chalk-dust texture, faint ghosts of erased writing, wooden frame and a chalk tray with chalk pieces and a duster (`ChalkBoard` in `src/components/NB.tsx`).
 - **Chalk:** every rough.js stroke and every letter passes through a grain filter (`#chalkfx`, `ChalkDefs`), titles in **Cabin Sketch**, body in **Kalam**, coloured chalk palette (`nb` in `src/theme.ts`); a chalk stick rides the tip as text writes on.
