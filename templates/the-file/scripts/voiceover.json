@@ -1,0 +1,154 @@
+{
+  "voice": "am_michael",
+  "lang": "en-us",
+  "speed": 1.0,
+  "fix": [
+    [
+      "ɪnnˈɪŋz",
+      "ˈɪnɪŋz"
+    ],
+    [
+      "dˈɛvdʌt pˈædɪkəl",
+      "dˈeɪvdʌt pˈʌdɪkkəl"
+    ],
+    [
+      "pˈædɪkəl",
+      "pˈʌdɪkkəl"
+    ],
+    [
+      "tʃˈɛɾɪʃwˌɔːɹ",
+      "tʃˈeɪtɛʃwəɹ"
+    ],
+    [
+      "pjuːdʒˈɑːɹɹə",
+      "pʊdʒˈɑːɹə"
+    ],
+    [
+      "sˈʌdhɑːɹsən",
+      "sʊdˈɑːɹʃən"
+    ],
+    [
+      "ˈædʒɪt wˈeɪdkɑːɹ",
+      "ˈʌdʒɪt wˈɑːdɛkəɹ"
+    ],
+    [
+      "ɡˈɑːlə",
+      "ɡˈɑːl"
+    ],
+    [
+      "kˈɑːɹɹʌn nˈɛɹ",
+      "kˈʌɹʊn nˈaɪəɹ"
+    ]
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.6,
+      "hold": 0.5,
+      "segments": [
+        {
+          "text": "This is The File, our new template.",
+          "caption": "This is The File, our new template.",
+          "pause": 0.4
+        },
+        {
+          "text": "Every story opens on one giant symbol, while a door of names keeps spinning.",
+          "caption": "Every story opens on one giant symbol, while a door of names keeps spinning.",
+          "pause": 0.45
+        },
+        {
+          "text": "Then the hero walks in.",
+          "caption": "Then the hero walks in.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.2,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Big numbers slam in: one hundred and sixty-seven. One hundred and seventeen. Eighty.",
+          "caption": "Big numbers slam in: 167. 117. 80.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.25,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "Lollipop charts rank the field.",
+          "caption": "Lollipop charts rank the field.",
+          "pause": 0.4
+        },
+        {
+          "text": "The dashed red line is the benchmark.",
+          "caption": "The dashed red line is the benchmark.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.25,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "The road follows a career, stop by stop, and the gaps stay on the map.",
+          "caption": "The road follows a career, stop by stop, and the gaps stay on the map.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.25,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Dot columns turn time at the crease into something you can count.",
+          "caption": "Dot columns turn time at the crease into something you can count.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.25,
+      "hold": 1.0,
+      "segments": [
+        {
+          "text": "Butterfly charts put two players side by side.",
+          "caption": "Butterfly charts put two players side by side.",
+          "pause": 0.4
+        },
+        {
+          "text": "Until the mirror breaks.",
+          "caption": "Until the mirror breaks.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "lead": 0.25,
+      "hold": 1.9,
+      "segments": [
+        {
+          "text": "Every case ends with a verdict, and a stamp.",
+          "caption": "Every case ends with a verdict, and a stamp.",
+          "pause": 0.55
+        },
+        {
+          "text": "Beyond The Scoreboard.",
+          "caption": "Beyond The Scoreboard.",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}

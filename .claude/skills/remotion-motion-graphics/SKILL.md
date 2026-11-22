@@ -10,6 +10,13 @@ bottleneck — **motion design craft is**. Untrained generation produces linear 
 opacity-only fades, simultaneous entrances, flat colors, and no texture. That is the
 "generic AI video" look. This skill exists to prevent it.
 
+## Beyond The Scoreboard house template
+
+In this repository, cricket analysis reels start from `templates/the-file` (scaffold with
+`bash templates/the-file/new-reel.sh <folder> "<masthead tag>" <Output_File_Name>`). Its README is the
+style guide: paper-and-ink look, widget catalogue, story recipe, sound and QA checklist. Its
+`Paper` + `Grain` + `Vignette` ground, seam wipes and keyed springs satisfy the rules below.
+
 ## Non-negotiable rules (apply to EVERY composition)
 
 1. **NEVER use linear interpolation.** Every `interpolate()` gets an easing curve;
