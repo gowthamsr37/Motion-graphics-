@@ -1,0 +1,187 @@
+{
+  "voice": "am_michael",
+  "lang": "en-us",
+  "speed": 1.0,
+  "fix": [
+    [
+      "ɪnnˈɪŋz",
+      "ˈɪnɪŋz"
+    ],
+    [
+      "dˈɛvdʌt pˈædɪkəl",
+      "dˈeɪvdʌt pˈʌdɪkkəl"
+    ],
+    [
+      "pˈædɪkəl",
+      "pˈʌdɪkkəl"
+    ],
+    [
+      "tʃˈɛɾɪʃwˌɔːɹ",
+      "tʃˈeɪtɛʃwəɹ"
+    ],
+    [
+      "pjuːdʒˈɑːɹɹə",
+      "pʊdʒˈɑːɹə"
+    ],
+    [
+      "sˈʌdhɑːɹsən",
+      "sʊdˈɑːɹʃən"
+    ],
+    [
+      "ˈædʒɪt wˈeɪdkɑːɹ",
+      "ˈʌdʒɪt wˈɑːdɛkəɹ"
+    ],
+    [
+      "ɡˈɑːlə",
+      "ɡˈɑːl"
+    ],
+    [
+      "kˈɑːɹɹʌn nˈɛɹ",
+      "kˈʌɹʊn nˈaɪəɹ"
+    ]
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Since Cheteshwar Pujara's last Test, India have tried seven different number threes.",
+          "caption": "Since Cheteshwar Pujara's last Test, India have tried seven different No.3s.",
+          "pause": 0.45
+        },
+        {
+          "text": "Only one has made it look easy.",
+          "caption": "Only one has made it look easy.",
+          "pause": 0.45
+        },
+        {
+          "text": "Devdutt Padikkal. His last three first-innings scores: one hundred and sixty-seven, one hundred and seventeen, and eighty.",
+          "caption": "Devdutt Padikkal. His last three first-innings scores: 167, 117 and 80.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.25,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Here's what India's number threes have averaged since Pujara.",
+          "caption": "Here's what India's No.3s have averaged since Pujara.",
+          "pause": 0.38
+        },
+        {
+          "text": "Shubman Gill, thirty-seven. Sai Sudharsan, thirty-two. Karun Nair, twenty-eight.",
+          "caption": "Shubman Gill, 37. Sai Sudharsan, 32. Karun Nair, 28.",
+          "pause": 0.42
+        },
+        {
+          "text": "Padikkal: seventy-two. The benchmark, Pujara's career average at number three, was forty-four.",
+          "caption": "Padikkal: 72. The benchmark, Pujara's career average at No.3, was 44.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.25,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "It didn't start smoothly. Sixty-five on debut at Dharamsala, batting at four. Then a duck at Perth, and almost two years out of the side.",
+          "caption": "It didn't start smoothly. 65 on debut at Dharamsala, batting at four. Then a duck at Perth, and almost two years out of the side.",
+          "pause": 0.45
+        },
+        {
+          "text": "He came back in Sri Lanka with one hundred and sixty-seven at Galle, his first Test hundred. A week later, one hundred and seventeen in Colombo.",
+          "caption": "He came back in Sri Lanka with 167 at Galle, his first Test hundred. A week later, 117 in Colombo.",
+          "pause": 0.42
+        },
+        {
+          "text": "And this week in Wellington, eighty against New Zealand's seamers. For India at number three there, only Ajit Wadekar has made more.",
+          "caption": "And this week in Wellington, 80 against New Zealand's seamers. For India at No.3 there, only Ajit Wadekar has made more.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.25,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "For a number three, the real currency is time.",
+          "caption": "For a No.3, the real currency is time.",
+          "pause": 0.4
+        },
+        {
+          "text": "Pujara faced one hundred and one balls per dismissal. India's other number threes since him: sixty-one.",
+          "caption": "Pujara faced 101 balls per dismissal. India's other No.3s since him: 61.",
+          "pause": 0.42
+        },
+        {
+          "text": "Padikkal: one hundred and twenty-eight. He's staying longer than Pujara did, and scoring faster.",
+          "caption": "Padikkal: 128. He's staying longer than Pujara did, and scoring faster.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.25,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Now, the comparison everyone is making: Sai Sudharsan.",
+          "caption": "Now, the comparison everyone is making: Sai Sudharsan.",
+          "pause": 0.4
+        },
+        {
+          "text": "In first-class cricket, they're almost identical. Both average in the forties, both with ten hundreds.",
+          "caption": "In first-class cricket, they're almost identical. Both average in the forties, both with ten hundreds.",
+          "pause": 0.42
+        },
+        {
+          "text": "In Tests, it's seventy-one against thirty-two. Two hundreds against none.",
+          "caption": "In Tests, it's 71 against 32. Two hundreds against none.",
+          "pause": 0.42
+        },
+        {
+          "text": "Sai is only twenty-five, and his time may come. But right now, number three belongs to Padikkal.",
+          "caption": "Sai is only 25, and his time may come. But right now, No.3 belongs to Padikkal.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.25,
+      "hold": 1.7,
+      "segments": [
+        {
+          "text": "Seven Test innings is still a small sample.",
+          "caption": "Seven Test innings is still a small sample.",
+          "pause": 0.4
+        },
+        {
+          "text": "But the runs, the time at the crease, and the calm all point the same way.",
+          "caption": "But the runs, the time at the crease, and the calm all point the same way.",
+          "pause": 0.45
+        },
+        {
+          "text": "After three years of searching, India have found their number three.",
+          "caption": "After three years of searching, India have found their No.3.",
+          "pause": 0.5
+        },
+        {
+          "text": "Beyond The Scoreboard.",
+          "caption": "Beyond The Scoreboard.",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}
