@@ -142,13 +142,18 @@ export const Race: React.FC<{ year: number; yMax: number; xMax: number; width?: 
   };
   const ticks = xMax <= 6 ? [0, 1, 2, 3, 4, 5, 6] : [0, 5, 10, 15, 20];
   const yt = yMax <= 1.2e7 ? [0, 25e5, 50e5, 75e5, 1e7].filter((v) => v <= yMax) : [0, 1e7, 2e7, 3e7, 4e7];
+  // keep the two value labels apart when the lines meet
+  const ya = y(valAt("arjun", year)), ym = y(valAt("meera", year));
+  const gap = 46 - Math.abs(ya - ym);
+  const push = gap > 0 ? gap / 2 : 0;
+  const labelDy = { arjun: ya >= ym ? push : -push, meera: ym > ya ? push : -push };
   const head = (key: "arjun" | "meera", color: string) => {
     const v = valAt(key, year);
     return (
       <g transform={`translate(${x(year)}, ${y(v)})`}>
         <circle r={22 + Math.sin(frame / 6) * 3} fill={color} opacity={0.25} />
         <circle r={13} fill={color} stroke={C.bg} strokeWidth={4} />
-        <text x={26} y={10} fontFamily={theme.fonts.num} fontWeight={700} fontSize={36} fill={color}>
+        <text x={26} y={10 + labelDy[key]} fontFamily={theme.fonts.num} fontWeight={700} fontSize={36} fill={color}>
           {lakh(v)}
         </text>
       </g>

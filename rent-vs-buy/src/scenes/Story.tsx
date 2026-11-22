@@ -277,7 +277,7 @@ export const S5: React.FC = () => {
     <Shell id="s5">
       <div style={{ opacity: interpolate(frame, [chartOut, chartOut + 10], [1, 0], CLAMP) }}>
         <RaceBlock year={year} yMax={1e7} xMax={6} crash={crash} />
-        <div style={{ position: "absolute", left: 380, top: 470, transform: `rotate(-10deg) scale(${interpolate(stamp, [0, 1], [2, 1])})`, opacity: interpolate(stamp, [0, 0.2], [0, 1], CLAMP) }}>
+        <div style={{ position: "absolute", left: 170, top: 560, transform: `rotate(-10deg) scale(${interpolate(stamp, [0, 1], [2, 1])})`, opacity: interpolate(stamp, [0, 0.2], [0, 1], CLAMP) }}>
           <div style={{ border: `6px solid ${C.red}`, borderRadius: 18, padding: "6px 26px", fontFamily: theme.fonts.num, fontWeight: 700, fontSize: 96, color: C.red, boxShadow: `0 0 40px ${C.redGlow}`, background: "rgba(20,17,43,0.7)" }}>−35%</div>
         </div>
         <div style={{ position: "absolute", left: 60, top: 1090, width: 960, display: "flex", justifyContent: "space-between" }}>
