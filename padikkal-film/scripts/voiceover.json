@@ -1,0 +1,189 @@
+{
+  "voice": "am_michael",
+  "lang": "en-us",
+  "speed": 1.0,
+  "fix": [
+    [
+      "ɪnnˈɪŋz",
+      "ˈɪnɪŋz"
+    ],
+    [
+      "dˈɛvdʌt pˈædɪkəl",
+      "dˈeɪvdʌt pˈʌdɪkkəl"
+    ],
+    [
+      "pˈædɪkəl",
+      "pˈʌdɪkkəl"
+    ],
+    [
+      "tʃˈɛɾɪʃwˌɔːɹ",
+      "tʃˈeɪtɛʃwəɹ"
+    ],
+    [
+      "pjuːdʒˈɑːɹɹə",
+      "pʊdʒˈɑːɹə"
+    ],
+    [
+      "sˈʌdhɑːɹsən",
+      "sʊdˈɑːɹʃən"
+    ],
+    [
+      "ˈædʒɪt wˈeɪdkɑːɹ",
+      "ˈʌdʒɪt wˈɑːdɛkəɹ"
+    ],
+    [
+      "ɡˈɑːlə",
+      "ɡˈɑːl"
+    ],
+    [
+      "kˈɑːɹɹʌn nˈɛɹ",
+      "kˈʌɹʊn nˈaɪəɹ"
+    ]
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.6,
+      "hold": 0.5,
+      "segments": [
+        {
+          "text": "Since Cheteshwar Pujara's last Test, India's number three spot has been a revolving door.",
+          "caption": "Since Cheteshwar Pujara's last Test, India's No.3 spot has been a revolving door.",
+          "pause": 0.45
+        },
+        {
+          "text": "Seven batters. Three years.",
+          "caption": "Seven batters. Three years.",
+          "pause": 0.5
+        },
+        {
+          "text": "Then Devdutt Padikkal walked in.",
+          "caption": "Then Devdutt Padikkal walked in.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.2,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "His last three first innings: one hundred and sixty-seven. One hundred and seventeen. Eighty.",
+          "caption": "His last three first innings: 167. 117. 80.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.25,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Since Pujara, Shubman Gill averaged thirty-seven at number three. Sai Sudharsan, thirty-two. Karun Nair, twenty-eight.",
+          "caption": "Since Pujara, Shubman Gill averaged 37 at No.3. Sai Sudharsan, 32. Karun Nair, 28.",
+          "pause": 0.42
+        },
+        {
+          "text": "Padikkal: seventy-two. Pujara's own career mark there was forty-four.",
+          "caption": "Padikkal: 72. Pujara's own career mark there was 44.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.25,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "It wasn't a straight road. Sixty-five on debut. A duck at Perth. Then twenty-one months in the wilderness.",
+          "caption": "It wasn't a straight road. 65 on debut. A duck at Perth. Then 21 months in the wilderness.",
+          "pause": 0.45
+        },
+        {
+          "text": "He returned at Galle with one hundred and sixty-seven, his first Test hundred. A week later, one hundred and seventeen in Colombo.",
+          "caption": "He returned at Galle with 167, his first Test hundred. A week later, 117 in Colombo.",
+          "pause": 0.42
+        },
+        {
+          "text": "And in Wellington, eighty against the moving ball. For India at number three there, only Ajit Wadekar has made more.",
+          "caption": "And in Wellington, 80 against the moving ball. For India at No.3 there, only Ajit Wadekar has made more.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.25,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "But a number three is measured in time.",
+          "caption": "But a No.3 is measured in time.",
+          "pause": 0.4
+        },
+        {
+          "text": "Every dot here is one ball faced, per dismissal.",
+          "caption": "Every dot here is one ball faced, per dismissal.",
+          "pause": 0.38
+        },
+        {
+          "text": "Pujara: one hundred and one. The others since him: sixty-one. Padikkal: one hundred and twenty-eight. And he scores faster than Pujara did.",
+          "caption": "Pujara: 101. The others since him: 61. Padikkal: 128. And he scores faster than Pujara did.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.25,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "The obvious comparison is Sai Sudharsan.",
+          "caption": "The obvious comparison is Sai Sudharsan.",
+          "pause": 0.38
+        },
+        {
+          "text": "In first-class cricket, they're mirror images. Averages in the forties. Ten hundreds each.",
+          "caption": "In first-class cricket, they're mirror images. Averages in the forties. Ten hundreds each.",
+          "pause": 0.45
+        },
+        {
+          "text": "In Tests, the mirror breaks. Seventy-one against thirty-two. Two hundreds against none.",
+          "caption": "In Tests, the mirror breaks. 71 against 32. Two hundreds against none.",
+          "pause": 0.4
+        },
+        {
+          "text": "Sai is twenty-five. His time may come.",
+          "caption": "Sai is 25. His time may come.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "lead": 0.25,
+      "hold": 1.9,
+      "segments": [
+        {
+          "text": "Seven innings is a small sample. But every number points the same way.",
+          "caption": "Seven innings is a small sample. But every number points the same way.",
+          "pause": 0.45
+        },
+        {
+          "text": "After three years of searching, India have found their number three.",
+          "caption": "After three years of searching, India have found their No.3.",
+          "pause": 0.55
+        },
+        {
+          "text": "Beyond The Scoreboard.",
+          "caption": "Beyond The Scoreboard.",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}
