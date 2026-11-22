@@ -1,0 +1,19 @@
+{
+  "name": "pant-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Beyond The Scoreboard — Rishabh Pant in Tests: spin, overseas, nervous nineties",
+  "scripts": {
+    "audio": "node scripts/gen-audio.mjs",
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts PantTests out/raw.mp4 --codec h264 --crf 17"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.543",
+    "@types/react": "^19.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.543",
+    "typescript": "^7.0.2"
+  }
+}

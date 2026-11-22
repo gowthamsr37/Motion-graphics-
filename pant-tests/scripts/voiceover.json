@@ -1,0 +1,236 @@
+{
+  "voice": "am_michael",
+  "lang": "en-us",
+  "speed": 1.0,
+  "fix": [
+    [
+      "ˈɪpəl",
+      "ˌaɪpˌiːˈɛl"
+    ],
+    [
+      "ɪnnˈɪŋz",
+      "ˈɪnɪŋz"
+    ],
+    [
+      "ɹˈɪʃæb pˈænt",
+      "ɹˈɪʃəb pˈʌnt"
+    ],
+    [
+      "pˈænt",
+      "pˈʌnt"
+    ],
+    [
+      "də vˈɪlɪɹz",
+      "də vˈɪljɚz"
+    ],
+    [
+      "lˈaɪɑːn",
+      "lˈaɪən"
+    ]
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.3,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Wellington. One hundred and twenty-eight, off one hundred and fifty-three balls.",
+          "caption": "Wellington. 128, off 153 balls.",
+          "pause": 0.45
+        },
+        {
+          "text": "Rishabh Pant's ninth Test hundred, and his first in New Zealand.",
+          "caption": "Rishabh Pant's ninth Test hundred, and his first in New Zealand.",
+          "pause": 0.4
+        },
+        {
+          "text": "He's now the first Asian wicketkeeper with Test hundreds in all four SENA countries. And only Ben Stokes has hit more Test sixes.",
+          "caption": "He's now the first Asian wicketkeeper with Test hundreds in all four SENA countries. And only Ben Stokes has hit more Test sixes.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.25,
+      "hold": 0.5,
+      "segments": [
+        {
+          "text": "Fifty-three Tests. Three thousand, eight hundred and fifty-three runs, at an average of almost forty-five.",
+          "caption": "53 Tests. 3,853 runs, at an average of almost 45.",
+          "pause": 0.4
+        },
+        {
+          "text": "Every bar is one innings. The line is his average over the last ten. It has never been a calm ride.",
+          "caption": "Every bar is one innings. The line is his average over the last ten. It has never been a calm ride.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.25,
+      "hold": 0.5,
+      "segments": [
+        {
+          "text": "He got off the mark in Test cricket with a six.",
+          "caption": "He got off the mark in Test cricket with a six.",
+          "pause": 0.38
+        },
+        {
+          "text": "A hundred at the Oval in only his third Test. One hundred and fifty-nine not out at Sydney.",
+          "caption": "A hundred at the Oval in only his third Test. 159 not out at Sydney.",
+          "pause": 0.4
+        },
+        {
+          "text": "And at the Gabba, eighty-nine not out, to beat Australia at a ground where they hadn't lost in thirty-two years.",
+          "caption": "And at the Gabba, 89 not out, to beat Australia at a ground where they hadn't lost in 32 years.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.25,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "The lows were just as steep. In twenty twenty, he averaged under eighteen.",
+          "caption": "The lows were just as steep. In 2020, he averaged under 18.",
+          "pause": 0.42
+        },
+        {
+          "text": "Then, on the thirtieth of December, twenty twenty-two, a car crash nearly ended everything.",
+          "caption": "Then, on 30 December 2022, a car crash nearly ended everything.",
+          "pause": 0.5
+        },
+        {
+          "text": "Six hundred and thirty-seven days later, in his first Test back, he made a hundred at Chennai.",
+          "caption": "637 days later, in his first Test back, he made a hundred at Chennai.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.25,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "At Leeds in twenty twenty-five, he made a hundred in each innings. The only keeper to do that before him was Andy Flower.",
+          "caption": "At Leeds in 2025, he made a hundred in each innings. The only keeper to do that before him was Andy Flower.",
+          "pause": 0.42
+        },
+        {
+          "text": "Weeks later at Manchester, he walked out with a fractured foot, and made fifty-four.",
+          "caption": "Weeks later at Manchester, he walked out with a fractured foot, and made 54.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.25,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Now, the spin story.",
+          "caption": "Now, the spin story.",
+          "pause": 0.38
+        },
+        {
+          "text": "Against pace, he averages thirty-nine. Against spin, fifty-three, at eighty-six runs per hundred balls.",
+          "caption": "Against pace, he averages 39. Against spin, 53, at 86 runs per 100 balls.",
+          "pause": 0.42
+        },
+        {
+          "text": "Seventy-five of his first hundred Test sixes came off spinners. And at home, against spin, he scores at almost a run a ball.",
+          "caption": "75 of his first 100 Test sixes came off spinners. And at home, against spin, he scores at almost a run a ball.",
+          "pause": 0.4
+        },
+        {
+          "text": "Nathan Lyon has dismissed him more than anyone, six times. But Pant has taken two hundred and fifty-eight runs, and seven sixes, off him.",
+          "caption": "Nathan Lyon has dismissed him more than anyone, six times. But Pant has taken 258 runs, and seven sixes, off him.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "lead": 0.25,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Overseas, compare him with the leading keepers of the last two decades.",
+          "caption": "Overseas, compare him with the leading keepers of the last two decades.",
+          "pause": 0.4
+        },
+        {
+          "text": "Pant has the best average away from home, almost forty-three, and the most away hundreds, seven.",
+          "caption": "Pant has the best average away from home, almost 43, and the most away hundreds, seven.",
+          "pause": 0.4
+        },
+        {
+          "text": "And nobody here scores faster.",
+          "caption": "And nobody here scores faster.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "lead": 0.25,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "But there's one thing he still hasn't solved.",
+          "caption": "But there's one thing he still hasn't solved.",
+          "pause": 0.4
+        },
+        {
+          "text": "Seven times, he's been out in the nineties. Nine times, he's gone on to a hundred.",
+          "caption": "Seven times, he's been out in the nineties. Nine times, he's gone on to a hundred.",
+          "pause": 0.42
+        },
+        {
+          "text": "Across Test cricket, fewer than one in five ninety-plus scores stop short. For Pant, it's almost half.",
+          "caption": "Across Test cricket, fewer than one in five ninety-plus scores stop short. For Pant, it's almost half.",
+          "pause": 0.4
+        },
+        {
+          "text": "Since two thousand and two, only AB de Villiers and Alastair Cook have as many nineties, in more than twice as many Tests.",
+          "caption": "Since 2002, only AB de Villiers and Alastair Cook have as many nineties, in more than twice as many Tests.",
+          "pause": 0.4
+        },
+        {
+          "text": "And you can see the nerves. Between seventy and eighty-nine, he scores at one hundred and five runs per hundred balls. In the nineties, seventy-three.",
+          "caption": "And you can see the nerves. Between 70 and 89, he scores at 105 runs per 100 balls. In the nineties, 73.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "lead": 0.25,
+      "hold": 1.6,
+      "segments": [
+        {
+          "text": "Nine Test hundreds, the most by any Indian wicketkeeper. Seven of them overseas.",
+          "caption": "Nine Test hundreds, the most by any Indian wicketkeeper. Seven of them overseas.",
+          "pause": 0.45
+        },
+        {
+          "text": "Fix the nineties, and the record books might run out of room.",
+          "caption": "Fix the nineties, and the record books might run out of room.",
+          "pause": 0.5
+        },
+        {
+          "text": "Beyond The Scoreboard.",
+          "caption": "Beyond The Scoreboard.",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}
