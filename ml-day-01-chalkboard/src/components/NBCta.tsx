@@ -5,7 +5,7 @@ import { interpolate, useCurrentFrame } from "remotion";
 import { Robot } from "./Doodles";
 import { Hi, Layer, Sketch, Sticky, Write, WriteAt } from "./NB";
 import { useSpr } from "./Motion";
-import { hand, HANDLE, nb, theme } from "../theme";
+import { hand, HANDLE, nb, STYLE, theme } from "../theme";
 
 export const NBCta: React.FC<{ TEASE: number; FOL: number; FOLW: number; SIMPLE: number; tomorrow: string }> = ({ TEASE, FOL, FOLW, SIMPLE, tomorrow }) => {
   const frame = useCurrentFrame();
@@ -17,9 +17,9 @@ export const NBCta: React.FC<{ TEASE: number; FOL: number; FOLW: number; SIMPLE:
   const hy = interpolate(frame, [FOLW - 4, FOLW + 12], [1060, 905], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: theme.ease.out });
   return (
     <>
-      <Sticky x={540} y={360} w={680} h={180} at={TEASE - 2} rot={-2} color={nb.stickyBlue}>
+      <Sticky x={540} y={360} w={800} h={180} at={TEASE - 2} rot={-2} color={nb.stickyBlue}>
         <div style={{ fontFamily: hand.body, fontSize: 30, color: nb.pencil, letterSpacing: "0.12em" }}>TOMORROW</div>
-        <div style={{ fontFamily: hand.title, fontWeight: 700, fontSize: 58, color: nb.ink, lineHeight: 1 }}>{tomorrow}</div>
+        <div style={{ fontFamily: hand.title, fontWeight: 700, fontSize: 50, color: nb.ink, lineHeight: 1, whiteSpace: "nowrap" }}>{tomorrow}</div>
       </Sticky>
       <Layer>
         <Robot x={540} y={640} s={190} at={FOL - 4} />
@@ -29,7 +29,7 @@ export const NBCta: React.FC<{ TEASE: number; FOL: number; FOLW: number; SIMPLE:
           <svg width={420} height={130} viewBox="0 0 420 130" style={{ position: "absolute", left: -10, top: -5, overflow: "visible" }}>
             <Sketch s={{ k: "rect", x: 10, y: 10, w: 400, h: 110 }} p={1} o={{ color: nb.ink, width: 5, fill: tapped ? nb.green : nb.red, fillStyle: "solid", seed: 61, rough: 1.3 }} />
           </svg>
-          <div style={{ position: "relative", width: 400, height: 120, display: "flex", alignItems: "center", justifyContent: "center", gap: 14, fontFamily: hand.title, fontWeight: 700, fontSize: 76, color: "#FFFFFF" }}>
+          <div style={{ position: "relative", width: 400, height: 120, display: "flex", alignItems: "center", justifyContent: "center", gap: 14, fontFamily: hand.title, fontWeight: 700, fontSize: 76, color: STYLE === "chalk" ? nb.paperDeep : "#FFFFFF" }}>
             {tapped ? "Following!" : "+ Follow"}
           </div>
         </div>
