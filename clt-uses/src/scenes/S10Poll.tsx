@@ -1,4 +1,4 @@
-// SCENE 11 — YOUR TURN + TEASER + CTA. ONE CUSTOMER'S SPEND: SKEWED · AVERAGE OF 500: NORMAL? with YES / NO chips and the bouncing VOTE IN
+// SCENE 10 — YOUR TURN + TEASER + CTA. ONE CUSTOMER'S SPEND: SKEWED · AVERAGE OF 500: NORMAL? with YES / NO chips and the bouncing VOTE IN
 // THE CAPTION POLL hint; teaser: ANOVA (three or more groups); end card.
 import React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
@@ -14,10 +14,10 @@ import { useScene } from "../timing";
 
 const C = theme.colors;
 
-export const S11Poll: React.FC = () => {
+export const S10Poll: React.FC = () => {
   const frame = useCurrentFrame();
   const spr = useSpr();
-  const s = useScene("s11");
+  const s = useScene("s10");
   const P0 = s.sent(0).from;
   const N = s.cueS(0, "skewed.");
   const ZT = s.cueS(0, "500");

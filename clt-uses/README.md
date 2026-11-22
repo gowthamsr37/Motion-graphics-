@@ -1,38 +1,37 @@
-# 5 Ways the Central Limit Theorem Runs the Real World
+# How Can 1,000 People Predict an Election? (the CLT in real life)
 
-A practical follow-up to `central-limit-theorem/` for **@curious_datascientist**: election polls, A/B tests, factory control charts, insurance and machine learning, each with real numbers, then the common thread, two interview traps, a one-screen cheat sheet and a caption-poll prompt. 2:56, 1080×1920 (9:16), 30 fps, H.264 with AAC 48 kHz stereo, mastered to −14 LUFS.
+A practical follow-up to `central-limit-theorem/` for **@curious_datascientist**. **Version 2:** the user found the first cut (five uses, each explained briefly) hard to follow, and asked to *explain only one example in detail, then say "similarly it's used in" and list the others*. So the reel now walks one election poll end to end: the yes/no raw data → the poll result is an average → repeated polls stack into a bell (the CLT) → standard error 1.6% → 52% ± 3% (margin of error = 95% confidence interval) → 4× the people halves the margin. Then it quickly tours A/B tests, factories, insurance and ML, states the one rule, and ends with the caption-poll prompt. 2:39, 1080×1920 (9:16), 30 fps, H.264 with AAC 48 kHz stereo, mastered to −14 LUFS.
 
-**Built around the user's insight from the which-test reel:** the title card and everything the reel will cover are on screen from **frame 0**. THE CENTRAL LIMIT THEOREM · 5 REAL-WORLD USES and all five use tiles appear by about 1.5 s, before the narration has even named them, so viewers know what they'll get in the first 2–3 seconds (the moment people decide to skip). This is now a house rule (see the skill).
+**Title card from frame 0** (house rule): HOW CAN 1,000 PEOPLE PREDICT AN ELECTION? · THE CENTRAL LIMIT THEOREM IN REAL LIFE, the big ELECTION POLLS tile (THE DETAILED EXAMPLE) and the four small "+ 4 MORE PLACES IT'S USED" tiles are all on screen by about 1.5 s.
 
 ## Deliverables (in `out/`, produced by `scripts/build.sh`)
 
 | File | What it is |
 | --- | --- |
 | `CLT_Real_World_Uses.mp4` | the finished Reel |
-| `CLT_Real_World_Uses_Cover.png` | 1080×1920 cover = the title card: THE CENTRAL LIMIT THEOREM · 5 REAL-WORLD USES, the five use tiles over a faint bell, SAVE THIS FOR YOUR INTERVIEW, @curious_datascientist |
+| `CLT_Real_World_Uses_Cover.png` | 1080×1920 cover = the title card: HOW CAN 1,000 PEOPLE PREDICT AN ELECTION?, a 52% ± 3% tile (WHERE DOES THE ± COME FROM?), the four other uses, SAVE THIS ONE, @curious_datascientist |
 | `CLT_Real_World_Uses.srt` | the on-screen subtitle pages |
 
 The caption, poll and pinned comment are in [`CAPTION.md`](CAPTION.md).
 
 ## Colour code
 
-Polls cyan · A/B tests orange (version A green) · factories green · insurance violet · machine learning pink `#F0ABFC` (the ML-series accent) · the averages / bells violet · "stop" red.
+The poll example cyan · the bell of poll results yellow · the 95% range / margin of error green · "not a bell" and "no CLT" red · in the tour: A/B tests orange, factories green, insurance violet, machine learning pink `#F0ABFC` (the ML-series accent).
 
 ## Storyboard
 
 | # | Scene | What moves |
 | --- | --- | --- |
-| 1 | **Title card (from frame 0)** | THE CENTRAL LIMIT THEOREM · 5 REAL-WORLD USES over a faint bell; the five tiles (ELECTION POLLS · A/B TESTS · FACTORIES · INSURANCE · MACHINE LEARNING) pop in by ~1.5 s, then each lights up as it's named; SAVE THIS ONE bookmark. |
-| 2 | **The CLT in 10 seconds** | A skewed RAW DATA curve → AVERAGE MANY SAMPLES arrow → AVERAGES: A BELL; SE = σ/√n; the bell narrows: MORE DATA = A NARROWER BELL. |
-| 3 | **Use 1: election polls** | Use dots (1/5); 200-dot sample of yes / no; 1,000 VOTERS OUT OF MILLIONS; EACH: YES / NO; the bell of poll results (47–57%) with the 49–55% band and bracket; 52% ±3% = A REAL 95% RANGE; then 4× THE PEOPLE = HALF THE MARGIN (±1.5%). |
-| 4 | **Use 2: A/B tests** | ONE CUSTOMER'S SPEND: VERY SKEWED (A FEW BIG SPENDERS); two bells of AVERAGE SPEND for A (green) and B (orange); SO A SIMPLE z OR t TEST CAN COMPARE THEM. |
-| 5 | **Use 3: factories** | A control chart: EACH DOT = AVERAGE OF 5 BOTTLES, EVERY HOUR around the 200 centre line; ±3 SE lines; INSIDE ±3 SE: 99.7% OF THE TIME; the last dot jumps out and flashes red: POINT OUTSIDE THE LINES: STOP THE MACHINE. |
-| 6 | **Use 4: insurance** | ONE CUSTOMER'S CLAIMS, YEAR BY YEAR: flat bars, then ONE HUGE CLAIM; the bell of the AVERAGE CLAIM OF 100,000 CUSTOMERS narrows; SE ÷ 316 (ROOT OF 100,000); THAT'S HOW PREMIUMS ARE SET. |
-| 7 | **Use 5: machine learning** | A 400-square sample of right / wrong predictions fills; ACCURACY 90%; the accuracy bell with the 88–92% band; ACCURACY IS AN AVERAGE: SE ABOUT 1%; TRUE ACCURACY: ABOUT 88% TO 92%; then 10,000 TEST EXAMPLES: ±0.6%. |
-| 8 | **The common thread** | Five rows (one per use), each mini curve morphing from RAW: MESSY to AVERAGE: BELL; MESSY DATA, BUT AVERAGES BEHAVE; z-TEST · t-TEST · CONFIDENCE INTERVALS: ALL OF THEM LEAN ON THE CLT. |
-| 9 | **Two interview traps** | 1 AVERAGES, NOT THE DATA (individual values stay skewed) · 2 INDEPENDENT + ENOUGH DATA (about 30 for mild skew, far more for heavy tails like incomes). |
-| 10 | **The cheat sheet** | Five rows: icon · USE · RAW DATA, THEN AVERAGE · WHAT IT GIVES YOU; held ~6 s; SEND and SAVE badges drop on their words. |
-| 11 | **Your turn, teaser and CTA** | YOUR TURN · ONE CUSTOMER'S SPEND: SKEWED · A YES / B NO · AVERAGE OF 500: NORMAL? · VOTE IN THE CAPTION POLL; teaser NEXT: THREE OR MORE GROUPS · ANOVA; end card chips Polls · A/B tests · Factories · Insurance + ML. |
+| 1 | **Title card (from frame 0)** | HOW CAN 1,000 PEOPLE PREDICT AN ELECTION? · THE CENTRAL LIMIT THEOREM IN REAL LIFE; ELECTION POLLS tile (THE DETAILED EXAMPLE); + 4 MORE PLACES IT'S USED: A/B TESTS · FACTORIES · INSURANCE · ML, wiggling on "4 more"; SAVE THIS ONE bookmark. |
+| 2 | **The problem** | A crowd of dim dots (MILLIONS OF VOTERS); 1,000 light up (ASK 1,000 AT RANDOM); EACH PERSON: YES OR NO; two bars YES / NO; a struck-out bell: THE RAW DATA IS NOT A BELL CURVE. |
+| 3 | **The poll result is an average** | Counter rolls to 520 / 1,000 YES = 52%; a row of 1s and 0s drops in (YES = 1 · NO = 0); AVERAGE = 520 ÷ 1,000 = 0.52; A POLL RESULT IS JUST AN AVERAGE. |
+| 4 | **Run the poll again and again** | POLL 1, 2, 3, 4 …; the results 51, 53, 52, 50, 54 drop onto a 47–57% axis, then ~150 more stack into a histogram; a yellow bell draws over it; MOST LAND NEAR THE MIDDLE (green band); THAT'S THE CENTRAL LIMIT THEOREM · YES/NO ANSWERS → AVERAGES FORM A BELL. |
+| 5 | **How wide is the bell?** | SPREAD = STANDARD ERROR; SE = √( p × (1 − p) / n ); = √( 0.52 × 0.48 / 1,000 ); ABOUT 0.016 = 1.6%; a small bell with the 1 SE = 1.6% bracket. |
+| 6 | **The margin of error** | The 95% band (±2 SE) fills on the bell; 2 SE = 2 × 1.6% = ABOUT 3%; bracket TRUE SUPPORT: PROBABLY 49% TO 55%; 52% ± 3%; ± 3% = MARGIN OF ERROR · 49 TO 55 = 95% CONFIDENCE INTERVAL; NO CLT = NO ± AT ALL. |
+| 7 | **Want a smaller margin?** | ASK 4× AS MANY PEOPLE; a second bell (n = 4,000, ± 1.5%) half as wide under the first (n = 1,000, ± 3%); 4× THE PEOPLE = HALF THE MARGIN. |
+| 8 | **Similarly, it's used in** | SAME IDEA AS ELECTION POLLS · SIMILARLY, IT'S USED IN; four tiles land one per sentence and glow while spoken: A/B TESTS (average spend per user, A vs B) · FACTORIES (average weight of 5 bottles, every hour) · INSURANCE (average claim of thousands of customers) · MACHINE LEARNING (accuracy = average of right / wrong). |
+| 9 | **The rule + save moment** | SINGLE VALUES: CAN BE MESSY → AVERAGES: FORM A BELL → THE BELL TELLS YOU: HOW SURE TO BE; SAVE THIS · SEND IT TO A FRIEND. |
+| 10 | **Your turn, teaser and CTA** | YOUR TURN · ONE CUSTOMER'S SPEND: SKEWED · AVERAGE OF 500: NORMAL? · VOTE IN THE CAPTION POLL; teaser NEXT: THREE OR MORE GROUPS · ANOVA; end card. |
 
 ## Voiceover script (timestamps are on the finished video)
 
@@ -96,12 +95,12 @@ total 175.662
 
 ## Accuracy notes (every number checked)
 
-- **Polls:** n = 1,000, p̂ = 0.52: SE = √(0.52·0.48/1000) = 0.0158; 95% margin = 1.96 × 0.0158 = 3.1% → "52% ± 3%" (49–55%). With n = 4,000 the margin halves to 1.55% ("±1.5%"), because SE ∝ 1/√n.
-- **A/B tests:** the shapes are illustrative (a right-skewed spend distribution vs two normal sampling distributions of the mean); no specific numbers are claimed.
-- **Control charts:** Shewhart X̄ charts put limits at ±3 standard errors of the subgroup mean; under normality 99.73% of in-control averages fall inside ("99.7%"). The CLT is why X̄ is close to normal even when single bottles aren't.
-- **Insurance:** the SE of the average claim is σ/√n; √100,000 = 316.2 ("shrinks about 300 times"). This is the law of large numbers plus the CLT behind pooling risk.
-- **ML accuracy:** n = 1,000, p = 0.90: SE = √(0.9·0.1/1000) = 0.0095 ("about 1%"); 95% range 90% ± 1.86% = 88.1–91.9% ("about 88 to 92%"). With n = 10,000: ±0.59% ("±0.6%").
-- **Conditions:** independence and enough data; "about 30" is the usual rule of thumb for moderate skew; heavy-tailed data (incomes, claims) need much larger n, and infinite-variance data never satisfy the classic CLT.
+- **Raw data:** each answer is Bernoulli (1 = yes, 0 = no), so the sample proportion p̂ = 520/1,000 = 0.52 is literally the sample mean. The CLT says p̂ is approximately normal for large n (np and n(1 − p) both ≫ 10 here).
+- **Repeated polls (scene 4):** the stacked results are drawn from N(52, 1.58) and rounded to whole percents, the sampling distribution for n = 1,000 and p = 0.52; the first five shown (51, 53, 52, 50, 54) are illustrative.
+- **Standard error:** √(0.52 × 0.48 / 1,000) = 0.0158 → "about 1.6%".
+- **Margin:** 95% of a normal lies within 1.96 SE ("about 2"); 1.96 × 1.58 = 3.1% → "52% ± 3%", 49–55%. That ± is the margin of error, and 49–55% is the 95% confidence interval for the true support.
+- **4× the people:** with n = 4,000, SE = 0.79% and the margin is 1.55% ("± 1.5%"), because SE ∝ 1/√n.
+- **The four other uses** (illustrative, no new numbers): A/B tests compare average spend per user (spend is skewed, its average is near normal); X̄ control charts plot the average of small subgroups (5 bottles an hour); insurers price on the average claim of many policyholders; test accuracy is the mean of 0/1 correctness.
 - **Poll question:** yes, the mean of 500 independent customers is approximately normal unless spending is extremely heavy-tailed.
 
 ## Rebuild
@@ -113,4 +112,4 @@ BROWSER=/path/to/chrome-headless-shell bash scripts/build.sh
 npx remotion studio src/index.ts
 ```
 
-Scaffolded from `z-vs-t/` (`REF=z-vs-t bash .claude/skills/data-science-explainer/new-video.sh clt-uses CltUses CLT_Real_World_Uses`). New: `src/components/Uses.tsx` (the five uses with drawn icons: ballot, A/B phones, bottle, shield, network; `UseHeader`, `UseDots`, skew and bell helpers).
+Scaffolded from `z-vs-t/` (`REF=z-vs-t bash .claude/skills/data-science-explainer/new-video.sh clt-uses CltUses CLT_Real_World_Uses`). Version 2 rewrote the script and scenes (S1Title, S2Problem, S3Average, S4Repeat, S5Width, S6Margin, S7Bigger, S8Similar, S9Rule, S10Poll). Kit: `src/components/Uses.tsx` (the five uses with drawn icons: ballot, A/B phones, bottle, shield, network; `UseHeader`, `UseDots`, skew and bell helpers).

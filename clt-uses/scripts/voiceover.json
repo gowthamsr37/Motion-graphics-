@@ -1,261 +1,222 @@
 {
- "voice": "af_heart",
- "lang": "en-us",
- "speed": 1.05,
- "scenes": [
-  {
-   "id": "s1",
-   "title": "Title card",
-   "lead": 0.2,
-   "hold": 0.4,
-   "segments": [
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
     {
-     "text": "Five ways the Central Limit Theorem runs the real world.",
-     "caption": "5 ways the Central Limit Theorem runs the real world.",
-     "pause": 0.3
-    },
-    {
-     "text": "Election polls, A-B tests, factories, insurance, and machine learning. Save this one!",
-     "caption": "Election polls, A/B tests, factories, insurance, and machine learning. Save this one!",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s2",
-   "title": "30-second recap",
-   "lead": 0.4,
-   "hold": 0.5,
-   "segments": [
-    {
-     "text": "Quick recap. Take many samples and average each one.",
-     "caption": "Quick recap. Take many samples and average each one.",
-     "pause": 0.3
-    },
-    {
-     "text": "Even if the data is skewed, those averages form a bell curve.",
-     "caption": "Even if the data is skewed, those averages form a bell curve.",
-     "pause": 0.3
-    },
-    {
-     "text": "And their spread, the standard error, is sigma over root n. More data, a narrower bell.",
-     "caption": "And their spread, the standard error, is sigma over root n. More data, a narrower bell.",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s3",
-   "title": "Use 1: election polls",
-   "lead": 0.4,
-   "hold": 0.6,
-   "segments": [
-    {
-     "text": "Use one: election polls.",
-     "caption": "Use one: election polls.",
-     "pause": 0.3
-    },
-    {
-     "text": "A pollster asks one thousand voters out of millions. Each answer is just yes or no, nowhere near a bell curve.",
-     "caption": "A pollster asks 1,000 voters out of millions. Each answer is just yes or no, nowhere near a bell curve.",
-     "pause": 0.35
-    },
-    {
-     "text": "But the share saying yes is an average, so it's roughly normal. That's why fifty-two percent, plus or minus three, is a real ninety-five percent range.",
-     "caption": "But the share saying yes is an average, so it's roughly normal. That's why 52% ±3% is a real 95% range.",
-     "pause": 0.35
-    },
-    {
-     "text": "And to halve that margin, you need four times the people: four thousand voters gives plus or minus one and a half.",
-     "caption": "And to halve that margin, you need 4 times the people: 4,000 voters gives ±1.5%.",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s4",
-   "title": "Use 2: A/B tests",
-   "lead": 0.4,
-   "hold": 0.6,
-   "segments": [
-    {
-     "text": "Use two: A-B tests.",
-     "caption": "Use two: A/B tests.",
-     "pause": 0.3
-    },
-    {
-     "text": "Customer spending is very skewed: most people spend a little, and a few spend a lot.",
-     "caption": "Customer spending is very skewed: most people spend a little, and a few spend a lot.",
-     "pause": 0.35
-    },
-    {
-     "text": "But the average spend over thousands of users is normal. That's why a simple z or t test can compare version A with version B.",
-     "caption": "But the average spend over thousands of users is normal. That's why a simple z or t test can compare version A with version B.",
-     "pause": 0.3,
-     "fix": [
-      [
-       "vˈɜːʒən ɐ",
-       "vˈɜːʒən ˈeɪ"
+      "id": "s1",
+      "title": "Title card",
+      "lead": 0.2,
+      "hold": 0.4,
+      "segments": [
+        {
+          "text": "How can a poll of just one thousand people predict an election?",
+          "caption": "How can a poll of just 1,000 people predict an election?",
+          "pause": 0.3
+        },
+        {
+          "text": "The Central Limit Theorem. One example in detail, then four more places it's used. Save this one!",
+          "caption": "The Central Limit Theorem. One example in detail, then 4 more places it's used. Save this one!",
+          "pause": 0.3
+        }
       ]
-     ]
+    },
+    {
+      "id": "s2",
+      "title": "The problem",
+      "lead": 0.4,
+      "hold": 0.5,
+      "segments": [
+        {
+          "text": "Millions of people will vote. A pollster can't ask them all, so they ask one thousand random voters.",
+          "caption": "Millions of people will vote. A pollster can't ask them all, so they ask 1,000 random voters.",
+          "pause": 0.35
+        },
+        {
+          "text": "Each person gives one answer: yes or no. As data, that's just two bars. Nothing like a bell curve.",
+          "caption": "Each person gives one answer: yes or no. As data, that's just two bars. Nothing like a bell curve.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "It's an average",
+      "lead": 0.4,
+      "hold": 0.5,
+      "segments": [
+        {
+          "text": "Now count the yeses: five hundred and twenty out of a thousand. That's fifty-two percent.",
+          "caption": "Now count the yeses: 520 out of 1,000. That's 52%.",
+          "pause": 0.35
+        },
+        {
+          "text": "And here's the key. Every yes is a one, every no is a zero. Fifty-two percent is just their average.",
+          "caption": "And here's the key. Every yes is a 1, every no is a 0. 52% is just their average.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Repeat the poll",
+      "lead": 0.4,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Now imagine running the same poll again and again, each time with a different thousand people.",
+          "caption": "Now imagine running the same poll again and again, each time with a different 1,000 people.",
+          "pause": 0.35
+        },
+        {
+          "text": "You'd get fifty-one, then fifty-three, fifty-two, fifty, fifty-four. Stack all those results, and they form a bell curve.",
+          "caption": "You'd get 51, then 53, 52, 50, 54. Stack all those results, and they form a bell curve.",
+          "pause": 0.35
+        },
+        {
+          "text": "Most results land close to the middle. Only a few land far away.",
+          "caption": "Most results land close to the middle. Only a few land far away.",
+          "pause": 0.35
+        },
+        {
+          "text": "That's the Central Limit Theorem: averages form a bell, even when each answer is just yes or no.",
+          "caption": "That's the Central Limit Theorem: averages form a bell, even when each answer is just yes or no.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "How wide is the bell?",
+      "lead": 0.4,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "How wide is that bell? Its spread, the standard error, is the square root of p times one minus p, over n.",
+          "caption": "How wide is that bell? Its spread, the standard error, is the square root of p times 1 - p, over n.",
+          "pause": 0.35
+        },
+        {
+          "text": "Point five two times point four eight, over a thousand, square-rooted: about one point six percent.",
+          "caption": "0.52 × 0.48, over 1,000, square-rooted: about 1.6%.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Plus or minus 3%",
+      "lead": 0.4,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "In a bell, ninety-five percent of results land within about two standard errors. Two times one point six: about three percent.",
+          "caption": "In a bell, 95% of results land within about 2 standard errors. 2 × 1.6: about 3%.",
+          "pause": 0.35
+        },
+        {
+          "text": "So the pollster can say: fifty-two percent, plus or minus three. The true support is probably between forty-nine and fifty-five.",
+          "caption": "So the pollster can say: 52%, ±3%. The true support is probably between 49 and 55.",
+          "pause": 0.35
+        },
+        {
+          "text": "That range, forty-nine to fifty-five, is the margin of error, also called a ninety-five percent confidence interval.",
+          "caption": "That range, 49 to 55, is the margin of error, also called a 95% confidence interval.",
+          "pause": 0.35
+        },
+        {
+          "text": "Without the Central Limit Theorem, there would be no plus or minus at all.",
+          "caption": "Without the Central Limit Theorem, there would be no plus or minus at all.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "More people, smaller margin",
+      "lead": 0.4,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Want a smaller margin? Ask four times as many people. Four thousand voters halves it, to plus or minus one and a half.",
+          "caption": "Want a smaller margin? Ask 4 times as many people. 4,000 voters halves it, to ±1.5%.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Similarly, it's used in",
+      "lead": 0.4,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "Similarly, the Central Limit Theorem is used in:",
+          "caption": "Similarly, the Central Limit Theorem is used in:",
+          "pause": 0.35
+        },
+        {
+          "text": "A-B tests: the average spend per user, compared between two versions.",
+          "caption": "A/B tests: the average spend per user, compared between two versions.",
+          "pause": 0.35
+        },
+        {
+          "text": "Factories: the average weight of five bottles, checked every hour.",
+          "caption": "Factories: the average weight of 5 bottles, checked every hour.",
+          "pause": 0.35
+        },
+        {
+          "text": "Insurance: the average claim of thousands of customers, used to set premiums.",
+          "caption": "Insurance: the average claim of thousands of customers, used to set premiums.",
+          "pause": 0.35
+        },
+        {
+          "text": "And machine learning: test accuracy, which is an average of right and wrong predictions.",
+          "caption": "And machine learning: test accuracy, which is an average of right and wrong predictions.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "The rule",
+      "lead": 0.4,
+      "hold": 1.6,
+      "segments": [
+        {
+          "text": "Same idea every time: single values can be messy, but averages form a bell, and the bell tells you how sure to be.",
+          "caption": "Same idea every time: single values can be messy, but averages form a bell, and the bell tells you how sure to be.",
+          "pause": 0.35
+        },
+        {
+          "text": "Save this, and send it to a friend who's learning data science.",
+          "caption": "Save this, and send it to a friend who's learning data science.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "Poll, teaser and CTA",
+      "lead": 0.35,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "Your turn: one customer's spend is skewed. Is the average spend of five hundred customers roughly normal? Vote in the caption poll!",
+          "caption": "Your turn: one customer's spend is skewed. Is the average spend of 500 customers roughly normal? Vote in the caption poll!",
+          "pause": 0.3
+        },
+        {
+          "text": "Next: comparing three or more groups. ANOVA.",
+          "caption": "Next: comparing three or more groups. ANOVA.",
+          "pause": 0.3
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.3
+        }
+      ]
     }
-   ]
-  },
-  {
-   "id": "s5",
-   "title": "Use 3: factories",
-   "lead": 0.4,
-   "hold": 0.6,
-   "segments": [
-    {
-     "text": "Use three: factories.",
-     "caption": "Use three: factories.",
-     "pause": 0.3
-    },
-    {
-     "text": "Every hour, a juice plant weighs five bottles and plots their average on a control chart.",
-     "caption": "Every hour, a juice plant weighs 5 bottles and plots their average on a control chart.",
-     "pause": 0.35
-    },
-    {
-     "text": "The averages stay within three standard errors, ninety-nine point seven percent of the time. A point outside the lines means: stop the machine.",
-     "caption": "The averages stay within 3 standard errors, 99.7% of the time. A point outside the lines means: stop the machine.",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s6",
-   "title": "Use 4: insurance",
-   "lead": 0.4,
-   "hold": 0.6,
-   "segments": [
-    {
-     "text": "Use four: insurance.",
-     "caption": "Use four: insurance.",
-     "pause": 0.3
-    },
-    {
-     "text": "One customer's claims are unpredictable: nothing for years, then one huge claim.",
-     "caption": "One customer's claims are unpredictable: nothing for years, then one huge claim.",
-     "pause": 0.35
-    },
-    {
-     "text": "But across a hundred thousand customers, the average claim is very predictable. Its standard error shrinks about three hundred times. That's how premiums are set.",
-     "caption": "But across 100,000 customers, the average claim is very predictable. Its standard error shrinks about 300 times. That's how premiums are set.",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s7",
-   "title": "Use 5: machine learning",
-   "lead": 0.4,
-   "hold": 0.6,
-   "segments": [
-    {
-     "text": "Use five: machine learning.",
-     "caption": "Use five: machine learning.",
-     "pause": 0.3
-    },
-    {
-     "text": "A model scores ninety percent accuracy on one thousand test examples. Each prediction is just right or wrong.",
-     "caption": "A model scores 90% accuracy on 1,000 test examples. Each prediction is just right or wrong.",
-     "pause": 0.35
-    },
-    {
-     "text": "But accuracy is an average, so it's roughly normal, with a standard error of about one percent. The true accuracy is about eighty-eight to ninety-two percent.",
-     "caption": "But accuracy is an average, so it's roughly normal, with a standard error of about 1%. The true accuracy is about 88 to 92%.",
-     "pause": 0.35
-    },
-    {
-     "text": "Test on ten thousand examples, and the range tightens to about plus or minus point six.",
-     "caption": "Test on 10,000 examples, and the range tightens to about ±0.6%.",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s8",
-   "title": "The common thread",
-   "lead": 0.4,
-   "hold": 0.6,
-   "segments": [
-    {
-     "text": "See the pattern? The raw data is messy, but averages behave. That's why the bell curve shows up everywhere.",
-     "caption": "See the pattern? The raw data is messy, but averages behave. That's why the bell curve shows up everywhere.",
-     "pause": 0.35
-    },
-    {
-     "text": "In fact, every z-test, t-test, and confidence interval on this page leans on this one theorem.",
-     "caption": "In fact, every z-test, t-test, and confidence interval on this page leans on this one theorem.",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s9",
-   "title": "Interview traps",
-   "lead": 0.4,
-   "hold": 0.6,
-   "segments": [
-    {
-     "text": "Two interview traps.",
-     "caption": "Two interview traps.",
-     "pause": 0.3
-    },
-    {
-     "text": "One: the theorem is about averages, not the data. Individual values stay skewed.",
-     "caption": "One: the theorem is about averages, not the data. Individual values stay skewed.",
-     "pause": 0.35
-    },
-    {
-     "text": "Two: it needs independent samples and enough data: about thirty for mild skew, far more for heavy tails like incomes.",
-     "caption": "Two: it needs independent samples and enough data: about 30 for mild skew, far more for heavy tails like incomes.",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s10",
-   "title": "The cheat sheet",
-   "lead": 0.4,
-   "hold": 4.5,
-   "segments": [
-    {
-     "text": "Here are all five, on one screen.",
-     "caption": "Here are all five, on one screen.",
-     "pause": 0.3
-    },
-    {
-     "text": "Save this, and send it to a friend who's learning data science.",
-     "caption": "Save this, and send it to a friend who's learning data science.",
-     "pause": 0.3
-    }
-   ]
-  },
-  {
-   "id": "s11",
-   "title": "Poll, teaser and CTA",
-   "lead": 0.35,
-   "hold": 0.8,
-   "segments": [
-    {
-     "text": "Your turn: one customer's spend is skewed. Is the average spend of five hundred customers roughly normal? Vote in the caption poll!",
-     "caption": "Your turn: one customer's spend is skewed. Is the average spend of 500 customers roughly normal? Vote in the caption poll!",
-     "pause": 0.3
-    },
-    {
-     "text": "Next: comparing three or more groups. ANOVA.",
-     "caption": "Next: comparing three or more groups. ANOVA.",
-     "pause": 0.3
-    },
-    {
-     "text": "Follow for data science made simple!",
-     "caption": "Follow for data science made simple!",
-     "pause": 0.3
-    }
-   ]
-  }
- ]
+  ]
 }

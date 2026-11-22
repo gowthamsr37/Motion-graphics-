@@ -71,97 +71,91 @@ const useHits = (): Hit[] => {
     h(SIMPLE + 4, "sparkle.wav", 0.25);
   };
 
-  // S1 — title card: an impact at frame 0, a pop per tile, a blip as each use is named
+  // S1 — title card: an impact at frame 0, a pop per tile, a chime on "Save"
   {
     const s = sceneTiming(fps, "s1");
     const h = at("s1");
     h(2, "impact.wav", 0.36);
-    for (let i = 0; i < 5; i++) h(6 + i * 4, "pop.wav", 0.14);
-    [s.cueS(1, "Election"), s.cueS(1, "A/B"), s.cueS(1, "factories,"), s.cueS(1, "insurance,"), s.cueS(1, "machine")].forEach((f, i) => h(f - 8, `blip${i + 1}.wav`, 0.16));
+    for (let i = 0; i < 5; i++) h(8 + i * 4, "pop.wav", 0.14);
+    h(s.cueS(1, "4") - 8, "glide.wav", 0.14);
     h(s.cueS(1, "Save") - 8, "chime.wav", 0.24);
   }
-  // S2 — recap
+  // S2 — the problem: dots light up, two bars rise, the bell is struck out
   {
     const s = sceneTiming(fps, "s2");
     const h = at("s2");
-    h(4, "glide.wav", 0.14);
-    h(s.cueS(0, "average") - 6, "whoosh.wav", 0.14);
-    h(s.cueS(1, "bell") - 8, "chime.wav", 0.2);
-    h(s.cueS(2, "sigma") - 8, "pop.wav", 0.2);
-    h(s.cueS(2, "narrower") - 6, "glide.wav", 0.14);
+    h(4, "whoosh.wav", 0.14);
+    for (let i = 0; i < 6; i++) h(s.cueS(0, "1,000") + i * 3 - 6, "tick.wav", 0.06);
+    h(s.cueS(1, "bars.") - 10, "glide.wav", 0.16);
+    h(s.cueS(1, "bell") - 2, "glitch.wav", 0.1);
   }
-  // S3–S7 — the five uses: a whoosh + number pop on the header, then scene-specific hits
-  (["s3", "s4", "s5", "s6", "s7"] as SceneId[]).forEach((id, i) => {
-    const s = sceneTiming(fps, id);
-    const h = at(id);
-    h(0, "whip.wav", 0.14);
-    h(s.sent(0).from - 6, `step${(i % 3) + 1}.wav`, 0.22);
-    h(s.sent(2).from - 6, "pop.wav", 0.18);
-  });
+  // S3 — the counter rolls, 52% lands, the 1s and 0s drop in, the average
   {
     const s = sceneTiming(fps, "s3");
     const h = at("s3");
-    for (let i = 0; i < 8; i++) h(s.cueS(1, "1,000") + i * 4 - 4, "tick.wav", 0.06);
-    h(s.cueS(2, "95%") - 8, "ding.wav", 0.2);
-    h(s.sent(3).from - 4, "sparkle.wav", 0.18);
+    for (let i = 0; i < 10; i++) h(s.sent(0).from + i * 4, "tick.wav", 0.06);
+    h(s.cueS(0, "52%.") - 8, "ding.wav", 0.22);
+    for (let i = 0; i < 7; i++) h(s.cueS(1, "1,") - 6 + i * 4, "pop.wav", 0.08);
+    h(s.cueS(1, "average.") - 8, "sparkle.wav", 0.2);
   }
+  // S4 — poll results drop onto the axis, the bell draws, the CLT tag
   {
     const s = sceneTiming(fps, "s4");
     const h = at("s4");
-    h(s.cueS(1, "skewed:") - 8, "glide.wav", 0.14);
-    h(s.cueS(2, "z") - 8, "ding.wav", 0.18);
+    h(s.cueS(0, "again") - 8, "whoosh.wav", 0.14);
+    ["51", "53", "52", "50", "54"].forEach((t, i) => h(s.cueS(1, t) - 4, `blip${i + 1}.wav`, 0.14));
+    for (let i = 0; i < 10; i++) h(s.cueS(1, "Stack") + i * 3, "tick.wav", 0.05);
+    h(s.cueS(1, "bell") - 4, "glide.wav", 0.16);
+    h(s.sent(3).from - 6, "chime.wav", 0.24);
   }
+  // S5 — the formula and the 1.6% result
   {
     const s = sceneTiming(fps, "s5");
     const h = at("s5");
-    for (let i = 0; i < 12; i++) h(s.cueS(1, "control") + i * 5 - 2, "tick.wav", 0.07);
-    h(s.cueS(2, "3") - 8, "glide.wav", 0.14);
-    h(s.cueS(2, "outside") - 6, "glitch.wav", 0.12);
-    h(s.cueS(2, "stop") - 6, "stamp.wav", 0.26);
+    h(s.cueS(0, "standard") - 8, "pop.wav", 0.2);
+    h(s.cueS(0, "square") - 8, "whoosh.wav", 0.14);
+    h(s.sent(1).from - 6, "pop.wav", 0.18);
+    h(s.cueS(1, "about") - 6, "ding.wav", 0.22);
   }
+  // S6 — the 95% band fills, the bracket, 52% ± 3%, the margin-of-error labels, NO CLT
   {
     const s = sceneTiming(fps, "s6");
     const h = at("s6");
-    for (let i = 0; i < 6; i++) h(s.cueS(1, "nothing") + i * 3 - 2, "tick.wav", 0.06);
-    h(s.cueS(1, "huge") - 6, "impact.wav", 0.26);
-    h(s.cueS(2, "300") - 8, "ding.wav", 0.2);
+    h(s.cueS(0, "95%") - 8, "glide.wav", 0.16);
+    h(s.sent(1).from + 6, "tada.wav", 0.24);
+    h(s.cueS(1, "between") - 6, "whoosh.wav", 0.12);
+    h(s.cueS(2, "margin") - 6, "pop.wav", 0.18);
+    h(s.cueS(2, "confidence") - 6, "pop.wav", 0.18);
+    h(s.sent(3).from, "stamp.wav", 0.24);
   }
+  // S7 — the second, narrower bell
   {
     const s = sceneTiming(fps, "s7");
     const h = at("s7");
-    for (let i = 0; i < 10; i++) h(s.cueS(1, "1,000") + i * 4 - 4, "tick.wav", 0.06);
-    h(s.cueS(1, "90%") - 8, "pop.wav", 0.2);
-    h(s.cueS(2, "88") - 8, "ding.wav", 0.2);
-    h(s.sent(3).from - 4, "sparkle.wav", 0.18);
+    h(4, "whoosh.wav", 0.12);
+    h(s.cueS(0, "4") - 6, "pop.wav", 0.2);
+    h(s.cueS(0, "4,000") - 6, "glide.wav", 0.16);
+    h(s.cueS(0, "halves") - 4, "ding.wav", 0.22);
   }
-  // S8 — common thread
+  // S8 — similarly: one tile per sentence
   {
     const s = sceneTiming(fps, "s8");
     const h = at("s8");
-    for (let i = 0; i < 5; i++) h(4 + i * 4, "pop.wav", 0.12);
-    h(s.cueS(0, "averages") - 8, "chime.wav", 0.22);
-    [0, 8, 16].forEach((d, i) => h(s.sent(1).from + 10 + d - 2, `blip${i + 1}.wav`, 0.16));
+    h(2, "whip.wav", 0.14);
+    for (let i = 1; i <= 4; i++) h(s.sent(i).from - 6, `step${((i - 1) % 3) + 1}.wav`, 0.22);
   }
-  // S9 — traps
+  // S9 — the rule (three steps) and the save moment
   {
     const s = sceneTiming(fps, "s9");
     const h = at("s9");
-    h(s.sent(0).from - 4, "glitch.wav", 0.08);
-    h(s.sent(1).from - 8, "step1.wav", 0.22);
-    h(s.sent(2).from - 8, "step2.wav", 0.22);
+    [s.cueS(0, "single"), s.cueS(0, "averages"), s.cueS(0, "tells")].forEach((f, i) => h(f - 6, `blip${i + 1}.wav`, 0.18));
+    h(s.sent(1).from - 4, "pop.wav", 0.24);
+    h(s.cueS(1, "send") - 8, "whoosh.wav", 0.16);
   }
-  // S10 — cheat sheet
+  // S10 — your turn (poll prompt), teaser, CTA
   {
     const s = sceneTiming(fps, "s10");
     const h = at("s10");
-    for (let i = 0; i < 5; i++) h(s.sent(0).from + i * 6 - 2, "tick.wav", 0.08);
-    h(s.cueS(1, "Save") - 8, "pop.wav", 0.22);
-    h(s.cueS(1, "send") - 8, "whoosh.wav", 0.16);
-  }
-  // S11 — your turn (poll prompt), teaser, CTA
-  {
-    const s = sceneTiming(fps, "s11");
-    const h = at("s11");
     h(s.sent(0).from - 6, "pop.wav", 0.36);
     h(s.cueS(0, "500") - 6, "blip1.wav", 0.2);
     h(s.cueS(0, "500") + 2, "blip2.wav", 0.2);

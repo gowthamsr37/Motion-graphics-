@@ -4,37 +4,34 @@ import { AbsoluteFill, interpolateColors, Sequence, useCurrentFrame, useVideoCon
 import { Backdrop, Grade, Grain, Vignette } from "./components/Backdrop";
 import { Captions } from "./components/Captions";
 import { ease } from "./components/Motion";
-import { S10Sheet } from "./scenes/S10Sheet";
-import { S11Poll } from "./scenes/S11Poll";
+import { S10Poll } from "./scenes/S10Poll";
 import { S1Title } from "./scenes/S1Title";
-import { S2Recap } from "./scenes/S2Recap";
-import { S3Polls } from "./scenes/S3Polls";
-import { S4AB } from "./scenes/S4AB";
-import { S5Factory } from "./scenes/S5Factory";
-import { S6Insurance } from "./scenes/S6Insurance";
-import { S7ML } from "./scenes/S7ML";
-import { S8Thread } from "./scenes/S8Thread";
-import { S9Traps } from "./scenes/S9Traps";
+import { S2Problem } from "./scenes/S2Problem";
+import { S3Average } from "./scenes/S3Average";
+import { S4Repeat } from "./scenes/S4Repeat";
+import { S5Width } from "./scenes/S5Width";
+import { S6Margin } from "./scenes/S6Margin";
+import { S7Bigger } from "./scenes/S7Bigger";
+import { S8Similar } from "./scenes/S8Similar";
+import { S9Rule } from "./scenes/S9Rule";
 import { SoundTrack } from "./SoundTrack";
 import { theme } from "./theme";
 import { SCENE_IDS, sceneRange, SceneId, totalFrames } from "./timing";
 
 const C = theme.colors;
-const SCENES: Record<string, React.FC> = { s1: S1Title, s2: S2Recap, s3: S3Polls, s4: S4AB, s5: S5Factory, s6: S6Insurance, s7: S7ML, s8: S8Thread, s9: S9Traps, s10: S10Sheet, s11: S11Poll };
-// backdrop tints + caption accent follow each use's colour: polls cyan, A/B orange, factories green, insurance violet,
-// ML pink (the ML-series accent, mapped onto violet/cyan for the backdrop)
+const SCENES: Record<string, React.FC> = { s1: S1Title, s2: S2Problem, s3: S3Average, s4: S4Repeat, s5: S5Width, s6: S6Margin, s7: S7Bigger, s8: S8Similar, s9: S9Rule, s10: S10Poll };
+// backdrop tints + caption accent: the election-poll example stays cyan, the "similarly" tour mixes the use colours
 const LOOK: Record<string, { a: string; b: string; accent: string }> = {
-  s1: { a: C.cyan, b: C.orange, accent: C.violet },
-  s2: { a: C.violet, b: C.orange, accent: C.violet },
+  s1: { a: C.cyan, b: C.orange, accent: C.cyan },
+  s2: { a: C.cyan, b: C.violet, accent: C.cyan },
   s3: { a: C.cyan, b: C.violet, accent: C.cyan },
-  s4: { a: C.orange, b: C.green, accent: C.orange },
-  s5: { a: C.green, b: C.cyan, accent: C.green },
-  s6: { a: C.violet, b: C.cyan, accent: C.violet },
-  s7: { a: C.violet, b: C.orange, accent: "#F0ABFC" },
-  s8: { a: C.violet, b: C.cyan, accent: C.violet },
-  s9: { a: C.orange, b: C.cyan, accent: C.orange },
-  s10: { a: C.green, b: C.violet, accent: C.green },
-  s11: { a: C.green, b: C.violet, accent: C.yellow },
+  s4: { a: C.cyan, b: C.orange, accent: C.yellow },
+  s5: { a: C.violet, b: C.cyan, accent: C.yellow },
+  s6: { a: C.green, b: C.cyan, accent: C.green },
+  s7: { a: C.green, b: C.violet, accent: C.green },
+  s8: { a: C.orange, b: C.violet, accent: C.orange },
+  s9: { a: C.cyan, b: C.green, accent: C.green },
+  s10: { a: C.green, b: C.violet, accent: C.yellow },
 };
 
 const useLook = () => {
