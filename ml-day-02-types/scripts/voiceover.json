@@ -1,0 +1,265 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Title card",
+   "lead": 0.2,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Day two of 100 Days of Machine Learning: the three types of machine learning.",
+     "caption": "Day 2 of 100 Days of Machine Learning: the 3 types of machine learning.",
+     "pause": 0.3
+    },
+    {
+     "text": "Supervised, unsupervised and reinforcement: how each one learns, where it's used, and how to pick the right one.",
+     "caption": "Supervised, unsupervised and reinforcement: how each one learns, where it's used, and how to pick the right one.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Hook",
+   "lead": 0.4,
+   "hold": 0.5,
+   "segments": [
+    {
+     "text": "Three jobs. Predict the price of a flat. Split a shop's customers into groups. Teach a robot dog to walk.",
+     "caption": "Three jobs. Predict the price of a flat. Split a shop's customers into groups. Teach a robot dog to walk.",
+     "pause": 0.3
+    },
+    {
+     "text": "Each one learns in a completely different way.",
+     "caption": "Each one learns in a completely different way.",
+     "pause": 0.3
+    },
+    {
+     "text": "By the end, you'll match them instantly.",
+     "caption": "By the end, you'll match them instantly.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Supervised: the idea",
+   "lead": 0.4,
+   "hold": 0.5,
+   "segments": [
+    {
+     "text": "Type one: supervised learning. It learns from examples that come with the right answers, like practising with a solved question paper.",
+     "caption": "Type one: supervised learning. It learns from examples that come with the right answers, like practising with a solved question paper.",
+     "pause": 0.3
+    },
+    {
+     "text": "Take past flat sales. Each row has the area, the bedrooms and the location. Those are the features.",
+     "caption": "Take past flat sales. Each row has the area, the bedrooms and the location. Those are the features.",
+     "pause": 0.3
+    },
+    {
+     "text": "And each row has the price it actually sold for. That's the label: the answer.",
+     "caption": "And each row has the price it actually sold for. That's the label: the answer.",
+     "pause": 0.3
+    },
+    {
+     "text": "The model studies thousands of rows, and learns how the features lead to the price.",
+     "caption": "The model studies thousands of rows, and learns how the features lead to the price.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Supervised: two flavours",
+   "lead": 0.4,
+   "hold": 0.5,
+   "segments": [
+    {
+     "text": "Supervised learning comes in two flavours.",
+     "caption": "Supervised learning comes in two flavours.",
+     "pause": 0.3
+    },
+    {
+     "text": "If the answer is a number, like a price in lakhs, it's called regression.",
+     "caption": "If the answer is a number, like a price in lakhs, it's called regression.",
+     "pause": 0.3
+    },
+    {
+     "text": "If the answer is a category, like spam or not spam, it's called classification.",
+     "caption": "If the answer is a category, like spam or not spam, it's called classification.",
+     "pause": 0.3
+    },
+    {
+     "text": "So yesterday's poll? Fraud or not fraud, learned from labelled transactions. That's supervised classification.",
+     "caption": "So yesterday's poll? Fraud or not fraud, learned from labelled transactions. That's supervised classification.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "The catch",
+   "lead": 0.4,
+   "hold": 0.5,
+   "segments": [
+    {
+     "text": "The catch? Labels are expensive. Someone has to tag every email, every scan, every transaction.",
+     "caption": "The catch? Labels are expensive. Someone has to tag every email, every scan, every transaction.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Unsupervised: clustering",
+   "lead": 0.4,
+   "hold": 0.5,
+   "segments": [
+    {
+     "text": "Type two: unsupervised learning. No answers at all. The machine finds the structure on its own.",
+     "caption": "Type two: unsupervised learning. No answers at all. The machine finds the structure on its own.",
+     "pause": 0.3
+    },
+    {
+     "text": "Plot a shop's customers by how often they visit, and how much they spend.",
+     "caption": "Plot a shop's customers by how often they visit, and how much they spend.",
+     "pause": 0.3
+    },
+    {
+     "text": "The machine spots three groups: bargain hunters, loyal regulars, and big spenders.",
+     "caption": "The machine spots three groups: bargain hunters, loyal regulars, and big spenders.",
+     "pause": 0.3
+    },
+    {
+     "text": "Nobody named those groups. It found them. This is called clustering.",
+     "caption": "Nobody named those groups. It found them. This is called clustering.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "Unsupervised: more uses",
+   "lead": 0.4,
+   "hold": 0.5,
+   "segments": [
+    {
+     "text": "Unsupervised learning also flags the odd one out, like a card payment at three a.m.. That's anomaly detection.",
+     "caption": "Unsupervised learning also flags the odd one out, like a card payment at three a.m.. That's anomaly detection.",
+     "pause": 0.3
+    },
+    {
+     "text": "And it finds what goes together: people who buy bread often buy butter too.",
+     "caption": "And it finds what goes together: people who buy bread often buy butter too.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Reinforcement",
+   "lead": 0.4,
+   "hold": 0.5,
+   "segments": [
+    {
+     "text": "Type three: reinforcement learning. No answer key, and no fixed dataset. An agent learns by doing.",
+     "caption": "Type three: reinforcement learning. No answer key, and no fixed dataset. An agent learns by doing.",
+     "pause": 0.3
+    },
+    {
+     "text": "The robot dog takes an action. The world answers with a reward or a penalty. A step forward: plus one. Falling over: minus ten.",
+     "caption": "The robot dog takes an action. The world answers with a reward or a penalty. A step forward: plus one. Falling over: minus ten.",
+     "pause": 0.3
+    },
+    {
+     "text": "It tries thousands of times, and slowly learns the moves that earn the most reward.",
+     "caption": "It tries thousands of times, and slowly learns the moves that earn the most reward.",
+     "pause": 0.3
+    },
+    {
+     "text": "That's how a machine beat the world champion at Go, and it helps fine-tune chatbots like Chat G P T.",
+     "caption": "That's how a machine beat the world champion at Go, and it helps fine-tune chatbots like ChatGPT.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "Cheat sheet",
+   "lead": 0.4,
+   "hold": 0.5,
+   "segments": [
+    {
+     "text": "So here's the cheat sheet.",
+     "caption": "So here's the cheat sheet.",
+     "pause": 0.3
+    },
+    {
+     "text": "Have the right answers? Supervised: it predicts.",
+     "caption": "Have the right answers? Supervised: it predicts.",
+     "pause": 0.3
+    },
+    {
+     "text": "No answers? Unsupervised: it finds patterns.",
+     "caption": "No answers? Unsupervised: it finds patterns.",
+     "pause": 0.3
+    },
+    {
+     "text": "Learning by trial and reward? Reinforcement: it learns actions.",
+     "caption": "Learning by trial and reward? Reinforcement: it learns actions.",
+     "pause": 0.3
+    },
+    {
+     "text": "Save this. You'll use it for all 100 days.",
+     "caption": "Save this. You'll use it for all 100 days.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "title": "Puzzle answers",
+   "lead": 0.4,
+   "hold": 0.5,
+   "segments": [
+    {
+     "text": "Back to our three jobs.",
+     "caption": "Back to our three jobs.",
+     "pause": 0.3
+    },
+    {
+     "text": "The flat price is supervised regression. The customer groups are unsupervised clustering. And the walking robot dog is reinforcement learning.",
+     "caption": "The flat price is supervised regression. The customer groups are unsupervised clustering. And the walking robot dog is reinforcement learning.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "title": "Poll, teaser and CTA",
+   "lead": 0.35,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Your turn: a hospital uses past patient records to predict how many days a new patient will stay. Which type is that? Vote in the caption poll!",
+     "caption": "Your turn: a hospital uses past patient records to predict how many days a new patient will stay. Which type is that? Vote in the caption poll!",
+     "pause": 0.3
+    },
+    {
+     "text": "Tomorrow, day three: the machine learning workflow, step by step.",
+     "caption": "Tomorrow, Day 3: the machine learning workflow, step by step.",
+     "pause": 0.3
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.3
+    }
+   ]
+  }
+ ]
+}
