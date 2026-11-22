@@ -1,0 +1,275 @@
+{
+  "voice": "af_heart",
+  "lang": "en-us",
+  "speed": 1.05,
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Title card",
+      "lead": 0.2,
+      "hold": 0.4,
+      "segments": [
+        {
+          "text": "Day one of 100 Days of Machine Learning: what is machine learning, really?",
+          "caption": "Day 1 of 100 Days of Machine Learning: what is machine learning, really?",
+          "pause": 0.35
+        },
+        {
+          "text": "Rules versus learning, how a machine actually learns, and the three types. Save this one!",
+          "caption": "Rules vs learning, how a machine actually learns, and the 3 types. Save this one!",
+          "pause": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Hook",
+      "lead": 0.4,
+      "hold": 0.5,
+      "segments": [
+        {
+          "text": "You've already used machine learning a dozen times today.",
+          "caption": "You've already used machine learning a dozen times today.",
+          "pause": 0.35
+        },
+        {
+          "text": "Your phone unlocked when it saw your face. Gmail hid a spam email. YouTube picked your next video. Google Maps guessed the traffic.",
+          "caption": "Your phone unlocked when it saw your face. Gmail hid a spam email. YouTube picked your next video. Google Maps guessed the traffic.",
+          "pause": 0.35
+        },
+        {
+          "text": "Nobody wrote rules for any of that. These systems learned.",
+          "caption": "Nobody wrote rules for any of that. These systems learned.",
+          "pause": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "The old way",
+      "lead": 0.4,
+      "hold": 0.5,
+      "segments": [
+        {
+          "text": "Here's how computers normally work. A programmer writes the rules.",
+          "caption": "Here's how computers normally work. A programmer writes the rules.",
+          "pause": 0.35
+        },
+        {
+          "text": "Say we want to catch spam. We write a rule: if an email says free money, it's spam.",
+          "caption": "Say we want to catch spam. We write a rule: if an email says free money, it's spam.",
+          "pause": 0.35
+        },
+        {
+          "text": "Data and rules go in. Answers come out.",
+          "caption": "Data and rules go in. Answers come out.",
+          "pause": 0.35
+        },
+        {
+          "text": "But spammers just write free money with a three and a zero, and our rule breaks. We'd need millions of rules.",
+          "caption": "But spammers just write \"fr3e m0ney\", and our rule breaks. We'd need millions of rules.",
+          "pause": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Machine learning flips it",
+      "lead": 0.4,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Machine learning flips this around.",
+          "caption": "Machine learning flips this around.",
+          "pause": 0.35
+        },
+        {
+          "text": "We give the computer thousands of emails, each one already labelled: spam, or not spam.",
+          "caption": "We give the computer thousands of emails, each one already labelled: spam, or not spam.",
+          "pause": 0.35
+        },
+        {
+          "text": "And it works out the rules by itself.",
+          "caption": "And it works out the rules by itself.",
+          "pause": 0.35
+        },
+        {
+          "text": "Data and answers go in. The rules come out.",
+          "caption": "Data and answers go in. The rules come out.",
+          "pause": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Definition",
+      "lead": 0.4,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Here's the textbook definition.",
+          "caption": "Here's the textbook definition.",
+          "pause": 0.35
+        },
+        {
+          "text": "Machine learning is a branch of artificial intelligence where computers learn patterns from data, instead of being explicitly programmed.",
+          "caption": "Machine learning is a branch of artificial intelligence where computers learn patterns from data, instead of being explicitly programmed.",
+          "pause": 0.35
+        },
+        {
+          "text": "Or, as Arthur Samuel put it in nineteen fifty-nine: giving computers the ability to learn without being explicitly programmed.",
+          "caption": "Or, as Arthur Samuel put it in 1959: giving computers the ability to learn without being explicitly programmed.",
+          "pause": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Watch it learn",
+      "lead": 0.4,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "So how does a machine actually learn? Let's watch it happen.",
+          "caption": "So how does a machine actually learn? Let's watch it happen.",
+          "pause": 0.35
+        },
+        {
+          "text": "Here are some houses: their size, and their price.",
+          "caption": "Here are some houses: their size, and their price.",
+          "pause": 0.35
+        },
+        {
+          "text": "The machine starts with a random guess. This line. It's terrible.",
+          "caption": "The machine starts with a random guess. This line. It's terrible.",
+          "pause": 0.35
+        },
+        {
+          "text": "So it measures how wrong it is. That's the error.",
+          "caption": "So it measures how wrong it is. That's the error.",
+          "pause": 0.35
+        },
+        {
+          "text": "Then it nudges the line, to be a little less wrong. And again. And again.",
+          "caption": "Then it nudges the line, to be a little less wrong. And again. And again.",
+          "pause": 0.35
+        },
+        {
+          "text": "After many rounds, the error is tiny. Guess, measure the error, adjust, repeat. That's learning.",
+          "caption": "After many rounds, the error is tiny. Guess, measure the error, adjust, repeat. That's learning.",
+          "pause": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "The model",
+      "lead": 0.4,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "What it ends up with is called a model: a learned recipe that turns inputs into predictions.",
+          "caption": "What it ends up with is called a model: a learned recipe that turns inputs into predictions.",
+          "pause": 0.35
+        },
+        {
+          "text": "Give it a house it has never seen, say fifteen hundred square feet, and it predicts the price.",
+          "caption": "Give it a house it has never seen, say 1,500 square feet, and it predicts the price.",
+          "pause": 0.35
+        },
+        {
+          "text": "The inputs are called features. The answer it predicts is called the label.",
+          "caption": "The inputs are called features. The answer it predicts is called the label.",
+          "pause": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Three types",
+      "lead": 0.4,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Machine learning comes in three main types.",
+          "caption": "Machine learning comes in 3 main types.",
+          "pause": 0.35
+        },
+        {
+          "text": "Supervised learning: learning from examples with answers, like spam or not spam.",
+          "caption": "Supervised learning: learning from examples with answers, like spam or not spam.",
+          "pause": 0.35
+        },
+        {
+          "text": "Unsupervised learning: no answers at all, just finding hidden groups, like types of customers.",
+          "caption": "Unsupervised learning: no answers at all, just finding hidden groups, like types of customers.",
+          "pause": 0.35
+        },
+        {
+          "text": "Reinforcement learning: learning by trial and error, with rewards, like a computer mastering a video game.",
+          "caption": "Reinforcement learning: learning by trial and error, with rewards, like a computer mastering a video game.",
+          "pause": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "AI vs ML vs DL",
+      "lead": 0.4,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "So where does it all fit? Artificial intelligence is the big circle: machines doing smart things.",
+          "caption": "So where does it all fit? Artificial intelligence is the big circle: machines doing smart things.",
+          "pause": 0.35
+        },
+        {
+          "text": "Machine learning sits inside it. And deep learning, the tech behind Chat G P T, sits inside machine learning.",
+          "caption": "Machine learning sits inside it. And deep learning, the tech behind ChatGPT, sits inside machine learning.",
+          "pause": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "The rule",
+      "lead": 0.4,
+      "hold": 1.4,
+      "segments": [
+        {
+          "text": "So remember: in normal programming, we write the rules. In machine learning, the machine learns the rules from data.",
+          "caption": "So remember: in normal programming, we write the rules. In machine learning, the machine learns the rules from data.",
+          "pause": 0.35
+        },
+        {
+          "text": "Save this, and send it to a friend who's starting machine learning.",
+          "caption": "Save this, and send it to a friend who's starting machine learning.",
+          "pause": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "Poll, teaser and CTA",
+      "lead": 0.35,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "Your turn: a bank learns to catch fraud from past transactions, each labelled fraud or not fraud. Which type is that? Vote in the caption poll!",
+          "caption": "Your turn: a bank learns to catch fraud from past transactions, each labelled fraud or not fraud. Which type is that? Vote in the caption poll!",
+          "pause": 0.35
+        },
+        {
+          "text": "Tomorrow, day two: the three types of machine learning, in depth.",
+          "caption": "Tomorrow, Day 2: the 3 types of machine learning, in depth.",
+          "pause": 0.35
+        },
+        {
+          "text": "Follow for data science made simple!",
+          "caption": "Follow for data science made simple!",
+          "pause": 0.35
+        }
+      ]
+    }
+  ]
+}
