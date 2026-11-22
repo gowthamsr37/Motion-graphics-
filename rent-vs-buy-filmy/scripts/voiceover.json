@@ -1,0 +1,87 @@
+{
+  "lang": "en-us",
+  "cast": {
+    "narrator": { "mix": { "hm_omega": 0.55, "am_onyx": 0.45 }, "speed": 0.9 },
+    "arjun": { "mix": { "hm_omega": 1.0 }, "speed": 1.03 },
+    "papa": { "mix": { "hm_psi": 1.0 }, "speed": 0.92 },
+    "meera": { "mix": { "hf_alpha": 1.0 }, "speed": 1.03 },
+    "maa": { "mix": { "hf_beta": 1.0 }, "speed": 0.95 }
+  },
+  "fix": [
+    ["lˈæk", "lˈɑːk"],
+    ["ˈɛmi", "ˌiːˌɛmˈaɪ"],
+    ["mˈɪɹə", "mˈiːɹə"],
+    ["bˈeɪɾə", "bˈeɪtɑː"]
+  ],
+  "scenes": [
+    {
+      "id": "s1", "lead": 1.0, "hold": 1.2,
+      "segments": [
+        { "who": "narrator", "text": "Bangalore. Two friends. Same age, same salary.", "caption": "Bangalore. Two friends. Same age, same salary.", "pause": 0.5 },
+        { "who": "narrator", "text": "And from their parents, the same gift: twenty-five lakh rupees each.", "caption": "And from their parents, the same gift: ₹25 lakh each.", "pause": 0.5 },
+        { "who": "narrator", "text": "One will buy. One will rent. Only one will win.", "caption": "One will buy. One will rent. Only one will win.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s2", "lead": 0.5, "hold": 0.5,
+      "segments": [
+        { "who": "papa", "text": "Arjun, beta, rent is money thrown away! Buy a flat. Property never goes down!", "caption": "Arjun beta, rent is money thrown away! Buy a flat. Property never goes down!", "pause": 0.4 },
+        { "who": "arjun", "text": "Okay Papa. A ninety lakh flat. Twenty-five lakh down, the rest on a home loan.", "caption": "Okay Papa. A ₹90 lakh flat. ₹25 lakh down, the rest on a home loan.", "pause": 0.4 },
+        { "who": "narrator", "text": "His EMI: sixty-two thousand five hundred. Every month. For twenty years.", "caption": "His EMI: ₹62,500. Every month. For twenty years.", "pause": 0.3 },
+        { "who": "arjun", "text": "Twenty years?!", "caption": "Twenty years?!", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s3", "lead": 0.4, "hold": 0.5,
+      "segments": [
+        { "who": "maa", "text": "Meera, everyone is buying. Why are you renting like a student?", "caption": "Meera, everyone is buying. Why are you renting like a student?", "pause": 0.35 },
+        { "who": "meera", "text": "Maa, rent is only twenty-one thousand. My twenty-five lakh goes into an index fund.", "caption": "Maa, rent is only ₹21,000. My ₹25 lakh goes into an index fund.", "pause": 0.3 },
+        { "who": "meera", "text": "And every month, I invest the forty-five thousand I save.", "caption": "And every month, I invest the ₹45,000 I save.", "pause": 0.4 },
+        { "who": "maa", "text": "Hey Bhagwan.", "caption": "Hey Bhagwan.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s4", "lead": 0.4, "hold": 0.4,
+      "segments": [
+        { "who": "narrator", "text": "Five years pass.", "caption": "Five years pass.", "pause": 0.3 },
+        { "who": "narrator", "text": "Meera's money grows to seventy-eight lakh. Arjun's share of his flat: fifty-one.", "caption": "Meera's money grows to ₹78 lakh. Arjun's share of his flat: ₹51 lakh.", "pause": 0.35 },
+        { "who": "meera", "text": "See, Maa?", "caption": "See, Maa?", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s5", "lead": 2.4, "hold": 0.5,
+      "segments": [
+        { "who": "narrator", "text": "And then, in year six, the market crashes. Thirty-five percent.", "caption": "And then, in year six, the market crashes. 35%.", "pause": 0.5 },
+        { "who": "maa", "text": "I told you!", "caption": "I told you!", "pause": 0.3 },
+        { "who": "arjun", "text": "Meera, you lost twenty-three lakh! Now I'm ahead.", "caption": "Meera, you lost ₹23 lakh! Now I'm ahead.", "pause": 0.4 },
+        { "who": "meera", "text": "Only on paper, Arjun. I'm not selling. I keep investing, every single month.", "caption": "Only on paper, Arjun. I'm not selling. I keep investing, every single month.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s6", "lead": 1.6, "hold": 0.5,
+      "segments": [
+        { "who": "narrator", "text": "Twenty years later.", "caption": "Twenty years later.", "pause": 0.4 },
+        { "who": "arjun", "text": "My flat is fully paid. Worth two point four crore!", "caption": "My flat is fully paid. Worth ₹2.4 crore!", "pause": 0.35 },
+        { "who": "meera", "text": "And my portfolio, four point one crore.", "caption": "And my portfolio: ₹4.1 crore.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s7", "lead": 0.4, "hold": 0.5,
+      "segments": [
+        { "who": "narrator", "text": "But here is the twist.", "caption": "But here is the twist.", "pause": 0.35 },
+        { "who": "narrator", "text": "If Meera had panicked and sold in that crash, she would have ended with only two point six crore.", "caption": "If Meera had panicked and sold in that crash, she'd have ended with only ₹2.6 crore.", "pause": 0.3 },
+        { "who": "narrator", "text": "One panic. One and a half crore, gone.", "caption": "One panic. ₹1.5 crore, gone.", "pause": 0.4 },
+        { "who": "narrator", "text": "And if flat prices had grown eight percent a year instead of five, Arjun would have won.", "caption": "And if flat prices had grown 8% a year instead of 5%, Arjun would have won.", "pause": 0.3 }
+      ]
+    },
+    {
+      "id": "s8", "lead": 0.5, "hold": 3.4,
+      "segments": [
+        { "who": "narrator", "text": "So the moral of the story: renting does not beat buying. Discipline does.", "caption": "Moral of the story: renting doesn't beat buying. Discipline does.", "pause": 0.4 },
+        { "who": "arjun", "text": "And no landlord can ever ask me to leave!", "caption": "And no landlord can ever ask me to leave!", "pause": 0.3 },
+        { "who": "meera", "text": "Fair point, Arjun.", "caption": "Fair point, Arjun.", "pause": 0.4 },
+        { "who": "narrator", "text": "Next episode: should Arjun prepay his loan? Follow, so you don't miss it.", "caption": "Next episode: should Arjun prepay his loan? Follow, so you don't miss it.", "pause": 0.3 }
+      ]
+    }
+  ]
+}
