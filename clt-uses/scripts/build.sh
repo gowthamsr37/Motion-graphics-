@@ -14,7 +14,7 @@ python3 - <<'PY'
 import json, subprocess
 m = json.load(open("out/loudnorm.json"))
 af = (f"alimiter=limit=0.7:level=false:attack=3:release=60,loudnorm=I=-14:TP=-2:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
-      f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true,alimiter=limit=0.79:level=false:attack=1:release=50")  # keeps true peak at about -2 dBTP
+      f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true,alimiter=limit=0.7:level=false:attack=0.5:release=50")  # keeps true peak at about -2 dBTP
 subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", "out/raw.mp4", "-c:v", "copy", "-af", af, "-ar", "48000", "-ac", "2",
                 "-c:a", "aac", "-b:a", "256k", "-movflags", "+faststart", "out/CLT_Real_World_Uses.mp4"], check=True)
 # narration-only stem and an .srt of the on-screen subtitles
