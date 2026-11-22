@@ -1,6 +1,6 @@
 // SCENE 1 — TITLE CARD, ON SCREEN FROM FRAME 0: HOW CAN 1,000 PEOPLE PREDICT AN ELECTION? · THE CENTRAL LIMIT THEOREM IN
-// REAL LIFE; a big ELECTION POLLS tile (THE DETAILED EXAMPLE) and four small tiles (+ A/B TESTS · FACTORIES · INSURANCE ·
-// ML) visible by ~1.5 s; SAVE THIS bookmark.
+// REAL LIFE; a big ELECTION POLLS tile and four small tiles (A/B TESTS · FACTORIES · INSURANCE ·
+// ML, under ALSO USED IN) visible by ~1.5 s; SAVE THIS bookmark.
 import React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import { Bookmark } from "../components/Guide";
@@ -16,7 +16,7 @@ export const S1Title: React.FC = () => {
   const spr = useSpr();
   const s = useScene("s1");
   const SAVE = s.cueS(1, "Save");
-  const MORE = s.cueS(1, "4");
+  const MORE = s.cueS(1, "Theorem.");
   const t = spr(0, theme.spring.pop);
   const big = spr(8, theme.spring.bouncy);
   const P = USES[0];
@@ -35,12 +35,11 @@ export const S1Title: React.FC = () => {
         <div style={{ position: "absolute", left: 540, top: 820, transform: `translate(-50%, -50%) scale(${interpolate(Math.min(1, big), [0, 1], [0.5, 1])})`, opacity: Math.min(1, big * 2), width: 620, height: 220, boxSizing: "border-box", borderRadius: 32, background: `linear-gradient(180deg, ${alpha(P.c, 0.3)}, rgba(14,24,64,0.94))`, border: `4px solid ${P.c}`, boxShadow: `0 0 34px ${alpha(P.c, 0.5)}`, display: "flex", alignItems: "center", justifyContent: "center", gap: 28 }}>
           <P.Icon size={130} color={P.c} />
           <div>
-            <div style={{ fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 22, letterSpacing: "0.18em", color: P.c }}>THE DETAILED EXAMPLE</div>
-            <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 54, color: C.text }}>ELECTION POLLS</div>
+                        <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 54, color: C.text }}>ELECTION POLLS</div>
           </div>
         </div>
       ) : null}
-      <div style={{ position: "absolute", left: 0, right: 0, top: 990, textAlign: "center", opacity: Math.min(1, spr(14, theme.spring.smooth) * 2), fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 24, letterSpacing: "0.2em", color: C.dim }}>+ 4 MORE PLACES IT&apos;S USED</div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 990, textAlign: "center", opacity: Math.min(1, spr(14, theme.spring.smooth) * 2), fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 24, letterSpacing: "0.2em", color: C.dim }}>ALSO USED IN</div>
       <div style={{ position: "absolute", left: 0, right: 0, top: 1040, display: "flex", justifyContent: "center", gap: 18 }}>
         {USES.slice(1).map((u, i) => {
           const p = spr(16 + i * 4, theme.spring.bouncy);

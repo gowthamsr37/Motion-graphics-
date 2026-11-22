@@ -1,4 +1,4 @@
-// SCENE 9 — THE RULE + SAVE MOMENT. Three steps: SINGLE VALUES: MESSY (skewed icon) → AVERAGES: A BELL (bell icon) → THE
+// SCENE 10 — THE RULE + SAVE MOMENT. Three steps: SINGLE VALUES: MESSY (skewed icon) → AVERAGES: A BELL (bell icon) → THE
 // BELL: HOW SURE TO BE (52% ± 3%); then the SAVE THIS · SEND TO A FRIEND bookmark.
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
@@ -25,9 +25,9 @@ const Step: React.FC<{ at: number; y: number; c: string; icon: React.ReactNode; 
   </Pop>
 );
 
-export const S9Rule: React.FC = () => {
+export const S10Rule: React.FC = () => {
   const frame = useCurrentFrame();
-  const s = useScene("s9");
+  const s = useScene("s10");
   const A = s.cueS(0, "single");
   const B = s.cueS(0, "averages");
   const D = s.cueS(0, "tells");

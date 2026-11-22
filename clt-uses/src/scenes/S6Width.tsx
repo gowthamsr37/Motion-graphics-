@@ -1,4 +1,4 @@
-// SCENE 5 — HOW WIDE IS THE BELL? STANDARD ERROR = √( p (1 − p) / n ), then filled in: √( 0.52 × 0.48 / 1,000 ) ≈ 0.016 =
+// SCENE 6 — HOW WIDE IS THE BELL? STANDARD ERROR = √( p (1 − p) / n ); the n glows (BIGGER n = NARROWER BELL); then filled in: √( 0.52 × 0.48 / 1,000 ) ≈ 0.016 =
 // 1.6%, with a small bell whose width bracket reads 1 SE = 1.6%.
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
@@ -23,13 +23,15 @@ const Frac: React.FC<{ top: React.ReactNode; bot: React.ReactNode; size: number 
   </span>
 );
 
-export const S5Width: React.FC = () => {
+export const S6Width: React.FC = () => {
   const frame = useCurrentFrame();
-  const s = useScene("s5");
+  const s = useScene("s6");
   const SE = s.cueS(0, "standard");
   const ROOT = s.cueS(0, "square");
-  const NUM = s.sent(1).from;
-  const RES = s.cueS(1, "about");
+  const NOTE = s.sent(1).from;
+  const NUM = s.sent(2).from;
+  const RES = s.cueS(2, "about");
+  const nHi = ease(frame, [NOTE - 4, NOTE + 6], [0, 1]) * (1 - ease(frame, [NUM - 10, NUM], [0, 1]));
   const w = ease(frame, [RES, RES + 16], [0, 1]);
   return (
     <AbsoluteFill>
@@ -43,9 +45,14 @@ export const S5Width: React.FC = () => {
         <div style={{ display: "flex", alignItems: "center", gap: 18, fontFamily: theme.fonts.mono, fontWeight: 800, color: C.text, whiteSpace: "nowrap" }}>
           <span style={{ fontSize: 56, color: C.yellow }}>SE =</span>
           <Radical color={C.text} size={150}>
-            <Frac size={56} top={<span>p × (1 − p)</span>} bot={<span>n</span>} />
+            <Frac size={56} top={<span>p × (1 − p)</span>} bot={<span style={{ color: nHi > 0.5 ? C.green : C.text, textShadow: nHi > 0.5 ? glowText(C.green, 0.8) : "none", display: "inline-block", transform: `scale(${1 + 0.4 * nHi})` }}>n</span>} />
           </Radical>
         </div>
+      </Pop>
+      <Pop at={s.cueS(1, "bigger") - 4} out={NUM - 8} x={540} y={830} from="up" dist={14} cfg={theme.spring.bouncy}>
+        <Tag color={C.green} size={32}>
+          BIGGER n = NARROWER BELL
+        </Tag>
       </Pop>
       <Pop at={NUM - 4} x={540} y={850} from="up" dist={14} cfg={theme.spring.pop}>
         <div style={{ display: "flex", alignItems: "center", gap: 18, fontFamily: theme.fonts.mono, fontWeight: 800, color: C.text, whiteSpace: "nowrap" }}>

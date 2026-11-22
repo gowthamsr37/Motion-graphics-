@@ -77,7 +77,7 @@ const useHits = (): Hit[] => {
     const h = at("s1");
     h(2, "impact.wav", 0.36);
     for (let i = 0; i < 5; i++) h(8 + i * 4, "pop.wav", 0.14);
-    h(s.cueS(1, "4") - 8, "glide.wav", 0.14);
+    h(s.cueS(1, "Theorem.") - 8, "glide.wav", 0.14);
     h(s.cueS(1, "Save") - 8, "chime.wav", 0.24);
   }
   // S2 — the problem: dots light up, two bars rise, the bell is struck out
@@ -88,6 +88,21 @@ const useHits = (): Hit[] => {
     for (let i = 0; i < 6; i++) h(s.cueS(0, "1,000") + i * 3 - 6, "tick.wav", 0.06);
     h(s.cueS(1, "bars.") - 10, "glide.wav", 0.16);
     h(s.cueS(1, "bell") - 2, "glitch.wav", 0.1);
+    h(s.sent(2).from - 8, "whoosh.wav", 0.18);
+    h(s.sent(2).from + 2, "impact.wav", 0.18);
+    [0, 1, 2, 3, 4].forEach((k) => h(s.cueS(2, "step") + k * 5, "pop.wav", 0.1));
+  }
+  // S5 — textbook definition: a pop per line, a chime on the bell, a step per condition
+  {
+    const s = sceneTiming(fps, "s5");
+    const h = at("s5");
+    h(s.sent(0).from - 6, "whip.wav", 0.16);
+    ["large", "means", "normal,", "whatever"].forEach((t, i) => h(s.cueS(1, t) - 6, `blip${i + 1}.wav`, 0.16));
+    h(s.cueS(1, "whatever") + 28, "chime.wav", 0.2);
+    h(s.cueS(2, "independent,") - 8, "step1.wav", 0.22);
+    h(s.cueS(2, "independent,") + 4, "ding.wav", 0.14);
+    h(s.cueS(2, "30") - 8, "step2.wav", 0.22);
+    h(s.cueS(2, "30") + 4, "ding.wav", 0.14);
   }
   // S3 — the counter rolls, 52% lands, the 1s and 0s drop in, the average
   {
@@ -108,54 +123,54 @@ const useHits = (): Hit[] => {
     h(s.cueS(1, "bell") - 4, "glide.wav", 0.16);
     h(s.sent(3).from - 6, "chime.wav", 0.24);
   }
-  // S5 — the formula and the 1.6% result
-  {
-    const s = sceneTiming(fps, "s5");
-    const h = at("s5");
-    h(s.cueS(0, "standard") - 8, "pop.wav", 0.2);
-    h(s.cueS(0, "square") - 8, "whoosh.wav", 0.14);
-    h(s.sent(1).from - 6, "pop.wav", 0.18);
-    h(s.cueS(1, "about") - 6, "ding.wav", 0.22);
-  }
-  // S6 — the 95% band fills, the bracket, 52% ± 3%, the margin-of-error labels, NO CLT
+  // S6 — the formula and the 1.6% result
   {
     const s = sceneTiming(fps, "s6");
     const h = at("s6");
+    h(s.cueS(0, "standard") - 8, "pop.wav", 0.2);
+    h(s.cueS(0, "square") - 8, "whoosh.wav", 0.14);
+    h(s.cueS(1, "bigger") - 6, "glide.wav", 0.16);
+    h(s.sent(2).from - 6, "pop.wav", 0.18);
+    h(s.cueS(2, "about") - 6, "ding.wav", 0.22);
+  }
+  // S7 — the 95% band fills, the bracket, 52% ± 3%, the margin-of-error labels
+  {
+    const s = sceneTiming(fps, "s7");
+    const h = at("s7");
     h(s.cueS(0, "95%") - 8, "glide.wav", 0.16);
     h(s.sent(1).from + 6, "tada.wav", 0.24);
     h(s.cueS(1, "between") - 6, "whoosh.wav", 0.12);
     h(s.cueS(2, "margin") - 6, "pop.wav", 0.18);
     h(s.cueS(2, "confidence") - 6, "pop.wav", 0.18);
-    h(s.sent(3).from, "stamp.wav", 0.24);
   }
-  // S7 — the second, narrower bell
+  // S8 — the second, narrower bell
   {
-    const s = sceneTiming(fps, "s7");
-    const h = at("s7");
+    const s = sceneTiming(fps, "s8");
+    const h = at("s8");
     h(4, "whoosh.wav", 0.12);
     h(s.cueS(0, "4") - 6, "pop.wav", 0.2);
     h(s.cueS(0, "4,000") - 6, "glide.wav", 0.16);
     h(s.cueS(0, "halves") - 4, "ding.wav", 0.22);
   }
-  // S8 — similarly: one tile per sentence
-  {
-    const s = sceneTiming(fps, "s8");
-    const h = at("s8");
-    h(2, "whip.wav", 0.14);
-    for (let i = 1; i <= 4; i++) h(s.sent(i).from - 6, `step${((i - 1) % 3) + 1}.wav`, 0.22);
-  }
-  // S9 — the rule (three steps) and the save moment
+  // S9 — similarly: one tile per sentence
   {
     const s = sceneTiming(fps, "s9");
     const h = at("s9");
+    h(2, "whip.wav", 0.14);
+    for (let i = 1; i <= 4; i++) h(s.sent(i).from - 6, `step${((i - 1) % 3) + 1}.wav`, 0.22);
+  }
+  // S10 — the rule (three steps) and the save moment
+  {
+    const s = sceneTiming(fps, "s10");
+    const h = at("s10");
     [s.cueS(0, "single"), s.cueS(0, "averages"), s.cueS(0, "tells")].forEach((f, i) => h(f - 6, `blip${i + 1}.wav`, 0.18));
     h(s.sent(1).from - 4, "pop.wav", 0.24);
     h(s.cueS(1, "send") - 8, "whoosh.wav", 0.16);
   }
-  // S10 — your turn (poll prompt), teaser, CTA
+  // S11 — your turn (poll prompt), teaser, CTA
   {
-    const s = sceneTiming(fps, "s10");
-    const h = at("s10");
+    const s = sceneTiming(fps, "s11");
+    const h = at("s11");
     h(s.sent(0).from - 6, "pop.wav", 0.36);
     h(s.cueS(0, "500") - 6, "blip1.wav", 0.2);
     h(s.cueS(0, "500") + 2, "blip2.wav", 0.2);

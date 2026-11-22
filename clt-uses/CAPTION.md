@@ -10,7 +10,9 @@ How can a poll of just 1,000 people predict an election with millions of voters?
 
 3️⃣ Run the same poll again and again with different people: 51%, 53%, 52%, 50%, 54%… Stack the results and they form a bell curve. That's the CLT: averages form a bell, even when each answer is just yes or no.
 
-4️⃣ How wide is the bell? Standard error = √(p(1 − p)/n) = √(0.52 × 0.48 / 1,000) ≈ 1.6%
+📖 Textbook definition: for large enough random samples, the sample means are approximately normal, whatever the shape of the original data. Conditions: independent samples, and usually n ≥ 30.
+
+4️⃣ How wide is the bell? Standard error = √(p(1 − p)/n) = √(0.52 × 0.48 / 1,000) ≈ 1.6%. Bigger n → narrower bell.
 
 5️⃣ 95% of results land within about 2 standard errors → 2 × 1.6% ≈ 3% → "52% ± 3%". That ± is the margin of error, and 49–55% is the 95% confidence interval.
 

@@ -31,12 +31,12 @@ const cueS = (id, i, tok) => {
 const ev = {
   allData: 0.05, // the title card lands at frame 0
   sameType: sent("s1", 1),
-  quiz: sent("s10", 0), // the poll prompt
-  tease: sent("s10", 1),
-  follow: sent("s10", 2),
-  acc1: sent("s6", 1), // 52% ± 3%
+  quiz: sent("s11", 0), // the poll prompt
+  tease: sent("s11", 1),
+  follow: sent("s11", 2),
+  acc1: sent("s7", 1), // 52% ± 3%
   acc2: sent("s4", 3), // that's the CLT
-  acc3: sent("s9", 1), // save this
+  acc3: sent("s10", 1), // save this
 };
 
 // ---------- dsp utils ----------
@@ -205,9 +205,9 @@ const sections = [
   // [from, to, style]
   [0, S("s2"), "drop"], // the title card: lifted chord from frame 0
   [S("s2"), S("s4"), "flow"], // the problem, it's an average: calm
-  [S("s4"), S("s8"), "grooveA"], // the bell, SE, ±3%, 4× people
-  [S("s8"), S("s9"), "play"], // similarly used in
-  [S("s9"), ev.quiz, "build"], // the rule + save
+  [S("s4"), S("s9"), "grooveA"], // the bell, SE, ±3%, 4× people
+  [S("s9"), S("s10"), "play"], // similarly used in
+  [S("s10"), ev.quiz, "build"], // the rule + save
   [ev.quiz, DUR - 0.6, "finale"], // your turn, teaser, CTA
 ];
 const styleAt = (t) => (sections.find(([a, b]) => t >= a && t < b) || [0, 0, "none"])[2];
@@ -279,7 +279,7 @@ lead(ML, MR, ev.acc1 - 0.2, note("C5"), note("F5"), 1.2, 0.45);
 [0, 0.09, 0.18].forEach((d, i) => bell(ML, MR, ev.acc2 + 0.05 + d, [note("C5"), note("F5"), note("A5")][i], 0.6, (i - 1) * 0.4, 1.2));
 lead(ML, MR, ev.acc3 - 0.1, note("A4"), note("C5"), 1.0, 0.4);
 // the rule: crash on entry
-crash(ML, MR, S("s9"), 0.7);
+crash(ML, MR, S("s10"), 0.7);
 // teaser: a lifted chord
 pad(ML, MR, ev.tease, ev.follow - ev.tease, CH.Bb.pad, 0.8, 0.3, 0.4, 0.05);
 // poll prompt: a bright stinger instead of the quiz countdown

@@ -1,4 +1,4 @@
-// SCENE 8 — SIMILARLY, IT'S USED IN… The election-poll tile shrinks to the top (SAME IDEA); four tiles land one per sentence,
+// SCENE 9 — SIMILARLY, IT'S USED IN… The election-poll tile shrinks to the top (SAME IDEA); four tiles land one per sentence,
 // each with icon, title and its average: A/B TESTS (average spend per user), FACTORIES (average of 5 bottles every hour),
 // INSURANCE (average claim of thousands), MACHINE LEARNING (accuracy = average of right/wrong).
 import React from "react";
@@ -12,10 +12,10 @@ const C = theme.colors;
 const LINES = ["Average spend per user, version A vs B", "Average weight of 5 bottles, every hour", "Average claim of thousands of customers", "Accuracy = average of right / wrong"];
 const POS = [[300, 740], [780, 740], [300, 1100], [780, 1100]];
 
-export const S8Similar: React.FC = () => {
+export const S9Similar: React.FC = () => {
   const frame = useCurrentFrame();
   const spr = useSpr();
-  const s = useScene("s8");
+  const s = useScene("s9");
   const P = USES[0];
   const head = spr(2, theme.spring.pop);
   return (

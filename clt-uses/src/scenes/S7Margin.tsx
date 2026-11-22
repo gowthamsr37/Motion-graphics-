@@ -1,5 +1,5 @@
-// SCENE 6 — PLUS OR MINUS 3%. Bell over the poll axis; the ±2 SE band (95%) fills; 2 × 1.6% ≈ 3%; bracket 49% … 55%; the
-// headline 52% ± 3%; MARGIN OF ERROR = 95% CONFIDENCE INTERVAL; NO CLT → NO ± (struck).
+// SCENE 7 — PLUS OR MINUS 3%. Bell over the poll axis; the ±2 SE band (95%) fills; 2 × 1.6% ≈ 3%; bracket 49% … 55%; the
+// headline 52% ± 3%; MARGIN OF ERROR = 95% CONFIDENCE INTERVAL.
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { FnCurve, Geo, gx, ValueAxis } from "../components/Curve";
@@ -14,16 +14,15 @@ const C = theme.colors;
 const U = USES[0];
 const G: Geo = { x0: 140, x1: 940, vmin: 46.5, vmax: 57.5, base: 1000, h: 330 };
 
-export const S6Margin: React.FC = () => {
+export const S7Margin: React.FC = () => {
   const frame = useCurrentFrame();
-  const s = useScene("s6");
+  const s = useScene("s7");
   const P95 = s.cueS(0, "95%");
   const TWO = s.cueS(0, "2", 1);
   const SAY = s.cueS(1, "say");
   const RANGE = s.cueS(1, "between");
   const MOE = s.cueS(2, "margin");
   const CI = s.cueS(2, "confidence");
-  const NO = s.sent(3).from;
   const band = ease(frame, [P95 - 6, P95 + 20], [0, 1]);
   const br = ease(frame, [RANGE - 6, RANGE + 12], [0, 1]);
   return (
@@ -52,20 +51,15 @@ export const S6Margin: React.FC = () => {
           52% <span style={{ color: C.green }}>± 3%</span>
         </div>
       </Pop>
-      <Pop at={MOE - 4} out={NO - 6} x={540} y={540} from="up" dist={10}>
+      <Pop at={MOE - 4} x={540} y={540} from="up" dist={10}>
         <div style={{ fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 26, letterSpacing: "0.1em", color: C.text, whiteSpace: "nowrap" }}>
           ± 3% = <span style={{ color: C.green }}>MARGIN OF ERROR</span>
         </div>
       </Pop>
-      <Pop at={CI - 6} out={NO - 6} x={540} y={590} from="up" dist={10}>
+      <Pop at={CI - 6} x={540} y={590} from="up" dist={10}>
         <div style={{ fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 26, letterSpacing: "0.1em", color: C.text, whiteSpace: "nowrap" }}>
           49 TO 55 = <span style={{ color: C.yellow }}>95% CONFIDENCE INTERVAL</span>
         </div>
-      </Pop>
-      <Pop at={NO + 4} x={540} y={565} from="scale" scaleFrom={0.6} cfg={theme.spring.bouncy}>
-        <Tag color={C.red} size={30}>
-          NO CLT = NO ± AT ALL
-        </Tag>
       </Pop>
     </AbsoluteFill>
   );

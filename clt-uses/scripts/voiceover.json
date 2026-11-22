@@ -7,17 +7,17 @@
       "id": "s1",
       "title": "Title card",
       "lead": 0.2,
-      "hold": 0.4,
+      "hold": 0.6,
       "segments": [
         {
           "text": "How can a poll of just one thousand people predict an election?",
           "caption": "How can a poll of just 1,000 people predict an election?",
-          "pause": 0.3
+          "pause": 0.35
         },
         {
-          "text": "The Central Limit Theorem. One example in detail, then four more places it's used. Save this one!",
-          "caption": "The Central Limit Theorem. One example in detail, then 4 more places it's used. Save this one!",
-          "pause": 0.3
+          "text": "The answer is one big idea: the Central Limit Theorem. Save this one!",
+          "caption": "The answer is one big idea: the Central Limit Theorem. Save this one!",
+          "pause": 0.35
         }
       ]
     },
@@ -25,7 +25,7 @@
       "id": "s2",
       "title": "The problem",
       "lead": 0.4,
-      "hold": 0.5,
+      "hold": 0.6,
       "segments": [
         {
           "text": "Millions of people will vote. A pollster can't ask them all, so they ask one thousand random voters.",
@@ -35,7 +35,12 @@
         {
           "text": "Each person gives one answer: yes or no. As data, that's just two bars. Nothing like a bell curve.",
           "caption": "Each person gives one answer: yes or no. As data, that's just two bars. Nothing like a bell curve.",
-          "pause": 0.3
+          "pause": 0.35
+        },
+        {
+          "text": "So how can a thousand yes-or-no answers tell us about millions? Step by step.",
+          "caption": "So how can 1,000 yes-or-no answers tell us about millions? Step by step.",
+          "pause": 0.35
         }
       ]
     },
@@ -43,7 +48,7 @@
       "id": "s3",
       "title": "It's an average",
       "lead": 0.4,
-      "hold": 0.5,
+      "hold": 0.6,
       "segments": [
         {
           "text": "Now count the yeses: five hundred and twenty out of a thousand. That's fifty-two percent.",
@@ -53,7 +58,7 @@
         {
           "text": "And here's the key. Every yes is a one, every no is a zero. Fifty-two percent is just their average.",
           "caption": "And here's the key. Every yes is a 1, every no is a 0. 52% is just their average.",
-          "pause": 0.3
+          "pause": 0.35
         }
       ]
     },
@@ -81,12 +86,35 @@
         {
           "text": "That's the Central Limit Theorem: averages form a bell, even when each answer is just yes or no.",
           "caption": "That's the Central Limit Theorem: averages form a bell, even when each answer is just yes or no.",
-          "pause": 0.3
+          "pause": 0.35
         }
       ]
     },
     {
       "id": "s5",
+      "title": "The definition",
+      "lead": 0.5,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Here's the textbook definition.",
+          "caption": "Here's the textbook definition.",
+          "pause": 0.35
+        },
+        {
+          "text": "For large enough random samples, the sample means are approximately normal, whatever the shape of the data.",
+          "caption": "For large enough random samples, the sample means are approximately normal, whatever the shape of the data.",
+          "pause": 0.35
+        },
+        {
+          "text": "Two conditions: the samples must be independent, and large enough. Thirty or more is the usual rule.",
+          "caption": "Two conditions: the samples must be independent, and large enough. 30 or more is the usual rule.",
+          "pause": 0.35
+        }
+      ]
+    },
+    {
+      "id": "s6",
       "title": "How wide is the bell?",
       "lead": 0.4,
       "hold": 0.6,
@@ -97,14 +125,19 @@
           "pause": 0.35
         },
         {
+          "text": "Notice the n at the bottom: bigger samples, narrower bell.",
+          "caption": "Notice the n at the bottom: bigger samples, narrower bell.",
+          "pause": 0.35
+        },
+        {
           "text": "Point five two times point four eight, over a thousand, square-rooted: about one point six percent.",
           "caption": "0.52 × 0.48, over 1,000, square-rooted: about 1.6%.",
-          "pause": 0.3
+          "pause": 0.35
         }
       ]
     },
     {
-      "id": "s6",
+      "id": "s7",
       "title": "Plus or minus 3%",
       "lead": 0.4,
       "hold": 0.6,
@@ -123,16 +156,11 @@
           "text": "That range, forty-nine to fifty-five, is the margin of error, also called a ninety-five percent confidence interval.",
           "caption": "That range, 49 to 55, is the margin of error, also called a 95% confidence interval.",
           "pause": 0.35
-        },
-        {
-          "text": "Without the Central Limit Theorem, there would be no plus or minus at all.",
-          "caption": "Without the Central Limit Theorem, there would be no plus or minus at all.",
-          "pause": 0.3
         }
       ]
     },
     {
-      "id": "s7",
+      "id": "s8",
       "title": "More people, smaller margin",
       "lead": 0.4,
       "hold": 0.6,
@@ -140,12 +168,12 @@
         {
           "text": "Want a smaller margin? Ask four times as many people. Four thousand voters halves it, to plus or minus one and a half.",
           "caption": "Want a smaller margin? Ask 4 times as many people. 4,000 voters halves it, to ±1.5%.",
-          "pause": 0.3
+          "pause": 0.35
         }
       ]
     },
     {
-      "id": "s8",
+      "id": "s9",
       "title": "Similarly, it's used in",
       "lead": 0.4,
       "hold": 0.8,
@@ -173,12 +201,12 @@
         {
           "text": "And machine learning: test accuracy, which is an average of right and wrong predictions.",
           "caption": "And machine learning: test accuracy, which is an average of right and wrong predictions.",
-          "pause": 0.3
+          "pause": 0.35
         }
       ]
     },
     {
-      "id": "s9",
+      "id": "s10",
       "title": "The rule",
       "lead": 0.4,
       "hold": 1.6,
@@ -191,12 +219,12 @@
         {
           "text": "Save this, and send it to a friend who's learning data science.",
           "caption": "Save this, and send it to a friend who's learning data science.",
-          "pause": 0.3
+          "pause": 0.35
         }
       ]
     },
     {
-      "id": "s10",
+      "id": "s11",
       "title": "Poll, teaser and CTA",
       "lead": 0.35,
       "hold": 0.8,
@@ -204,17 +232,17 @@
         {
           "text": "Your turn: one customer's spend is skewed. Is the average spend of five hundred customers roughly normal? Vote in the caption poll!",
           "caption": "Your turn: one customer's spend is skewed. Is the average spend of 500 customers roughly normal? Vote in the caption poll!",
-          "pause": 0.3
+          "pause": 0.35
         },
         {
           "text": "Next: comparing three or more groups. ANOVA.",
           "caption": "Next: comparing three or more groups. ANOVA.",
-          "pause": 0.3
+          "pause": 0.35
         },
         {
           "text": "Follow for data science made simple!",
           "caption": "Follow for data science made simple!",
-          "pause": 0.3
+          "pause": 0.35
         }
       ]
     }

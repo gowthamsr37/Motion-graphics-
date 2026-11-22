@@ -1,4 +1,4 @@
-// SCENE 7 — MORE PEOPLE, SMALLER MARGIN. Two bells on the same axis: n = 1,000 (±3%) and n = 4,000 (±1.5%, twice as narrow);
+// SCENE 8 — MORE PEOPLE, SMALLER MARGIN. Two bells on the same axis: n = 1,000 (±3%) and n = 4,000 (±1.5%, twice as narrow);
 // 4× THE PEOPLE = HALF THE MARGIN.
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
@@ -27,9 +27,9 @@ const Row: React.FC<{ g: Geo; sd: number; m: number; n: string; pm: string; c: s
   </>
 );
 
-export const S7Bigger: React.FC = () => {
+export const S8Bigger: React.FC = () => {
   const frame = useCurrentFrame();
-  const s = useScene("s7");
+  const s = useScene("s8");
   const FOUR = s.cueS(0, "4");
   const K = s.cueS(0, "4,000");
   return (
