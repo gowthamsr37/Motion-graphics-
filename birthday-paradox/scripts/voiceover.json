@@ -1,0 +1,58 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Hook",
+   "lead": 0.45,
+   "hold": 1.35,
+   "segments": [
+    {
+     "text": "TODO hook line one.",
+     "caption": "TODO hook line one,",
+     "pause": 0.6
+    },
+    {
+     "text": "TODO reveal.",
+     "caption": "TODO reveal.",
+     "pause": 0.3
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Quiz and call to action",
+   "lead": 0.35,
+   "hold": 2.3,
+   "segments": [
+    {
+     "text": "Quick quiz!",
+     "caption": "Quick quiz!",
+     "pause": 0.3
+    },
+    {
+     "text": "TODO question?",
+     "caption": "TODO question?",
+     "pause": 5.7
+    },
+    {
+     "text": "TODO answer!",
+     "caption": "TODO answer!",
+     "pause": 0.4
+    },
+    {
+     "text": "TODO one-sentence why.",
+     "caption": "TODO one-sentence why.",
+     "pause": 0.55
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.3
+    }
+   ]
+  }
+ ]
+}

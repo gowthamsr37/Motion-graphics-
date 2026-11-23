@@ -1,0 +1,265 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Title card",
+   "lead": 0.2,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Why does the casino never lose? The law of large numbers.",
+     "caption": "Why does the casino never lose? The law of large numbers.",
+     "pause": 0.25
+    },
+    {
+     "text": "The tiny edge, a coin experiment, the law, real-life uses, and the gambler's mistake. Save this one!",
+     "caption": "The tiny edge, a coin experiment, the law, real-life uses, and the gambler's mistake. Save this one!",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Hook",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Every night in Goa, someone walks out of a casino with lakhs in their pocket.",
+     "caption": "Every night in Goa, someone walks out of a casino with lakhs in their pocket.",
+     "pause": 0.25
+    },
+    {
+     "text": "Yet the casino itself never loses. Not this month. Not this year.",
+     "caption": "Yet the casino itself never loses. Not this month. Not this year.",
+     "pause": 0.25
+    },
+    {
+     "text": "Is the game rigged? No. It's just maths.",
+     "caption": "Is the game rigged? No. It's just maths.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "The tiny edge",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Take roulette. The wheel has thirty-seven pockets: eighteen red, eighteen black, and one green zero.",
+     "caption": "Take roulette. The wheel has 37 pockets: 18 red, 18 black, and one green zero.",
+     "pause": 0.25
+    },
+    {
+     "text": "Bet on red: eighteen out of thirty-seven. A 48.6 percent chance.",
+     "caption": "Bet on red: 18 out of 37. A 48.6% chance.",
+     "pause": 0.25
+    },
+    {
+     "text": "The casino wins the other 51.4 percent. That one green zero gives the house an edge of just 2.7 percent.",
+     "caption": "The casino wins the other 51.4%. That one green zero gives the house an edge of just 2.7%.",
+     "pause": 0.25
+    },
+    {
+     "text": "So for every hundred rupees bet, the casino keeps about two rupees seventy, on average.",
+     "caption": "So for every Rs 100 bet, the casino keeps about Rs 2.70, on average.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "One player vs millions of spins",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "For you, one night is pure luck. You might win five spins in a row and go home rich.",
+     "caption": "For you, one night is pure luck. You might win five spins in a row and go home rich.",
+     "pause": 0.25
+    },
+    {
+     "text": "But the casino isn't playing one night. It's playing millions of spins. And over millions of spins, luck stops mattering.",
+     "caption": "But the casino isn't playing one night. It's playing millions of spins. And over millions of spins, luck stops mattering.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Coin flip experiment",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Let's prove it with a fair coin. The true chance of heads is fifty percent.",
+     "caption": "Let's prove it with a fair coin. The true chance of heads is 50%.",
+     "pause": 0.25
+    },
+    {
+     "text": "Ten flips: seven heads. Seventy percent. Way off.",
+     "caption": "10 flips: 7 heads. 70%. Way off.",
+     "pause": 0.25
+    },
+    {
+     "text": "A hundred flips: fifty-four percent. Closer.",
+     "caption": "100 flips: 54%. Closer.",
+     "pause": 0.25
+    },
+    {
+     "text": "A thousand: 50.8 percent. Ten thousand: 50.1 percent.",
+     "caption": "1,000: 50.8%. 10,000: 50.1%.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "The law",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "That's the law of large numbers.",
+     "caption": "That's the law of large numbers.",
+     "pause": 0.25
+    },
+    {
+     "text": "As the number of trials grows, the average result gets closer and closer to the expected value.",
+     "caption": "As the number of trials grows, the average result gets closer and closer to the expected value.",
+     "pause": 0.25
+    },
+    {
+     "text": "In interview language: the sample mean converges to the population mean as the sample size grows.",
+     "caption": "In interview language: the sample mean converges to the population mean as the sample size grows.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "Back to the casino",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Say the casino takes ten lakh bets of a hundred rupees in a year. That's ten crore rupees bet.",
+     "caption": "Say the casino takes 10 lakh bets of Rs 100 in a year. That's Rs 10 crore bet.",
+     "pause": 0.25
+    },
+    {
+     "text": "The edge says it keeps 2.7 percent: twenty-seven lakh rupees.",
+     "caption": "The edge says it keeps 2.7%: Rs 27 lakh.",
+     "pause": 0.25
+    },
+    {
+     "text": "And with that many bets, its real profit lands between about twenty-five and twenty-nine lakh, almost every time.",
+     "caption": "And with that many bets, its real profit lands between about Rs 25 and 29 lakh, almost every time.",
+     "pause": 0.25
+    },
+    {
+     "text": "Short term, it's luck. Long term, it's maths.",
+     "caption": "Short term, it's luck. Long term, it's maths.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Real-life uses",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "This law runs real life too.",
+     "caption": "This law runs real life too.",
+     "pause": 0.25
+    },
+    {
+     "text": "Insurance: nobody knows which driver will crash, but across ten lakh drivers, the company knows almost exactly how many will. That sets your premium.",
+     "caption": "Insurance: nobody knows which driver will crash, but across 10 lakh drivers, the company knows almost exactly how many will. That sets your premium.",
+     "pause": 0.25
+    },
+    {
+     "text": "Cricket: a batting average after three innings means nothing. After a hundred innings, it shows who the player really is.",
+     "caption": "Cricket: a batting average after 3 innings means nothing. After 100 innings, it shows who the player really is.",
+     "pause": 0.25
+    },
+    {
+     "text": "Ratings: five stars from three reviews? Don't trust it. 4.6 stars from five thousand reviews is the real picture.",
+     "caption": "Ratings: 5 stars from 3 reviews? Don't trust it. 4.6 stars from 5,000 reviews is the real picture.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "The gambler's fallacy",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "But here's the trap. After five reds in a row, people bet on black: it's due.",
+     "caption": "But here's the trap. After five reds in a row, people bet on black: it's due.",
+     "pause": 0.25
+    },
+    {
+     "text": "It isn't. The wheel has no memory. Every spin is still 48.6 percent.",
+     "caption": "It isn't. The wheel has no memory. Every spin is still 48.6%.",
+     "pause": 0.25
+    },
+    {
+     "text": "The average evens out, not because the wheel corrects itself, but because millions of new spins drown out the old ones. That's the gambler's fallacy.",
+     "caption": "The average evens out, not because the wheel corrects itself, but because millions of new spins drown out the old ones. That's the gambler's fallacy.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "title": "Remember this",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "So remember: small samples can lie. Large samples tell the truth.",
+     "caption": "So remember: small samples can lie. Large samples tell the truth.",
+     "pause": 0.25
+    },
+    {
+     "text": "Save this, and send it to the friend who says, this time I'll definitely win.",
+     "caption": "Save this, and send it to the friend who says \"this time I'll definitely win.\"",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "title": "Poll, teaser and CTA",
+   "lead": 0.35,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Your turn: with a fair coin, when are you most likely to get more than sixty percent heads? Ten flips, a hundred, or a thousand? Vote in the caption poll!",
+     "caption": "Your turn: with a fair coin, when are you most likely to get more than 60% heads? 10 flips, 100, or 1,000? Vote in the caption poll!",
+     "pause": 0.25
+    },
+    {
+     "text": "Next: the paired t-test.",
+     "caption": "Next: the paired t-test.",
+     "pause": 0.25
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.25
+    }
+   ]
+  }
+ ]
+}
