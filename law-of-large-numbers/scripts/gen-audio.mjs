@@ -1,4 +1,3 @@
-// ADAPT: keep instruments, section styles, SFX kit and mastering; rewrite the ev/sections timing for this video's scenes.
 // Original score + SFX kit, synthesized from scratch (no samples, deterministic).
 // Reads src/timeline.json so the arrangement changes and musical hits land on the same moments the visuals use.
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -34,8 +33,8 @@ const ev = {
   quiz: sent("s11", 0), // the poll prompt
   tease: sent("s11", 1),
   follow: sent("s11", 2),
-  acc1: sent("s7", 1), // 52% ± 3%
-  acc2: sent("s4", 3), // that's the CLT
+  acc1: cueS("s3", 2, "edge"), // house edge 2.7%
+  acc2: sent("s6", 0), // that's the law of large numbers
   acc3: sent("s10", 1), // save this
 };
 
@@ -204,10 +203,10 @@ const ML = new Float32Array(N), MR = new Float32Array(N);
 const sections = [
   // [from, to, style]
   [0, S("s2"), "drop"], // the title card: lifted chord from frame 0
-  [S("s2"), S("s4"), "flow"], // the problem, it's an average: calm
-  [S("s4"), S("s9"), "grooveA"], // the bell, SE, ±3%, 4× people
-  [S("s9"), S("s10"), "play"], // similarly used in
-  [S("s10"), ev.quiz, "build"], // the rule + save
+  [S("s2"), S("s4"), "flow"], // the hook and the edge: calm
+  [S("s4"), S("s9"), "grooveA"], // millions of spins, coin test, the law, the casino's year, real life
+  [S("s9"), S("s10"), "play"], // the gambler's fallacy
+  [S("s10"), ev.quiz, "build"], // remember this + save
   [ev.quiz, DUR - 0.6, "finale"], // your turn, teaser, CTA
 ];
 const styleAt = (t) => (sections.find(([a, b]) => t >= a && t < b) || [0, 0, "none"])[2];

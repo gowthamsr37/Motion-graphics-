@@ -1,4 +1,3 @@
-// ADAPT FOR THIS VIDEO: copied from the reference project (house style). Keep the layer stack, look and mix; replace scene list, cues and cover text.
 import React from "react";
 import { AbsoluteFill, interpolateColors, Sequence, useCurrentFrame, useVideoConfig } from "remotion";
 import { Backdrop, Grade, Grain, Vignette } from "./components/Backdrop";
@@ -7,32 +6,32 @@ import { ease } from "./components/Motion";
 import { S10Rule } from "./scenes/S10Rule";
 import { S11Poll } from "./scenes/S11Poll";
 import { S1Title } from "./scenes/S1Title";
-import { S2Problem } from "./scenes/S2Problem";
-import { S3Average } from "./scenes/S3Average";
-import { S4Repeat } from "./scenes/S4Repeat";
-import { S5Define } from "./scenes/S5Define";
-import { S6Width } from "./scenes/S6Width";
-import { S7Margin } from "./scenes/S7Margin";
-import { S8Bigger } from "./scenes/S8Bigger";
-import { S9Similar } from "./scenes/S9Similar";
+import { S2Hook } from "./scenes/S2Hook";
+import { S3Edge } from "./scenes/S3Edge";
+import { S4Many } from "./scenes/S4Many";
+import { S5Coin } from "./scenes/S5Coin";
+import { S6Law } from "./scenes/S6Law";
+import { S7Profit } from "./scenes/S7Profit";
+import { S8Uses } from "./scenes/S8Uses";
+import { S9Fallacy } from "./scenes/S9Fallacy";
 import { SoundTrack } from "./SoundTrack";
 import { theme } from "./theme";
 import { SCENE_IDS, sceneRange, SceneId, totalFrames } from "./timing";
 
 const C = theme.colors;
-const SCENES: Record<string, React.FC> = { s1: S1Title, s2: S2Problem, s3: S3Average, s4: S4Repeat, s5: S5Define, s6: S6Width, s7: S7Margin, s8: S8Bigger, s9: S9Similar, s10: S10Rule, s11: S11Poll };
+const SCENES: Record<string, React.FC> = { s1: S1Title, s2: S2Hook, s3: S3Edge, s4: S4Many, s5: S5Coin, s6: S6Law, s7: S7Profit, s8: S8Uses, s9: S9Fallacy, s10: S10Rule, s11: S11Poll };
 // backdrop tints + caption accent: the election-poll example stays cyan, the "similarly" tour mixes the use colours
 const LOOK: Record<string, { a: string; b: string; accent: string }> = {
-  s1: { a: C.cyan, b: C.orange, accent: C.cyan },
-  s2: { a: C.cyan, b: C.violet, accent: C.cyan },
-  s3: { a: C.cyan, b: C.violet, accent: C.cyan },
-  s4: { a: C.cyan, b: C.orange, accent: C.yellow },
-  s5: { a: C.violet, b: C.green, accent: C.violet },
-  s6: { a: C.violet, b: C.cyan, accent: C.yellow },
+  s1: { a: C.green, b: C.violet, accent: C.green },
+  s2: { a: C.yellow, b: C.green, accent: C.yellow },
+  s3: { a: C.green, b: C.red, accent: C.green },
+  s4: { a: C.yellow, b: C.green, accent: C.yellow },
+  s5: { a: C.cyan, b: C.green, accent: C.cyan },
+  s6: { a: C.cyan, b: C.violet, accent: C.cyan },
   s7: { a: C.green, b: C.cyan, accent: C.green },
-  s8: { a: C.green, b: C.violet, accent: C.green },
-  s9: { a: C.orange, b: C.violet, accent: C.orange },
-  s10: { a: C.cyan, b: C.green, accent: C.green },
+  s8: { a: C.cyan, b: C.orange, accent: C.yellow },
+  s9: { a: C.red, b: C.violet, accent: C.red },
+  s10: { a: C.green, b: C.red, accent: C.yellow },
   s11: { a: C.green, b: C.violet, accent: C.yellow },
 };
 
