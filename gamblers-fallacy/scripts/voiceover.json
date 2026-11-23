@@ -1,0 +1,235 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Title card",
+   "lead": 0.2,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "The gambler's fallacy.",
+     "caption": "The gambler's fallacy.",
+     "pause": 0.25
+    },
+    {
+     "text": "A true story from a casino, the simple maths, a million-flip test, and how it fools you every day. Save this one!",
+     "caption": "A true story from a casino, the simple maths, a million-flip test, and how it fools you every day. Save this one!",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Hook",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "You flip a fair coin five times. Heads, heads, heads, heads, heads.",
+     "caption": "You flip a fair coin five times. Heads, heads, heads, heads, heads.",
+     "pause": 0.25
+    },
+    {
+     "text": "What's the next flip more likely to be? Heads, tails, or fifty-fifty? Comment your answer before I tell you.",
+     "caption": "What's the next flip more likely to be? Heads, tails, or 50-50? Comment your answer before I tell you.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Monte Carlo 1913",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Monte Carlo, 1913. At the roulette table, the ball lands on black. Again. And again.",
+     "caption": "Monte Carlo, 1913. At the roulette table, the ball lands on black. Again. And again.",
+     "pause": 0.25
+    },
+    {
+     "text": "After ten blacks, the crowd is sure red is due. They bet more and more on red.",
+     "caption": "After 10 blacks, the crowd is sure red is due. They bet more and more on red.",
+     "pause": 0.25
+    },
+    {
+     "text": "Black came up twenty-six times in a row. The gamblers lost millions. The casino won.",
+     "caption": "Black came up 26 times in a row. The gamblers lost millions. The casino won.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "The answer",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "So, the coin. The answer is fifty-fifty. Still.",
+     "caption": "So, the coin. The answer is 50-50. Still.",
+     "pause": 0.25
+    },
+    {
+     "text": "A coin has no memory. It doesn't know what happened before. Each flip is a brand new event.",
+     "caption": "A coin has no memory. It doesn't know what happened before. Each flip is a brand new event.",
+     "pause": 0.25
+    },
+    {
+     "text": "Statisticians call this independence: the past flips don't change the next one.",
+     "caption": "Statisticians call this independence: the past flips don't change the next one.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Why it feels wrong",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "So why does tails feel due? Because five heads in a row feels rare. And it is: one in thirty-two.",
+     "caption": "So why does tails feel due? Because five heads in a row feels rare. And it is: 1 in 32.",
+     "pause": 0.25
+    },
+    {
+     "text": "But that was before you started. Once those five heads have happened, they're history. The only question left is one flip: half, half.",
+     "caption": "But that was before you started. Once those five heads have happened, they're history. The only question left is one flip: half, half.",
+     "pause": 0.25
+    },
+    {
+     "text": "Your brain expects small samples to look balanced. The law of large numbers only works over thousands of flips, not five.",
+     "caption": "Your brain expects small samples to look balanced. The law of large numbers only works over thousands of flips, not five.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Million-flip test",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Don't trust me? We flipped a coin one million times on a computer.",
+     "caption": "Don't trust me? We flipped a coin one million times on a computer.",
+     "pause": 0.25
+    },
+    {
+     "text": "Five heads in a row happened thirty-one thousand times. And the very next flip? Heads exactly fifty percent of the time.",
+     "caption": "5 heads in a row happened 31,000 times. And the very next flip? Heads exactly 50% of the time.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "How odd was Monte Carlo?",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "And Monte Carlo? Twenty-six in a row is about one in sixty-six million. Incredibly rare.",
+     "caption": "And Monte Carlo? 26 in a row is about 1 in 66 million. Incredibly rare.",
+     "pause": 0.25
+    },
+    {
+     "text": "But even after twenty-five blacks, the next spin was still the same 48.6 percent for black. Rare streaks happen. They just don't change the odds.",
+     "caption": "But even after 25 blacks, the next spin was still the same 48.6% for black. Rare streaks happen. They just don't change the odds.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Everyday life",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "It fools us everywhere.",
+     "caption": "It fools us everywhere.",
+     "pause": 0.25
+    },
+    {
+     "text": "A couple with three boys thinks the fourth must be a girl. It's still about fifty-fifty.",
+     "caption": "A couple with three boys thinks the fourth must be a girl. It's still about 50-50.",
+     "pause": 0.25
+    },
+    {
+     "text": "A captain who lost five tosses thinks he's due to win the next one. The coin doesn't care.",
+     "caption": "A captain who lost five tosses thinks he's due to win the next one. The coin doesn't care.",
+     "pause": 0.25
+    },
+    {
+     "text": "And people avoid last week's lottery numbers. They're exactly as likely as any others.",
+     "caption": "And people avoid last week's lottery numbers. They're exactly as likely as any others.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "The flip side",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "And watch out for the opposite mistake too: thinking heads is hot, so heads will continue. That's also wrong for a fair coin.",
+     "caption": "And watch out for the opposite mistake too: thinking heads is hot, so heads will continue. That's also wrong for a fair coin.",
+     "pause": 0.25
+    },
+    {
+     "text": "But careful: this only applies to truly random, independent events. A batter in form, or a slot machine that's rigged? Different story.",
+     "caption": "But careful: this only applies to truly random, independent events. A batter in form, or a slot machine that's rigged? Different story.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "title": "Remember this",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "So remember: random events have no memory. The past doesn't make anything due.",
+     "caption": "So remember: random events have no memory. The past doesn't make anything due.",
+     "pause": 0.25
+    },
+    {
+     "text": "Save this, and send it to the friend who says, this time I'm due.",
+     "caption": "Save this, and send it to the friend who says \"this time I'm due.\"",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "title": "Poll, teaser and CTA",
+   "lead": 0.35,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Your turn: a roulette wheel lands red ten times in a row. What's the chance the next spin is black? Vote in the caption poll!",
+     "caption": "Your turn: a roulette wheel lands red 10 times in a row. What's the chance the next spin is black? Vote in the caption poll!",
+     "pause": 0.25
+    },
+    {
+     "text": "Next paradox: the Monty Hall problem.",
+     "caption": "Next paradox: the Monty Hall problem.",
+     "pause": 0.25
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.25
+    }
+   ]
+  }
+ ]
+}
