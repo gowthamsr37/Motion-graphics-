@@ -5,52 +5,249 @@
  "scenes": [
   {
    "id": "s1",
-   "title": "Hook",
-   "lead": 0.45,
-   "hold": 1.35,
+   "title": "Title card",
+   "lead": 0.2,
+   "hold": 0.4,
    "segments": [
     {
-     "text": "TODO hook line one.",
-     "caption": "TODO hook line one,",
-     "pause": 0.6
+     "text": "The birthday paradox.",
+     "caption": "The birthday paradox.",
+     "pause": 0.25
     },
     {
-     "text": "TODO reveal.",
-     "caption": "TODO reveal.",
-     "pause": 0.3
+     "text": "Why your gut gets it wrong, the maths step by step, a live simulation, and where it's used in real life. Save this one!",
+     "caption": "Why your gut gets it wrong, the maths step by step, a live simulation, and where it's used in real life. Save this one!",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Hook",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "A cricket match. Twenty-two players on the field, plus the umpire. Twenty-three people.",
+     "caption": "A cricket match. 22 players on the field, plus the umpire. 23 people.",
+     "pause": 0.25
+    },
+    {
+     "text": "What's the chance that two of them share a birthday?",
+     "caption": "What's the chance that two of them share a birthday?",
+     "pause": 0.25
+    },
+    {
+     "text": "Most people guess around six percent. Twenty-three out of three sixty-five. Comment your guess before the answer.",
+     "caption": "Most people guess around 6%. 23 out of 365. Comment your guess before the answer.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "The answer",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "The real answer? 50.7 percent. Basically a coin flip.",
+     "caption": "The real answer? 50.7%. Basically a coin flip.",
+     "pause": 0.25
+    },
+    {
+     "text": "And with seventy people, it's 99.9 percent. Almost certain.",
+     "caption": "And with 70 people, it's 99.9%. Almost certain.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Why your gut is wrong",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Your brain is answering the wrong question. It's thinking: does someone share my birthday?",
+     "caption": "Your brain is answering the wrong question. It's thinking: does someone share my birthday?",
+     "pause": 0.25
+    },
+    {
+     "text": "That really is small: about six percent.",
+     "caption": "That really is small: about 6%.",
+     "pause": 0.25
+    },
+    {
+     "text": "But the question is: do any two people share a birthday? And with twenty-three people, there are two hundred and fifty-three different pairs.",
+     "caption": "But the question is: do ANY two people share a birthday? And with 23 people, there are 253 different pairs.",
+     "pause": 0.25
+    },
+    {
+     "text": "Even five friends make ten pairs. Every new person pairs up with everyone already in the room.",
+     "caption": "Even 5 friends make 10 pairs. Every new person pairs up with everyone already in the room.",
+     "pause": 0.25
+    },
+    {
+     "text": "That's two hundred and fifty-three chances for a match.",
+     "caption": "That's 253 chances for a match.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "The maths, step by step",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "It's easier to work out the opposite: everyone has a different birthday.",
+     "caption": "It's easier to work out the opposite: everyone has a different birthday.",
+     "pause": 0.25
+    },
+    {
+     "text": "Person one can have any day: three sixty-five out of three sixty-five.",
+     "caption": "Person 1 can have any day: 365 out of 365.",
+     "pause": 0.25
+    },
+    {
+     "text": "Person two must avoid that day: three sixty-four out of three sixty-five.",
+     "caption": "Person 2 must avoid that day: 364 out of 365.",
+     "pause": 0.25
+    },
+    {
+     "text": "Person three: three sixty-three out of three sixty-five. And so on, down to person twenty-three: three forty-three out of three sixty-five.",
+     "caption": "Person 3: 363 out of 365. And so on, down to person 23: 343 out of 365.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "The result",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Each fraction is only a little below one. But multiply twenty-two of them, and the total shrinks fast.",
+     "caption": "Each fraction is only a little below 1. But multiply 22 of them, and the total shrinks fast.",
+     "pause": 0.25
+    },
+    {
+     "text": "Multiply them all, and the chance that everyone is different is only 49.3 percent.",
+     "caption": "Multiply them all, and the chance that everyone is different is only 49.3%.",
+     "pause": 0.25
+    },
+    {
+     "text": "So the chance of at least one shared birthday is a hundred minus 49.3: that's 50.7 percent.",
+     "caption": "So the chance of at least one shared birthday is 100 minus 49.3: that's 50.7%.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "The curve",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Watch how fast it climbs.",
+     "caption": "Watch how fast it climbs.",
+     "pause": 0.25
+    },
+    {
+     "text": "Ten people: twelve percent. Twenty-three people: fifty. Forty people: eighty-nine. Fifty-seven people: ninety-nine percent.",
+     "caption": "10 people: 12%. 23 people: 50%. 40 people: 89%. 57 people: 99%.",
+     "pause": 0.25
     }
    ]
   },
   {
    "id": "s8",
-   "title": "Quiz and call to action",
-   "lead": 0.35,
-   "hold": 2.3,
+   "title": "Simulation",
+   "lead": 0.3,
+   "hold": 0.4,
    "segments": [
     {
-     "text": "Quick quiz!",
-     "caption": "Quick quiz!",
-     "pause": 0.3
+     "text": "Still don't believe it? We simulated a thousand rooms, each with twenty-three random people.",
+     "caption": "Still don't believe it? We simulated 1,000 rooms, each with 23 random people.",
+     "pause": 0.25
     },
     {
-     "text": "TODO question?",
-     "caption": "TODO question?",
-     "pause": 5.7
+     "text": "In five hundred and seven of them, two people shared a birthday. Half the rooms, just like the maths said.",
+     "caption": "In 507 of them, two people shared a birthday. Half the rooms, just like the maths said.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "Real life",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "And this isn't just a party trick.",
+     "caption": "And this isn't just a party trick.",
+     "pause": 0.25
     },
     {
-     "text": "TODO answer!",
-     "caption": "TODO answer!",
-     "pause": 0.4
+     "text": "Hackers use it. The birthday attack finds two files with the same digital fingerprint much faster than you'd expect. That's why passwords and bank systems use extremely long codes.",
+     "caption": "Hackers use it. The birthday attack finds two files with the same digital fingerprint much faster than you'd expect. That's why passwords and bank systems use extremely long codes.",
+     "pause": 0.25
     },
     {
-     "text": "TODO one-sentence why.",
-     "caption": "TODO one-sentence why.",
-     "pause": 0.55
+     "text": "And in a class of sixty students? A shared birthday is 99.4 percent certain.",
+     "caption": "And in a class of 60 students? A shared birthday is 99.4% certain.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "title": "Remember this",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "So remember: when everyone is compared with everyone, the pairs explode, and coincidences become likely.",
+     "caption": "So remember: when everyone is compared with everyone, the pairs explode, and coincidences become likely.",
+     "pause": 0.25
+    },
+    {
+     "text": "It's also why lottery results seem to repeat suspiciously often. With enough draws, a repeat is expected.",
+     "caption": "It's also why lottery results seem to repeat suspiciously often. With enough draws, a repeat is expected.",
+     "pause": 0.25
+    },
+    {
+     "text": "Save this, and test it in your next group chat.",
+     "caption": "Save this, and test it in your next group chat.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "title": "Poll, teaser and CTA",
+   "lead": 0.35,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Your turn: in a class of thirty students, what's the chance that two share a birthday? Vote in the caption poll!",
+     "caption": "Your turn: in a class of 30 students, what's the chance that two share a birthday? Vote in the caption poll!",
+     "pause": 0.25
+    },
+    {
+     "text": "Next paradox: the Monty Hall problem.",
+     "caption": "Next paradox: the Monty Hall problem.",
+     "pause": 0.25
     },
     {
      "text": "Follow for data science made simple!",
      "caption": "Follow for data science made simple!",
-     "pause": 0.3
+     "pause": 0.25
     }
    ]
   }

@@ -14,7 +14,7 @@ export const PPALS: Record<string, PPal> = {
   pink: { bg: "#1A0014", bg2: "#5E0A4C", deep: "#0A0008", glow: "#FF4FD8", ink: "#FFFFFF", banner: "#00F0FF", bannerText: "#14001A", hot: "#00F0FF", dim: "#FFC2F2" },
   teal: { bg: "#001A1A", bg2: "#004D4D", deep: "#000A0A", glow: "#2DD4BF", ink: "#FFFFFF", banner: "#FF5C7A", bannerText: "#1A0008", hot: "#FF5C7A", dim: "#B2F5EA" },
 };
-export const PARADOX_PAL = "acid";
+export const PARADOX_PAL = "orange";
 
 export const ParadoxCover: React.FC<{ n: number; lines: React.ReactNode; big: React.ReactNode; sub?: React.ReactNode; art?: React.ReactNode; pal?: string }> = ({ n, lines, big, sub, art, pal }) => {
   const P = PPALS[pal ?? PARADOX_PAL];
@@ -25,7 +25,7 @@ export const ParadoxCover: React.FC<{ n: number; lines: React.ReactNode; big: Re
         PARADOX <span style={{ fontSize: 88 }}>#{n}</span>
       </div>
       <div style={{ position: "absolute", left: 0, right: 0, top: 450, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 92, lineHeight: 1.02, letterSpacing: "-0.03em", color: P.ink, whiteSpace: "nowrap" }}>{lines}</div>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 820, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 250, lineHeight: 1, color: P.hot, textShadow: glowText(P.hot, 0.8), whiteSpace: "nowrap" }}>{big}</div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 830, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 230, lineHeight: 1, color: P.hot, textShadow: glowText(P.hot, 0.8), whiteSpace: "nowrap" }}>{big}</div>
       {sub ? <div style={{ position: "absolute", left: 0, right: 0, top: 1100, textAlign: "center", fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 46, color: P.dim, whiteSpace: "nowrap" }}>{sub}</div> : null}
       {art}
       <div style={{ position: "absolute", left: 0, right: 0, top: 1580, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 700, fontSize: 40, color: P.ink }}>

@@ -1,4 +1,3 @@
-// ADAPT: keep instruments, section styles, SFX kit and mastering; rewrite the ev/sections timing for this video's scenes.
 // Original score + SFX kit, synthesized from scratch (no samples, deterministic).
 // Reads src/timeline.json so the arrangement changes and musical hits land on the same moments the visuals use.
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -34,9 +33,9 @@ const ev = {
   quiz: sent("s11", 0), // the poll prompt
   tease: sent("s11", 1),
   follow: sent("s11", 2),
-  acc1: cueS("s3", 2, "edge"), // house edge 2.7%
-  acc2: sent("s6", 0), // that's the law of large numbers
-  acc3: sent("s10", 1), // save this
+  acc1: cueS("s3", 0, "50.7%."), // the reveal
+  acc2: sent("s6", 2), // 50.7% worked out
+  acc3: sent("s10", 2), // save this
 };
 
 // ---------- dsp utils ----------

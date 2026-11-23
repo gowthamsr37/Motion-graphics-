@@ -1,69 +1,63 @@
-// SCENE 2 — HOOK: a WINNER card (+Rs 4,50,000 tonight · Goa) pops with a chip shower; then the CASINO card with a profit
-// line that only climbs, month after month ("never loses: not this month, not this year"); then RIGGED? gets struck
-// out and JUST MATHS lands.
+// SCENE 2 — HOOK: a cricket field (oval, pitch) with 22 players + 1 umpire popping in (counter to 23); "same birthday?";
+// the gut guess 23/365 ≈ 6%; COMMENT YOUR GUESS pill.
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
-import { Chip } from "../components/Casino";
-import { Panel, Pill, Pop, Txt } from "../components/L";
+import { Guy, HOT } from "../components/BKit";
+import { Pill, Pop, Txt } from "../components/L";
 import { ease } from "../components/Motion";
 import { alpha, theme } from "../theme";
 import { useScene } from "../timing";
 
 const C = theme.colors;
-const PROFIT = [2, 5, 4, 8, 11, 10, 14, 17, 16, 20, 23, 27];
+const POS = Array.from({ length: 23 }, (_, i) => {
+  if (i === 22) return [540, 610];
+  const a = (i / 22) * Math.PI * 2;
+  const rr = i % 2 ? 290 : 200;
+  return [540 + Math.cos(a) * rr * 1.25, 610 + Math.sin(a) * rr * 0.78];
+});
 
 export const S2Hook: React.FC = () => {
   const frame = useCurrentFrame();
   const s = useScene("s2");
-  const W = s.cueS(0, "someone");
-  const NEVER = s.cueS(1, "never");
-  const RIG = s.cueS(2, "rigged?");
-  const NO = s.cueS(2, "No.");
-  const MATH = s.cueS(2, "maths.");
-  const line = ease(frame, [NEVER - 4, NEVER + 50], [0, 1]);
-  const pts = PROFIT.map((v, i) => [80 + i * 62, 230 - v * 7.5] as [number, number]);
-  const shown = pts.slice(0, Math.max(2, Math.ceil(line * pts.length)));
+  const P22 = s.cueS(0, "22");
+  const UMP = s.cueS(0, "umpire.");
+  const Q = s.sent(1).from;
+  const GUESS = s.sent(2).from;
+  const COM = s.cueS(2, "Comment");
+  const count = Math.min(23, Math.floor(ease(frame, [P22 - 4, UMP + 4], [0, 23], (t) => t)));
   return (
     <AbsoluteFill>
-      <Pop x={540} y={250} at={s.sent(0).from - 4}>
-        <Txt size={40} color={C.dim} font="body">every night in Goa…</Txt>
-      </Pop>
-      <Pop x={540} y={440} at={W - 6}>
-        <Panel w={820} h={250} color={C.yellow}>
-          <Txt size={30} color={C.dim} font="body" style={{ letterSpacing: "0.18em" }}>A PLAYER, TONIGHT</Txt>
-          <Txt size={86} color={C.yellow} glow>+ Rs 4,50,000</Txt>
-        </Panel>
-      </Pop>
-      {[0, 1, 2, 3, 4, 5].map((i) => {
-        const t = ease(frame, [W + i * 3, W + 30 + i * 3], [0, 1]);
-        return t > 0 && t < 1 ? (
-          <div key={i} style={{ position: "absolute", left: 200 + i * 140, top: 300 + t * 280, opacity: 1 - t, transform: `rotate(${t * 200 * (i % 2 ? 1 : -1)}deg)` }}>
-            <Chip size={70} color={[C.red, C.green, C.cyan][i % 3]} label="" />
+      <svg width={1080} height={1920} viewBox="0 0 1080 1920" style={{ position: "absolute", inset: 0, opacity: ease(frame, [0, 10], [0, 1]) }}>
+        <ellipse cx={540} cy={610} rx={460} ry={300} fill={alpha(C.green, 0.12)} stroke={alpha(C.green, 0.7)} strokeWidth={4} />
+        <rect x={515} y={530} width={50} height={160} rx={6} fill={alpha("#D9B77A", 0.35)} stroke={alpha("#D9B77A", 0.8)} strokeWidth={2} />
+      </svg>
+      {POS.map((p, i) => {
+        const on = i < count;
+        return (
+          <div key={i} style={{ position: "absolute", left: p[0], top: p[1], transform: `translate(-50%, -60%) scale(${on ? 1 : 0})`, transition: "none" }}>
+            <Guy size={46} color={i === 22 ? C.yellow : C.text} />
           </div>
-        ) : null;
+        );
       })}
-      <Pop x={540} y={850} at={s.sent(1).from - 4}>
-        <Panel w={820} h={400} color={C.green} style={{ justifyContent: "flex-start", paddingTop: 26 }}>
-          <Txt size={44}>
-            THE CASINO: <span style={{ color: C.green }}>never loses</span>
-          </Txt>
-          <svg width={820} height={260} viewBox="0 0 820 260">
-            <line x1={70} y1={240} x2={790} y2={240} stroke={alpha(C.text, 0.4)} strokeWidth={3} />
-            <polyline points={shown.map((p) => p.join(",")).join(" ")} fill="none" stroke={C.green} strokeWidth={7} strokeLinejoin="round" strokeLinecap="round" style={{ filter: `drop-shadow(0 0 8px ${C.green})` }} />
-            {["JAN", "APR", "JUL", "OCT", "DEC"].map((m, i) => (
-              <text key={m} x={80 + [0, 3, 6, 9, 11][i] * 62} y={258} textAnchor="middle" fontFamily={theme.fonts.body} fontWeight={700} fontSize={20} fill={C.dim}>{m}</text>
-            ))}
-          </svg>
-        </Panel>
+      <Pop x={540} y={250} at={P22 - 4}>
+        <Txt size={64} font="mono" color={C.text}>
+          {count} <span style={{ fontFamily: theme.fonts.body, fontSize: 40, color: C.dim }}>people</span>
+        </Txt>
       </Pop>
-      <Pop x={330} y={1180} at={RIG - 4}>
-        <div style={{ position: "relative" }}>
-          <Txt size={60} color={C.red}>RIGGED?</Txt>
-          <div style={{ position: "absolute", left: -10, right: -10, top: "50%", height: 7, background: C.text, transform: `scaleX(${ease(frame, [NO - 2, NO + 6], [0, 1])}) rotate(-6deg)`, transformOrigin: "left center", borderRadius: 4 }} />
+      <Pop x={540} y={1000} at={Q - 4}>
+        <Txt size={60}>
+          same <span style={{ color: HOT }}>birthday</span>?
+        </Txt>
+      </Pop>
+      <Pop x={540} y={1120} at={GUESS - 2}>
+        <Txt size={42} font="body">
+          gut guess: 23 ÷ 365 ≈ <span style={{ color: C.yellow }}>6%</span>
+        </Txt>
+      </Pop>
+      <Pop x={540} y={1260} at={COM - 4}>
+        <div style={{ transform: `scale(${1 + Math.abs(Math.sin(frame / 8)) * 0.04})` }}>
+          <Pill color={HOT} size={40} solid>COMMENT YOUR GUESS</Pill>
         </div>
-      </Pop>
-      <Pop x={750} y={1180} at={MATH - 6}>
-        <Pill color={C.cyan} size={46} solid>JUST MATHS</Pill>
       </Pop>
     </AbsoluteFill>
   );

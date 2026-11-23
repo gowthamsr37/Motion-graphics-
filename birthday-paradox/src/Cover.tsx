@@ -13,12 +13,12 @@ export const Cover: React.FC = () => {
       n={1}
       lines={
         <>
-          <div>ONLY 23 PEOPLE.</div>
-          <div>SAME BIRTHDAY?</div>
+          <div>THE BIRTHDAY</div>
+          <div style={{ fontSize: 120, color: P.hot }}>PARADOX</div>
         </>
       }
-      big="50%"
-      sub="your brain says 6%. maths says 50%."
+      big={<><span style={{ fontSize: 120, color: P.ink, textShadow: "none" }}>23 → </span>50%</>}
+      sub="23 people. 50% chance two share a birthday."
       art={
         <div style={{ position: "absolute", left: 0, right: 0, top: 1240, display: "flex", justifyContent: "center", gap: 10, flexWrap: "wrap", padding: "0 150px" }}>
           {Array.from({ length: 23 }, (_, i) => (

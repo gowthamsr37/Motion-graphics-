@@ -1,59 +1,57 @@
-// SCENE 10 — REMEMBER THIS (save moment). Two cards: SMALL SAMPLES CAN LIE (a jumpy line, red) vs LARGE SAMPLES TELL THE
-// TRUTH (a line settling on its target, green); then the SAVE THIS bookmark pill and "send it to the friend who says
-// 'this time I'll definitely win'".
+// SCENE 10 — REMEMBER THIS. "Everyone vs everyone → the pairs explode → coincidences become likely" (3 steps, with a
+// growing pair count 10 → 45 → 253 → 2,415); the lottery note (repeats are expected); SAVE THIS + test it in your group chat.
 import React from "react";
 import { AbsoluteFill } from "remotion";
 import { Bookmark } from "../components/Guide";
+import { HOT } from "../components/BKit";
 import { Panel, Pill, Pop, Txt } from "../components/L";
+
 import { theme } from "../theme";
 import { useScene } from "../timing";
 
 const C = theme.colors;
-const jumpy = Array.from({ length: 9 }, (_, i) => `${20 + i * 40},${70 + Math.sin(i * 2.1) * 50}`).join(" ");
-const calm = Array.from({ length: 40 }, (_, i) => `${20 + i * 8.2},${70 + Math.sin(i * 1.4) * 50 * Math.exp(-i / 9)}`).join(" ");
 
 export const S10Rule: React.FC = () => {
   const s = useScene("s10");
-  const SMALL = s.cueS(0, "small");
-  const LARGE = s.cueS(0, "Large");
-  const SAVE = s.cueS(1, "Save");
-  const SEND = s.cueS(1, "send");
+  const steps = [
+    { t: "everyone vs everyone", at: s.cueS(0, "everyone") },
+    { t: "the pairs explode", at: s.cueS(0, "pairs") },
+    { t: "coincidences become likely", at: s.cueS(0, "coincidences") },
+  ];
+  const LOT = s.sent(1).from;
+  const SAVE = s.cueS(2, "Save");
   return (
     <AbsoluteFill>
       <Pop x={540} y={250} at={s.sent(0).from - 4}>
         <Txt size={62} color={C.yellow} glow>REMEMBER THIS</Txt>
       </Pop>
-      <Pop x={290} y={650} at={SMALL - 6}>
-        <Panel w={470} h={520} color={C.red}>
-          <Txt size={30} color={C.dim} font="body">small samples</Txt>
-          <Txt size={62} color={C.red} glow>CAN LIE</Txt>
-          <svg width={360} height={140} viewBox="0 0 360 140">
-            <line x1={10} y1={70} x2={350} y2={70} stroke={C.green} strokeWidth={3} strokeDasharray="10 8" />
-            <polyline points={jumpy} fill="none" stroke={C.red} strokeWidth={6} strokeLinejoin="round" />
-          </svg>
-          <Txt size={30} font="body">n = 10</Txt>
-        </Panel>
+      {steps.map((k, i) => (
+        <Pop key={k.t} x={540} y={400 + i * 130} at={k.at - 4}>
+          <Panel w={860} h={104} color={[C.cyan, HOT, C.green][i]} style={{ flexDirection: "row", gap: 18 }}>
+            <Txt size={34} color={[C.cyan, HOT, C.green][i]}>{i + 1}</Txt>
+            <Txt size={44}>{k.t}</Txt>
+          </Panel>
+        </Pop>
+      ))}
+      <Pop x={540} y={850} at={steps[1].at + 6}>
+        <Txt size={34} font="mono" color={C.dim}>
+          5 → 10 · 10 → 45 · 23 → <span style={{ color: HOT }}>253</span> · 70 → 2,415 pairs
+        </Txt>
       </Pop>
-      <Pop x={790} y={650} at={LARGE - 6}>
-        <Panel w={470} h={520} color={C.green}>
-          <Txt size={30} color={C.dim} font="body">large samples</Txt>
-          <Txt size={50} color={C.green} glow>TELL THE TRUTH</Txt>
-          <svg width={360} height={140} viewBox="0 0 360 140">
-            <line x1={10} y1={70} x2={350} y2={70} stroke={C.green} strokeWidth={3} strokeDasharray="10 8" />
-            <polyline points={calm} fill="none" stroke={C.cyan} strokeWidth={6} strokeLinejoin="round" />
-          </svg>
-          <Txt size={30} font="body">n = 10,000</Txt>
-        </Panel>
+      <Pop x={540} y={1000} at={LOT - 4}>
+        <Txt size={38} font="body">
+          lottery numbers &quot;repeating&quot;? <span style={{ color: C.yellow }}>expected</span>
+        </Txt>
       </Pop>
-      <Pop x={540} y={1060} at={SAVE - 4}>
+      <Pop x={540} y={1160} at={SAVE - 4}>
         <Pill color={C.green} size={42}>
           <Bookmark size={42} color={C.green} />
           SAVE THIS
         </Pill>
       </Pop>
-      <Pop x={540} y={1180} at={SEND - 2}>
+      <Pop x={540} y={1270} at={s.cueS(2, "test") - 2}>
         <Txt size={36} font="body">
-          send it to the friend who says <span style={{ color: C.yellow }}>&quot;this time I&apos;ll win&quot;</span>
+          test it in your next <span style={{ color: HOT }}>group chat</span>
         </Txt>
       </Pop>
     </AbsoluteFill>
