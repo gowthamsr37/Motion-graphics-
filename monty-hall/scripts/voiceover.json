@@ -1,0 +1,250 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Title card",
+   "lead": 0.2,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "The Monty Hall problem.",
+     "caption": "The Monty Hall problem.",
+     "pause": 0.25
+    },
+    {
+     "text": "The game, the answer that broke the internet, three easy ways to see it, and a thousand-game test. Save this one!",
+     "caption": "The game, the answer that broke the internet, 3 easy ways to see it, and a 1,000-game test. Save this one!",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "The game",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "You're on a game show. Three doors. Behind one is a brand new car. Behind the other two: goats.",
+     "caption": "You're on a game show. Three doors. Behind one is a brand new car. Behind the other two: goats.",
+     "pause": 0.25
+    },
+    {
+     "text": "You pick door number one.",
+     "caption": "You pick door number one.",
+     "pause": 0.25
+    },
+    {
+     "text": "The host, who knows where the car is, opens door number three. A goat.",
+     "caption": "The host, who knows where the car is, opens door number three. A goat.",
+     "pause": 0.25
+    },
+    {
+     "text": "Now he asks: do you want to switch to door number two? Stick or switch? Comment your answer.",
+     "caption": "Now he asks: do you want to switch to door number two? Stick or switch? Comment your answer.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "The answer",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Most people say it doesn't matter. Two doors left, so fifty-fifty.",
+     "caption": "Most people say it doesn't matter. Two doors left, so 50-50.",
+     "pause": 0.25
+    },
+    {
+     "text": "Wrong. If you switch, you win two out of three times. Switching doubles your chance.",
+     "caption": "Wrong. If you switch, you win 2 out of 3 times. Switching doubles your chance.",
+     "pause": 0.25
+    },
+    {
+     "text": "In 1990, a columnist named Marilyn vos Savant said this, and thousands of readers, including mathematicians, wrote in to say she was wrong. She was right.",
+     "caption": "In 1990, a columnist named Marilyn vos Savant said this, and thousands of readers, including mathematicians, wrote in to say she was wrong. She was right.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Way 1: your first pick",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Here's the first way to see it.",
+     "caption": "Here's the first way to see it.",
+     "pause": 0.25
+    },
+    {
+     "text": "When you picked door one, you had a one in three chance of being right. That never changes.",
+     "caption": "When you picked door one, you had a 1 in 3 chance of being right. That never changes.",
+     "pause": 0.25
+    },
+    {
+     "text": "So there's a two in three chance the car is behind one of the other two doors. The host just opens the goat among them, and the whole two in three moves onto the last door.",
+     "caption": "So there's a 2 in 3 chance the car is behind one of the other two doors. The host just opens the goat among them, and the whole 2 in 3 moves onto the last door.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Way 2: all three cases",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Second way: just list every case.",
+     "caption": "Second way: just list every case.",
+     "pause": 0.25
+    },
+    {
+     "text": "Car behind door one: switching loses.",
+     "caption": "Car behind door one: switching loses.",
+     "pause": 0.25
+    },
+    {
+     "text": "Car behind door two: the host opens three, you switch to two, you win.",
+     "caption": "Car behind door two: the host opens three, you switch to two, you win.",
+     "pause": 0.25
+    },
+    {
+     "text": "Car behind door three: the host opens two, you switch to three, you win.",
+     "caption": "Car behind door three: the host opens two, you switch to three, you win.",
+     "pause": 0.25
+    },
+    {
+     "text": "Switching wins in two of the three cases.",
+     "caption": "Switching wins in 2 of the 3 cases.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Way 3: a hundred doors",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Third way, the one that makes it click. Imagine a hundred doors.",
+     "caption": "Third way, the one that makes it click. Imagine 100 doors.",
+     "pause": 0.25
+    },
+    {
+     "text": "You pick one. The host opens ninety-eight goat doors, leaving just your door and one other.",
+     "caption": "You pick one. The host opens 98 goat doors, leaving just your door and one other.",
+     "pause": 0.25
+    },
+    {
+     "text": "Would you stick with your random pick, or switch to the one door he carefully avoided? Obviously, switch.",
+     "caption": "Would you stick with your random pick, or switch to the one door he carefully avoided? Obviously, switch.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "1,000-game test",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Still not convinced? We played a thousand games on a computer.",
+     "caption": "Still not convinced? We played 1,000 games on a computer.",
+     "pause": 0.25
+    },
+    {
+     "text": "Always sticking won three hundred and thirty-three cars. Always switching won six hundred and sixty-seven.",
+     "caption": "Always sticking won 333 cars. Always switching won 667.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "The key",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "The key is the host. He knows where the car is, and he never opens it.",
+     "caption": "The key is the host. He knows where the car is, and he never opens it.",
+     "pause": 0.25
+    },
+    {
+     "text": "His choice isn't random, so it gives you information. That's why the odds aren't fifty-fifty.",
+     "caption": "His choice isn't random, so it gives you information. That's why the odds aren't 50-50.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "Real life",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "And it's not just game shows. When new information arrives, update your odds. Don't freeze on your first guess.",
+     "caption": "And it's not just game shows. When new information arrives, update your odds. Don't freeze on your first guess.",
+     "pause": 0.25
+    },
+    {
+     "text": "That's exactly how doctors read test results, how spam filters learn, and how data scientists think. It's called Bayesian thinking.",
+     "caption": "That's exactly how doctors read test results, how spam filters learn, and how data scientists think. It's called Bayesian thinking.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "title": "Remember this",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "So remember: always switch. Two in three beats one in three.",
+     "caption": "So remember: always switch. 2 in 3 beats 1 in 3.",
+     "pause": 0.25
+    },
+    {
+     "text": "Save this, and try it on a friend with three cups and a coin.",
+     "caption": "Save this, and try it on a friend with three cups and a coin.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "title": "Poll, teaser and CTA",
+   "lead": 0.35,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Your turn: in the hundred-door version, if you switch, what's your chance of winning the car? Vote in the caption poll!",
+     "caption": "Your turn: in the 100-door version, if you switch, what's your chance of winning the car? Vote in the caption poll!",
+     "pause": 0.25
+    },
+    {
+     "text": "Next paradox: the false positive paradox.",
+     "caption": "Next paradox: the false positive paradox.",
+     "pause": 0.25
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.25
+    }
+   ]
+  }
+ ]
+}
