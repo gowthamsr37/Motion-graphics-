@@ -1,0 +1,224 @@
+{
+  "voice": "am_michael",
+  "lang": "en-us",
+  "speed": 1.0,
+  "fix": [
+    [
+      "ˈɪpəl",
+      "ˌaɪpˌiːˈɛl"
+    ],
+    [
+      "ɪnnˈɪŋz",
+      "ˈɪnɪŋz"
+    ],
+    [
+      "ɹˈɪʃæb pˈænt",
+      "ɹˈɪʃəb pˈʌnt"
+    ],
+    [
+      "pˈænt",
+      "pˈʌnt"
+    ],
+    [
+      "də vˈɪlɪɹz",
+      "də vˈɪljɚz"
+    ],
+    [
+      "lˈaɪɑːn",
+      "lˈaɪən"
+    ],
+    [
+      "tʃˈɛnaɪ",
+      "tʃɛnˈaɪ"
+    ],
+    [
+      "sˈɪd kɜːmˈɑːni",
+      "sˈaɪəd kɪɹmˈɑːni"
+    ],
+    [
+      "fˈæɹɑːk",
+      "fəɹˈuːk"
+    ],
+    [
+      "wˈɑːɾəlɪŋ",
+      "wˈɑːtlɪŋ"
+    ],
+    [
+      "ɡˈɪlkɹaɪst",
+      "ɡˈɪlkɹɪst"
+    ]
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.5,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "Nine Test hundreds. No Indian wicketkeeper has more.",
+          "caption": "Nine Test hundreds. No Indian wicketkeeper has more.",
+          "pause": 0.5
+        },
+        {
+          "text": "MS Dhoni made six, in ninety Tests. Rishabh Pant has nine, in fifty-three.",
+          "caption": "MS Dhoni made six, in 90 Tests. Rishabh Pant has nine, in 53.",
+          "pause": 0.5
+        },
+        {
+          "text": "But the hundreds aren't what make him different.",
+          "caption": "But the hundreds aren't what make him different.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.3,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "Line up India's great keepers. Farokh Engineer, two hundreds in forty-six Tests. Syed Kirmani, two in eighty-eight.",
+          "caption": "Line up India's great keepers. Farokh Engineer, two hundreds in 46 Tests. Syed Kirmani, two in 88.",
+          "pause": 0.45
+        },
+        {
+          "text": "Wriddhiman Saha, three in forty. Dhoni, six in ninety.",
+          "caption": "Wriddhiman Saha, three in 40. Dhoni, six in 90.",
+          "pause": 0.45
+        },
+        {
+          "text": "Pant makes a hundred every six Tests. Dhoni made one every fifteen.",
+          "caption": "Pant makes a hundred every six Tests. Dhoni made one every fifteen.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.3,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "Now the world. Every dot is a leading keeper, placed by average and strike rate.",
+          "caption": "Now the world. Every dot is a leading keeper, placed by average and strike rate.",
+          "pause": 0.45
+        },
+        {
+          "text": "Most sit here: averaging in the thirties, scoring fifty or sixty runs per hundred balls.",
+          "caption": "Most sit here: averaging in the thirties, scoring fifty or sixty runs per hundred balls.",
+          "pause": 0.45
+        },
+        {
+          "text": "Pant sits up here. Almost forty-five, at seventy-four. On this chart, only Adam Gilchrist is higher and faster: forty-seven, at eighty-two.",
+          "caption": "Pant sits up here. Almost 45, at 74. On this chart, only Adam Gilchrist is higher and faster: 47, at 82.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.3,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "Here's what really sets him apart. Compare each keeper with the top-order batters in his own team.",
+          "caption": "Here's what really sets him apart. Compare each keeper with the top-order batters in his own team.",
+          "pause": 0.45
+        },
+        {
+          "text": "Watling and Saha scored slower than theirs. Dhoni, six runs per hundred balls faster.",
+          "caption": "Watling and Saha scored slower than theirs. Dhoni, six runs per hundred balls faster.",
+          "pause": 0.45
+        },
+        {
+          "text": "Pant is twenty-five faster. At Edgbaston, with India ninety-eight for five, he made one hundred and forty-six off one hundred and eleven balls.",
+          "caption": "Pant is 25 faster. At Edgbaston, with India 98 for 5, he made 146 off 111 balls.",
+          "pause": 0.5
+        },
+        {
+          "text": "He doesn't fit into a team's tempo. He changes it.",
+          "caption": "He doesn't fit into a team's tempo. He changes it.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "And he does it with sixes. A hundred and eight, the most by any wicketkeeper in Test history. Gilchrist hit a hundred.",
+          "caption": "And he does it with sixes. 108, the most by any wicketkeeper in Test history. Gilchrist hit 100.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.3,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "At home, he averages almost fifty, and against spin he scores at almost a run a ball. Away, he averages almost forty-three. Dhoni averaged thirty-three away from home.",
+          "caption": "At home, he averages almost 50, and against spin he scores at almost a run a ball. Away, he averages almost 43. Dhoni averaged 33 away from home.",
+          "pause": 0.45
+        },
+        {
+          "text": "Since 2002, India's other keepers have three away hundreds between them. Pant has seven, all in SENA countries, one in each of them. Dhoni never made one there.",
+          "caption": "Since 2002, India's other keepers have three away hundreds between them. Pant has seven, all in SENA countries, one in each of them. Dhoni never made one there.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "lead": 0.3,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "Now, the hard part. When he walks in with four down for under a hundred and fifty, Pant averages thirty-four. De Kock and Watling do better.",
+          "caption": "Now, the hard part. When he walks in with four down for under 150, Pant averages 34. De Kock and Watling do better.",
+          "pause": 0.5
+        },
+        {
+          "text": "But watch the fourth innings, when Tests are decided. A hundred and fourteen at the Oval. Ninety-seven at Sydney, to save a Test. Eighty-nine not out at the Gabba, to win one. Sixty-four at Mumbai, when the rest of the innings added fifty-seven.",
+          "caption": "But watch the fourth innings, when Tests are decided. 114 at the Oval. 97 at Sydney, to save a Test. 89 not out at the Gabba, to win one. 64 at Mumbai, when the rest of the innings added 57.",
+          "pause": 0.5
+        },
+        {
+          "text": "In fourth innings, he averages forty-one. Dhoni averaged thirty-three.",
+          "caption": "In fourth innings, he averages 41. Dhoni averaged 33.",
+          "pause": 0.45
+        },
+        {
+          "text": "And in Tests India lose, Pant still averages thirty-nine. Dhoni averaged twenty-seven. No keeper here fights harder in defeat.",
+          "caption": "And in Tests India lose, Pant still averages 39. Dhoni averaged 27. No keeper here fights harder in defeat.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "lead": 0.3,
+      "hold": 1.9,
+      "segments": [
+        {
+          "text": "So, is he India's greatest keeper-batter? By hundreds, by tempo, by what he does away from home, nobody else is close.",
+          "caption": "So, is he India's greatest keeper-batter? By hundreds, by tempo, by what he does away from home, nobody else is close.",
+          "pause": 0.55
+        },
+        {
+          "text": "The gloves? That's another debate.",
+          "caption": "The gloves? That's another debate.",
+          "pause": 0.55
+        },
+        {
+          "text": "Beyond The Scoreboard.",
+          "caption": "Beyond The Scoreboard.",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}

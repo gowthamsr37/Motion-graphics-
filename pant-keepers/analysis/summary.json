@@ -1,0 +1,246 @@
+{
+ "vs_spin": {
+  "runs": 1847,
+  "balls": 2147,
+  "outs": 35,
+  "avg": 52.8,
+  "sr": 86.0,
+  "bpd": 61.3,
+  "sixes": 75,
+  "fours": 181,
+  "bp6": 28.6
+ },
+ "vs_pace": {
+  "runs": 1795,
+  "balls": 2753,
+  "outs": 46,
+  "avg": 39.0,
+  "sr": 65.2,
+  "bpd": 59.8,
+  "sixes": 25,
+  "fours": 209,
+  "bp6": 110.1
+ },
+ "all_balls": {
+  "runs": 3644,
+  "balls": 4902,
+  "outs": 81,
+  "avg": 45.0,
+  "sr": 74.3,
+  "bpd": 60.5,
+  "sixes": 100,
+  "fours": 390,
+  "bp6": 49.0
+ },
+ "spin_home": {
+  "runs": 806,
+  "balls": 812,
+  "outs": 13,
+  "avg": 62.0,
+  "sr": 99.3,
+  "sixes": 33
+ },
+ "spin_away": {
+  "runs": 1041,
+  "balls": 1335,
+  "outs": 22,
+  "avg": 47.3,
+  "sr": 78.0,
+  "sixes": 42
+ },
+ "vs_lyon": {
+  "runs": 258,
+  "balls": 404,
+  "outs": 6,
+  "avg": 43.0,
+  "sr": 63.9,
+  "bpd": 67.3,
+  "sixes": 7,
+  "fours": 21,
+  "bp6": 57.7
+ },
+ "top_bowlers_out": [
+  [
+   "NM Lyon",
+   6
+  ],
+  [
+   "OE Robinson",
+   4
+  ],
+  [
+   "Mehedi Hasan Miraz",
+   4
+  ],
+  [
+   "PJ Cummins",
+   4
+  ],
+  [
+   "JM Anderson",
+   3
+  ],
+  [
+   "MM Ali",
+   3
+  ]
+ ],
+ "kinds": [
+  [
+   "caught",
+   61
+  ],
+  [
+   "bowled",
+   10
+  ],
+  [
+   "lbw",
+   4
+  ],
+  [
+   "caught and bowled",
+   4
+  ],
+  [
+   "run out",
+   3
+  ],
+  [
+   "stumped",
+   2
+  ]
+ ],
+ "sixes_data": 100,
+ "nineties": [
+  [
+   "2018-10-04",
+   "West Indies",
+   "Rajkot",
+   92,
+   84,
+   "caught",
+   "D Bishoo",
+   "spin"
+  ],
+  [
+   "2018-10-12",
+   "West Indies",
+   "Hyderabad",
+   92,
+   134,
+   "caught",
+   "ST Gabriel",
+   "pace"
+  ],
+  [
+   "2021-01-07",
+   "Australia",
+   "Sydney",
+   97,
+   118,
+   "caught",
+   "NM Lyon",
+   "spin"
+  ],
+  [
+   "2021-02-05",
+   "England",
+   "Chennai",
+   91,
+   88,
+   "caught",
+   "DM Bess",
+   "spin"
+  ],
+  [
+   "2022-03-04",
+   "Sri Lanka",
+   "Chandigarh",
+   96,
+   97,
+   "bowled",
+   "RAS Lakmal",
+   "pace"
+  ],
+  [
+   "2022-12-22",
+   "Bangladesh",
+   "Dhaka",
+   93,
+   104,
+   "caught",
+   "Mehedi Hasan Miraz",
+   "spin"
+  ],
+  [
+   "2024-10-16",
+   "New Zealand",
+   "Bengaluru",
+   99,
+   105,
+   "bowled",
+   "W O'Rourke",
+   "pace"
+  ]
+ ],
+ "in_90s": {
+  "runs": 94,
+  "balls": 128,
+  "outs": 7,
+  "sr": 73.4
+ },
+ "in_70_89_sr": 104.9,
+ "baseline_90s_share": 0.176,
+ "most_90s_2002_on": [
+  [
+   "AB de Villiers",
+   7
+  ],
+  [
+   "AN Cook",
+   7
+  ],
+  [
+   "RR Pant",
+   7
+  ],
+  [
+   "AD Mathews",
+   5
+  ],
+  [
+   "UT Khawaja",
+   5
+  ],
+  [
+   "SPD Smith",
+   5
+  ],
+  [
+   "Misbah-ul-Haq",
+   5
+  ],
+  [
+   "MS Dhoni",
+   5
+  ],
+  [
+   "KC Brathwaite",
+   5
+  ],
+  [
+   "KP Pietersen",
+   5
+  ],
+  [
+   "MEK Hussey",
+   5
+  ],
+  [
+   "KS Williamson",
+   5
+  ]
+ ],
+ "pant_90s_share": 0.438
+}

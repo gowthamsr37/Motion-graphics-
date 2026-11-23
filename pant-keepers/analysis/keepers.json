@@ -1,0 +1,2144 @@
+{
+ "RR Pant": {
+  "country": "India",
+  "tests": 51,
+  "results": {
+   "W": 24,
+   "L": 21,
+   "D": 6
+  },
+  "all": {
+   "inns": 89,
+   "runs": 3644,
+   "outs": 84,
+   "balls": 4902,
+   "100s": 8,
+   "50s": 20,
+   "sixes": 99,
+   "avg": 43.4,
+   "sr": 74.3,
+   "mates_sr": 49.4
+  },
+  "home": {
+   "inns": 25,
+   "runs": 1110,
+   "outs": 23,
+   "balls": 1242,
+   "100s": 2,
+   "50s": 9,
+   "sixes": 38,
+   "avg": 48.3,
+   "sr": 89.4,
+   "mates_sr": 58.1
+  },
+  "away": {
+   "inns": 64,
+   "runs": 2534,
+   "outs": 61,
+   "balls": 3660,
+   "100s": 6,
+   "50s": 11,
+   "sixes": 61,
+   "avg": 41.5,
+   "sr": 69.2,
+   "mates_sr": 47.0
+  },
+  "sena": {
+   "inns": 55,
+   "runs": 2160,
+   "outs": 52,
+   "balls": 3156,
+   "100s": 6,
+   "50s": 8,
+   "sixes": 48,
+   "avg": 41.5,
+   "sr": 68.4,
+   "mates_sr": 46.1
+  },
+  "fourth": {
+   "inns": 14,
+   "runs": 490,
+   "outs": 12,
+   "balls": 717,
+   "100s": 1,
+   "50s": 3,
+   "sixes": 11,
+   "avg": 40.8,
+   "sr": 68.3,
+   "mates_sr": 44.3
+  },
+  "trouble": {
+   "inns": 28,
+   "runs": 910,
+   "outs": 27,
+   "balls": 1315,
+   "100s": 3,
+   "50s": 2,
+   "sixes": 23,
+   "avg": 33.7,
+   "sr": 69.2,
+   "mates_sr": 41.1
+  },
+  "trouble50": {
+   "L": 4,
+   "W": 1
+  },
+  "trouble50_list": [
+   "2018-09-07|England|114|121/5|L",
+   "2021-02-05|India|91|73/4|L",
+   "2021-03-04|India|101|80/4|W",
+   "2022-01-11|South Africa|100|58/4|L",
+   "2024-11-01|India|60|84/4|L"
+  ],
+  "tempo_gap": 24.9
+ },
+ "MS Dhoni": {
+  "country": "India",
+  "tests": 86,
+  "results": {
+   "W": 35,
+   "D": 28,
+   "L": 23
+  },
+  "all": {
+   "inns": 139,
+   "runs": 4721,
+   "outs": 124,
+   "balls": 8003,
+   "100s": 6,
+   "50s": 31,
+   "sixes": 76,
+   "avg": 38.1,
+   "sr": 59.0,
+   "mates_sr": 53.3
+  },
+  "home": {
+   "inns": 56,
+   "runs": 2225,
+   "outs": 48,
+   "balls": 3750,
+   "100s": 5,
+   "50s": 13,
+   "sixes": 39,
+   "avg": 46.4,
+   "sr": 59.3,
+   "mates_sr": 56.7
+  },
+  "away": {
+   "inns": 83,
+   "runs": 2496,
+   "outs": 76,
+   "balls": 4253,
+   "100s": 1,
+   "50s": 18,
+   "sixes": 37,
+   "avg": 32.8,
+   "sr": 58.7,
+   "mates_sr": 50.7
+  },
+  "sena": {
+   "inns": 60,
+   "runs": 1731,
+   "outs": 55,
+   "balls": 3138,
+   "100s": 0,
+   "50s": 13,
+   "sixes": 17,
+   "avg": 31.5,
+   "sr": 55.2,
+   "mates_sr": 49.3
+  },
+  "fourth": {
+   "inns": 19,
+   "runs": 424,
+   "outs": 13,
+   "balls": 770,
+   "100s": 0,
+   "50s": 1,
+   "sixes": 5,
+   "avg": 32.6,
+   "sr": 55.1,
+   "mates_sr": 52.8
+  },
+  "trouble": {
+   "inns": 52,
+   "runs": 1423,
+   "outs": 46,
+   "balls": 2638,
+   "100s": 0,
+   "50s": 10,
+   "sixes": 11,
+   "avg": 30.9,
+   "sr": 53.9,
+   "mates_sr": 46.5
+  },
+  "trouble50": {
+   "D": 2,
+   "W": 2,
+   "L": 6
+  },
+  "trouble50_list": [
+   "2007-07-19|England|76|145/5|D",
+   "2007-11-22|India|57|93/5|W",
+   "2008-04-03|India|52|125/4|L",
+   "2008-12-11|India|53|102/5|W",
+   "2011-08-10|England|74|87/5|L",
+   "2011-08-10|England|77|92/5|L",
+   "2012-01-03|Australia|57|96/5|L",
+   "2012-12-13|India|99|71/4|D",
+   "2014-08-07|England|71|8/4|L",
+   "2014-08-15|England|82|28/4|L"
+  ],
+  "tempo_gap": 5.7
+ },
+ "WP Saha": {
+  "country": "India",
+  "tests": 40,
+  "results": {
+   "W": 23,
+   "D": 10,
+   "L": 7
+  },
+  "all": {
+   "inns": 56,
+   "runs": 1353,
+   "outs": 46,
+   "balls": 2973,
+   "100s": 3,
+   "50s": 6,
+   "sixes": 14,
+   "avg": 29.4,
+   "sr": 45.5,
+   "mates_sr": 53.7
+  },
+  "home": {
+   "inns": 34,
+   "runs": 780,
+   "outs": 25,
+   "balls": 1678,
+   "100s": 2,
+   "50s": 3,
+   "sixes": 9,
+   "avg": 31.2,
+   "sr": 46.5,
+   "mates_sr": 53.3
+  },
+  "away": {
+   "inns": 22,
+   "runs": 573,
+   "outs": 21,
+   "balls": 1295,
+   "100s": 1,
+   "50s": 3,
+   "sixes": 5,
+   "avg": 27.3,
+   "sr": 44.2,
+   "mates_sr": 54.2
+  },
+  "sena": {
+   "inns": 10,
+   "runs": 132,
+   "outs": 10,
+   "balls": 362,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 2,
+   "avg": 13.2,
+   "sr": 36.5,
+   "mates_sr": 49.7
+  },
+  "fourth": {
+   "inns": 7,
+   "runs": 40,
+   "outs": 7,
+   "balls": 92,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 1,
+   "avg": 5.7,
+   "sr": 43.5,
+   "mates_sr": 49.3
+  },
+  "trouble": {
+   "inns": 17,
+   "runs": 357,
+   "outs": 15,
+   "balls": 870,
+   "100s": 1,
+   "50s": 2,
+   "sixes": 2,
+   "avg": 23.8,
+   "sr": 41.0,
+   "mates_sr": 46.8
+  },
+  "trouble50": {
+   "W": 2,
+   "D": 1
+  },
+  "trouble50_list": [
+   "2016-08-09|West Indies|104|126/5|W",
+   "2016-09-30|India|58|106/6|W",
+   "2021-11-25|India|61|103/6|D"
+  ],
+  "tempo_gap": -8.2
+ },
+ "Dhruv Jurel": {
+  "country": "India",
+  "tests": 11,
+  "results": {
+   "W": 8,
+   "L": 2,
+   "D": 1
+  },
+  "all": {
+   "inns": 18,
+   "runs": 632,
+   "outs": 15,
+   "balls": 1083,
+   "100s": 2,
+   "50s": 2,
+   "sixes": 13,
+   "avg": 42.1,
+   "sr": 58.4,
+   "mates_sr": 56.0
+  },
+  "home": {
+   "inns": 11,
+   "runs": 394,
+   "outs": 9,
+   "balls": 711,
+   "100s": 1,
+   "50s": 1,
+   "sixes": 10,
+   "avg": 43.8,
+   "sr": 55.4,
+   "mates_sr": 55.9
+  },
+  "away": {
+   "inns": 7,
+   "runs": 238,
+   "outs": 6,
+   "balls": 372,
+   "100s": 1,
+   "50s": 1,
+   "sixes": 3,
+   "avg": 39.7,
+   "sr": 64.0,
+   "mates_sr": 56.2
+  },
+  "sena": {
+   "inns": 4,
+   "runs": 65,
+   "outs": 4,
+   "balls": 112,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 0,
+   "avg": 16.2,
+   "sr": 58.0,
+   "mates_sr": 51.0
+  },
+  "fourth": {
+   "inns": 4,
+   "runs": 60,
+   "outs": 2,
+   "balls": 120,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 0,
+   "avg": 30.0,
+   "sr": 50.0,
+   "mates_sr": 45.7
+  },
+  "trouble": {
+   "inns": 5,
+   "runs": 90,
+   "outs": 4,
+   "balls": 166,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 0,
+   "avg": 22.5,
+   "sr": 54.2,
+   "mates_sr": 49.1
+  },
+  "trouble50": {},
+  "trouble50_list": [],
+  "tempo_gap": 2.4
+ },
+ "KS Bharat": {
+  "country": "India",
+  "tests": 7,
+  "results": {
+   "W": 3,
+   "L": 3,
+   "D": 1
+  },
+  "all": {
+   "inns": 12,
+   "runs": 221,
+   "outs": 11,
+   "balls": 417,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 6,
+   "avg": 20.1,
+   "sr": 53.0,
+   "mates_sr": 54.6
+  },
+  "home": {
+   "inns": 10,
+   "runs": 193,
+   "outs": 9,
+   "balls": 361,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 6,
+   "avg": 21.4,
+   "sr": 53.5,
+   "mates_sr": 53.3
+  },
+  "away": {
+   "inns": 2,
+   "runs": 28,
+   "outs": 2,
+   "balls": 56,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 0,
+   "avg": 14.0,
+   "sr": 50.0,
+   "mates_sr": 63.6
+  },
+  "sena": {
+   "inns": 2,
+   "runs": 28,
+   "outs": 2,
+   "balls": 56,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 0,
+   "avg": 14.0,
+   "sr": 50.0,
+   "mates_sr": 63.6
+  },
+  "fourth": {
+   "inns": 3,
+   "runs": 74,
+   "outs": 2,
+   "balls": 122,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 1,
+   "avg": 37.0,
+   "sr": 60.7,
+   "mates_sr": 56.1
+  },
+  "trouble": {
+   "inns": 6,
+   "runs": 82,
+   "outs": 5,
+   "balls": 146,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 2,
+   "avg": 16.4,
+   "sr": 56.2,
+   "mates_sr": 52.8
+  },
+  "trouble50": {},
+  "trouble50_list": [],
+  "tempo_gap": -1.6
+ },
+ "AC Gilchrist": {
+  "country": "Australia",
+  "tests": 39,
+  "results": {
+   "W": 27,
+   "L": 6,
+   "D": 6
+  },
+  "all": {
+   "inns": 58,
+   "runs": 2005,
+   "outs": 52,
+   "balls": 2380,
+   "100s": 7,
+   "50s": 8,
+   "sixes": 41,
+   "avg": 38.6,
+   "sr": 84.2,
+   "mates_sr": 55.9
+  },
+  "home": {
+   "inns": 34,
+   "runs": 1243,
+   "outs": 29,
+   "balls": 1427,
+   "100s": 4,
+   "50s": 8,
+   "sixes": 22,
+   "avg": 42.9,
+   "sr": 87.1,
+   "mates_sr": 58.9
+  },
+  "away": {
+   "inns": 24,
+   "runs": 762,
+   "outs": 23,
+   "balls": 953,
+   "100s": 3,
+   "50s": 0,
+   "sixes": 19,
+   "avg": 33.1,
+   "sr": 80.0,
+   "mates_sr": 51.0
+  },
+  "sena": {
+   "inns": 14,
+   "runs": 480,
+   "outs": 13,
+   "balls": 508,
+   "100s": 2,
+   "50s": 0,
+   "sixes": 12,
+   "avg": 36.9,
+   "sr": 94.5,
+   "mates_sr": 51.6
+  },
+  "fourth": {
+   "inns": 8,
+   "runs": 84,
+   "outs": 7,
+   "balls": 101,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 0,
+   "avg": 12.0,
+   "sr": 83.2,
+   "mates_sr": 53.3
+  },
+  "trouble": {
+   "inns": 13,
+   "runs": 452,
+   "outs": 12,
+   "balls": 578,
+   "100s": 1,
+   "50s": 2,
+   "sixes": 8,
+   "avg": 37.7,
+   "sr": 78.2,
+   "mates_sr": 57.5
+  },
+  "trouble50": {
+   "W": 2,
+   "L": 1
+  },
+  "trouble50_list": [
+   "2004-12-16|Australia|69|78/5|W",
+   "2006-04-09|Bangladesh|144|61/4|W",
+   "2008-01-16|Australia|55|61/5|L"
+  ],
+  "tempo_gap": 28.3
+ },
+ "BJ Haddin": {
+  "country": "Australia",
+  "tests": 66,
+  "results": {
+   "W": 34,
+   "D": 12,
+   "L": 20
+  },
+  "all": {
+   "inns": 112,
+   "runs": 3266,
+   "outs": 99,
+   "balls": 5587,
+   "100s": 4,
+   "50s": 18,
+   "sixes": 54,
+   "avg": 33.0,
+   "sr": 58.5,
+   "mates_sr": 53.3
+  },
+  "home": {
+   "inns": 51,
+   "runs": 1885,
+   "outs": 43,
+   "balls": 2967,
+   "100s": 3,
+   "50s": 13,
+   "sixes": 39,
+   "avg": 43.8,
+   "sr": 63.5,
+   "mates_sr": 54.8
+  },
+  "away": {
+   "inns": 61,
+   "runs": 1381,
+   "outs": 56,
+   "balls": 2620,
+   "100s": 1,
+   "50s": 5,
+   "sixes": 15,
+   "avg": 24.7,
+   "sr": 52.7,
+   "mates_sr": 52.1
+  },
+  "sena": {
+   "inns": 35,
+   "runs": 851,
+   "outs": 32,
+   "balls": 1431,
+   "100s": 1,
+   "50s": 5,
+   "sixes": 8,
+   "avg": 26.6,
+   "sr": 59.5,
+   "mates_sr": 54.0
+  },
+  "fourth": {
+   "inns": 15,
+   "runs": 350,
+   "outs": 14,
+   "balls": 745,
+   "100s": 0,
+   "50s": 3,
+   "sixes": 0,
+   "avg": 25.0,
+   "sr": 47.0,
+   "mates_sr": 50.2
+  },
+  "trouble": {
+   "inns": 43,
+   "runs": 1195,
+   "outs": 39,
+   "balls": 2216,
+   "100s": 1,
+   "50s": 8,
+   "sixes": 16,
+   "avg": 30.6,
+   "sr": 53.9,
+   "mates_sr": 48.3
+  },
+  "trouble50": {
+   "L": 3,
+   "D": 1,
+   "W": 5
+  },
+  "trouble50_list": [
+   "2008-12-17|Australia|94|148/5|L",
+   "2009-07-16|England|80|128/5|L",
+   "2010-11-25|Australia|136|143/5|D",
+   "2010-12-16|Australia|53|69/5|W",
+   "2010-12-26|Australia|55|134/5|L",
+   "2013-11-21|Australia|94|100/5|W",
+   "2013-12-13|Australia|55|143/5|W",
+   "2013-12-26|Australia|65|112/5|W",
+   "2014-01-03|Australia|75|97/5|W"
+  ],
+  "tempo_gap": 5.2
+ },
+ "TD Paine": {
+  "country": "Australia",
+  "tests": 35,
+  "results": {
+   "W": 17,
+   "D": 5,
+   "L": 13
+  },
+  "all": {
+   "inns": 57,
+   "runs": 1534,
+   "outs": 47,
+   "balls": 3355,
+   "100s": 0,
+   "50s": 9,
+   "sixes": 4,
+   "avg": 32.6,
+   "sr": 45.7,
+   "mates_sr": 49.5
+  },
+  "home": {
+   "inns": 27,
+   "runs": 781,
+   "outs": 22,
+   "balls": 1633,
+   "100s": 0,
+   "50s": 4,
+   "sixes": 1,
+   "avg": 35.5,
+   "sr": 47.8,
+   "mates_sr": 48.4
+  },
+  "away": {
+   "inns": 30,
+   "runs": 753,
+   "outs": 25,
+   "balls": 1722,
+   "100s": 0,
+   "50s": 5,
+   "sixes": 3,
+   "avg": 30.1,
+   "sr": 43.7,
+   "mates_sr": 51.0
+  },
+  "sena": {
+   "inns": 22,
+   "runs": 499,
+   "outs": 18,
+   "balls": 1083,
+   "100s": 0,
+   "50s": 2,
+   "sixes": 3,
+   "avg": 27.7,
+   "sr": 46.1,
+   "mates_sr": 52.9
+  },
+  "fourth": {
+   "inns": 8,
+   "runs": 169,
+   "outs": 6,
+   "balls": 443,
+   "100s": 0,
+   "50s": 1,
+   "sixes": 0,
+   "avg": 28.2,
+   "sr": 38.1,
+   "mates_sr": 46.6
+  },
+  "trouble": {
+   "inns": 22,
+   "runs": 437,
+   "outs": 19,
+   "balls": 988,
+   "100s": 0,
+   "50s": 2,
+   "sixes": 2,
+   "avg": 23.0,
+   "sr": 44.2,
+   "mates_sr": 43.9
+  },
+  "trouble50": {
+   "L": 1,
+   "W": 1
+  },
+  "trouble50_list": [
+   "2018-03-30|South Africa|62|96/5|L",
+   "2020-12-17|Australia|73|79/5|W"
+  ],
+  "tempo_gap": -3.8
+ },
+ "AT Carey": {
+  "country": "Australia",
+  "tests": 53,
+  "results": {
+   "W": 34,
+   "D": 7,
+   "L": 12
+  },
+  "all": {
+   "inns": 82,
+   "runs": 2544,
+   "outs": 73,
+   "balls": 4035,
+   "100s": 3,
+   "50s": 14,
+   "sixes": 17,
+   "avg": 34.8,
+   "sr": 63.0,
+   "mates_sr": 54.1
+  },
+  "home": {
+   "inns": 38,
+   "runs": 1164,
+   "outs": 34,
+   "balls": 1854,
+   "100s": 2,
+   "50s": 6,
+   "sixes": 5,
+   "avg": 34.2,
+   "sr": 62.8,
+   "mates_sr": 57.2
+  },
+  "away": {
+   "inns": 44,
+   "runs": 1380,
+   "outs": 39,
+   "balls": 2181,
+   "100s": 1,
+   "50s": 8,
+   "sixes": 12,
+   "avg": 35.4,
+   "sr": 63.3,
+   "mates_sr": 51.7
+  },
+  "sena": {
+   "inns": 23,
+   "runs": 662,
+   "outs": 20,
+   "balls": 1179,
+   "100s": 0,
+   "50s": 4,
+   "sixes": 4,
+   "avg": 33.1,
+   "sr": 56.1,
+   "mates_sr": 52.3
+  },
+  "fourth": {
+   "inns": 8,
+   "runs": 211,
+   "outs": 6,
+   "balls": 345,
+   "100s": 0,
+   "50s": 1,
+   "sixes": 1,
+   "avg": 35.2,
+   "sr": 61.2,
+   "mates_sr": 55.6
+  },
+  "trouble": {
+   "inns": 33,
+   "runs": 887,
+   "outs": 28,
+   "balls": 1327,
+   "100s": 1,
+   "50s": 5,
+   "sixes": 3,
+   "avg": 31.7,
+   "sr": 66.8,
+   "mates_sr": 52.2
+  },
+  "trouble50": {
+   "W": 5,
+   "L": 1
+  },
+  "trouble50_list": [
+   "2023-06-07|England|66|124/5|W",
+   "2024-01-25|Australia|65|54/5|L",
+   "2024-03-08|New Zealand|98|80/5|W",
+   "2025-07-03|West Indies|63|110/5|W",
+   "2025-12-17|Australia|106|94/4|W",
+   "2025-12-17|Australia|72|149/4|W"
+  ],
+  "tempo_gap": 8.9
+ },
+ "MJ Prior": {
+  "country": "England",
+  "tests": 79,
+  "results": {
+   "D": 26,
+   "W": 33,
+   "L": 20
+  },
+  "all": {
+   "inns": 122,
+   "runs": 4099,
+   "outs": 102,
+   "balls": 6647,
+   "100s": 7,
+   "50s": 28,
+   "sixes": 16,
+   "avg": 40.2,
+   "sr": 61.7,
+   "mates_sr": 48.4
+  },
+  "home": {
+   "inns": 67,
+   "runs": 2172,
+   "outs": 57,
+   "balls": 3267,
+   "100s": 4,
+   "50s": 13,
+   "sixes": 9,
+   "avg": 38.1,
+   "sr": 66.5,
+   "mates_sr": 50.3
+  },
+  "away": {
+   "inns": 55,
+   "runs": 1927,
+   "outs": 45,
+   "balls": 3380,
+   "100s": 3,
+   "50s": 15,
+   "sixes": 7,
+   "avg": 42.8,
+   "sr": 57.0,
+   "mates_sr": 46.1
+  },
+  "sena": {
+   "inns": 24,
+   "runs": 828,
+   "outs": 21,
+   "balls": 1302,
+   "100s": 2,
+   "50s": 6,
+   "sixes": 5,
+   "avg": 39.4,
+   "sr": 63.6,
+   "mates_sr": 45.5
+  },
+  "fourth": {
+   "inns": 16,
+   "runs": 508,
+   "outs": 13,
+   "balls": 976,
+   "100s": 1,
+   "50s": 3,
+   "sixes": 1,
+   "avg": 39.1,
+   "sr": 52.0,
+   "mates_sr": 40.6
+  },
+  "trouble": {
+   "inns": 37,
+   "runs": 1176,
+   "outs": 32,
+   "balls": 2064,
+   "100s": 2,
+   "50s": 8,
+   "sixes": 4,
+   "avg": 36.8,
+   "sr": 57.0,
+   "mates_sr": 42.1
+  },
+  "trouble50": {
+   "L": 4,
+   "D": 4,
+   "W": 2
+  },
+  "trouble50_list": [
+   "2007-12-01|Sri Lanka|63|139/6|L",
+   "2009-03-06|West Indies|61|101/4|D",
+   "2010-01-03|South Africa|76|133/5|D",
+   "2010-07-29|England|102|72/5|W",
+   "2010-08-18|England|84|67/5|L",
+   "2011-07-21|England|103|62/5|W",
+   "2012-01-17|UAE|70|43/5|L",
+   "2012-08-16|England|73|134/5|L",
+   "2012-12-13|India|57|139/5|D",
+   "2013-03-22|New Zealand|73|72/5|D"
+  ],
+  "tempo_gap": 13.3
+ },
+ "BT Foakes": {
+  "country": "England",
+  "tests": 25,
+  "results": {
+   "W": 11,
+   "L": 12,
+   "D": 2
+  },
+  "all": {
+   "inns": 46,
+   "runs": 1139,
+   "outs": 39,
+   "balls": 2411,
+   "100s": 2,
+   "50s": 4,
+   "sixes": 7,
+   "avg": 29.2,
+   "sr": 47.2,
+   "mates_sr": 60.8
+  },
+  "home": {
+   "inns": 9,
+   "runs": 240,
+   "outs": 6,
+   "balls": 507,
+   "100s": 1,
+   "50s": 1,
+   "sixes": 0,
+   "avg": 40.0,
+   "sr": 47.3,
+   "mates_sr": 68.7
+  },
+  "away": {
+   "inns": 37,
+   "runs": 899,
+   "outs": 33,
+   "balls": 1904,
+   "100s": 1,
+   "50s": 3,
+   "sixes": 7,
+   "avg": 27.2,
+   "sr": 47.2,
+   "mates_sr": 59.0
+  },
+  "sena": {
+   "inns": 4,
+   "runs": 124,
+   "outs": 4,
+   "balls": 198,
+   "100s": 0,
+   "50s": 1,
+   "sixes": 0,
+   "avg": 31.0,
+   "sr": 62.6,
+   "mates_sr": 80.2
+  },
+  "fourth": {
+   "inns": 7,
+   "runs": 138,
+   "outs": 5,
+   "balls": 289,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 1,
+   "avg": 27.6,
+   "sr": 47.8,
+   "mates_sr": 58.7
+  },
+  "trouble": {
+   "inns": 25,
+   "runs": 600,
+   "outs": 23,
+   "balls": 1403,
+   "100s": 2,
+   "50s": 1,
+   "sixes": 1,
+   "avg": 26.1,
+   "sr": 42.8,
+   "mates_sr": 54.0
+  },
+  "trouble50": {
+   "W": 3
+  },
+  "trouble50_list": [
+   "2018-11-06|Sri Lanka|107|103/5|W",
+   "2022-08-25|England|113|147/5|W",
+   "2022-12-17|Pakistan|64|145/5|W"
+  ],
+  "tempo_gap": -13.6
+ },
+ "JM Bairstow": {
+  "country": "England",
+  "tests": 100,
+  "results": {
+   "W": 44,
+   "L": 41,
+   "D": 15
+  },
+  "all": {
+   "inns": 178,
+   "runs": 6042,
+   "outs": 166,
+   "balls": 10228,
+   "100s": 12,
+   "50s": 26,
+   "sixes": 56,
+   "avg": 36.4,
+   "sr": 59.1,
+   "mates_sr": 50.9
+  },
+  "home": {
+   "inns": 95,
+   "runs": 3465,
+   "outs": 88,
+   "balls": 5477,
+   "100s": 6,
+   "50s": 20,
+   "sixes": 25,
+   "avg": 39.4,
+   "sr": 63.3,
+   "mates_sr": 53.0
+  },
+  "away": {
+   "inns": 83,
+   "runs": 2577,
+   "outs": 78,
+   "balls": 4751,
+   "100s": 6,
+   "50s": 6,
+   "sixes": 31,
+   "avg": 33.0,
+   "sr": 54.2,
+   "mates_sr": 48.4
+  },
+  "sena": {
+   "inns": 32,
+   "runs": 1090,
+   "outs": 30,
+   "balls": 1950,
+   "100s": 4,
+   "50s": 1,
+   "sixes": 13,
+   "avg": 36.3,
+   "sr": 55.9,
+   "mates_sr": 46.3
+  },
+  "fourth": {
+   "inns": 32,
+   "runs": 843,
+   "outs": 27,
+   "balls": 1273,
+   "100s": 2,
+   "50s": 2,
+   "sixes": 13,
+   "avg": 31.2,
+   "sr": 66.2,
+   "mates_sr": 47.8
+  },
+  "trouble": {
+   "inns": 52,
+   "runs": 2069,
+   "outs": 49,
+   "balls": 3963,
+   "100s": 6,
+   "50s": 9,
+   "sixes": 10,
+   "avg": 42.2,
+   "sr": 52.2,
+   "mates_sr": 44.8
+  },
+  "trouble50": {
+   "W": 4,
+   "L": 6,
+   "D": 5
+  },
+  "trouble50_list": [
+   "2012-08-16|England|54|45/4|L",
+   "2012-08-16|England|95|54/4|L",
+   "2013-05-24|England|64|146/4|W",
+   "2013-07-18|England|67|127/4|W",
+   "2016-05-19|England|140|83/5|W",
+   "2016-06-09|England|167|84/4|D",
+   "2016-08-11|England|55|74/4|L",
+   "2016-08-11|England|81|74/4|L",
+   "2016-10-20|Bangladesh|52|106/5|W",
+   "2016-11-17|India|53|80/5|L",
+   "2017-12-14|Australia|119|131/4|L",
+   "2018-03-30|New Zealand|101|94/5|D",
+   "2019-08-14|England|52|136/5|D",
+   "2022-01-05|Australia|113|36/4|D",
+   "2022-03-08|West Indies|140|48/4|D"
+  ],
+  "tempo_gap": 8.2
+ },
+ "MV Boucher": {
+  "country": "South Africa",
+  "tests": 76,
+  "results": {
+   "W": 37,
+   "D": 15,
+   "L": 24
+  },
+  "all": {
+   "inns": 111,
+   "runs": 2926,
+   "outs": 101,
+   "balls": 5917,
+   "100s": 1,
+   "50s": 19,
+   "sixes": 11,
+   "avg": 29.0,
+   "sr": 49.5,
+   "mates_sr": 50.5
+  },
+  "home": {
+   "inns": 53,
+   "runs": 1476,
+   "outs": 49,
+   "balls": 2827,
+   "100s": 1,
+   "50s": 11,
+   "sixes": 5,
+   "avg": 30.1,
+   "sr": 52.2,
+   "mates_sr": 50.9
+  },
+  "away": {
+   "inns": 58,
+   "runs": 1450,
+   "outs": 52,
+   "balls": 3090,
+   "100s": 0,
+   "50s": 8,
+   "sixes": 6,
+   "avg": 27.9,
+   "sr": 46.9,
+   "mates_sr": 50.2
+  },
+  "sena": {
+   "inns": 30,
+   "runs": 646,
+   "outs": 27,
+   "balls": 1423,
+   "100s": 0,
+   "50s": 2,
+   "sixes": 1,
+   "avg": 23.9,
+   "sr": 45.4,
+   "mates_sr": 48.8
+  },
+  "fourth": {
+   "inns": 14,
+   "runs": 275,
+   "outs": 11,
+   "balls": 777,
+   "100s": 0,
+   "50s": 2,
+   "sixes": 0,
+   "avg": 25.0,
+   "sr": 35.4,
+   "mates_sr": 46.6
+  },
+  "trouble": {
+   "inns": 42,
+   "runs": 1005,
+   "outs": 39,
+   "balls": 2030,
+   "100s": 1,
+   "50s": 7,
+   "sixes": 3,
+   "avg": 25.8,
+   "sr": 49.5,
+   "mates_sr": 48.3
+  },
+  "trouble50": {
+   "L": 3,
+   "W": 3,
+   "D": 2
+  },
+  "trouble50_list": [
+   "2003-08-14|England|52|50/5|L",
+   "2006-03-24|South Africa|51|146/5|L",
+   "2006-03-31|South Africa|63|140/6|L",
+   "2006-12-26|South Africa|53|122/4|W",
+   "2008-01-02|South Africa|59|131/5|W",
+   "2008-11-26|South Africa|117|134/5|W",
+   "2010-01-03|South Africa|51|127/5|D",
+   "2011-01-02|South Africa|55|130/6|D"
+  ],
+  "tempo_gap": -1.0
+ },
+ "Q de Kock": {
+  "country": "South Africa",
+  "tests": 54,
+  "results": {
+   "W": 29,
+   "L": 19,
+   "D": 6
+  },
+  "all": {
+   "inns": 91,
+   "runs": 3300,
+   "outs": 85,
+   "balls": 4652,
+   "100s": 6,
+   "50s": 22,
+   "sixes": 33,
+   "avg": 38.8,
+   "sr": 70.9,
+   "mates_sr": 48.6
+  },
+  "home": {
+   "inns": 50,
+   "runs": 1927,
+   "outs": 46,
+   "balls": 2622,
+   "100s": 3,
+   "50s": 13,
+   "sixes": 15,
+   "avg": 41.9,
+   "sr": 73.5,
+   "mates_sr": 51.6
+  },
+  "away": {
+   "inns": 41,
+   "runs": 1373,
+   "outs": 39,
+   "balls": 2030,
+   "100s": 3,
+   "50s": 9,
+   "sixes": 18,
+   "avg": 35.2,
+   "sr": 67.6,
+   "mates_sr": 44.4
+  },
+  "sena": {
+   "inns": 18,
+   "runs": 676,
+   "outs": 17,
+   "balls": 963,
+   "100s": 1,
+   "50s": 6,
+   "sixes": 8,
+   "avg": 39.8,
+   "sr": 70.2,
+   "mates_sr": 46.3
+  },
+  "fourth": {
+   "inns": 13,
+   "runs": 272,
+   "outs": 13,
+   "balls": 493,
+   "100s": 0,
+   "50s": 2,
+   "sixes": 1,
+   "avg": 20.9,
+   "sr": 55.2,
+   "mates_sr": 41.7
+  },
+  "trouble": {
+   "inns": 36,
+   "runs": 1618,
+   "outs": 34,
+   "balls": 2222,
+   "100s": 3,
+   "50s": 10,
+   "sixes": 16,
+   "avg": 47.6,
+   "sr": 72.8,
+   "mates_sr": 46.8
+  },
+  "trouble50": {
+   "W": 7,
+   "D": 1,
+   "L": 5
+  },
+  "trouble50_list": [
+   "2016-11-03|Australia|84|81/5|W",
+   "2016-11-12|Australia|104|132/5|W",
+   "2017-03-16|New Zealand|91|94/6|W",
+   "2017-03-25|New Zealand|90|148/5|D",
+   "2018-03-01|South Africa|83|136/5|L",
+   "2019-01-11|South Africa|129|93/5|W",
+   "2019-02-13|South Africa|55|95/4|L",
+   "2019-02-13|South Africa|80|89/4|L",
+   "2019-02-21|South Africa|86|73/4|L",
+   "2019-12-26|South Africa|95|97/4|W",
+   "2020-01-16|South Africa|63|109/5|L",
+   "2021-06-10|West Indies|141|119/4|W",
+   "2021-06-18|West Indies|96|124/4|W"
+  ],
+  "tempo_gap": 22.3
+ },
+ "BJ Watling": {
+  "country": "New Zealand",
+  "tests": 75,
+  "results": {
+   "W": 34,
+   "D": 18,
+   "L": 23
+  },
+  "all": {
+   "inns": 117,
+   "runs": 3790,
+   "outs": 101,
+   "balls": 8894,
+   "100s": 8,
+   "50s": 19,
+   "sixes": 8,
+   "avg": 37.5,
+   "sr": 42.6,
+   "mates_sr": 53.2
+  },
+  "home": {
+   "inns": 54,
+   "runs": 1892,
+   "outs": 48,
+   "balls": 4417,
+   "100s": 4,
+   "50s": 8,
+   "sixes": 4,
+   "avg": 39.4,
+   "sr": 42.8,
+   "mates_sr": 55.6
+  },
+  "away": {
+   "inns": 63,
+   "runs": 1898,
+   "outs": 53,
+   "balls": 4477,
+   "100s": 4,
+   "50s": 11,
+   "sixes": 4,
+   "avg": 35.8,
+   "sr": 42.4,
+   "mates_sr": 50.7
+  },
+  "sena": {
+   "inns": 26,
+   "runs": 697,
+   "outs": 24,
+   "balls": 1566,
+   "100s": 1,
+   "50s": 4,
+   "sixes": 1,
+   "avg": 29.0,
+   "sr": 44.5,
+   "mates_sr": 51.4
+  },
+  "fourth": {
+   "inns": 16,
+   "runs": 359,
+   "outs": 12,
+   "balls": 909,
+   "100s": 0,
+   "50s": 2,
+   "sixes": 1,
+   "avg": 29.9,
+   "sr": 39.5,
+   "mates_sr": 49.8
+  },
+  "trouble": {
+   "inns": 49,
+   "runs": 1769,
+   "outs": 41,
+   "balls": 4433,
+   "100s": 4,
+   "50s": 8,
+   "sixes": 3,
+   "avg": 43.1,
+   "sr": 39.9,
+   "mates_sr": 49.0
+  },
+  "trouble50": {
+   "D": 3,
+   "W": 5,
+   "L": 4
+  },
+  "trouble50_list": [
+   "2013-01-11|South Africa|63|27/4|L",
+   "2013-01-11|South Africa|63|84/4|L",
+   "2013-03-14|New Zealand|60|89/5|D",
+   "2014-02-14|New Zealand|124|94/5|D",
+   "2014-06-16|West Indies|66|121/4|L",
+   "2015-05-29|England|120|141/4|W",
+   "2018-03-30|New Zealand|85|17/4|D",
+   "2018-11-16|UAE|59|108/4|W",
+   "2018-12-03|UAE|77|72/4|W",
+   "2019-08-14|Sri Lanka|77|81/4|L",
+   "2019-08-22|Sri Lanka|105|126/4|W",
+   "2019-11-21|New Zealand|205|127/4|W"
+  ],
+  "tempo_gap": -10.6
+ },
+ "TA Blundell": {
+  "country": "New Zealand",
+  "tests": 48,
+  "results": {
+   "W": 27,
+   "L": 17,
+   "D": 4
+  },
+  "all": {
+   "inns": 79,
+   "runs": 2482,
+   "outs": 72,
+   "balls": 4612,
+   "100s": 6,
+   "50s": 12,
+   "sixes": 19,
+   "avg": 34.5,
+   "sr": 53.8,
+   "mates_sr": 53.5
+  },
+  "home": {
+   "inns": 40,
+   "runs": 1204,
+   "outs": 34,
+   "balls": 2017,
+   "100s": 3,
+   "50s": 5,
+   "sixes": 11,
+   "avg": 35.4,
+   "sr": 59.7,
+   "mates_sr": 54.0
+  },
+  "away": {
+   "inns": 39,
+   "runs": 1278,
+   "outs": 38,
+   "balls": 2595,
+   "100s": 3,
+   "50s": 7,
+   "sixes": 8,
+   "avg": 33.6,
+   "sr": 49.2,
+   "mates_sr": 52.9
+  },
+  "sena": {
+   "inns": 17,
+   "runs": 712,
+   "outs": 16,
+   "balls": 1440,
+   "100s": 2,
+   "50s": 4,
+   "sixes": 0,
+   "avg": 44.5,
+   "sr": 49.4,
+   "mates_sr": 51.6
+  },
+  "fourth": {
+   "inns": 15,
+   "runs": 387,
+   "outs": 14,
+   "balls": 689,
+   "100s": 2,
+   "50s": 1,
+   "sixes": 6,
+   "avg": 27.6,
+   "sr": 56.2,
+   "mates_sr": 46.6
+  },
+  "trouble": {
+   "inns": 34,
+   "runs": 1041,
+   "outs": 34,
+   "balls": 1774,
+   "100s": 3,
+   "50s": 4,
+   "sixes": 11,
+   "avg": 30.6,
+   "sr": 58.7,
+   "mates_sr": 49.4
+  },
+  "trouble50": {
+   "L": 5,
+   "W": 2
+  },
+  "trouble50_list": [
+   "2022-06-02|England|96|56/4|L",
+   "2022-06-23|England|55|123/5|L",
+   "2023-02-16|New Zealand|138|83/5|L",
+   "2024-09-26|Sri Lanka|60|113/4|L",
+   "2024-12-06|New Zealand|115|59/4|L",
+   "2026-05-27|Ireland|186|86/4|W",
+   "2026-06-17|England|51|107/4|W"
+  ],
+  "tempo_gap": 0.3
+ },
+ "Kamran Akmal": {
+  "country": "Pakistan",
+  "tests": 37,
+  "results": {
+   "D": 11,
+   "L": 18,
+   "W": 8
+  },
+  "all": {
+   "inns": 68,
+   "runs": 1867,
+   "outs": 63,
+   "balls": 2974,
+   "100s": 3,
+   "50s": 11,
+   "sixes": 12,
+   "avg": 29.6,
+   "sr": 62.8,
+   "mates_sr": 51.1
+  },
+  "home": {
+   "inns": 18,
+   "runs": 771,
+   "outs": 15,
+   "balls": 1189,
+   "100s": 2,
+   "50s": 4,
+   "sixes": 5,
+   "avg": 51.4,
+   "sr": 64.8,
+   "mates_sr": 52.7
+  },
+  "away": {
+   "inns": 50,
+   "runs": 1096,
+   "outs": 48,
+   "balls": 1785,
+   "100s": 1,
+   "50s": 7,
+   "sixes": 7,
+   "avg": 22.8,
+   "sr": 61.4,
+   "mates_sr": 50.2
+  },
+  "sena": {
+   "inns": 36,
+   "runs": 666,
+   "outs": 34,
+   "balls": 1088,
+   "100s": 0,
+   "50s": 5,
+   "sixes": 6,
+   "avg": 19.6,
+   "sr": 61.2,
+   "mates_sr": 50.8
+  },
+  "fourth": {
+   "inns": 16,
+   "runs": 308,
+   "outs": 15,
+   "balls": 549,
+   "100s": 0,
+   "50s": 2,
+   "sixes": 2,
+   "avg": 20.5,
+   "sr": 56.1,
+   "mates_sr": 51.0
+  },
+  "trouble": {
+   "inns": 24,
+   "runs": 484,
+   "outs": 23,
+   "balls": 741,
+   "100s": 1,
+   "50s": 3,
+   "sixes": 2,
+   "avg": 21.0,
+   "sr": 65.3,
+   "mates_sr": 50.5
+  },
+  "trouble50": {
+   "W": 3,
+   "L": 1
+  },
+  "trouble50_list": [
+   "2006-01-29|Pakistan|113|39/6|W",
+   "2007-01-19|South Africa|57|92/5|W",
+   "2009-11-24|New Zealand|82|85/5|L",
+   "2009-12-03|New Zealand|70|131/5|W"
+  ],
+  "tempo_gap": 11.7
+ },
+ "Sarfaraz Ahmed": {
+  "country": "Pakistan",
+  "tests": 0,
+  "results": {},
+  "all": {
+   "inns": 0,
+   "runs": 0,
+   "outs": 0,
+   "balls": 0,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 0,
+   "avg": null,
+   "sr": null,
+   "mates_sr": null
+  },
+  "home": {
+   "inns": 0,
+   "runs": 0,
+   "outs": 0,
+   "balls": 0,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 0,
+   "avg": null,
+   "sr": null,
+   "mates_sr": null
+  },
+  "away": {
+   "inns": 0,
+   "runs": 0,
+   "outs": 0,
+   "balls": 0,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 0,
+   "avg": null,
+   "sr": null,
+   "mates_sr": null
+  },
+  "sena": {
+   "inns": 0,
+   "runs": 0,
+   "outs": 0,
+   "balls": 0,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 0,
+   "avg": null,
+   "sr": null,
+   "mates_sr": null
+  },
+  "fourth": {
+   "inns": 0,
+   "runs": 0,
+   "outs": 0,
+   "balls": 0,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 0,
+   "avg": null,
+   "sr": null,
+   "mates_sr": null
+  },
+  "trouble": {
+   "inns": 0,
+   "runs": 0,
+   "outs": 0,
+   "balls": 0,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 0,
+   "avg": null,
+   "sr": null,
+   "mates_sr": null
+  },
+  "trouble50": {},
+  "trouble50_list": [],
+  "tempo_gap": null
+ },
+ "Mohammad Rizwan": {
+  "country": "Pakistan",
+  "tests": 47,
+  "results": {
+   "L": 26,
+   "D": 5,
+   "W": 16
+  },
+  "all": {
+   "inns": 80,
+   "runs": 2682,
+   "outs": 71,
+   "balls": 4933,
+   "100s": 3,
+   "50s": 14,
+   "sixes": 18,
+   "avg": 37.8,
+   "sr": 54.4,
+   "mates_sr": 50.2
+  },
+  "home": {
+   "inns": 34,
+   "runs": 1148,
+   "outs": 29,
+   "balls": 2111,
+   "100s": 3,
+   "50s": 3,
+   "sixes": 9,
+   "avg": 39.6,
+   "sr": 54.4,
+   "mates_sr": 51.1
+  },
+  "away": {
+   "inns": 46,
+   "runs": 1534,
+   "outs": 42,
+   "balls": 2822,
+   "100s": 0,
+   "50s": 11,
+   "sixes": 9,
+   "avg": 36.5,
+   "sr": 54.4,
+   "mates_sr": 49.4
+  },
+  "sena": {
+   "inns": 26,
+   "runs": 924,
+   "outs": 25,
+   "balls": 1663,
+   "100s": 0,
+   "50s": 7,
+   "sixes": 6,
+   "avg": 37.0,
+   "sr": 55.6,
+   "mates_sr": 47.9
+  },
+  "fourth": {
+   "inns": 14,
+   "runs": 511,
+   "outs": 12,
+   "balls": 1058,
+   "100s": 1,
+   "50s": 2,
+   "sixes": 4,
+   "avg": 42.6,
+   "sr": 48.3,
+   "mates_sr": 45.5
+  },
+  "trouble": {
+   "inns": 40,
+   "runs": 1522,
+   "outs": 38,
+   "balls": 2699,
+   "100s": 2,
+   "50s": 9,
+   "sixes": 10,
+   "avg": 40.1,
+   "sr": 56.4,
+   "mates_sr": 47.0
+  },
+  "trouble50": {
+   "L": 7,
+   "D": 2,
+   "W": 2
+  },
+  "trouble50_list": [
+   "2019-11-21|Australia|95|94/5|L",
+   "2020-08-13|England|72|120/5|D",
+   "2020-08-21|England|53|75/5|D",
+   "2020-12-26|New Zealand|60|75/4|L",
+   "2020-12-26|New Zealand|71|52/5|L",
+   "2021-01-03|New Zealand|61|83/4|L",
+   "2021-02-04|Pakistan|115|63/4|W",
+   "2024-01-03|Australia|88|47/4|L",
+   "2024-08-21|Pakistan|171|114/4|L",
+   "2024-08-21|Pakistan|51|67/4|L",
+   "2025-01-17|Pakistan|71|46/4|W"
+  ],
+  "tempo_gap": 4.2
+ },
+ "N Dickwella": {
+  "country": "Sri Lanka",
+  "tests": 56,
+  "results": {
+   "W": 18,
+   "L": 25,
+   "D": 13
+  },
+  "all": {
+   "inns": 100,
+   "runs": 2853,
+   "outs": 93,
+   "balls": 4295,
+   "100s": 0,
+   "50s": 23,
+   "sixes": 11,
+   "avg": 30.7,
+   "sr": 66.4,
+   "mates_sr": 49.5
+  },
+  "home": {
+   "inns": 48,
+   "runs": 1376,
+   "outs": 46,
+   "balls": 2003,
+   "100s": 0,
+   "50s": 12,
+   "sixes": 6,
+   "avg": 29.9,
+   "sr": 68.7,
+   "mates_sr": 51.7
+  },
+  "away": {
+   "inns": 52,
+   "runs": 1477,
+   "outs": 47,
+   "balls": 2292,
+   "100s": 0,
+   "50s": 11,
+   "sixes": 5,
+   "avg": 31.4,
+   "sr": 64.4,
+   "mates_sr": 47.3
+  },
+  "sena": {
+   "inns": 18,
+   "runs": 408,
+   "outs": 17,
+   "balls": 588,
+   "100s": 0,
+   "50s": 2,
+   "sixes": 2,
+   "avg": 24.0,
+   "sr": 69.4,
+   "mates_sr": 49.3
+  },
+  "fourth": {
+   "inns": 15,
+   "runs": 447,
+   "outs": 14,
+   "balls": 668,
+   "100s": 0,
+   "50s": 3,
+   "sixes": 2,
+   "avg": 31.9,
+   "sr": 66.9,
+   "mates_sr": 47.7
+  },
+  "trouble": {
+   "inns": 46,
+   "runs": 1180,
+   "outs": 44,
+   "balls": 1838,
+   "100s": 0,
+   "50s": 8,
+   "sixes": 5,
+   "avg": 26.8,
+   "sr": 64.2,
+   "mates_sr": 49.0
+  },
+  "trouble50": {
+   "L": 8
+  },
+  "trouble50_list": [
+   "2017-07-26|Sri Lanka|67|116/4|L",
+   "2017-08-03|Sri Lanka|51|64/4|L",
+   "2019-01-24|Australia|64|66/5|L",
+   "2019-08-22|Sri Lanka|51|22/4|L",
+   "2019-12-19|Pakistan|65|97/5|L",
+   "2022-03-04|India|51|121/5|L",
+   "2022-06-29|Sri Lanka|58|97/5|L",
+   "2026-08-15|Sri Lanka|80|90/5|L"
+  ],
+  "tempo_gap": 16.9
+ },
+ "J da Silva": {
+  "country": "West Indies",
+  "tests": 0,
+  "results": {},
+  "all": {
+   "inns": 0,
+   "runs": 0,
+   "outs": 0,
+   "balls": 0,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 0,
+   "avg": null,
+   "sr": null,
+   "mates_sr": null
+  },
+  "home": {
+   "inns": 0,
+   "runs": 0,
+   "outs": 0,
+   "balls": 0,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 0,
+   "avg": null,
+   "sr": null,
+   "mates_sr": null
+  },
+  "away": {
+   "inns": 0,
+   "runs": 0,
+   "outs": 0,
+   "balls": 0,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 0,
+   "avg": null,
+   "sr": null,
+   "mates_sr": null
+  },
+  "sena": {
+   "inns": 0,
+   "runs": 0,
+   "outs": 0,
+   "balls": 0,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 0,
+   "avg": null,
+   "sr": null,
+   "mates_sr": null
+  },
+  "fourth": {
+   "inns": 0,
+   "runs": 0,
+   "outs": 0,
+   "balls": 0,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 0,
+   "avg": null,
+   "sr": null,
+   "mates_sr": null
+  },
+  "trouble": {
+   "inns": 0,
+   "runs": 0,
+   "outs": 0,
+   "balls": 0,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 0,
+   "avg": null,
+   "sr": null,
+   "mates_sr": null
+  },
+  "trouble50": {},
+  "trouble50_list": [],
+  "tempo_gap": null
+ },
+ "SD Hope": {
+  "country": "West Indies",
+  "tests": 48,
+  "results": {
+   "L": 32,
+   "W": 11,
+   "D": 5
+  },
+  "all": {
+   "inns": 91,
+   "runs": 2505,
+   "outs": 89,
+   "balls": 5725,
+   "100s": 5,
+   "50s": 7,
+   "sixes": 12,
+   "avg": 28.1,
+   "sr": 43.8,
+   "mates_sr": 46.4
+  },
+  "home": {
+   "inns": 43,
+   "runs": 1045,
+   "outs": 43,
+   "balls": 2490,
+   "100s": 1,
+   "50s": 4,
+   "sixes": 5,
+   "avg": 24.3,
+   "sr": 42.0,
+   "mates_sr": 45.5
+  },
+  "away": {
+   "inns": 48,
+   "runs": 1460,
+   "outs": 46,
+   "balls": 3235,
+   "100s": 4,
+   "50s": 3,
+   "sixes": 7,
+   "avg": 31.7,
+   "sr": 45.1,
+   "mates_sr": 47.1
+  },
+  "sena": {
+   "inns": 23,
+   "runs": 819,
+   "outs": 22,
+   "balls": 1746,
+   "100s": 3,
+   "50s": 2,
+   "sixes": 3,
+   "avg": 37.2,
+   "sr": 46.9,
+   "mates_sr": 48.3
+  },
+  "fourth": {
+   "inns": 22,
+   "runs": 549,
+   "outs": 21,
+   "balls": 1234,
+   "100s": 2,
+   "50s": 0,
+   "sixes": 3,
+   "avg": 26.1,
+   "sr": 44.5,
+   "mates_sr": 45.6
+  },
+  "trouble": {
+   "inns": 11,
+   "runs": 177,
+   "outs": 11,
+   "balls": 411,
+   "100s": 0,
+   "50s": 0,
+   "sixes": 0,
+   "avg": 16.1,
+   "sr": 43.1,
+   "mates_sr": 46.9
+  },
+  "trouble50": {},
+  "trouble50_list": [],
+  "tempo_gap": -2.6
+ },
+ "Mushfiqur Rahim": {
+  "country": "Bangladesh",
+  "tests": 100,
+  "results": {
+   "L": 61,
+   "W": 25,
+   "D": 14
+  },
+  "all": {
+   "inns": 183,
+   "runs": 6592,
+   "outs": 167,
+   "balls": 13549,
+   "100s": 14,
+   "50s": 27,
+   "sixes": 37,
+   "avg": 39.5,
+   "sr": 48.7,
+   "mates_sr": 52.6
+  },
+  "home": {
+   "inns": 98,
+   "runs": 3670,
+   "outs": 90,
+   "balls": 7523,
+   "100s": 8,
+   "50s": 17,
+   "sixes": 19,
+   "avg": 40.8,
+   "sr": 48.8,
+   "mates_sr": 53.6
+  },
+  "away": {
+   "inns": 85,
+   "runs": 2922,
+   "outs": 77,
+   "balls": 6026,
+   "100s": 6,
+   "50s": 10,
+   "sixes": 18,
+   "avg": 37.9,
+   "sr": 48.5,
+   "mates_sr": 51.3
+  },
+  "sena": {
+   "inns": 27,
+   "runs": 584,
+   "outs": 25,
+   "balls": 1227,
+   "100s": 1,
+   "50s": 2,
+   "sixes": 5,
+   "avg": 23.4,
+   "sr": 47.6,
+   "mates_sr": 52.8
+  },
+  "fourth": {
+   "inns": 29,
+   "runs": 795,
+   "outs": 24,
+   "balls": 1660,
+   "100s": 1,
+   "50s": 3,
+   "sixes": 4,
+   "avg": 33.1,
+   "sr": 47.9,
+   "mates_sr": 53.2
+  },
+  "trouble": {
+   "inns": 56,
+   "runs": 1726,
+   "outs": 51,
+   "balls": 3780,
+   "100s": 3,
+   "50s": 8,
+   "sixes": 10,
+   "avg": 33.8,
+   "sr": 45.7,
+   "mates_sr": 49.4
+  },
+  "trouble50": {
+   "L": 8,
+   "W": 3
+  },
+  "trouble50_list": [
+   "2007-07-03|Sri Lanka|80|78/5|L",
+   "2010-01-17|Bangladesh|101|135/5|L",
+   "2010-03-12|Bangladesh|95|110/5|L",
+   "2011-12-17|Bangladesh|53|95/5|L",
+   "2013-04-25|Zimbabwe|60|125/4|W",
+   "2013-04-25|Zimbabwe|93|65/4|W",
+   "2014-01-27|Bangladesh|61|59/4|L",
+   "2014-09-05|West Indies|116|107/4|L",
+   "2014-10-25|Bangladesh|64|114/4|W",
+   "2017-02-09|India|127|109/4|L",
+   "2017-09-04|Bangladesh|68|85/4|L"
+  ],
+  "tempo_gap": -3.9
+ }
+}

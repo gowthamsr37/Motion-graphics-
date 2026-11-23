@@ -1,0 +1,226 @@
+{
+ "india": [
+  {
+   "n": "Syed Kirmani",
+   "tests": 88,
+   "h": 2,
+   "avg": 27.04
+  },
+  {
+   "n": "Farokh Engineer",
+   "tests": 46,
+   "h": 2,
+   "avg": 31.08
+  },
+  {
+   "n": "Wriddhiman Saha",
+   "tests": 40,
+   "h": 3,
+   "avg": 29.41
+  },
+  {
+   "n": "MS Dhoni",
+   "tests": 90,
+   "h": 6,
+   "avg": 38.09
+  },
+  {
+   "n": "Rishabh Pant",
+   "tests": 53,
+   "h": 9,
+   "avg": 44.8
+  }
+ ],
+ "scatter": [
+  {
+   "n": "Pant",
+   "avg": 44.8,
+   "sr": 74.3
+  },
+  {
+   "n": "Dhoni",
+   "avg": 38.09,
+   "sr": 59.0
+  },
+  {
+   "n": "Saha",
+   "avg": 29.4,
+   "sr": 45.5
+  },
+  {
+   "n": "de Kock",
+   "avg": 38.8,
+   "sr": 70.9
+  },
+  {
+   "n": "Gilchrist",
+   "avg": 47.6,
+   "sr": 81.95
+  },
+  {
+   "n": "Prior",
+   "avg": 40.2,
+   "sr": 61.7
+  },
+  {
+   "n": "Watling",
+   "avg": 37.5,
+   "sr": 42.6
+  },
+  {
+   "n": "Carey",
+   "avg": 34.8,
+   "sr": 63.0
+  },
+  {
+   "n": "Rizwan",
+   "avg": 37.8,
+   "sr": 54.4
+  },
+  {
+   "n": "Haddin",
+   "avg": 33.0,
+   "sr": 58.5
+  },
+  {
+   "n": "Dickwella",
+   "avg": 30.7,
+   "sr": 66.4
+  },
+  {
+   "n": "Blundell",
+   "avg": 34.5,
+   "sr": 53.8
+  },
+  {
+   "n": "Paine",
+   "avg": 32.6,
+   "sr": 45.7
+  }
+ ],
+ "tempo": [
+  {
+   "n": "Gilchrist",
+   "gap": 28.3
+  },
+  {
+   "n": "Pant",
+   "gap": 24.9
+  },
+  {
+   "n": "de Kock",
+   "gap": 22.3
+  },
+  {
+   "n": "Dickwella",
+   "gap": 16.9
+  },
+  {
+   "n": "Prior",
+   "gap": 13.3
+  },
+  {
+   "n": "Carey",
+   "gap": 8.9
+  },
+  {
+   "n": "Dhoni",
+   "gap": 5.7
+  },
+  {
+   "n": "Rizwan",
+   "gap": 4.2
+  },
+  {
+   "n": "Saha",
+   "gap": -8.2
+  },
+  {
+   "n": "Watling",
+   "gap": -10.6
+  }
+ ],
+ "pant_sr": 74.3,
+ "pant_mates_sr": 49.4,
+ "home": {
+  "Pant": [
+   49.62,
+   42.94
+  ],
+  "Dhoni": [
+   46.4,
+   32.8
+  ],
+  "Saha": [
+   31.2,
+   27.3
+  ]
+ },
+ "spin_home_sr": 99.3,
+ "trouble": [
+  {
+   "n": "de Kock",
+   "v": 47.6,
+   "inns": 36
+  },
+  {
+   "n": "Watling",
+   "v": 43.1,
+   "inns": 49
+  },
+  {
+   "n": "Rizwan",
+   "v": 40.1,
+   "inns": 40
+  },
+  {
+   "n": "Prior",
+   "v": 36.8,
+   "inns": 37
+  },
+  {
+   "n": "Pant",
+   "v": 33.7,
+   "inns": 28
+  },
+  {
+   "n": "Dhoni",
+   "v": 30.9,
+   "inns": 52
+  }
+ ],
+ "fourth": {
+  "Pant": 40.8,
+  "Dhoni": 32.6
+ },
+ "lost": [
+  {
+   "n": "Pant",
+   "v": 39.3
+  },
+  {
+   "n": "Gilchrist",
+   "v": 36.2
+  },
+  {
+   "n": "Rizwan",
+   "v": 33.5
+  },
+  {
+   "n": "Prior",
+   "v": 33.3
+  },
+  {
+   "n": "Watling",
+   "v": 27.4
+  },
+  {
+   "n": "de Kock",
+   "v": 27.3
+  },
+  {
+   "n": "Dhoni",
+   "v": 26.9
+  }
+ ]
+}
