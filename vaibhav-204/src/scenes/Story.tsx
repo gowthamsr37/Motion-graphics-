@@ -1,7 +1,7 @@
 // Vaibhav Sooryavanshi, 204 off 53 v UAE (India A, Asia Cup Rising Stars, Doha, 24 Nov 2026).
 // Every entrance is keyed to the spoken word: wordAt(fps, scene, "prefix", fallbackSec[, nth]) / sentence(fps, scene, i).
 import React from "react";
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Cue } from "../components/Sound";
 import { BigGlyph, CLAMP, Cutout, Disp, fade, Label, Seam, Serif, Shell, useP } from "../components/Ed";
 import { Brand, CaseFile, Stamp } from "../components/Viz";
@@ -73,6 +73,37 @@ const Race: React.FC<{ x: number; y: number; at: number; scale: number; dur: num
 // A number that counts between keyframes [[frame, value], …] (holds between them).
 const count = (f: number, keys: [number, number][]) => Math.round(interpolate(f, keys.map((k) => k[0]), keys.map((k) => k[1]), CLAMP));
 
+
+// Full-bleed photo backdrop: slow push-in, washed into the paper.
+const Backdrop: React.FC<{ src: string; pos?: string; o?: number }> = ({ src, pos = "50% 30%", o = 0.16 }) => {
+  const frame = useCurrentFrame();
+  const { durationInFrames } = useVideoConfig();
+  const z = interpolate(frame, [0, durationInFrames], [1.08, 1.2]);
+  return (
+    <AbsoluteFill style={{ overflow: "hidden" }}>
+      <Img src={staticFile(`photos/${src}`)} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: pos, transform: `scale(${z})`, filter: "grayscale(1) contrast(1.15)", opacity: o, mixBlendMode: "multiply" }} />
+      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(242,237,227,0.75) 0%, rgba(242,237,227,0.2) 45%, rgba(242,237,227,0.85) 100%)" }} />
+    </AbsoluteFill>
+  );
+};
+// Radial burst of saffron rays at a record moment.
+const Burst: React.FC<{ at: number; x: number; y: number; r?: number }> = ({ at, x, y, r = 260 }) => {
+  const frame = useCurrentFrame();
+  const t = (frame - at) / 22;
+  if (t < 0 || t > 1) return null;
+  const e = theme.ease.out(t);
+  return (
+    <svg width={2 * r} height={2 * r} style={{ position: "absolute", left: x - r, top: y - r, overflow: "visible", pointerEvents: "none", zIndex: 25 }}>
+      {Array.from({ length: 16 }).map((_, i) => {
+        const a = (i / 16) * Math.PI * 2;
+        const r0 = r * 0.25 + r * 0.55 * e, r1 = r * 0.35 + r * 0.75 * e;
+        return <line key={i} x1={r + Math.cos(a) * r0} y1={r + Math.sin(a) * r0} x2={r + Math.cos(a) * r1} y2={r + Math.sin(a) * r1} stroke={i % 2 ? C.accent : C.red} strokeWidth={i % 2 ? 8 : 4} strokeLinecap="round" opacity={1 - t} />;
+      })}
+      <circle cx={r} cy={r} r={r * 0.9 * e} fill="none" stroke={C.accent} strokeWidth={6 * (1 - t)} opacity={1 - t} />
+    </svg>
+  );
+};
+
 /* ================= S1: the hook. 52 balls ================= */
 const s1Beats = (fps: number) => ({
   n103: wordAt(fps, "s1", "103", 4.12),
@@ -106,7 +137,7 @@ const S1: React.FC = () => {
         </div>
         {frame >= b.n52 - 1 && (
           <div style={{ position: "absolute", inset: 0, transformOrigin: "70px 300px", transform: `translateY(${-50 * m}px) scale(${(1 - 0.4 * m) * interpolate(slam, [0, 1], [2.2, 1])})`, opacity: interpolate(slam, [0, 0.15], [0, 1], CLAMP) }}>
-            <BigGlyph char="52" x={70} y={300} size={820} width={940} draw={1} fill={0.94} />
+            <BigGlyph char="52" x={70} y={300} size={820} width={940} draw={1} fill={1} />
             <div style={{ position: "absolute", left: 70, width: 940, top: 1030, textAlign: "center" }}>
               <Disp size={170}>Balls</Disp>
             </div>
@@ -127,6 +158,7 @@ const S1: React.FC = () => {
       <In at={b.story + 16} y={1062}>
         <Label size={20} color={C.ink2}>In 50-over cricket · ever</Label>
       </In>
+      <Burst at={b.n52} x={540} y={680} r={480} />
       <AbsoluteFill style={{ background: "#fff", opacity: flash, pointerEvents: "none" }} />
     </Shell>
   );
@@ -157,6 +189,7 @@ const S2: React.FC = () => {
   const seamP = interpolate(frame, [b.born, b.ipl + 16], [0, 1], CLAMP) * (1 - fade(frame, out, 8));
   return (
     <Shell>
+      <Backdrop src="vs-smile-helmet.jpg" />
       <In at={b.name - 4} y={236}>
         <Disp size={150}>Vaibhav</Disp>
         <br />
@@ -284,6 +317,7 @@ const S3: React.FC = () => {
   const fl = interpolate(frame, [b.n200, b.n200 + 2, b.n200 + 10], [0, 0.8, 0], CLAMP);
   return (
     <Shell>
+      <Backdrop src="vs-pull.jpg" />
       <AbsoluteFill style={{ background: "#fff", opacity: fl, zIndex: 30, pointerEvents: "none" }} />
       <div style={{ position: "absolute", inset: 0, transform: `translate(${sh}px, ${sh * 0.6}px)` }}>
       <div style={{ position: "absolute", left: 70, top: 236 }}>
@@ -317,6 +351,9 @@ const S3: React.FC = () => {
       <Swap src="vs-look-bat-cut.png" x={750} y={470} h={860} at={b.n100} out={b.n150} />
       <Swap src="vs-pull-cut.png" x={590} y={530} h={800} at={b.n150} out={b.n200} />
       <Swap src="vs-raise-cut.png" x={690} y={470} h={860} at={b.n200} />
+      <Burst at={b.n100} x={250} y={360} />
+      <Burst at={b.n150} x={250} y={360} />
+      <Burst at={b.n200} x={250} y={360} r={360} />
       <Mile y={626} at={b.n50} m="50" balls={16} />
       <Mile y={756} at={b.n100} m="100" balls={28} old={{ v: 29, who: "Old · J Fraser-McGurk", at: b.jake, kill: b.gone }} />
       <Mile y={932} at={b.n150} m="150" balls={40} old={{ v: 59, who: "Old · Sooryavanshi, Dec 2025", at: b.own, kill: b.n19 }} />
@@ -379,6 +416,7 @@ const S4: React.FC = () => {
   let acc = 0;
   return (
     <Shell>
+      <Backdrop src="vs-look-bat.jpg" />
       <In at={b.n28 - 2} y={232}>
         <div style={{ display: "flex", alignItems: "baseline", gap: 24 }}>
           <Disp size={300} color={C.accent}>
@@ -397,6 +435,7 @@ const S4: React.FC = () => {
           Sooryavanshi · 2026
         </Label>
       </In>
+      <Burst at={b.n28} x={230} y={380} r={340} />
       <Grid n={28} x={70} y={636} at={b.n28 + 2} step={1.2} color={C.accent} filled ringFrom={23} ringAt={b.gone + 4} />
       <In at={b.darcy - 2} x={576} y={598}>
         <Label size={17} color={C.ink2} weight={900}>
@@ -516,7 +555,9 @@ const S5: React.FC = () => {
   const fill = interpolate(frame, [b.n385, b.n385 + 10], [0, 1], CLAMP);
   return (
     <Shell>
-      <BigGlyph char="385" x={60} y={236} size={560} width={960} draw={draw} fill={fill * 0.94} />
+      <Backdrop src="vs-loft.jpg" />
+      <BigGlyph char="385" x={60} y={236} size={560} width={960} draw={draw} fill={fill} />
+      <Burst at={b.n385} x={540} y={480} r={420} />
       <In at={b.n385 + 4} center y={752}>
         <Disp size={84}>Strike rate</Disp>
       </In>
@@ -566,8 +607,9 @@ const S6: React.FC = () => {
   const cp = spring({ frame: frame - b.boys, fps, config: theme.spring.smooth });
   return (
     <Shell>
+      <Backdrop src="vs-smile-bat.jpg" />
       <div style={{ opacity: 1 - ageOut, transform: `translateY(${-60 * ageOut}px)` }}>
-        <BigGlyph char="15" x={60} y={236} size={560} width={600} draw={draw} fill={fill * 0.94} />
+        <BigGlyph char="15" x={60} y={236} size={560} width={600} draw={draw} fill={fill} />
         <In at={b.n15 + 4} y={752}>
           <Disp size={112}>Years</Disp>
         </In>
@@ -639,6 +681,7 @@ const S6: React.FC = () => {
               </div>
             );
           })}
+          <Burst at={b.four} x={460} y={900} r={420} />
           <Stamp text="4 world records" sub="one innings" at={b.four} x={150} y={840} rotate={-6} size={84} />
         </div>
       )}
@@ -654,30 +697,30 @@ const s7Beats = (fps: number) => ({
 });
 const S7: React.FC = () => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const { fps, durationInFrames } = useVideoConfig();
   const b = s7Beats(fps);
-  const up = ease(frame, b.brand - 6, b.brand + 14);
+  const z = interpolate(frame, [0, durationInFrames], [1.05, 1.18]);
+  const dim = ease(frame, b.close - 6, b.close + 14);
   return (
     <Shell exit={false}>
-      <div style={{ transform: `translateY(${-90 * up}px)` }}>
-        <CaseFile src="vs-sky.jpg" at={4} x={170} y={244} w={740} h={780} pos="50% 30%" tilt={-3} />
-        <In at={b.close} center y={1064}>
-          <Serif size={78} weight={900}>
-            At 15, the records
-          </Serif>
-        </In>
-        <In at={b.chasing} center y={1150}>
-          <Serif size={78} weight={900}>
-            are chasing <span style={{ color: C.accent }}>him.</span>
-          </Serif>
-        </In>
+      <AbsoluteFill style={{ overflow: "hidden" }}>
+        <Img src={staticFile("photos/vs-sky.jpg")} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 20%", transform: `scale(${z})`, opacity: fade(frame, 0, 14) }} />
+        <AbsoluteFill style={{ background: `linear-gradient(180deg, rgba(15,26,51,0.35) 0%, rgba(15,26,51,${0.15 + 0.35 * dim}) 40%, rgba(15,26,51,${0.75 + 0.15 * dim}) 75%, rgba(15,26,51,0.95) 100%)` }} />
+      </AbsoluteFill>
+      <In at={b.close} center y={1000}>
+        <Serif size={84} weight={900} color={C.paperHi}>At 15, the records</Serif>
+      </In>
+      <In at={b.chasing} center y={1094}>
+        <Serif size={84} weight={900} color={C.paperHi}>
+          are chasing <span style={{ color: C.accent }}>him.</span>
+        </Serif>
+      </In>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 1220, textAlign: "center", opacity: fade(frame, b.brand, 10) }}>
+        <Label size={22} color={C.accent} spacing="0.3em">{config.tagline}</Label>
+        <div style={{ marginTop: 8 }}><Disp size={92} color={C.paperHi}>{config.series}</Disp></div>
       </div>
-      <Seam x={240} y={1184} w={600} p={up} />
-      <Brand at={b.brand} top={1214} series={config.series} tagline={config.tagline} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 1400, textAlign: "center", opacity: fade(frame, b.brand + 12, 10) }}>
-        <Label size={15} color={C.mute} weight={600} spacing="0.08em">
-          Photos: BCCI / Team India · Data: match reports, 24 Nov 2026
-        </Label>
+        <Label size={15} color="rgba(255,255,255,0.6)" weight={600} spacing="0.08em">Photos: BCCI / Team India · Data: match reports & scorecard, 24 Nov 2026</Label>
       </div>
     </Shell>
   );
