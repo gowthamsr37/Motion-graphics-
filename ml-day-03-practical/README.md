@@ -1,85 +1,82 @@
-# 100 Days of ML · Day 3 (practical guide): Your First ML Project, Step by Step
+# 100 Days of ML · Day 3: Your First ML Project, the Real Way
 
-The user asked for Day 3 to be rebuilt as a **practical guide** ("people should think this video has some practical use") using **Bangalore**. It replaces `../ml-day-03-workflow` (the conceptual version, kept for reference). Statistics house style; ocean-blue series cover `MLCover day={3}`. About 2:34. Deliverables in `out/`: `ML_Day_03_First_Project.mp4`, `ML_Day_03_First_Project_Cover.png`, `.srt`; caption (with copy-paste code) in `CAPTION.md`.
+The user's direction: "practical" means the **real problems data scientists face at each step**, not Python code. Every step is named by its proper term (problem definition, data collection, data cleaning, exploratory data analysis (EDA), train-test split, model training, model evaluation, deployment), shows THE REAL PROBLEM and then WHAT YOU DO. One Bangalore flat-price project runs throughout. The checklist is in the house navy style (the user rejected the white card). Statistics house style; ocean-blue series cover `MLCover day={3}`. About 2:43. Deliverables in `out/`: `ML_Day_03_First_Project.mp4`, `ML_Day_03_First_Project_Cover.png`, `.srt`; caption in `CAPTION.md`.
 
-**Jargon (user request):** every step is named by its proper term in the narration ("Step 3, data cleaning: …"), in a THE TERM tag under the step bar, in the step-bar labels (PROBLEM · COLLECTION · CLEANING · EDA · SPLIT · TRAINING · EVALUATION), on the title card (all 7 terms glow as they are named) and under each checklist item; deployment is named in step 7.
-
-New components: `src/components/Code.tsx` (code-editor window: typed lines, Python highlighting, an Out: panel) and `src/components/Steps.tsx` (the 7-step bar: GOAL · DATA · CLEAN · PLOTS · SPLIT · MODEL · BASELINE).
+Components: `src/components/StepScene.tsx` (the step layout: 8-step bar, THE TERM tag, headline, red REAL PROBLEM panel, green WHAT YOU DO panel) and `src/components/Steps.tsx`.
 
 ## Storyboard
 
-1. **Title card** (frame 0): DAY 3 / 100, "Your First ML PROJECT", the 7 step chips, "7 steps · the actual code · a checklist to copy", SAVE THIS ONE.
-2. **Hook:** "40 hrs of theory, projects built: 0" → PREDICT FLAT PRICES in Bangalore, FOLLOW ALONG.
-3. **Goal:** a fill-in-the-blanks sentence (flat price in Rs lakh · area, beds, location, age · off by < Rs 8 lakh); CAN'T WRITE IT? DON'T START CODING.
-4. **Data:** KAGGLE · DATA.GOV.IN · YOUR SHEET; "a few thousand rows is plenty"; code read_csv → (10000, 5).
-5. **Clean:** code with the 4 checks typed on their words; results (37 missing · 212 duplicates · 12,000 sq ft 1 bed?! · Rs 50 crore villa); FILL WITH MEDIAN · DROP DUPES · FIX TYPOS.
-6. **Plots:** price vs size, average price by area (Koramangala tallest; Whitefield, HSR, Hebbal, E-City), price histogram.
-7. **Split:** train_test_split(test_size=0.2) → 8,000 train · 2,000 test; TEST SET: LOCKED.
-8. **Model:** LinearRegression in create / fit / predict lines; neural nets and XGBoost → later.
-9. **Baseline:** guess-the-average Rs 22L vs our model Rs 7L, target Rs 8L line, IT WORKS!, mean_absolute_error → 7.1; then a free Streamlit app (1,200 sq ft · 2 BHK · HSR → Rs 1.1 Cr) and RETRAIN WHEN NEW SALES COME IN.
-10. **Checklist:** a white clipboard "MY FIRST ML PROJECT" with 7 boxes ticking on their words; SCREENSHOT THIS; SAVE + SEND.
-11. **Poll + teaser + end card:** new dataset, what first? A train · B check missing values · C deploy · D tune (answer B); TOMORROW · DAY 4: CLEANING DATA, HANDS-ON; follow card.
+1. **Title card** (frame 0): DAY 3 / 100, "Your First ML PROJECT · the real way", the 8 terms, "+ THE REAL PROBLEM AT EVERY STEP", SAVE THIS ONE.
+2. **Hook:** COURSES (clean table, happy ending) vs REAL PROJECTS (messy table); PREDICT FLAT PRICES in Bangalore, and what actually goes wrong.
+3. **Problem definition:** "predict flat prices." that's it → a vague ask: for whom (buyers · sellers · a bank), how accurate? → ask first, agree on within Rs 8 lakh.
+4. **Data collection:** never in one place (site A · site B · broker sheet), half have no price, ASKING ≠ SOLD → combine sources, note what each measures.
+5. **Data cleaning:** "2 BHK" / "2bhk" / "two bedroom", 1,200 sq ft vs 111 sq m, same flat × 3 brokers → standardise, de-duplicate, flag.
+6. **EDA:** price line jumps +30% after the metro opens: real or a data error? → check with market experts.
+7. **Train-test split:** 36 monthly bars; a random mix (wrong) vs the latest months as test → test on recent data.
+8. **Model training:** a score shooting to 99%; DAYS ON MARKET (known only after the sale) → DATA LEAKAGE; removed → honest 88%.
+9. **Model evaluation:** overall Rs 7L fine, but luxury villas Rs 40L and new areas Rs 25L off → check group by group.
+10. **Deployment:** an error line creeping up after interest rates change → MODEL DRIFT → monitor + retrain.
+11. **The real checklist** (navy panel): 8 rows, term + habit, ticking on their words; SAVE THIS.
+12. **Poll + teaser + end card:** what takes most time? A building models · B cleaning data · C slides · D meetings (answer B); TOMORROW · DAY 4: CLEANING DATA, HANDS-ON; follow card.
 
 ## Accuracy notes
 
-The dataset and numbers (37 missing, 212 duplicates, MAE 7.1 lakh vs baseline 22 lakh, area price ranking) are illustrative, not from a real file. The code is real, runnable pandas / scikit-learn (X, y = feature columns and price after encoding the location).
+The project and its numbers are illustrative. "Cleaning takes most of the time" reflects practitioner surveys (often quoted at 45–80%), not an exact figure.
 
 ## Voiceover script
 
-**S1 · Title card** (0:00.00–0:16.86)
-- `0:00.20` Day 3 of 100 Days of Machine Learning: your first ML project, step by step.
-- `0:05.67` Problem definition, data collection, data cleaning, exploratory data analysis, the train-test split, model training and evaluation, with the actual code. Save this one!
+**S1 · Title card** (0:00.00–0:10.76)
+- `0:00.20` Day 3 of 100 Days of Machine Learning: your first ML project, the real way.
+- `0:05.58` 8 steps, and the real problems data scientists face at every one. Save this one!
 
-**S2 · Hook** (0:16.86–0:26.75)
-- `0:17.16` Most beginners watch hours of theory and never build anything.
-- `0:20.72` Today we build one real project together: predicting flat prices in Bangalore. Follow along.
+**S2 · Hook** (0:10.76–0:21.58)
+- `0:11.05` Courses give you clean data and a happy ending. Real projects don't.
+- `0:15.30` Let's follow one real project, predicting flat prices in Bangalore, and see what actually goes wrong.
 
-**S3 · Step 1: one sentence** (0:26.75–0:41.90)
-- `0:27.05` Step 1, problem definition: write one sentence.
-- `0:30.32` Predict the flat price in lakhs, using area, bedrooms, location and age. Success means being off by less than 8 lakh on average.
-- `0:38.99` If you can't write this sentence, don't start coding.
+**S3 · Problem definition** (0:21.58–0:38.25)
+- `0:21.88` Step 1, problem definition. Your manager says: predict flat prices. That's it.
+- `0:27.22` The real problem: a vague ask. Prices for whom? Buyers, sellers, or a bank? And how accurate is good enough?
+- `0:33.81` So you ask questions first, and agree on success: say, within 8 lakh.
 
-**S4 · Step 2: get the data** (0:41.90–0:56.79)
-- `0:42.20` Step 2, data collection: get the data.
-- `0:44.76` Free sources: Kaggle, data.gov.in, or your own spreadsheet.
-- `0:49.00` For a first project, a few thousand rows is plenty.
-- `0:52.21` Load it with pandas, using read_csv. We have 10,000 flats.
+**S4 · Data collection** (0:38.26–0:54.08)
+- `0:38.55` Step 2, data collection. The data you need is never in one place.
+- `0:42.97` Listings sit on different websites. Half have no price. And most are asking prices, not what flats actually sold for.
+- `0:50.44` So you combine sources, and note what each one really measures.
 
-**S5 · Step 3: four checks** (0:56.79–1:23.92)
-- `0:57.09` Step 3, data cleaning: run these 4 checks, every single time.
-- `1:01.31` 1, missing values: isnull().sum().
-- `1:03.65` 2, duplicates: drop_duplicates().
-- `1:06.10` 3, impossible values: describe(). 12,000 sq ft with 1 bedroom? Probably a typo.
-- `1:12.50` 4, outliers. One 50 crore villa will confuse a flat price model.
-- `1:17.08` Then fix them: fill missing values with the median, delete the duplicates, and correct or remove the typos.
+**S5 · Data cleaning** (0:54.08–1:13.30)
+- `0:54.38` Step 3, data cleaning. This is where most of your time goes.
+- `0:58.15` "2 BHK", "2bhk" and "two bedroom", all meaning the same thing. Area in sq ft and sq m. And the same flat, posted by 3 different brokers.
+- `1:08.56` You standardise everything, remove duplicates, and flag anything suspicious.
 
-**S6 · Step 4: three plots** (1:23.92–1:40.05)
-- `1:24.22` Step 4, exploratory data analysis, or EDA: make 3 plots before any model.
-- `1:29.94` Price versus area. Average price by area of the city. And a histogram of prices.
-- `1:35.47` Here, price climbs steadily with size, and Koramangala costs the most.
+**S6 · EDA** (1:13.30–1:28.69)
+- `1:13.60` Step 4, exploratory data analysis. You plot everything, and find surprises.
+- `1:18.76` Prices near one new metro station jumped 30% in a year. Is that real, or a data error?
+- `1:24.92` So you check with people who know the market before trusting a pattern.
 
-**S7 · Step 5: split** (1:40.05–1:50.30)
-- `1:40.35` Step 5, the train-test split: split before you train.
-- `1:43.84` train_test_split, with test_size = 0.2. Then lock the test set away until the very end.
+**S7 · Train-test split** (1:28.69–1:39.96)
+- `1:28.99` Step 5, the train-test split. The trap: mixing old and new sales together.
+- `1:34.02` Prices keep rising, so you test on the most recent months, exactly how the model will be used.
 
-**S8 · Step 6: start simple** (1:50.30–2:00.43)
-- `1:50.60` Step 6, model training: start simple.
-- `1:53.09` Linear regression, in 3 lines: create the model, fit it on the training data, and predict. Fancy models can wait.
+**S8 · Model training** (1:39.96–1:52.78)
+- `1:40.26` Step 6, model training. The model scores amazingly well. Too well.
+- `1:44.63` It was using days on market, which you only know after the flat sells. That's called data leakage. Remove it, and you get an honest score.
 
-**S9 · Step 7: beat the baseline** (2:00.43–2:25.25)
-- `2:00.73` Step 7, model evaluation: compare with a dumb baseline.
-- `2:04.58` Just guessing the average price is off by 22 lakh. Our model is off by 7. That's under our target of 8. It works!
-- `2:12.30` That number is the mean absolute error: on average, how far each prediction is from the real price.
-- `2:18.52` Want others to use it? That's deployment: wrap it in a free Streamlit app, and retrain when new sales come in.
+**S9 · Model evaluation** (1:52.78–2:04.54)
+- `1:53.08` Step 7, model evaluation. The average error looks fine.
+- `1:57.01` But for luxury villas and brand new areas, it's way off. So you check accuracy group by group, not just the overall number.
 
-**S10 · The checklist** (2:25.25–2:39.70)
-- `2:25.55` Here's the whole checklist. Screenshot it.
-- `2:27.94` One sentence goal. Load the data. 4 cleaning checks. 3 plots. Split. Simple model. Beat the baseline.
-- `2:35.11` Save this, and send it to the friend who keeps saying they'll start ML someday.
+**S10 · Deployment** (2:04.54–2:15.93)
+- `2:04.84` Step 8, deployment. The model goes live. 6 months later, interest rates change, and predictions slowly go wrong.
+- `2:12.11` That's model drift. So you monitor it, and retrain regularly.
 
-**S11 · Poll, teaser and CTA** (2:39.70–2:51.66)
-- `2:40.05` Your turn: you've just loaded a new dataset. What's the first thing you run? Vote in the caption poll!
-- `2:45.78` Tomorrow, Day 4: cleaning messy data, hands-on.
-- `2:48.94` Follow for data science made simple!
+**S11 · The real checklist** (2:15.93–2:31.87)
+- `2:16.23` So here's the real checklist.
+- `2:18.00` Ask before you build. Know your sources. Clean everything. Question every pattern. Test on recent data. Watch for leakage. Check every group. Monitor after launch.
+- `2:28.86` Save this. This is what the job really looks like.
 
-total 171.659
+**S12 · Poll, teaser and CTA** (2:31.87–2:42.88)
+- `2:32.22` Your turn: what takes most of a data scientist's time? Vote in the caption poll!
+- `2:37.03` Tomorrow, Day 4: cleaning messy data, hands-on.
+- `2:40.16` Follow for data science made simple!
+
+total 162.88

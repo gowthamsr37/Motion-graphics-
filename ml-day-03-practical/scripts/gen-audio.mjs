@@ -31,12 +31,12 @@ const cueS = (id, i, tok) => {
 const ev = {
   allData: 0.05, // the title card lands at frame 0
   sameType: sent("s1", 1),
-  quiz: sent("s11", 0), // the poll prompt
-  tease: sent("s11", 1),
-  follow: sent("s11", 2),
-  acc1: sent("s5", 1), // the 4 checks begin
-  acc2: cueS("s9", 1, "works!"), // beats the baseline
-  acc3: sent("s10", 2), // save this
+  quiz: sent("s12", 0), // the poll prompt
+  tease: sent("s12", 1),
+  follow: sent("s12", 2),
+  acc1: sent("s5", 1), // the messy data
+  acc2: cueS("s8", 1, "leakage."), // data leakage
+  acc3: sent("s11", 2), // save this
 };
 
 // ---------- dsp utils ----------
@@ -204,10 +204,10 @@ const ML = new Float32Array(N), MR = new Float32Array(N);
 const sections = [
   // [from, to, style]
   [0, S("s2"), "drop"], // the title card: lifted chord from frame 0
-  [S("s2"), S("s4"), "flow"], // the 3 jobs + supervised: calm
-  [S("s4"), S("s9"), "grooveA"], // two flavours, the catch, unsupervised, reinforcement
-  [S("s9"), S("s10"), "play"], // the cheat sheet
-  [S("s10"), ev.quiz, "build"], // the answers
+  [S("s2"), S("s4"), "flow"], // the hook + problem definition: calm
+  [S("s4"), S("s10"), "grooveA"], // collection → evaluation
+  [S("s10"), S("s11"), "play"], // deployment
+  [S("s11"), ev.quiz, "build"], // the real checklist + save
   [ev.quiz, DUR - 0.6, "finale"], // your turn, teaser, CTA
 ];
 const styleAt = (t) => (sections.find(([a, b]) => t >= a && t < b) || [0, 0, "none"])[2];

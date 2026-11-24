@@ -2,59 +2,59 @@
 
 ## Caption (paste this)
 
-Stop watching theory. Build your FIRST machine learning project today 👇 (copy the checklist + code below)
+Courses give you clean data and a happy ending. Real projects don't 😅 Here's what ACTUALLY goes wrong at every step of an ML project 👇
 
-🛠️ DAY 3 / 100: YOUR FIRST ML PROJECT, STEP BY STEP
-Project: predict flat prices in Bangalore 🏙️
+🛠️ DAY 3 / 100: YOUR FIRST ML PROJECT, THE REAL WAY
+Project: predicting flat prices in Bangalore 🏙️
 
-1️⃣ PROBLEM DEFINITION: write ONE sentence.
-"Predict flat price (₹ lakh) using area, bedrooms, location, age. Success = off by < ₹8 lakh."
-Can't write it? Don't start coding.
+1️⃣ PROBLEM DEFINITION
+Problem: the manager just says "predict flat prices". For whom: buyers, sellers, a bank? How accurate is good enough?
+Do: ask questions first, and agree on success (e.g. within ₹8 lakh).
 
-2️⃣ DATA COLLECTION: free sources: Kaggle, data.gov.in, your own spreadsheet. A few thousand rows is plenty.
-import pandas as pd
-df = pd.read_csv("bangalore_flats.csv")
+2️⃣ DATA COLLECTION
+Problem: the data is never in one place. Listings on different sites, half with no price, and most are ASKING prices, not SOLD prices.
+Do: combine sources, and note what each one really measures.
 
-3️⃣ DATA CLEANING: run these 4 checks EVERY time:
-df.isnull().sum()   → missing values
-df = df.drop_duplicates()   → duplicates
-df.describe()   → impossible values (12,000 sq ft with 1 bedroom?)
-outliers   → one ₹50 crore villa confuses a flat model
-Fix: fill missing with the median, drop dupes, fix or remove typos.
+3️⃣ DATA CLEANING (where most of your time goes)
+Problem: "2 BHK" vs "2bhk" vs "two bedroom", sq ft vs sq m, the same flat posted by 3 brokers.
+Do: standardise everything, remove duplicates, flag anything suspicious.
 
-4️⃣ EXPLORATORY DATA ANALYSIS (EDA): price vs size · average price by area of the city · histogram of prices.
+4️⃣ EXPLORATORY DATA ANALYSIS (EDA)
+Problem: prices near a new metro station jumped 30% in a year. Real, or a data error?
+Do: check with people who know the market before trusting a pattern.
 
-5️⃣ TRAIN-TEST SPLIT (before training):
-from sklearn.model_selection import train_test_split
-X_tr, X_te, y_tr, y_te = train_test_split(X, y, test_size=0.2)
-Lock the test set until the end.
+5️⃣ TRAIN-TEST SPLIT
+Problem: mixing old and new sales together while prices keep rising.
+Do: test on the most recent months, exactly how the model will be used.
 
-6️⃣ MODEL TRAINING (start simple):
-from sklearn.linear_model import LinearRegression
-model = LinearRegression()
-model.fit(X_tr, y_tr)
-preds = model.predict(X_te)
+6️⃣ MODEL TRAINING
+Problem: an amazing score… because the model used "days on market", which you only know AFTER the flat sells. That's DATA LEAKAGE.
+Do: remove it, and get an honest score.
 
-7️⃣ MODEL EVALUATION (beat the baseline):
-Guessing the average price: off by ₹22 lakh. Our model: off by ₹7 lakh (mean absolute error). Under the ₹8 lakh target ✅
-Then DEPLOYMENT: a free Streamlit app, and retrain when new sales come in.
+7️⃣ MODEL EVALUATION
+Problem: the average error looks fine, but luxury villas and new areas are way off.
+Do: check accuracy group by group, not just the overall number.
 
-✅ CHECKLIST (screenshot it): problem definition → data collection → data cleaning → EDA → train-test split → model training → model evaluation (→ deployment)
+8️⃣ DEPLOYMENT
+Problem: 6 months later interest rates change and predictions slowly go wrong. That's MODEL DRIFT.
+Do: monitor it and retrain regularly.
 
-🧠 Your turn: you've just loaded a new dataset. What's the FIRST thing you run? Vote in the poll 👇
+✅ THE REAL CHECKLIST: ask before you build · know your sources · clean everything · question every pattern · test on recent data · watch for leakage · check every group · monitor after launch
 
-📌 Save this and send it to the friend who keeps saying they'll start ML "someday".
+🧠 Your turn: what takes MOST of a data scientist's time? Vote in the poll 👇
+
+📌 Save this. This is what the job really looks like.
 🔜 Tomorrow, Day 4: cleaning messy data, hands-on.
 
 Follow @curious_datascientist for data science made simple 🚀
 
-#machinelearning #100daysofml #python #datascience #mlproject #learnmachinelearning #pandas #sklearn
+#machinelearning #100daysofml #datascience #datascientist #mlproject #learnmachinelearning #ai #careerindata
 
 ## Poll
 
-- **Question:** New dataset loaded. What do you run FIRST?
-- **Options:** A Train a model · B Check missing values · C Deploy an app · D Tune the model
+- **Question:** What takes most of a data scientist's time?
+- **Options:** A Building models · B Cleaning data · C Making slides · D Meetings
 
 ## Pinned comment
 
-✅ Answer: B, check for missing values (and the other cleaning checks)! A model trained on messy data gives messy predictions: garbage in, garbage out. df.isnull().sum() takes one second and can save you hours. Comment "CODE" if you want the full notebook for this project 👇
+✅ Answer: B, cleaning and preparing data! Surveys of data scientists keep finding that getting data ready takes the biggest share of the job, often well over half. Building the model is the short, fun part. Which step surprised you the most? 👇

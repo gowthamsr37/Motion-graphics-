@@ -7,17 +7,17 @@
    "id": "s1",
    "title": "Title card",
    "lead": 0.2,
-   "hold": 0.4,
+   "hold": 0.35,
    "segments": [
     {
-     "text": "Day three of 100 Days of Machine Learning: your first ML project, step by step.",
-     "caption": "Day 3 of 100 Days of Machine Learning: your first ML project, step by step.",
-     "pause": 0.25
+     "text": "Day three of 100 Days of Machine Learning: your first ML project, the real way.",
+     "caption": "Day 3 of 100 Days of Machine Learning: your first ML project, the real way.",
+     "pause": 0.22
     },
     {
-     "text": "Problem definition, data collection, data cleaning, exploratory data analysis, the train test split, model training and evaluation, with the actual code. Save this one!",
-     "caption": "Problem definition, data collection, data cleaning, exploratory data analysis, the train-test split, model training and evaluation, with the actual code. Save this one!",
-     "pause": 0.25
+     "text": "Eight steps, and the real problems data scientists face at every one. Save this one!",
+     "caption": "8 steps, and the real problems data scientists face at every one. Save this one!",
+     "pause": 0.22
     }
    ]
   },
@@ -25,239 +25,227 @@
    "id": "s2",
    "title": "Hook",
    "lead": 0.3,
-   "hold": 0.4,
+   "hold": 0.35,
    "segments": [
     {
-     "text": "Most beginners watch hours of theory and never build anything.",
-     "caption": "Most beginners watch hours of theory and never build anything.",
-     "pause": 0.25
+     "text": "Courses give you clean data and a happy ending. Real projects don't.",
+     "caption": "Courses give you clean data and a happy ending. Real projects don't.",
+     "pause": 0.22
     },
     {
-     "text": "Today we build one real project together: predicting flat prices in Bangalore. Follow along.",
-     "caption": "Today we build one real project together: predicting flat prices in Bangalore. Follow along.",
-     "pause": 0.25
+     "text": "Let's follow one real project, predicting flat prices in Bangalore, and see what actually goes wrong.",
+     "caption": "Let's follow one real project, predicting flat prices in Bangalore, and see what actually goes wrong.",
+     "pause": 0.22
     }
    ]
   },
   {
    "id": "s3",
-   "title": "Step 1: one sentence",
+   "title": "Problem definition",
    "lead": 0.3,
-   "hold": 0.4,
+   "hold": 0.35,
    "segments": [
     {
-     "text": "Step one, problem definition: write one sentence.",
-     "caption": "Step 1, problem definition: write one sentence.",
-     "pause": 0.25
+     "text": "Step one, problem definition. Your manager says: predict flat prices. That's it.",
+     "caption": "Step 1, problem definition. Your manager says: predict flat prices. That's it.",
+     "pause": 0.22
     },
     {
-     "text": "Predict the flat price in lakhs, using area, bedrooms, location and age. Success means being off by less than eight lakh on average.",
-     "caption": "Predict the flat price in lakhs, using area, bedrooms, location and age. Success means being off by less than 8 lakh on average.",
-     "pause": 0.25
+     "text": "The real problem: a vague ask. Prices for whom? Buyers, sellers, or a bank? And how accurate is good enough?",
+     "caption": "The real problem: a vague ask. Prices for whom? Buyers, sellers, or a bank? And how accurate is good enough?",
+     "pause": 0.22
     },
     {
-     "text": "If you can't write this sentence, don't start coding.",
-     "caption": "If you can't write this sentence, don't start coding.",
-     "pause": 0.25
+     "text": "So you ask questions first, and agree on success: say, within eight lakh.",
+     "caption": "So you ask questions first, and agree on success: say, within 8 lakh.",
+     "pause": 0.22
     }
    ]
   },
   {
    "id": "s4",
-   "title": "Step 2: get the data",
+   "title": "Data collection",
    "lead": 0.3,
-   "hold": 0.4,
+   "hold": 0.35,
    "segments": [
     {
-     "text": "Step two, data collection: get the data.",
-     "caption": "Step 2, data collection: get the data.",
-     "pause": 0.25
+     "text": "Step two, data collection. The data you need is never in one place.",
+     "caption": "Step 2, data collection. The data you need is never in one place.",
+     "pause": 0.22
     },
     {
-     "text": "Free sources: Kaggle, data dot gov dot in, or your own spreadsheet.",
-     "caption": "Free sources: Kaggle, data.gov.in, or your own spreadsheet.",
-     "pause": 0.25
+     "text": "Listings sit on different websites. Half have no price. And most are asking prices, not what flats actually sold for.",
+     "caption": "Listings sit on different websites. Half have no price. And most are asking prices, not what flats actually sold for.",
+     "pause": 0.22
     },
     {
-     "text": "For a first project, a few thousand rows is plenty.",
-     "caption": "For a first project, a few thousand rows is plenty.",
-     "pause": 0.25
-    },
-    {
-     "text": "Load it with pandas, using read csv. We have ten thousand flats.",
-     "caption": "Load it with pandas, using read_csv. We have 10,000 flats.",
-     "pause": 0.25
+     "text": "So you combine sources, and note what each one really measures.",
+     "caption": "So you combine sources, and note what each one really measures.",
+     "pause": 0.22
     }
    ]
   },
   {
    "id": "s5",
-   "title": "Step 3: four checks",
+   "title": "Data cleaning",
    "lead": 0.3,
-   "hold": 0.4,
+   "hold": 0.35,
    "segments": [
     {
-     "text": "Step three, data cleaning: run these four checks, every single time.",
-     "caption": "Step 3, data cleaning: run these 4 checks, every single time.",
-     "pause": 0.25
+     "text": "Step three, data cleaning. This is where most of your time goes.",
+     "caption": "Step 3, data cleaning. This is where most of your time goes.",
+     "pause": 0.22
     },
     {
-     "text": "One, missing values: is null, sum.",
-     "caption": "1, missing values: isnull().sum().",
-     "pause": 0.25
+     "text": "Two BHK, 2bhk and two bedroom, all meaning the same thing. Area in square feet and square metres. And the same flat, posted by three different brokers.",
+     "caption": "\"2 BHK\", \"2bhk\" and \"two bedroom\", all meaning the same thing. Area in sq ft and sq m. And the same flat, posted by 3 different brokers.",
+     "pause": 0.22
     },
     {
-     "text": "Two, duplicates: drop duplicates.",
-     "caption": "2, duplicates: drop_duplicates().",
-     "pause": 0.25
-    },
-    {
-     "text": "Three, impossible values: describe. Twelve thousand square feet with one bedroom? Probably a typo.",
-     "caption": "3, impossible values: describe(). 12,000 sq ft with 1 bedroom? Probably a typo.",
-     "pause": 0.25
-    },
-    {
-     "text": "Four, outliers. One fifty crore villa will confuse a flat price model.",
-     "caption": "4, outliers. One 50 crore villa will confuse a flat price model.",
-     "pause": 0.25
-    },
-    {
-     "text": "Then fix them: fill missing values with the median, delete the duplicates, and correct or remove the typos.",
-     "caption": "Then fix them: fill missing values with the median, delete the duplicates, and correct or remove the typos.",
-     "pause": 0.25
+     "text": "You standardise everything, remove duplicates, and flag anything suspicious.",
+     "caption": "You standardise everything, remove duplicates, and flag anything suspicious.",
+     "pause": 0.22
     }
    ]
   },
   {
    "id": "s6",
-   "title": "Step 4: three plots",
+   "title": "EDA",
    "lead": 0.3,
-   "hold": 0.4,
+   "hold": 0.35,
    "segments": [
     {
-     "text": "Step four, exploratory data analysis, or E D A: make three plots before any model.",
-     "caption": "Step 4, exploratory data analysis, or EDA: make 3 plots before any model.",
-     "pause": 0.25
+     "text": "Step four, exploratory data analysis. You plot everything, and find surprises.",
+     "caption": "Step 4, exploratory data analysis. You plot everything, and find surprises.",
+     "pause": 0.22
     },
     {
-     "text": "Price versus area. Average price by area of the city. And a histogram of prices.",
-     "caption": "Price versus area. Average price by area of the city. And a histogram of prices.",
-     "pause": 0.25
+     "text": "Prices near one new metro station jumped thirty percent in a year. Is that real, or a data error?",
+     "caption": "Prices near one new metro station jumped 30% in a year. Is that real, or a data error?",
+     "pause": 0.22
     },
     {
-     "text": "Here, price climbs steadily with size, and Koramangala costs the most.",
-     "caption": "Here, price climbs steadily with size, and Koramangala costs the most.",
-     "pause": 0.25
+     "text": "So you check with people who know the market before trusting a pattern.",
+     "caption": "So you check with people who know the market before trusting a pattern.",
+     "pause": 0.22
     }
    ]
   },
   {
    "id": "s7",
-   "title": "Step 5: split",
+   "title": "Train-test split",
    "lead": 0.3,
-   "hold": 0.4,
+   "hold": 0.35,
    "segments": [
     {
-     "text": "Step five, the train test split: split before you train.",
-     "caption": "Step 5, the train-test split: split before you train.",
-     "pause": 0.25
+     "text": "Step five, the train test split. The trap: mixing old and new sales together.",
+     "caption": "Step 5, the train-test split. The trap: mixing old and new sales together.",
+     "pause": 0.22
     },
     {
-     "text": "Train test split, with test size zero point two. Then lock the test set away until the very end.",
-     "caption": "train_test_split, with test_size = 0.2. Then lock the test set away until the very end.",
-     "pause": 0.25
+     "text": "Prices keep rising, so you test on the most recent months, exactly how the model will be used.",
+     "caption": "Prices keep rising, so you test on the most recent months, exactly how the model will be used.",
+     "pause": 0.22
     }
    ]
   },
   {
    "id": "s8",
-   "title": "Step 6: start simple",
+   "title": "Model training",
    "lead": 0.3,
-   "hold": 0.4,
+   "hold": 0.35,
    "segments": [
     {
-     "text": "Step six, model training: start simple.",
-     "caption": "Step 6, model training: start simple.",
-     "pause": 0.25
+     "text": "Step six, model training. The model scores amazingly well. Too well.",
+     "caption": "Step 6, model training. The model scores amazingly well. Too well.",
+     "pause": 0.22
     },
     {
-     "text": "Linear regression, in three lines: create the model, fit it on the training data, and predict. Fancy models can wait.",
-     "caption": "Linear regression, in 3 lines: create the model, fit it on the training data, and predict. Fancy models can wait.",
-     "pause": 0.25
+     "text": "It was using days on market, which you only know after the flat sells. That's called data leakage. Remove it, and you get an honest score.",
+     "caption": "It was using days on market, which you only know after the flat sells. That's called data leakage. Remove it, and you get an honest score.",
+     "pause": 0.22
     }
    ]
   },
   {
    "id": "s9",
-   "title": "Step 7: beat the baseline",
+   "title": "Model evaluation",
    "lead": 0.3,
-   "hold": 0.4,
+   "hold": 0.35,
    "segments": [
     {
-     "text": "Step seven, model evaluation: compare with a dumb baseline.",
-     "caption": "Step 7, model evaluation: compare with a dumb baseline.",
-     "pause": 0.25
+     "text": "Step seven, model evaluation. The average error looks fine.",
+     "caption": "Step 7, model evaluation. The average error looks fine.",
+     "pause": 0.22
     },
     {
-     "text": "Just guessing the average price is off by twenty-two lakh. Our model is off by seven. That's under our target of eight. It works!",
-     "caption": "Just guessing the average price is off by 22 lakh. Our model is off by 7. That's under our target of 8. It works!",
-     "pause": 0.25
-    },
-    {
-     "text": "That number is the mean absolute error: on average, how far each prediction is from the real price.",
-     "caption": "That number is the mean absolute error: on average, how far each prediction is from the real price.",
-     "pause": 0.25
-    },
-    {
-     "text": "Want others to use it? That's deployment: wrap it in a free Streamlit app, and retrain when new sales come in.",
-     "caption": "Want others to use it? That's deployment: wrap it in a free Streamlit app, and retrain when new sales come in.",
-     "pause": 0.25
+     "text": "But for luxury villas and brand new areas, it's way off. So you check accuracy group by group, not just the overall number.",
+     "caption": "But for luxury villas and brand new areas, it's way off. So you check accuracy group by group, not just the overall number.",
+     "pause": 0.22
     }
    ]
   },
   {
    "id": "s10",
-   "title": "The checklist",
+   "title": "Deployment",
    "lead": 0.3,
-   "hold": 0.4,
+   "hold": 0.35,
    "segments": [
     {
-     "text": "Here's the whole checklist. Screenshot it.",
-     "caption": "Here's the whole checklist. Screenshot it.",
-     "pause": 0.25
+     "text": "Step eight, deployment. The model goes live. Six months later, interest rates change, and predictions slowly go wrong.",
+     "caption": "Step 8, deployment. The model goes live. 6 months later, interest rates change, and predictions slowly go wrong.",
+     "pause": 0.22
     },
     {
-     "text": "One sentence goal. Load the data. Four cleaning checks. Three plots. Split. Simple model. Beat the baseline.",
-     "caption": "One sentence goal. Load the data. 4 cleaning checks. 3 plots. Split. Simple model. Beat the baseline.",
-     "pause": 0.25
-    },
-    {
-     "text": "Save this, and send it to the friend who keeps saying they'll start ML someday.",
-     "caption": "Save this, and send it to the friend who keeps saying they'll start ML someday.",
-     "pause": 0.25
+     "text": "That's model drift. So you monitor it, and retrain regularly.",
+     "caption": "That's model drift. So you monitor it, and retrain regularly.",
+     "pause": 0.22
     }
    ]
   },
   {
    "id": "s11",
+   "title": "The real checklist",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "So here's the real checklist.",
+     "caption": "So here's the real checklist.",
+     "pause": 0.22
+    },
+    {
+     "text": "Ask before you build. Know your sources. Clean everything. Question every pattern. Test on recent data. Watch for leakage. Check every group. Monitor after launch.",
+     "caption": "Ask before you build. Know your sources. Clean everything. Question every pattern. Test on recent data. Watch for leakage. Check every group. Monitor after launch.",
+     "pause": 0.22
+    },
+    {
+     "text": "Save this. This is what the job really looks like.",
+     "caption": "Save this. This is what the job really looks like.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s12",
    "title": "Poll, teaser and CTA",
    "lead": 0.35,
    "hold": 0.8,
    "segments": [
     {
-     "text": "Your turn: you've just loaded a new dataset. What's the first thing you run? Vote in the caption poll!",
-     "caption": "Your turn: you've just loaded a new dataset. What's the first thing you run? Vote in the caption poll!",
-     "pause": 0.25
+     "text": "Your turn: what takes most of a data scientist's time? Vote in the caption poll!",
+     "caption": "Your turn: what takes most of a data scientist's time? Vote in the caption poll!",
+     "pause": 0.22
     },
     {
      "text": "Tomorrow, day four: cleaning messy data, hands-on.",
      "caption": "Tomorrow, Day 4: cleaning messy data, hands-on.",
-     "pause": 0.25
+     "pause": 0.22
     },
     {
      "text": "Follow for data science made simple!",
      "caption": "Follow for data science made simple!",
-     "pause": 0.25
+     "pause": 0.22
     }
    ]
   }

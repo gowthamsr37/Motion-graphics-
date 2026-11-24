@@ -41,45 +41,32 @@ const useHits = (): Hit[] => {
   { // S1 title card
     const s = T("s1"), h = at("s1");
     h(2, "scribble.wav", 0.2);
-    for (let i = 0; i < 7; i++) h(12 + i * 3, "pop.wav", 0.12);
+    for (let i = 0; i < 8; i++) h(14 + i * 3, "pop.wav", 0.11);
+    h(s.cueS(1, "problems") - 4, "stamp.wav", 0.22);
     h(s.cueS(1, "Save") - 6, "sparkle.wav", 0.2);
   }
   { // S2 hook
     const s = T("s2"), h = at("s2");
+    h(s.cueS(0, "Real") - 4, "glitch.wav", 0.1);
     h(s.sent(1).from, "whip.wav", 0.2);
-    h(s.cueS(1, "Follow") - 4, "pop.wav", 0.2);
   }
-  // step scenes: a stamp as each step lands
-  (["s3", "s4", "s5", "s6", "s7", "s8", "s9"] as SceneId[]).forEach((id) => {
+  // step scenes: a stamp on the term, a glitch on the real problem, a ding on the fix
+  (["s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10"] as SceneId[]).forEach((id) => {
     const s = T(id), h = at(id);
     h(s.sent(0).from - 2, "stamp.wav", 0.22);
-    for (let i = 1; i < 4; i++) {
-      try {
-        h(s.sent(i).from - 6, "pop.wav", 0.14);
-      } catch {
-        break;
-      }
-    }
+    h(s.sent(1).from - 4, "glitch.wav", 0.08);
+    const last = s.sent(id === "s7" || id === "s8" || id === "s9" || id === "s10" ? 1 : 2).from;
+    h(last + 6, "ding.wav", 0.16);
   });
-  {
-    const s = T("s5"), h = at("s5");
-    [1, 2, 3, 4].forEach((i) => h(s.sent(i).from + 14, "tick.wav", 0.18));
-    h(s.sent(5).from + 4, "sparkle.wav", 0.18);
-  }
-  {
-    const s = T("s9"), h = at("s9");
-    h(s.cueS(1, "works!") - 4, "tada.wav", 0.26);
-  }
-  {
-    const s = T("s10"), h = at("s10");
-    ["goal.", "Load", "cleaning", "plots.", "Split.", "Simple", "Beat"].forEach((t) => h(s.cueS(1, t) - 2, "tap.wav", 0.22));
+  { // S11 checklist
+    const s = T("s11"), h = at("s11");
+    ["Ask", "Know", "Clean", "Question", "Test", "Watch", "Check", "Monitor"].forEach((t) => h(s.cueS(1, t) - 2, "tap.wav", 0.22));
     h(s.cueS(2, "Save") - 4, "sparkle.wav", 0.2);
   }
-  { // S11 poll, teaser, end card
-    const s = T("s11"), h = at("s11");
+  { // S12 poll, teaser, end card
+    const s = T("s12"), h = at("s12");
     h(s.sent(0).from - 6, "stamp.wav", 0.35);
-    h(s.cueS(0, "loaded") - 8, "scribble-short.wav", 0.16);
-    for (let i = 0; i < 4; i++) h(s.cueS(0, "first") + 4 + i * 4, "tap.wav", 0.18);
+    for (let i = 0; i < 4; i++) h(s.cueS(0, "time?") + 4 + i * 4, "tap.wav", 0.18);
     h(s.cueS(0, "Vote") - 6, "pop.wav", 0.28);
     h(s.cueS(0, "Vote") + 6, "sparkle.wav", 0.18);
     h(s.sent(1).from - 2, "sticky.wav", 0.35);

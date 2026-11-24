@@ -1,5 +1,5 @@
-// SCENE 11 — YOUR TURN + TEASER + END CARD. new dataset, what do you run first? A train · B check missing values ·
-// C deploy · D tune (answer B); teaser DAY 4: CLEANING DATA, HANDS-ON; house end card.
+// SCENE 11 — YOUR TURN + TEASER + END CARD. what takes most of a data scientist's time? A building models · B cleaning
+// data · C slides · D meetings (answer B); teaser DAY 4: CLEANING MESSY DATA; house end card.
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { Computer } from "../components/Doodles";
@@ -13,17 +13,17 @@ import { useScene } from "../timing";
 
 const C = theme.colors;
 const OPTS = [
-  { l: "Train a model", c: C.cyan },
-  { l: "Check missing values", c: C.orange },
-  { l: "Deploy an app", c: C.green },
-  { l: "Tune the model", c: C.violet },
+  { l: "Building models", c: C.cyan },
+  { l: "Cleaning data", c: C.orange },
+  { l: "Making slides", c: C.green },
+  { l: "Meetings", c: C.violet },
 ];
 
-export const S11Poll: React.FC = () => {
+export const S12Poll: React.FC = () => {
   const frame = useCurrentFrame();
-  const s = useScene("s11");
+  const s = useScene("s12");
   const P0 = s.sent(0).from;
-      const TYPE = s.cueS(0, "first");
+      const TYPE = s.cueS(0, "time?");
   const VOTE = s.cueS(0, "Vote");
   const TEASE = s.sent(1).from;
   const FOL = s.sent(2).from;
@@ -35,11 +35,11 @@ export const S11Poll: React.FC = () => {
           <Pop x={540} y={260} at={P0 - 6}>
             <Pill color={C.yellow} size={50}>YOUR TURN!</Pill>
           </Pop>
-          <Pop x={540} y={440} at={P0 + 4}>
-            <Txt size={46}>you just loaded a <span style={{ color: C.cyan }}>new dataset</span></Txt>
+          <Pop x={540} y={460} at={P0 + 4}>
+            <Txt size={46}>a data scientist&apos;s week…</Txt>
           </Pop>
           <Pop x={540} y={700} at={TYPE - 8}>
-            <Txt size={64} color={C.yellow} glow>What do you run FIRST?</Txt>
+            <Txt size={60} color={C.yellow} glow>What takes the most time?</Txt>
           </Pop>
           {OPTS.map((o, i) => (
             <Pop key={o.l} x={540} y={830 + i * 110} at={TYPE + 4 + i * 4}>
@@ -60,7 +60,7 @@ export const S11Poll: React.FC = () => {
             at={TEASE}
             titleAt={s.cueS(1, "Day")}
             label="TOMORROW · DAY 4"
-            title="CLEANING DATA, HANDS-ON"
+            title="CLEANING MESSY DATA"
             color={C.orange}
             icon={
               <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
@@ -83,12 +83,12 @@ export const S11Poll: React.FC = () => {
           FOLW={s.cueS(2, "Follow")}
           DATAW={s.cueS(2, "data")}
           SIMPLE={s.cueS(2, "simple!")}
-          next="DAY 4: CLEANING DATA, HANDS-ON"
+          next="DAY 4: CLEANING MESSY DATA"
           chips={[
-            { l: "1-line goal", c: C.cyan },
-            { l: "4 checks", c: C.orange },
-            { l: "Split 80/20", c: C.yellow },
-            { l: "Beat baseline", c: C.green },
+            { l: "Vague asks", c: C.cyan },
+            { l: "Messy data", c: C.orange },
+            { l: "Leakage", c: C.red },
+            { l: "Model drift", c: C.violet },
           ]}
         />
       ) : null}

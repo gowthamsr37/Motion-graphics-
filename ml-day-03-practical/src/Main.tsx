@@ -1,5 +1,5 @@
 // ADAPT FOR THIS VIDEO: copied from the reference project (house style). Keep the layer stack, look and mix; replace scene list, cues and cover text.
-// 100 Days of ML, Day 3 (your first ML project, practical guide), in the statistics house style: navy backdrop whose two glows follow each scene's colours,
+// 100 Days of ML, Day 3 (your first ML project: the real problems at every step), in the statistics house style: navy backdrop whose two glows follow each scene's colours,
 // scenes cut with the house fade, word-synced house captions, grade, grain, vignette, and the house mix.
 import React from "react";
 import { AbsoluteFill, interpolateColors, Sequence, useCurrentFrame, useVideoConfig } from "remotion";
@@ -8,33 +8,35 @@ import { Captions } from "./components/Captions";
 import { ease } from "./components/Motion";
 import { S1Title } from "./scenes/S1Title";
 import { S2Hook } from "./scenes/S2Hook";
-import { S3Goal } from "./scenes/S3Goal";
-import { S4Data } from "./scenes/S4Data";
+import { S3Problem } from "./scenes/S3Problem";
+import { S4Collect } from "./scenes/S4Collect";
 import { S5Clean } from "./scenes/S5Clean";
-import { S6Plots } from "./scenes/S6Plots";
+import { S6EDA } from "./scenes/S6EDA";
 import { S7Split } from "./scenes/S7Split";
-import { S8Model } from "./scenes/S8Model";
-import { S9Baseline } from "./scenes/S9Baseline";
-import { S10List } from "./scenes/S10List";
-import { S11Poll } from "./scenes/S11Poll";
+import { S8Train } from "./scenes/S8Train";
+import { S9Eval } from "./scenes/S9Eval";
+import { S10Deploy } from "./scenes/S10Deploy";
+import { S11List } from "./scenes/S11List";
+import { S12Poll } from "./scenes/S12Poll";
 import { SoundTrack } from "./SoundTrack";
 import { theme } from "./theme";
 import { SCENE_IDS, sceneRange, totalFrames } from "./timing";
 
 const C = theme.colors;
-const SCENES: Record<string, React.FC> = { s1: S1Title, s2: S2Hook, s3: S3Goal, s4: S4Data, s5: S5Clean, s6: S6Plots, s7: S7Split, s8: S8Model, s9: S9Baseline, s10: S10List, s11: S11Poll };
+const SCENES: Record<string, React.FC> = { s1: S1Title, s2: S2Hook, s3: S3Problem, s4: S4Collect, s5: S5Clean, s6: S6EDA, s7: S7Split, s8: S8Train, s9: S9Eval, s10: S10Deploy, s11: S11List, s12: S12Poll };
 const LOOK: Record<string, { a: string; b: string; accent: string }> = {
   s1: { a: C.cyan, b: C.violet, accent: C.cyan },
-  s2: { a: C.cyan, b: C.orange, accent: C.yellow },
-  s3: { a: C.cyan, b: C.green, accent: C.cyan },
-  s4: { a: C.violet, b: C.cyan, accent: C.violet },
+  s2: { a: C.red, b: C.orange, accent: C.orange },
+  s3: { a: C.cyan, b: C.red, accent: C.cyan },
+  s4: { a: C.violet, b: C.red, accent: C.violet },
   s5: { a: C.orange, b: C.red, accent: C.orange },
-  s6: { a: C.green, b: C.violet, accent: C.green },
-  s7: { a: C.yellow, b: C.cyan, accent: C.yellow },
-  s8: { a: C.cyan, b: C.green, accent: C.cyan },
-  s9: { a: C.green, b: C.violet, accent: C.green },
-  s10: { a: C.cyan, b: C.orange, accent: C.yellow },
-  s11: { a: C.green, b: C.violet, accent: C.yellow },
+  s6: { a: C.green, b: C.red, accent: C.green },
+  s7: { a: C.yellow, b: C.red, accent: C.yellow },
+  s8: { a: C.cyan, b: C.red, accent: C.cyan },
+  s9: { a: C.green, b: C.red, accent: C.green },
+  s10: { a: C.violet, b: C.red, accent: C.violet },
+  s11: { a: C.cyan, b: C.green, accent: C.yellow },
+  s12: { a: C.green, b: C.violet, accent: C.yellow },
 };
 
 const useLook = () => {

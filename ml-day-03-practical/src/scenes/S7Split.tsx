@@ -1,34 +1,51 @@
-// SCENE 7 — STEP 5: SPLIT. Step bar (5). Code: from sklearn.model_selection import train_test_split / X_train, X_test,
-// y_train, y_test = train_test_split(X, y, test_size=0.2); out: 8,000 train · 2,000 test; a locked TEST box.
+// SCENE 7 — STEP 5, TRAIN-TEST SPLIT. A timeline of sales 2022 → 2025 with a rising price line; WRONG: shuffled random
+// split (old + new mixed); RIGHT: train on the past, test on the most recent months.
 import React from "react";
-import { AbsoluteFill } from "remotion";
-import { Code } from "../components/Code";
-import { Panel, Pop, Txt } from "../components/D2";
-import { JargonTag, StepBar } from "../components/Steps";
-import { theme } from "../theme";
+import { AbsoluteFill, useCurrentFrame } from "remotion";
+import { StepScene } from "../components/StepScene";
+import { Txt } from "../components/D2";
+import { ease } from "../components/Motion";
+import { alpha, theme } from "../theme";
 import { useScene } from "../timing";
 
 const C = theme.colors;
 
 export const S7Split: React.FC = () => {
+  const frame = useCurrentFrame();
   const s = useScene("s7");
-  const L = s.sent(1).from;
+  const P = s.cueS(0, "trap:");
+  const RIGHT = s.sent(1).from;
+  const mix = 1 - ease(frame, [RIGHT, RIGHT + 14], [0, 1]);
   return (
     <AbsoluteFill>
-      <StepBar cur={4} at={0} />
-      <JargonTag i={4} at={s.cueS(0, "train-test")} />
-      <Pop x={540} y={440} at={s.sent(0).from}>
-        <Txt size={62}><span style={{ color: C.yellow }}>split</span> before you train</Txt>
-      </Pop>
-      <Pop x={540} y={700} at={L - 6}>
-        <Code file="split.py" lines={["from sklearn.model_selection import train_test_split", "X_tr, X_te, y_tr, y_te = train_test_split(", "    X, y, test_size=0.2)"]} at={[L - 4, L + 6, s.cueS(1, "test_size") - 4]} fs={28} out={{ at: s.cueS(1, "test_size") + 8, text: <span>8,000 train · <span style={{ color: C.yellow }}>2,000 test</span></span> }} />
-      </Pop>
-      <Pop x={540} y={1080} at={s.cueS(1, "lock") - 4}>
-        <Panel w={760} h={200} color={C.yellow}>
-          <Txt size={50} color={C.yellow}>TEST SET: LOCKED</Txt>
-          <Txt size={34} font="body">don&apos;t touch it until the very end</Txt>
-        </Panel>
-      </Pop>
+      <StepScene
+        i={4}
+        termAt={s.cueS(0, "train-test")}
+        headAt={s.cueS(0, "trap:")}
+        head={<>the trap: <span style={{ color: C.red }}>mixing old and new sales</span></>}
+        probAt={P}
+        problem={
+          <>
+            <div style={{ display: "flex", gap: 4, width: 860 }}>
+              {Array.from({ length: 36 }, (_, i) => {
+                const test = mix > 0.5 ? (i * 7) % 5 === 0 : i >= 29;
+                return <div key={i} style={{ flex: 1, height: 70 + i * 3, alignSelf: "flex-end", borderRadius: 4, background: test ? C.yellow : alpha(C.cyan, 0.75) }} />;
+              })}
+            </div>
+            <div style={{ display: "flex", justifyContent: "space-between", width: 860, fontFamily: theme.fonts.body, fontWeight: 700, fontSize: 24, color: C.dim }}>
+              <span>2022</span><span>2023</span><span>2024</span><span>2025</span>
+            </div>
+            <Txt size={36}>
+              <span style={{ color: C.cyan }}>■ train</span> &nbsp; <span style={{ color: C.yellow }}>■ test</span> &nbsp;·&nbsp; {mix > 0.5 ? <span style={{ color: C.red }}>random mix (wrong)</span> : <span style={{ color: C.green }}>latest months</span>}
+            </Txt>
+          </>
+        }
+        fixAt={RIGHT - 2}
+        fixes={[
+          { t: "prices keep rising, so…", at: RIGHT },
+          { t: "test on the most recent months", at: s.cueS(1, "recent") },
+        ]}
+      />
     </AbsoluteFill>
   );
 };
