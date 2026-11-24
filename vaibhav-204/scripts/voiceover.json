@@ -1,0 +1,197 @@
+{
+  "voice": "am_michael",
+  "lang": "en-us",
+  "speed": 1.0,
+  "fix": [
+    [
+      "ɪnnˈɪŋz",
+      "ˈɪnɪŋz"
+    ],
+    [
+      "vˈeɪbhæv",
+      "vˈaɪbəv"
+    ],
+    [
+      "sˈɔːɹɪˌævænʃi",
+      "sˈuːɹjəvˌʌnʃi"
+    ],
+    [
+      "hˈæzˈɑːɹɹeɪ",
+      "həzˈɑːɹeɪ"
+    ],
+    [
+      "fɹˈeɪsɚmə ɡˈɜːk",
+      "fɹˈeɪzɚ məɡˈɜːk"
+    ],
+    [
+      "lˈɪst ɐ",
+      "lˈɪst ˈeɪ"
+    ]
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.5,
+      "hold": 0.6,
+      "segments": [
+        {
+          "text": "Fifty-two balls.",
+          "caption": "52 balls.",
+          "pause": 0.8
+        },
+        {
+          "text": "That's all it took a fifteen-year-old to score the fastest double hundred in the history of fifty-over cricket.",
+          "caption": "That's all it took a 15-year-old to score the fastest double hundred in the history of 50-over cricket.",
+          "pause": 0.6
+        },
+        {
+          "text": "The old record? One hundred and three balls.",
+          "caption": "The old record? 103 balls.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "His name is Vaibhav Sooryavanshi. Born in Bihar, on the twenty-seventh of March, 2011.",
+          "caption": "His name is Vaibhav Sooryavanshi. Born in Bihar, on 27 March 2011.",
+          "pause": 0.45
+        },
+        {
+          "text": "Six days later, India won the World Cup.",
+          "caption": "Six days later, India won the World Cup.",
+          "pause": 0.6
+        },
+        {
+          "text": "At fourteen, he became the youngest player in IPL history, and smashed a thirty-five-ball hundred.",
+          "caption": "At 14, he became the youngest player in IPL history, and smashed a 35-ball hundred.",
+          "pause": 0.5
+        },
+        {
+          "text": "Last December, a hundred and ninety off eighty-four balls in the Vijay Hazare Trophy.",
+          "caption": "Last December, 190 off 84 balls in the Vijay Hazare Trophy.",
+          "pause": 0.5
+        },
+        {
+          "text": "Then came Doha. India A against the UAE, chasing two hundred and fifty.",
+          "caption": "Then came Doha. India A against the UAE, chasing 250.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.3,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "Fifty, off sixteen balls.",
+          "caption": "50, off 16 balls.",
+          "pause": 0.55
+        },
+        {
+          "text": "A hundred, off twenty-eight. The fastest hundred in List A history. Jake Fraser-McGurk's record of twenty-nine balls, gone.",
+          "caption": "100, off 28. The fastest hundred in List A history. Jake Fraser-McGurk's record of 29 balls, gone.",
+          "pause": 0.55
+        },
+        {
+          "text": "A hundred and fifty, off forty. His own record, broken by nineteen balls.",
+          "caption": "150, off 40. His own record, broken by 19 balls.",
+          "pause": 0.55
+        },
+        {
+          "text": "Two hundred, off fifty-two. Chad Bowes needed a hundred and three. He did it in half.",
+          "caption": "200, off 52. Chad Bowes needed 103. He did it in half.",
+          "pause": 0.55
+        },
+        {
+          "text": "Next ball, he's caught. Two hundred and four, off fifty-three.",
+          "caption": "Next ball, he's caught. 204, off 53.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.3,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "Twenty-eight sixes. No one has ever hit more in a List A innings. D'Arcy Short's twenty-three, gone.",
+          "caption": "28 sixes. No one has ever hit more in a List A innings. D'Arcy Short's 23, gone.",
+          "pause": 0.55
+        },
+        {
+          "text": "Add seven fours, and a hundred and ninety-six of his two hundred and four runs came in boundaries.",
+          "caption": "Add seven fours, and 196 of his 204 runs came in boundaries.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.3,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "A strike rate of three hundred and eighty-five, in a fifty-over match.",
+          "caption": "A strike rate of 385, in a 50-over match.",
+          "pause": 0.55
+        },
+        {
+          "text": "The UAE took fifty overs to make two hundred and forty-nine. He made two hundred and four in under nine.",
+          "caption": "The UAE took 50 overs to make 249. He made 204 in under nine.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.3,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "He is fifteen years, and two hundred and forty-two days old.",
+          "caption": "He is 15 years, and 242 days old.",
+          "pause": 0.45
+        },
+        {
+          "text": "Most boys his age are getting ready for their tenth-grade board exams.",
+          "caption": "Most boys his age are getting ready for their tenth-grade board exams.",
+          "pause": 0.6
+        },
+        {
+          "text": "Fastest hundred. Fastest hundred and fifty. Fastest double hundred. Most sixes. Four List A world records, in one innings.",
+          "caption": "Fastest hundred. Fastest hundred and fifty. Fastest double hundred. Most sixes. Four List A world records, in one innings.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "lead": 0.3,
+      "hold": 1.8,
+      "segments": [
+        {
+          "text": "Most players spend a whole career chasing records.",
+          "caption": "Most players spend a whole career chasing records.",
+          "pause": 0.55
+        },
+        {
+          "text": "At fifteen, the records are chasing him.",
+          "caption": "At 15, the records are chasing him.",
+          "pause": 0.7
+        },
+        {
+          "text": "Beyond The Scoreboard.",
+          "caption": "Beyond The Scoreboard.",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}
