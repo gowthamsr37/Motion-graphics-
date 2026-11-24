@@ -1,0 +1,235 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Title card",
+   "lead": 0.2,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Day three of 100 Days of Machine Learning: the machine learning workflow.",
+     "caption": "Day 3 of 100 Days of Machine Learning: the machine learning workflow.",
+     "pause": 0.25
+    },
+    {
+     "text": "The seven steps every real project follows, one example from start to finish, and the mistake most beginners make. Save this one!",
+     "caption": "The 7 steps every real project follows, one example from start to finish, and the mistake most beginners make. Save this one!",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Hook",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Everyone thinks machine learning is about choosing the perfect algorithm.",
+     "caption": "Everyone thinks machine learning is about choosing the perfect algorithm.",
+     "pause": 0.25
+    },
+    {
+     "text": "In real jobs, training the model is maybe ten percent of the work. The other ninety percent? Everything around it.",
+     "caption": "In real jobs, training the model is maybe 10% of the work. The other 90%? Everything around it.",
+     "pause": 0.25
+    },
+    {
+     "text": "Let's build one project, step by step: predicting flat prices in Pune.",
+     "caption": "Let's build one project, step by step: predicting flat prices in Pune.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Step 1: define the problem",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Step one: define the problem.",
+     "caption": "Step 1: define the problem.",
+     "pause": 0.25
+    },
+    {
+     "text": "What exactly do we predict? The price of a flat, in lakhs. That's a number, so it's a regression problem.",
+     "caption": "What exactly do we predict? The price of a flat, in lakhs. That's a number, so it's a regression problem.",
+     "pause": 0.25
+    },
+    {
+     "text": "And how will we judge success? Say, our predictions should be within five lakh on average.",
+     "caption": "And how will we judge success? Say, our predictions should be within 5 lakh on average.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Step 2: collect data",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Step two: collect data.",
+     "caption": "Step 2: collect data.",
+     "pause": 0.25
+    },
+    {
+     "text": "We gather past sales: area, bedrooms, location, age of the building, and the price each flat actually sold for. Say, ten thousand flats.",
+     "caption": "We gather past sales: area, bedrooms, location, age of the building, and the price each flat actually sold for. Say, 10,000 flats.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Step 3: clean the data",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Step three, the biggest one: clean the data.",
+     "caption": "Step 3, the biggest one: clean the data.",
+     "pause": 0.25
+    },
+    {
+     "text": "Real data is messy. Some rows have missing prices. Some flats are listed twice. Someone typed the area as twelve thousand instead of twelve hundred.",
+     "caption": "Real data is messy. Some rows have missing prices. Some flats are listed twice. Someone typed the area as 12,000 instead of 1,200.",
+     "pause": 0.25
+    },
+    {
+     "text": "We fill or remove the gaps, delete duplicates and fix the typos. Garbage in, garbage out.",
+     "caption": "We fill or remove the gaps, delete duplicates and fix the typos. Garbage in, garbage out.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Step 4: explore",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Step four: explore the data.",
+     "caption": "Step 4: explore the data.",
+     "pause": 0.25
+    },
+    {
+     "text": "We plot it and look for patterns. Bigger flats cost more. Flats near the IT parks cost more. Older buildings cost a little less.",
+     "caption": "We plot it and look for patterns. Bigger flats cost more. Flats near the IT parks cost more. Older buildings cost a little less.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "Step 5: split",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Step five, the one beginners skip: split the data.",
+     "caption": "Step 5, the one beginners skip: split the data.",
+     "pause": 0.25
+    },
+    {
+     "text": "We hide twenty percent of the flats away. The model learns from the other eighty percent only.",
+     "caption": "We hide 20% of the flats away. The model learns from the other 80% only.",
+     "pause": 0.25
+    },
+    {
+     "text": "Why? It's like an exam. If you've already seen the question paper, a high score proves nothing.",
+     "caption": "Why? It's like an exam. If you've already seen the question paper, a high score proves nothing.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Step 6: train",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Step six: train the model.",
+     "caption": "Step 6: train the model.",
+     "pause": 0.25
+    },
+    {
+     "text": "On the eight thousand training flats, the model guesses, measures its error, and adjusts, again and again, exactly like we saw on day one.",
+     "caption": "On the 8,000 training flats, the model guesses, measures its error, and adjusts, again and again, exactly like we saw on Day 1.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "Step 7: evaluate and deploy",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Step seven: evaluate, then deploy.",
+     "caption": "Step 7: evaluate, then deploy.",
+     "pause": 0.25
+    },
+    {
+     "text": "Now the exam: the two thousand hidden flats. The model's predictions are off by four lakh on average. Our target was five. Passed!",
+     "caption": "Now the exam: the 2,000 hidden flats. The model's predictions are off by 4 lakh on average. Our target was 5. Passed!",
+     "pause": 0.25
+    },
+    {
+     "text": "So we put it in an app, and keep watching it. Prices change, so the model is retrained every few months.",
+     "caption": "So we put it in an app, and keep watching it. Prices change, so the model is retrained every few months.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "title": "Remember this",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "So remember the seven steps: define, collect, clean, explore, split, train, evaluate and deploy.",
+     "caption": "So remember the 7 steps: define, collect, clean, explore, split, train, evaluate and deploy.",
+     "pause": 0.25
+    },
+    {
+     "text": "Save this. It's the map for the next ninety-seven days.",
+     "caption": "Save this. It's the map for the next 97 days.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "title": "Poll, teaser and CTA",
+   "lead": 0.35,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Your turn: a model scores ninety-nine percent, but it was tested on the same data it trained on. What's the problem? Vote in the caption poll!",
+     "caption": "Your turn: a model scores 99%, but it was tested on the same data it trained on. What's the problem? Vote in the caption poll!",
+     "pause": 0.25
+    },
+    {
+     "text": "Tomorrow, day four: how to clean messy data.",
+     "caption": "Tomorrow, Day 4: how to clean messy data.",
+     "pause": 0.25
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.25
+    }
+   ]
+  }
+ ]
+}
