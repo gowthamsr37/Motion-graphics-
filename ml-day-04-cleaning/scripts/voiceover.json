@@ -1,0 +1,238 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Title card",
+   "lead": 0.2,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Day four of 100 Days of Machine Learning: data cleaning, step by step.",
+     "caption": "Day 4 of 100 Days of Machine Learning: data cleaning, step by step.",
+     "pause": 0.22
+    },
+    {
+     "text": "Eight problems you'll meet in every real dataset, and exactly how to fix each one. Save this one!",
+     "caption": "8 problems you'll meet in every real dataset, and exactly how to fix each one. Save this one!",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Hook",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Remember our Bangalore flats? Ten thousand rows, straight from the websites.",
+     "caption": "Remember our Bangalore flats? 10,000 rows, straight from the websites.",
+     "pause": 0.22
+    },
+    {
+     "text": "Feed this to a model as it is, and the predictions are garbage. Let's clean it, in order.",
+     "caption": "Feed this to a model as it is, and the predictions are garbage. Let's clean it, in order.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Step 1: profile",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Step one: data profiling. Before fixing anything, look.",
+     "caption": "Step 1: data profiling. Before fixing anything, look.",
+     "pause": 0.22
+    },
+    {
+     "text": "Count rows and columns, check each column's type, and count the blanks. Here, price is stored as text, like one point two crore.",
+     "caption": "Count rows and columns, check each column's type, and count the blanks. Here, price is stored as text, like \"1.2 Cr\".",
+     "pause": 0.22
+    },
+    {
+     "text": "Now you know what's broken.",
+     "caption": "Now you know what's broken.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Step 2: types and units",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Step two: fix types and units.",
+     "caption": "Step 2: fix types and units.",
+     "pause": 0.22
+    },
+    {
+     "text": "Turn one point two crore into one twenty lakh, and ninety eight L into ninety eight. Convert square metres into square feet. One unit per column, always.",
+     "caption": "Turn \"1.2 Cr\" into 120 lakh, and \"98 L\" into 98. Convert sq m into sq ft. One unit per column, always.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Step 3: categories",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Step three: standardise categories.",
+     "caption": "Step 3: standardise categories.",
+     "pause": 0.22
+    },
+    {
+     "text": "Two BHK, 2bhk and two bedroom all become the number two. Koramangala, spelled four different ways, becomes one. Otherwise the model thinks they're different places.",
+     "caption": "\"2 BHK\", \"2bhk\" and \"two bedroom\" all become the number 2. Koramangala, spelled 4 different ways, becomes one. Otherwise the model thinks they're different places.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Step 4: duplicates",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Step four: remove duplicates.",
+     "caption": "Step 4: remove duplicates.",
+     "pause": 0.22
+    },
+    {
+     "text": "Exact copies are easy. The tricky ones: the same flat posted by three brokers, with slightly different prices. Match on area, locality, floor and building, and keep one.",
+     "caption": "Exact copies are easy. The tricky ones: the same flat posted by 3 brokers, with slightly different prices. Match on area, locality, floor and building, and keep one.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "Step 5: missing values",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Step five: missing values. First ask why it's missing.",
+     "caption": "Step 5: missing values. First ask why it's missing.",
+     "pause": 0.22
+    },
+    {
+     "text": "If the price is missing, that's what we're predicting, so drop the row. If the floor is missing, fill it with the median for that building. And add a column that says it was missing.",
+     "caption": "If the price is missing, that's what we're predicting, so drop the row. If the floor is missing, fill it with the median for that building. And add a column that says it was missing.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Step 6: validity",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Step six: validity checks. Write simple rules.",
+     "caption": "Step 6: validity checks. Write simple rules.",
+     "pause": 0.22
+    },
+    {
+     "text": "Area between two hundred and ten thousand square feet. Built year not in the future. A twelve thousand square foot one BHK? Clearly a typo for twelve hundred, so fix it. If you can't tell, remove it.",
+     "caption": "Area between 200 and 10,000 sq ft. Built year not in the future. A 12,000 sq ft 1 BHK? Clearly a typo for 1,200, so fix it. If you can't tell, remove it.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "Step 7: outliers",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Step seven: outliers. Not errors, just extreme.",
+     "caption": "Step 7: outliers. Not errors, just extreme.",
+     "pause": 0.22
+    },
+    {
+     "text": "A fifty crore villa is real, but it will pull a flat price model off course. Keep it, cap it, or model villas separately. We covered this in our outlier treatment video.",
+     "caption": "A 50 crore villa is real, but it will pull a flat price model off course. Keep it, cap it, or model villas separately. We covered this in our outlier treatment video.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "title": "Step 8: log and re-check",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Step eight: log everything, and re-check.",
+     "caption": "Step 8: log everything, and re-check.",
+     "pause": 0.22
+    },
+    {
+     "text": "Write down every change, and run the profile again. We went from ten thousand rows to ninety three hundred clean ones. Now the data is ready.",
+     "caption": "Write down every change, and run the profile again. We went from 10,000 rows to 9,300 clean ones. Now the data is ready.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "title": "The cleaning checklist",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Here's the cleaning checklist, in order.",
+     "caption": "Here's the cleaning checklist, in order.",
+     "pause": 0.22
+    },
+    {
+     "text": "Profile. Types and units. Categories. Duplicates. Missing values. Validity rules. Outliers. Log and re-check.",
+     "caption": "Profile. Types and units. Categories. Duplicates. Missing values. Validity rules. Outliers. Log and re-check.",
+     "pause": 0.22
+    },
+    {
+     "text": "Save this, and use it on your next dataset.",
+     "caption": "Save this, and use it on your next dataset.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s12",
+   "title": "Poll, teaser and CTA",
+   "lead": 0.35,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Your turn: a flat's price is missing. What's the best approach? Vote in the caption poll!",
+     "caption": "Your turn: a flat's price is missing. What's the best approach? Vote in the caption poll!",
+     "pause": 0.22
+    },
+    {
+     "text": "Tomorrow, day five: exploratory data analysis, hands-on.",
+     "caption": "Tomorrow, Day 5: exploratory data analysis, hands-on.",
+     "pause": 0.22
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.22
+    }
+   ]
+  }
+ ]
+}
