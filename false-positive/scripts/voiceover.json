@@ -1,0 +1,235 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Title card",
+   "lead": 0.2,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "The false positive paradox.",
+     "caption": "The false positive paradox.",
+     "pause": 0.25
+    },
+    {
+     "text": "A test that's 99 percent accurate, a result that's usually wrong, ten thousand people to prove it, and why doctors always retest. Save this one!",
+     "caption": "A test that's 99% accurate, a result that's usually wrong, 10,000 people to prove it, and why doctors always retest. Save this one!",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Hook",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "A rare disease affects one in every thousand people.",
+     "caption": "A rare disease affects 1 in every 1,000 people.",
+     "pause": 0.25
+    },
+    {
+     "text": "You take a test that's 99 percent accurate. It comes back positive.",
+     "caption": "You take a test that's 99% accurate. It comes back positive.",
+     "pause": 0.25
+    },
+    {
+     "text": "What's the chance you actually have the disease? Comment your guess before the answer.",
+     "caption": "What's the chance you actually have the disease? Comment your guess before the answer.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "The answer",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Most people say 99 percent. Some say 90.",
+     "caption": "Most people say 99%. Some say 90.",
+     "pause": 0.25
+    },
+    {
+     "text": "The real answer: about nine percent. More than nine out of ten positive results are false alarms.",
+     "caption": "The real answer: about 9%. More than 9 out of 10 positive results are false alarms.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "10,000 people",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Here's how. Picture ten thousand people.",
+     "caption": "Here's how. Picture 10,000 people.",
+     "pause": 0.25
+    },
+    {
+     "text": "One in a thousand is sick, so ten people really have the disease.",
+     "caption": "1 in 1,000 is sick, so 10 people really have the disease.",
+     "pause": 0.25
+    },
+    {
+     "text": "The test is 99 percent accurate, so it catches all ten of them. Ten true positives.",
+     "caption": "The test is 99% accurate, so it catches all 10 of them. 10 true positives.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "The healthy crowd",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "But here's the twist. The other nine thousand nine hundred and ninety people are healthy.",
+     "caption": "But here's the twist. The other 9,990 people are healthy.",
+     "pause": 0.25
+    },
+    {
+     "text": "And the test is wrong for one percent of them. One percent of almost ten thousand is about a hundred people.",
+     "caption": "And the test is wrong for 1% of them. 1% of almost 10,000 is about 100 people.",
+     "pause": 0.25
+    },
+    {
+     "text": "A hundred healthy people told they're sick. Those are false positives.",
+     "caption": "100 healthy people told they're sick. Those are false positives.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Do the maths",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Now count all the positives: ten true, plus about a hundred false. About a hundred and ten.",
+     "caption": "Now count all the positives: 10 true, plus about 100 false. About 110.",
+     "pause": 0.25
+    },
+    {
+     "text": "Only ten of those hundred and ten are really sick. Ten divided by a hundred and ten is about nine percent.",
+     "caption": "Only 10 of those 110 are really sick. 10 divided by 110 is about 9%.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "Why it happens",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "The trap is the base rate. The disease is so rare that the healthy crowd is huge.",
+     "caption": "The trap is the base rate. The disease is so rare that the healthy crowd is huge.",
+     "pause": 0.25
+    },
+    {
+     "text": "A tiny error rate on a huge crowd creates more false alarms than there are real cases.",
+     "caption": "A tiny error rate on a huge crowd creates more false alarms than there are real cases.",
+     "pause": 0.25
+    },
+    {
+     "text": "Ignoring how rare something is: that's called base rate neglect.",
+     "caption": "Ignoring how rare something is: that's called base rate neglect.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Retest",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "That's why doctors retest. Among the hundred and ten positives, a second test clears almost all the false alarms.",
+     "caption": "That's why doctors retest. Among the 110 positives, a second test clears almost all the false alarms.",
+     "pause": 0.25
+    },
+    {
+     "text": "After two positive tests, the chance you're really sick jumps to about ninety percent.",
+     "caption": "After two positive tests, the chance you're really sick jumps to about 90%.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "Real life",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "It's everywhere.",
+     "caption": "It's everywhere.",
+     "pause": 0.25
+    },
+    {
+     "text": "Your bank blocks your card for fraud, but it was just you shopping. Airport scanners beep at innocent bags. Spam filters bin real emails.",
+     "caption": "Your bank blocks your card for fraud, but it was just you shopping. Airport scanners beep at innocent bags. Spam filters bin real emails.",
+     "pause": 0.25
+    },
+    {
+     "text": "When the thing you're looking for is rare, most alarms are false.",
+     "caption": "When the thing you're looking for is rare, most alarms are false.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "title": "Remember this",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "So remember: a positive result depends on how rare the thing is, not just how accurate the test is.",
+     "caption": "So remember: a positive result depends on how rare the thing is, not just how accurate the test is.",
+     "pause": 0.25
+    },
+    {
+     "text": "Save this, and send it to someone who panics over every test result.",
+     "caption": "Save this, and send it to someone who panics over every test result.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "title": "Poll, teaser and CTA",
+   "lead": 0.35,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Your turn: if the disease affected one in ten people instead, would a positive test be more or less trustworthy? Vote in the caption poll!",
+     "caption": "Your turn: if the disease affected 1 in 10 people instead, would a positive test be more or less trustworthy? Vote in the caption poll!",
+     "pause": 0.25
+    },
+    {
+     "text": "Next paradox: Simpson's paradox.",
+     "caption": "Next paradox: Simpson's paradox.",
+     "pause": 0.25
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.25
+    }
+   ]
+  }
+ ]
+}
