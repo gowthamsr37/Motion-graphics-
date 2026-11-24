@@ -333,6 +333,8 @@ const s4Beats = (fps: number) => ({
   no: wordAt(fps, "s4", "no", 1.42),
   darcy: wordAt(fps, "s4", "Darcy", 4.68),
   gone: wordAt(fps, "s4", "gone", 5.78),
+  over1: sentence(fps, "s4", 1).from,
+  over2: wordAt(fps, "s4", "28", 4, 1),
   fours: wordAt(fps, "s4", "4s", 7.58),
   n196: wordAt(fps, "s4", "196", 8.78),
   bound: wordAt(fps, "s4", "boundaries", 12.52),
@@ -407,6 +409,19 @@ const S4: React.FC = () => {
           +5
         </Disp>
       </In>
+      {[["Ov 7 · Ibrar Ahmad", "644664", "30", b.over1], ["Ov 12 · Uddish Suri", "66664.", "28", b.over2]].map(([l, balls, r, at], k) => (
+        <In key={l as string} at={(at as number) - 2} out={b.fours - 8} y={920 + k * 110}>
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <div style={{ width: 300 }}><Label size={18} color={C.ink2}>{l as string}</Label></div>
+            {(balls as string).split("").map((x, i) => (
+              <div key={i} style={{ width: 62, height: 62, background: x === "6" ? C.accent : x === "4" ? C.ink : C.line, display: "flex", alignItems: "center", justifyContent: "center", opacity: fade(frame, (at as number) + 4 + i * 4, 4) }}>
+                <Disp size={44} color={x === "." ? C.ink2 : C.paperHi}>{x === "." ? "•" : x}</Disp>
+              </div>
+            ))}
+            <div style={{ marginLeft: 16, opacity: fade(frame, (at as number) + 28, 6) }}><Disp size={72} color={C.accent}>{r as string}</Disp></div>
+          </div>
+        </In>
+      ))}
       <In at={b.fours - 4} y={928}>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           {Array.from({ length: 7 }).map((_, i) => (
@@ -713,6 +728,7 @@ export const STORY = {
     add("s4", b4.n28 - 2, "impact.wav", 0.45);
     add("s4", b4.darcy, "ticks.wav", 0.2);
     add("s4", b4.gone + 4, "slam.wav", 0.4);
+    [b4.over1, b4.over2].forEach((a) => { for (let i = 0; i < 6; i++) add("s4", a + 4 + i * 4, "tick.wav", 0.3); add("s4", a + 28, "slam.wav", 0.4); });
     add("s4", b4.fours - 4, "pop.wav", 0.26);
     add("s4", b4.n196 - 4, "rise.wav", 0.22);
     add("s4", b4.n196 + 14, "pop.wav", 0.28);
