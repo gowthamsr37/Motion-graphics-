@@ -4,7 +4,7 @@ import React from "react";
 import { AbsoluteFill } from "remotion";
 import { Code } from "../components/Code";
 import { Panel, Pop, Txt } from "../components/D2";
-import { StepBar } from "../components/Steps";
+import { JargonTag, StepBar } from "../components/Steps";
 import { theme } from "../theme";
 import { useScene } from "../timing";
 
@@ -16,7 +16,8 @@ export const S7Split: React.FC = () => {
   return (
     <AbsoluteFill>
       <StepBar cur={4} at={0} />
-      <Pop x={540} y={400} at={s.sent(0).from}>
+      <JargonTag i={4} at={s.cueS(0, "train-test")} />
+      <Pop x={540} y={440} at={s.sent(0).from}>
         <Txt size={62}><span style={{ color: C.yellow }}>split</span> before you train</Txt>
       </Pop>
       <Pop x={540} y={700} at={L - 6}>

@@ -6,7 +6,7 @@ import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { Code } from "../components/Code";
 import { Pill, Pop, Txt } from "../components/D2";
 import { ease } from "../components/Motion";
-import { StepBar } from "../components/Steps";
+import { JargonTag, StepBar } from "../components/Steps";
 import { theme } from "../theme";
 import { useScene } from "../timing";
 
@@ -26,10 +26,11 @@ export const S5Clean: React.FC = () => {
   return (
     <AbsoluteFill>
       <StepBar cur={2} at={0} />
-      <Pop x={540} y={400} at={s.sent(0).from}>
+      <JargonTag i={2} at={s.cueS(0, "data")} />
+      <Pop x={540} y={440} at={s.sent(0).from}>
         <Txt size={62}>run these <span style={{ color: C.orange }}>4 checks</span></Txt>
       </Pop>
-      <Pop x={540} y={480} at={s.cueS(0, "every") - 2}>
+      <Pop x={540} y={510} at={s.cueS(0, "every") - 2}>
         <Txt size={32} font="body" color={C.dim}>every single time</Txt>
       </Pop>
       <Pop x={540} y={700} at={at[0] - 6}>

@@ -6,7 +6,7 @@ import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { Code } from "../components/Code";
 import { Panel, Pill, Pop, Txt } from "../components/D2";
 import { ease } from "../components/Motion";
-import { StepBar } from "../components/Steps";
+import { JargonTag, StepBar } from "../components/Steps";
 import { alpha, theme } from "../theme";
 import { useScene } from "../timing";
 
@@ -27,11 +27,12 @@ export const S9Baseline: React.FC = () => {
   return (
     <AbsoluteFill>
       <StepBar cur={6} at={0} />
-      <Pop x={540} y={400} at={s.sent(0).from}>
+      <JargonTag i={6} at={s.cueS(0, "model")} />
+      <Pop x={540} y={440} at={s.sent(0).from}>
         <Txt size={62}>beat the <span style={{ color: C.green }}>baseline</span></Txt>
       </Pop>
       <div style={{ position: "absolute", inset: 0, opacity: top }}>
-        <div style={{ position: "absolute", left: 140, top: 520, width: 800 }}>
+        <div style={{ position: "absolute", left: 140, top: 550, width: 800 }}>
           <div style={{ position: "absolute", left: 8 * W, top: 40, height: 300, width: 0, borderLeft: `4px dashed ${C.yellow}`, opacity: ease(frame, [s.cueS(1, "target") - 4, s.cueS(1, "target") + 4], [0, 1]) }} />
           <div style={{ position: "absolute", left: 8 * W - 70, top: 350, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 28, color: C.yellow, opacity: ease(frame, [s.cueS(1, "target") - 4, s.cueS(1, "target") + 4], [0, 1]), whiteSpace: "nowrap" }}>target Rs 8L</div>
           {[

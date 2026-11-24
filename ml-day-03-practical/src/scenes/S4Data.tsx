@@ -4,7 +4,7 @@ import React from "react";
 import { AbsoluteFill } from "remotion";
 import { Code } from "../components/Code";
 import { Panel, Pop, Txt } from "../components/D2";
-import { StepBar } from "../components/Steps";
+import { JargonTag, StepBar } from "../components/Steps";
 import { theme } from "../theme";
 import { useScene } from "../timing";
 
@@ -22,10 +22,11 @@ export const S4Data: React.FC = () => {
   return (
     <AbsoluteFill>
       <StepBar cur={1} at={0} />
-      <Pop x={540} y={400} at={s.sent(0).from}>
+      <JargonTag i={1} at={s.cueS(0, "data")} />
+      <Pop x={540} y={440} at={s.sent(0).from}>
         <Txt size={66}>get the <span style={{ color: C.violet }}>data</span></Txt>
       </Pop>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 470, display: "flex", justifyContent: "center", gap: 18 }}>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 520, display: "flex", justifyContent: "center", gap: 18 }}>
         {tiles.map((k) => (
           <Pop key={k.t} x={0} y={0} at={k.at - 4} anchor="left" style={{ position: "relative", transform: "none" }}>
             <Panel w={300} h={120} color={k.c}>
@@ -34,7 +35,7 @@ export const S4Data: React.FC = () => {
           </Pop>
         ))}
       </div>
-      <Pop x={540} y={660} at={s.sent(2).from - 2}>
+      <Pop x={540} y={690} at={s.sent(2).from - 2}>
         <Txt size={36} font="body">a few thousand rows is <span style={{ color: C.green }}>plenty</span></Txt>
       </Pop>
       <Pop x={540} y={960} at={LOAD - 6}>

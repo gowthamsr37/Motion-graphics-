@@ -1,11 +1,11 @@
-// SCENE 1 — TITLE CARD FROM FRAME 0: 100 DAYS OF ML · DAY 3 / 100; "Your First ML PROJECT"; the 7 practical steps
-// (GOAL → … → BASELINE) by ~1.5 s; chips (7 steps · the actual code · a checklist to copy); SAVE THIS ONE.
+// SCENE 1 — TITLE CARD FROM FRAME 0: DAY 3 / 100, "Your First ML PROJECT", the 7 steps by their proper names
+// (problem definition … model evaluation), each glowing as it is named; "+ the actual code"; SAVE THIS ONE.
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { Bookmark } from "../components/Guide";
 import { Pill, Pop, Txt } from "../components/D2";
 import { ease } from "../components/Motion";
-import { STEPS, STEP_C } from "../components/Steps";
+import { JARGON, STEP_C } from "../components/Steps";
 import { alpha, theme } from "../theme";
 import { useScene } from "../timing";
 
@@ -14,10 +14,9 @@ const C = theme.colors;
 export const S1Title: React.FC = () => {
   const frame = useCurrentFrame();
   const s = useScene("s1");
+  const cues = ["Problem", "collection,", "cleaning,", "exploratory", "train-test", "training", "evaluation,"].map((w) => s.cueS(1, w));
   const chips = [
-    { t: "7 STEPS", c: C.cyan, at: s.cueS(1, "7") },
-    { t: "THE ACTUAL CODE", c: C.green, at: s.cueS(1, "code,") },
-    { t: "A CHECKLIST TO COPY", c: C.yellow, at: s.cueS(1, "checklist") },
+    { t: "+ THE ACTUAL CODE", c: C.green, at: s.cueS(1, "code.") },
   ];
   return (
     <AbsoluteFill>
@@ -36,18 +35,18 @@ export const S1Title: React.FC = () => {
         <Txt size={120} style={{ background: `linear-gradient(90deg, ${C.cyan}, ${C.violet}, ${C.orange})`, WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent", textShadow: "none", filter: `drop-shadow(0 0 22px ${alpha(C.violet, 0.5)})` }}>PROJECT</Txt>
       </Pop>
       <div style={{ position: "absolute", left: 60, right: 60, top: 600, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 14 }}>
-        {STEPS.map((t, i) => {
+        {JARGON.map((t, i) => {
           const p = ease(frame, [12 + i * 3, 18 + i * 3], [0, 1]);
+          const on = ease(frame, [cues[i], cues[i] + 8], [0, 1]);
           return (
-            <div key={t} style={{ opacity: p, transform: `scale(${0.6 + 0.4 * p})`, display: "flex", alignItems: "center", gap: 10, padding: "12px 20px", borderRadius: 18, background: alpha(STEP_C[i], 0.14), border: `3px solid ${STEP_C[i]}` }}>
+            <div key={t} style={{ opacity: p, transform: `scale(${(0.6 + 0.4 * p) * (1 + on * 0.05)})`, display: "flex", alignItems: "center", gap: 10, padding: "10px 18px", borderRadius: 18, background: alpha(STEP_C[i], 0.12 + on * 0.18), border: `3px solid ${STEP_C[i]}`, boxShadow: `0 0 ${on * 24}px ${alpha(STEP_C[i], 0.6)}` }}>
               <span style={{ width: 44, height: 44, borderRadius: 22, background: STEP_C[i], color: C.ink, display: "inline-flex", alignItems: "center", justifyContent: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 26 }}>{i + 1}</span>
-              <span style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 32, color: C.text }}>{t}</span>
-              {i < 6 ? <span style={{ fontFamily: theme.fonts.display, fontSize: 30, color: C.dim }}>→</span> : null}
+              <span style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 30, color: C.text, whiteSpace: "nowrap" }}>{t}</span>
             </div>
           );
         })}
       </div>
-      <div style={{ position: "absolute", left: 60, right: 60, top: 990, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 14 }}>
+      <div style={{ position: "absolute", left: 60, right: 60, top: 1110, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 14 }}>
         {chips.map((k, i) => {
           const on = ease(frame, [k.at, k.at + 8], [0, 1]);
           const p = ease(frame, [30 + i * 4, 38 + i * 4], [0, 1]);

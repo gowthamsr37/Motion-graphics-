@@ -4,7 +4,7 @@
 import React from "react";
 import { AbsoluteFill } from "remotion";
 import { Panel, Pop, Txt } from "../components/D2";
-import { StepBar } from "../components/Steps";
+import { JargonTag, StepBar } from "../components/Steps";
 import { alpha, theme } from "../theme";
 import { useScene } from "../timing";
 
@@ -41,7 +41,8 @@ export const S6Plots: React.FC = () => {
   return (
     <AbsoluteFill>
       <StepBar cur={3} at={0} />
-      <Pop x={540} y={400} at={s.sent(0).from}>
+      <JargonTag i={3} at={s.cueS(0, "exploratory")} />
+      <Pop x={540} y={440} at={s.sent(0).from}>
         <Txt size={62}>make <span style={{ color: C.green }}>3 plots</span> first</Txt>
       </Pop>
       {cards.map((k, i) => (

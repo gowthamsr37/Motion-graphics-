@@ -4,7 +4,7 @@ import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { Panel, Pill, Pop, Txt } from "../components/D2";
 import { ease } from "../components/Motion";
-import { StepBar } from "../components/Steps";
+import { JargonTag, StepBar } from "../components/Steps";
 import { alpha, theme } from "../theme";
 import { useScene } from "../timing";
 
@@ -24,7 +24,8 @@ export const S3Goal: React.FC = () => {
   return (
     <AbsoluteFill>
       <StepBar cur={0} at={0} />
-      <Pop x={540} y={420} at={s.sent(0).from}>
+      <JargonTag i={0} at={s.cueS(0, "problem")} />
+      <Pop x={540} y={445} at={s.sent(0).from}>
         <Txt size={66}>write <span style={{ color: C.cyan }}>one sentence</span></Txt>
       </Pop>
       <Pop x={540} y={760} at={L - 6}>

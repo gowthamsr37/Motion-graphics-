@@ -6,7 +6,9 @@ import { ease } from "./Motion";
 import { alpha, theme } from "../theme";
 
 const C = theme.colors;
-export const STEPS = ["GOAL", "DATA", "CLEAN", "PLOTS", "SPLIT", "MODEL", "BASELINE"];
+export const STEPS = ["PROBLEM", "COLLECTION", "CLEANING", "EDA", "SPLIT", "TRAINING", "EVALUATION"];
+// the proper names (the jargon) for each step
+export const JARGON = ["PROBLEM DEFINITION", "DATA COLLECTION", "DATA CLEANING", "EXPLORATORY DATA ANALYSIS (EDA)", "TRAIN-TEST SPLIT", "MODEL TRAINING", "MODEL EVALUATION"];
 export const STEP_C = [C.cyan, C.violet, C.orange, C.green, C.yellow, C.cyan, C.green];
 
 export const StepBar: React.FC<{ cur: number; at?: number; y?: number }> = ({ cur, at = 0, y = 210 }) => {
@@ -19,11 +21,11 @@ export const StepBar: React.FC<{ cur: number; at?: number; y?: number }> = ({ cu
         const done = i < cur;
         const c = on ? STEP_C[i] : done ? C.green : alpha(C.text, 0.25);
         return (
-          <div key={t} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6, width: on ? 170 : 122 }}>
+          <div key={t} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6, width: on ? 176 : 120 }}>
             <div style={{ width: on ? 64 : 44, height: on ? 64 : 44, borderRadius: "50%", background: on ? c : done ? alpha(C.green, 0.25) : "rgba(255,255,255,0.05)", border: `3px solid ${c}`, boxShadow: on ? `0 0 22px ${c}` : undefined, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: on ? 32 : 22, color: on ? C.ink : C.text }}>
               {done ? <svg width={22} height={22} viewBox="0 0 22 22"><path d="M3 12 L9 18 L19 5" fill="none" stroke={C.green} strokeWidth={4} strokeLinecap="round" strokeLinejoin="round" /></svg> : i + 1}
             </div>
-            <div style={{ fontFamily: theme.fonts.body, fontWeight: 800, fontSize: on ? 22 : 15, letterSpacing: "0.06em", color: on ? C.text : alpha(C.text, done ? 0.7 : 0.4), whiteSpace: "nowrap" }}>{t}</div>
+            <div style={{ fontFamily: theme.fonts.body, fontWeight: 800, fontSize: on ? 20 : 13, letterSpacing: "0.06em", color: on ? C.text : alpha(C.text, done ? 0.7 : 0.4), whiteSpace: "nowrap" }}>{t}</div>
           </div>
         );
       })}
@@ -48,6 +50,21 @@ export const Table: React.FC<{ cols: string[]; rows: Cell[][]; w?: number; at?: 
           ))}
         </div>
       ))}
+    </div>
+  );
+};
+
+// the jargon tag under the step bar: "THE TERM: DATA CLEANING"
+export const JargonTag: React.FC<{ i: number; at: number; y?: number }> = ({ i, at, y = 330 }) => {
+  const frame = useCurrentFrame();
+  const p = ease(frame, [at, at + 8], [0, 1]);
+  const c = STEP_C[i];
+  return (
+    <div style={{ position: "absolute", left: 0, right: 0, top: y, display: "flex", justifyContent: "center", opacity: p, transform: `scale(${0.8 + 0.2 * p})` }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 12, padding: "8px 22px", borderRadius: 999, background: alpha(c, 0.14), border: `3px solid ${c}`, whiteSpace: "nowrap" }}>
+        <span style={{ fontFamily: theme.fonts.body, fontWeight: 800, fontSize: 20, letterSpacing: "0.16em", color: C.dim }}>THE TERM</span>
+        <span style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 32, color: C.text }}>{JARGON[i]}</span>
+      </div>
     </div>
   );
 };

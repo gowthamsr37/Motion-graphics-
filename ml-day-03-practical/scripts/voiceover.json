@@ -15,8 +15,8 @@
      "pause": 0.25
     },
     {
-     "text": "Seven steps, the actual code, and a checklist you can copy. Save this one!",
-     "caption": "7 steps, the actual code, and a checklist you can copy. Save this one!",
+     "text": "Problem definition, data collection, data cleaning, exploratory data analysis, the train test split, model training and evaluation, with the actual code. Save this one!",
+     "caption": "Problem definition, data collection, data cleaning, exploratory data analysis, the train-test split, model training and evaluation, with the actual code. Save this one!",
      "pause": 0.25
     }
    ]
@@ -46,8 +46,8 @@
    "hold": 0.4,
    "segments": [
     {
-     "text": "Step one: write one sentence.",
-     "caption": "Step 1: write one sentence.",
+     "text": "Step one, problem definition: write one sentence.",
+     "caption": "Step 1, problem definition: write one sentence.",
      "pause": 0.25
     },
     {
@@ -69,8 +69,8 @@
    "hold": 0.4,
    "segments": [
     {
-     "text": "Step two: get the data.",
-     "caption": "Step 2: get the data.",
+     "text": "Step two, data collection: get the data.",
+     "caption": "Step 2, data collection: get the data.",
      "pause": 0.25
     },
     {
@@ -97,8 +97,8 @@
    "hold": 0.4,
    "segments": [
     {
-     "text": "Step three: run these four checks, every single time.",
-     "caption": "Step 3: run these 4 checks, every single time.",
+     "text": "Step three, data cleaning: run these four checks, every single time.",
+     "caption": "Step 3, data cleaning: run these 4 checks, every single time.",
      "pause": 0.25
     },
     {
@@ -135,8 +135,8 @@
    "hold": 0.4,
    "segments": [
     {
-     "text": "Step four: make three plots before any model.",
-     "caption": "Step 4: make 3 plots before any model.",
+     "text": "Step four, exploratory data analysis, or E D A: make three plots before any model.",
+     "caption": "Step 4, exploratory data analysis, or EDA: make 3 plots before any model.",
      "pause": 0.25
     },
     {
@@ -158,8 +158,8 @@
    "hold": 0.4,
    "segments": [
     {
-     "text": "Step five: split before you train.",
-     "caption": "Step 5: split before you train.",
+     "text": "Step five, the train test split: split before you train.",
+     "caption": "Step 5, the train-test split: split before you train.",
      "pause": 0.25
     },
     {
@@ -176,8 +176,8 @@
    "hold": 0.4,
    "segments": [
     {
-     "text": "Step six: start simple.",
-     "caption": "Step 6: start simple.",
+     "text": "Step six, model training: start simple.",
+     "caption": "Step 6, model training: start simple.",
      "pause": 0.25
     },
     {
@@ -194,8 +194,8 @@
    "hold": 0.4,
    "segments": [
     {
-     "text": "Step seven: compare with a dumb baseline.",
-     "caption": "Step 7: compare with a dumb baseline.",
+     "text": "Step seven, model evaluation: compare with a dumb baseline.",
+     "caption": "Step 7, model evaluation: compare with a dumb baseline.",
      "pause": 0.25
     },
     {
@@ -209,8 +209,8 @@
      "pause": 0.25
     },
     {
-     "text": "Want others to use it? Wrap it in a free Streamlit app, and retrain when new sales come in.",
-     "caption": "Want others to use it? Wrap it in a free Streamlit app, and retrain when new sales come in.",
+     "text": "Want others to use it? That's deployment: wrap it in a free Streamlit app, and retrain when new sales come in.",
+     "caption": "Want others to use it? That's deployment: wrap it in a free Streamlit app, and retrain when new sales come in.",
      "pause": 0.25
     }
    ]
