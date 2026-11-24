@@ -1,0 +1,265 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Title card",
+   "lead": 0.2,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Day three of 100 Days of Machine Learning: your first ML project, step by step.",
+     "caption": "Day 3 of 100 Days of Machine Learning: your first ML project, step by step.",
+     "pause": 0.25
+    },
+    {
+     "text": "Seven steps, the actual code, and a checklist you can copy. Save this one!",
+     "caption": "7 steps, the actual code, and a checklist you can copy. Save this one!",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Hook",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Most beginners watch hours of theory and never build anything.",
+     "caption": "Most beginners watch hours of theory and never build anything.",
+     "pause": 0.25
+    },
+    {
+     "text": "Today we build one real project together: predicting flat prices in Bangalore. Follow along.",
+     "caption": "Today we build one real project together: predicting flat prices in Bangalore. Follow along.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Step 1: one sentence",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Step one: write one sentence.",
+     "caption": "Step 1: write one sentence.",
+     "pause": 0.25
+    },
+    {
+     "text": "Predict the flat price in lakhs, using area, bedrooms, location and age. Success means being off by less than eight lakh on average.",
+     "caption": "Predict the flat price in lakhs, using area, bedrooms, location and age. Success means being off by less than 8 lakh on average.",
+     "pause": 0.25
+    },
+    {
+     "text": "If you can't write this sentence, don't start coding.",
+     "caption": "If you can't write this sentence, don't start coding.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Step 2: get the data",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Step two: get the data.",
+     "caption": "Step 2: get the data.",
+     "pause": 0.25
+    },
+    {
+     "text": "Free sources: Kaggle, data dot gov dot in, or your own spreadsheet.",
+     "caption": "Free sources: Kaggle, data.gov.in, or your own spreadsheet.",
+     "pause": 0.25
+    },
+    {
+     "text": "For a first project, a few thousand rows is plenty.",
+     "caption": "For a first project, a few thousand rows is plenty.",
+     "pause": 0.25
+    },
+    {
+     "text": "Load it with pandas, using read csv. We have ten thousand flats.",
+     "caption": "Load it with pandas, using read_csv. We have 10,000 flats.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Step 3: four checks",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Step three: run these four checks, every single time.",
+     "caption": "Step 3: run these 4 checks, every single time.",
+     "pause": 0.25
+    },
+    {
+     "text": "One, missing values: is null, sum.",
+     "caption": "1, missing values: isnull().sum().",
+     "pause": 0.25
+    },
+    {
+     "text": "Two, duplicates: drop duplicates.",
+     "caption": "2, duplicates: drop_duplicates().",
+     "pause": 0.25
+    },
+    {
+     "text": "Three, impossible values: describe. Twelve thousand square feet with one bedroom? Probably a typo.",
+     "caption": "3, impossible values: describe(). 12,000 sq ft with 1 bedroom? Probably a typo.",
+     "pause": 0.25
+    },
+    {
+     "text": "Four, outliers. One fifty crore villa will confuse a flat price model.",
+     "caption": "4, outliers. One 50 crore villa will confuse a flat price model.",
+     "pause": 0.25
+    },
+    {
+     "text": "Then fix them: fill missing values with the median, delete the duplicates, and correct or remove the typos.",
+     "caption": "Then fix them: fill missing values with the median, delete the duplicates, and correct or remove the typos.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Step 4: three plots",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Step four: make three plots before any model.",
+     "caption": "Step 4: make 3 plots before any model.",
+     "pause": 0.25
+    },
+    {
+     "text": "Price versus area. Average price by area of the city. And a histogram of prices.",
+     "caption": "Price versus area. Average price by area of the city. And a histogram of prices.",
+     "pause": 0.25
+    },
+    {
+     "text": "Here, price climbs steadily with size, and Koramangala costs the most.",
+     "caption": "Here, price climbs steadily with size, and Koramangala costs the most.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "Step 5: split",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Step five: split before you train.",
+     "caption": "Step 5: split before you train.",
+     "pause": 0.25
+    },
+    {
+     "text": "Train test split, with test size zero point two. Then lock the test set away until the very end.",
+     "caption": "train_test_split, with test_size = 0.2. Then lock the test set away until the very end.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Step 6: start simple",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Step six: start simple.",
+     "caption": "Step 6: start simple.",
+     "pause": 0.25
+    },
+    {
+     "text": "Linear regression, in three lines: create the model, fit it on the training data, and predict. Fancy models can wait.",
+     "caption": "Linear regression, in 3 lines: create the model, fit it on the training data, and predict. Fancy models can wait.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "Step 7: beat the baseline",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Step seven: compare with a dumb baseline.",
+     "caption": "Step 7: compare with a dumb baseline.",
+     "pause": 0.25
+    },
+    {
+     "text": "Just guessing the average price is off by twenty-two lakh. Our model is off by seven. That's under our target of eight. It works!",
+     "caption": "Just guessing the average price is off by 22 lakh. Our model is off by 7. That's under our target of 8. It works!",
+     "pause": 0.25
+    },
+    {
+     "text": "That number is the mean absolute error: on average, how far each prediction is from the real price.",
+     "caption": "That number is the mean absolute error: on average, how far each prediction is from the real price.",
+     "pause": 0.25
+    },
+    {
+     "text": "Want others to use it? Wrap it in a free Streamlit app, and retrain when new sales come in.",
+     "caption": "Want others to use it? Wrap it in a free Streamlit app, and retrain when new sales come in.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "title": "The checklist",
+   "lead": 0.3,
+   "hold": 0.4,
+   "segments": [
+    {
+     "text": "Here's the whole checklist. Screenshot it.",
+     "caption": "Here's the whole checklist. Screenshot it.",
+     "pause": 0.25
+    },
+    {
+     "text": "One sentence goal. Load the data. Four cleaning checks. Three plots. Split. Simple model. Beat the baseline.",
+     "caption": "One sentence goal. Load the data. 4 cleaning checks. 3 plots. Split. Simple model. Beat the baseline.",
+     "pause": 0.25
+    },
+    {
+     "text": "Save this, and send it to the friend who keeps saying they'll start ML someday.",
+     "caption": "Save this, and send it to the friend who keeps saying they'll start ML someday.",
+     "pause": 0.25
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "title": "Poll, teaser and CTA",
+   "lead": 0.35,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Your turn: you've just loaded a new dataset. What's the first thing you run? Vote in the caption poll!",
+     "caption": "Your turn: you've just loaded a new dataset. What's the first thing you run? Vote in the caption poll!",
+     "pause": 0.25
+    },
+    {
+     "text": "Tomorrow, day four: cleaning messy data, hands-on.",
+     "caption": "Tomorrow, Day 4: cleaning messy data, hands-on.",
+     "pause": 0.25
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.25
+    }
+   ]
+  }
+ ]
+}
