@@ -34,9 +34,9 @@ const f = (n) => n / FPS;
 // ---------- EDIT PER REEL: story events, in seconds (mirror the beats in src/scenes/Story.tsx) ----------
 // Helpers: S(id) scene start · E(id) scene end · sent(id, i) sentence start · word(id, "prefix", fallbackSec)
 const ev = {
-  hook: word("s1", "balls", 0.36), // the 52 fills
+  hook: word("s1", "52", 9.56), // the 52 slams
   s2: S("s2"), doha: word("s2", "Doha", 24.78), // the stage is set
-  s3: S("s3"), h100: word("s3", "100", 2.3), h150: word("s3", "150", 11.56), h200: word("s3", "200", 16.82), caught: word("s3", "caught", 23.7),
+  s3: S("s3"), h100: word("s3", "100", 3.9), h150: word("s3", "150", 13.46), h200: word("s3", "6", 23.92), caught: word("s3", "Next", 31.18),
   s4: S("s4"), six28: word("s4", "28", 0), // 28 sixes
   s5: S("s5"),
   s6: S("s6"), four: word("s6", "four", 15.34), // four world records
@@ -223,7 +223,8 @@ section(ev.s3, ev.h100, 2);
 hit(ev.h100, 0.9);
 section(ev.h100, ev.h150, 2, 0.06);
 hit(ev.h150, 0.9);
-section(ev.h150, ev.h200, 2, 0.07);
+section(ev.h150, ev.h200 - 4.5, 2, 0.07);
+section(ev.h200 - 4.5, ev.h200, 0, 0.03);
 hit(ev.h200, 1.1);
 section(ev.h200, ev.caught, 2, 0.08);
 section(ev.caught, ev.six28, 0, 0.04);

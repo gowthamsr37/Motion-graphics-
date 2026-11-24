@@ -7,6 +7,7 @@ Vaibhav Sooryavanshi just hit the fastest double hundred in the history of 50-ov
 🔥 Fastest List A 200: 52 balls (old record 103)
 🔥 Most sixes in a List A innings: 28
 
+India A chased 250 in 14.2 overs and won by 7 wickets.
 He was born six days before India won the 2011 World Cup.
 Most players chase records. At 15, the records are chasing him.
 

@@ -35,18 +35,18 @@
       "hold": 0.6,
       "segments": [
         {
-          "text": "Fifty-two balls.",
-          "caption": "52 balls.",
+          "text": "For two years, the fastest double hundred in fifty-over cricket took one hundred and three balls.",
+          "caption": "For two years, the fastest double hundred in 50-over cricket took 103 balls.",
+          "pause": 0.9
+        },
+        {
+          "text": "Tonight, in Doha, a fifteen-year-old needed fifty-two.",
+          "caption": "Tonight, in Doha, a 15-year-old needed 52.",
           "pause": 0.8
         },
         {
-          "text": "That's all it took a fifteen-year-old to score the fastest double hundred in the history of fifty-over cricket.",
-          "caption": "That's all it took a 15-year-old to score the fastest double hundred in the history of 50-over cricket.",
-          "pause": 0.6
-        },
-        {
-          "text": "The old record? One hundred and three balls.",
-          "caption": "The old record? 103 balls.",
+          "text": "This is the story of those fifty-two balls.",
+          "caption": "This is the story of those 52 balls.",
           "pause": 0.3
         }
       ]
@@ -67,18 +67,13 @@
           "pause": 0.6
         },
         {
-          "text": "At fourteen, he became the youngest player in IPL history, and smashed a thirty-five-ball hundred.",
-          "caption": "At 14, he became the youngest player in IPL history, and smashed a 35-ball hundred.",
-          "pause": 0.5
+          "text": "At fourteen, he became the youngest player in IPL history, and hit a thirty-five-ball hundred.",
+          "caption": "At 14, he became the youngest player in IPL history, and hit a 35-ball hundred.",
+          "pause": 0.6
         },
         {
-          "text": "Last December, a hundred and ninety off eighty-four balls in the Vijay Hazare Trophy.",
-          "caption": "Last December, 190 off 84 balls in the Vijay Hazare Trophy.",
-          "pause": 0.5
-        },
-        {
-          "text": "Then came Doha. India A against the UAE, chasing two hundred and fifty.",
-          "caption": "Then came Doha. India A against the UAE, chasing 250.",
+          "text": "Tonight, India A against the UAE. Chasing two hundred and fifty.",
+          "caption": "Tonight, India A against the UAE. Chasing 250.",
           "pause": 0.3
         }
       ]
@@ -89,28 +84,33 @@
       "hold": 0.8,
       "segments": [
         {
-          "text": "Fifty, off sixteen balls.",
-          "caption": "50, off 16 balls.",
+          "text": "He started like a storm. Fifty, off sixteen balls.",
+          "caption": "He started like a storm. 50, off 16 balls.",
           "pause": 0.55
         },
         {
-          "text": "A hundred, off twenty-eight. The fastest hundred in List A history. Jake Fraser-McGurk's record of twenty-nine balls, gone.",
-          "caption": "100, off 28. The fastest hundred in List A history. Jake Fraser-McGurk's record of 29 balls, gone.",
+          "text": "A hundred, off twenty-eight. The fastest hundred in List A history. Fraser-McGurk's twenty-nine, gone.",
+          "caption": "100, off 28. The fastest hundred in List A history. Fraser-McGurk's 29, gone.",
           "pause": 0.55
         },
         {
-          "text": "A hundred and fifty, off forty. His own record, broken by nineteen balls.",
-          "caption": "150, off 40. His own record, broken by 19 balls.",
-          "pause": 0.55
+          "text": "No field could hold him. A hundred and fifty, off forty. His own record, smashed by nineteen balls.",
+          "caption": "No field could hold him. 150, off 40. His own record, smashed by 19 balls.",
+          "pause": 0.7
         },
         {
-          "text": "Two hundred, off fifty-two. Chad Bowes needed a hundred and three. He did it in half.",
-          "caption": "200, off 52. Chad Bowes needed 103. He did it in half.",
-          "pause": 0.55
+          "text": "On a hundred and ninety-eight, off fifty-one balls, he needed one hit.",
+          "caption": "On 198, off 51 balls, he needed one hit.",
+          "pause": 0.9
         },
         {
-          "text": "Next ball, he's caught. Two hundred and four, off fifty-three.",
-          "caption": "Next ball, he's caught. 204, off 53.",
+          "text": "Six. Two hundred and four, off fifty-two. Chad Bowes needed a hundred and three. He did it in half.",
+          "caption": "Six! 204, off 52. Chad Bowes needed 103. He did it in half.",
+          "pause": 0.7
+        },
+        {
+          "text": "Next ball, he was gone. Two hundred and four, off fifty-three.",
+          "caption": "Next ball, he was gone. 204, off 53.",
           "pause": 0.3
         }
       ]
@@ -121,8 +121,8 @@
       "hold": 0.8,
       "segments": [
         {
-          "text": "Twenty-eight sixes. No one has ever hit more in a List A innings. D'Arcy Short's twenty-three, gone.",
-          "caption": "28 sixes. No one has ever hit more in a List A innings. D'Arcy Short's 23, gone.",
+          "text": "Twenty-eight sixes. Nobody in the history of List A cricket has hit more in one innings. D'Arcy Short's twenty-three, gone.",
+          "caption": "28 sixes. Nobody in the history of List A cricket has hit more in one innings. D'Arcy Short's 23, gone.",
           "pause": 0.55
         },
         {
@@ -145,6 +145,11 @@
         {
           "text": "The UAE took fifty overs to make two hundred and forty-nine. He made two hundred and four in under nine.",
           "caption": "The UAE took 50 overs to make 249. He made 204 in under nine.",
+          "pause": 0.6
+        },
+        {
+          "text": "India A won by seven wickets, inside fifteen overs.",
+          "caption": "India A won by 7 wickets, inside 15 overs.",
           "pause": 0.3
         }
       ]

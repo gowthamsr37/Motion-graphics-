@@ -1,7 +1,7 @@
 // Vaibhav Sooryavanshi, 204 off 53 v UAE (India A, Asia Cup Rising Stars, Doha, 24 Nov 2026).
 // Every entrance is keyed to the spoken word: wordAt(fps, scene, "prefix", fallbackSec[, nth]) / sentence(fps, scene, i).
 import React from "react";
-import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { Cue } from "../components/Sound";
 import { BigGlyph, CLAMP, Cutout, Disp, fade, Label, Seam, Serif, Shell, useP } from "../components/Ed";
 import { Brand, CaseFile, Stamp } from "../components/Viz";
@@ -75,73 +75,70 @@ const count = (f: number, keys: [number, number][]) => Math.round(interpolate(f,
 
 /* ================= S1: the hook. 52 balls ================= */
 const s1Beats = (fps: number) => ({
-  balls: wordAt(fps, "s1", "balls", 0.36),
-  shrink: sentence(fps, "s1", 1).from,
-  fifteen: wordAt(fps, "s1", "15", 2.84),
-  fastest: wordAt(fps, "s1", "fastest", 4.88),
-  history: wordAt(fps, "s1", "history", 6.86),
-  old: sentence(fps, "s1", 2).from,
-  n103: wordAt(fps, "s1", "103", 9.86),
+  n103: wordAt(fps, "s1", "103", 4.12),
+  tonight: sentence(fps, "s1", 1).from,
+  n52: wordAt(fps, "s1", "52", 9.56),
+  fifteen: wordAt(fps, "s1", "15", 8.28),
+  story: sentence(fps, "s1", 2).from,
 });
 const S1: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const b = s1Beats(fps);
-  const m = interpolate(frame, [b.shrink - 4, b.shrink + 14], [0, 1], { easing: theme.ease.inOut, ...CLAMP });
-  const draw = interpolate(frame, [1, 24], [0, 1], { easing: theme.ease.soft, ...CLAMP });
-  const fill = interpolate(frame, [b.balls - 2, b.balls + 8], [0, 1], CLAMP);
-  const bp = useP(b.balls);
+  const oldOut = fade(frame, b.n52 - 3, 4);
+  const slam = spring({ frame: frame - b.n52, fps, config: { damping: 11, stiffness: 260, mass: 0.8 } });
+  const shake = frame >= b.n52 && frame < b.n52 + 12 ? Math.sin(frame * 2.7) * (12 - (frame - b.n52)) * 1.6 : 0;
+  const flash = interpolate(frame, [b.n52, b.n52 + 2, b.n52 + 10], [0, 0.85, 0], CLAMP);
+  const m = interpolate(frame, [b.story - 4, b.story + 14], [0, 1], { easing: theme.ease.inOut, ...CLAMP });
+  const kill = ease(frame, b.n103 + 26, b.n103 + 36);
   return (
     <Shell enter={false}>
-      <div style={{ position: "absolute", inset: 0, transformOrigin: "70px 300px", transform: `translateY(${-50 * m}px) scale(${1 - 0.4 * m})` }}>
-        <BigGlyph char="52" x={70} y={300} size={820} width={940} draw={draw} fill={fill * 0.94} />
-        <div style={{ position: "absolute", left: 70, width: 940, top: 1030, textAlign: "center", opacity: interpolate(bp, [0, 0.3], [0, 1], CLAMP), transform: `translateY(${(1 - bp) * 30}px)` }}>
-          <Disp size={170}>Balls</Disp>
+      <div style={{ position: "absolute", inset: 0, transform: `translate(${shake}px, ${shake * 0.6}px)` }}>
+        <div style={{ position: "absolute", left: 0, right: 0, top: 520, textAlign: "center", opacity: fade(frame, 4, 12) * (1 - oldOut) }}>
+          <Label size={24} color={C.ink2}>The record · Chad Bowes · 2024</Label>
+          <div style={{ position: "relative", display: "inline-block", marginTop: 20, opacity: fade(frame, b.n103 - 4, 8) }}>
+            <Disp size={300} color={C.ink2}>103</Disp>
+            <div style={{ position: "absolute", left: -20, top: 130, height: 16, width: `${kill * 110}%`, background: C.red, transform: "rotate(-8deg)" }} />
+          </div>
+          <div style={{ opacity: fade(frame, b.n103 + 4, 8) }}>
+            <Disp size={90} color={C.ink2}>balls</Disp>
+          </div>
         </div>
+        {frame >= b.n52 - 1 && (
+          <div style={{ position: "absolute", inset: 0, transformOrigin: "70px 300px", transform: `translateY(${-50 * m}px) scale(${(1 - 0.4 * m) * interpolate(slam, [0, 1], [2.2, 1])})`, opacity: interpolate(slam, [0, 0.15], [0, 1], CLAMP) }}>
+            <BigGlyph char="52" x={70} y={300} size={820} width={940} draw={1} fill={0.94} />
+            <div style={{ position: "absolute", left: 70, width: 940, top: 1030, textAlign: "center" }}>
+              <Disp size={170}>Balls</Disp>
+            </div>
+          </div>
+        )}
       </div>
-      <Cutout src="vs-kiss-cut.png" x={600} y={420} h={910} at={b.fifteen - 4} from="right" fadeBottom={0.9} />
-      <In at={b.fifteen} y={812}>
+      <Cutout src="vs-kiss-cut.png" x={600} y={420} h={910} at={b.story} from="right" fadeBottom={0.9} />
+      <In at={b.story + 4} y={812}>
         <span style={{ display: "inline-block", background: C.ink, padding: "8px 22px 2px" }}>
-          <Disp size={58} color={C.paperHi}>
-            Age 15
-          </Disp>
+          <Disp size={58} color={C.paperHi}>Age 15</Disp>
         </span>
       </In>
-      <In at={b.fastest} y={906}>
+      <In at={b.story + 10} y={906}>
         <Disp size={74}>The fastest</Disp>
         <br />
-        <Disp size={74} color={C.accent}>
-          double hundred
-        </Disp>
+        <Disp size={74} color={C.accent}>double hundred</Disp>
       </In>
-      <In at={b.history} y={1062}>
-        <Label size={20} color={C.ink2}>
-          In 50-over cricket · ever
-        </Label>
+      <In at={b.story + 16} y={1062}>
+        <Label size={20} color={C.ink2}>In 50-over cricket · ever</Label>
       </In>
-      <Race
-        x={70}
-        y={1120}
-        at={b.old}
-        scale={4}
-        dur={34}
-        rows={[
-          { v: 52, label: "Sooryavanshi · 2026", hero: true },
-          { v: 103, label: "Old record · Chad Bowes · 2024", killAt: b.n103 + 20 },
-        ]}
-      />
+      <AbsoluteFill style={{ background: "#fff", opacity: flash, pointerEvents: "none" }} />
     </Shell>
   );
 };
 
 /* ================= S2: who he is. A file timeline, then Doha ================= */
 const s2Beats = (fps: number) => ({
-  name: wordAt(fps, "s2", "Vibhav", 0.72),
+  name: wordAt(fps, "s2", "Vibe", 0.72),
   born: wordAt(fps, "s2", "born", 2.46),
   six: wordAt(fps, "s2", "Six", 7.38),
   ipl: wordAt(fps, "s2", "youngest", 12.52),
-  vht: wordAt(fps, "s2", "190", 19.56),
-  doha: sentence(fps, "s2", 4).from,
+  doha: sentence(fps, "s2", 3).from,
   india: wordAt(fps, "s2", "India", 26.04, 1),
   uae: wordAt(fps, "s2", "UAE", 26.98),
   n250: wordAt(fps, "s2", "250", 28.04),
@@ -150,15 +147,14 @@ const ROWS2 = [
   { k: "27 Mar 2011", v: "Born, Bihar", s: "" },
   { k: "2 Apr 2011", v: "+6 days", s: "India win the World Cup" },
   { k: "Apr 2025 · age 14", v: "IPL's youngest", s: "35-ball hundred v Gujarat Titans" },
-  { k: "Dec 2025", v: "190 off 84", s: "Vijay Hazare Trophy, for Bihar" },
 ];
 const S2: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const b = s2Beats(fps);
-  const ats = [b.born, b.six, b.ipl, b.vht];
+  const ats = [b.born, b.six, b.ipl];
   const out = b.doha - 4;
-  const seamP = interpolate(frame, [b.born, b.vht + 16], [0, 1], CLAMP) * (1 - fade(frame, out, 8));
+  const seamP = interpolate(frame, [b.born, b.ipl + 16], [0, 1], CLAMP) * (1 - fade(frame, out, 8));
   return (
     <Shell>
       <In at={b.name - 4} y={236}>
@@ -169,7 +165,7 @@ const S2: React.FC = () => {
         </Disp>
       </In>
       <Cutout src="vs-smile-bat-cut.png" x={690} y={540} h={790} at={b.name + 6} from="right" fadeBottom={0.9} />
-      <div style={{ position: "absolute", left: 84, top: 600, width: 3, height: 680 * seamP, background: C.red, opacity: 0.7 }} />
+      <div style={{ position: "absolute", left: 84, top: 600, width: 3, height: 500 * seamP, background: C.red, opacity: 0.7 }} />
       {ROWS2.map((r, i) => (
         <In key={r.k} at={ats[i]} out={out} y={590 + i * 172} x={70}>
           <div style={{ position: "absolute", left: 6, top: 8, width: 18, height: 18, borderRadius: 9, background: C.red }} />
@@ -227,18 +223,19 @@ const S2: React.FC = () => {
 
 /* ================= S3: the innings. Live scoreboard + one race per record ================= */
 const s3Beats = (fps: number) => ({
-  n50: wordAt(fps, "s3", "50", 0),
-  n100: wordAt(fps, "s3", "100", 2.3),
-  jake: wordAt(fps, "s3", "Jake", 7.3),
+  n50: wordAt(fps, "s3", "50", 1.56),
+  n100: wordAt(fps, "s3", "100", 3.9),
+  jake: wordAt(fps, "s3", "Fraser", 8.6),
   gone: wordAt(fps, "s3", "gone", 10.06),
-  n150: wordAt(fps, "s3", "150", 11.56),
-  own: wordAt(fps, "s3", "His", 13.5),
-  n19: wordAt(fps, "s3", "19", 14.92),
-  n200: wordAt(fps, "s3", "200", 16.82),
-  chad: wordAt(fps, "s3", "Chad", 19.02),
-  half: wordAt(fps, "s3", "half", 21.8),
-  caught: wordAt(fps, "s3", "caught", 23.7),
-  n204: wordAt(fps, "s3", "204", 24.62),
+  n150: wordAt(fps, "s3", "150", 13.46),
+  own: wordAt(fps, "s3", "his", 15.3),
+  n19: wordAt(fps, "s3", "19", 16.9),
+  n198: wordAt(fps, "s3", "198", 18.92),
+  n200: wordAt(fps, "s3", "6", 23.92),
+  chad: wordAt(fps, "s3", "Chad", 27.08),
+  half: wordAt(fps, "s3", "half", 29.96),
+  caught: wordAt(fps, "s3", "gone", 31.96, 1),
+  n204: wordAt(fps, "s3", "204", 32.74, 1),
 });
 const Mile: React.FC<{ y: number; at: number; m: string; balls: number; old?: { v: number; who: string; at: number; kill: number } }> = ({ y, at, m, balls, old }) => {
   const frame = useCurrentFrame();
@@ -277,14 +274,18 @@ const S3: React.FC = () => {
   const { fps } = useVideoConfig();
   const b = s3Beats(fps);
   const runs = count(frame, [
-    [0, 0], [b.n50 + 6, 50], [b.n100 - 18, 50], [b.n100 + 4, 100], [b.n150 - 18, 100], [b.n150 + 4, 150], [b.n200 - 18, 150], [b.n200 + 4, 204],
+    [0, 0], [b.n50 - 24, 0], [b.n50 + 6, 50], [b.n100 - 18, 50], [b.n100 + 4, 100], [b.n150 - 18, 100], [b.n150 + 4, 150], [b.n198 - 18, 150], [b.n198 + 2, 198], [b.n200 - 1, 198], [b.n200 + 3, 204],
   ]);
   const balls = count(frame, [
-    [0, 0], [b.n50 + 6, 16], [b.n100 - 18, 16], [b.n100 + 4, 28], [b.n150 - 18, 28], [b.n150 + 4, 40], [b.n200 - 18, 40], [b.n200 + 4, 52], [b.caught - 2, 52], [b.caught + 2, 53],
+    [0, 0], [b.n50 - 24, 0], [b.n50 + 6, 16], [b.n100 - 18, 16], [b.n100 + 4, 28], [b.n150 - 18, 28], [b.n150 + 4, 40], [b.n198 - 18, 40], [b.n198 + 2, 51], [b.n200 - 1, 51], [b.n200 + 3, 52], [b.caught - 2, 52], [b.caught + 2, 53],
   ]);
   const outP = fade(frame, b.caught, 6);
+  const sh = frame >= b.n200 && frame < b.n200 + 12 ? Math.sin(frame * 2.7) * (12 - (frame - b.n200)) * 1.4 : 0;
+  const fl = interpolate(frame, [b.n200, b.n200 + 2, b.n200 + 10], [0, 0.8, 0], CLAMP);
   return (
     <Shell>
+      <AbsoluteFill style={{ background: "#fff", opacity: fl, zIndex: 30, pointerEvents: "none" }} />
+      <div style={{ position: "absolute", inset: 0, transform: `translate(${sh}px, ${sh * 0.6}px)` }}>
       <div style={{ position: "absolute", left: 70, top: 236 }}>
         <Label size={20} color={C.ink2}>
           India A v UAE · chasing 250
@@ -321,6 +322,7 @@ const S3: React.FC = () => {
       <Mile y={932} at={b.n150} m="150" balls={40} old={{ v: 59, who: "Old · Sooryavanshi, Dec 2025", at: b.own, kill: b.n19 }} />
       <Mile y={1108} at={b.n200} m="200" balls={52} old={{ v: 103, who: "Old · Chad Bowes, 2024", at: b.chad, kill: b.half }} />
       <Stamp text="Out" sub="next ball" at={b.caught} x={640} y={262} rotate={-10} size={110} />
+      </div>
     </Shell>
   );
 };
@@ -461,6 +463,7 @@ const s5Beats = (fps: number) => ({
   n249: wordAt(fps, "s5", "249", 6.96),
   made: wordAt(fps, "s5", "made", 9.24),
   under: wordAt(fps, "s5", "under", 10.8),
+  won: sentence(fps, "s5", 2).from,
 });
 const Overs: React.FC<{ y: number; at: number; overs: number; dur: number; color: string; label: string; runs: string; note?: string }> = ({ y, at, overs, dur, color, label, runs }) => {
   const frame = useCurrentFrame();
@@ -509,11 +512,12 @@ const S5: React.FC = () => {
       </In>
       <Overs y={968} at={b.uae} overs={50} dur={40} color={C.ink} label="UAE · 50 overs" runs="249" />
       <Overs y={1092} at={b.made - 2} overs={53 / 6} dur={14} color={C.accent} label="Sooryavanshi · 8.5 overs" runs="204" />
-      <In at={b.under + 6} y={1220}>
+      <In at={b.under + 6} out={b.won - 4} y={1220}>
         <Label size={19} color={C.ink2}>
           82% of their runs · 18% of their balls
         </Label>
       </In>
+      <Stamp text="India A won" sub="by 7 wickets · 254/3 in 14.2 overs" at={b.won + 8} x={150} y={1190} rotate={-5} size={84} />
     </Shell>
   );
 };
@@ -684,13 +688,13 @@ export const STORY = {
     const c: Cue[] = [];
     const add = (id: string, at: number, file: string, volume: number) => c.push({ at: S(id) + at, file, volume });
     ["s2", "s3", "s4", "s5", "s6", "s7"].forEach((id) => c.push({ at: S(id) - 9, file: "swoosh.wav", volume: 0.24 }));
-    add("s1", 1, "pen.wav", 0.35);
-    add("s1", b1.balls - 2, "impact.wav", 0.55);
-    add("s1", b1.fifteen - 6, "whip.wav", 0.25);
-    add("s1", b1.fastest - 4, "pop.wav", 0.28);
-    add("s1", b1.old, "ticks.wav", 0.25);
-    add("s1", b1.n103 + 18, "crack.wav", 0.3);
-    [b2.born, b2.six, b2.ipl, b2.vht].forEach((x) => add("s2", x - 4, "pop.wav", 0.26));
+    add("s1", b1.n103 - 4, "pop.wav", 0.3);
+    add("s1", b1.n103 + 24, "crack.wav", 0.35);
+    add("s1", b1.n52 - 12, "rise.wav", 0.3);
+    add("s1", b1.n52 - 1, "slam.wav", 0.6);
+    add("s1", b1.n52 - 1, "impact.wav", 0.6);
+    add("s1", b1.story - 6, "whip.wav", 0.25);
+    [b2.born, b2.six, b2.ipl].forEach((x) => add("s2", x - 4, "pop.wav", 0.26));
     add("s2", b2.doha - 6, "whip.wav", 0.3);
     add("s2", b2.n250 - 6, "slam.wav", 0.45);
     add("s3", 0, "ticks.wav", 0.25);
@@ -699,7 +703,9 @@ export const STORY = {
       add("s3", x - 18, "ticks.wav", 0.22);
       add("s3", x - 2, "slam.wav", 0.45);
     });
-    add("s3", b3.n200, "crowd.wav", 0.24);
+    add("s3", b3.n200, "crowd.wav", 0.3);
+    add("s3", b3.n200 - 1, "impact.wav", 0.55);
+    add("s3", b3.n198 + 20, "rise.wav", 0.25);
     [b3.gone, b3.n19, b3.half].forEach((x) => add("s3", x + 2, "crack.wav", 0.3));
     add("s3", b3.caught - 2, "slam.wav", 0.5);
     add("s3", b3.caught - 2, "impact.wav", 0.4);
@@ -715,6 +721,8 @@ export const STORY = {
     add("s5", b5.uae, "ticks.wav", 0.24);
     add("s5", b5.made - 2, "whip.wav", 0.3);
     add("s5", b5.made + 12, "slam.wav", 0.4);
+    add("s5", b5.won + 6, "slam.wav", 0.5);
+    add("s5", b5.won + 8, "crowd.wav", 0.22);
     add("s6", 1, "pen.wav", 0.3);
     add("s6", b6.n15 - 2, "impact.wav", 0.45);
     add("s6", b6.days - 4, "pop.wav", 0.26);
