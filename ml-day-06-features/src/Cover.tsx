@@ -23,11 +23,11 @@ export const Cover: React.FC = () => {
     day={6}
     topic={
       <>
-        <div style={{ fontSize: 96 }}>99% ACCURATE.</div>
-        <div style={{ fontSize: 96 }}>USELESS. WHY?</div>
+        <div style={{ fontSize: 110 }}>FEATURES</div>
+        <div style={{ fontSize: 110 }}>+ LABELS</div>
       </>
     }
-    hook={<>features, labels + the 6 tests</>}
+    hook={<>the 6 tests every feature must pass</>}
     hookY={1150}
     art={
       <div style={{ position: "absolute", left: 60, right: 60, top: 1290, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 12 }}>

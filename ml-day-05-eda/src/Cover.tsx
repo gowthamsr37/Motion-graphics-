@@ -24,11 +24,11 @@ export const Cover: React.FC = () => {
     day={5}
     topic={
       <>
-        <div style={{ fontSize: 96 }}>SAME NUMBERS,</div>
-        <div style={{ fontSize: 96 }}>DIFFERENT DATA</div>
+        <div style={{ fontSize: 96 }}>EXPLORATORY</div>
+        <div style={{ fontSize: 96 }}>DATA ANALYSIS</div>
       </>
     }
-    hook={<>EDA: the 6 problems it catches</>}
+    hook={<>EDA · the 6 problems it catches</>}
     hookY={1150}
     art={
       <div style={{ position: "absolute", left: 0, right: 0, top: 1270, display: "flex", justifyContent: "center", gap: 18 }}>
