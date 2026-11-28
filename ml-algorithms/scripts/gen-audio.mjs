@@ -33,7 +33,7 @@ const ev = {
   sameType: sent("s1", 1),
   quiz: sent("s16", 0), // the poll prompt
   follow: sent("s16", 1),
-  acc1: cueS("s1", 0, "12"), // the hook lands
+  acc1: cueS("s1", 1, "guess."), // the hook lands
   acc2: sent("s2", 1), // the title
   acc3: sent("s15", 1), // save this
 };

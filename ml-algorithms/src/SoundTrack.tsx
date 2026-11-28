@@ -38,16 +38,17 @@ const useHits = (): Hit[] => {
   // page turns
   SCENE_IDS.slice(1).forEach((id) => at(id)(2, "page.wav", 0.32));
 
-  { // S1 hook + title card
+  { // S1 hook
     const s = T("s1"), h = at("s1");
-    h(2, "impact.wav", 0.28);
-    for (let i = 0; i < 12; i++) h(2 + i * 2, "tap.wav", 0.07);
-    for (let i = 0; i < 4; i++) h(s.sent(0).from + i * 10, "pop.wav", 0.14);
+    h(2, "impact.wav", 0.3);
+    ["SVM,", "KNN,", "logistic"].forEach((w) => h(s.cueS(0, w) - 3, "pop.wav", 0.24));
+    h(s.cueS(0, "which") - 4, "whoosh.wav", 0.2);
+    h(s.cueS(1, "guess.") - 3, "stamp.wav", 0.4);
     h(s.cueS(1, "Save") - 4, "sparkle.wav", 0.2);
   }
-  { // S2 map
+  { // S2 three questions
     const s = T("s2"), h = at("s2");
-    ["Supervised", "Unsupervised", "reinforcement"].forEach((w, i) => h(s.cueS(1, w) - 4, `step${i + 1}.wav`, 0.22));
+    ["1:", "2:", "3:"].forEach((w, i) => h(s.cueS(1, w) - 4, `step${i + 1}.wav`, 0.22));
   }
   (["s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10", "s11", "s12", "s13", "s14"] as SceneId[]).forEach((id) => {
     const s = T(id), h = at(id);
@@ -57,8 +58,8 @@ const useHits = (): Hit[] => {
   });
   { // S15 which one
     const s = T("s15"), h = at("s15");
-    ["number?", "Yes", "groups?", "columns?", "Images"].forEach((t) => h(s.cueS(0, t) - 2, "tap.wav", 0.22));
-    h(s.cueS(1, "Screenshot") - 4, "sparkle.wav", 0.2);
+    ["number?", "category?", "Text?", "labels?", "columns?", "Images?"].forEach((t) => h(s.cueS(0, t) - 2, "tap.wav", 0.22));
+    h(s.cueS(1, "Save") - 4, "sparkle.wav", 0.2);
   }
   { // S16 quiz + end card
     const s = T("s16"), h = at("s16");

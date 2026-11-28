@@ -1,6 +1,9 @@
-# Every ML Algorithm Explained in 3 Minutes (standalone reel)
+# Which ML Algorithm Would You Use? (standalone reel, interview angle)
 
-A standalone Data Science Made Simple reel (not part of 100 Days of ML; user: no next-reel teaser at the end). Hook from frame 0: a title card "EVERY ML ALGORITHM · 12 ALGORITHMS · UNDER 3 MINUTES" listing all 12, plus "Netflix, Gmail, Swiggy, your bank's fraud alert run on 12 algorithms; save this before your next interview". Then the map (supervised / unsupervised / reinforcement), 12 algorithm scenes (each: #n/12, family, name, a small animation that moves on its words, the one-line takeaway, USED IN chips), WHICH ONE TO USE (save moment), the quiz and the end card. Stats house style; navy cover. 2:59 (Instagram's 3-minute limit), −14.2 LUFS. Deliverables in `out/`: `ML_Algorithms_Explained.mp4`, `ML_Algorithms_Explained_Cover.png`, `.srt`; caption in `CAPTION.md`.
+Rebuilt after user feedback: the first hook (a list of names) would get swiped; the user chose the interview-angle hook in the style of `which-test/` (15k views): name the confusing options, ask the exact question, a stake, a promise, save. Structure: 3 questions (labels? number or category? images/audio/text?), each algorithm arrives as an answer with "use it when…".
+
+
+A standalone Data Science Made Simple reel (not part of 100 Days of ML; user: no next-reel teaser at the end). Hook from frame 0: a title card "EVERY ML ALGORITHM · 12 ALGORITHMS · UNDER 3 MINUTES" listing all 12, plus "Netflix, Gmail, Swiggy, your bank's fraud alert run on 12 algorithms; save this before your next interview". Then the map (supervised / unsupervised / reinforcement), 12 algorithm scenes (each: #n/12, family, name, a small animation that moves on its words, the one-line takeaway, USED IN chips), WHICH ONE TO USE (save moment), the quiz and the end card. Stats house style; navy cover. 2:54, −14.1 LUFS. Deliverables in `out/`: `ML_Algorithms_Explained.mp4`, `ML_Algorithms_Explained_Cover.png`, `.srt`; caption in `CAPTION.md`.
 
 ## The animations (`src/components/Algos.tsx`)
 
@@ -12,71 +15,71 @@ Twelve widely used algorithms; "almost all of it runs on" is a simplification (p
 
 ## Voiceover script
 
-**S1 · Hook + title (frame 0)** (0:00.00–0:12.41)
-- `0:00.15` Netflix, Gmail, Swiggy, your bank's fraud alert. Almost all of it runs on just 12 machine learning algorithms.
-- `0:07.41` Here's every one, explained in under 3 minutes. Save this before your next interview.
+**S1 · Hook (frame 0)** (0:00.00–0:10.54)
+- `0:00.15` XGBoost, SVM, KNN, logistic regression. The interviewer asks: which one would you use, and why?
+- `0:07.17` Most people guess. After this video, you won't. Save it!
 
-**S2 · The map** (0:12.41–0:26.99)
-- `0:12.61` First, the map.
-- `0:13.72` Supervised algorithms learn from examples with answers. They predict a number, or a category. Unsupervised ones find patterns with no answers given. And reinforcement learning learns by trial and reward.
+**S2 · Three questions** (0:10.54–0:21.97)
+- `0:10.74` Choosing an algorithm comes down to 3 questions.
+- `0:13.87` 1: do you have the answers, the labels? 2: are you predicting a number, or a category? 3: is it images, audio or text?
 
-**S3 · 1 Linear regression** (0:26.99–0:35.24)
-- `0:27.19` Number 1: linear regression.
-- `0:29.08` It draws the straight line that best fits your data. Bigger flat, higher rent. Use it to predict a number.
+**S3 · Number: linear regression** (0:21.97–0:28.98)
+- `0:22.17` Predicting a number? Start with linear regression.
+- `0:24.88` It draws the line that best fits your data. Bigger flat, higher rent.
 
-**S4 · 2 Logistic regression** (0:35.24–0:47.90)
-- `0:35.45` Number 2: logistic regression.
-- `0:37.61` Despite the name, it answers yes or no questions. It squeezes everything into a probability between 0 and 1. Will this customer buy? 80%, yes.
+**S4 · Number: gradient boosting** (0:28.98–0:41.76)
+- `0:29.18` Need more accuracy on table data? Gradient boosting, like XGBoost.
+- `0:33.82` Trees are built one after another, and each new tree fixes the mistakes of the last one. It wins most competitions on table data.
 
-**S5 · 3 Decision tree** (0:47.90–0:57.26)
-- `0:48.10` Number 3: decision tree.
-- `0:49.92` A flowchart of yes or no questions. Salary above 50,000? Any existing loans? Approve, or reject.
+**S5 · Category: logistic regression** (0:41.76–0:53.06)
+- `0:41.96` Predicting a category, like yes or no? Start with logistic regression.
+- `0:46.30` It squeezes everything into a probability between 0 and 1. Will this customer buy? 80%, yes.
 
-**S6 · 4 Random forest** (0:57.26–1:07.63)
-- `0:57.45` Number 4: random forest.
-- `0:59.40` One tree can be wrong. So build hundreds, each on a slightly different slice of the data, and let them vote. Banks use it to catch fraud.
+**S6 · Category: decision tree** (0:53.06–1:03.62)
+- `0:53.26` Need to explain every decision? A decision tree.
+- `0:56.29` A flowchart of yes or no questions. Salary above 50,000? Any existing loans? Approve, or reject.
 
-**S7 · 5 Gradient boosting** (1:07.63–1:18.95)
-- `1:07.83` Number 5: gradient boosting, like XGBoost.
-- `1:11.01` Trees are built one after another, and each new tree fixes the mistakes of the last one. It wins most competitions on table data.
+**S7 · Category: random forest** (1:03.62–1:13.16)
+- `1:03.82` Want a stronger, safer choice? Random forest.
+- `1:06.79` Build hundreds of trees, each on a different slice of the data, and let them vote. Banks use it to catch fraud.
 
-**S8 · 6 K nearest neighbours** (1:18.95–1:27.36)
-- `1:19.15` Number 6: K nearest neighbours.
-- `1:21.30` To label a new point, look at its closest neighbours, and copy the majority. You are who your neighbours are.
+**S8 · Category: naive Bayes** (1:13.16–1:22.73)
+- `1:13.36` Classifying text, like spam? Naive Bayes.
+- `1:16.38` It counts how often words appear in spam versus normal mail. Free, winner, urgent? Probably spam.
 
-**S9 · 7 Naive Bayes** (1:27.36–1:37.09)
-- `1:27.56` Number 7: naive Bayes.
-- `1:29.45` It counts how often words appear in spam versus normal mail. Free, winner, urgent? Probably spam. Great for text.
+**S9 · Category: SVM** (1:22.73–1:32.55)
+- `1:22.93` Small dataset, two clear classes? A support vector machine.
+- `1:26.73` It draws the widest possible street between the classes. The points on the edge are the support vectors.
 
-**S10 · 8 Support vector machine** (1:37.09–1:46.40)
-- `1:37.29` Number 8: support vector machine.
-- `1:39.51` It draws the widest possible street between two classes. The points touching the edge of the street are the support vectors.
+**S10 · Category: KNN** (1:32.55–1:40.17)
+- `1:32.75` The simplest idea of all? K nearest neighbours.
+- `1:35.74` To label a new point, look at its closest neighbours, and copy the majority.
 
-**S11 · 9 K-means clustering** (1:46.40–1:58.13)
-- `1:46.60` Number 9: K-means clustering.
-- `1:48.77` No answers given. It drops K centres, gives each point to the nearest one, and moves the centres until the groups settle. Perfect for customer segments.
+**S11 · No labels: K-means** (1:40.17–1:51.96)
+- `1:40.37` No labels at all, and you want groups? K means clustering.
+- `1:44.02` It drops K centres, gives each point to the nearest one, and moves the centres until the groups settle. Perfect for customer segments.
 
-**S12 · 10 PCA** (1:58.13–2:08.38)
-- `1:58.33` Number 10: PCA, principal component analysis.
-- `2:01.83` It squeezes 100 columns into a few that keep most of the information. Faster models, easier plots.
+**S12 · Too many columns: PCA** (1:51.96–2:00.66)
+- `1:52.16` Too many columns? PCA.
+- `1:54.10` It squeezes 100 columns into a few that keep most of the information. Faster models, easier plots.
 
-**S13 · 11 Neural networks** (2:08.38–2:20.12)
-- `2:08.58` Number 11: neural networks.
-- `2:10.70` Layers of tiny calculators, each passing signals forward. Stack enough layers, and you get deep learning: face unlock, translation, ChatGPT.
+**S13 · Images, audio, text: neural networks** (2:00.66–2:12.13)
+- `2:00.86` Images, audio or text at scale? Neural networks.
+- `2:04.25` Layers of tiny calculators passing signals forward. Stack enough, and you get deep learning: face unlock, ChatGPT.
 
-**S14 · 12 Reinforcement learning** (2:20.12–2:30.58)
-- `2:20.32` Number 12: reinforcement learning.
-- `2:22.60` An agent tries actions, gets rewards or penalties, and slowly learns the best moves. That's how AI mastered chess and Go.
+**S14 · Trial and reward: reinforcement learning** (2:12.13–2:23.32)
+- `2:12.33` Learning by trial and reward, like a game? Reinforcement learning.
+- `2:16.37` An agent tries moves, gets rewards or penalties, and learns the best strategy. That's how AI mastered chess.
 
-**S15 · Which one to use** (2:30.58–2:48.55)
-- `2:30.78` So which one should you use? Predicting a number? Linear regression, or gradient boosting. Yes or no? Logistic regression, or a random forest. Finding groups? K means. Too many columns? PCA. Images or text? Neural networks.
-- `2:46.17` Screenshot this, or save it for later.
+**S15 · What to say in the interview** (2:23.32–2:42.27)
+- `2:23.52` So in the interview, say this. A number? Linear regression, then boosting. A category? Logistic regression, then random forest. Text? Naive Bayes. No labels? K means. Too many columns? PCA. Images? Neural networks.
+- `2:38.54` Save this reel, and send it to a friend preparing for interviews.
 
-**S16 · Quiz + CTA** (2:48.56–2:58.89)
-- `2:48.75` Quick quiz! Netflix groups viewers with similar taste, without any labels. Which algorithm fits best? Vote in the caption poll!
-- `2:56.47` Follow for data science made simple!
+**S16 · Quiz + CTA** (2:42.27–2:53.67)
+- `2:42.47` Interview question! Netflix wants to group viewers with similar taste, without any labels. Which algorithm would you use? Vote in the caption poll!
+- `2:51.25` Follow for data science made simple!
 
-total 178.891
+total 173.666
 
 ## Rebuild
 

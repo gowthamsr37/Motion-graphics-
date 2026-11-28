@@ -1,25 +1,24 @@
-# Caption: Every ML Algorithm Explained in 3 Minutes
+# Caption: Which ML Algorithm Would You Use? (interview angle)
 
 ## Caption
 
-Netflix, Gmail, Swiggy, your bank's fraud alert… almost all of it runs on just 12 machine learning algorithms. 🤖
+"XGBoost, SVM, KNN, logistic regression… which one would you use, and why?" 🎯 The interview question most people answer by guessing.
 
-Here's every one, explained simply, with a small animation for each 👇
+It comes down to 3 questions:
+1️⃣ Do you have labels?
+2️⃣ Predicting a number, or a category?
+3️⃣ Images, audio or text?
 
-1️⃣ Linear Regression: the best-fit line → predicts a number
-2️⃣ Logistic Regression: a probability → yes or no
-3️⃣ Decision Tree: a flowchart of yes/no questions
-4️⃣ Random Forest: hundreds of trees vote
-5️⃣ Gradient Boosting (XGBoost): each tree fixes the last one's mistakes
-6️⃣ KNN: you are who your neighbours are
-7️⃣ Naive Bayes: word probabilities → spam or not
-8️⃣ SVM: the widest street between two classes
-9️⃣ K-Means: no labels → natural groups
-🔟 PCA: fewer columns, most of the information
-1️⃣1️⃣ Neural Networks: layers of neurons → deep learning
-1️⃣2️⃣ Reinforcement Learning: try, get rewarded, repeat
+📌 What to say in the interview:
+🔢 A number → Linear Regression, then Gradient Boosting (XGBoost)
+✅ A category → Logistic Regression, then Random Forest
+✉️ Text → Naive Bayes
+🧩 No labels → K-Means
+📉 Too many columns → PCA
+🖼 Images → Neural Networks
+Plus Decision Tree (explainable), SVM (small data), KNN (simplest) and Reinforcement Learning (trial + reward).
 
-💾 Save this before your next interview, and send it to a friend learning ML.
+💾 Save this, and send it to a friend preparing for interviews.
 👉 Follow @curious_datascientist for data science made simple.
 
 ## Poll (add the Instagram poll sticker)

@@ -15,68 +15,64 @@ const C = theme.colors;
 export const NAMES = ["Linear Regression", "Logistic Regression", "Decision Tree", "Random Forest", "Gradient Boosting", "KNN", "Naive Bayes", "SVM", "K-Means", "PCA", "Neural Networks", "Reinforcement"];
 const FAMC = [SUP, SUP, SUP, SUP, SUP, SUP, SUP, SUP, UNS, UNS, C.green, REI];
 
-// SCENE 1 — HOOK + TITLE CARD (frame 0): EVERY ML ALGORITHM · in under 3 min · the 12 chips; apps that run on them.
+// SCENE 1 — HOOK (frame 0): INTERVIEW QUESTION card; XGBoost, SVM, KNN, logistic regression slam in on their words;
+// "which one would you use, and why?"; GUESSING? stamp; SAVE IT.
 export const S1: React.FC = () => {
   const frame = useCurrentFrame();
   const s = useScene("s1");
-  const APPS = ["Netflix", "Gmail", "Swiggy", "Bank fraud alert"];
+  const W = [{ t: "XGBoost", w: "XGBoost,", c: SUP }, { t: "SVM", w: "SVM,", c: C.violet }, { t: "KNN", w: "KNN,", c: C.orange }, { t: "Logistic Regression", w: "logistic", c: C.green }];
+  const G = s.cueS(1, "guess.");
+  const stamp = ease(frame, [G - 3, G + 4], [0, 1]);
   return (
     <AbsoluteFill>
       <Pop x={540} y={250} at={0}>
-        <Pill color={C.yellow} size={28}>12 ALGORITHMS · UNDER 3 MINUTES</Pill>
+        <Pill color={C.red} size={34} solid>INTERVIEW QUESTION</Pill>
       </Pop>
-      <Pop x={540} y={400} at={0}>
-        <div style={{ textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 104, lineHeight: 1.0, letterSpacing: "-0.02em", whiteSpace: "nowrap" }}>
-          <div style={{ color: C.text }}>EVERY ML</div>
-          <div style={{ background: `linear-gradient(90deg, ${C.cyan}, ${C.violet}, ${C.orange})`, WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>ALGORITHM</div>
-        </div>
-      </Pop>
-      <div style={{ position: "absolute", left: 50, right: 50, top: 560, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 12 }}>
-        {NAMES.map((n, i) => {
-          const p = ease(frame, [2 + i * 2, 8 + i * 2], [0, 1]);
+      <div style={{ position: "absolute", left: 60, right: 60, top: 340, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 18 }}>
+        {W.map((k, i) => {
+          const at = i === 0 ? 0 : s.cueS(0, k.w) - 3;
+          const p = ease(frame, [at, at + 6], [0, 1]);
           return (
-            <div key={n} style={{ opacity: p, transform: `scale(${0.6 + 0.4 * p})`, display: "flex", alignItems: "center", gap: 10, padding: "8px 16px", borderRadius: 14, background: alpha(FAMC[i], 0.14), border: `3px solid ${FAMC[i]}` }}>
-              <span style={{ width: 36, height: 36, borderRadius: 18, background: FAMC[i], color: C.ink, display: "inline-flex", alignItems: "center", justifyContent: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 20 }}>{i + 1}</span>
-              <span style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 30, color: C.text, whiteSpace: "nowrap" }}>{n}</span>
-            </div>
+            <div key={k.t} style={{ opacity: p, transform: `scale(${1.6 - 0.6 * p})`, padding: "14px 30px", borderRadius: 20, background: alpha(k.c, 0.18), border: `4px solid ${k.c}`, boxShadow: `0 0 26px ${alpha(k.c, 0.5)}`, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 60, color: C.text, whiteSpace: "nowrap" }}>{k.t}</div>
           );
         })}
       </div>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 1000, display: "flex", justifyContent: "center", gap: 12 }}>
-        {APPS.map((a, i) => (
-          <div key={a} style={{ opacity: ease(frame, [s.sent(0).from + i * 10, s.sent(0).from + i * 10 + 6], [0, 1]) }}>
-            <Pill color={C.green} size={28}>{a}</Pill>
-          </div>
-        ))}
-      </div>
-      <Pop x={540} y={1130} at={s.cueS(1, "Save") - 4}>
-        <Pill color={C.green} size={34}>
-          <Bookmark size={34} color={C.green} />
-          SAVE THIS BEFORE YOUR INTERVIEW
+      <Pop x={540} y={760} at={s.cueS(0, "which") - 4}>
+        <div style={{ textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 92, lineHeight: 1.02, color: C.text, whiteSpace: "nowrap" }}>
+          which one would<br />you use, <span style={{ color: C.yellow, textShadow: glowText(C.yellow, 0.6) }}>and why?</span>
+        </div>
+      </Pop>
+      {frame >= G - 3 ? (
+        <div style={{ position: "absolute", left: 540, top: 1000, transform: `translate(-50%, -50%) rotate(-7deg) scale(${2 - stamp})`, opacity: stamp, padding: "12px 40px", border: `8px solid ${C.red}`, borderRadius: 18, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 90, color: C.red, background: "rgba(10,14,40,0.85)", textShadow: glowText(C.red, 0.5) }}>GUESSING?</div>
+      ) : null}
+      <Pop x={540} y={1170} at={s.cueS(1, "Save") - 4}>
+        <Pill color={C.green} size={36}>
+          <Bookmark size={36} color={C.green} />
+          SAVE IT · stop guessing
         </Pill>
       </Pop>
     </AbsoluteFill>
   );
 };
 
-// SCENE 2 — THE MAP: MACHINE LEARNING → SUPERVISED (number / category) · UNSUPERVISED (patterns) · REINFORCEMENT (trial + reward)
+// SCENE 2 — THE 3 QUESTIONS
 export const S2: React.FC = () => {
   const s = useScene("s2");
-  const K = [
-    { t: "SUPERVISED", sub: ["learns from answers", "→ a number or a category"], c: SUP, w: "Supervised" },
-    { t: "UNSUPERVISED", sub: ["no answers given", "→ finds patterns"], c: UNS, w: "Unsupervised" },
-    { t: "REINFORCEMENT", sub: ["trial and reward", "→ learns the best moves"], c: REI, w: "reinforcement" },
+  const Q = [
+    { n: "1", t: "do you have the answers (labels)?", w: "1:", c: UNS },
+    { n: "2", t: "a number, or a category?", w: "2:", c: SUP },
+    { n: "3", t: "images, audio or text?", w: "3:", c: C.green },
   ];
   return (
     <AbsoluteFill>
       <Pop x={540} y={260} at={s.sent(0).from - 4}>
-        <Txt size={60}>first, <span style={{ color: C.yellow }}>the map</span></Txt>
+        <Txt size={58}>it comes down to <span style={{ color: C.yellow }}>3 questions</span></Txt>
       </Pop>
-      {K.map((k, i) => (
-        <Pop key={k.t} x={540} y={480 + i * 260} at={s.cueS(1, k.w) - 4}>
-          <Panel w={960} h={220} color={k.c} style={{ gap: 8 }}>
-            <Txt size={56} color={k.c} style={{ textShadow: glowText(k.c, 0.4) }}>{k.t}</Txt>
-            <Txt size={34} font="body">{k.sub[0]} <span style={{ color: k.c }}>{k.sub[1]}</span></Txt>
+      {Q.map((q, i) => (
+        <Pop key={q.n} x={540} y={480 + i * 230} at={s.cueS(1, q.w) - 4}>
+          <Panel w={980} h={190} color={q.c} style={{ flexDirection: "row", justifyContent: "flex-start", gap: 30, padding: "0 36px" }}>
+            <div style={{ width: 90, height: 90, borderRadius: 45, background: q.c, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 52, color: C.ink }}>{q.n}</div>
+            <Txt size={44}>{q.t}</Txt>
           </Panel>
         </Pop>
       ))}
@@ -85,26 +81,27 @@ export const S2: React.FC = () => {
 };
 
 const y = (c: string) => <span style={{ color: C.yellow }}>{c}</span>;
-export const A1: React.FC = () => <AlgoScene id="s3" n={1} name="Linear Regression" fam="SUPERVISED · NUMBERS" c={SUP} kind="lin" cues={["line", "rent."]} takeW="predict" take={<>the best-fit line → {y("predicts a number")}</>} uses={["rent", "sales forecast"]} />;
-export const A2: React.FC = () => <AlgoScene id="s4" n={2} name="Logistic Regression" fam="SUPERVISED · YES / NO" c={SUP} kind="log" cues={["squeezes", "80%,"]} takeW="probability" take={<>a probability (0 to 1) → {y("yes or no")}</>} uses={["will they buy?", "churn"]} />;
-export const A3: React.FC = () => <AlgoScene id="s5" n={3} name="Decision Tree" fam="SUPERVISED" c={SUP} kind="tree" cues={["Salary", "loans?", "Approve,"]} takeW="Approve," take={<>a flowchart of {y("yes / no questions")}</>} uses={["loan approval", "diagnosis"]} />;
-export const A4: React.FC = () => <AlgoScene id="s6" n={4} name="Random Forest" fam="SUPERVISED" c={SUP} kind="forest" cues={["hundreds,", "vote."]} takeW="Banks" take={<>hundreds of trees {y("vote")}</>} uses={["fraud detection", "credit risk"]} />;
-export const A5: React.FC = () => <AlgoScene id="s7" n={5} name="Gradient Boosting" fam="SUPERVISED · XGBOOST" c={SUP} kind="boost" cues={["after", "fixes"]} takeW="competitions" take={<>the {y("champion")} on table data</>} uses={["Kaggle", "ad clicks"]} />;
-export const A6: React.FC = () => <AlgoScene id="s8" n={6} name="K Nearest Neighbours" fam="SUPERVISED" c={SUP} kind="knn" cues={["closest", "majority."]} takeW="You" take={<>you are who your {y("neighbours")} are</>} uses={["recommendations", "similar items"]} />;
-export const A7: React.FC = () => <AlgoScene id="s9" n={7} name="Naive Bayes" fam="SUPERVISED · TEXT" c={SUP} kind="bayes" cues={["Free,", "winner,", "urgent?"]} takeW="Great" take={<>word probabilities → {y("spam or not")}</>} uses={["spam filter", "sentiment"]} />;
-export const A8: React.FC = () => <AlgoScene id="s10" n={8} name="Support Vector Machine" fam="SUPERVISED" c={SUP} kind="svm" cues={["widest", "support"]} takeW="edge" take={<>the {y("widest street")} between two classes</>} uses={["text classification", "face detection"]} />;
-export const A9: React.FC = () => <AlgoScene id="s11" n={9} name="K-Means Clustering" fam="UNSUPERVISED · GROUPS" c={UNS} kind="kmeans" cues={["drops", "moves"]} takeW="Perfect" take={<>no labels → {y("natural groups")}</>} uses={["customer segments", "playlists"]} />;
-export const A10: React.FC = () => <AlgoScene id="s12" n={10} name="PCA" fam="UNSUPERVISED · COMPRESS" c={UNS} kind="pca" cues={["squeezes", "plots."]} takeW="Faster" take={<>fewer columns, {y("most of the information")}</>} uses={["compression", "visualisation"]} />;
-export const A11: React.FC = () => <AlgoScene id="s13" n={11} name="Neural Networks" fam="DEEP LEARNING" c={C.green} kind="nn" cues={["calculators,", "deep"]} takeW="deep" take={<>layers of neurons → {y("deep learning")}</>} uses={["face unlock", "translation", "ChatGPT"]} />;
-export const A12: React.FC = () => <AlgoScene id="s14" n={12} name="Reinforcement Learning" fam="REINFORCEMENT" c={REI} kind="rl" cues={["tries", "slowly"]} takeW="mastered" take={<>try, get {y("rewarded")}, repeat</>} uses={["chess + Go", "robots"]} />;
+export const A1: React.FC = () => <AlgoScene id="s3" n={1} name="Linear Regression" fam="A NUMBER?" c={SUP} kind="lin" cues={["line", "rent."]} takeW="Bigger" take={<>use it when: {y("predicting a number")}</>} uses={["rent", "sales forecast"]} />;
+export const A2: React.FC = () => <AlgoScene id="s4" n={2} name="Gradient Boosting" fam="A NUMBER? · MORE ACCURACY" c={SUP} kind="boost" cues={["after", "fixes"]} takeW="competitions" take={<>use it when: {y("accuracy matters most")}</>} uses={["Kaggle", "ad clicks"]} />;
+export const A3: React.FC = () => <AlgoScene id="s5" n={3} name="Logistic Regression" fam="A CATEGORY?" c={SUP} kind="log" cues={["squeezes", "80%,"]} takeW="probability" take={<>use it when: {y("yes or no")}</>} uses={["will they buy?", "churn"]} />;
+export const A4: React.FC = () => <AlgoScene id="s6" n={4} name="Decision Tree" fam="A CATEGORY? · EXPLAINABLE" c={SUP} kind="tree" cues={["Salary", "loans?", "Approve,"]} takeW="Approve," take={<>use it when: {y("you must explain why")}</>} uses={["loan approval", "diagnosis"]} />;
+export const A5: React.FC = () => <AlgoScene id="s7" n={5} name="Random Forest" fam="A CATEGORY? · SAFE BET" c={SUP} kind="forest" cues={["hundreds", "vote."]} takeW="Banks" take={<>use it when: {y("you want a strong default")}</>} uses={["fraud detection", "credit risk"]} />;
+export const A6: React.FC = () => <AlgoScene id="s8" n={6} name="Naive Bayes" fam="A CATEGORY? · TEXT" c={SUP} kind="bayes" cues={["Free,", "winner,", "urgent?"]} takeW="Probably" take={<>use it when: {y("classifying text")}</>} uses={["spam filter", "sentiment"]} />;
+export const A7: React.FC = () => <AlgoScene id="s9" n={7} name="Support Vector Machine" fam="A CATEGORY? · SMALL DATA" c={SUP} kind="svm" cues={["widest", "support"]} takeW="edge" take={<>use it when: {y("small data, clear classes")}</>} uses={["text classification", "face detection"]} />;
+export const A8: React.FC = () => <AlgoScene id="s10" n={8} name="K Nearest Neighbours" fam="A CATEGORY? · SIMPLEST" c={SUP} kind="knn" cues={["closest", "majority."]} takeW="copy" take={<>use it when: {y("similar = same label")}</>} uses={["recommendations", "similar items"]} />;
+export const A9: React.FC = () => <AlgoScene id="s11" n={9} name="K-Means Clustering" fam="NO LABELS? · GROUPS" c={UNS} kind="kmeans" cues={["drops", "moves"]} takeW="Perfect" take={<>use it when: {y("no labels, find groups")}</>} uses={["customer segments", "playlists"]} />;
+export const A10: React.FC = () => <AlgoScene id="s12" n={10} name="PCA" fam="TOO MANY COLUMNS?" c={UNS} kind="pca" cues={["squeezes", "plots."]} takeW="Faster" take={<>use it when: {y("too many columns")}</>} uses={["compression", "visualisation"]} />;
+export const A11: React.FC = () => <AlgoScene id="s13" n={11} name="Neural Networks" fam="IMAGES · AUDIO · TEXT?" c={C.green} kind="nn" cues={["calculators", "deep"]} takeW="deep" take={<>use it when: {y("images, audio, text at scale")}</>} uses={["face unlock", "ChatGPT"]} />;
+export const A12: React.FC = () => <AlgoScene id="s14" n={12} name="Reinforcement Learning" fam="TRIAL + REWARD?" c={REI} kind="rl" cues={["tries", "learns"]} takeW="mastered" take={<>use it when: {y("learning by trial and reward")}</>} uses={["chess", "robots"]} />;
 
 // SCENE 15 — WHICH ONE TO USE (save moment)
 const ROWS = [
-  { q: "predict a number?", a: "Linear Regression · Boosting", w: "number?", c: SUP },
-  { q: "yes or no?", a: "Logistic Regression · Random Forest", w: "Yes", c: SUP },
-  { q: "find groups?", a: "K-Means", w: "groups?", c: UNS },
+  { q: "a number?", a: "Linear Regression → Boosting", w: "number?", c: SUP },
+  { q: "a category?", a: "Logistic Regression → Random Forest", w: "category?", c: SUP },
+  { q: "text?", a: "Naive Bayes", w: "Text?", c: SUP },
+  { q: "no labels?", a: "K-Means", w: "labels?", c: UNS },
   { q: "too many columns?", a: "PCA", w: "columns?", c: UNS },
-  { q: "images or text?", a: "Neural Networks", w: "Images", c: C.green },
+  { q: "images?", a: "Neural Networks", w: "Images?", c: C.green },
 ];
 export const S15: React.FC = () => {
   const frame = useCurrentFrame();
@@ -112,10 +109,10 @@ export const S15: React.FC = () => {
   return (
     <AbsoluteFill>
       <Pop x={540} y={260} at={s.sent(0).from - 4}>
-        <Txt size={58} color={C.yellow} glow>WHICH ONE TO USE?</Txt>
+        <Txt size={58} color={C.yellow} glow>SAY THIS IN THE INTERVIEW</Txt>
       </Pop>
-      <Pop x={540} y={660} at={s.sent(0).from + 10}>
-        <Panel w={1000} h={600} color={C.cyan} style={{ gap: 6 }}>
+      <Pop x={540} y={690} at={s.sent(0).from + 10}>
+        <Panel w={1000} h={680} color={C.cyan} style={{ gap: 4 }}>
           {ROWS.map((r, i) => {
             const p = ease(frame, [s.cueS(0, r.w) - 2, s.cueS(0, r.w) + 6], [0, 1]);
             return (
@@ -127,10 +124,10 @@ export const S15: React.FC = () => {
           })}
         </Panel>
       </Pop>
-      <Pop x={540} y={1060} at={s.cueS(1, "Screenshot") - 4}>
+      <Pop x={540} y={1110} at={s.cueS(1, "Save") - 4}>
         <Pill color={C.green} size={36}>
           <Bookmark size={36} color={C.green} />
-          SCREENSHOT · SAVE THIS
+          SAVE + SEND TO A FRIEND
         </Pill>
       </Pop>
     </AbsoluteFill>
@@ -152,16 +149,16 @@ export const S16: React.FC = () => {
       {clear < 1 ? (
         <AbsoluteFill style={{ opacity: 1 - clear, transform: `translateY(${-30 * clear}px)` }}>
           <Pop x={540} y={260} at={P0 - 6}>
-            <Pill color={C.yellow} size={50}>QUICK QUIZ!</Pill>
+            <Pill color={C.yellow} size={44}>INTERVIEW QUESTION!</Pill>
           </Pop>
           <Pop x={540} y={430} at={P0 + 4}>
-            <Txt size={40}>Netflix groups viewers with <span style={{ color: C.orange }}>similar taste</span></Txt>
+            <Txt size={36}>Netflix wants to group viewers with <span style={{ color: C.orange }}>similar taste</span></Txt>
           </Pop>
           <Pop x={540} y={500} at={s.cueS(0, "labels.") - 4}>
             <Txt size={40} font="body">without any labels</Txt>
           </Pop>
           <Pop x={540} y={660} at={W - 8}>
-            <Txt size={60} color={C.yellow} glow>Which algorithm?</Txt>
+            <Txt size={50} color={C.yellow} glow>Which algorithm would you use?</Txt>
           </Pop>
           {OPTS.map((o, i) => (
             <Pop key={o.l} x={540} y={790 + i * 110} at={W + 4 + i * 4}>
