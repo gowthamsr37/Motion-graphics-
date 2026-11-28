@@ -1,0 +1,230 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Hook (frame 0)",
+   "lead": 0.15,
+   "hold": 0.3,
+   "segments": [
+    {
+     "text": "Your teacher gives you the question paper and the answer key together. You'd score one hundred.",
+     "caption": "Your teacher gives you the question paper and the answer key together. You'd score 100.",
+     "pause": 0.22
+    },
+    {
+     "text": "Machine learning models can cheat exactly like this, and most beginners never notice.",
+     "caption": "Machine learning models can cheat exactly like this, and most beginners never notice.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Definition + title",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Day six of 100 Days of Machine Learning: features and labels.",
+     "caption": "Day 6 of 100 Days of Machine Learning: features and labels.",
+     "pause": 0.22
+    },
+    {
+     "text": "Here's the textbook definition, the one to use in interviews. Features are the input variables a model uses to make a prediction. The label, also called the target, is the output it learns to predict.",
+     "caption": "Here's the textbook definition, the one to use in interviews. Features are the input variables a model uses to make a prediction. The label, also called the target, is the output it learns to predict.",
+     "pause": 0.22
+    },
+    {
+     "text": "In plain words: features are the clues, the label is the answer.",
+     "caption": "In plain words: features are the clues, the label is the answer.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Every model has this pair",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Every model has this pair.",
+     "caption": "Every model has this pair.",
+     "pause": 0.22
+    },
+    {
+     "text": "Swiggy delivery time: distance, rain and traffic are features. The minutes taken is the label.",
+     "caption": "Swiggy delivery time: distance, rain and traffic are features. The minutes taken is the label.",
+     "pause": 0.22
+    },
+    {
+     "text": "A spam filter: links, words like free, and the sender are features. Spam or not is the label.",
+     "caption": "A spam filter: links, words like free, and the sender are features. Spam or not is the label.",
+     "pause": 0.22
+    },
+    {
+     "text": "And our example today: will a student pass? Hours studied and attendance are features. Pass or fail is the label.",
+     "caption": "And our example today: will a student pass? Hours studied and attendance are features. Pass or fail is the label.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "The doctor analogy",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "It's like a doctor. Fever, cough and test results are the features. The diagnosis is the label. Better clues, better diagnosis.",
+     "caption": "It's like a doctor. Fever, cough and test results are the features. The diagnosis is the label. Better clues, better diagnosis.",
+     "pause": 0.22
+    },
+    {
+     "text": "But not every clue is a good one. Here are five tests every feature must pass.",
+     "caption": "But not every clue is a good one. Here are 5 tests every feature must pass.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Test 1: known in time",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Test one: would you know it before you predict?",
+     "caption": "Test 1: would you know it before you predict?",
+     "pause": 0.22
+    },
+    {
+     "text": "Imagine predicting pass or fail using re-exam fee paid. Only students who failed pay it. The model looks brilliant, but it's reading the answer. This is called data leakage.",
+     "caption": "Imagine predicting pass or fail using re-exam fee paid. Only students who failed pay it. The model looks brilliant, but it's reading the answer. This is called data leakage.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Test 2: related",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Test two: is it actually related?",
+     "caption": "Test 2: is it actually related?",
+     "pause": 0.22
+    },
+    {
+     "text": "Roll number has nothing to do with passing. But with enough data, the model finds fake patterns in it. If there's no real reason it matters, leave it out.",
+     "caption": "Roll number has nothing to do with passing. But with enough data, the model finds fake patterns in it. If there's no real reason it matters, leave it out.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "Test 3: not a duplicate",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Test three: is it a duplicate?",
+     "caption": "Test 3: is it a duplicate?",
+     "pause": 0.22
+    },
+    {
+     "text": "Study hours per day and study hours per week say the same thing twice. The model can't tell which one matters. Keep one.",
+     "caption": "Study hours per day and study hours per week say the same thing twice. The model can't tell which one matters. Keep one.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Test 4: it changes",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Test four: does it change?",
+     "caption": "Test 4: does it change?",
+     "pause": 0.22
+    },
+    {
+     "text": "If every student is from the same school, the school column is identical in every row. A clue that never changes can't explain anything.",
+     "caption": "If every student is from the same school, the school column is identical in every row. A clue that never changes can't explain anything.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "Test 5: fair",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Test five: is it fair?",
+     "caption": "Test 5: is it fair?",
+     "pause": 0.22
+    },
+    {
+     "text": "Never use caste, religion or gender to decide things like loans or admissions, even if they seem to help. And watch for hidden stand-ins, like a pin code.",
+     "caption": "Never use caste, religion or gender to decide things like loans or admissions, even if they seem to help. And watch for hidden stand-ins, like a pin code.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "title": "Built features + summary",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "And the best features are often built, not found. Date of birth becomes age. Login times become late night study.",
+     "caption": "And the best features are often built, not found. Date of birth becomes age. Login times become late night study.",
+     "pause": 0.22
+    },
+    {
+     "text": "So remember: the label is the answer, features are the clues, and every clue must be known in time, related, not a duplicate, changing, and fair.",
+     "caption": "So remember: the label is the answer, features are the clues, and every clue must be known in time, related, not a duplicate, changing, and fair.",
+     "pause": 0.22
+    },
+    {
+     "text": "Save this for your next project.",
+     "caption": "Save this for your next project.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "title": "Quiz, teaser and CTA",
+   "lead": 0.35,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Quick quiz! An app predicts whether a customer will cancel their subscription. Which one is the label? Vote in the caption poll!",
+     "caption": "Quick quiz! An app predicts whether a customer will cancel their subscription. Which one is the label? Vote in the caption poll!",
+     "pause": 0.22
+    },
+    {
+     "text": "Tomorrow, Day seven: missing values, the silent model killer.",
+     "caption": "Tomorrow, Day 7: missing values, the silent model killer.",
+     "pause": 0.22
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.22
+    }
+   ]
+  }
+ ]
+}

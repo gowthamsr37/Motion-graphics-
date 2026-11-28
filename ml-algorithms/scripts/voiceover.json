@@ -1,0 +1,295 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Hook + title (frame 0)",
+   "lead": 0.15,
+   "hold": 0.25,
+   "segments": [
+    {
+     "text": "Netflix, Gmail, Swiggy, your bank's fraud alert. Almost all of it runs on just twelve machine learning algorithms.",
+     "caption": "Netflix, Gmail, Swiggy, your bank's fraud alert. Almost all of it runs on just 12 machine learning algorithms.",
+     "pause": 0.22
+    },
+    {
+     "text": "Here's every one, explained in under three minutes. Save this before your next interview.",
+     "caption": "Here's every one, explained in under 3 minutes. Save this before your next interview.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "The map",
+   "lead": 0.2,
+   "hold": 0.25,
+   "segments": [
+    {
+     "text": "First, the map.",
+     "caption": "First, the map.",
+     "pause": 0.22
+    },
+    {
+     "text": "Supervised algorithms learn from examples with answers. They predict a number, or a category. Unsupervised ones find patterns with no answers given. And reinforcement learning learns by trial and reward.",
+     "caption": "Supervised algorithms learn from examples with answers. They predict a number, or a category. Unsupervised ones find patterns with no answers given. And reinforcement learning learns by trial and reward.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "1 Linear regression",
+   "lead": 0.2,
+   "hold": 0.25,
+   "segments": [
+    {
+     "text": "Number one: linear regression.",
+     "caption": "Number 1: linear regression.",
+     "pause": 0.22
+    },
+    {
+     "text": "It draws the straight line that best fits your data. Bigger flat, higher rent. Use it to predict a number.",
+     "caption": "It draws the straight line that best fits your data. Bigger flat, higher rent. Use it to predict a number.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "2 Logistic regression",
+   "lead": 0.2,
+   "hold": 0.25,
+   "segments": [
+    {
+     "text": "Number two: logistic regression.",
+     "caption": "Number 2: logistic regression.",
+     "pause": 0.22
+    },
+    {
+     "text": "Despite the name, it answers yes or no questions. It squeezes everything into a probability between zero and one. Will this customer buy? Eighty percent, yes.",
+     "caption": "Despite the name, it answers yes or no questions. It squeezes everything into a probability between 0 and 1. Will this customer buy? 80%, yes.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "3 Decision tree",
+   "lead": 0.2,
+   "hold": 0.25,
+   "segments": [
+    {
+     "text": "Number three: decision tree.",
+     "caption": "Number 3: decision tree.",
+     "pause": 0.22
+    },
+    {
+     "text": "A flowchart of yes or no questions. Salary above fifty thousand? Any existing loans? Approve, or reject.",
+     "caption": "A flowchart of yes or no questions. Salary above 50,000? Any existing loans? Approve, or reject.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "4 Random forest",
+   "lead": 0.2,
+   "hold": 0.25,
+   "segments": [
+    {
+     "text": "Number four: random forest.",
+     "caption": "Number 4: random forest.",
+     "pause": 0.22
+    },
+    {
+     "text": "One tree can be wrong. So build hundreds, each on a slightly different slice of the data, and let them vote. Banks use it to catch fraud.",
+     "caption": "One tree can be wrong. So build hundreds, each on a slightly different slice of the data, and let them vote. Banks use it to catch fraud.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "5 Gradient boosting",
+   "lead": 0.2,
+   "hold": 0.25,
+   "segments": [
+    {
+     "text": "Number five: gradient boosting, like XGBoost.",
+     "caption": "Number 5: gradient boosting, like XGBoost.",
+     "pause": 0.22
+    },
+    {
+     "text": "Trees are built one after another, and each new tree fixes the mistakes of the last one. It wins most competitions on table data.",
+     "caption": "Trees are built one after another, and each new tree fixes the mistakes of the last one. It wins most competitions on table data.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "6 K nearest neighbours",
+   "lead": 0.2,
+   "hold": 0.25,
+   "segments": [
+    {
+     "text": "Number six: K nearest neighbours.",
+     "caption": "Number 6: K nearest neighbours.",
+     "pause": 0.22
+    },
+    {
+     "text": "To label a new point, look at its closest neighbours, and copy the majority. You are who your neighbours are.",
+     "caption": "To label a new point, look at its closest neighbours, and copy the majority. You are who your neighbours are.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "7 Naive Bayes",
+   "lead": 0.2,
+   "hold": 0.25,
+   "segments": [
+    {
+     "text": "Number seven: naive Bayes.",
+     "caption": "Number 7: naive Bayes.",
+     "pause": 0.22
+    },
+    {
+     "text": "It counts how often words appear in spam versus normal mail. Free, winner, urgent? Probably spam. Great for text.",
+     "caption": "It counts how often words appear in spam versus normal mail. Free, winner, urgent? Probably spam. Great for text.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "title": "8 Support vector machine",
+   "lead": 0.2,
+   "hold": 0.25,
+   "segments": [
+    {
+     "text": "Number eight: support vector machine.",
+     "caption": "Number 8: support vector machine.",
+     "pause": 0.22
+    },
+    {
+     "text": "It draws the widest possible street between two classes. The points touching the edge of the street are the support vectors.",
+     "caption": "It draws the widest possible street between two classes. The points touching the edge of the street are the support vectors.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "title": "9 K-means clustering",
+   "lead": 0.2,
+   "hold": 0.25,
+   "segments": [
+    {
+     "text": "Number nine: K means clustering.",
+     "caption": "Number 9: K-means clustering.",
+     "pause": 0.22
+    },
+    {
+     "text": "No answers given. It drops K centres, gives each point to the nearest one, and moves the centres until the groups settle. Perfect for customer segments.",
+     "caption": "No answers given. It drops K centres, gives each point to the nearest one, and moves the centres until the groups settle. Perfect for customer segments.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s12",
+   "title": "10 PCA",
+   "lead": 0.2,
+   "hold": 0.25,
+   "segments": [
+    {
+     "text": "Number ten: PCA, principal component analysis.",
+     "caption": "Number 10: PCA, principal component analysis.",
+     "pause": 0.22
+    },
+    {
+     "text": "It squeezes a hundred columns into a few that keep most of the information. Faster models, easier plots.",
+     "caption": "It squeezes 100 columns into a few that keep most of the information. Faster models, easier plots.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s13",
+   "title": "11 Neural networks",
+   "lead": 0.2,
+   "hold": 0.25,
+   "segments": [
+    {
+     "text": "Number eleven: neural networks.",
+     "caption": "Number 11: neural networks.",
+     "pause": 0.22
+    },
+    {
+     "text": "Layers of tiny calculators, each passing signals forward. Stack enough layers, and you get deep learning: face unlock, translation, ChatGPT.",
+     "caption": "Layers of tiny calculators, each passing signals forward. Stack enough layers, and you get deep learning: face unlock, translation, ChatGPT.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s14",
+   "title": "12 Reinforcement learning",
+   "lead": 0.2,
+   "hold": 0.25,
+   "segments": [
+    {
+     "text": "Number twelve: reinforcement learning.",
+     "caption": "Number 12: reinforcement learning.",
+     "pause": 0.22
+    },
+    {
+     "text": "An agent tries actions, gets rewards or penalties, and slowly learns the best moves. That's how AI mastered chess and Go.",
+     "caption": "An agent tries actions, gets rewards or penalties, and slowly learns the best moves. That's how AI mastered chess and Go.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s15",
+   "title": "Which one to use",
+   "lead": 0.2,
+   "hold": 0.25,
+   "segments": [
+    {
+     "text": "So which one should you use? Predicting a number? Linear regression, or gradient boosting. Yes or no? Logistic regression, or a random forest. Finding groups? K means. Too many columns? PCA. Images or text? Neural networks.",
+     "caption": "So which one should you use? Predicting a number? Linear regression, or gradient boosting. Yes or no? Logistic regression, or a random forest. Finding groups? K means. Too many columns? PCA. Images or text? Neural networks.",
+     "pause": 0.22
+    },
+    {
+     "text": "Screenshot this, or save it for later.",
+     "caption": "Screenshot this, or save it for later.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s16",
+   "title": "Quiz + CTA",
+   "lead": 0.2,
+   "hold": 0.5,
+   "segments": [
+    {
+     "text": "Quick quiz! Netflix groups viewers with similar taste, without any labels. Which algorithm fits best? Vote in the caption poll!",
+     "caption": "Quick quiz! Netflix groups viewers with similar taste, without any labels. Which algorithm fits best? Vote in the caption poll!",
+     "pause": 0.22
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.22
+    }
+   ]
+  }
+ ]
+}
