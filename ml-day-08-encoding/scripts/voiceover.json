@@ -1,0 +1,251 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Hook (frame 0)",
+   "lead": 0.15,
+   "hold": 0.3,
+   "segments": [
+    {
+     "text": "We turned Bangalore localities into numbers. Whitefield one, up to Koramangala five.",
+     "caption": "We turned Bangalore localities into numbers. Whitefield 1, up to Koramangala 5.",
+     "pause": 0.22
+    },
+    {
+     "text": "And our model decided Koramangala is five times Whitefield.",
+     "caption": "And our model decided Koramangala is 5 times Whitefield.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Reveal + title",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Those numbers were just name tags, but the model did maths on them. To it, Whitefield plus Whitefield equals Hebbal.",
+     "caption": "Those numbers were just name tags, but the model did maths on them. To it, Whitefield plus Whitefield equals Hebbal.",
+     "pause": 0.22
+    },
+    {
+     "text": "Day eight of 100 Days of Machine Learning: encoding categories. Two kinds of categories, six methods, and the trap that leaks your answers.",
+     "caption": "Day 8 of 100 Days of Machine Learning: encoding categories. 2 kinds of categories, 6 methods, and the trap that leaks your answers.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Nominal vs ordinal",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Models only understand numbers, so every text column needs encoding. First, know which kind you have.",
+     "caption": "Models only understand numbers, so every text column needs encoding. First, know which kind you have.",
+     "pause": 0.22
+    },
+    {
+     "text": "Nominal: no order, like locality or facing direction. Ordinal: a real order, like unfurnished, semi furnished, fully furnished.",
+     "caption": "Nominal: no order, like locality or facing direction. Ordinal: a real order, like unfurnished, semi furnished, fully furnished.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "The beginner mistake: label encoding",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "The beginner move is label encoding: give each category a number.",
+     "caption": "The beginner move is label encoding: give each category a number.",
+     "pause": 0.22
+    },
+    {
+     "text": "On localities, that invents a fake order. Linear models and KNN treat the gaps as real distances. Tree models cope better, but don't count on it.",
+     "caption": "On localities, that invents a fake order. Linear models and KNN treat the gaps as real distances. Tree models cope better, but don't count on it.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Method 1: ordinal encoding",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Method one: ordinal encoding.",
+     "caption": "Method 1: ordinal encoding.",
+     "pause": 0.22
+    },
+    {
+     "text": "For ordered categories, set the order yourself. Unfurnished zero, semi one, fully two. Never let the computer sort them alphabetically.",
+     "caption": "For ordered categories, set the order yourself. Unfurnished 0, semi 1, fully 2. Never let the computer sort them alphabetically.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Method 2: one-hot encoding",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Method two: one hot encoding.",
+     "caption": "Method 2: one-hot encoding.",
+     "pause": 0.22
+    },
+    {
+     "text": "For localities, make one column per locality. A one where it matches, zeros everywhere else. No fake order, no fake distances.",
+     "caption": "For localities, make one column per locality. A 1 where it matches, 0s everywhere else. No fake order, no fake distances.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "Method 3: drop one column",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Method three: drop one column.",
+     "caption": "Method 3: drop one column.",
+     "pause": 0.22
+    },
+    {
+     "text": "If every other column is zero, you already know it's the last one. So for linear regression, keep k minus one columns. Skip this, and you fall into the dummy variable trap.",
+     "caption": "If every other column is 0, you already know it's the last one. So for linear regression, keep k minus 1 columns. Skip this, and you fall into the dummy variable trap.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Method 4: group the rare ones",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Method four: group the rare ones.",
+     "caption": "Method 4: group the rare ones.",
+     "pause": 0.22
+    },
+    {
+     "text": "Bangalore has over two hundred localities. One hot gives you two hundred mostly empty columns. Keep the common ones, and group localities with only a few listings into other.",
+     "caption": "Bangalore has over 200 localities. One-hot gives you 200 mostly empty columns. Keep the common ones, and group localities with only a few listings into OTHER.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "Method 5: target encoding",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Method five: target encoding.",
+     "caption": "Method 5: target encoding.",
+     "pause": 0.22
+    },
+    {
+     "text": "Replace each locality with its average price per square foot. One powerful column instead of two hundred. Smooth it, so a locality with two listings doesn't get an extreme value.",
+     "caption": "Replace each locality with its average price per sq ft. One powerful column instead of 200. Smooth it, so a locality with 2 listings doesn't get an extreme value.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "title": "Method 6: unseen categories",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Method six: plan for unseen categories.",
+     "caption": "Method 6: plan for unseen categories.",
+     "pause": 0.22
+    },
+    {
+     "text": "Next month, a listing arrives from a brand new locality your model has never seen. Map unknowns to other, or your code crashes in production.",
+     "caption": "Next month, a listing arrives from a brand new locality your model has never seen. Map unknowns to OTHER, or your code crashes in production.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "title": "The trap",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Now the trap that leaks your answers.",
+     "caption": "Now the trap that leaks your answers.",
+     "pause": 0.22
+    },
+    {
+     "text": "Target encoding uses the price, the very thing you predict. Calculate the averages on training data only, ideally out of fold. Use the whole dataset, and the model peeks at the test answers.",
+     "caption": "Target encoding uses the price, the very thing you predict. Calculate the averages on training data only, ideally out of fold. Use the whole dataset, and the model peeks at the test answers.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s12",
+   "title": "The decision guide",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "So here's the decision guide.",
+     "caption": "So here's the decision guide.",
+     "pause": 0.22
+    },
+    {
+     "text": "Ordered? Ordinal encoding. Few categories? One hot, and drop one for linear models. Too many? Group the rare ones, or target encode. Always handle unseen categories. And fit on training data only.",
+     "caption": "Ordered? Ordinal encoding. Few categories? One-hot, and drop one for linear models. Too many? Group the rare ones, or target encode. Always handle unseen categories. And fit on training data only.",
+     "pause": 0.22
+    },
+    {
+     "text": "Save this. You'll need it in every project.",
+     "caption": "Save this. You'll need it in every project.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s13",
+   "title": "Poll, teaser and CTA",
+   "lead": 0.35,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Your turn: furnishing is unfurnished, semi or fully furnished. Which encoding fits best? Vote in the caption poll!",
+     "caption": "Your turn: furnishing is unfurnished, semi or fully furnished. Which encoding fits best? Vote in the caption poll!",
+     "pause": 0.22
+    },
+    {
+     "text": "Tomorrow, Day nine: feature scaling, and why square feet shouts over bedrooms.",
+     "caption": "Tomorrow, Day 9: feature scaling, and why square feet shouts over bedrooms.",
+     "pause": 0.22
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.22
+    }
+   ]
+  }
+ ]
+}

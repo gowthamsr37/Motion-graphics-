@@ -1,0 +1,261 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Hook (frame 0)",
+   "lead": 0.15,
+   "hold": 0.3,
+   "segments": [
+    {
+     "text": "Thirty percent of luxury flats had no area listed. We filled the blanks with the average.",
+     "caption": "30% of luxury flats had no area listed. We filled the blanks with the average.",
+     "pause": 0.22
+    },
+    {
+     "text": "And our model started underpricing every luxury flat by forty lakh.",
+     "caption": "And our model started underpricing every luxury flat by 40 lakh.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Reveal + title",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "The blanks weren't random. Luxury sellers often hide the size. So filling with the average shrank exactly the flats that mattered most.",
+     "caption": "The blanks weren't random. Luxury sellers often hide the size. So filling with the average shrank exactly the flats that mattered most.",
+     "pause": 0.22
+    },
+    {
+     "text": "Day seven of 100 Days of Machine Learning: missing values. The three types, six fixes, and the one rule most beginners break.",
+     "caption": "Day 7 of 100 Days of Machine Learning: missing values. The 3 types, 6 fixes, and the one rule most beginners break.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Step 0: measure",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Before fixing anything, measure.",
+     "caption": "Before fixing anything, measure.",
+     "pause": 0.22
+    },
+    {
+     "text": "Count the percentage missing in every column. Then check which gaps appear together. Here, floor and age are missing in the same new projects.",
+     "caption": "Count the percentage missing in every column. Then check which gaps appear together. Here, floor and age are missing in the same new projects.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "The 3 types",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Next, ask why it's missing. There are three types.",
+     "caption": "Next, ask why it's missing. There are 3 types.",
+     "pause": 0.22
+    },
+    {
+     "text": "Missing completely at random: a website glitch wiped some rows. Harmless.",
+     "caption": "Missing completely at random: a website glitch wiped some rows. Harmless.",
+     "pause": 0.22
+    },
+    {
+     "text": "Missing at random: it depends on another column. New projects don't list the building age, because it's zero.",
+     "caption": "Missing at random: it depends on another column. New projects don't list the building age, because it's zero.",
+     "pause": 0.22
+    },
+    {
+     "text": "Missing not at random: it depends on the missing value itself. Luxury sellers hide the size. This one is dangerous.",
+     "caption": "Missing not at random: it depends on the missing value itself. Luxury sellers hide the size. This one is dangerous.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Fix 1: drop rows",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Fix one: drop the rows.",
+     "caption": "Fix 1: drop the rows.",
+     "pause": 0.22
+    },
+    {
+     "text": "Fine when only a few rows are missing, and the gaps are random. Under five percent is a common guide. But drop rows that are missing for a reason, and you delete a whole group from your data.",
+     "caption": "Fine when only a few rows are missing, and the gaps are random. Under 5% is a common guide. But drop rows that are missing for a reason, and you delete a whole group from your data.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Fix 2: drop the column",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Fix two: drop the column.",
+     "caption": "Fix 2: drop the column.",
+     "pause": 0.22
+    },
+    {
+     "text": "If a column is mostly empty, like seventy percent, and not important, filling it is mostly guessing. Let it go.",
+     "caption": "If a column is mostly empty, like 70%, and not important, filling it is mostly guessing. Let it go.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "Fix 3: median, not mean",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Fix three: fill with the median, not the mean.",
+     "caption": "Fix 3: fill with the median, not the mean.",
+     "pause": 0.22
+    },
+    {
+     "text": "Prices and areas are skewed. A few huge villas pull the mean up. The median stays a typical value.",
+     "caption": "Prices and areas are skewed. A few huge villas pull the mean up. The median stays a typical value.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Fix 4: fill by group",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Fix four, much better: fill by group.",
+     "caption": "Fix 4, much better: fill by group.",
+     "pause": 0.22
+    },
+    {
+     "text": "A missing area for a 3 BHK in Koramangala gets the median of other 3 BHKs in Koramangala, not the median of the whole city.",
+     "caption": "A missing area for a 3 BHK in Koramangala gets the median of other 3 BHKs in Koramangala, not the median of the whole city.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "Fix 5: predict it",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Fix five: predict the missing value.",
+     "caption": "Fix 5: predict the missing value.",
+     "pause": 0.22
+    },
+    {
+     "text": "Use the other columns, like bedrooms, bathrooms and floor, to estimate it. Methods like KNN or iterative imputation do this for you.",
+     "caption": "Use the other columns, like bedrooms, bathrooms and floor, to estimate it. Methods like KNN or iterative imputation do this for you.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "title": "Fix 6: flag it",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Fix six, the secret weapon: add a flag.",
+     "caption": "Fix 6, the secret weapon: add a flag.",
+     "pause": 0.22
+    },
+    {
+     "text": "Create a column that says area was missing, yes or no. Remember our luxury sellers? That flag alone tells the model: this flat is probably big.",
+     "caption": "Create a column that says area was missing, yes or no. Remember our luxury sellers? That flag alone tells the model: this flat is probably big.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "title": "The golden rule",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Now the rule most beginners break.",
+     "caption": "Now the rule most beginners break.",
+     "pause": 0.22
+    },
+    {
+     "text": "Calculate your medians and group values from the training data only, then apply them to the test data. Use the whole dataset, and test answers leak into training.",
+     "caption": "Calculate your medians and group values from the training data only, then apply them to the test data. Use the whole dataset, and test answers leak into training.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s12",
+   "title": "The decision guide",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "So here's the decision guide.",
+     "caption": "So here's the decision guide.",
+     "pause": 0.22
+    },
+    {
+     "text": "Few and random? Drop rows. Mostly empty? Drop the column. Otherwise, fill by group, or predict it. Always add a flag. And fit on training data only.",
+     "caption": "Few and random? Drop rows. Mostly empty? Drop the column. Otherwise, fill by group, or predict it. Always add a flag. And fit on training data only.",
+     "pause": 0.22
+    },
+    {
+     "text": "Save this. You'll need it on every dataset.",
+     "caption": "Save this. You'll need it on every dataset.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s13",
+   "title": "Poll, teaser and CTA",
+   "lead": 0.35,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Your turn: high earners often skip the salary question. Which type of missing is that? Vote in the caption poll!",
+     "caption": "Your turn: high earners often skip the salary question. Which type of missing is that? Vote in the caption poll!",
+     "pause": 0.22
+    },
+    {
+     "text": "Tomorrow, day eight: encoding categories, and the mistake that makes Koramangala five times Whitefield.",
+     "caption": "Tomorrow, Day 8: encoding categories, and the mistake that makes Koramangala 5 times Whitefield.",
+     "pause": 0.22
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.22
+    }
+   ]
+  }
+ ]
+}
