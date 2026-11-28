@@ -1,0 +1,250 @@
+{
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 1.05,
+ "scenes": [
+  {
+   "id": "s1",
+   "title": "Hook (frame 0)",
+   "lead": 0.15,
+   "hold": 0.3,
+   "segments": [
+    {
+     "text": "These four datasets have the same average, the same spread, and the same correlation.",
+     "caption": "These four datasets have the same average, the same spread, and the same correlation.",
+     "pause": 0.22
+    },
+    {
+     "text": "Same numbers. Now look at them.",
+     "caption": "Same numbers. Now look at them.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "title": "Reveal + title",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Completely different. One is a line, one is a curve, one has an outlier, one is a single extreme point.",
+     "caption": "Completely different. One is a line, one is a curve, one has an outlier, one is a single extreme point.",
+     "pause": 0.22
+    },
+    {
+     "text": "If you only looked at the numbers, you'd never know. That's why you never skip EDA.",
+     "caption": "If you only looked at the numbers, you'd never know. That's why you never skip EDA.",
+     "pause": 0.22
+    },
+    {
+     "text": "Day five of 100 Days of Machine Learning: exploratory data analysis, and the six problems it catches.",
+     "caption": "Day 5 of 100 Days of Machine Learning: exploratory data analysis, and the 6 problems it catches.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Check 1: distribution",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Check one: plot the distribution of your target. Our Bangalore flat prices: the average is one point two crore. The median is eighty five lakh.",
+     "caption": "Check 1: plot the distribution of your target. Our Bangalore flat prices: the average is 1.2 crore. The median is 85 lakh.",
+     "pause": 0.22
+    },
+    {
+     "text": "A few very expensive flats drag the average up. The data is skewed.",
+     "caption": "A few very expensive flats drag the average up. The data is skewed.",
+     "pause": 0.22
+    },
+    {
+     "text": "So report the median, and consider a log scale for the model.",
+     "caption": "So report the median, and consider a log scale for the model.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Check 2: strange spikes",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Check two: look for strange spikes.",
+     "caption": "Check 2: look for strange spikes.",
+     "pause": 0.22
+    },
+    {
+     "text": "Hundreds of flats priced at exactly one crore. And a pile of flats built in the year two thousand.",
+     "caption": "Hundreds of flats priced at exactly 1 crore. And a pile of flats built in the year 2000.",
+     "pause": 0.22
+    },
+    {
+     "text": "That's brokers rounding, and a default value someone typed when the real year was unknown. Treat them as uncertain, not as real.",
+     "caption": "That's brokers rounding, and a default value someone typed when the real year was unknown. Treat them as uncertain, not as real.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Check 3: hidden groups",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Check three: plot price against area.",
+     "caption": "Check 3: plot price against area.",
+     "pause": 0.22
+    },
+    {
+     "text": "You see two separate clouds, not one. The second cloud is independent villas, mixed in with apartments.",
+     "caption": "You see two separate clouds, not one. The second cloud is independent villas, mixed in with apartments.",
+     "pause": 0.22
+    },
+    {
+     "text": "One model for both will be bad at both. Split them, or add a property type column.",
+     "caption": "One model for both will be bad at both. Split them, or add a property type column.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Check 4: small groups",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Check four: compare groups, but count them first.",
+     "caption": "Check 4: compare groups, but count them first.",
+     "pause": 0.22
+    },
+    {
+     "text": "One locality shows the highest average price in the city, from just three listings. That's not a pattern. That's luck.",
+     "caption": "One locality shows the highest average price in the city, from just three listings. That's not a pattern. That's luck.",
+     "pause": 0.22
+    },
+    {
+     "text": "Always show the count next to every average.",
+     "caption": "Always show the count next to every average.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "title": "Check 5: correlation",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Check five: correlations.",
+     "caption": "Check 5: correlations.",
+     "pause": 0.22
+    },
+    {
+     "text": "Area and bedrooms move almost perfectly together, so they mostly carry the same information. And flats near metro stations cost more, but the metro didn't necessarily cause it. Those areas were already popular.",
+     "caption": "Area and bedrooms move almost perfectly together, so they mostly carry the same information. And flats near metro stations cost more, but the metro didn't necessarily cause it. Those areas were already popular.",
+     "pause": 0.22
+    },
+    {
+     "text": "Correlation is not causation. Never sell it as one.",
+     "caption": "Correlation is not causation. Never sell it as one.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "title": "Check 6: time",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Check six: plot everything over time.",
+     "caption": "Check 6: plot everything over time.",
+     "pause": 0.22
+    },
+    {
+     "text": "Prices rose twenty percent in two years. Mix old and new sales blindly, and your model is out of date before it starts.",
+     "caption": "Prices rose 20% in two years. Mix old and new sales blindly, and your model is out of date before it starts.",
+     "pause": 0.22
+    },
+    {
+     "text": "So adjust for time, and test on recent data.",
+     "caption": "So adjust for time, and test on recent data.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "title": "The output of EDA",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "The output of EDA isn't pretty charts. It's a list of decisions: use the median, split villas, drop tiny groups, adjust for time.",
+     "caption": "The output of EDA isn't pretty charts. It's a list of decisions: use the median, split villas, drop tiny groups, adjust for time.",
+     "pause": 0.22
+    },
+    {
+     "text": "And questions to take back to the business.",
+     "caption": "And questions to take back to the business.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "title": "The EDA checklist",
+   "lead": 0.3,
+   "hold": 0.35,
+   "segments": [
+    {
+     "text": "Here's the EDA checklist.",
+     "caption": "Here's the EDA checklist.",
+     "pause": 0.22
+    },
+    {
+     "text": "Distribution. Spikes. Hidden groups. Group sizes. Correlations. Time.",
+     "caption": "Distribution. Spikes. Hidden groups. Group sizes. Correlations. Time.",
+     "pause": 0.22
+    },
+    {
+     "text": "Save this, and run it before every model.",
+     "caption": "Save this, and run it before every model.",
+     "pause": 0.22
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "title": "Poll, teaser and CTA",
+   "lead": 0.35,
+   "hold": 0.8,
+   "segments": [
+    {
+     "text": "Your turn: the average price is one point two crore, but the median is eighty five lakh. What does that tell you? Vote in the caption poll!",
+     "caption": "Your turn: the average price is 1.2 crore, but the median is 85 lakh. What does that tell you? Vote in the caption poll!",
+     "pause": 0.22
+    },
+    {
+     "text": "Tomorrow, day six: features and labels, and how to choose good features.",
+     "caption": "Tomorrow, Day 6: features and labels, and how to choose good features.",
+     "pause": 0.22
+    },
+    {
+     "text": "Follow for data science made simple!",
+     "caption": "Follow for data science made simple!",
+     "pause": 0.22
+    }
+   ]
+  }
+ ]
+}
