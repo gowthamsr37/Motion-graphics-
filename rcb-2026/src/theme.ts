@@ -4,15 +4,15 @@ import { Easing } from "remotion";
 
 export const theme = {
   colors: {
-    paper: "#F2EDE3",
-    paperHi: "#FBF8F1",
-    paperLo: "#E6DFD0",
-    ink: "#0F1A33",
-    ink2: "#3A4458",
-    mute: "#9A9282",
-    line: "rgba(15, 26, 51, 0.14)",
-    accent: "#D11F2E", // RCB red
-    accentSoft: "rgba(209, 31, 46, 0.2)",
+    paper: "#0A0D1A",
+    paperHi: "#151B30",
+    paperLo: "#05070F",
+    ink: "#F5F2EA",
+    ink2: "#AEB5C8",
+    mute: "#5D6580",
+    line: "rgba(255, 255, 255, 0.10)",
+    accent: "#E8283B", // RCB red
+    accentSoft: "rgba(232, 40, 59, 0.45)",
     red: "#C9A227", // seam in RCB gold for this reel
     white: "#FFFFFF",
   },

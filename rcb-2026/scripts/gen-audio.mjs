@@ -34,12 +34,12 @@ const f = (n) => n / FPS;
 // ---------- EDIT PER REEL: story events, in seconds (mirror the beats in src/scenes/Story.tsx) ----------
 // Helpers: S(id) scene start · E(id) scene end · sent(id, i) sentence start · word(id, "prefix", fallbackSec)
 const ev = {
-  hook: 0.05,
-  s2: S("s2"), rcb2: word("s2", "RCB", 15.98),
-  s3: S("s3"), s4: S("s4"), k166: word("s4", "166", 20.96),
-  s5: S("s5"), s6: S("s6"), weak: sent("s6", 1),
-  s7: S("s7"), q92: word("s7", "92", 3.82),
-  s8: S("s8"), verdict: sent("s8", 1),
+  s2: S("s2"), rcb2: word("s2", "RCB", 12.8),
+  s3: S("s3"), rcb3: word("s3", "RCB", 19.98),
+  s5: S("s5"), k166: word("s5", "166", 18.34),
+  s7: S("s7"), weak: sent("s7", 1),
+  s8: S("s8"), s9: S("s9"), q92: word("s9", "92", 12.38),
+  s10: S("s10"), verdict: sent("s10", 1),
   end: DUR,
 };
 
@@ -216,12 +216,16 @@ hit(0.05, 1.1);
 section(0.05, ev.s2, 2, 0.08);
 section(ev.s2, ev.rcb2, 1, 0.05);
 hit(ev.rcb2, 0.9);
-section(ev.rcb2, ev.k166, 2, 0.06);
+section(ev.rcb2, ev.s3, 1, 0.06);
+section(ev.s3, ev.rcb3, 1, 0.05);
+hit(ev.rcb3, 1);
+section(ev.rcb3, ev.k166, 2, 0.06);
 hit(ev.k166, 0.9);
 section(ev.k166, ev.weak, 2, 0.07);
-section(ev.weak, ev.s7, 1, 0.04);
-hit(ev.s7, 0.8);
-section(ev.s7, ev.q92, 2, 0.07);
+section(ev.weak, ev.s8, 1, 0.04);
+hit(ev.s8, 0.8);
+section(ev.s8, ev.s9, 2, 0.06);
+section(ev.s9, ev.q92, 2, 0.07);
 hit(ev.q92, 1);
 section(ev.q92, ev.verdict, 1, 0.08);
 const verdictT = ev.verdict;

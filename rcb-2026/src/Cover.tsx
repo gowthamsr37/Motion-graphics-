@@ -9,35 +9,33 @@ const C = theme.colors;
 
 
 export const Cover: React.FC = () => (
-  <AbsoluteFill style={{ background: "#0A0E1E" }}>
-    <Img src={staticFile("photos/team-trophy.jpg")} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 40%", transform: "scale(1.08)" }} />
-    <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(10,14,30,0.6) 0%, rgba(10,14,30,0.05) 28%, rgba(10,14,30,0.3) 50%, rgba(10,14,30,0.94) 75%, rgba(10,14,30,0.98) 100%)" }} />
+  <AbsoluteFill style={{ background: "#0A0D1A" }}>
+    <Img src={staticFile("photos/team-trophy.jpg")} style={{ position: "absolute", inset: -60, width: "calc(100% + 120px)", height: "calc(100% + 120px)", objectFit: "cover", filter: "blur(36px) brightness(0.4) saturate(1.3)" }} />
+    <AbsoluteFill style={{ background: "radial-gradient(70% 45% at 50% 35%, rgba(232,40,59,0.25), rgba(10,13,26,0) 70%)" }} />
     <div style={{ position: "absolute", left: 0, right: 0, top: 300, textAlign: "center" }}>
-      <Label size={24} color="#C9A227" spacing="0.34em">
-        {config.file}
-      </Label>
+      <Label size={24} color="#D9B23A" spacing="0.34em">{config.file}</Label>
     </div>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 1000, textAlign: "center" }}>
-      <Disp size={180} color={C.paperHi}>Back to</Disp>
-      <br />
-      <Disp size={180} color="#C9A227">back</Disp>
+    <div style={{ position: "absolute", left: 40, right: 40, top: 360, height: 560, overflow: "hidden", borderRadius: 18, border: "3px solid #D9B23A", boxShadow: "0 30px 80px rgba(0,0,0,0.6)" }}>
+      <Img src={staticFile("photos/team-trophy.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 40%" }} />
     </div>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 1384, textAlign: "center" }}>
-      <Serif size={54} weight={900} color={C.paperHi}>
-        Why RCB were the <span style={{ color: "#E5333F" }}>most complete team</span>
-      </Serif>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 960, textAlign: "center" }}>
+      <Disp size={190} color="#fff">Back to <span style={{ color: "#D9B23A" }}>back</span></Disp>
     </div>
-    <Seam x={180} y={1478} w={720} color="#C9A227" />
-    <div style={{ position: "absolute", left: 0, right: 0, top: 1500, display: "flex", justifyContent: "center", gap: 60 }}>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 1170, textAlign: "center" }}>
+      <span style={{ display: "inline-block", background: "#E8283B", padding: "10px 30px 4px", transform: "skewX(-8deg)" }}>
+        <Disp size={66} color="#fff">Why RCB were unbeatable</Disp>
+      </span>
+    </div>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 1330, display: "flex", justifyContent: "center", gap: 60 }}>
       {[["30", "KPIs"], ["10", "TEAMS"], ["#1", "AVG RANK"]].map(([v, l]) => (
         <div key={l} style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-          <Disp size={84} color={C.paperHi}>{v}</Disp>
-          <Label size={16} color="rgba(255,255,255,0.6)">{l}</Label>
+          <Disp size={90} color="#D9B23A">{v}</Disp>
+          <Label size={16} color="rgba(255,255,255,0.65)">{l}</Label>
         </div>
       ))}
     </div>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 1700, textAlign: "center" }}>
-      <Disp size={50} color={C.paperHi}>{config.series}</Disp>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 1540, textAlign: "center" }}>
+      <Disp size={50} color="#fff">{config.series}</Disp>
     </div>
   </AbsoluteFill>
 );

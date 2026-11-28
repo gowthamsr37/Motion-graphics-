@@ -6,6 +6,18 @@
     [
       "\u026ann\u02c8\u026a\u014bz",
       "\u02c8\u026an\u026a\u014bz"
+    ],
+    [
+      "\u0279\u02c8\u0251\u02d0d\u0292\u00e6t p\u02c8\u00e6\u027e\u026ad\u02cc\u0251\u02d0\u0279",
+      "\u0279\u02c8\u028cd\u0292\u0259t p\u0251\u02d0ti\u02d0d\u02c8\u0251\u02d0\u0279"
+    ],
+    [
+      "v\u02c8\u025c\u02d0\u0279\u00e6t",
+      "v\u026a\u0279\u02c8\u0251\u02d0t"
+    ],
+    [
+      "b\u02c8\u028cvn\u026a\u0283w\u02cc\u0254\u02d0\u0279",
+      "b\u028avn\u02c8e\u026a\u0283w\u0259\u0279"
     ]
   ],
   "scenes": [
@@ -17,16 +29,16 @@
         {
           "text": "Back to back.",
           "caption": "Back to back.",
-          "pause": 0.35
+          "pause": 0.3
         },
         {
           "text": "RCB are champions again.",
           "caption": "RCB are champions again.",
-          "pause": 0.5
+          "pause": 0.45
         },
         {
-          "text": "And the numbers say this was no accident.",
-          "caption": "And the numbers say this was no accident.",
+          "text": "But this was no fluke. We ranked every team on thirty numbers, and found the secret.",
+          "caption": "But this was no fluke. We ranked every team on 30 numbers, and found the secret.",
           "pause": 0.3
         }
       ]
@@ -34,11 +46,11 @@
     {
       "id": "s2",
       "lead": 0.3,
-      "hold": 0.8,
+      "hold": 0.7,
       "segments": [
         {
-          "text": "We ranked all ten teams on thirty numbers. Run rate, dot balls, boundaries, sixes and wickets. In the powerplay, the middle overs and at the death. With the bat, and with the ball.",
-          "caption": "We ranked all ten teams on thirty numbers. Run rate, dot balls, boundaries, sixes and wickets. In the powerplay, the middle overs and at the death. With the bat, and with the ball.",
+          "text": "Run rate, dot balls, boundaries, sixes and wickets. In the powerplay, the middle overs and at the death. With the bat, and with the ball.",
+          "caption": "Run rate, dot balls, boundaries, sixes and wickets. In the powerplay, the middle overs and at the death. With the bat, and with the ball.",
           "pause": 0.6
         },
         {
@@ -50,6 +62,33 @@
     },
     {
       "id": "s3",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "Now plot every team. How fast they scored, against how fast they conceded.",
+          "caption": "Now plot every team. How fast they scored, against how fast they conceded.",
+          "pause": 0.5
+        },
+        {
+          "text": "Punjab, Sunrisers and Rajasthan could hit. But they leaked runs.",
+          "caption": "Punjab, Sunrisers and Rajasthan could hit. But they leaked runs.",
+          "pause": 0.4
+        },
+        {
+          "text": "Gujarat and Kolkata were tight with the ball, but slow with the bat.",
+          "caption": "Gujarat and Kolkata were tight with the ball, but slow with the bat.",
+          "pause": 0.5
+        },
+        {
+          "text": "Only one team scored faster than average, and conceded slower than average. RCB. Alone in the corner.",
+          "caption": "Only one team scored faster than average, and conceded slower than average. RCB. Alone in the corner.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
       "lead": 0.3,
       "hold": 0.7,
       "segments": [
@@ -71,7 +110,7 @@
       ]
     },
     {
-      "id": "s4",
+      "id": "s5",
       "lead": 0.3,
       "hold": 0.7,
       "segments": [
@@ -81,19 +120,24 @@
           "pause": 0.5
         },
         {
-          "text": "And here's the secret. At the death, they lost just one point three wickets an innings. The league lost almost two. Their batters were still there when it mattered.",
-          "caption": "And here's the secret. At the death, they lost just 1.3 wickets an innings. The league lost almost 2. Their batters were still there when it mattered.",
+          "text": "And here's the secret. At the death, they lost just one point three wickets an innings. The league lost almost two.",
+          "caption": "And here's the secret. At the death, they lost just 1.3 wickets an innings. The league lost almost 2.",
           "pause": 0.5
         },
         {
           "text": "Virat Kohli. Six hundred and seventy-five runs, at a strike rate of one sixty-six. At thirty-seven, the fastest season of his IPL life.",
           "caption": "Virat Kohli. 675 runs, at a strike rate of 166. At 37, the fastest season of his IPL life.",
+          "pause": 0.5
+        },
+        {
+          "text": "Rajat Patidar struck at one ninety-three. Only two batters with four hundred runs went faster.",
+          "caption": "Rajat Patidar struck at 193. Only two batters with 400 runs went faster.",
           "pause": 0.3
         }
       ]
     },
     {
-      "id": "s5",
+      "id": "s6",
       "lead": 0.3,
       "hold": 0.7,
       "segments": [
@@ -110,7 +154,7 @@
       ]
     },
     {
-      "id": "s6",
+      "id": "s7",
       "lead": 0.3,
       "hold": 0.7,
       "segments": [
@@ -132,24 +176,51 @@
       ]
     },
     {
-      "id": "s7",
+      "id": "s8",
       "lead": 0.3,
       "hold": 0.7,
       "segments": [
         {
-          "text": "Seven chases won, out of nine.",
-          "caption": "7 chases won, out of 9.",
+          "text": "So what changed from last year? In 2025, RCB won with the ball. In 2026, the bat took a leap.",
+          "caption": "So what changed from last year? In 2025, RCB won with the ball. In 2026, the bat took a leap.",
           "pause": 0.5
         },
         {
-          "text": "Gujarat, crushed by ninety-two runs in Qualifier One. Then beaten again in the final.",
-          "caption": "Gujarat, crushed by 92 runs in Qualifier 1. Then beaten again in the final.",
+          "text": "Run rate, up from nine point seven to ten point five. Dot balls, down. Runs per wicket, up from thirty-two to thirty-six.",
+          "caption": "Run rate, up from 9.7 to 10.5. Dot balls, down. Runs per wicket, up from 32 to 36.",
+          "pause": 0.5
+        },
+        {
+          "text": "Same bowling. Better batting. A better team.",
+          "caption": "Same bowling. Better batting. A better team.",
           "pause": 0.3
         }
       ]
     },
     {
-      "id": "s8",
+      "id": "s9",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "It wasn't always smooth. Ten games in, they were six and four, after back-to-back defeats.",
+          "caption": "It wasn't always smooth. Ten games in, they were 6 and 4, after back-to-back defeats.",
+          "pause": 0.45
+        },
+        {
+          "text": "Then they won five of their last six.",
+          "caption": "Then they won 5 of their last 6.",
+          "pause": 0.5
+        },
+        {
+          "text": "Seven chases won, out of nine. Gujarat, crushed by ninety-two runs in Qualifier One. Then beaten again in the final.",
+          "caption": "7 chases won, out of 9. Gujarat, crushed by 92 runs in Qualifier 1. Then beaten again in the final.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s10",
       "lead": 0.3,
       "hold": 1.8,
       "segments": [
