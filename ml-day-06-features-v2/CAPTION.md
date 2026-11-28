@@ -2,9 +2,9 @@
 
 ## Caption
 
-An AI told wolves from huskies almost perfectly… then researchers saw what it was really looking at: the SNOW. 🐺❄️
+Imagine getting the question paper AND the answer key together. You'd score 100. 📝✅
 
-That's what happens when a model learns from the wrong clues. Day 6 of #100DaysOfML: features & labels, explained simply.
+ML models can cheat exactly like this, and most beginners never notice. Day 6 of #100DaysOfML: features & labels, explained simply.
 
 📖 Interview definition: features are the input variables a model uses to make a prediction; the label (target) is the output it learns to predict.
 🧠 In plain words: features = clues, label = answer.

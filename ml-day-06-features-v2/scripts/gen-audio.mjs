@@ -34,7 +34,7 @@ const ev = {
   quiz: sent("s11", 0), // the poll prompt
   tease: sent("s11", 1),
   follow: sent("s11", 2),
-  acc1: cueS("s1", 1, "snow."), // the hook lands
+  acc1: cueS("s1", 1, "cheat"), // the hook lands
   acc2: sent("s2", 1), // the title
   acc3: sent("s10", 2), // save this
 };

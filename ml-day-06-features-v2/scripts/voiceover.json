@@ -10,18 +10,13 @@
    "hold": 0.3,
    "segments": [
     {
-     "text": "An AI learned to tell wolves from huskies, and it was almost always right.",
-     "caption": "An AI learned to tell wolves from huskies, and it was almost always right.",
+     "text": "Your teacher gives you the question paper and the answer key together. You'd score one hundred.",
+     "caption": "Your teacher gives you the question paper and the answer key together. You'd score 100.",
      "pause": 0.22
     },
     {
-     "text": "Then researchers checked what it was looking at. Not the animal. The snow.",
-     "caption": "Then researchers checked what it was looking at. Not the animal. The snow.",
-     "pause": 0.22
-    },
-    {
-     "text": "Every wolf photo had snow behind it. The AI picked the wrong clue. Today: how to pick the right ones.",
-     "caption": "Every wolf photo had snow behind it. The AI picked the wrong clue. Today: how to pick the right ones.",
+     "text": "Machine learning models can cheat exactly like this, and most beginners never notice.",
+     "caption": "Machine learning models can cheat exactly like this, and most beginners never notice.",
      "pause": 0.22
     }
    ]

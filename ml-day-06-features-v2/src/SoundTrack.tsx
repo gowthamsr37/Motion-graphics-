@@ -41,8 +41,9 @@ const useHits = (): Hit[] => {
   { // S1 hook
     const s = T("s1"), h = at("s1");
     h(2, "impact.wav", 0.28);
-    h(s.cueS(0, "right.") - 6, "pop.wav", 0.22);
-    h(s.cueS(1, "snow.") - 4, "stamp.wav", 0.36);
+    h(s.cueS(0, "key") - 4, "whoosh.wav", 0.22);
+    h(s.cueS(0, "100.") - 4, "pop.wav", 0.26);
+    h(s.cueS(1, "cheat") - 4, "stamp.wav", 0.36);
   }
   { // S2 definition + title
     const s = T("s2"), h = at("s2");
