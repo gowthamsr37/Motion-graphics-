@@ -12,7 +12,7 @@ const INK = "#0A1A3A";
 const F = theme.fonts.display;
 const it: React.CSSProperties = { fontFamily: F, fontWeight: 800, fontStyle: "italic", whiteSpace: "nowrap" };
 
-export type Tbl = { head: string; good: boolean; rows: string[][] };
+export type Tbl = { head: string; good: boolean; rows: string[][]; hc?: string };
 export type IconName = "trash" | "bars" | "grid" | "flag" | "key" | "shield" | "layers" | "tag" | "hash" | "target" | "question" | "copy";
 
 const Ico: React.FC<{ n: IconName }> = ({ n }) => {
@@ -35,12 +35,12 @@ const Ico: React.FC<{ n: IconName }> = ({ n }) => {
 };
 
 const Table: React.FC<{ t: Tbl; x: number; y: number; w: number }> = ({ t, x, y, w }) => {
-  const c = t.good ? "#16A34A" : "#DC2626";
+  const c = t.hc ?? (t.good ? "#16A34A" : "#DC2626");
   const glow = t.good ? "#22C55E" : CY;
   return (
     <div style={{ position: "absolute", left: x, top: y, width: w, borderRadius: 26, padding: 12, boxSizing: "border-box", background: "rgba(8,30,70,0.6)", border: `4px solid ${glow}`, boxShadow: `0 0 34px ${glow}aa, inset 0 0 20px ${glow}55` }}>
       <div style={{ borderRadius: 16, overflow: "hidden", background: "#E8EEF7" }}>
-        <div style={{ background: `linear-gradient(180deg, ${c}, ${t.good ? "#15803D" : "#B91C1C"})`, color: "#FFFFFF", textAlign: "center", padding: "6px 0", ...it, fontSize: 40 }}>{t.head}</div>
+        <div style={{ background: t.hc ?? `linear-gradient(180deg, ${c}, ${t.good ? "#15803D" : "#B91C1C"})`, color: "#FFFFFF", textAlign: "center", padding: "6px 0", ...it, fontSize: 40 }}>{t.head}</div>
         {t.rows.map((r, i) => (
           <div key={i} style={{ display: "flex", borderTop: "3px solid #B9C6DA" }}>
             {r.map((v, j) => (
