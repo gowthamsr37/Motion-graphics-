@@ -31,50 +31,33 @@
   "scenes": [
     {
       "id": "s1",
-      "lead": 0.5,
+      "lead": 0.05,
       "hold": 0.6,
       "segments": [
         {
-          "text": "For two years, the fastest double hundred in fifty-over cricket took one hundred and three balls.",
-          "caption": "For two years, the fastest double hundred in 50-over cricket took 103 balls.",
-          "pause": 0.9
+          "text": "Two hundred and four.",
+          "caption": "204.",
+          "pause": 0.2
         },
         {
-          "text": "Tonight, in Doha, a fifteen-year-old needed fifty-two.",
-          "caption": "Tonight, in Doha, a 15-year-old needed 52.",
-          "pause": 0.8
+          "text": "Off fifty-three balls.",
+          "caption": "Off 53 balls.",
+          "pause": 0.2
         },
         {
-          "text": "This is the story of those fifty-two balls.",
-          "caption": "This is the story of those 52 balls.",
-          "pause": 0.3
-        }
-      ]
-    },
-    {
-      "id": "s2",
-      "lead": 0.3,
-      "hold": 0.7,
-      "segments": [
-        {
-          "text": "His name is Vaibhav Sooryavanshi. Born in Bihar, on the twenty-seventh of March, 2011.",
-          "caption": "His name is Vaibhav Sooryavanshi. Born in Bihar, on 27 March 2011.",
-          "pause": 0.45
+          "text": "Twenty-eight sixes.",
+          "caption": "28 sixes.",
+          "pause": 0.2
         },
         {
-          "text": "Six days later, India won the World Cup.",
-          "caption": "Six days later, India won the World Cup.",
+          "text": "And he's fifteen.",
+          "caption": "And he's 15.",
           "pause": 0.6
         },
         {
-          "text": "At fourteen, he became the youngest player in IPL history, and hit a thirty-five-ball hundred.",
-          "caption": "At 14, he became the youngest player in IPL history, and hit a 35-ball hundred.",
-          "pause": 0.6
-        },
-        {
-          "text": "Tonight, India A against the UAE. Chasing two hundred and fifty.",
-          "caption": "Tonight, India A against the UAE. Chasing 250.",
-          "pause": 0.3
+          "text": "Today in Doha, Vaibhav Sooryavanshi hit the fastest double hundred in the history of fifty-over cricket. Fifty-two balls. The old record took a hundred and three.",
+          "caption": "Today in Doha, Vaibhav Sooryavanshi hit the fastest double hundred in the history of 50-over cricket. 52 balls. The old record took 103.",
+          "pause": 0.4
         }
       ]
     },
@@ -84,8 +67,8 @@
       "hold": 0.8,
       "segments": [
         {
-          "text": "He started like a storm. Fifty, off sixteen balls.",
-          "caption": "He started like a storm. 50, off 16 balls.",
+          "text": "Chasing two hundred and fifty, he started like a storm. Fifty, off sixteen balls.",
+          "caption": "Chasing 250, he started like a storm. 50, off 16 balls.",
           "pause": 0.55
         },
         {
@@ -155,6 +138,28 @@
         {
           "text": "India A won by seven wickets, inside fifteen overs.",
           "caption": "India A won by 7 wickets, inside 15 overs.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "So who is he? Born in Bihar, on the twenty-seventh of March, 2011.",
+          "caption": "So who is he? Born in Bihar, on 27 March 2011.",
+          "pause": 0.45
+        },
+        {
+          "text": "Six days later, India won the World Cup.",
+          "caption": "Six days later, India won the World Cup.",
+          "pause": 0.6
+        },
+        {
+          "text": "At fourteen, he became the youngest player in IPL history, and hit a thirty-five-ball hundred.",
+          "caption": "At 14, he became the youngest player in IPL history, and hit a 35-ball hundred.",
           "pause": 0.3
         }
       ]

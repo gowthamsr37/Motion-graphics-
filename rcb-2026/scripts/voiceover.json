@@ -1,0 +1,174 @@
+{
+  "voice": "am_michael",
+  "lang": "en-us",
+  "speed": 1.0,
+  "fix": [
+    [
+      "\u026ann\u02c8\u026a\u014bz",
+      "\u02c8\u026an\u026a\u014bz"
+    ]
+  ],
+  "scenes": [
+    {
+      "id": "s1",
+      "lead": 0.05,
+      "hold": 0.5,
+      "segments": [
+        {
+          "text": "Back to back.",
+          "caption": "Back to back.",
+          "pause": 0.35
+        },
+        {
+          "text": "RCB are champions again.",
+          "caption": "RCB are champions again.",
+          "pause": 0.5
+        },
+        {
+          "text": "And the numbers say this was no accident.",
+          "caption": "And the numbers say this was no accident.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "lead": 0.3,
+      "hold": 0.8,
+      "segments": [
+        {
+          "text": "We ranked all ten teams on thirty numbers. Run rate, dot balls, boundaries, sixes and wickets. In the powerplay, the middle overs and at the death. With the bat, and with the ball.",
+          "caption": "We ranked all ten teams on thirty numbers. Run rate, dot balls, boundaries, sixes and wickets. In the powerplay, the middle overs and at the death. With the bat, and with the ball.",
+          "pause": 0.6
+        },
+        {
+          "text": "Most teams averaged between fifth and seventh. RCB averaged three and a half. Nobody was close.",
+          "caption": "Most teams averaged between 5th and 7th. RCB averaged 3.5. Nobody was close.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "Start with the powerplay. Only two teams hit fewer sixes there than RCB.",
+          "caption": "Start with the powerplay. Only two teams hit fewer sixes there than RCB.",
+          "pause": 0.5
+        },
+        {
+          "text": "But they faced the fewest dot balls in the league. One ball in three. The average team? More than four in ten.",
+          "caption": "But they faced the fewest dot balls in the league. One ball in three. The average team? More than four in ten.",
+          "pause": 0.45
+        },
+        {
+          "text": "The scoreboard never stopped moving.",
+          "caption": "The scoreboard never stopped moving.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "Then they shifted gears. Second for run rate in the middle overs. Second at the death.",
+          "caption": "Then they shifted gears. Second for run rate in the middle overs. Second at the death.",
+          "pause": 0.5
+        },
+        {
+          "text": "And here's the secret. At the death, they lost just one point three wickets an innings. The league lost almost two. Their batters were still there when it mattered.",
+          "caption": "And here's the secret. At the death, they lost just 1.3 wickets an innings. The league lost almost 2. Their batters were still there when it mattered.",
+          "pause": 0.5
+        },
+        {
+          "text": "Virat Kohli. Six hundred and seventy-five runs, at a strike rate of one sixty-six. At thirty-seven, the fastest season of his IPL life.",
+          "caption": "Virat Kohli. 675 runs, at a strike rate of 166. At 37, the fastest season of his IPL life.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "With the ball, the damage came early. Two point two five wickets in every powerplay. The most in the league.",
+          "caption": "With the ball, the damage came early. 2.25 wickets in every powerplay. The most in the league.",
+          "pause": 0.5
+        },
+        {
+          "text": "Bhuvneshwar Kumar led it. Twenty-eight wickets, at under eight an over.",
+          "caption": "Bhuvneshwar Kumar led it. 28 wickets, at under eight an over.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "And at the death, they slammed the door. Only one ball in five went for a boundary. No team was harder to hit.",
+          "caption": "And at the death, they slammed the door. Only one ball in five went for a boundary. No team was harder to hit.",
+          "pause": 0.55
+        },
+        {
+          "text": "Their one weak spot? Middle-overs bowling. Seventh for wickets.",
+          "caption": "Their one weak spot? Middle-overs bowling. 7th for wickets.",
+          "pause": 0.45
+        },
+        {
+          "text": "But when you strike early and finish strong, the middle stops mattering.",
+          "caption": "But when you strike early and finish strong, the middle stops mattering.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "lead": 0.3,
+      "hold": 0.7,
+      "segments": [
+        {
+          "text": "Seven chases won, out of nine.",
+          "caption": "7 chases won, out of 9.",
+          "pause": 0.5
+        },
+        {
+          "text": "Gujarat, crushed by ninety-two runs in Qualifier One. Then beaten again in the final.",
+          "caption": "Gujarat, crushed by 92 runs in Qualifier 1. Then beaten again in the final.",
+          "pause": 0.3
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "lead": 0.3,
+      "hold": 1.8,
+      "segments": [
+        {
+          "text": "Not the biggest hitters. Not the deadliest bowlers.",
+          "caption": "Not the biggest hitters. Not the deadliest bowlers.",
+          "pause": 0.5
+        },
+        {
+          "text": "Just a team with no weak phase. That's how you win it twice.",
+          "caption": "Just a team with no weak phase. That's how you win it twice.",
+          "pause": 0.7
+        },
+        {
+          "text": "Beyond The Scoreboard.",
+          "caption": "Beyond The Scoreboard.",
+          "pause": 0.3
+        }
+      ]
+    }
+  ]
+}
