@@ -60,7 +60,7 @@ export const S11Poll: React.FC = () => {
             at={TEASE}
             titleAt={s.cueS(1, "Day")}
             label="TOMORROW · DAY 6"
-            title="CLEANING MESSY DATA"
+            title="FEATURES + LABELS"
             color={C.orange}
             icon={
               <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
@@ -83,7 +83,7 @@ export const S11Poll: React.FC = () => {
           FOLW={s.cueS(2, "Follow")}
           DATAW={s.cueS(2, "data")}
           SIMPLE={s.cueS(2, "simple!")}
-          next="DAY 4: CLEANING MESSY DATA"
+          next="DAY 6: FEATURES + LABELS"
           chips={[
             { l: "Mean vs median", c: C.cyan },
             { l: "Hidden groups", c: C.violet },
